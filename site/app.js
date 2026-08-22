@@ -133,7 +133,7 @@ function render() {
 
   const indexEl = document.createElement("div");
   indexEl.className = "q-index";
-  indexEl.textContent = `${activeDeck.section} · Card ${current + 1}`;
+  indexEl.innerHTML = `${activeDeck.section} · Card ${current + 1} <span class="q-type-tag">${q.passage ? "Passage-based" : "Discrete"}</span>`;
   root.appendChild(indexEl);
 
   if (q.passage) {
@@ -150,10 +150,11 @@ function render() {
 
   const optionsEl = document.createElement("div");
   optionsEl.className = "options";
+  const letters = ["A", "B", "C", "D"];
   q.options.forEach((optionText, i) => {
     const btn = document.createElement("button");
     btn.className = "option";
-    btn.textContent = optionText;
+    btn.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${optionText}</span>`;
     btn.addEventListener("click", () => selectOption(i, btn, optionsEl));
     optionsEl.appendChild(btn);
   });
@@ -178,9 +179,10 @@ function selectOption(i, btn, optionsEl) {
   if (wasCorrect) score++;
   progressLabel.textContent = `${activeDeck.title} · Card ${current + 1} of ${activeDeck.questions.length} · Score: ${score}`;
 
+  const letters = ["A", "B", "C", "D"];
   const explanation = document.createElement("div");
   explanation.className = "explanation";
-  explanation.innerHTML = `<strong>${wasCorrect ? "Correct." : "Not quite."}</strong> ${q.explanation}`;
+  explanation.innerHTML = `<strong>${wasCorrect ? "Correct" : "Not quite"} — answer: ${letters[q.correct]}.</strong> ${q.explanation}`;
   root.appendChild(explanation);
 
   const actions = document.createElement("div");

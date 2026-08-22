@@ -91,6 +91,21 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.q-type-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 8px;
 }
 
 .quiz-card.home {
@@ -178,6 +193,9 @@ body {
 }
 
 .option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
   text-align: left;
   padding: 13px 16px;
   border-radius: 12px;
@@ -188,6 +206,32 @@ body {
   cursor: pointer;
   transition: border-color .15s ease, background .15s ease, transform .1s ease;
 }
+
+.option-letter {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.option.correct .option-letter {
+  border-color: var(--correct);
+  color: var(--correct);
+}
+
+.option.wrong .option-letter {
+  border-color: var(--wrong);
+  color: var(--wrong);
+}
+
+.option-text { flex: 1; }
 
 .option:hover:not(:disabled) {
   border-color: var(--accent);
