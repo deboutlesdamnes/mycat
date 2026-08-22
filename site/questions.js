@@ -1,11 +1,11 @@
 // Original, simulated MCAT-style practice questions (not copied from AAMC or
-// any copyrighted source) organized into 6 practice sets covering the four
-// tested MCAT sections: Bio/Biochem, Chem/Phys, Psych/Soc, and CARS.
+// any copyrighted source) organized into 6 decks covering the four tested
+// MCAT sections: Bio/Biochem, Chem/Phys, Psych/Soc, and CARS.
 
-const PRACTICE_SETS = [
+const DECKS = [
   {
     id: "set1",
-    title: "Practice Set 1",
+    title: "Deck 1",
     section: "Biological & Biochemical Foundations",
     questions: [
       {
@@ -57,7 +57,7 @@ const PRACTICE_SETS = [
   },
   {
     id: "set2",
-    title: "Practice Set 2",
+    title: "Deck 2",
     section: "Chemical & Physical Foundations",
     questions: [
       {
@@ -109,7 +109,7 @@ const PRACTICE_SETS = [
   },
   {
     id: "set3",
-    title: "Practice Set 3",
+    title: "Deck 3",
     section: "Organic Chemistry & Biochemistry",
     questions: [
       {
@@ -161,7 +161,7 @@ const PRACTICE_SETS = [
   },
   {
     id: "set4",
-    title: "Practice Set 4",
+    title: "Deck 4",
     section: "Psychological, Social & Biological Foundations of Behavior",
     questions: [
       {
@@ -203,7 +203,7 @@ const PRACTICE_SETS = [
   },
   {
     id: "set5",
-    title: "Practice Set 5",
+    title: "Deck 5",
     section: "CARS (Critical Analysis & Reasoning Skills)",
     passage: "Economists have long debated whether technological unemployment — job loss driven specifically by automation — represents a temporary transitional cost or a permanent structural shift in labor markets. Historical episodes, such as the mechanization of agriculture, eventually gave way to net job creation in new sectors, a pattern often cited by optimists who view current anxieties over artificial intelligence as overstated. Critics counter that previous transitions unfolded over generations, allowing institutions and workers time to adapt, whereas contemporary automation compresses this timeline dramatically, leaving little room for retraining or gradual absorption into new industries. Moreover, earlier transitions primarily displaced physical labor, while current automation increasingly encroaches on cognitive tasks once considered uniquely human, raising the question of whether any labor category will remain reliably insulated from displacement.",
     questions: [
@@ -266,7 +266,7 @@ const PRACTICE_SETS = [
   },
   {
     id: "set6",
-    title: "Practice Set 6",
+    title: "Deck 6",
     section: "Mixed Review",
     questions: [
       {

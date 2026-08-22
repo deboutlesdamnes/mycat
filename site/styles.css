@@ -269,4 +269,27 @@ body {
   text-align: center;
   color: var(--muted);
   font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.reset-link {
+  color: var(--muted);
+  text-decoration: underline;
+  font-size: 0.78rem;
+}
+
+.reset-link:hover { color: var(--accent); }
+
+.missed-card {
+  width: 100%;
+  border-color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.set-missed {
+  color: var(--wrong);
+  font-size: 0.78rem;
+  font-weight: 700;
 }
