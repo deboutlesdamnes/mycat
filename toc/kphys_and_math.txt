@@ -1,0 +1,377 @@
+===FILE toc.ncx===
+
+Kaplan MCAT Physics and Math Review: Created for MCAT 2015 (Kaplan Test Prep)
+
+Title Page
+
+Table of Contents
+
+The Kaplan MCAT Review Team
+
+About Scientific American
+
+About the MCAT
+
+How This Book Was Created
+
+Using This Book
+
+Chapter 1: Kinematics and Dynamics
+
+Kinematics and Dynamics
+
+Introduction
+
+1.1 Units
+
+1.2 Vectors and Scalars
+
+1.3 Displacement and Velocity
+
+1.4 Forces and Acceleration
+
+1.5 Newton’s Laws
+
+1.6 Motion with Constant Acceleration
+
+1.7 Mechanical Equilibrium
+
+Conclusion
+
+Concept Summary
+
+Answers to Concept Checks
+
+Equations to Remember
+
+Shared Concepts
+
+Practice Questions
+
+Answers and Explanations
+
+Chapter 2: Work and Energy
+
+Work and Energy
+
+Introduction
+
+2.1 Energy
+
+2.2 Work
+
+2.3 Mechanical Advantage
+
+Conclusion
+
+Concept Summary
+
+Answers to Concept Checks
+
+Equations to Remember
+
+Shared Concepts
+
+Practice Questions
+
+Answers and Explanations
+
+Chapter 3: Thermodynamics
+
+Thermodynamics
+
+Introduction
+
+3.1 Zeroth Law of Thermodynamics
+
+3.2 Systems
+
+3.3 First Law of Thermodynamics
+
+3.4 Second Law of Thermodynamics and Entropy
+
+Conclusion
+
+Concept Summary
+
+Answers to Concept Checks
+
+Equations to Remember
+
+Shared Concepts
+
+Practice Questions
+
+Answers and Explanations
+
+Chapter 4: Fluids
+
+Fluids
+
+Introduction
+
+4.1 Characteristics of Fluids and Solids
+
+4.2 Hydrostatics
+
+4.3 Fluid Dynamics
+
+4.4 Fluids in Physiology
+
+Conclusion
+
+Concept Summary
+
+Answers to Concept Checks
+
+Equations to Remember
+
+Shared Concepts
+
+Practice Questions
+
+Answers and Explanations
+
+Chapter 5: Electrostatics and Magnetism
+
+Electrostatics and Magnetism
+
+Introduction
+
+5.1 Charges
+
+5.2 Coulomb’s Law
+
+5.3 Electrical Potential Energy
+
+5.4 Electrical Potential
+
+5.5 Special Cases in Electrostatics
+
+5.6 Magnetism
+
+Conclusion
+
+Concept Summary
+
+Answers to Concept Checks
+
+Equations to Remember
+
+Shared Concepts
+
+Practice Questions
+
+Answers and Explanations
+
+Chapter 6: Circuits
+
+Circuits
+
+Introduction
+
+6.1 Current
+
+6.2 Resistance
+
+6.3 Capacitance and Capacitors
+
+6.4 Meters
+
+Conclusion
+
+Concept Summary
+
+Answers to Concept Checks
+
+Equations to Remember
+
+Shared Concepts
+
+Practice Questions
+
+Answers and Explanations
+
+Chapter 7: Waves and Sound
+
+Waves and Sound
+
+Introduction
+
+7.1 General Wave Characteristics
+
+7.2 Sound
+
+Conclusion
+
+Concept Summary
+
+Answers to Concept Checks
+
+Equations to Remember
+
+Shared Concepts
+
+Practice Questions
+
+Answers and Explanations
+
+Chapter 8: Light and Optics
+
+Light and Optics
+
+Introduction
+
+8.1 Electromagnetic Spectrum
+
+8.2 Geometrical Optics
+
+8.3 Diffraction
+
+8.4 Polarization
+
+Conclusion
+
+Concept Summary
+
+Answers to Concept Checks
+
+Equations to Remember
+
+Shared Concepts
+
+Practice Questions
+
+Answers and Explanations
+
+Chapter 9: Atomic and Nuclear Phenomena
+
+Atomic and Nuclear Phenomena
+
+Introduction
+
+9.1 The Photoelectric Effect
+
+9.2 Absorption and Emission of Light
+
+9.3 Nuclear Binding Energy and Mass Defect
+
+9.4 Nuclear Reactions
+
+Conclusion
+
+Concept Summary
+
+Answers to Concept Checks
+
+Equations to Remember
+
+Shared Concepts
+
+Practice Questions
+
+Answers and Explanations
+
+Chapter 10: Mathematics
+
+Mathematics
+
+Introduction
+
+10.1 Arithmetic and Significant Figures
+
+10.2 Exponents and Logarithms
+
+10.3 Trigonometry
+
+10.4 Problem-Solving
+
+Conclusion
+
+Concept Summary
+
+Answers to Concept Checks
+
+Equations to Remember
+
+Shared Concepts
+
+Practice Questions
+
+Answers and Explanations
+
+Chapter 11: Reasoning About the Design and Execution of Research
+
+Reasoning About the Design and Execution of Research
+
+Introduction
+
+11.1 The Scientific Method
+
+11.2 Basic Science Research
+
+11.3 Human Subjects Research
+
+11.4 Ethics
+
+11.5 Research in the Real World
+
+Conclusion
+
+Concept Summary
+
+Answers to Concept Checks
+
+Shared Concepts
+
+Practice Questions
+
+Answers and Explanations
+
+Chapter 12: Data-Based and Statistical Reasoning
+
+Data-Based and Statistical Reasoning
+
+Introduction
+
+12.1 Measures of Central Tendency
+
+12.2 Distributions
+
+12.3 Measures of Distribution
+
+12.4 Probability
+
+12.5 Statistical Testing
+
+12.6 Charts, Graphs, and Tables
+
+12.7 Applying Data
+
+Conclusion
+
+Concept Summary
+
+Answers to Concept Checks
+
+Equations to Remember
+
+Shared Concepts
+
+Practice Questions
+
+Answers and Explanations
+
+About This Book
+
+Copyright Information
+
+Glossary
+
+Index
+
+Art Credits
+
+Periodic Table of the Elements
+
+Special Offer for Kaplan Students

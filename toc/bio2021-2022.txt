@@ -1,0 +1,717 @@
+===PAGE 1===
+
+===PAGE 2===
+
+===PAGE 3===
+
+MCAT® Biology Review
+2021-2022
+Edited by Alexander Stone Macnow, MD
+ONLINE + BOOK
+
+===PAGE 4===
+
+Table of Contents
+MCAT Biology Review
+Cover
+Title Page
+Copyright Information
+The Kaplan MCAT Review Team
+Getting Started Checklist
+Preface
+About Scientific American
+About the MCAT
+How This Book Was Created
+Using This Book
+Studying for the MCAT
+Chapter 1: The Cell
+1.1 Cell Theory
+1.2 Eukaryotic Cells
+1.3 Classification and Structure of Prokaryotic Cells
+1.4 Genetics and Growth of Prokaryotic Cells
+1.5 Viruses and Subviral Particles
+Chapter 2: Reproduction
+2.1 The Cell Cycle and Mitosis
+2.2 Meiosis
+2.3 The Reproductive System
+Chapter 3: Embryogenesis and Development
+3.1 Early Developmental Stages
+3.2 Mechanisms of Development
+3.3 Fetal Circulation
+3.4 Gestation and Birth
+Chapter 4: The Nervous System
+4.1 Cells of the Nervous System
+4.2 Transmission of Neural Impulses
+4.3 Organization of the Human Nervous System
+Chapter 5: The Endocrine System
+5.1 Mechanisms of Hormone Action
+5.2 Endocrine Organs and Hormones
+
+===PAGE 5===
+
+Chapter 6: The Respiratory System
+6.1 Anatomy and Mechanism of Breathing
+6.2 Functions of the Respiratory System
+Chapter 7: The Cardiovascular System
+7.1 Anatomy of the Cardiovascular System
+7.2 Blood
+7.3 Physiology of the Cardiovascular System
+Chapter 8: The Immune System
+8.1 Structure of the Immune System
+8.2 The Innate Immune System
+8.3 The Adaptive Immune System
+8.4 The Lymphatic System
+Chapter 9: The Digestive System
+9.1 Anatomy of the Digestive System
+9.2 Ingestion and Digestion
+9.3 Accessory Organs of Digestion
+9.4 Absorption and Defecation
+Chapter 10: Homeostasis
+10.1 The Excretory System
+10.2 Skin
+Chapter 11: The Musculoskeletal System
+11.1 The Muscular System
+11.2 The Skeletal System
+Chapter 12: Genetics and Evolution
+12.1 Fundamental Concepts of Genetics
+12.2 Changes in the Gene Pool
+12.3 Analytical Approaches in Genetics
+12.4 Evolution
+Glossary
+Art Credits
+
+===PAGE 6===
+
+ACKNOWLEDGMENTS
+Editor-in-Chief, 2021–2022 Edition
+Elizabeth Flagge
+Contributing Editors, 2021–2022 Edition
+Brandon Deason, MD, Christopher Durland, Tyler Fara
+Prior Edition Editorial Staff: Brandon Deason, MD, Christopher Durland, M. Dominic Eggert, Tyler Fara,
+Elizabeth Flagge, Adam Grey, Lauren White
+MCAT®is a registered trademark of the Association of American Medical Colleges, which neither sponsors
+nor endorses this product.
+This publication is designed to provide accurate and authoritative information in regard to the subject
+matter covered. It is sold with the understanding that the publisher is not engaged in rendering medical,
+legal, accounting, or other professional services. If legal advice or other expert assistance is required,
+the services of a competent professional should be sought.
+© 2020 by Kaplan, Inc.
+Published by Kaplan Publishing, a division of Kaplan, Inc. 
+750 Third Avenue 
+New York, NY 10017
+All rights reserved under International and Pan-American Copyright Conventions. By payment of the
+required fees, you have been granted the non-exclusive, non-transferable right to access and read the
+text of this eBook on screen. No part of this text may be reproduced, transmitted, downloaded,
+decompiled, reverse engineered, or stored in or introduced into any information storage and retrieval
+system, in any form or by any means, whether electronic or mechanical, now known or hereinafter
+invented, without the express written permission of the publisher.
+ISBN: 978-1-5062-6218-5
+10 9 8 7 6 5 4 3 2 1
+Kaplan Publishing print books are available at special quantity discounts to use for sales promotions,
+employee premiums, or educational purposes. For more information or to purchase books, please call
+
+===PAGE 7===
+
+the Simon & Schuster special sales department at 866-506-1949.
+
+===PAGE 8===
+
+The Kaplan MCAT Review Team
+Alexander Stone Macnow, MD
+Editor-in-Chief
+Áine Lorié, PhD
+Editor
+Derek Rusnak, MA
+Editor
+Mikhail Alexeeff
+Kaplan MCAT Faculty
+Laura L. Ambler
+Kaplan MCAT Faculty
+Krista L. Buckley, MD
+Kaplan MCAT Faculty
+Kristen L. Russell, ME
+Editor
+Pamela Willingham, MSW
+Editor
+Melinda Contreras, MS
+
+===PAGE 9===
+
+MCAT faculty reviewers Elmar R. Aliyev; James Burns; Jonathan Cornfield;
+Alisha Maureen Crowley; Brandon Deason, MD; Nikolai Dorofeev, MD;
+Benjamin Downer, MS; Colin Doyle; Christopher Durland; M. Dominic Eggert;
+Marilyn Engle; Eleni M. Eren; Raef Ali Fadel; Elizabeth Flagge; Adam Grey; Tyra
+Hall-Pogar, PhD; Justine Harkness; Scott Huff; Samer T. Ismail; Aeri Kim, PhD;
+Elizabeth A. Kudlaty; Kelly Kyker-Snowman, MS; Ningfei Li; John P. Mahon;
+Brandon McKenzie; Matthew A. Meier; Nainika Nanda; Caroline Nkemdilim
+Opene; Kaitlyn E. Prenger; Uneeb Qureshi; Bela G. Starkman, PhD; Michael
+Paul Tomani, MS; Nicholas M. White; Allison Ann Wilkes, MS; Kerranna
+Williamson, MBA; MJ Wu; and Tony Yu
+Thanks to Kim Bowers; Eric Chiu; Tim Eich; Tyler Fara; Owen Farcy; Dan Frey;
+Robin Garmise; Rita Garthaffner; Joanna Graham; Allison Harm; Beth
+Hoffberg; Aaron Lemon-Strauss; Keith Lubeley; Diane McGarvey; Petros
+Minasi; John Polstein; Deeangelee Pooran-Kublall, MD, MPH; Rochelle
+Rothstein, MD; Larry Rudman; Sylvia Tidwell Scheuring; Carly Schnur; Karin
+Tucker; Lee Weiss; and the countless others who made this project possible.
+Kaplan MCAT Faculty
+Samantha Fallon
+Kaplan MCAT Faculty
+Jason R. Selzer
+Kaplan MCAT Faculty
+
+===PAGE 10===
+
+Getting Started Checklist
+
+===PAGE 11===
+
+===PAGE 12===
+
+Preface
+And now it starts: your long, yet fruitful journey toward wearing a white coat.
+Proudly wearing that white coat, though, is hopefully only part of your
+motivation. You are reading this book because you want to be a healer.
+If you're serious about going to medical school, then you are likely already
+familiar with the importance of the MCAT in medical school admissions. While
+the holistic review process puts additional weight on your experiences,
+extracurricular activities, and personal attributes, the fact remains: along with
+your GPA, your MCAT score remains one of the two most important
+components of your application portfolio—at least early in the admissions
+process. Each additional point you score on the MCAT pushes you in front of
+thousands of other students and makes you an even more attractive
+applicant. But the MCAT is not simply an obstacle to overcome; it is an
+opportunity to show schools that you will be a strong student and a future
+leader in medicine.
+We at Kaplan take our jobs very seriously and aim to help students see
+success not only on the MCAT, but as future physicians. We work with our
+learning science experts to ensure that we're using the most up-to-date
+teaching techniques in our resources. Multiple members of our team hold
+advanced degrees in medicine or associated biomedical sciences, and are
+committed to the highest level of medical education. Kaplan has been
+working with the MCAT for over 50 years and our commitment to premed
+students is unflagging; in fact, Stanley Kaplan created this company when he
+
+===PAGE 13===
+
+had difficulty being accepted to medical school due to unfair quota systems
+that existed at the time.
+We stand now at the beginning of a new era in medical education. As citizens
+of this 21st-century world of healthcare, we are charged with creating a
+patient-oriented, culturally competent, cost-conscious, universally available,
+technically advanced, and research-focused healthcare system, run by
+compassionate providers. Suffice it to say, this is no easy task. Problem-based
+learning, integrated curricula, and classes in interpersonal skills are some of
+the responses to this demand for an excellent workforce—a workforce of
+which you'll soon be a part.
+We're thrilled that you've chosen us to help you on this journey. Please reach
+out to us to share your challenges, concerns, and successes. Together, we will
+shape the future of medicine in the United States and abroad; we look
+forward to helping you become the doctor you deserve to be.
+Good luck!
+Alexander Stone Macnow, MD
+Editor-in-Chief
+Department of Pathology and Laboratory Medicine
+Hospital of the University of Pennsylvania
+BA, Musicology—Boston University, 2008
+MD—Perelman School of Medicine at the University of Pennsylvania, 2013
+
+===PAGE 14===
+
+About Scientific American
+As the world’s premier science and technology magazine, and the oldest
+continuously published magazine in the United States, Scientific American is
+committed to bringing the most important developments in modern science,
+medicine, and technology to our worldwide audience in an understandable,
+credible, and provocative format.
+Founded in 1845 and on the “cutting edge” ever since, Scientific American
+boasts over 150 Nobel laureate authors including Albert Einstein, Francis
+Crick, Stanley Prusiner, and Richard Axel. Scientific American is a forum where
+scientific theories and discoveries are explained to a broader audience.
+Scientific American published its first foreign edition in 1890, and in 1979 was
+the first Western magazine published in the People’s Republic of China.
+Today, Scientific American is published in 14 foreign language editions.
+Scientific American is also a leading online destination
+(www.ScientificAmerican.com), providing the latest science news and
+exclusive features to millions of visitors each month.
+The knowledge that fills our pages has the power to spark new ideas,
+paradigms, and visions for the future. As science races forward, Scientific
+American continues to cover the promising strides, inevitable setbacks and
+challenges, and new medical discoveries as they unfold.
+
+===PAGE 15===
+
+About the MCAT
+ANATOMY OF THE MCAT
+Here is a general overview of the structure of Test Day:
+Section
+Number of
+Questions
+Time
+Allotted
+Test-Day Certification
+4 minutes
+Tutorial (optional)
+10 minutes
+Chemical and Physical Foundations of Biological Systems
+59
+95 minutes
+Break (optional)
+10 minutes
+Critical Analysis and Reasoning Skills (CARS)
+53
+90 minutes
+Lunch Break (optional)
+30 minutes
+Biological and Biochemical Foundations of Living Systems
+59
+95 minutes
+Break (optional)
+10 minutes
+Psychological, Social, and Biological Foundations of
+Behavior
+59
+95 minutes
+Void Question
+3 minutes
+Satisfaction Survey (optional)
+5 minutes
+The structure of the four sections of the MCAT is shown below.
+Chemical and Physical Foundations of Biological Systems
+
+===PAGE 16===
+
+Time
+95 minutes
+Format
+What It Tests
+Critical Analysis and Reasoning Skills (CARS)
+Time
+90 minutes
+Format
+What It Tests
+Biological and Biochemical Foundations of Living Systems
+Time
+95 minutes
+Format
+59 questions
+10 passages
+44 questions are passage-based, and 15 are discrete (stand-alone) questions.
+Score between 118 and 132
+Biochemistry: 25%
+Biology: 5%
+General Chemistry: 30%
+Organic Chemistry: 15%
+Physics: 25%
+53 questions
+9 passages
+All questions are passage-based. There are no discrete (stand-alone)
+questions.
+Score between 118 and 132
+Disciplines:
+Humanities: 50%
+Social Sciences: 50%
+Skills:
+Foundations of Comprehension: 30%
+Reasoning Within the Text: 30%
+Reasoning Beyond the Text: 40%
+59 questions
+10 passages
+44 questions are passage-based, and 15 are discrete (stand-alone) questions.
+
+===PAGE 17===
+
+What It Tests
+Psychological, Social, and Biological Foundations of Behavior
+Time
+95 minutes
+Format
+What It Tests
+Total
+Testing Time
+375 minutes (6 hours, 15 minutes)
+Total Seat
+Time
+447 minutes (7 hours, 27 minutes)
+Questions
+230
+Score
+472 to 528
+Score between 118 and 132
+Biochemistry: 25%
+Biology: 65%
+General Chemistry: 5%
+Organic Chemistry: 5%
+59 questions
+10 passages
+44 questions are passage-based, and 15 are discrete (stand-alone) questions.
+Score between 118 and 132
+Biology: 5%
+Psychology: 65%
+Sociology: 30%
+
+===PAGE 18===
+
+SCIENTIFIC INQUIRY AND REASONING SKILLS (SIRS)
+The AAMC has defined four Scientific Inquiry and Reasoning Skills (SIRS) that
+will be tested in the three science sections of the MCAT:
+Let’s see how each one breaks down into more specific Test Day behaviors.
+Note that the bullet points of specific objectives for each of the SIRS are taken
+directly from the Official Guide to the MCAT Exam; the descriptions of what
+Knowledge of Scientific Concepts and Principles (35% of questions)
+1.
+Scientific Reasoning and Problem-Solving (45% of questions)
+2.
+Reasoning About the Design and Execution of Research (10% of questions)
+3.
+Data-Based and Statistical Reasoning (10% of questions)
+4.
+
+===PAGE 19===
+
+these behaviors mean and sample question stems, however, are written by
+Kaplan.
+Skill 1: Knowledge of Scientific Concepts and Principles
+This is probably the least surprising of the four SIRS; the testing of science
+knowledge is, after all, one of the signature qualities of the MCAT. Skill 1
+questions will require you to do the following:
+At Kaplan, we simply call these Science Knowledge or Skill 1 questions.
+Another way to think of Skill 1 questions is as “one-step” problems. The single
+step is either to realize which scientific concept the question stem is
+suggesting or to take the concept stated in the question stem and identify
+which answer choice is an accurate application of it. Skill 1 questions are
+particularly prominent among discrete questions (those not associated with a
+passage). These questions are an opportunity to gain quick points on Test Day
+—if you know the science concept attached to the question, then that’s it! On
+Test Day, 35% of the questions in each science section will be Skill 1
+questions.
+Here are some sample Skill 1 question stems:
+Recognize correct scientific principles
+Identify the relationships among closely related concepts
+Identify the relationships between different representations of concepts
+(verbal, symbolic, graphic)
+Identify examples of observations that illustrate scientific principles
+Use mathematical equations to solve problems
+How would a proponent of the James–Lange theory of emotion interpret
+
+===PAGE 20===
+
+Skill 2: Scientific Reasoning and Problem-Solving
+The MCAT science sections do, of course, move beyond testing
+straightforward science knowledge; Skill 2 questions are the most common
+way in which it does so. At Kaplan, we also call these Critical Thinking
+questions. Skill 2 questions will require you to do the following:
+Just as Skill 1 questions can be thought of as “one-step” problems, many Skill
+2 questions are “two-step” problems, and more difficult Skill 2 questions may
+require three or more steps. These questions can require a wide spectrum of
+reasoning skills, including integration of multiple facts from a passage,
+combination of multiple science content areas, and prediction of an
+experiment’s results. Skill 2 questions also tend to ask about science content
+without actually mentioning it by name. For example, a question might
+describe the results of one experiment and ask you to predict the results of a
+the findings of the study cited in the passage?
+Which of the following most accurately describes the function of FSH in the
+human female menstrual cycle?
+If the products of Reaction 1 and Reaction 2 were combined in solution, the
+resulting reaction would form:
+Ionic bonds are maintained by which of the following forces?
+Reason about scientific principles, theories, and models
+Analyze and evaluate scientific explanations and predictions
+Evaluate arguments about causes and consequences
+Bring together theory, observations, and evidence to draw conclusions
+Recognize scientific findings that challenge or invalidate a scientific theory
+or model
+Determine and use scientific formulas to solve problems
+
+===PAGE 21===
+
+second experiment without actually telling you what underlying scientific
+principles are at work—part of the question’s difficulty will be figuring out
+which principles to apply in order to get the correct answer. On Test Day, 45%
+of the questions in each science section will be Skill 2 questions.
+Here are some sample Skill 2 question stems:
+Skill 3: Reasoning About the Design and Execution of Research
+The MCAT is interested in your ability to critically appraise and analyze
+research, as this is an important day-to-day task of a physician. We call these
+questions Skill 3 or Experimental and Research Design questions for short.
+Skill 3 questions will require you to do the following:
+Which of the following experimental conditions would most likely yield
+results similar to those in Figure 2?
+All of the following conclusions are supported by the information in the
+passage EXCEPT:
+The most likely cause of the anomalous results found by the experimenter
+is:
+An impact to a man’s chest quickly reduces the volume of one of his lungs
+to 70% of its initial value while not allowing any air to escape from the
+man’s mouth. By what percentage is the force of outward air pressure
+increased on a 2 cm2 portion of the inner surface of the compressed lung?
+Identify the role of theory, past findings, and observations in scientific
+questioning
+Identify testable research questions and hypotheses
+Distinguish between samples and populations and distinguish results that
+support generalizations about populations
+
+===PAGE 22===
+
+Over the years, the AAMC has received input from medical schools to require
+more practical research skills of MCAT test takers, and Skill 3 questions are
+the response to these demands. This skill is unique in that the outside
+knowledge you need to answer Skill 3 questions is not taught in any one
+undergraduate course; instead, the research design principles needed to
+answer these questions are learned gradually throughout your science classes
+and especially through any laboratory work you have completed. It should be
+noted that Skill 3 comprises 10% of the questions in each science section on
+Test Day.
+Here are some sample Skill 3 question stems:
+Identify independent and dependent variables
+Reason about the features of research studies that suggest associations
+between variables or causal relationships between them (such as
+temporality and random assignment)
+Identify conclusions that are supported by research results
+Determine the implications of results for real-world situations
+Reason about ethical issues in scientific research
+What is the dependent variable in the study described in the passage?
+The major flaw in the method used to measure disease susceptibility in
+Experiment 1 is:
+Which of the following procedures is most important for the experimenters
+to follow in order for their study to maintain a proper, randomized sample
+of research subjects?
+A researcher would like to test the hypothesis that individuals who move to
+an urban area during adulthood are more likely to own a car than are those
+who have lived in an urban area since birth. Which of the following studies
+would best test this hypothesis?
+
+===PAGE 23===
+
+Skill 4: Data-Based and Statistical Reasoning
+Lastly, the science sections of the MCAT test your ability to analyze the visual
+and numerical results of experiments and studies. We call these Data and
+Statistical Analysis questions. Skill 4 questions will require you to do the
+following:
+Skill 4 is included in the MCAT because physicians and researchers spend
+much of their time examining the results of their own studies and the studies
+of others, and it’s very important for them to make legitimate conclusions and
+sound judgments based on that data. The MCAT tests Skill 4 on all three
+science sections with graphical representations of data (charts and bar
+graphs), as well as numerical ones (tables, lists, and results summarized in
+sentence or paragraph form). On Test Day, 10% of the questions in each
+science section will be Skill 4 questions.
+Here are some sample Skill 4 question stems:
+Use, analyze, and interpret data in figures, graphs, and tables
+Evaluate whether representations make sense for particular scientific
+observations and data
+Use measures of central tendency (mean, median, and mode) and
+measures of dispersion (range, interquartile range, and standard deviation)
+to describe data
+Reason about random and systematic error
+Reason about statistical significance and uncertainty (interpreting
+statistical significance levels and interpreting a confidence interval)
+Use data to explain relationships between variables or make predictions
+Use data to answer research questions and draw conclusions
+
+===PAGE 24===
+
+SIRS Summary
+Discussing the SIRS tested on the MCAT is a daunting prospect given that the
+very nature of the skills tends to make the conversation rather abstract.
+Nevertheless, with enough practice, you'll be able to identify each of the four
+skills quickly, and you'll also be able to apply the proper strategies to solve
+those problems on Test Day. If you need a quick reference to remind you of
+the four SIRS, these guidelines may help:
+Skill 1 (Science Knowledge) questions ask:
+Skill 2 (Critical Thinking) questions ask:
+Skill 3 (Experimental and Research Design) questions ask:
+According to the information in the passage, there is an inverse correlation
+between:
+What conclusion is best supported by the findings displayed in Figure 2?
+A medical test for a rare type of heavy metal poisoning returns a positive
+result for 98% of affected individuals and 13% of unaffected individuals.
+Which of the following types of errors is most prevalent in this test?
+If a fourth trial of Experiment 1 was run and yielded a result of 54%
+compliance, which of the following would be true?
+Do you remember this science content?
+Do you remember this science content? And if you do, could you please
+apply it to this novel situation?
+Could you answer this question that cleverly combines multiple content
+areas at the same time?
+
+===PAGE 25===
+
+Skill 4 (Data and Statistical Analysis) questions ask:
+CRITICAL ANALYSIS AND REASONING SKILLS (CARS)
+The Critical Analysis and Reasoning Skills (CARS) section of the MCAT tests
+three discrete families of textual reasoning skills; each of these families
+requires a higher level of reasoning than the last. Those three skills are as
+follows:
+These three skills are tested through nine humanities- and social sciences-
+themed passages, with approximately 5 to 7 questions per passage. Let’s take
+a more in-depth look into these three skills. Again, the bullet points of specific
+objectives for each of the CARS are taken directly from the Official Guide to the
+MCAT Exam; the descriptions of what these behaviors mean and sample
+question stems, however, are written by Kaplan.
+Foundations of Comprehension
+Let’s forget about the science content for a while. Could you give some
+insight into the experimental or research methods involved in this
+situation?
+Let’s forget about the science content for a while. Could you accurately
+read some graphs and tables for a moment? Could you make some
+conclusions or extrapolations based on the information presented?
+Foundations of Comprehension (30% of questions)
+1.
+Reasoning Within the Text (30% of questions)
+2.
+Reasoning Beyond the Text (40% of questions)
+3.
+
+===PAGE 26===
+
+Questions in this skill will ask for basic facts and simple inferences about the
+passage; the questions themselves will be similar to those seen on reading
+comprehension sections of other standardized exams like the SAT® and ACT®.
+Foundations of Comprehension questions will require you to do the following:
+This admittedly covers a wide range of potential question types including
+Main Idea, Detail, Inference, and Definition-in-Context questions, but finding
+the correct answer to all Foundations of Comprehension questions will follow
+from a basic understanding of the passage and the point of view of its author
+(and occasionally that of other voices in the passage).
+Here are some sample Foundations of Comprehension question stems:
+Understand the basic components of the text
+Infer meaning from rhetorical devices, word choice, and text structure
+Main Idea—The author’s primary purpose in this passage is:
+Detail—Based on the information in the second paragraph, which of the
+following is the most accurate summary of the opinion held by Schubert’s
+critics?
+(Scattered) Detail—According to the passage, which of the following is
+FALSE about literary reviews in the 1920s?
+Inference (Implication)—Which of the following phrases, as used in the
+passage, is most suggestive that the author has a personal bias toward
+narrative records of history?
+Inference (Assumption)—In putting together her argument in the passage,
+the author most likely assumes:
+Definition-in-Context—The word “obscure” (paragraph 3), when used in
+reference to the historian’s actions, most nearly means:
+
+===PAGE 27===
+
+Reasoning Within the Text
+While Foundations of Comprehension questions will usually depend on
+interpreting a single piece of information in the passage or understanding the
+passage as a whole, Reasoning Within the Text questions require more thought
+because they will ask you to identify the purpose of a particular piece of
+information in the context of the passage, or ask how one piece of
+information relates to another. Reasoning Within the Text questions will
+require you to:
+The CARS section will also ask you to judge certain parts of the passage or
+even judge the author. These questions, which fall under the Reasoning Within
+the Text skill, can ask you to identify authorial bias, evaluate the credibility of
+cited sources, determine the logical soundness of an argument, identify the
+importance of a particular fact or statement in the context of the passage,
+or search for relevant evidence in the passage to support a given conclusion.
+In all, this category includes Function and Strengthen–Weaken (Within the
+Passage) questions, as well as a smattering of related—but rare—question
+types.
+Here are some sample Reasoning Within the Text question stems:
+Integrate different components of the text to draw relevant conclusions
+Function—The author’s discussion of the effect of socioeconomic status on
+social mobility primarily serves which of the following functions?
+Strengthen–Weaken (Within the Passage)—Which of the following facts is
+used in the passage as the most prominent piece of evidence in favor of the
+author’s conclusions?
+Strengthen–Weaken (Within the Passage)—Based on the role it plays in
+
+===PAGE 28===
+
+Reasoning Beyond the Text
+The distinguishing factor of Reasoning Beyond the Text questions is in the title
+of the skill: the word Beyond. Questions that test this skill, which make up a
+larger share of the CARS section than questions from either of the other two
+skills, will always introduce a completely new situation that was not present
+in the passage itself; these questions will ask you to determine how one
+influences the other. Reasoning Beyond the Text questions will require you to:
+The Reasoning Beyond the Text skill is further divided into Apply and
+Strengthen–Weaken (Beyond the Passage) questions, and a few other rarely
+appearing question types.
+Here are some sample Reasoning Beyond the Text question stems:
+the author’s argument, The Possessed can be considered:
+Apply or extrapolate ideas from the passage to new contexts
+Assess the impact of introducing new factors, information, or conditions to
+ideas from the passage
+Apply—If a document were located that demonstrated Berlioz intended to
+include a chorus of at least 700 in his Grande Messe des Morts, how would
+the author likely respond?
+Apply—Which of the following is the best example of a “virtuous rebellion,”
+as it is defined in the passage?
+Strengthen–Weaken (Beyond the Passage)—Suppose Jane Austen had
+written in a letter to her sister, “My strongest characters were those forced
+by circumstance to confront basic questions about the society in which
+they lived.” What relevance would this have to the passage?
+
+===PAGE 29===
+
+CARS Summary
+Through the Foundations of Comprehension skill, the CARS section tests many
+of the reading skills you have been building on since grade school, albeit in
+the context of very challenging doctorate-level passages. But through the two
+other skills (Reasoning Within the Text and Reasoning Beyond the Text), the
+MCAT demands that you understand the deep structure of passages and the
+arguments within them at a very advanced level. And, of course, all of this is
+tested under very tight timing restrictions: only 102 seconds per question—
+and that doesn't even include the time spent reading the passages.
+Here’s a quick reference guide to the three CARS skills:
+Foundations of Comprehension questions ask:
+Reasoning Within the Text questions ask:
+Reasoning Beyond the Text questions ask:
+Strengthen–Weaken (Beyond the Passage)—Which of the following
+sentences, if added to the end of the passage, would most WEAKEN the
+author’s conclusions in the last paragraph?
+Did you understand the passage and its main ideas?
+What does the passage have to say about this particular detail?
+What must be true that the author did not say?
+What’s the logical relationship between these two ideas from the passage?
+How well argued is the author’s thesis?
+
+===PAGE 30===
+
+Scoring
+Each of the four sections of the MCAT is scored between 118 and 132, with the
+median at 125. This means the total score ranges from 472 to 528, with the
+median at 500. Why such peculiar numbers? The AAMC stresses that this scale
+emphasizes the importance of the central portion of the score distribution,
+where most students score (around 125 per section, or 500 total), rather than
+putting undue focus on the high end of the scale.
+Note that there is no wrong answer penalty on the MCAT, so you should select
+an answer for every question—even if it is only a guess.
+The AAMC has released the 2019–2020 correlation between scaled score and
+percentile, as shown on the following page. It should be noted that the
+percentile scale is adjusted and renormalized over time and thus can shift
+slightly from year to year.
+Total Score
+Percentile
+Total Score
+Percentile
+528
+100
+499
+44
+527
+100
+498
+41
+526
+100
+497
+37
+525
+100
+496
+34
+524
+100
+495
+31
+523
+99
+494
+28
+How does this principle from the passage apply to this new situation?
+How does this new piece of information influence the arguments in the
+passage?

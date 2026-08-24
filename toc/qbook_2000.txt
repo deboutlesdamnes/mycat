@@ -1,0 +1,1798 @@
+===PAGE 1===
+
+===PAGE 2===
+
+MCAT QBook
+Over 2,000 Questions 
+Covering Every 
+MCAT Science Topic
+
+===PAGE 3===
+
+Copyright 2016 by Next Step Pre-Med, LLC
+All rights reserved. This book or any portion thereof may not be
+reproduced nor used in any manner whatsoever without the express
+written permission of the publisher, except for the use of
+brief quotations in a book review.
+Printed in the United States of America
+Third Printing, 2017
+ISBN 978-1-944935-11-5
+Next Step Pre-Med, LLC
+4256 N Ravenswood Ave
+Suite 303
+Chicago, IL 60613
+www.nextstepmcat.com
+MCAT is a registered trademark of the American Association of Medical Colleges (AAMC). The AAMC has not 
+reviewed nor endorsed this work in any way.
+
+===PAGE 4===
+
+iii
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+ABOUT THE AUTHORS
+Clara Gillan is Next Step Test Prep’s National Director for MCAT Content and an Elite MCAT Tutor. She has 
+worked with hundreds of MCAT tutoring students over the past several years and helped develop many of Next 
+Step’s MCAT passages and discrete questions. She scored a 42 on her own MCAT, placing her in the top 0.1% 
+nationally. With an extensive background in neuroscience and teaching, Clara enjoys helping students focus on 
+learning methods and techniques that are proven effective by the latest in neuroscience research.
+Bryan Schnedeker is Next Step Test Prep’s Vice President for MCAT Tutoring and Content. He manages all of our 
+MCAT and LSAT instructors nationally and counsels hundreds of students when they begin our tutoring process. 
+He has over a decade of MCAT and LSAT teaching and tutoring experience (starting at one of the big prep course 
+companies before joining our team). He has attended medical school and law school himself and has scored a 44 
+on the old MCAT, a 525 on the new MCAT, and a 180 on the LSAT. Bryan has worked with thousands of MCAT 
+students over the years and specializes in helping students looking to achieve elite scores. 
+Anthony Lafond is Next Step’s MCAT Content Director and an Elite MCAT Tutor. He has been teaching and 
+tutoring MCAT students for nearly 12 years. He earned his MD and PhD degrees from UMDNJ - New Jersey 
+Medical School with a focus on rehabilitative medicine. Dr. Lafond believes that both rehabilitative medicine and 
+MCAT education hinge on the same core principle: crafting an approach that puts the unique needs of the individual 
+foremost. 
+To find out about MCAT tutoring directly with Clara, Anthony, or Bryan visit our website:
+http://nextsteptestprep.com/mcat 
+Updates may be found here: http://nextsteptestprep.com/mcat-materials-change-log/
+If you have any feedback for us about this book, please contact us at mcat@nextsteptestprep.com
+Version: 2017-01-01
+
+===PAGE 5===
+
+iv 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+FREE ONLINE MCAT DIAGNOSTIC and
+FULL-LENGTH EXAM
+Want to see how you would do on the MCAT and understand 
+where you need to focus your prep?
+TAKE OUR FREE MCAT DIAGNOSTIC EXAM
+Timed simulations of all 4 sections of the MCAT
+Comprehensive reporting on your performance
+Continue your practice with a free Full Length Exam
+These two exams are provided free of charge to students 
+who purchased our book
+To access your free exam, visit:
+http://nextsteptestprep.com/mcat-diagnostic/
+.
+
+===PAGE 6===
+
+v
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+TABLE OF CONTENTS
+Introduction. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . vi
+How to Use this Book. . . . . . . . . . . . . . . . . . . . . . . . vii
+Chapter 1: Biology. . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Chapter 2: Biochemistry . . . . . . . . . . . . . . . . . . . . . . 85
+Chapter 3: Psychology. . . . . . . . . . . . . . . . . . . . . . 143
+Chapter 4: General Chemistry. . . . . . . . . . . . . . . . . . 203
+Chapter 5: Physics . . . . . . . . . . . . . . . . . . . . . . . . 237
+Chapter 6: Sociology. . . . . . . . . . . . . . . . . . . . . . . 267
+Chapter 7: Organic Chemistry. . . . . . . . . . . . . . . . . . 301
+Chapter 8: Graph Practice. . . . . . . . . . . . . . . . . . . . 333
+Solutions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 339
+
+===PAGE 7===
+
+vi 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+INTRODUCTION
+Hello and welcome to Next Step’s MCAT QBook. In this book you’ll find over 2,000 questions dedicated to giving 
+you the science review and MCAT practice that you need to succeed on Test Day.
+To provide the broadest possible coverage, we have arranged this book as a series of independent discrete questions 
+and we have provided coverage that is proportional to the MCAT itself. For example, on the real exam about 20% of 
+all science questions will be based on biology, so about 20% of this book is biology questions. 
+The key to mastering this material involves taking a step-by-step approach, starting with content review, then 
+untimed practice to master your question-solving technique, then short timed work, and finally 95-minute timed 
+work to build endurance. To begin improving your MCAT performance, read “How to Use this Book” on the 
+following page.
+Everyone here at Next Step would like to wish you the best of luck with your studies!
+Thank you,
+Bryan Schnedeker
+Co-founder
+Next Step Pre-Med, LLC
+
+===PAGE 8===
+
+vii
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+STOP! READ THIS FIRST!
+How to Use This Book
+The book you’re holding in your hands is one of the best supplements you can use to review and strengthen your 
+MCAT science content. However, it is not complete prep. While the real MCAT does have about 45 discrete science 
+questions (the kind of short independent question found in this book), it also has over 100 science questions that 
+are based on descriptive passages. To best prepare for the exam, you will need to use this book in conjunction with 
+several other resources.
+All MCAT prep begins, first and foremost, with content review. There’s a ton of stuff you just have to know when 
+walking into the exam. While your science classes in college did a great job laying the foundations of your MCAT 
+knowledge, most students find they need anywhere from one to three months to fully refresh themselves on MCAT 
+science. The best way to do this review is through a combination of three things.
+First, the AAMC has built a partnership with Khan Academy to provide a free series of video lectures covering 
+nearly all MCAT topics (just Google “Khan MCAT” to find the site easily). These videos are good quality and totally 
+free – a great place to start. From there, you will want to build on your understanding with a set of prep books. 
+Many companies make excellent review books, but we’re partial to the Next Step Content Review series (for obvious 
+reasons!).
+Finally and most importantly, you need to drill yourself on hundreds or thousands of practice questions to ensure 
+that you’ve really mastered the content. That’s where this book comes in. After you’ve finished your prep work in a 
+given science, work your way through all of the questions in this book for that science. When you hit trouble with 
+the questions, go back and re-watch the Khan videos or re-read the relevant chapters in your prep books.
+After doing that content review work, you will need to move on to practicing full, timed sections and then full, timed 
+MCAT practice tests. The Next Step Strategy and Practice books offer the former, and our online full lengths provide 
+the latter. You can find both on our website at nextsteptestprep.com. Just click the “MCAT Books and Tests” link up 
+at the top of front page.
+Lastly, if you hit a big roadblock or think that you could use extra one-on-one MCAT help, contact Next Step to ask 
+about our tutoring services at 888-530-NEXT.
+Good luck with your practice and good luck on Test Day!
+
+===PAGE 9===
+
+viii 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+This page left intentionally blank.
+
+===PAGE 10===
+
+1
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+Biology
+CHAPTER
+1
+1. 
+Which of the following correctly describes the 
+DNA double helix?
+I. 
+It is held together by hydrogen bonding 
+between the nitrogenous bases.
+II. Its backbone is composed of alternating ribose 
+sugars and phosphate groups.
+III. It typically has a diameter of 20 angstroms.
+IV. It features pyrimidine-to-pyrimidine and 
+purine-to-purine base pairings.
+A) II only
+B) I and III
+C) I, II, and IV
+D) I, III, and IV
+2. The structure of a typical nucleoside includes:
+A) a six-carbon sugar.
+B) a nitrogenous base.
+C) phosphate groups.
+D) A and B only.
+3. The gene encoding a protein involved in cell 
+cycle regulation is analyzed, and researchers 
+conclude that its sense strand contains the 
+following sequence: 5'-AATTGCGCATTGC-3'. The 
+sequence of the corresponding mRNA following 
+transcription is:
+A) 5'-AAUUGCGCAUUGC-3'.
+B) 5'-GCAATGCGCAATT-3'.
+C) 5'-GCAAUGCGCAAUU-3'.
+D) 5'-AATTGCGCATTGC-3'.
+4. Due to a point mutation during replication, one 
+guanine base is now paired with adenine instead 
+of cytosine. How might the cell’s proofreading 
+machinery be able to recognize this mistake?
+A) Because both adenine and guanine are 
+pyrimidines, the DNA strand will be narrower 
+at the site of the mutation.
+B) Because both adenine and guanine are 
+purines, the DNA strand will be narrower at 
+the site of the mutation.
+C) Because both adenine and guanine are 
+pyrimidines, the DNA strand will be wider at 
+the site of the mutation.
+D) Because both adenine and guanine are 
+purines, the DNA strand will be wider at the 
+site of the mutation.
+
+===PAGE 11===
+
+MCAT QBOOK: MORE MCAT PRACTICE
+2 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+5. A scientist is investigating the effect of single 
+base pair mutations on the activity of a gene 
+that is heavily expressed in neurons. He focuses 
+on a sequence within the noncoding strand, 
+5'-CCTTGATCCATT-3'. Which of the following 
+represents the sequence of a coding strand 
+that could NOT be used to test these types of 
+mutations?
+A) 5'-AATGGATCCAGG-3'
+B) 5'-AATTGATCCAGG-3'
+C) 5'-AATGAATCAAGG-3'
+D) 5'-AATGGATTAAGG-3'
+Questions 6–7 rely on 
+the figure to the right
+The stability of three different 
+samples of bacterial DNA 
+is tested based on percent 
+denaturation at various 
+temperatures. The results are 
+shown in the following graph.
+6. What is the approximate Tm of each of the samples?
+A) Sample 1: 30°C; Sample 2: 50°C; Sample 3: 
+60°C
+B) Sample 1: 70°C; Sample 2: 90°C; Sample 3: 
+100°C
+C) Sample 1: 50°C; Sample 2: 30°C; Sample 3: 
+60°C
+D) Sample 1: 20°C; Sample 2: 40°C; Sample 3: 
+50°C
+7. 
+Through sequencing, it was found that 20% of 
+Sample 1 consists of cytosine, while Samples 2 and 
+3 contain 30% and 35% cytosine, respectively. Is 
+this consistent with the experimental results?
+A) Yes, because higher G-C content leads to a 
+higher Tm due to the increased hydrophobic 
+interactions within G-C pairings.
+B) No, because higher G-C content leads to 
+a lower Tm due to an increase in hydrogen 
+bonding due to the G-C bases.
+C) Yes, because higher G-C content leads to a 
+higher Tm due to an increase in the hydrogen 
+bonding due to the G-C bases.
+D) No, because higher G-C content leads to a 
+lower Tm due to the decreased hydrophobic 
+interactions within G-C pairings.
+Questions 8–9 rely on the figure below
+Four different dsDNA samples taken from mammalian 
+cells were analyzed to find their composition. The 
+results were organized in the following table.
+8. A young lab assistant contaminated Sample D 
+when testing for the percentages of thymine and 
+cytosine. Based upon Chargaff’s rules, predict the 
+composition of this sample.
+A) %T: 35; %G: 40; %C: 40
+B) %T: 15; %G: 35; %C: 15
+C) %T: 35; %G: 15; %C: 15
+D) %T: 22; %G: 22; %C: 21
+
+===PAGE 12===
+
+ 
+Biology
+3
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+9. 
+Thermal vents along the ocean floor emit water 
+ranging from sixty to several hundred degrees 
+Celsius. Which of the samples most likely came 
+from bacteria that thrive in these vents?
+A) Sample A
+B) Sample B
+C) Sample C
+D) Sample D
+10. A researcher is attempting to design a hypothetical 
+new lifeform that does not rely on DNA for the 
+storage of genetic information. He starts by 
+identifying various molecules with properties that 
+make them potential DNA alternatives. Which 
+of the following characteristics should these 
+alternative molecules possess?
+A) The ability to form a long, highly stable 
+polymer
+B) The ability to be replicated with a high rate of 
+accuracy and speed
+C) The ability to code for other macromolecules 
+used throughout the cell
+D) All of the above are necessary characteristics.
+11. Which of the following enzymes are involved in 
+DNA replication in human cells?
+I. 
+Taq polymerase
+II. Telomerase
+III. Ligase
+IV. Transcriptase
+A) I and III
+B) II and III
+C) II and IV
+D) I, II, and III
+12. DNA replication is understood to be 
+semiconservative. To ascertain this, a geneticist 
+radiolabeled a fragment of dsDNA and allowed it 
+to replicate. After four successive replication cycles, 
+what fraction of the total DNA consists of the 
+original parent material?
+A) 1/4
+B) 1/8
+C) 1/16
+D) 1/32
+13. To perform a successful PCR reaction, all of the 
+following reactants must be present EXCEPT:
+A) forward and reverse primers.
+B) Taq polymerase.
+C) a magnesium-containing buffer.
+D) dideoxynucleoside triphosphates (ddNTPs).
+14. What purpose do primers serve in the initiation of 
+DNA replication?
+A) They signal the location at which to form the 
+replication fork.
+B) They provide sites to which a vital enzyme can 
+bind.
+C) They indicate which of the two strands of 
+parent DNA is to be replicated.
+D) They disrupt hydrogen bonding between base 
+pairs, allowing the double helix to unwind 
+more easily.
+15. A certain X-linked disease inhibits the cell’s 
+ability to produce telomerase. With regard to 
+chromosome structure, a male with one copy of 
+the disease allele would differ from a healthy male 
+in what way?
+A) His chromosomes would shorten over the 
+course of several replication cycles.
+B) His newly synthesized DNA would be unable 
+to rewind after replication.
+C) His total amount of supercoiled DNA would 
+increase.
+D) The two individuals would not differ in their 
+chromosome structure.
+
+===PAGE 13===
+
+MCAT QBOOK: MORE MCAT PRACTICE
+4 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+16. The figure below shows the nitrogenous bases 
+involved in DNA base pairing.
+ 
+What structural elements make AT-rich sequences 
+especially appropriate targets for initiation proteins 
+during replication?
+A) The pairing of a purine and pyrimidine results 
+in a low bond dissociation energy.
+B) Thymine’s ketone groups facilitate the binding 
+of initiation proteins.
+C) The interaction between adenine and thymine 
+involves fewer hydrogen bonds than that 
+between cytosine and guanine.
+D) The AT pair exhibits resonance, making its 
+binding especially stable and comparatively 
+inert.
+17. One of the fundamental qualities of DNA 
+polymerase is its inability to initiate replication. In 
+humans, for example, it can only begin to extend 
+a strand when a short RNA primer is already 
+present. A scientist thinks he has discovered a 
+retrovirus that employs tRNA to initiate DNA 
+synthesis rather than traditional primers. Is this 
+possible?
+A) Yes, tRNA has an innate ability to mimic the 
+function of enzymes such as primase.
+B) Yes, both the tRNA molecule and the RNA 
+primers provide a free 3' –OH group as an 
+attachment site for enzymes that elongate the 
+chain.
+C) No, retroviruses utilize reverse transcriptase 
+instead of DNA polymerase.
+D) No, tRNA only functions in the assembly of 
+proteins at viral ribosomes.
+18. Part of the replication fork on a eukaryotic dsDNA 
+molecule is shown below.
+ 
+At which point does the lagging strand of the new 
+DNA molecule begin to form?
+A) A
+B) B
+C) C
+D) D
+19. One of the hallmarks of DNA polymerase is its 
+quality of exclusively reading DNA from 3' ! 5' 
+and synthesizing DNA from 5' ! 3'. Imagine an 
+organism whose DNA polymerase mutates and 
+gains the ability to read DNA in both directions. 
+How would the mutated polymerase differ from 
+the original enzyme?
+A) Due to changes in its proofreading ability, the 
+mutated enzyme would produce strands with 
+overlapping sequences.
+B) The telomeres of the strand made by the 
+mutated polymerase would be unusually short.
+C) Replication mediated by the mutated 
+polymerase would require increased ligase 
+activity.
+D) Okazaki fragments would not be observed 
+in replication governed by the mutant 
+polymerase.
+20. How does the initiation step of transcription differ 
+from that of DNA replication?
+A) Replication involves a DNA-dependent DNA 
+polymerase, while transcription utilizes an 
+RNA-dependent RNA polymerase.
+B) DNA replication is semiconservative 
+and utilizes Okazaki fragments, while 
+transcription forms a single-stranded product.
+C) Transcription relies on sigma factors while 
+DNA replication uses particular points in the 
+DNA known as origins.
+D) The processes do not differ notably; both 
+transcription and replication require RNA 
+primers due to the free -OH groups at their 3' 
+ends.
+
+===PAGE 14===
+
+ 
+Biology
+5
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+21. An mRNA transcript begins with the sequence 
+5' CUUUACUGUAAG 3'. A point mutation into 
+which of the following sequences will yield a 
+truncated protein?
+I. 
+5'-CUUUAAUGUAAG-3'
+II. 5'-GUUUACUGUAAG-3'
+III. 5'-CUUUACUGAAAG-3'
+IV. 5'-CUUUACUGUAGG-3'
+A) I only
+B) I and III
+C) I, II, and IV
+D) I, III, and IV
+22. Advantages of the triplet genetic code include all of 
+these EXCEPT:
+A) each codon corresponds to one amino acid.
+B) the degeneracy of the system allows for silent 
+single-base mutations.
+C) one mRNA sequence can code for multiple 
+proteins.
+D) codon-anticodon binding allows for efficient 
+translation of RNA to protein.
+23. Which sequence of events correctly depicts the 
+conversion of DNA into protein in a eukaryotic 
+cell?
+A) DNA is translated into mRNA in the nucleus, 
+then transcribed into an amino acid chain in 
+the cytosol.
+B) DNA is transcribed into mRNA in the nucleus, 
+then translated into an amino acid chain in the 
+cytosol.
+C) DNA is transcribed into mRNA in the nucleus, 
+then translated into an amino acid chain in the 
+nucleus.
+D) DNA is transcribed into mRNA in the cytosol, 
+then translated into an amino acid chain.
+24. How does a codon recognize the correct 
+anticodon?
+A) The anticodon binds to the codon via 
+corresponding RNA sequences.
+B) The anticodon binds to the codon via a lock-
+and-key mechanism.
+C) The anticodon binds to the codon via 
+corresponding DNA sequences.
+D) The anticodon binds to the codon via 
+accessory proteins attached to the RNA.
+25. A certain protease has a catalytic pocket that 
+contains three consecutive glutamic acid residues. 
+This region is coded for by the mRNA sequence 
+5'-GAAGAAGAA-3'. If mutated, which new 
+sequence is most likely to yield the same protein 
+product as the wild-type?
+A) 5'-GAAGGAGAA-3'
+B) 5'-GAGGAGGAA-3'
+C) 5'-GAAUAAGAA-3'
+D) 5'-GAACAAGAA-3'
+Questions 26–27 rely on the figure below
+26. The sense strand of the DNA corresponding to 
+a typical membrane-bound protein contains the 
+segment 5'-TTTTTCGTG-3'. From the N to the C 
+terminus, the associated protein sequence is: 
+A) phenylalanine, leucine, valine.
+B) valine, phenylalanine, phenylalanine.
+C) histidine, glutamic acid, lysine.
+D) phenylalanine, phenylalanine, valine.
+27. Part of an mRNA transcript created from the same 
+gene reads 5'-CAUUCAGAA-3'. Where within the 
+protein structure would this sequence most likely 
+be found?
+A) The cytosolic domain
+B) The transmembrane domain
+C) The hydrophobic core
+D) B and C are equally likely.
+
+===PAGE 15===
+
+MCAT QBOOK: MORE MCAT PRACTICE
+6 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+28. Twenty standard amino acids are found in typical 
+human proteins. How many unique mRNA codons 
+exist? 
+A) 16
+B) 20
+C) 32
+D) 64
+29. The table below shows the relative binding energies 
+of six distinct codon-anticodon pairings.
+ 
+Which of the codons listed in the table likely attach 
+to their anticodon via a wobble base pairing? 
+A) AAA, CAC, GAA
+B) AAG, CAC, GAA
+C) AAG, CAU, GAG
+D) AAA, CAU, GAG
+30. A wide variety of biological life forms carry their 
+genetic information in the form of DNA. This 
+genetic material is converted into RNA, which 
+is then used to construct protein. One type of 
+organism or agent that forms an exception to this 
+rule is:
+A) archaebacteria. 
+B) fungi.
+C) at least some dsDNA viruses.
+D) at least some positive-sense ssRNA viruses.
+31. A researcher is comparing two proteins, a wild-
+type variant of albumin (A) and a mutant version 
+of that same protein (B), by running them on an 
+SDS-PAGE gel (samples loaded at the top), below.
+ 
+Which type of mutation likely occurred?
+A) Silent
+B) Missense
+C) Nonsense
+D) Frameshift
+32. During replication, a single nucleotide was added 
+to the coding portion of a gene, shown below in 
+bold.
+ 
+ 
+5'-AUGGGACGCUAGAACGU-3'
+ 
+What type of mutation is exemplified by this 
+change?
+I. 
+Insertion 
+II. Nonsense
+III. Frameshift
+IV. Silent
+A) I only
+B) I and III
+C) I and IV
+D) I, II, and III
+33. During the gene rearrangement involved in 
+antibody production, important genes are 
+enzymatically connected by random strings of 
+nucleotides. However, for these genes to be “in 
+frame,” they must be read during translation 
+using the same reading frame. Based on this 
+information, what percentage of antibodies 
+produced during this process will be out of frame, 
+and therefore useless?
+A) 0%
+B) 33%
+C) 67%
+D) 100%
+34. The concept of “wobble” is most closely related to:
+A) silent mutations.
+B) deletion mutations.
+C) translocation mutations.
+D) insertion mutations.
+35. Suppose that the karyotype of a fetus shows an 
+abnormally long chromosome 9 and an abnormally 
+short chromosome 22. Which kind of error likely 
+occurred during development? 
+A) A nondisjunction 
+B) A translocation
+C) A missense mutation
+D) A nonsense mutation
+
+===PAGE 16===
+
+ 
+Biology
+7
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+36. If a certain protein is known to be the product of a 
+nonsense mutation, which of the following codons 
+is most likely to appear prematurely in its mRNA 
+transcript?
+A) AUG
+B) UUU
+C) CAG
+D) UAG
+37. To confirm that a protein has a silent mutation, a 
+scientist should use:
+A) one-dimensional gel electrophoresis.
+B) two-dimensional SDS-PAGE.
+C) a Western blot.
+D) Sanger sequencing.
+38. The wild-type and mutated forms of an mRNA 
+transcript are shown below.
+ 
+ 
+WT: 5'-CAUUAUGACCGGAGU-3'
+ 
+ 
+Mut: 5'-CAUUAGUGACCGGGAGU-3'
+ 
+What is the most specific way to classify this kind 
+of mutation? 
+A) Frameshift
+B) Substitution
+C) Silent
+D) Nonsense
+39. The results of a protein activity assay are shown 
+below.
+ 
+Of the choices below, which is the most likely 
+explanation for the reduced activity of the mutant 
+variant?
+A) A single amino acid was replaced with another 
+at a position far from the active site. 
+B) A two-base insertion caused a change in the 
+reading frame.
+C) A silent mutation occurred in the middle of a 
+sequence involved in coding for the active site. 
+D) A mutation coded for a less abundant tRNA 
+instead of a common one, slowing translation 
+significantly. 
+40. A missense mutation replaces an alanine residue 
+located in the interior of a soluble protein with a 
+serine residue. What will be the most likely effect 
+of this change on the protein?
+A) Folding will be disrupted due to the mistaken 
+inclusion of a polar amino acid. 
+B) Folding will be disrupted due to the mistaken 
+inclusion of an unusually bulky amino acid. 
+C) The protein will completely lose its function.
+D) The protein will be completely unaffected.
+41. Which of these statements concerning nucleic 
+acids is / are accurate?
+I. 
+DNA replication is more accurate than 
+RNA transcription due to the existence of 
+proofreading mechanisms.
+II. DNA and RNA are equally stable 
+macromolecules.
+III. Due to the presence of different bases, DNA 
+and RNA strands are unable to bind with one 
+another.
+IV. The genome of an organism can be entirely 
+composed of either DNA or RNA.
+A) I only
+B) I and IV
+C) II and IV
+D) I, II, and III
+42. DNA is rarely found outside its double-helical 
+form, while RNA is single-stranded and folds 
+on itself to form various structures. RNA’s wider 
+structural variety results in:
+A) RNA having a wider range of functions than 
+DNA.
+B) RNA being targeted less often for degradation.
+C) mRNA, tRNA, and rRNA being 
+interchangeable and able to perform similar 
+functions.
+D) RNA having less stability due to its single-
+stranded form.
+
+===PAGE 17===
+
+MCAT QBOOK: MORE MCAT PRACTICE
+8 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+43. Which of the following processes would be most 
+affected if an organism lost its ability to synthesize 
+snRNAs?
+A) Post-translational modification
+B) Post-transcriptional modification
+C) DNA synthesis
+D) RNA transcription
+44. While DNA serves almost exclusively as the 
+storage material for genetic information, RNA 
+can perform a wide variety of functions. These 
+functions include all of the following EXCEPT:
+A) catalyzing biochemical reactions.
+B) storing genetic information.
+C) forming organelles.
+D) establishing quaternary structures through 
+disulfide bonding.
+45. Which feature of RNA contributes most to its lack 
+of stability in the cytosol?
+A) RNA is single-stranded.
+B) RNA is synthesized by RNA polymerase, an 
+error-prone enzyme.
+C) RNA contains ribose rather than deoxyribose 
+sugars.
+D) RNA contains uracil, in contrast with DNA’s 
+thymine.
+Questions 46–47 rely on the figure below
+The following diagram depicts a model of the structure 
+of transfer RNA.
+46. At which position do aminoacyl tRNA synthetases 
+attach amino acid residues to the tRNA molecule?
+A) A 
+B) B
+C) C
+D) D
+47. The gene coding for a particular type of tRNA 
+becomes mutated in a way that changes its 
+anticodon sequence. What consequence will most 
+likely result from this change?
+A) Due to wobble, this tRNA will serve the same 
+function as non-mutated tRNA.
+B) Aminoacyl-tRNA synthetases will be unable to 
+recognize this tRNA.
+C) This tRNA will no longer be able to take part 
+in translation.
+D) This tRNA will recognize a different mRNA 
+codon.
+Questions 48–49 rely on the table below
+The error rate for several cellular processes is shown in 
+this table.
+48. Which post-transcriptional process is responsible 
+for the diversity of proteins that can be produced 
+from a single gene?
+A) The addition of a 5' cap
+B) The removal of introns and joining of exons
+C) The addition of a poly (A) tail
+D) The use of uracil instead of thymine
+
+===PAGE 18===
+
+ 
+Biology
+9
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+49. The fidelity, or accuracy, of transcription is crucial 
+to producing functional proteins. However, the 
+error rate in transcription is significantly higher 
+than that in DNA replication. All of the following 
+statements are accurate regarding the error rate of 
+transcription EXCEPT:
+A) RNA transcription lacks the proofreading 
+mechanisms inherent to DNA replication. 
+B) due to codon degeneracy, errors in 
+transcription may still result in the desired 
+polypeptide.
+C) errors in DNA replication are more lethal than 
+errors in RNA transcription.
+D) the addition of the poly (A) tail and the 5' 
+cap often change the sequence of the mRNA 
+transcript.
+50. snRNPs are comprised of which two types of 
+molecules?
+A) RNA and protein
+B) DNA and RNA
+C) Introns and exons
+D) IgG and IgM antibodies
+51. Post-transcriptional processing involves several 
+modifications to pre-mRNA molecules. One 
+such process, mRNA capping, occurs when 
+the capping enzyme complex (CEC) attaches a 
+modified guanine nucleotide to the 5' end of the 
+newly transcribed pre-mRNA via an unusual 5' 
+to 5' triphosphate linkage. Functions of the 5' cap 
+include:
+I. 
+protection of the transcript from exonuclease 
+degradation.
+II. promotion of translation by serving as an 
+attachment point for ribosomes.
+III. enabling of nuclear export.
+A) I and II
+B) I and III 
+C) II and III
+D) I, II, and III
+52. A spliceosome is a complex structure assembled 
+from snRNAs and their associated proteins. If 
+an organism was suddenly unable to produce 
+spliceosomes, what would be the likely result?
+A) Transcription of mRNA from DNA would no 
+longer occur.
+B) The dysfunctional machinery would severely 
+limit DNA replication.
+C) The organism would produce mRNA identical 
+to pre-mRNA.
+D) The recombination of different exons would 
+not occur, limiting the diversity of gene 
+products.
+53. Which of these molecules is produced by the Dicer 
+enzyme and is involved in RNA silencing?
+A) tRNA
+B) rRNA
+C) miRNA
+D) siRNA
+54. A virus invades a cell and rapidly produces 
+antisense RNA that is complementary to a gene’s 
+promoter sequence. What will happen to the 
+transcription of the gene?
+A) Transcription will be unaffected.
+B) Transcription will be severely reduced.
+C) The sense strand of the gene will still be 
+transcribed.
+D) Due to the presence of the virus, any mRNA 
+transcribed will be rapidly degraded by 
+miRNA.
+55. RNA polymerase catalyzes the production of the 
+mRNA transcript. How would this enzyme be 
+adversely affected if it lacked its specific sigma 
+factor?
+A) RNA polymerase would be unable to bind to 
+gene promoters.
+B) The creation of the transcription bubble would 
+be inhibited.
+C) A helicase enzyme would be required to 
+unwind the DNA double helix.
+D) RNA polymerase would be unable to 
+differentiate between nucleotides, leading to 
+incorrect base pairing.
+
+===PAGE 19===
+
+MCAT QBOOK: MORE MCAT PRACTICE
+10 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+56. The figure below depicts a proposed example of 
+alternative splicing.
+ 
+A, B, and D represent exons, while C represents an 
+intron. Is this situation possible?
+A) No, because alternative splicing involves the 
+removal of introns only.
+B) Yes, because alternative splicing can remove 
+exons in addition to introns.
+C) No, because alternative splicing does not relate 
+to the removal of introns or exons.
+D) Yes, because introns and exons are paired and 
+can only be removed together.
+57. The RNA-induced silencing complex (RISC) is 
+a ribonucleoprotein that uses dsRNA fragments 
+to target mRNA transcripts. This process is most 
+accurately characterized as:
+A) complementary base pairing.
+B) RNA interference.
+C) mRNA targeting.
+D) intragenic RNA silencing.
+58. The following image represents a mature 
+eukaryotic mRNA that has undergone post-
+transcriptional modification.
+ 
+What best describes the function of D?
+A) It contains the genetic information necessary 
+for protein synthesis.
+B) It promotes translation by serving as a docking 
+point for ribosomes.
+C) It forms part of the untranslated region that 
+signals the termination of protein synthesis.
+D) It prevents enzymatic degradation of the 
+mRNA molecule.
+59. Transcription differs from DNA replication in all 
+of the following ways EXCEPT:
+A) transcription produces a single-stranded 
+product.
+B) transcription requires a promoter, while DNA 
+replication does not.
+C) transcription only involves certain segments of 
+the DNA sequence at a time.
+D) transcription reads DNA from 3'-5'.
+60. The most memorable difference between DNA and 
+RNA relates to their composition. While thymine 
+is a building block in DNA, it is replaced by 
+uracil in RNA. Which of the following is another 
+functional difference between DNA and RNA?
+A) The genome of viruses is exclusively made up 
+of DNA.
+B) The inherent instability of RNA molecules 
+renders them unable to store genetic 
+information.
+C) Certain RNA molecules possess the ability to 
+catalyze biochemical reactions, while DNA 
+molecules cannot.
+D) RNA molecules, unlike DNA, are incapable of 
+hydrogen bonding.
+61. Which of the following statements about enzymes 
+are true?
+I. 
+Enzymes are always composed of protein.
+II. An enzyme reduces the activation energy of 
+the forward reaction, while leaving the reverse 
+reaction unchanged.
+III. Enzymes are not consumed during the 
+catalysis of a reaction.
+IV. An enzyme’s activity is heavily dependent on 
+pH and temperature. 
+A) I and III
+B) III and IV
+C) I, II, and III
+D) II, III and IV
+
+===PAGE 20===
+
+ 
+Biology
+11
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+62. The “lock and key” model was introduced in 1894 
+by Emil Fischer to explain enzyme specificity. This 
+model was later revised to establish the modern 
+“induced fit” model. All of the following are 
+advantages of the “induced fit” model EXCEPT:
+A) it accounts for the flexibility of the active site.
+B) it describes the slight change in substrate 
+conformation upon entering the active site of 
+an enzyme.
+C) it more effectively explains molecular 
+recognition in the presence of inhibitors and 
+competitors.
+D) it states that substrates and enzymes possess 
+complementary geometric shapes that facilitate 
+specificity.
+63. If there is a change in the amino acid sequence 
+of a protein, which level of protein structure is 
+guaranteed to be affected?
+A) Primary structure
+B) Secondary structure
+C) Tertiary structure
+D) Both A and B are correct.
+64. A common phenomenon involving changes in 
+protein structure can be observed when frying 
+eggs. The transparent gel surrounding the yolk 
+becomes opaque and hardens when exposed to 
+high levels of heat. What specific mechanism is 
+responsible for this change?
+A) Breaking of the hydrogen bonds that form the 
+protein’s secondary structure
+B) Disruption of the hydrophobic interactions 
+that form the protein’s tertiary structure
+C) Separation of the different polypeptide chains 
+at the level of primary structure 
+D) Formation of double and triple bonds between 
+proteins to create quaternary structure
+65. Cysteine is a semi-essential amino acid that 
+is involved in numerous vital functions. In 
+addition to the binding of metal ions, cysteine 
+also participates in many post-translational 
+modifications. What unique characteristic of 
+cysteine allows it to play such a crucial role?
+A) Cysteine’s versatility allows it to interact with 
+both hydrophilic and hydrophobic amino 
+acids.
+B) Cysteine is the only commonly found 
+D-amino acid in the human body.
+C) Cysteine contains a thiol group that enables it 
+to act in a tremendous variety of reactions.
+D) Cysteine is generally found bound to other 
+cysteine residues via disulfide bonds.
+66. This figure depicts proline, one of the twenty 
+standard amino acids. Its uniqueness gives it a 
+specific role in the formation of protein secondary 
+structure.
+ 
+The structural element of proline that enables this 
+role is:
+A) the fact that proline, unlike most amino acids, 
+is not chiral; this reduces its reactivity.
+B) its amino group, which can hydrogen bond in 
+alpha helices and beta-pleated sheets.
+C) its terminal carboxyl group, which allows 
+proline to bind to amino acids above and 
+below it.
+D) the cyclic structure of its side chain bound to 
+its own amino group, which gives it rigidity. 
+67. One important reactant in a polymerase chain 
+reaction (PCR) is heat-resistant Taq polymerase, 
+the enzyme responsible for elongating DNA 
+strands. Why must this enzyme be heat-resistant?
+A) It prevents the polymerase from denaturing 
+during the thermal cycling of PCR.
+B) Taq polymerase is responsible for maintaining 
+the structure of the newly synthesized DNA.
+C) DNA replication is exothermic, and the heat 
+released could denature normal polymerases.
+D) Heat resistance protects Taq polymerase from 
+changes in pH.
+
+===PAGE 21===
+
+MCAT QBOOK: MORE MCAT PRACTICE
+12 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+68. The figure below depicts a model of enzyme 
+regulation.
+ 
+Which term accurately characterizes the function 
+of the component marked “D”?
+A) Substrate agonist
+B) Allosteric regulator
+C) Competitive inhibitor
+D) Irreversible analog
+69. The interaction between statins and grapefruit 
+juice has long been an object of research, as certain 
+components in grapefruit juice appear to inhibit 
+cytochromes in the stomach. Why might this 
+interaction be considered harmful?
+A) Molecules in the juice bind irreversibly to the 
+cytochromes, resulting in a toxic product.
+B) Cytochromes are important in regulation of 
+multiple systems, and inhibition of them halts 
+digestion.
+C) Stomach pH is regulated by cytochromes, 
+and their inhibition results in significant 
+fluctuations in acidity.
+D) Inhibition of the cytochromes reduces 
+breakdown of the statin, leading to potential 
+overdose.
+70. Feedback mechanisms are vital to maintaining the 
+homeostasis of an organism. Due to a mutation in 
+the gene encoding it, a certain enzyme suddenly 
+displays an increased affinity for numerous other 
+molecules present in the organism. How would 
+this affect the catalysis of the enzyme’s original 
+substrate(s)?
+A) Pathways involving this enzyme would 
+terminate early.
+B) Feedback mechanisms involved would take a 
+longer period of time. 
+C) The enzyme’s products would increase in 
+concentration.
+D) The metabolic pathway would shut down.
+71. A scientist has created a drug that targets a 
+pathogenic bacterium. After administering the 
+drug, the bacterial cells exhibit normal levels of 
+RNA and DNA, but low levels of protein. Which 
+bacterial process is most likely interrupted by this 
+drug?
+A) DNA replication
+B) Transcription
+C) Translation
+D) Binary fission, as bacteria do not undergo 
+translation
+72. Translation is the process by which protein is 
+produced from mRNA. From beginning to end, 
+the four phases of translation are:
+A) translocation, initiation, elongation, and 
+termination.
+B) initiation, translocation, elongation, and 
+termination.
+C) translocation, elongation, initiation, and 
+termination.
+D) initiation, elongation, translocation, and 
+termination.
+73. Tetracycline is a broad-spectrum antibiotic used 
+to treat conditions ranging from urinary tract 
+infections to acne. It is known to specifically 
+inhibit bacterial protein synthesis by binding to a 
+ribosomal subunit. Based on this mechanism of 
+action, tetracycline likely targets:
+A) 30S, the smaller subunit.
+B) 40S, the smaller subunit.
+C) 70S, the smaller subunit. 
+D) 60S, the larger subunit.
+
+===PAGE 22===
+
+ 
+Biology
+13
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+Questions 74–76 rely on the figure below 
+In the following table, each trinucleotide mRNA codon 
+corresponds to a charged amino acid present on a 
+tRNA molecule.
+74. In theory, perfect one-to-one complementation 
+between mRNA codons and tRNA anticodons 
+would require 64 individual tRNAs. However, 
+only 31 such molecules are actually required 
+for translation. The phenomenon by which 
+noncanonical Watson-Crick base pairs may form 
+between tRNA and mRNA, thus reducing the 
+minimum number of anticodons, is known as:
+A) codon mutation; codons not exactly 
+recognized by tRNA are deleted and replaced 
+with a recognizable codon.
+B) codon mutation; extra nucleotides are inserted 
+before codons that are not perfectly recognized 
+by tRNA.
+C) wobble base pair; the first two nucleotides of 
+a codon do not have to follow Watson-Crick 
+base pairing rules. 
+D) wobble base pair; the last two nucleotides of 
+a codon do not have to follow Watson-Crick 
+base pairing rules. 
+75. A point mutation changes a UAU codon to UAA. 
+What effect will this have on the polypeptide? 
+A) A stop codon will replace tyrosine, 
+terminating translation. 
+B) A cysteine residue will replace tyrosine.
+C) No effect; since both codons code for tyrosine, 
+this will not affect the polypeptide product.
+D) A stop codon will replace tyrosine, and 
+translation will not occur. 
+76. A wild-type mRNA transcript is shown below.
+ 
+ 
+5' AUG GAU GAA CAU UGU UCU GUU 
+UUU ACU 3'
+ 
+In a mutant polypeptide transcribed from this 
+sequence, a point mutation results in a C5W amino 
+acid mutation. The mRNA transcript coding for 
+this mutant protein is most likely:
+A) 5' AUG GAU GAA CAU UGU UCU GUU 
+UUU ACU 3'.
+B) 5' AUG GAU GAA CAU UGG UCU GUU 
+UUU ACU 3'.
+C) 5' AUG GAU GAA CAU GGC UCU GUU 
+UUU ACU 3'.
+D) 5' AUG GAU GAA CAU UGU UGG GUU 
+UUU ACU 3'.
+77. Although eukaryotes differ from prokaryotes 
+in many significant ways, their replication, 
+transcription, and translation mechanisms are 
+fairly similar. Which of these are properties of 
+translation that are shared by eukaryotes and 
+prokaryotes?
+I. 
+The first amino acid of a polypeptide is some 
+form of methionine.
+II. The synthesized mRNA is monocistronic.
+III. The ribosomes that are utilized are composed 
+of two subunits.
+A) I only
+B) III only
+C) I and III
+D) I, II, and III
+78. The eukaryotic translation termination factor 1 
+(eRF1) is a release factor (eRF) that recognizes and 
+decodes all of the stop codons. How many such 
+codons does eRF1 recognize?
+A) 1
+B) 2
+C) 3
+D) 4
+
+===PAGE 23===
+
+MCAT QBOOK: MORE MCAT PRACTICE
+14 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+79. The central dogma of molecular biology, shown 
+below, attempts to explain the flow of biological 
+information. However, since its introduction in 
+1956 by Dr. Francis Crick, many examples have 
+been uncovered that do not follow this pathway.
+ 
+All of the following fit with the traditional view of 
+the central dogma EXCEPT:
+A) DNA in the human male zygote becoming 
+demethylated to activate transcription.
+B) the Moloney murine leukemia virus using 
+reverse transcriptase to synthesize DNA from 
+an RNA template.
+C) pre-mRNAs from the Drosophila melanogaster 
+gene dsx undergoing splicing prior to 
+translation.
+D) Bacillus acidocaldarius, a thermoacidophilic 
+eubacterium, possessing a DNA polymerase 
+that can function at low pH.
+80. Shown below is a prokaryotic ribosome along with 
+an mRNA transcript, poised for translation.
+ 
+Which choice gives the correct function of either 
+the E, P, or A site?
+A) At the A site, the growing polypeptide chain is 
+released after translation. 
+B) At the E site, incoming charged aminoacyl-
+tRNAs bind to the complementary mRNA.
+C) At the P site, the peptidyl tRNA is created 
+through the covalent bonding of consecutive 
+amino acids.
+D) All of the above are correct.
+81. What is a major difference between the human 
+genome and that of E. coli?
+A) The human genome contains 106 base pairs, 
+while that of E. coli contains 109.
+B) The genome of E. coli contains many more 
+extraneous segments of DNA than the human 
+genome. 
+C) The E. coli genome is contained within a few 
+chromosomes, while the human genome is 
+composed of 46.
+D) The human genome includes multiple 
+chromosomes, while that of E. coli is composed 
+of a single circular chromosome. 
+82. The correct sequence of DNA packaging in 
+chromosomes, from the smallest component to the 
+most complete form, is: 
+A) double-stranded DNA ! chromatin ! 
+histones ! nucleosomes.
+B) double-stranded DNA ! histones ! 
+nucleosomes ! chromatin. 
+C) chromatin ! double-stranded DNA ! 
+histones ! nucleosomes.
+D) chromatin ! double-stranded DNA ! 
+nucleosomes ! histones.
+83. What consequence is expected if a tumor cell is 
+suddenly rendered unable to produce telomerase?
+A) The cell would divide faster and more 
+prolifically.
+B) The cell would eventually stop dividing unless 
+it found another way to produce telomeres.
+C) The cell would be more resistant to apoptosis. 
+D) This change would have no effect, as tumor 
+cells do not produce telomerase.
+
+===PAGE 24===
+
+ 
+Biology
+15
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+84. Two chromosomes are shown below.
+ 
+Given the positions of their centromeres, how 
+would we label these two structures?
+A) A: metacentric; B: telocentric 
+B) A: telocentric; B: metacentric 
+C) A: submetacentric; B: acrocentric
+D) A: metacentric; B: antimetacentric 
+Questions 85–86 rely on the figure below
+85. What structure is denoted by the arrow marked 
+“1,” and what is its function?
+A) It is an acetylated histone tail that increases 
+the transcription of that segment of the 
+chromosome.
+B) It is an extra histone cluster that decreases 
+the transcription of that segment of the 
+chromosome.
+C) It is an acetylated histone tail that decreases 
+the transcription of that segment of the 
+chromosome.
+D) It represents methylation of guanine 
+and cytosine nucleotides that decreases 
+the transcription of that segment of the 
+chromosome.
+86. The arrow labeled “2” points to a particular feature 
+of euchromatin. What is this feature, and what role 
+does it play in the cell?
+A) It is an extra histone cluster that decreases 
+the transcription of that segment of the 
+chromosome.
+B) It represents methylation of guanine 
+and cytosine nucleotides that increases 
+the transcription of that segment of the 
+chromosome.
+C) It is an acetylated histone tail that increases 
+the transcription of that segment of the 
+chromosome.
+D) It is an acetylated histone tail that decreases 
+the transcription of that segment of the 
+chromosome.
+87. Which histone protein is associated with the 
+“sealing off” of the DNA as it enters and exits the 
+nucleosome? 
+A) H2A
+B) H2B
+C) H1
+D) H3
+88. When viewed under a light microscope, what 
+visual difference exists between heterochromatin 
+and euchromatin?
+A) None; both heterochromatin and euchromatin 
+are too small to be viewed under a light 
+microscope. This action requires the use of an 
+electron microscope.
+B) Heterochromatin appears to be located 
+outside of the nucleus, while euchromatin is 
+intranuclear.
+C) Heterochromatin appears extremely light, 
+while euchromatin appears dark.
+D) Heterochromatin appears extremely dark, 
+while euchromatin appears light.
+
+===PAGE 25===
+
+MCAT QBOOK: MORE MCAT PRACTICE
+16 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+89. The human genome contains a large number of 
+repetitive sequences that have no known function. 
+What happens to these sequences during the life of 
+a cell?
+A) These sequences are removed during meiosis 
+to prevent their inheritance by the next 
+generation. 
+B) These sequences are translated, but the 
+proteins that they code for are immediately 
+destroyed.
+C) These sequences are spliced out before 
+transcription takes place. 
+D) The sequences are spliced out before 
+translation takes place.
+90. The function of DNA gyrase is to:
+A) unwind dsDNA to allow DNA polymerase to 
+perform replication. 
+B) help introduce supercoils in DNA by using 
+ATP to twist the structure of the double helix.
+C) add nucleotides to the growing DNA molecule 
+during replication.
+D) add RNA primers to each strand of DNA so 
+that replication can occur.
+91. Gene A, Gene B, and Gene C (shown below) are 
+present in the same operon in a certain bacterial 
+genome. They are transcribed to produce mRNA 
+A, mRNA B, and mRNA C, respectively.
+ 
+The transcriptional mRNA products will be found 
+in which relative amounts?
+A) mRNA A will be the most abundant.
+B) mRNA B will be the most abundant.
+C) mRNA C will be the least abundant.
+D) Equal mRNA levels will be observed.
+92. An operon is a functional group of genes that can 
+be organized together. All of the following are 
+regulatory sequences within the operon EXCEPT:
+A) the operator.
+B) protein coding regions.
+C) the enhancer.
+D) the promoter.
+93. In E. coli, the lac operon contains the genes that 
+encode the transport and metabolism of lactose. 
+The graph below shows the level of lac operon 
+mRNA transcripts when lactose is first added to, 
+then removed from, an E. coli culture.
+ 
+Based on this graph, lactose is a(n):
+A) repressor.
+B) inducer.
+C) operator.
+D) operon.
+94. In a positive repressible operon, an activator 
+protein binds to the DNA and the genes are 
+actively transcribed. In such a case, the addition of 
+which of the following would stop transcription?
+A) An inducer
+B) RNA polymerase
+C) An inhibitor
+D) An activator
+95. A scientist is attempting to characterize a novel 
+bacterial operon. Genes on this operon generally 
+are not transcribed due to a repressor protein 
+that binds to the operator. However, the scientist 
+discovers that the addition of an inducer activates 
+transcription. Which of the following statements is 
+accurate?
+A) This operon is regulated by negative induction.
+B) This operon is regulated by negative 
+repression.
+C) This operon is regulated by positive induction.
+D) This operon is regulated by positive repression. 
+
+===PAGE 26===
+
+ 
+Biology
+17
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+96. Which of the following are DNA-binding proteins 
+that are NOT involved in eukaryotic transcription 
+or transcriptional regulation?
+A) Transcription factors
+B) RNA polymerase
+C) Nucleases
+D) Histones
+97. A scientist is developing a new class of antibiotics 
+to target pathogenic prokaryotes without harming 
+their eukaryotic hosts. Which of the following 
+would be a logical target for these drugs?
+A) The Shine-Dalgarno sequence
+B) RNA polymerase II
+C) The TATA box
+D) Any of the above
+98. Recent investigations have shown that mammalian 
+cells use the gene amplification of specific 
+DNA sequences to facilitate survival under 
+stress. During a stressful period, the number of 
+transcripts made from these genes:
+A) decreases.
+B) increases.
+C) remains constant.
+D) cannot be determined.
+99. A species of fly has a set of genes (yellow) 
+responsible for synthesizing black melanin. 
+Production of this pigment results in dark, round 
+colorations on the flies’ white wings. Deletion of 
+the yellow genes’ enhancer sequence will result in 
+which of the following phenotypes? 
+A) Dark pigmented spots on the wings
+B) Asymmetrical wing size
+C) Smaller wing size
+D) A lack of pigmented spots on the wings
+100. Which of the following are found in both 
+prokaryotic and eukaryotic mechanisms of 
+transcriptional regulation?
+I. 
+Promoter sequences
+II. Operons
+III. Enhancers
+IV. Repressors
+A) I only
+B) I and IV
+C) I, II, and III
+D) I, III, and IV
+101. Which of the following are true of eukaryotic 
+mRNA before it leaves the nucleus?
+I. 
+A 3' cap is added.
+II. A 5' cap is added.
+III. Exons are spliced out of the sequence.
+IV. Introns are spliced out of the sequence.
+A) I and III
+B) I and IV
+C) II and III
+D) II and IV
+102. All of these modifications occur immediately 
+after transcription in humans EXCEPT:
+A) a methyl and phosphate group are added to 
+one end of the new transcript.
+B) one hundred or more adenine nucleotides are 
+added to one end of the new transcript.
+C) introns are spliced out to yield a mature 
+mRNA.
+D) the pre-mRNA leaves the nucleus for 
+processing in the cytosol.
+103. The TP53 gene is found in many distinct cell 
+types. Mutations of the wild-type TP53 gene can 
+be caused by environmental factors, diminishing 
+the gene’s expression and leading to uncontrolled 
+cell division. Which of the following is most likely 
+true of the TP53 gene?
+A) It is an oncogene.
+B) It is a proto-oncogene.
+C) It is a tumor suppressor gene.
+D) It is found exclusively in unicellular 
+organisms.
+
+===PAGE 27===
+
+MCAT QBOOK: MORE MCAT PRACTICE
+18 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+Questions 104–105 rely on the table 
+below
+Several geneticists aimed to assess the potential 
+roles of three genes in human cancers. To do so, 
+they constructed several experimental groups. Two 
+consisted of lung cancer and leukemia patients, 
+respectively, in their first month of treatment; the final 
+group was a control. mRNA activity was measured 
+using northern blotting and mapped below. Note that 
+values are quantified relative to the cells of healthy 
+patients. (Note: the mRNA activity level of healthy 
+patients was normalized to 1.)
+104. Which, if any, of these genes is implicated in a 
+role as a tumor suppressor?
+A) RC18
+B) AR12
+C) JN87
+D) More than one of the above are correct.
+105. Of the genes studied, the most likely candidate(s) 
+for an oncogene is/are:
+A) both RC18 and JN87.
+B) both AR12 and JN87.
+C) RC18 only.
+D) JN87 only.
+Questions 106–107 rely on the table below
+Studies have shown that stress level plays a key role 
+in the methylation and acetylation of certain genes 
+in mice. Researchers constructed three experimental 
+groups of mice of approximately the same age and 
+weight. They subjected one of the experimental groups 
+to periodic stress punctuated by periods of rest, while 
+they made a second group subject to stress without 
+rest. The scientists used northern blotting to measure 
+the relative transcriptional activity of three genes and 
+recorded their data as shown below.
+106. Considering the data above, which, if any, of the 
+genes are likely acetylated in response to stress?
+A) 1 and 2
+B) 1 and 3
+C) 2 and 3 
+D) None of the genes appear to be acetylated in 
+response to stress.
+107. It has been discovered that the methylation of 
+certain genes in pregnant mice can be inherited 
+by their offspring. Which of the three genes 
+studied are most probably methylated in newborn 
+mice whose mothers were exposed to severe long-
+term stress?
+A) 1 only
+B) 2 only
+C) 3 only
+D) 1 and 3
+108. Unlike acetylation, DNA methylation:
+A) inhibits transcription.
+B) promotes transcription.
+C) may either inhibit or promote transcription 
+depending on the region of the chromosome.
+D) none of the above; methylation and 
+acetylation affect transcription in the same 
+manner.
+109. Post-transcriptional silencing is theorized to 
+prevent some gene expression in response to 
+stress. Which of these modifications could 
+prevent functional mRNA from being translated?
+A) Methylation
+B) Acetylation
+C) Binding to miRNA
+D) Binding to tRNA
+110. A sample of non-coding RNA is isolated from a 
+cell’s nucleus, where it was observed to exist in 
+close proximity to pre-mRNA. This sample most 
+likely contains:
+A) snRNA.
+B) rRNA.
+C) tRNA.
+D) snoRNA.
+
+===PAGE 28===
+
+ 
+Biology
+19
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+111. A certain bacterium has two different strains that 
+are found in the human pharynx. These strains 
+have a nearly identical complement of genetic 
+material but exhibit very different virulence due 
+to varying gene expression. These strains:
+A) exhibit different behaviors due to major 
+differences in their genotype.
+B) must be from two different species.
+C) exhibit different phenotypes.
+D) will have different levels of antibiotic 
+resistance.
+112. A mother gives birth to dizygotic (fraternal) twin 
+boys. Both boys appear healthy, behave similarly, 
+and develop normally during the first few weeks 
+of life. During a well-baby checkup, the physician 
+administers a blood test revealing that only one of 
+the boys has an elevated level of a certain plasma 
+solute, indicating that the boy has inherited a 
+recessive disease that runs in the father’s family. 
+These boys:
+A) have the same genotype but different 
+phenotypes.
+B) have the same phenotype but different 
+genotypes.
+C) have the same genotype and phenotype.
+D) have different genotypes and phenotypes.
+113. A researcher has a fruit fly that demonstrates the 
+dominant characteristics for eye color (E) and 
+wing size (W) but does not know its genotype. To 
+determine the fly’s genotype, she could carry out 
+which of the following procedures?
+A) A test cross with an organism that has the 
+genotype WWee
+B) A test cross with an organism that has the 
+genotype wwee
+C) A northern blot to detect the DNA associated 
+with the w and e genes
+D) A western blot to detect the DNA associated 
+with the W and E genes
+114. The ABO blood antigen groups are an example of:
+A) multiple possible alleles at a single locus.
+B) multiple loci that can have a single allele.
+C) a single allele and a single locus with variable 
+expression.
+D) degeneration in the genetic code due to 
+inbreeding.
+115. A geneticist wishing to carry out a hybridization 
+experiment in pea plants in which every offspring 
+is a hybrid should begin with which of the 
+following crosses?
+A) AABB x AABB
+B) AABB x aabb
+C) aabb x aabb
+D) AaBb x AaBb
+116. A flower displaying the dominant trait (long stem, 
+L) is crossed with a flower displaying the recessive 
+trait (short stem, l). Half of the offspring produced 
+have long stems and half have short stems. The 
+genotypes of the parent flowers must have been:
+A) LL and ll
+B) LL and LL
+C) Ll and Ll
+D) Ll and ll
+117. In regions of the world where malaria is endemic, 
+it has been observed that the frequency of the 
+sickle cell allele is significantly higher than in 
+other regions, despite the reduced survival rate 
+for individuals born homozygous recessive (with 
+the disease) in these regions. The persistence of 
+the allele in these regions is likely due to:
+A) hybrid vigor, or heterosis.
+B) negative selection pressure on those with the 
+disease.
+C) enhanced survival rates among inbreeding 
+populations with the allele.
+D) better medical care leading to increased 
+survival rates.
+118. In a certain population of grasshoppers, black 
+eyes (B) are dominant over yellow eyes (b) and 
+approximately 3/4 of the population has black 
+eyes. Over the course of several generations a 
+number of events lead to a shift making yellow 
+eyes the more common trait, with nearly 98% of 
+the population demonstrating yellow eyes. In this 
+population:
+A) the trait for yellow eyes has become 
+dominant.
+B) having black eyes must have been strongly 
+selected against.
+C) yellow eyes are the wild type.
+D) overall fitness has been reduced.
+
+===PAGE 29===
+
+MCAT QBOOK: MORE MCAT PRACTICE
+20 
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+119. In Huntington’s disease, the wild-type allele, h, is 
+recessive to the disease allele, H. The persistence 
+of an autosomal dominant allele that is fatal in 
+100% of cases is best explained by which of the 
+following?
+A) The dominant allele only has moderate 
+negative effects during adolescence and 
+young adulthood.
+B) The wild-type h allele continues to 
+spontaneously mutate into the dominant H 
+allele.
+C) The persistence of any given allele in nature 
+is determined almost wholly by chance.
+D) The disease has no effects until the individual 
+has reached an age far past the normal age 
+for reproduction.
+120. In a certain individual, a genetic error led to a 
+translocation in which a segment of the p arm on 
+chromosome 14 was broken off and attached to 
+the q arm of chromosome 16. The translocation 
+created no observable changes in the individual’s 
+traits. For the genes located on the translocated 
+segment:
+A) the loci have changed but the alleles have 
+remained the same.
+B) the loci and the alleles have both changed.
+C) the loci have remained the same but at least 
+some of the alleles must have been altered.
+D) the transcriptional machinery will be unable 
+to read either strand of the DNA.
+121. The carrier frequency for cystic fibrosis, an 
+autosomal recessive disorder, in the Ashkenazi 
+Jewish population is 1 out of every 24 individuals. 
+A baby born to a couple from this demographic is 
+tested for this mutation. A family history reveals 
+that the mother’s father was afflicted with cystic 
+fibrosis. What is the approximate probability that 
+the child will be a carrier of this disease? 
+A) 1/1150
+B) 1/100
+C) 1/50
+D) 1/24
+122. An orchid breeder crosses two types of orchid, 
+one that is tall with a petite bloom and one 
+that is short with a large bloom, with the goal 
+of obtaining a tall orchid with a large bloom. 
+The first cross yields all short flowers with 
+petite blooms. What is the expected yield of tall 
+orchids with large blooms if bred from the first 
+generation?
+A) 6.25%
+B) 18.75%
+C) 25%
+D) 50%
+123. A woman (but not her husband) suffers from 
+Von Willebrand disease, an autosomal dominant 
+condition that shows 50% penetrance. This 
+condition is expected to be phenotypically 
+expressed in what percent of her offspring?
+A) 25%
+B) 33%
+C) 50%
+D) 75%
+124. A black, short-haired cat has a litter of kittens 
+with an orange, long-haired cat. The litter is 
+entirely long-haired with mottled black and 
+orange fur. What must be the inheritance pattern 
+for each trait?
+A) Short hair is dominant to long hair, and color 
+shows incomplete dominance.
+B) Short hair is dominant to long hair, and color 
+shows codominance.
+C) Long hair is dominant to short hair, and 
+color shows incomplete dominance. 
+D) Long hair is dominant to short hair, and 
+color shows codominance.
+Questions 125–126 rely on the figure 
+below
+A particular propensity for joint pain is inherited 
+according to the following pedigree.
+
+===PAGE 30===
+
+ 
+Biology
+21
+© 2016 Next Step Pre-Med. All rights reserved. No duplication or distribution of this document is permitted without express written consent.
+125. If only the individuals outlined by the gray box 
+were considered, which type(s) of inheritance 
+would this trait be thought to display?
+A) Autosomal dominant only
+B) Autosomal recessive only
+C) X-linked recessive only
+D) Autosomal recessive or X-linked recessive
+126. What is the probability that the female labeled “A” 
+is at least a carrier of this condition?
+A) 0%
+B) 25%
+C) 50%
+D) 100%
+127. A trait is expressed in all individuals who carry 
+a certain gene, but causes symptoms that vary in 
+intensity depending on diet and exercise. What 
+can be said about the penetrance and expressivity 
+of this trait?
+A) The gene is 100% penetrant and lacks 
+variable expressivity.
+B) The gene is 100% penetrant and variably 
+expressive.
+C) The gene is less than 100% penetrant and 
+lacks variable expressivity.
+D) The gene is less than 100% penetrant and 
+variably expressive.
+128. Which of the following is true about having a 
+large gene pool?
+I. 
+It increases genetic diversity.
+II. It increases the chance of extinction of the 
+species.
+III. It increases the chance that some individuals 
+will be especially biologically fit.
+A) I only
+B) I and II
+C) I and III
+D) I, II, and III
+129. A student performs a research study on a type of 
+plant that expresses either waxy or smooth leaves, 
+depending on the dryness of the season. The 
+student obtains the following data on preferential 
+expression and genetic analysis.
+ 
+What can be concluded about the student’s data?
+A) The trait for waxy leaves is completely 
+penetrant with variable expressivity.
+B) The trait for waxy leaves is completely 
+penetrant with invariable expressivity. 
+C) The trait for waxy leaves displays incomplete 
+penetrance with invariable expressivity.
+D) The trait for waxy leaves displays incomplete 
+penetrance.
+130. A man with blonde hair, blue eyes, and fair skin 
+has a daughter with a woman with dark hair, 
+brown eyes, and dark skin. (Assume that hair, 
+eye, and skin color are each dependent on a 
+single gene.) Based on their differences in these 
+three traits, how many possible phenotypic 
+combinations are possible for their child?
+A) 2
+B) 8
+C) 9
+D) 27

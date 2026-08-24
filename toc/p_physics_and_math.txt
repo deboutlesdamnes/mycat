@@ -1,0 +1,5864 @@
+===FILE OEBPS/Prin_9781101882436_epub_con_r1.htm===
+
+MCAT Physics and Math Review: New for MCAT 2015
+
+CONTRIBUTORS
+
+Steven A. Leduc
+
+Senior Author
+
+TPR MCAT Physics Development Team:
+
+Jon Fowler, M.A., Senior Editor, Lead Developer
+
+Chris Pentzell, M.S.
+
+Carolyn J. Shiau, M.D.
+
+Felicia Tam, Ph.D.
+
+Edited for Production by:
+
+Judene Wright, M.S., M.A.Ed.
+
+National Content Director, MCAT Program, The Princeton Review
+
+The TPR MCAT Physics Team and Judene would like to thank the following people for their contributions to this book:
+
+Khawar Chaudry, B.S., Doug Couchman, James Hudson, B.S., B.A., Ryan Katchky, Jason N. Kennedy, M.S., Brendan Lloyd, B.Sc., M.Sc., Travis Mackoy, B.S., Ashley Manzoor, Ph.D., Al Mercado, Gina Passante, Mark Shew, H.BSc, Gillian Shiau, M.D., Teri Stewart, B.S.E., Dylan Sweeney, Tom Watts, B.A., Barry Weliver, Hesham Zakaria.
+
+===FILE OEBPS/Prin_9781101882436_epub_col2_r1.htm===
+
+MCAT Physics and Math Review: New for MCAT 2015
+
+MCAT Physics Formula Sheet
+
+KINEMATICS
+
+The Big Five
+
+if 
+a
+ is constant:
+
+1.
+ 
+d
+ = 
+vt
+ = 
+(
+v
+0
+ + 
+v
+)
+t
+
+2.
+ 
+v
+ = 
+v
+0
+ + 
+at
+
+3.
+ 
+d
+ = 
+v
+0
+t
+ + 
+at
+2
+
+4.
+ 
+d
+ = 
+vt
+ − 
+at
+2
+
+5.
+ 
+v
+2
+ = 
+v
+2
+0
+ + 2
+ad
+
+Projection Motion
+
+Horizontal
+
+Vertical
+
+x
+ = 
+v
+0
+x
+t
+
+y
+ = 
+v
+0
+y
+t
+ − 
+gt
+2
+
+v
+x
+ = 
+v
+0
+x
+
+v
+y
+ = 
+v
+0
+y
+ − 
+gt
+
+a
+x
+ = 0
+
+a
+y
+ = − 
+g
+
+v
+0
+x
+ = 
+v
+0
+ cos 
+θ
+0
+
+v
+0
+y
+ = 
+v
+0
+ sin 
+θ
+0
+
+ 
+
+ ≈ 1.4 
+ ≈ 1.7
+
+DYNAMICS
+
+Newton’s Laws
+
+1.
+ 
+F
+net
+ = 
+0 → v
+ = constant
+
+2.
+ 
+F
+net
+ = 
+m
+a
+
+3.
+ 
+F
+2-on-1
+ = 
+−F
+1-on-2
+
+GRAVITY
+
+F
+grav
+ = 
+w
+ = 
+mg
+
+F
+grav
+ = 
+G
+
+g
+ = 
+G
+
+g
+Earth
+ ≈ 10
+
+INCLINED PLANE
+
+θ
+ = incline angle to horizontal
+
+Force due to gravity parallel to ramp = 
+mg
+ sin 
+θ
+
+Force due to gravity perpendicular to ramp = 
+mg
+ cos 
+θ
+ (− 
+F
+N
+)
+
+FRICTION
+
+F
+N
+ = magnitude of normal force
+
+F
+f,static,max
+ = μ
+s
+ 
+F
+N
+
+F
+f,static
+ = μ
+k
+ 
+F
+N
+
+CENTER OF MASS (= CENTER OF GRAVITY)
+
+x
+CM
+ = 
+ = 
+x
+CM
+
+UNIFORM CIRCULAR MOTION
+
+Centrepital acceleration: 
+a
+c
+ = 
+
+Centrepital force: 
+F
+c
+ = 
+ma
+c
+ = 
+m
+ 
+
+WORK, ENERGY, POWER
+
+Work: 
+W
+ = 
+fd
+ cos 
+θ
+
+Kinetic energy: 
+KE
+ = 
+mv
+2
+
+Work-Energy theorem: 
+W
+total
+ = Δ
+KE
+
+Power: 
+P
+ = 
+, 
+P
+ = 
+Fv
+ if 
+F
+ || 
+v
+, and 
+v
+ is constant.
+
+Potential energy: 
+PE
+grav
+ = 
+mgh
+ (if 
+h
+ << 
+r
+Earth
+)
+
+Mechanical energy: 
+E
+ = 
+KE
+ + 
+PE
+
+Conservation of Mechanical Energy: 
+E
+i
+ = 
+E
+f
+ or 
+KE
+i
+ + 
+PE
+i
+ = 
+KE
+f
+ + 
+PE
+f
+
+If non-conservative (nc) forces—like friction—act during the motion: 
+E
+i
+ + 
+W
+by nc forces
+ = 
+E
+f
+
+TORQUE
+
+τ
+ = 
+rF
+ sin 
+θ
+ = 
+iF
+
+MOMENTUM
+
+p
+ = 
+m
+v
+
+Impulse: 
+J
+ = 
+F
+t
+
+Impulse-Momentum theorem: 
+J
+ = Δ
+p
+
+Conservation of Momentum: total 
+p
+i
+ = total 
+p
+f
+
+STRESS AND STRAIN
+
+Stress = 
+
+Strain = 
+
+Hooke’s law: 
+
+THERMODYNAMICS
+
+First law: Δ
+E
+ = 
+Q – W
+
+Work: 
+W
+ = 
+P
+Δ
+V
+
+FLUIDS
+
+Density: 
+
+Specific gravity: sp. gr. = 
+
+Archimedes’ principle: 
+F
+Buoyant
+ = 
+ρ
+fluid
+V
+sub
+g
+
+Pressure: 
+
+Hydrostatic pressure: 
+P
+ = 
+P
+0
+ + 
+ρ
+gD
+ = 
+P
+atm
+ + 
+ρ
+gD
+ (if 
+P
+ at surface is 
+P
+atm
+)
+
+Gauge pressure: 
+P
+gauge
+ = 
+P
+ – 
+P
+atm
+
+Pascal’s law: 
+
+Volume flow rate: 
+f
+ = 
+Av
+
+Continuity equation: 
+A
+1
+v
+1
+ = 
+A
+2
+v
+2
+
+Bernoulli’s equation: 
+P
+1
+ + 
+ρ
+gy
+1
+ + 
+ρ
+v
+1
+2
+ = 
+p
+2
+ + 
+ρ
+gy
+2
+ + 
+ρ
+v
+2
+2
+
+SOUND
+
+v
+ = 
+
+Intensity: 
+
+Intensity-level (in dB): 
+
+Harmonic 
+f
+’s and l’s:
+
+Open ends: 
+
+Closed ends: 
+, (odd 
+n
+)
+
+f
+beat
+ = |
+f
+1
+ – 
+f
+2
+|
+
+Doppler effect: 
+
+ELECTRIC CIRCUITS
+
+Current: 
+
+Resistance: 
+ (“Ohm’s law”: 
+V = IR)
+
+Resistance: 
+
+Resistors in series: 
+R
+S
+ = 
+R
+1
+ + 
+R
+2
+ + …
+
+Resistors in parallel: 
+
+Power in circuit: 
+
+Power in AC circuit: 
+
+ELECTRO- AND MAGNETOSTATICS
+
+Coulomb’s law: 
+
+Electric field due to 
+Q
+: 
+
+Electric force by field: 
+F
+E
+ = 
+q
+E
+
+Electric potential due to 
+Q
+: 
+
+Δ
+PE
+E
+ = 
+q
+Δf = 
+qV
+
+magnetic force: 
+F
+M
+ = 
+q
+(
+v
+ × 
+B
+)
+ 
+F
+M
+ = 
+qvB
+sin 
+θ
+
+LIGHT AND OPTICS
+
+index of refraction: 
+
+Law of reflection: 
+θ
+1
+ = 
+θ
+′
+1
+
+Law of refraction (Snell’s law): 
+n
+1
+ sin 
+θ
+1
+ = 
+n
+2
+sin 
+θ
+2
+TIR: if 
+θ
+1
+ > 
+θ
+crit
+, where sin 
+θ
+crit
+ = 
+
+Mirror-Lens equation: 
+
+Focal length: 
+
+Magnification: 
+
+Lens power: 
+; 
+P
+combination
+ = 
+P
+1
+ + 
+P
+2
+
+OSCILLATIONS AND WAVES
+
+Hooke’s law: 
+F
+S
+ = –
+k
+x
+
+frequency and period: 
+
+Harmonic frequencies: 
+
+Harmonic wavelengths: 
+
+CAPACITORS
+
+Capacitance: 
+
+C
+parallel-plate
+ = 
+
+C
+with dielectric
+ = 
+k
+ · 
+C
+without
+
+electric field between plates: 
+
+Capacitors in series: 
+
+Capacitors in parallel: 
+C
+P
+ = 
+C
+1
+ + 
+C
+2
+ + …
+
+QUANTUM PHYSICS
+
+Photoelectron Energy: 
+KE
+max
+ = 
+hf
+ – 
+ϕ
+
+Stopping Voltage: –
+eV
+stop
+ = 
+KE
+max
+
+Heisenberg Uncertainty Principle: Δ
+x
+Δ
+p
+ ≥ 
+h
+/2π
+
+CONSTANTS AND UNITS
+
+Constants
+
+magnitude of gravitational acceleration near the surface of Earth:
+ 
+g
+ = 9.8 m/s
+2
+ ≈ 10 m/s
+2
+
+density of water:
+ 
+ρ
+water
+ = 1000 kg/m
+3
+ = 1 g/cm
+3
+
+elementary electric charge:
+ 
+e
+ = 1.6 × 10
+–19
+ C
+
+Coulomb’s constant:
+ 
+k
+0
+ = 9 × 10
+9
+ N⋅m
+2
+ / C
+2
+
+threshold of hearing:
+ 
+I
+0
+ = 10
+–12
+ W/m
+2
+
+speed of light in vacuum:
+ 
+c
+ = 3 × 10
+8
+ m/s
+
+SI Units
+
+distance:
+
+[
+d
+] = meters = m
+
+mass:
+
+[
+m
+] = kilograms = kg
+
+time:
+
+[
+t
+] = seconds = s
+
+velocity, speed:
+
+[
+v
+] = meters per second = m/s
+
+acceleration:
+
+[
+a
+] = meters per second squared = m/s
+2
+
+force:
+
+[
+F
+] = newtons = kg⋅m/s
+2
+
+torque:
+
+[
+τ
+] = newton-meters = N⋅m
+
+momentum:
+
+[
+p
+] = kg⋅m/s
+
+impulse:
+
+[
+J
+] = newton-seconds = N⋅s
+
+work:
+
+[
+W
+] = joules = J = kg⋅m
+2
+/s
+2
+
+energy:
+
+[
+KE
+] = [
+PE
+] = [
+E
+] = joules = J = kg⋅m
+2
+/s
+2
+
+power:
+
+[
+P
+] = watts = W = J/s
+
+pressure:
+
+[
+P
+] = pascals = Pa = N/m
+2
+
+density:
+
+[
+ρ
+] = kilograms per cubic meter = kg/m
+3
+
+flow rate:
+
+[
+f
+] = m
+3
+/s
+
+electric charge:
+
+[
+q
+] = coulombs = C
+
+electric field:
+
+[
+E
+] = newtons per coulomb = N/C (or volts per meter = V/m)
+
+electric potential:
+
+[
+ϕ
+] = volts = V = J/C
+
+voltage:
+
+[
+V
+] = volts = V = J/C
+
+current:
+
+[
+I
+] = amps = A = C/s
+
+resistance:
+
+[
+R
+] = ohms = Ω = V/A
+
+resistivity:
+
+[
+ρ
+] = ohm-meters = Ω⋅m
+
+capacitance:
+
+[
+C
+] = farads = F = C/V
+
+magnetic field:
+
+[
+B
+] = teslas = T = N/A⋅m
+
+frequency:
+
+[
+f
+] = hertz = Hz = s
+–1
+
+period:
+
+[
+T
+] = seconds = s
+
+sound level:
+
+[
+β
+] = decibels = dB
+
+lens power:
+
+[
+P
+] = diopters = D = m
+–1
+
+===FILE OEBPS/Prin_9781101882436_epub_c16_r1.htm===
+
+MCAT Physics and Math Review: New for MCAT 2015
+
+Chapter 16
+
+Trigonometry
+
+16.1 
+INTRODUCTION
+
+Let me begin by saying that you will 
+not
+ need to know the countless identities that pervade this subject, equations you may have studied in high school like sin
+2
+ θ = (1 – cos
+2
+θ)/2. The MCAT requires only that you know the important basics. The term 
+trigonometry
+ literally means 
+triangle measurement
+, and this is where the basics start.
+
+Consider a 
+right
+ triangle; that is, a triangle with a 90° (right) angle. Let’s call the triangle ABC and let C be the vertex of the right angle. Then sides AC and BC are called the 
+legs
+, and side AB is called the 
+hypotenuse
+. If the lengths of sides BC, AC, and AB are 
+a
+, 
+b
+, and 
+c
+, respectively, then the 
+Pythagorean theorem
+ tells us that 
+a
+2
+ + 
+b
+2
+ must be equal to 
+c
+2
+.
+
+Three positive numbers 
+a
+, 
+b
+, and 
+c
+ that satisfy the Pythagorean theorem and can therefore be the lengths of the sides of a right triangle, are known as a 
+Pythagorean triple
+. The most familiar of these is the triple 3, 4, 5. (It’s easy to check that 3
+2
+ + 4
+2
+ = 5
+2
+.) The legs have lengths 3 and 4, and the hypotenuse (which is always the longest side of any right triangle) has length 5. Other examples of Pythagorean triples are 5, 12, 13 and 7, 24, 25, but the list is endless. An important and useful fact about Pythagorean triples is this: Any multiple of a Pythagorean triple is another Pythagorean triple. For example, since 3, 4, 5 is such a triple, so are 6, 8, 10 (obtained from 3, 4, 5 by multiplying the lengths by 2) and 9, 12, 15 (by multiplying by 3) and 1.5, 2, 2.5 (by multiplying by one-half).
+
+Example 16-1:
+
+a)
+ Is 5, 6, 8 a Pythagorean triple?
+
+b)
+ If 
+a
+, 16, 20 is a Pythagorean triple and 
+a
+ < 20, what is 
+a
+?
+
+Solution:
+
+a)
+ Since 5
+2
+ + 6
+2
+ = 25 + 36 = 61 but 8
+2
+ = 64, the sum 5
+2
+ + 6
+2
+ does 
+not
+ equal 8
+2
+. Therefore, 5, 6, 8 is not a Pythagorean triple. No right triangle could have sides whose lengths are 5, 6, and 8.
+
+b)
+ Because 
+a
+ < 20, we know that 
+a
+ is not the length of the longest side of the triangle, so it’s not the hypotenuse. The hypotenuse must be 20. Therefore, we want to solve the equation 
+a
+2
+ + 16
+2
+ = 20
+2
+. Since 16
+2
+ = 256 and 20
+2
+ = 400, we find that 
+a
+2
+ = 400 – 256 = 144, so 
+a
+ = 12. Notice that the Pythagorean triple 12, 16, 20 is just four times the triple 3, 4, 5.
+
+We can also use a right triangle to make a crucial observation. Consider a magnified version of right triangle ABC. Each angle of the larger triangle (let’s call it DBE) is equal to the corresponding angle in the smaller one. These triangles are said to be 
+similar
+, and each side of the larger triangle is the 
+same
+ multiple of the corresponding side in the smaller triangle. For example, if leg BE is twice the length of leg BC, then leg DE is twice the length of leg AC, and hypotenuse DB is twice the length of hypotenuse AB. One of the consequences of this is that certain ratios of the lengths of the sides of the triangle are the same, regardless of the size of the triangle. For example, let’s say that each side of triangle DBE is 
+k
+ times the corresponding side of triangle ABC, so BE = 
+k ∙
+ BC, DE = 
+k
+ ∙ AC, and DB = 
+k
+ ∙ AB. Now consider, for example, AC/AB, the ratio of leg AC to the hypotenuse AB. It will be equal to the ratio DE/DB, because
+
+Similarly, we’ll have
+
+These three ratios are therefore uniquely determined by the 
+angles
+ of the triangle, regardless of the size of the triangle, and they’re given special names: 
+sine
+, 
+cosine
+, and 
+tangent
+ (respectively).
+
+Triangle DBE is a magnified version of triangle ABC, which means:
+
+Therefore,
+
+← this ratio is the sine of angle B
+
+← this ratio is the cosine of angle B
+
+← this ratio is the tangent of angle B
+
+So, for an arbitrary acute angle 
+θ
+ in a right triangle, we have the following definitions:
+
+sine of 
+θ
+:
+
+sine 
+θ
+ = 
+
+cosine of 
+θ
+:
+
+cos 
+θ
+ = 
+
+tangent of 
+θ
+:
+
+tan 
+θ
+ = 
+
+The abbreviation 
+opp
+ stands for 
+opposite
+, 
+adj
+ stands for 
+adjacent
+, and 
+hyp
+ stands for 
+hypotenuse
+. So, for example, the sine of an acute angle in a right triangle, opp/hyp, is equal to the length of the side opposite 
+the angle divided by the length of the hypotenuse. Some people remember the definitions of the sine, cosine, and tangent of an acute angle in a right triangle by this mnemonic:
+
+SOH CAH TOA
+
+where the letters stand for the following: 
+S
+ine = 
+O
+pp/
+H
+yp, 
+C
+osine = 
+A
+dj/
+H
+yp, 
+T
+angent = 
+O
+pp/
+Adj
+.
+
+Example 16-2:
+ In a 3-4-5 right triangle 
+ABC
+, let 
+A
+ be the smaller acute angle and let 
+B
+ be the larger acute angle.
+
+a)
+ What are sin 
+A
+, cos 
+A
+, and tan 
+A
+?
+
+b)
+ What are sin 
+B
+, cos 
+B
+, and tan 
+B
+?
+
+Solution:
+ Because 
+A
+ is the smaller acute angle, the side opposite 
+A
+ is the shorter leg (of length 3); therefore, the side opposite the larger acute angle, 
+B
+, has length 4.
+
+a)
+ By definition, sin 
+A
+ = 3/5, cos 
+A
+ = 4/5, and tan 
+A
+ = 3/4
+
+b)
+ By definition, sin 
+B
+ = 4/5, cos 
+B
+ = 3/5, and tan 
+B
+ = 4/3
+
+Example 16-3:
+ In right triangle 
+ABC
+, the right angle is at 
+C
+. If sin 
+A
+ = 1/3 and 
+AB
+ = 6, what are the lengths of the legs of the triangle?
+
+Solution:
+ The triangle is sketched to the right. By definition, sin 
+A
+ = BC/AB; from this equation, we immediately get BC = AB ⋅ sin 
+A
+ = 6 ⋅ (1/3) = 2. Now, by the Pythagorean theorem, AC
+2
+ + BC
+2
+ = AB
+2
+, so AC
+2
+ = 6
+2
+ – 2
+2
+ = 32, which gives AC = 
+ = 4
+.
+
+Example 16-4:
+ In right triangle 
+DEF
+, the right angle is at 
+F
+. If tan 
+E
+ = 2 and EF = 2, what’s the length of the hypotenuse?
+
+Solution:
+ The triangle is sketched to the right. By definition, tan 
+E
+ = DF/EF; from this equation, we get DF = EF ⋅ tan 
+E
+ = 2 ⋅ 2 = 4. Now, by the Pythagorean theorem, DF
+2
+ + EF
+2
+ = DE
+2
+, so DE
+2
+ = 4
+2
+ + 2
+2
+ = 20, which gives DE = 
+.
+
+How would you find the sine of an angle whose measure is, say, 20°? Here’s a way that only requires the definitions we’ve gone over so far, plus a protractor and a ruler:
+
+Step 1:
+ Draw a horizontal line segment, AC.
+
+Step 2:
+ Place a protractor so that its center is at the left endpoint (A) of the line segment drawn in Step 1.
+
+Step 3:
+ Draw a line from A through the 20° mark on the protractor.
+
+Step 4:
+ Draw a line segment up from C that’s perpendicular to AC. Let B be the point where it intersects the line drawn in Step 3.
+
+Step 5:
+ Use a ruler to measure the lengths of BC and AB.
+
+Step 6:
+ sin 20° = sin A = BC/AB
+
+If you try this with a horizontal line segment AC whose length is 3 inches, you’ll find that BC ≈ 1 1/16˝ and AB ≈ 3 3/16˝ , so
+
+sin 
+A
+ = sin 20° ≈ 
+
+But what if you don’t have a protractor and ruler? Then without some fancy (and time-consuming) math, it’s going to be pretty tough. But the MCAT won’t require you to know the sine of 20°. The MCAT will expect that you’ll know the values of the sine, cosine, and tangent of angles that are multiples of 30° and 45° only.
+
+If we take a square of side length 1 and cut it in half down a diagonal, we end up with a pair of isosceles right triangles.
+
+In each triangle, both acute angles are 45°. By the Pythagorean theorem, the hypotenuse has length
+
+It’s now easy to apply the definitions to find that
+
+Memorize
+
+If we take an equilateral triangle of side length 2 and cut it from a corner into two equal pieces, we end up with a pair of 30°-60° right triangles.
+
+The shorter leg in each right triangle has length 1 (half the length of the hypotenuse), so by the Pythagorean theorem, the length of the longer leg is
+
+It’s now easy to apply the definitions to find that
+
+Memorize
+
+Example 16-5:
+ 
+In right triangle 
+ABC
+, the right angle is at 
+C
+ and angle 
+A
+ = 60°. If BC = 2, what are AB and AC?
+
+Solution:
+ The triangle is sketched to the right. By definition, sin 
+A
+ = BC/AB; from this equation, we immediately get
+
+To find the other leg, AC, we now have several options. Here’s one: Since cos 
+A
+ = AC/AB, we get
+
+16.2 EXTENDING THE DEFINITIONS
+
+In the preceding section, we gave the definitions of the trig functions sine, cosine, and tangent only for an 
+acute
+ angle (that is, an angle whose measure is between 0° and 90°) in a right triangle. However, for many important uses of trig, we won’t want such a restriction. The purpose of this section is to extend the definitions of these trig functions to an angle of 
+any
+ measure.
+
+Consider the usual 
+x
+-
+y
+ coordinate system and imagine a ray starting at the origin and lying along the positive 
+x
+-axis. We can generate an angle, q, of any size we want by rotating this ray about the origin. If we rotate it counterclockwise, we’ll call the generated angle positive; if we rotate clockwise, we’ll call it negative. To figure out the values of the trig functions of this angle, we choose any point P (other than the origin) on the terminal side of the angle—that is, on the final position of the rotated ray—and then drop a perpendicular from P to the 
+x
+-axis. Let (
+x
+, 
+y
+) denote the coordinates of the point P, and let 
+r
+ be the distance from the origin to P. The trig functions of q are then defined in terms of 
+x
+, 
+y
+, and 
+r
+ as follows:
+
+Notice that if 
+θ
+ is a positive, acute angle, then these definitions in terms of 
+x
+, 
+y
+, and 
+r
+ give the same values as those involving the lengths designated adjacent, opposite, and hypotenuse in a right triangle. The advantage of the definitions above is that they apply to 
+any
+ angle, not just to acute angles in right triangles.
+
+The terminal side of the angle 
+θ
+ pictured above lies in Quadrant II, so we say the angle itself is in Quadrant II. So, for the point P, the 
+x
+ coordinate is negative and the 
+y
+ coordinate is positive. (The value of 
+r
+ is 
+always
+ positive.) Therefore, the value of sin 
+θ
+ is positive, but the values of cos 
+θ
+ and tan 
+θ
+ are negative.
+
+Similarly, if 
+θ
+ lies in Quadrant III, then both 
+x
+ and 
+y
+ will be negative, so tan 
+θ
+ will be positive, but both sin 
+θ
+ and cos 
+θ
+ will be negative. If 
+θ
+ lies in Quadrant IV, then 
+x
+ is positive and 
+y
+ is negative, so cos 
+θ
+ is positive, but sin 
+θ
+ and tan 
+θ
+ will be negative. If 
+θ
+ lies in Quadrant I, then sin 
+θ
+, cos 
+θ
+, and tan 
+θ
+ will all be positive.
+
+If 
+θ
+ lies on either the 
+x
+- or 
+y
+-axis, then either 
+y
+ or 
+x
+ will be zero. For example, if 
+θ
+ = 90°, then 
+θ
+ lies on the positive 
+y
+ axis, so 
+x
+ = 0. In this case, we can see right away that cos 
+θ
+ = cos 90° = 
+x
+/
+r
+ = 0/
+r
+ = 0, sin 90° = 
+y
+/
+r
+ = 
+y
+/
+y
+ = 1, and tan 90° is undefined (because we can’t divide by 0). Any angle—like 90°, 180°, etc.—whose terminal side lies along either the 
+x
+- or the 
+y
+-axis is called a 
+quadrantal
+ angle.
+
+Example 16-6:
+ Find sin 
+θ
+, cos 
+θ
+, and tan 
+θ
+ for each of the following angles:
+
+a)
+ 
+θ
+ = 120°
+
+b)
+ 
+θ
+ = 180°
+
+c)
+ 
+θ
+ = 225°
+
+d)
+ 
+θ
+ = 330°
+
+Solution:
+
+a)
+ The figure below shows an angle of 120°. Since the right triangle that’s formed by dropping a perpendicular to the 
+x
+-axis is a 30°-60° right triangle, we know that we can take 
+x
+ = –1, 
+y
+ = 
+, and 
+r
+ = 2. Therefore,
+
+b)
+ The figure below shows an angle of 180°. Here, no triangle is formed, but that doesn’t matter. We simply choose a point P on the terminal side of the angle, say, P = (–1, 0). Since 
+x
+ = –1, 
+y
+ = 0, and 
+r
+ = 1, we have
+
+c)
+ 
+The figure at the right shows an angle of 225°. Since the right triangle that’s formed by dropping a perpendicular to the 
+x
+-axis is a 45°-45° right triangle, we know that we can take 
+x
+ = –1, 
+y
+ = –1, and 
+r
+ = 
+. Therefore,
+
+d)
+ The figure at the right shows an angle of 330°. Since the right triangle that’s formed by dropping a perpendicular to the 
+x
+-axis is a 30°-60° right triangle, we know that we can take 
+x
+ = 
+, 
+y
+ = –1, and 
+r
+ = 2. Therefore,
+
+Example 16-7:
+ Find sin 
+θ
+, cos 
+θ
+, and tan 
+θ
+ for each of the following angles:
+
+a)
+ 
+θ
+ = 270°
+
+b)
+ 
+θ
+ = 420°
+
+c)
+ 
+θ
+ = –150°
+
+Solution:
+
+a)
+ The figure below shows an angle of 270°. Here, no triangle is formed, but that doesn’t matter. We simply choose a point P on the terminal side of the angle, say, P = (0, –1). Since 
+x
+ = 0, 
+y
+ = –1, and 
+r
+ = 1, we have
+
+b)
+ 
+The figure at the right shows an angle of 420°. Notice that the angle is formed by making one complete revolution (360°) plus an additional 60°. Since the right triangle that’s formed by dropping a perpendicular to the 
+x
+-axis is a 30°-60° right triangle, we know that we can take 
+x
+ = 1, 
+y
+ = 
+, and 
+r
+ = 2. Therefore,
+
+c)
+ The figure at the right shows an angle of –150°. Because the angle is 
+negative
+, we must perform a 
+clockwise
+ rotation (rather than a counterclockwise one) to generate it. Since the right triangle that’s formed by dropping a perpendicular to the 
+x
+-axis is a 30°-60° right triangle, we know that we can take 
+x
+ = –
+, 
+y
+ = 1, and 
+r
+ = 2. Therefore,
+
+Example 16-8:
+ If sin 
+θ
+ = –
+ / 2 and cos 
+θ
+ = 1/2, what is the value of tan 
+θ
+ ?
+
+Solution:
+ One way to answer this question is to try to find 
+θ
+. Since sin 
+θ
+ is negative and cos 
+θ
+ is positive, the terminal side of 
+θ
+ must lie in Quadrant IV. A quick sketch will show that 
+θ
+ = 300°, where we take the point P = (1,−
+) on the terminal side. Therefore, tan θ = tan 300° = 
+y
+/
+x
+ = −
+). Another solution is to notice the simple and important identity tan θ = (sin θ)/(cos θ) [which is true because 
+y
+/
+x
+ = 
+], so tan θ = 
+.
+
+16.3 
+INVERSE TRIGONOMETRY FUNCTIONS
+
+Given an angle 
+θ
+, we can use the methods of the preceding sections to find, say, its sine, and we get some number. For example, the sine of 30° is 1/2. Now let’s turn the question around: Given a number, can we find an angle whose sine is that number? For example, if we were asked to find an angle whose sine is 1/2, we could say 30°. This is the essence of the inverse trig functions; given a number, can we find an angle whose sine (or cosine or tangent) is that number? Here’s another example: Give an angle whose tangent is 1. One correct answer would be 45°.
+
+To specify an angle whose sine is a given number, we use the following symbol: sin
+–1
+, which is read 
+inverse sine
+. (Be careful: The –1 is 
+not
+ an exponent here; it’s merely the mathematical abbreviation for an inverse function.) The expression sin
+–1
+ 
+z
+ stands for an angle whose sine is the number 
+z
+. So, for example, since sin 30° = 1/2, we could write sin
+–1
+ (1/2) = 30°. Similarly, the inverse cosine is written cos
+–1
+, and the inverse tangent is written tan
+–1
+. Based on the last example in the preceding paragraph, we could write tan
+–1
+ 1 = 45°.
+
+If you’ve memorized the boxed equations above, and if you remember the quadrants in which sine, cosine, or tangent can be negative
+
+then you’ll have the tools you’ll need to simplify expressions involving inverse trig functions on the MCAT.
+
+One important point to remember: For a given number 
+z
+, there are usually infinitely many angles whose sine is 
+z
+. For example, can you think of an angle besides 30° whose sine is 1/2? The angle 150° would work; its sine is also 1/2. And what about 390° (which is just 360° plus 30°)? And since 30° is a possible angle, so is –330°. And since 150° is a possible angle, so is –210°. In fact, any angle, positive or negative, whose terminal side is the same as that of 30° or 150° has a sine of 1/2, so any of these angles would be possible values for the expression sin–1 (1/2). To know which value to choose, the question will have to restrict the possible answers in some way, either directly in the question or by looking at the available answer choices. Usually, though, you want the smallest positive or negative angle.
+
+Example 16-9:
+
+a)
+ Give at least three possible values for sin
+–1
+ (
+ / 2).
+
+b)
+ What is the smallest negative angle that equals sin
+–1
+ (–
+ / 2)?
+
+c)
+ Find the two smallest positive values of cos
+–1
+ (1/2).
+
+d)
+ Find the smallest positive angle and the smallest negative angle each of which equals tan
+–1
+ (–
+ / 3).
+
+e)
+ Find the smallest positive value of cos
+–1
+ 0.
+
+f)
+ Find the smallest negative value of tan
+–1
+ (–1).
+
+g)
+ What’s the positive value of cos [sin
+–1
+ (1/2)]?
+
+h)
+ What’s wrong with this expression: sin
+–1
+ 2 ?
+
+Solution:
+
+a)
+ We’re asked for angles whose sine is 
+ / 2. One we know right away: 60°. Another one is 120° (look back at 
+Examples 16-6a
+). Any other angle whose terminal side is the same as that of 60° or 120° will also work. Examples of angles whose terminal side matches that of 60° include 420° (look back at 
+Example 16-7b
+), 780°, 1140°, etc., as well as –300°, –660°, –1020°, etc. Examples of angles whose terminal side matches that of 120° include 480°, 840°, 1200°, etc., as well as –240°, –600°, –960°, etc.
+
+b)
+ We want the smallest negative angle whose sine is –
+ / 2. The answer is –60°.
+
+c)
+ We’re being asked to find positive angles whose cosine is 1/2. One we know right away: 60°. Another one is 300°, a Quadrant IV angle. These are the two smallest positive values of cos
+–1
+ (1/2).
+
+d)
+ First, let’s find the smallest positive angle whose tangent is –
+ / 3. Tangent is negative in Quadrants II and IV only, so the smallest positive angle whose tangent is –
+ / 3 will be a Quadrant II angle. The answer is 150°. The smallest negative angle is –30°. You can check both of these answers by sketching the angles, just as we did in 
+Examples 16-6
+ and 
+16-7
+.
+
+e)
+ Since cos 
+θ
+ = 
+x
+/
+r
+, we know that cos 
+θ
+ will be equal to 0 when 
+x
+ = 0. The smallest positive value of 
+θ
+ for which a point P on its terminal side has 
+x
+ = 0 is 
+θ
+ = 90°.
+
+f)
+ The smallest negative angle whose tangent is –1 is 
+θ
+ = –45°.
+
+g)
+ Let 
+θ
+ = sin
+–1
+ (1/2). Then we know we can take 
+θ
+ = 30°. The question is asking for cos 
+θ
+, so we have cos 30° = 
+ / 2. (If we had taken 
+θ
+ = 150°, we would have gotten a negative value for cos 
+θ
+, but the question specifically asked for the 
+positive
+ value of cos 
+θ
+.)
+
+h)
+ The expression sin
+–1
+ 2 is undefined; that is, there is 
+no
+ angle whose sine is 2. In fact, the sine of any angle must be between –1 and +1 (inclusive). The reason is simple: By definition, sin 
+θ
+ = 
+y
+/
+r
+, and 
+y
+ can never be greater in magnitude than 
+r
+. So, the ratio 
+y
+/
+r
+ can never be greater than 1 or less than –1. The same is true for the cosine of an angle; it, too, must always be between –1 and +1 (inclusive). Therefore, the expressions sin
+–1
+ 
+z
+ and cos
+–1
+ 
+z
+ are meaningless if 
+z
+ < –1 or if 
+z
+ > 1. (However, the expression tan
+–1
+ 
+z
+ is defined for 
+any
+ value of 
+z
+, positive, negative, [or zero], no matter how big or small.)
+
+16.4 
+RADIAN MEASURE
+
+So far we’ve been measuring angles in degrees. By definition, a complete rotation (revolution) is equal to 360°, or, equivalently, a right angle has a measure of 90°. But why should a complete rotation be equal to 360 units? Why not, say, 100?
+
+Actually, the ancient Babylonians started this system (called the sexagesimal system) basing angle measurement on the number 60. A degree can be split into 60 equal parts, each called a 
+minute
+, and each minute can be further divided into 60 equal parts called 
+seconds
+. (For example, an angle whose measure is 20° 30´ is 20.5° [the prime denotes minutes]; an angle whose measure is 20° 30´ 15˝ is equal to 20° 30 1/4´ [the double prime denotes seconds].) One theory is that a complete revolution was called 360° because a year (one revolution around the Sun, although the Babylonians didn’t know about the earth orbiting the sun) is approximately 360 days. So, each day of the year corresponded to 1 degree. Whatever the reason, it’s clear that 360 was an arbitrary choice with no real mathematical basis. But what of an ancient civilization on another planet, whose year has 500 days? They might have started measuring angles in some other unit, 
+reegeds
+, where a complete revolution is equal to 500 reegeds (500
+∂
+), and a right angle would have a measure of 125
+∂
+. If we were to communicate with this civilization, our angle measurements would be incompatible. What we’d want is a truly universal unit for measuring angles, one which is natural in the sense that an intelligent civilization on another planet will devise the same system (without regard to, say, how many days their year is). This universal unit for measuring angles is called the 
+radian
+.
+
+Draw a circle and construct an angle whose vertex is at the center such that when the sides of the angle hit the circle, the length of the subtended arc is equal to the radius of the circle. The measure of such an angle is, by definition, one radian.
+
+For a general angle, if 
+s
+ is the length of the subtended arc and the radius of the circle is 
+r
+, then the radian measure of the angle is the ratio 
+s
+/
+r
+. The size of a radian is not arbitrary and it doesn’t even depend on the size of the circle you draw. It’s a natural unit for measuring angles.
+
+So, what is the connection between degrees and radians? A complete rotation is 360°. What is a complete rotation in radians? The length of the arc subtended by a complete rotation is equal to the entire circumference of the circle, which is 
+s
+ = 2
+π
+r
+. Dividing this by 
+r
+ to get the radian measure, we see that a complete rotation is equal to 2
+π
+ (or about 6.3) radians. (By the way, this means that 1 radian is equal to 360°/2
+π
+ ≈ 57.3°.) So, the conversion between radians and degrees is this: 2
+π
+ radians = 360°, or, if you prefer, divide both sides of this equation by 2 to get
+
+π
+ radians = 180°
+
+This way, every time you see an angle written in radians and there’s a 
+π
+ there, just mentally substitute 180° for the 
+π
+ and you’re back in degree mode. For example, an angle whose radian measure is 
+π
+/3 is equal to 180°/3 = 60°. Since angles that are multiples of 30° and 45° are so common, it’s useful to memorize the following conversions between degrees and radians:
+
+When faced with an angle in radian measure like 2
+π
+/3, just think of it as 2(
+π
+/3), which is 2(60°) = 120°. Similarly, if you needed to convert an angle like 150° to radians, think of it this way: 150° = 5(30°) = 5(
+π
+/6). In general, here are the formulas for converting between degrees and radians:
+
+Finally, notice that in the definition of radian measure, 
+θ
+ = 
+s
+/
+r
+, we’re dividing a length by a length. Therefore, the ratio 
+θ
+ has no units. Radian measure is actually unitless. So, if you see an equation like 
+θ
+ = 2 (no units), you’ll know that the “2” means 2 radians. If you want to express the measure of an angle in degrees, you 
+must
+ put in the degree sign; 
+θ
+ = 2° means an angle of measure 2 degrees. But if you want to express the measure of an angle in radians, no unit is required; writing the word 
+radians
+ after the number is optional. In fact, because radian measure is unitless, we can interpret an expression like sin π/6 either as the sine of an angle whose measure is π/6 radians, or simply as the sine of the 
+number
+ π/6.
+
+Example 16-10:
+
+a)
+ Convert from radians to degrees: 3
+π
+/4; 3
+π
+/2; 4
+π
+/3; 2
+
+b)
+ Convert from degrees to radians: 180°; 210°; 225°; 300°
+
+c)
+ Evaluate: sin (
+π
+/6); cos 
+π
+; tan (7p/4)
+
+d)
+ Evaluate: sin (–5
+π
+/6); cos (2
+π
+/3); tan 3
+π
+
+e)
+ Find the smallest positive value of cos
+–1
+ (
+ / 2), in radians.
+
+f)
+ Find the smallest negative value of tan
+–1
+ (–1), in radians.
+
+Solution:
+
+a)
+ 3
+π
+/4 = 3(
+π
+/4) = 3(45°) = 135°; 3
+π
+/2 = 3(
+π
+/2) = 3(90°) = 270°;
+4
+π
+/3 = 4(
+π
+/3) = 4(60°) = 240°; 2 × (180°/
+π
+) = (360/
+π
+)° ≈ 115°
+
+b)
+ 180° = 
+π
+ radians; 210° = 7(30°) = 7(
+π
+/6) = 7
+π
+/6 radians;
+225° = 5(45°) = 5(
+π
+/4) = 5
+π
+/4 radians; 300° = 5(60°) = 5(
+π
+/3) = 5
+π
+/3 radians
+
+c)
+ sin (
+π
+/6) = sin 30° = 1/2; cos 
+π
+ = cos 180° = –1 (look back at 
+Example 16-6b
+) tan (7
+π
+/4) = tan [7(45°)] = tan 315° = –1
+
+d)
+ sin (–5
+π
+/6) = sin [–5(30°)] = sin (–150°) = –1/2 (look back at 
+Example 16-7c
+)
+cos (2
+π
+/3) = cos [2(60°)] = cos 120° = –1/2 (look back at 
+Example 16-6a
+)
+tan 3
+π
+ = tan [3(180°)] = tan 540° = 0 (look back at 
+Example 16-6b
+)
+
+e)
+ cos
+–1
+ (
+ / 2) = 45° = 
+π
+/4
+
+f)
+ tan
+–1
+ (–1) = –45° = –
+π
+/4
+
+===FILE OEBPS/Prin_9781101882436_epub_gls_r1.htm===
+
+MCAT Physics and Math Review: New for MCAT 2015
+
+Glossary
+
+After each definition, the section of the 
+MCAT Physics
+ text where the term is discussed is given.
+
+acceleration
+
+The rate of change of velocity: ā = ∆
+v
+ / ∆
+t
+. 
+[
+Section 3.2
+]
+
+action-reaction pair
+
+The two forces described by Newton’s third law: If Object 1 exerts a force, 
+F
+1-on-2
+, on Object 2, then Object 2 exerts a force, 
+F
+2-on-1
+, on Object 1. These forces—known as an action-reaction pair—have the same magnitude but point in opposite directions, so 
+F
+2-on-1
+ = –
+F
+1-on-2
+, and act on different objects. 
+[
+Section 4.1
+]
+
+adiabatic
+
+Describes a thermodynamic process in which there is no heat exchange. 
+[
+Section 7.3
+]
+
+alternating current (AC)
+
+Current whose direction reverses (usually many times per second) during the operation of the circuit. 
+[
+Section 10.3
+]
+
+ammeter
+
+A device for measuring current in a circuit. 
+[
+Section 10.1
+]
+
+ampere (or amp)
+
+The SI unit of current: 1 ampere (amp) = 1 A = 1 coulomb per second = 1 C / s. 
+[
+Section 10.1
+]
+
+amplitude
+
+The maximum displacement of an oscillator from its equilibrium position, or the maximum displacement of a wave from equilibrium. 
+[
+Section 11.1
+, 
+11.2
+]
+
+angles of incidence, reflection, and refraction
+
+In optics, the angles that the incident beam, reflected beam, and transmitted beam make with the normal to the boundary between the two media. 
+[
+Section 13.2
+]
+
+angular momentum
+
+The rotational analog of linear momentum, equal to ℓ
+mv
+, where ℓ is the distance, measured perpendicularly, from the reference point to the line containing the velocity 
+v
+ of the object whose mass is 
+m
+. 
+[
+Section 6.8
+]
+
+antinode
+
+A point where a standing wave has its maximum amplitude. 
+[
+Section 11.4
+]
+
+Archimedes’ principle
+
+The magnitude of the buoyant force on an object is equal to the weight of the fluid displaced. So, if the density of the fluid is ρ
+fluid
+ and the volume of the object that is submerged is 
+V
+sub
+, then the magnitude of the buoyant force is given by 
+F
+Buoy
+ = ρ
+fluid
+ 
+V
+sub
+ 
+g
+. 
+[
+Section 8.1
+]
+
+beats
+
+The variation in amplitude of the resultant wave created by the interference of two waves with different frequencies. If 
+f
+1
+ and 
+f
+2
+ are the frequencies of the two waves, then the beat frequency is given by 
+f
+beat
+ = |
+f
+1
+ – 
+f
+2
+|. 
+[
+Section 12.3
+]
+
+Bernoulli effect
+
+The lowering of fluid pressure as the flow speed increases; also known as the 
+Venturi effect
+. 
+[
+Section 8.2
+]
+
+Bernoulli’s equation
+
+The statement that follows from the Conservation of Mechanical Energy applied to ideal fluid flow. 
+[
+Section 8.2
+]
+
+Bohr model of the atom
+
+The description of the atom as having quantized orbitals associated with discrete energies and energy level transitions. 
+[
+Section 14.2
+]
+
+buoyant force
+
+The upward force exerted by a fluid on an object partly or completely submerged in it. If the density of the fluid is 
+ρ
+fluid
+ and the volume of the object that is submerged is 
+V
+sub
+, then the magnitude of the buoyant force is given by 
+F
+Buoy
+ = 
+ρ
+fluid
+V
+sub
+g
+. 
+[
+Section 8.1
+]
+
+capacitance
+
+The ratio of charge to voltage for a capacitor: 
+C
+ = 
+Q / V
+. 
+[
+Section 10.2
+]
+
+center of gravity
+
+For an extended object or system, the point where the gravitational force acts. In a uniform gravitational field, the center of gravity is the same as the center of mass. 
+[
+Section 5.1
+]
+
+center of mass
+
+The point that behaves as if all of an object’s mass were concentrated there. 
+[
+Section 5.1
+]
+
+centripetal acceleration
+
+The acceleration of an object that undergoes uniform circular motion; if the speed of the object is 
+v
+ and the radius of its circular path is 
+r
+, then its centripetal acceleration points toward the center of the circle and has magnitude 
+a
+c
+ = 
+v
+2
+ / 
+r
+. 
+[
+Section 5.2
+]
+
+centripetal force
+
+The net force on an object that undergoes uniform circular motion: 
+F
+c
+ = 
+m
+a
+c
+, where 
+a
+c
+ is the object’s centripetal acceleration. Its magnitude is 
+F
+c
+ = 
+mv
+2
+ / 
+r
+ if the speed of the object is 
+v
+ and the radius of the circular path is 
+r
+. 
+[
+Section 5.2
+]
+
+coefficient of friction
+
+A positive unitless number that describes the strength of the friction force between two surfaces in contact. The coefficient of kinetic friction is usually denoted µ
+k
+, and the coefficient of static friction by µ
+s
+; in virtually all cases, µ
+s
+ > µ
+k
+ for a given pair of surfaces. 
+[
+Section 4.3
+]
+
+completely inelastic collision
+
+A completely (or perfectly) inelastic collision is an inelastic collision in which the colliding objects stick together afterwards and thus have a single velocity after the collision. 
+[
+Section 6.7
+]
+
+compression
+
+1. A type of stress applied to an object that decreases its length. 
+[
+Section 8.3
+]
+
+2. A compression is also a region where the local density and pressure is momentarily increased from standard due to the passage of a sound wave. 
+[
+Section 12.1
+]
+
+concave
+
+1. A concave mirror is a mirror whose reflecting surface is curved toward the object so that its center is furthest away from the object; it has a positive focal length. 
+[
+Section 13.4
+]
+
+2. A concave lens is a diverging lens; it has a negative focal length. 
+[
+Section 13.5
+]
+
+conduction
+
+A mode of heat transfer in which the medium does not move during the transfer of thermal energy. 
+[
+Section 7.2
+]
+
+conductor
+
+A material with a very low resistivity, which therefore allows charge to flow through it easily. Metals are conductors. 
+[
+Section 9.3
+]
+
+conservative force
+
+If the work done by a force depends only on the initial and final positions of the object that the force is acting on, and not on the particular path between the positions, the force is said to be conservative. The gravitational and electric forces are examples of conservative forces; friction is non-conservative. 
+[
+Section 6.4
+]
+
+continuity equation
+
+For ideal fluid flow, the amount of fluid per unit time (the flow rate) passing one point in a flow tube must be the same as the amount passing through another point: 
+f
+1
+ = 
+f
+2
+ (or 
+A
+1
+v
+1
+ = 
+A
+2
+v
+2
+). 
+[
+Section 8.2
+]
+
+convection
+
+A mode of heat transfer in which the medium moves during the transfer of thermal energy. 
+[
+Section 7.3
+]
+
+converging lens
+
+A lens that is thicker in the middle than at its edges. A converging lens causes incident parallel rays of light to converge to the focal point after passing through the lens. 
+[
+Section 13.5
+]
+
+convex
+
+1. A convex mirror is a mirror whose reflecting surface is curved away from the object; it has a negative focal length. 
+[
+Section 13.4
+]
+
+2. A convex lens is a converging lens; it has a positive focal length. 
+[
+Section 13.5
+]
+
+coulomb
+
+The SI unit of electric charge, abbreviated C; the fundamental electric charge (the charge on a proton or the magnitude of the charge on an electron) is defined to be 
+e
+ = 1.6 × 10
+–19
+ C. Therefore, one coulomb is equal to the total charge on 6.25 × 10
+18
+ protons. 
+[
+Section 9.1
+]
+
+Coulomb’s law
+
+The law that gives the magnitude of the electric force between two charged objects: 
+F
+E
+ =
+k|q
+1
+q
+2
+|/
+r
+2
+. 
+[
+Section 9.2
+]
+
+critical angle
+
+The angle at which an incident beam of light refracts at an angle of 90°. If 
+n
+1
+ is the refractive index of the incident medium and 
+n
+2
+ is the index of the refracting medium (and 
+n
+1
+ > 
+n
+2
+), then the critical angle, 
+θ
+crit
+, is defined by the equation sin 
+θ
+crit
+ = 
+n
+2
+ / 
+n
+1
+. 
+[
+Section 13.2
+]
+
+current
+
+A net flow of electric charge; more precisely, it’s the net amount of charge that passes a given point per unit time: 
+I
+ = 
+Q
+/
+t
+. 
+[
+Section 10.1
+]
+
+decibel
+
+A unit of sound level. If 
+I
+ is the intensity of a sound wave, then the sound level (in decibels, dB) is defined as 
+β
+ = 10 log (
+I
+/
+I
+0
+), where 
+I
+0
+ is the threshold of hearing (a reference intensity, 10
+–12
+ W/m
+2
+). 
+[
+Section 12.4
+]
+
+density
+
+The ratio of an object’s mass to its volume: density = 
+ρ
+ = 
+m
+/
+V
+. 
+[
+Section 8.1
+]
+
+dielectric
+
+An insulating material sandwiched between the plates of a capacitor; a capacitor always has a higher capacitance when a dielectric is present. 
+[
+Section 9.3
+, 
+10.2
+]
+
+diffraction
+
+The redistribution of a wave’s energy as it encounters and moves beyond an obstruction (or hole). 
+[
+Section 13.3
+]
+
+diopter
+
+The unit of lens power: 1 diopter = 1 D = 1 m
+–1
+. 
+[
+Section 13.5
+]
+
+direct current
+
+Current whose direction remains steady during the operation of an electric circuit. 
+[
+Section 10.1
+, 
+10.3
+]
+
+dispersion
+
+The variation of the speed of a wave as the frequency changes. For the MCAT, the only example of dispersion you should know is the dependence of the speed of light through a material medium, such as glass. The colorful spectrum that is seen exiting a glass prism is an example of this dispersion. 
+[
+Section 13.3
+]
+
+displacement
+
+The change in position of an object. The magnitude of an object’s displacement gives the net distance traveled by the object. 
+[
+Section 3.2
+]
+
+diverging lens
+
+A lens that is thinner in the middle than at its edges. A diverging lens causes incident parallel rays of light to diverge away from the focal point after passing through the lens. 
+[
+Section 13.5
+]
+
+Doppler effect
+
+The perceived change in frequency (and speed) of a wave due to relative motion between the source of a wave and the detector. When the source and detector are in relative motion toward each other, the detected frequency is higher than the emitted frequency; when the source and detector are in relative motion away from each other, the detected frequency is lower than the emitted frequency. 
+[
+Section 12.5
+]
+
+efficiency
+
+The percentage of the useful work that a machine does in comparison to its theoretical maximum, or 
+W
+output
+/Energy
+input
+. 
+[
+Section 6.7
+]
+
+elastic collision
+
+A collision for which total kinetic energy is conserved. 
+[
+Section 6.7
+]
+
+elastic potential energy
+
+The energy stored in a stretched or compressed spring: 
+PE
+elastic
+ = 
+kx
+2
+, where 
+k
+ is the spring constant. 
+[
+Section 11.1
+]
+
+electric field
+
+A force field created by one or more electric charges. 
+[
+Section 9.3
+]
+
+electric force
+
+The force exerted by an electric field; if a charge 
+q
+ is in an electric field 
+E
+, then the electric force on 
+q
+ is given by the equation 
+F
+E
+= 
+q
+E
+. 
+[
+Section 9.2
+, 
+9.3
+]
+
+electric potential
+
+The electric potential at a point P is equal to the work required to bring a unit charge from infinity to P, divided by that charge. If P is a distance 
+r
+ away from a point charge 
+Q
+, then the electric potential at P is a scalar quantity given by 
+φ
+ = 
+kq
+ / 
+r
+ where 
+k
+ is Coulomb’s constant. 
+[
+Section 9.4
+]
+
+electric potential energy
+
+The energy stored in the field surrounding a configuration of charged objects. A charge 
+q
+ experience and electric potential 
+φ
+ has an electric potential energy given by 
+PE = q
+φ
+. 
+[
+Section 9.4
+]
+
+electromagnetic (EM) spectrum
+
+The full range of electromagnetic radiation, where different ranges of frequencies (and wavelengths) are categorized. Such categories include (in order of increasing frequency): radio waves, microwaves, infrared (IR) light, visible light, ultraviolet light, x-rays, and gamma rays. 
+[
+Section 13.1
+]
+
+electron
+
+A fundamental subatomic particle with a negative electric charge (equal to 
+–e
+, the negative of the elementary electric charge) that orbits the nucleus of an atom. 
+[
+Section 9.1
+]
+
+entropy
+
+The measure of disorder of a thermodynamic system. 
+[
+Section 7.4
+]
+
+equilibrium
+
+An object or system is said to be in translational equilibrium if the net force on it is zero. An object or system is said to be in rotational equilibrium if the net torque on it is zero. An object or system is said to be in equilibrium if it is in both translational and rotational equilibrium. 
+[
+Section 5.4
+]
+
+For an oscillator, the equilibrium position is the point at which the restoring force is zero 
+[
+Section 11.1
+]
+
+equipotential
+
+A curve or surface on which the electric potential remains constant. 
+[
+Section 9.4
+]
+
+equivalent resistance
+
+The single resistance that provides the same overall resistance as a combination of resistors. 
+[
+Section 10.1
+]
+
+farad
+
+The SI unit of capacitance: 1 farad = 1 coulomb per volt = 1 C/V. 
+[
+Section 10.2
+]
+
+flow rate
+
+The amount of fluid that flows per unit time; it is equal to the cross-sectional area of the flow tube multiplied by the flow speed: 
+f
+ = 
+Av
+. 
+[
+Section 8.2
+]
+
+fluid
+
+A substance that can flow, or move precisely, a substance that cannot withstand a shear stress. Both liquids and gases are fluids. 
+[
+Section 8.1
+]
+
+focal length
+
+The distance from a mirror or lens to its focal point along the axis of curvature. Concave mirrors and converging lenses have positive focal lengths; convex mirrors and diverging lenses have negative focal lengths. 
+[
+Section 13.4
+, 
+13.5
+]
+
+focal point (or focus)
+
+The point where any curved mirror or lens focuses the image of a distant object. For a concave mirror or a converging lens, the focal point (or focus) is the point 
+to
+ which rays of light that are initially parallel to the optical axis are focused after contact with the mirror or lens. For a convex mirror or a diverging lens, the focal point is the point 
+from
+ which rays of light that are initially parallel to the optical axis are diverged after contact with the mirror or lens. 
+[
+Section 13.4
+, 
+13.5
+]
+
+force
+
+Intuitively, a push or pull exerted by one object on another. This may result in an acceleration if the forces on the object are not balanced 
+[
+Section 4.1
+]
+
+frequency
+
+The number of oscillations (or cycles) per second. 
+[
+Section 11.1
+, 
+11.2
+, 
+12.1
+, 
+13.1
+]
+
+friction
+
+The friction force is the parallel component of the contact force exerted by a surface on an object. 
+[
+Section 4.3
+]
+
+fundamental frequency
+
+The lowest permissible frequency, or longest permissible wavelength, of a standing wave; also referred to as the 
+first harmonic
+. 
+[
+Section 11.4
+]
+
+gravitational acceleration
+
+The acceleration produced by the gravitational pull of a body, directed toward the center of the body. The magnitude of the gravitational acceleration, 
+g
+, produced by the earth is approximately 10 m/s
+2
+ near the surface. 
+[
+Section 3.5
+]
+
+gravitational force
+
+In Newton’s theory of gravitation, every object exerts a force, a gravitational pull, on every other object. If the masses of the two object are 
+m
+1
+ and 
+m
+2
+, and if their centers of mass are separated by a distance 
+r
+, then the magnitude of the gravitational force between them is given by 
+F
+grav
+ = 
+Gm
+1
+m
+2
+ / r
+2
+. 
+[
+Section 4.1
+, 
+4.2
+]
+
+heat
+
+The transfer of thermal energy between a system and its environment. 
+[
+Section 7.1
+]
+
+Heisenberg uncertainty principle
+
+The quantum physics principle that restricts the precision with which position and momentum of a particle can be defined: Δ
+x
+Δ
+p
+ ≥ 
+h
+ / 2π 
+[
+Section 14.5
+]
+
+hertz
+
+The SI unit of frequency; 1 hertz = 1 Hz = 1 cycle (or oscillation) per second. 
+[
+Section 11.1
+]
+
+Hooke’s law
+
+The magnitude of the force exerted by a stretched or compressed object or spring is proportional to the distance by which it is stretched or compressed from equilibrium: 
+F
+rest
+ = –
+kx
+. 
+[
+Section 11.1
+]
+
+hydrostatic gauge pressure
+
+The pressure at a point below the surface of a fluid at rest, due to the weight of the fluid above it: 
+P
+gauge
+= ρ
+fluid
+ 
+gD
+, where 
+D
+ is the depth. 
+[
+Section 8.1
+]
+
+impulse
+
+The product of force and the time during which it acts: impulse = 
+J
+ = 
+F
+∆
+t
+. 
+[
+Section 6.7
+]
+
+impulse-momentum theorem
+
+The total impulse delivered to an object is equal to its change in momentum: 
+J
+total
+ = ∆
+p
+. 
+[
+Section 6.7
+]
+
+index of refraction
+
+The index of refraction for a medium is equal to the ratio of the speed of light in vacuum to the speed of light through the medium: 
+n
+ = 
+c
+ / 
+v
+. 
+[
+Section 13.2
+]
+
+inelastic collision
+
+A collision in which total momentum is conserved, but total kinetic energy is not. 
+[
+Section 6.7
+]
+
+inertia
+
+1. Resistance to acceleration; an object’s inertia is measured by its mass and is the ratio of the net force on an object to its acceleration: inertia = 
+m
+ = 
+F
+net
+ / 
+a
+. 
+[
+Section 4.1
+]
+
+2. Rotational inertia (also known as moment of inertia) is resistance to rotational acceleration. 
+[
+Section 5.5
+]
+
+insulator
+
+A material with a very high resistivity that does not permit charge to flow through it easily. Glass and wood are examples of insulators. 
+[
+Section 9.3
+]
+
+intensity
+
+The intensity of a wave is the power it transmits per unit area; the units of 
+I
+ are therefore W/m
+2
+. Intensity is related directly to the wave’s amplitude and diminishes with the square of the distance from the source. 
+[
+Section 12.4
+]
+
+interference
+
+The combination of two or more waves. When the waves are in phase (crest meets crest, trough meets trough), this is 
+constructive
+ interference, and the amplitude of the resultant wave is equal to the sum of the individual amplitudes; when the waves are 
+out of phase
+ (crest meets trough, trough meets crest), this is 
+destructive
+ interference, and the amplitude of the resultant wave is equal to the difference between the individual amplitudes. 
+[
+Section 11.3
+]
+
+isobaric
+
+Describes a thermodynamic process in which pressure is held constant. 
+[
+Section 7.3
+]
+
+isochoric
+
+Describes a thermodynamic process in which volume is held constant. 
+[
+Section 7.3
+]
+
+isothermal
+
+Describes a thermodynamic process in which temperature is held constant. 
+[
+Section 7.3
+]
+
+joule
+
+The SI unit of work and energy; 1 joule = 1 J = 1 N·m = 1 kg·m
+2
+/s
+2
+. 
+[
+Section 6.1
+]
+
+kinetic energy
+
+The energy due to motion; for an object of mass 
+m
+ and speed 
+v
+, the kinetic energy is 
+KE
+ = 
+. 
+[
+Section 6.3
+]
+
+kinetic friction
+
+Also known as sliding friction, it is the friction that results when there is relative motion between the two surfaces; that is, when one surface slides across the other. If 
+F
+N
+ is the magnitude of the normal force and µ
+k
+ is the coefficient of kinetic friction between the two surfaces, then the force of kinetic friction is directed opposite to the direction of the sliding and its magnitude is 
+F
+f
+ = µ
+k
+F
+N
+. 
+[
+Section 4.3
+]
+
+Kirchhoff’s laws
+
+1. The total amount of current entering a junction in a circuit must be equal to the total amount of current leaving the junction.
+
+2. The sum of the voltages around a closed loop in a circuit must be zero. 
+[
+Section 10.1
+]
+
+lens
+
+A thin piece of glass or plastic that forms an image by refracting light. 
+[
+Section 13.5
+]
+
+lever arm
+
+Denoted by 
+l
+, it is the perpendicular distance from the pivot (reference) point to the line of action of a force. 
+[
+Section 5.3
+]
+
+longitudinal wave
+
+A wave in which the oscillations of the medium are parallel to the direction of propagation of the wave. Sound waves are longitudinal. 
+[
+Section 12.1
+]
+
+magnetic field
+
+The force field created by a 
+moving
+ electric charge. 
+[
+Section 10.4
+]
+
+magnetic force
+
+The force exerted by a magnetic field on a moving charge. If a charge 
+q
+ moves with velocity 
+v
+ through a magnetic field 
+B
+, then the magnetic force on 
+q
+ is given by 
+F
+ = 
+q
+(
+v
+ × 
+B
+). The magnitude of 
+F
+ is |
+q
+|
+vB
+sin θ (where θ is the angle between 
+v
+ and 
+B
+), and the direction of 
+F
+ is given by the right-hand rule if 
+q
+ is positive and by the left-hand rule if 
+q
+ is negative. 
+[
+Section 10.4
+]
+
+magnification
+
+The ratio of the height of the image to the height of the object; a negative value for the magnification means that the image is inverted relative to the object. For a mirror or lens, the magnification is given by the equation 
+m
+ = −
+i
+ / 0, where 
+i
+ and 
+o
+ are the distances from the mirror or lens to the image and the object, respectively. 
+[
+Section 13.4
+, 
+13.5
+]
+
+mass
+
+The quantitative measure of an object’s inertia; intuitively, we think of mass as measuring the amount of matter in an object. In SI units, mass is expressed in kilograms (kg) and is the ratio of the net force on an object to its acceleration: mass = 
+m
+ = 
+F
+net
+ / 
+a
+. 
+[
+Section 4.1
+]
+
+mechanical advantage
+
+The factor by which a machine or mechanism multiplies the input or effort force. This term is applied to simple machines such as inclined planes, pulley systems, and levers. 
+[
+Section 6.6
+]
+
+mirror
+
+A surface that forms an image by reflecting light. 
+[
+Section 13.4
+]
+
+moment of inertia
+
+Also known as rotational inertia, an object’s moment of inertia measures its resistance to rotational acceleration (just as an object’s mass measures its resistance to translational acceleration). 
+[
+Section 5.5
+]
+
+momentum
+
+The product of an object’s mass and velocity: momentum = 
+p
+ = 
+m
+v
+. 
+[
+Section 6.7
+]
+
+net force
+
+The sum of all the forces that act on an object. 
+[
+Section 4.1
+]
+
+neutron
+
+A subatomic particle with zero electric charge that is a constituent of atomic nuclei. 
+[
+Section 9.1
+]
+
+newton
+
+The SI unit of force: 1 newton = 1 N = 1 kg⋅m/s
+2
+. 
+[Section 4.
+1]
+
+Newton’s laws of motion
+
+1. If 
+F
+net
+ = 0, then the object’s velocity will not change.
+
+2. 
+F
+net
+ = 
+m
+a
+
+3. If Object 1 exerts a force, 
+F
+1-on-2
+, on Object 2, then Object 2 exerts a force, 
+F
+2-on-1
+, on Object 1. These forces (known as an action-reaction pair) have the same magnitude but point in opposite directions, so 
+F
+2-on-1
+ = –
+F
+1-on-2
+, and act on different objects. 
+[
+Section 4.1
+]
+
+node
+
+A point where a standing wave has zero amplitude. 
+[
+Section 11.4
+]
+
+normal
+
+As an adjective, it means 
+perpendicular
+. As a noun, a normal is a line that’s perpendicular to a surface. 
+[
+Section 4.3
+, 
+13.2
+]
+
+normal force
+
+For an object in contact with a surface, the normal force is the component of the force exerted by the surface that is perpendicular to the surface. 
+[
+Section 4.3
+]
+
+north pole of magnet
+
+The pole from which the magnetic field lines emerge from a magnet. 
+[
+Section 10.4
+]
+
+ohm
+
+The unit of resistance: 1 ohm = 1 Ω = 1 volt per amp = 1 V/A. 
+[
+Section 10.1
+]
+
+Ohm’s law
+
+A material is said to obey Ohm’s law if its resistance remains constant as the voltage across it varies; thus, for such a material, 
+V
+ = 
+IR
+, where 
+R
+ is a constant. 
+[
+Section 10.1
+]
+
+parallel resistors
+
+Resistors in a circuit are said to be in parallel if they provide alternate routes for current to flow from one point in the circuit to another; parallel resistors always share the same voltage drop. 
+[
+Section 10.1
+]
+
+pascal
+
+The unit of pressure: 1 pascal = 1 Pa = 1 newton per square meter = 1 N/m
+2
+. 
+[
+Section 8.1
+]
+
+Pascal’s law
+
+A confined fluid transmits an externally applied change in pressure to all parts of the fluid equally. 
+[
+Section 8.1
+]
+
+Pauli exclusion principle
+
+The quantum physics rule that restricts the number of particles that can occupy the same quantum state within a small proximity; the principle that explains how electron orbitals fill in the elements. 
+[
+Section 14.3
+]
+
+period
+
+The time required for one complete oscillation (or cycle). 
+[
+Section 11.1
+, 
+11.2
+]
+
+periodic (or harmonic) motion
+
+Any motion that regularly repeats, such as uniform circular motion or oscillatory motion. 
+[
+Section 11.1
+]
+
+photoelectric effect
+
+The effect wherein photons eject individual electrons from a metal. 
+[
+Section 14.4
+]
+
+photon
+
+Light travels as a wave, but interacts with matter as a stream of particles; these “particles,” each an indivisible quantum of energy, are photons. Photons have no mass and move at the speed of light. The energy carried by each photon is proportional to the frequency of the light: 
+E
+photon
+ = 
+hf
+, where 
+h
+ is a constant of nature known as Planck’s constant. 
+[
+Section 13.1
+, 
+14.2
+]
+
+polarized
+
+1. A transverse wave is polarized if the direction of its oscillations is constant (or is confined to vary in a particular way). For a plane-polarized electromagnetic wave, the direction of polarization is the direction of oscillation of the electric field.
+
+2. Circular polarization is the result of two perpendicular waves with a 90° phase difference interfering, and resulting in the apparent rotation of the electric field. 
+[
+Section 13.1
+, 
+13.3
+]
+
+potential energy
+
+The energy of an object (or system) due to its position or configuration. There are different forms of potential energy, depending on the force involved; for the MCAT, the three most important forms are gravitational 
+PE
+, electrical 
+PE
+, and elastic 
+PE
+. 
+[
+Section 6.4
+, 
+9.4
+, 
+11.1
+]
+
+power
+
+1. In mechanics, power is the rate at which work is done or energy is used. Power is thus equal to work (or energy) divided by time, and its SI unit is the watt, where 1 watt = 1 W = 1 J/s. 
+[
+Section 6.2
+]
+
+2. In optics, lens power is a measure of the focusing strength of a lens. By definition, lens power is equal to the reciprocal of the focal length of the lens: 
+P
+ = 1/
+f
+. If 
+f
+ is expressed in meters, then lens power has units of diopters, where 1 diopter = 1 D = 1 m
+–1
+. 
+[
+Section 13.5
+]
+
+pressure
+
+A scalar quantity equal to the magnitude of the force per unit area. 
+[
+Section 7.2
+, 
+7.3
+, 
+8.1
+]
+
+projectile motion
+
+The motion of a particle moving under the influence of uniform (constant) acceleration; if the object’s initial velocity is not purely horizontal or vertical, the path of the object will be a parabola. 
+[
+Section 3.6
+]
+
+proton
+
+A subatomic particle with a positive electric charge (equal to the elementary electric charge, +
+e
+) that is a constituent of atomic nuclei. 
+[
+Section 9.1
+]
+
+quantized
+
+A quantity is said to be quantized if it exists only in discrete amounts. Examples: (1) Electric charge on an object can only be an integer multiple of the basic unit of electric charge, 
+e
+. (2) Electromagnetic radiation of frequency 
+f
+ can be absorbed only in whole number multiples of the photon energy, 
+hf
+. 
+[
+Sections 9.1
+, 
+14.1
+]
+
+quantum physics
+
+The physics associated with discrete values and changes in the values of such quantities; associated strongly with wave-particle duality. 
+[
+Section 14.1
+]
+
+radiation
+
+1. Energy emitted or absorbed due to propagation of waves (electromagnetic waves, unless a different kind of wave is specially mentioned). 
+[
+Section 13.1
+]
+
+2. A mode of heat transfer via electromagnetic waves. 
+[
+Section 7.2
+]
+
+rarefaction
+
+A region where the local density and pressure is momentarily decreased from standard due to the passage of a sound wave. 
+[
+Section 12.1
+]
+
+real image
+
+An image formed by a mirror or lens where light rays actually do intersect. Unlike a virtual image, a real image can be projected onto a screen. 
+[
+Section 13.4
+]
+
+reflection
+
+When waves or particles “bounce off” a surface on which they are incident, the return of these waves or particles is called reflection. 
+[
+Section 13.2
+]
+
+refraction
+
+The change in direction of a wave when it passes from one medium into another. 
+[
+Section 13.2
+]
+
+resistance
+
+The ratio of the voltage to current: 
+R
+ = 
+V
+/
+I
+. 
+[
+Section 10.1
+]
+
+resistivity
+
+The intrinsic resistance of a material. 
+[
+Section 10.1
+]
+
+resistor
+
+A component of an electrical circuit that provides resistance to the flow of current. 
+[
+Section 10.1
+]
+
+restoring force
+
+For an object undergoing oscillation, the force on the object that is directed toward equilibrium. 
+[
+Section 11.1
+]
+
+series resistors
+
+Resistors in a circuit are said to be in series if current must flow through each of them, one after the other; series resistors always share the same current. 
+[
+Section 10.1
+]
+
+shear stress
+
+The magnitude of the shearing force exerted on an object divided by the area parallel to which it acts. 
+[
+Section 8.3
+]
+
+simple harmonic motion
+
+Periodic (oscillatory) movement where the period and frequency of the oscillations do not depend on the amplitude, caused by a restoring force that is proportional to the displacement from equilibrium. 
+[
+Section 11.1
+]
+
+Snell’s law
+
+The law of refraction in optics, 
+n
+1
+sinθ
+1
+ = 
+n
+2
+sinθ
+2
+, where 
+n
+1
+ and 
+n
+2
+ are the refractive indexes of the incident and refracting media (respectively), and θ
+1
+ is the angle of incidence and θ
+2
+ the angle of refraction. 
+[
+Section 13.1
+, 
+13.2
+]
+
+sound level
+
+A measurement, in decibels, of the intensity of a sound wave. The sound-level for a wave of intensity 
+I
+ is given by the equation β = 10 log
+10
+ (
+I
+/
+I
+0
+), where 
+I
+0
+ is the threshold of hearing. 
+[
+Section 12.4
+]
+
+south pole of magnet
+
+The pole into which the magnetic field lines enter a magnet. 
+[
+Section 10.4
+]
+
+specific gravity
+
+The unitless ratio of the density of a substance to the density of water: sp. gr. = ρ
+substance
+/ρ
+water
+. 
+[
+Section 8.1
+]
+
+speed
+
+The magnitude of an object’s velocity. 
+[
+Section 3.2
+]
+
+standing wave
+
+A wave caused by the superposition of two oppositely directed traveling waves, for which the resulting crests and troughs do not travel. 
+[
+Section 11.4
+]
+
+state function or state variable
+
+The measure of an intrinsic, macroscopic property of a thermodynamic system that defines the present attributes of the system, independent of past processes. 
+[
+Section 7.2
+]
+
+static friction
+
+The friction that results when there is no relative motion between the two surfaces; that is, when neither slides across the other. If 
+F
+N
+ is the magnitude of the normal force and µ
+s
+ is the coefficient of static friction between the two surfaces, then the force of static friction is directed opposite to the direction of the intended motion and its 
+maximum
+ magnitude is 
+F
+f, max
+ = µ
+s, max
+F
+N
+. 
+[
+Section 4.3
+]
+
+stopping voltage
+
+In the photoelectric experiment, the negative voltage necessary to prevent the most energetic photoelectrons ejected from the metal surface from reaching the detector. 
+[
+Section 14.4
+]
+
+strain
+
+The ratio of the change in one of an object’s dimensions to the original, caused by an applied stress. For a compressive or tensile stress, the strain is equal to the (magnitude) of the change in the object’s length divided by the original length. For a shear stress, the strain is equal to the distance the object is deformed perpendicular to the shear stress divided by the length perpendicular to the direction of the bend. 
+[
+Section 8.3
+]
+
+stress
+
+The magnitude of the force acting on an object, divided by the area over which it acts. 
+[
+Section 8.3
+]
+
+superposition
+
+The addition principle that applies to several different physical phenomena, such as electric forces, fields, potentials, and waves, where the result is simply equal to the sum of the individual vector or scalar values. 
+[
+Section 9.2
+, 
+9.3
+, 
+9.4
+, 
+11.3
+]
+
+system
+
+The object or substance–or objects or substances and the interactions among them–that are the focus of study. Contrasted with the environment, which is everything else. 
+[
+Section 7.1
+]
+
+temperature
+
+A thermodynamic state function that corresponds to the internal, random kinetic energy of the constituent particles of a system. 
+[
+Section 7.1
+, 
+7.2
+]
+
+tension
+
+A type of force applied to a solid object that tends to increase its length. Tension is also used to describe the pulling force exerted by a stretched string, rope, chain, or spring. 
+[
+Section 4.1
+, 
+4.5
+, 
+8.3
+]
+
+tesla
+
+The SI unit of magnetic field strength: 1 tesla = 1 T = 1 newton per amp-meter = 1 N/A⋅m. 
+[
+Section 10.4
+]
+
+thermodynamics
+
+The study of how macroscopic systems transfer or transform energy. 
+[
+Section 7.1
+]
+
+Thermodynamic laws
+
+0
+th
+ law:
+ Two objects in thermal equilibrium with the same third object are in thermal equilibrium with each other. Defines temperature as a state function. 
+[
+Section 7.2
+]
+
+1
+st
+ law:
+ The total quantity of energy in the universe is conserved. more specifically, the energy into and out of a system equals its change in internal energy; Δ
+E
+ = 
+Q
+ – 
+W
+ 
+[
+Section 7.3
+]
+
+2
+nd
+ law:
+ The entropy of a closed system will either stay the same or increase. 
+[
+Section 7.4
+]
+
+threshold of hearing
+
+The lowest intensity the human ear can detect; denoted 
+I
+0
+, it is defined as 10
+–12
+ W/m
+2
+. 
+[
+Section 12.4
+]
+
+torque
+
+A quantity associated with a force that measures how effective the force is at producing rotational acceleration. If 
+r
+ is the vector from the pivot point to the point of application of a force 
+F
+, and the angle between 
+r
+ and 
+F
+ is θ, then the torque of the force is defined to be τ = 
+rF
+ sin
+θ
+. 
+[
+Section 5.3
+]
+
+Torricelli’s result
+
+The equation giving the speed of efflux for a static fluid from a small hole in a large open container: 
+v
+ = 
+, where 
+D
+ is the depth of the hole below the surface of the fluid. 
+[
+Section 8.2
+]
+
+total internal reflection
+
+When an incident beam of light strikes the surface of a medium with a lower index of refraction, the beam will experience total internal reflection (TIR) if the angle of incidence is greater than the critical angle. In this case, none of the beam’s energy is transmitted to the other medium; it is only reflected. 
+[
+Section 13.2
+]
+
+total mechanical energy
+
+The sum of an object’s kinetic energy and potential energy: 
+E
+ = 
+KE
+ + 
+PE
+. 
+[
+Section 6.5
+]
+
+transverse wave
+
+A wave in which the oscillations that make up the wave are perpendicular to the direction of the wave’s propagation. Waves on a rope and electromagnetic waves are transverse. 
+[
+Section 11.2
+]
+
+velocity
+
+The rate of change of an object’s position: 
+ = Δ
+s
+ / Δ
+t
+ = 
+d
+ / Δ
+t
+. An object’s velocity gives both the speed and the direction of motion of the object. 
+[
+Section 3.2
+]
+
+virtual image
+
+An image formed by a mirror or lens where light rays don’t actually intersect. Unlike a real image, a virtual image cannot be displayed on a screen. Convex mirrors and diverging (concave) lenses form only virtual images. 
+[
+Section 13.4
+]
+
+viscosity
+
+The internal friction of a fluid; an ideal fluid is one whose viscosity is negligible. 
+[
+Section 8.2
+]
+
+volt
+
+The SI unit of electric potential and voltage; 1 volt = 1 V = 1 joule per coulomb = 1 J/C. 
+[
+Section 9.4
+]
+
+voltage
+
+The difference in electric potential between two points. 
+[
+Section 9.4
+, 
+10.1
+]
+
+voltmeter
+
+A device for measuring the voltage across a circuit element. 
+[
+Section 10.1
+]
+
+watt
+
+The SI unit of power; 1 watt = 1 W = 1 joule per second = 1 J/s. 
+[
+Section 6.2
+]
+
+wave
+
+A disturbance that carries energy and momentum from one position to another. 
+[
+Section 11.2
+]
+
+wavelength
+
+The distance (denoted by 
+λ
+) between consecutive crests (or between consecutive troughs) of a wave. 
+[
+Section 11.2
+]
+
+weight
+
+The gravitational force exerted on an object: 
+w
+ = 
+m
+g
+. 
+[
+Section 4.2
+]
+
+work
+
+The work done by a constant force 
+F
+ as it acts through a displacement 
+d
+ is given by the equation 
+W
+ = 
+Fd
+ cosθ, where θ is the angle between 
+F
+ and 
+d
+. For an ideal gas in a container, work can be expressed as the product of its change in volume and its pressure, 
+W
+ = 
+P
+Δ
+V
+. Work is a scalar quantity, and its SI unit is the joule, where 1 joule = 1 J = 1 kg-m
+2
+/s
+2
+. 
+[
+Section 6.1
+, 
+7.3
+]
+
+work-energy theorem
+
+The total amount of work done on an object is equal to the change in the object’s kinetic energy: 
+W
+ = ∆
+KE
+. 
+[
+Section 6.3
+]
+
+work function
+
+The binding energy of a metal for its free electrons, overcome during the photoelectric effect. 
+[
+Section 14.4
+]
+
+===FILE OEBPS/Prin_9781101882436_epub_tp_r1.htm===
+
+MCAT Physics and Math Review: New for MCAT 2015
+
+===FILE OEBPS/Prin_9781101882436_epub_c11_r1.htm===
+
+MCAT Physics and Math Review: New for MCAT 2015
+
+Chapter 11
+
+Oscillations and Waves
+
+11.1 
+OSCILLATIONS
+
+Any motion that regularly repeats is referred to as 
+periodic
+ or 
+harmonic motion
+. Common examples include an object undergoing uniform circular motion, a mass oscillating on a spring and a pendulum. This type of motion can be characterized by its 
+period
+ or 
+frequency
+.
+
+Period
+
+The time it takes an object to move through one full cycle of motion is called the period. For an object undergoing uniform circular motion, the period is the time it takes to make one revolution. For a mass on a spring or a pendulum, it is the time it takes to make a round trip (i.e., the final position and velocity must be the same as the initial values). The period is denoted by 
+T
+ and is measured in seconds.
+
+Example 11-1:
+ The bob on a pendulum moves from point A to point B in 0.5 seconds. What is the period of oscillation?
+
+Solution:
+ A to B represents one-quarter of a period. A full period is the time it takes for the bob to move from A to B to C to B and back to A. So 
+T
+ = 4(0.5 s) = 2 s.
+
+Frequency
+
+Rather than timing one cycle to find the period, we can instead count the number of cycles that occur in one second. This is known as the frequency, denoted by 
+f
+. The units of 
+f
+ are cycles per second, or 
+hertz
+ (Hz).
+
+Now the first thing we notice is that period and frequency are reciprocals. After all, the period is “the number of seconds per cycle,” and the frequency is “the number of cycles per second.” So, we have these fundamental relationships:
+
+Period and Frequency
+
+f
+ = 
+ and 
+T
+ = 
+
+Every type of oscillation has a period and a frequency, but there is a special class of oscillations in which these quantities have a unique property. This “ideal” type of oscillatory motion is referred to as 
+simple harmonic motion
+ (often abbreviated SHM). A mass oscillating on a spring exhibits SHM.
+
+The spring in the series of diagrams below is fixed at its left end and has a block attached to its right end. When the spring is neither stretched nor compressed (i.e., when it’s at its natural length, as shown in Diagram 1 below) we say the spring is at its 
+equilibrium
+ 
+position
+. In general, the point at which the net force on the block is zero, which in this case is when the spring is at its natural length, is called the equilibrium position, and we label it 
+x
+ = 0.
+
+Now, imagine that we stretch the spring (Diagram 1 to Diagram 2), and let go. Once released, the spring pulls back to the left, going through its equilibrium position and then to the point of maximum compression. From here, the spring pushes back to the right, passing again through its equilibrium position, and returning to the point of maximum extension. If friction is negligible, this back-and-forth motion will continue indefinitely, and the time it takes for the block to go through one period, for example, from Diagram 2 to Diagram 6, is a constant.
+
+The Dynamics of SHM
+
+Force
+
+Let’s first describe the motion of the block attached to the spring from the point of view of the force it feels. The spring exerts a force on the block that’s proportional to its displacement. If we call the equilibrium position 
+x
+ = 0, then the force exerted by the spring is given by
+
+Hooke’s Law
+
+F = −
+k
+x
+
+The proportionality constant, 
+k
+, called the 
+spring constant
+, tells us how strong the spring is; the greater the value of 
+k
+, the stiffer (and stronger) the spring.
+
+As we can see from Hooke’s Law, the units of 
+k
+ are newton/meter. Since a meter is a large distance to stretch or compression a spring, the values for 
+k
+ are often large.
+
+What is the role of the minus sign in Hooke’s law? Look back at the diagrams on the previous page. Since we’re calling the equilibrium position 
+x
+ = 0, when the block is to the right of equilibrium, its position, 
+x
+, is positive. At this point, the stretched spring wants to pull back to the left; because the direction of the force of the spring is to the left, we indicate this direction by calling it negative. Similarly, when the block is to the left of equilibrium, its position, 
+x
+, is negative. At this point, the compressed spring wants to push back to the right; because the direction of the force of the spring is to the right, we indicate this direction by calling it positive. We see that the direction of the spring force is always directed opposite to its displacement from equilibrium, and for this reason, the minus sign is needed in Hooke’s law. Furthermore, because the spring is always trying to restore the block to equilibrium, we say that spring provides the 
+restoring force
+; it’s this force that maintains the oscillations. The fact that the restoring force exerted by the spring obeys Hooke’s Law (i.e., the force is directly proportional to the distance from equilibrium) is the reason why the block undergoes simple harmonic motion.
+
+Energy
+
+Unfortunately, knowing an equation for the force doesn’t allow us to solve directly for other things, such as the speed of the block at some later time or the work done by or against the spring: The force changes as the block moves, so acceleration is not uniform. However, there is a way to figure out these quantities by using energy. When we pull on the spring to get the oscillations started, we’re exerting a force over a distance; that is, we’re doing work. Because we’re doing work against the spring, the spring stores potential energy, called 
+elastic potential energy
+. If we once again call the equilibrium position of the spring 
+x
+ = 0, then the potential energy of a stretched or compressed spring is given by this equation:
+
+Elastic Potential Energy
+
+PE
+elastic
+ = 
+kx
+2
+
+It follows that 
+W
+by spring
+ = –Δ
+PE
+elastic
+ and 
+W
+against spring
+ = Δ
+PE
+elastic.
+ To justify this, imagine an external force is stretching a spring from 
+x
+ = 0 to 
+x = X
+. The minimum force required to do this is opposite the spring force: +
+kx
+. From mechanics, we learned that the work done by a variable force is equal to the area under the force vs. position graph.
+
+The area under curve is the area of a triangle with base equal to X and height equal to 
+k
+X. So 
+PE
+ = 
+W
+against spring
+ = (1/2)
+bh
+ = (1/2)(X)(
+k
+X) = (1/2)
+k
+X
+2
+.
+
+We can also use conservation of energy to find the speed of a oscillating mass on a spring at any given position.
+
+When we release the block from rest in 
+Diagram 2
+, the spring is stretched and the block isn’t moving, so all the energy is in the form of elastic potential energy. This potential energy turns into kinetic energy, until at 
+x
+ = 0 (equilibrium), all the energy has been converted to kinetic energy. As the block rushes past equilibrium, this kinetic energy gradually turns back into elastic potential energy until the point where the spring is at maximum compression and it’s all transformed back to potential energy. The compressed spring then pushes outward, converting its potential energy back to kinetic; the block rushes through equilibrium again, and kinetic energy is transformed back to potential energy, until it reaches its starting point (
+Diagram 6
+) at maximum extension. At this instant, we’re back to our full reserve of elastic potential energy (and no kinetic energy), and the process is ready to repeat.
+
+As a result, we can look at the motion of the block from the point of view of the back-and-forth transfer between elastic potential energy and kinetic energy.
+
+The maximum displacement of the block from equilibrium is called the 
+amplitude
+, denoted by 
+A
+. This positive number tells us how far to the left and right of equilibrium the block will travel. So, in the series of diagrams above, the block’s position at maximum extension is 
+x
+ = +
+A
+, and its position at maximum compression is 
+x
+ = –
+A
+.
+
+We can summarize the dynamics of the oscillations in this table:
+
+Because we’re ignoring any frictional forces during the oscillations of the block, total mechanical energy will be conserved. That is, the sum of the block’s kinetic energy, 
+mv
+2
+, and the spring’s potential energy, 
+kx
+2
+, will be a constant. We can use this fact to figure out the maximum speed of the block. At the instant the block is passing through equilibrium, all the potential energy of the spring has been transformed into kinetic energy of the block. If the amplitude of the oscillations is 
+A
+, then the maximum elastic potential energy, 
+kA
+2
+ (the value of 
+kx
+2
+ when 
+x
+ = ± 
+A
+), is completely converted to maximum kinetic energy at 
+x
+ = 0. This gives us:
+
+PE
+elastic, max
+ → 
+KE
+max
+
+kA
+2
+ = 
+mv
+2
+
+∴ 
+v
+max
+ = A
+
+Example 11-2:
+ A block of mass 
+m
+ attached to a spring with constant 
+k
+ oscillates horizontally on a frictionless surface with amplitude 
+A
+. In which case does the spring do more work, moving the mass from 
+x
+ = 
+A
+ to 
+x
+ = 
+A
+/2 or from 
+x
+ = 
+A
+/2 to 
+x
+ = 0?
+
+Solution:
+ In both cases the spring does positive work, since the restoring force is in the same direction as the motion of the block. Since the force is not constant, we cannot use the formula 
+W = Fd
+ cos
+θ
+. Instead, the work done by the spring is given by 
+W
+ = –Δ
+PE
+elastic
+ = –(
+PE
+final
+ – 
+PE
+initial
+).
+
+From 
+x
+ = 
+A
+ to 
+x
+ to 
+A
+/2:
+
+W
+ = −(
+k
+[
+A
+/2]
+2
+ − 
+kA
+2
+) = −(
+kA
+2
+ − 
+kA
+2
+) = 
+kA
+2
+
+From 
+x
+ = 
+A
+/2 to 
+x
+ = 0:
+
+W
+ = −(
+k
+[0]
+2
+ − 
+k
+[
+A
+/2]
+2
+) = −(0 − 
+kA
+2
+) = 
+kA
+2
+
+Notice that even though the distance travelled is the same in each case, the average force exerted by the spring is greater from 
+x = A
+ to 
+x
+ = 
+A
+/2 than it is from 
+x
+ = 
+A
+/2 to 
+x
+ = 0, and therefore the work done by the spring is also greater.
+
+Example 11-3:
+ A block of mass 200 g is oscillating on the end of a horizontal spring of spring constant 100 N/m and natural length 12 cm. When the spring is stretched to a length of 14 cm, what is the acceleration of the block?
+
+Solution:
+ When the spring is stretched by 2 cm, Hooke’s law tells us that the force exerted by the spring has a magnitude of 
+F
+ = 
+kx
+ = (100 N/m)(0.02 m) = 2 N. Therefore, by Newton’s second law, the acceleration of the block will have a magnitude of 
+a
+ = 
+F
+/
+m
+ = (2 N)/(0.2 kg) = 10 m/s
+2
+.
+
+Example 11-4:
+ If the block in 
+Example 11-3
+ above were replaced with a block of mass 800 g, how would its maximum speed change?
+
+Solution:
+ The equation derived above, 
+v
+max
+ = 
+A
+, tells us that 
+v
+max
+ is inversely proportional to the square root of the mass of the oscillator. Therefore, if 
+m
+ increases by a factor of 4, 
+v
+max
+ will decrease by a factor of 2.
+
+The Kinematics of SHM
+
+Earlier it was mentioned that a mass oscillating on a spring exhibits “ideal” oscillatory motion, which is called simple harmonic motion, and that this motion is the result of Hooke’s Law (i.e., the restoring force is directly proportional to the distance from equilibrium). But what makes this motion different than non-ideal oscillations? It turns out (using calculus) that the frequency and period only depend on the spring constant, 
+k
+, and the mass of the block, 
+m
+.
+
+f
+ = 
+ and 
+T
+ = 2π
+
+Notice that neither f nor T depends on A, the amplitude.
+ This is why we call the motion of the block on the spring 
+simple
+ harmonic motion. This is not an obvious statement. If a mass on a spring is pulled back 1 cm or pulled back 10 cm (assuming the spring is still within its elastic limit), the time it takes to complete one cycle is exactly the same. As an example of an oscillating system that does not exhibit simple harmonic motion, imaging a ball bouncing. Removing air resistance and assuming that the bounces are completely elastic, the ball will continue to bounce to the same height from which it was released. However, dropping the ball from 1 cm will take less time to fall and rise than dropping it from 10 cm (which can be proven with the Big 5 equations).
+
+It’s possible for a system to oscillate because of a restoring force that is not directly proportional to the displacement. If this were the case, the frequency and period would depend on the amplitude; we’d still call the motion 
+harmonic
+, which just means back-and-forth, but we wouldn’t call it 
+simple
+ harmonic.
+
+Example 11-5:
+ Suppose that the block shown in the series of diagrams on the first page of this chapter requires 0.25 sec to move from Diagram 4 to Diagram 6. What is the frequency of the oscillations?
+
+Solution:
+ The interval from Diagram 4 to Diagram 6 represents 
+half
+ a cycle, which requires 
+half
+ a period to complete. If half a period is 0.25 sec, then the period is 0.5 sec. Therefore, the frequency, 
+f
+, is 1/
+T
+ = 1/(0.5 s) = 2 Hz.
+
+So far we have examined the simple harmonic motion of a mass on a horizontal spring, where the system is in equilibrium when the spring is at its rest length. If the spring is now rotated so that it is suspended vertically and a mass is attached, will the oscillations still be simple harmonic? The answer is yes. The formulas for period and frequency are exactly the same. The force of gravity, however, does affect the situation. The weight of the block will naturally stretch the spring so that equilibrium (
+F
+net
+ = 0) no longer occurs when the spring is at its rest length. The new equilibrium position is when the upward force of the spring exactly balances the weight: 
+kx = mg
+. When the spring is stretched beyond this point and released, the mass will oscillate around the new equilibrium position. It is often convenient to rename the new equilibrium position 
+x
+ = 0. This enables us to “ignore gravity”. In other words, measuring 
+x
+ from equilibrium instead of measuring from the rest length of the spring, it becomes exactly like a horizontal spring, but with a longer rest length. We can therefore still use the equations
+
+–
+kx = ma
+ and 
+v
+max
+ = 
+A
+
+Pendulums
+
+Besides the spring-block simple harmonic oscillator, there’s another oscillator that the MCAT will expect you to know about: the simple pendulum. If the connecting rod or string between the suspension point and the object at the end of a pendulum has negligible mass (so that all the mass is in the object at the end of the rod or string), and if there is no friction at the suspension point during oscillation, we say the pendulum is a 
+simple pendulum
+.
+
+The displacement of the mass is not taken as a distance from equilibrium (as in the spring-block case), but rather as the angle it makes with the vertical. The vertical (shown as a dashed line in the figure below) is the equilibrium position, 
+θ
+ = 0. The restoring force here is gravity; specifically, it’s equal to 
+mg
+ sin
+θ
+, which is the component of the object’s weight in the direction toward equilibrium.
+
+Strictly speaking, a pendulum does not undergo simple harmonic motion because the restoring force is not proportional to the displacement (
+mg
+ sin
+θ
+ is not exactly proportional to 
+θ
+). However, if the angle is small, then sin
+θ
+ ≈ 
+θ
+ (in radians), so the restoring force can be approximated as 
+mgθ
+, which is proportional to 
+θ
+.
+1
+ In this case, we can treat the motion as simple harmonic, and the frequency and period are given by the following equations:
+
+f
+ = 
+ and 
+T
+ = 2π
+
+where 
+l
+ is the length of the pendulum and 
+g
+ is the acceleration due to gravity. Observe that in the case of simple harmonic motion of a simple pendulum, the mass of the swinging object does not affect the frequency or period of oscillation.
+
+Example 11-6:
+ The bob (mass = 
+m
+) of a simple pendulum is raised to a height 
+h
+ above its lowest point and released. Find an expression for the maximum speed of the pendulum.
+
+Solution:
+ When the bob is at height 
+h
+ above its lowest point, it has gravitational potential energy equal to 
+mgh
+ (relative to its lowest point). As it passes through the equilibrium position, all this potential energy is converted to kinetic energy. Therefore, 
+mgh
+ = 
+mv
+2
+max
+, and we get 
+v
+max
+ = 
+. This is the speed of the bob as it passes through equilibrium, which is where it attains its maximum speed.
+
+11.2 
+WAVES
+
+A 
+mechanical wave
+ is a series of disturbances (i.e., oscillations) within a medium that transfers energy from one place to another. The medium itself is not transported, just the energy. Examples included a vibrating string or sound. Mechanical waves cannot exist without a medium. In a later chapter we will discuss 
+electromagnetic waves
+, which do not need a medium. This is because the electric and magnetic fields oscillate rather than physical matter.
+
+Transverse Waves
+
+Perhaps the simplest example of wave is one we can create by wiggling one end of a long rope:
+
+This wave uses the rope as the medium, traveling from one end to the other. Notice that the wave is moving horizontally, but the rope itself is moving up and down. That’s why this is called a 
+transverse
+ wave: The wave travels (propagates) in a direction that’s 
+perpendicular
+ to the direction in which the medium is vibrating.
+
+Frequency and Period
+
+The most fundamental characteristic of a wave is its frequency. If we pick a spot on the rope and count how many times it moves up and down (the number of round trips it makes) in one second, we’ve just measured the 
+frequency
+, 
+f
+, which we express in hertz (cycles per second).
+
+The 
+period
+ of a wave, 
+T
+, is the reciprocal of the frequency, and is the amount of time it takes any spot on the rope to complete one cycle (in this case, one up-and-down round trip).
+
+These definitions for frequency and period are same as for a mass on a spring or a pendulum. Each particle of rope oscillates up and down with simple harmonic motion. However, we can also think of the frequency and period of a wave in a different way. Instead of focusing on the oscillations, we can observe “pulses” moving the right. Frequency can be thought as the number of pulses that pass a given point per unit time and period is the time it takes between pulses.
+
+Wavelength and Amplitude
+
+The figure below identifies the 
+crests
+ (
+peaks
+) and 
+troughs
+ of the wave. The distance from one crest to the next (i.e., the length of one cycle of the wave) is called the 
+wavelength
+, denoted by 
+λ
+, the Greek letter lambda. We can also measure the wavelength by measuring the distance from one trough to the next, or, in fact, between any two consecutive corresponding points along the wave.
+
+The 
+amplitude
+ of a wave, 
+A
+, is the maximum displacement from equilibrium that any point in the medium makes as the wave goes by. In the case of a wave on a rope, the amplitude is the distance from the original horizontal position of the rope up to a crest; it’s also the distance from the horizontal position down to a trough.
+
+Wave Speed
+
+To figure out how fast the wave travels, we just notice that the wave travels a distance of 
+λ
+ in time 
+T
+; that is, 
+λ
+ is the length of one wave cycle, and 
+T
+, the period, is the time required for one wave cycle to go by. Since distance = rate × time, we get 
+λ
+ = 
+vT
+. Solving this for 
+v
+ gives us 
+λ
+(1/
+T
+) = 
+v
+ and since 
+f
+ = 1/
+T
+, the equation becomes 
+v = λf
+. 
+This is the most important equation for waves and one of the most important equations for the MCAT.
+
+Wave Equation
+
+v
+ = 
+λf
+
+For a transverse wave on a rope, there’s another equation we can use to figure out the wave speed:
+
+The linear density of a rope is its mass per unit length.
+
+Two Big Rules for Waves
+
+Notice that the second equation for the wave speed shows that 
+v
+ does not depend on 
+f
+ (or 
+λ
+). While this may seem to contradict the first equation, 
+v
+ = 
+λf
+, it really doesn’t. The speed of the wave depends on the characteristics of the rope; how tense it is, and what it’s made of. We can wiggle the end at any frequency we want, and the speed of the wave we create will be a constant. However, because 
+λf
+ = 
+v
+ must always be true, a higher 
+f
+ will mean a shorter 
+λ
+ (and a lower 
+f
+ will mean a longer 
+λ
+). Thus, changing 
+f
+ doesn’t change 
+v
+: It changes 
+λ
+. This brings up our first big rule for waves:
+
+Big Rule 1: The speed of a wave is determined by the type of wave and the characteristics of the medium, 
+not
+ by the frequency.
+
+Notice that two different types of wave can move with different speeds through the same medium; for example, sound and light move through air with very different speeds. There are exceptions to Big Rule 1, but the only one the MCAT will expect you to know about is 
+dispersion
+, which is discussed in 
+Chapter 13
+, on Optics. Any other exception would be discussed in the passage; otherwise, you can assume the rule applies.
+
+Our second big rule for waves concerns what happens when a wave passes from one medium into another. Because wave speed is determined by the characteristics of the medium, a change in the medium implies a change in wave speed, but the frequency won’t change.
+
+Big Rule 2: When a wave passes into another medium, its speed changes, but its frequency does 
+not
+.
+
+The reasoning behind this makes sense if you focus on a wave as a series of pulses. Frequency is the number of pulses that pass by per unit time. It stands to reason that, if a certain number of pulses per second arrives at the boundary between two different media, then the same number of pulses per second must leave, passing into the new medium. In other words, rate in = rate out. This is similar to the Equation of Continuity in fluids and the rule for electric current passing through resistors in series.
+
+Because 
+f
+ is constant, Rule 2 tells us that the wavelength is proportional to wave speed.
+
+Notice that Rule 1 applies to different waves in one medium, while Rule 2 applies to a single wave in different media. Memorize these rules. The MCAT loves waves.
+
+Example 11-7:
+ A transverse wave of frequency 4 Hz travels at a speed of 6 m/s along a rope. What would be the speed of a 12 Hz wave along this same rope?
+
+Solution:
+ Big Rule 1 for waves says that the speed of a wave is determined by the type of wave and the characteristics of the medium, not by the frequency. If all we do is change the frequency, the wave speed will not change: The wave speed will still be 6 m/s. (What 
+will
+ change? The wavelength. Because 
+λ
+ = 
+v
+/
+f
+, a change in 
+f
+ with no change in 
+v
+ will change 
+λ
+.)
+
+Example 11-8:
+ 
+Which one of the following statements is true concerning the amplitude of a wave?
+
+A. Amplitude increases with increasing frequency.
+
+B. Amplitude increases with increasing wavelength.
+
+C. Amplitude increases with increasing wave speed.
+
+D. None of the above.
+
+Solution:
+ The amplitude is determined by how much energy we put into the wave to get it started. If we wiggle the rope up and down through a large distance (a large amplitude). This takes more energy on our part, and as a result, the wave carries more energy. However, the amplitude doesn’t depend on 
+f
+, 
+λ
+, or 
+v
+. The answer is D.
+
+Example 11-9:
+ A wave of frequency 12 Hz has a wavelength of 3 m. What is the speed of this wave?
+
+Solution:
+ Using the equation 
+v
+ = 
+λf
+, we find that 
+v
+ = (3 m)(12 Hz) = 36 m/s.
+
+Example 11-10:
+ The horizontal distance between each crest and the closest trough of a transverse traveling wave along a long horizontal rope is 2 m. If the wave speed is 8 m/s, what is the period of this wave?
+
+Solution:
+ If the horizontal distance between each crest and the closest trough for a transverse traveling wave is 2 m, then the wavelength is 4 m. Now, using 
+v = λf
+, we find that 
+f
+ = 
+v
+/
+λ
+ = (8 m/s)/(4 m) = 2 Hz, so 
+T
+ = 1/
+f
+ = 1/(2 Hz) = 0.5 sec.
+
+Example 11-11:
+ What happens when the wave shown below passes from the thick, heavy rope into the thinner, lighter rope?
+
+Solution:
+ According to Big Rule 2 for waves, when a wave passes into another medium, its speed changes, but its frequency does not. How does the speed change? Because the rope is lighter (i.e., it has a lower linear density), the equation for wave speed on a string (given above) tells us that 
+v
+ will 
+increase
+. So, if 
+v
+ increases but 
+f
+ doesn’t change, then 
+λ
+ will also increase because 
+λ
+ = 
+v
+/
+f
+.
+
+Example 11-12:
+ A certain rope transmits a 2 Hz transverse wave of amplitude 10 cm with a speed of 1 m/s. What would be the wavelength of a 5 Hz transverse wave of amplitude 8 cm on this same rope?
+
+Solution:
+ First, ignore the amplitudes; they’re included in the question only to make things seem more complicated than they are. The amplitude of a wave indicates how much energy the wave transports, but it has nothing to do with wavelength, period, frequency, or wave speed (recall 
+Example 11-8
+ above). Now, if a 2 Hz transverse wave has a speed of 1 m/s on this rope, then a transverse wave of 
+any
+ frequency will have a speed of 1 m/s on this rope; that’s what Big Rule 1 for waves tells us. Thus, if 
+f
+ = 5 Hz and 
+v
+ = 1 m/s, then
+
+Example 11-13:
+ 
+How long will it take a wave of wavelength 
+λ
+ and period 
+T
+ to travel a distance 
+d
+?
+
+A. 
+λTd
+
+B. 
+
+C. 
+
+D. 
+
+Solution:
+ First, let’s see if we can eliminate any choices because the units don’t work out correctly. We’re being asked for an amount of time, so the answer must have the dimension (and units) of time. Choice A can’t be correct, since it has units of [
+λ
+][
+T
+][
+d
+] = m·sec·m = m
+2
+·sec. Notice that both 
+λ
+ and 
+d
+ have units of meters, which we don’t want in the answer, so these units must cancel. Therefore, B can’t be correct either since 
+λ
+ and 
+d
+ are multiplied by each other, rather than being divided as they should to make their units cancel.
+
+One difference between the two remaining choices is that in C, the distance 
+d
+ is in the numerator, while in D, the distance 
+d
+ is in the denominator. Now, let’s think about this: More time will be required for the wave to travel a greater distance. In other words, the bigger 
+d
+ is, the greater the travel time should be. Therefore, we can eliminate D; after all, since 
+d
+ is in the denominator in choice D, a larger 
+d
+ will result in a smaller amount of time, which doesn’t make sense. Thus, the answer must be C.
+
+Here’s an alternate solution using equations. Because 
+distance
+ = 
+speed
+ × 
+time
+ (
+d
+ = 
+vt
+), we know that 
+t
+ = 
+d
+/
+v
+. We can find 
+v
+ using the wave equation 
+v
+ = 
+λf
+, and since 
+f
+ = 1/
+T
+, we find that
+
+The answer is indeed C, just as we figured out by checking units and using logic.
+
+11.3 
+INTERFERENCE OF WAVES
+
+When two or more waves are superimposed on each other, they will combine to form a single resultant wave. This is called 
+interference
+. The amplitude of the resultant wave will depend on the amplitudes of the combining waves 
+and
+ on how these waves travel relative to each other.
+
+If crest meets crest, and trough meets trough, we say that the waves are 
+in phase
+ with each other. Their amplitudes will 
+add
+, and we say the waves interfere 
+constructively
+. However, if the crest of one wave coincides with the 
+trough
+ of the other (and vice versa), we say that the waves are exactly 
+out of phase
+ with each other. In this case, their amplitudes 
+subtract
+, and we say that the waves interfere 
+destructively
+.
+
+A passage might also say that waves that are directly opposite each other in amplitude are 
+180 degrees out of phase
+, or 
+π radians out of phase
+; it is common to refer to a whole cycle or wave as being 360 degrees or 2π radians, as if it were a circle. If the waves aren’t exactly in phase (0°, 360°, or 2π radians) or exactly out of phase (180° or π radians), the amplitude of the resultant wave will be somewhere between the difference and the sum of the amplitudes of the interfering waves.
+
+The interfering waves may also have different wavelengths. These waves will produce a more complicated-looking resultant wave, but we’d still say the waves interfere constructively where they reinforce each other, and destructively where they tend to cancel each other out.
+
+The preceding pictures of waves that are in phase and out of phase can also be thought of graphs representing the displacement at a fixed location as a function of time. As example, imagine a cork floating in calm water. Source 1 creates a wave, which travels through the water, causing the cork to bob up and down. A graph of the cork’s motion as a function of time would be sinusoidal (i.e., it looks like a Wave 1 in the picture except that the distance from maximum to maximum is the period rather than the wavelength).
+
+Similarly, if Source 2 were acting alone, Wave 2 would cause the cork to bob up and down. The graph of this motion as a function of time would look similar to the picture of Wave 2. If Wave 1 and Wave 2 both arrive at the cork, they will interfere. If the waves are in phase when they arrive at the cork (i.e., crests arrive at the same time, troughs arrive at the same time, etc.) or if they are 180° out of phase when they arrive at the cork (i.e., the crest of one wave arrives simultaneously with the trough of the other), the graph of the cork’s motion as a function of time would like the resultant waves in the picture. Note that if the waves have different frequencies (and wavelengths), then the graph of the cork’s motion will not look like a sine or cosine, but will be more complicated. An example of this is 
+beats
+, which are discussed in the next chapter.
+
+Be careful on the MCAT. If you see a picture of a sine or cosine, make sure you can determine whether it is an actual wave (pictured at a fixed time), or a graph of one particle’s motion as a function of time.
+
+How can you determine whether two waves are in phase, 180° out of phase or something in between? One way is to look at 
+path difference
+. In the above picture, imagine Source 1 and Source 2 emit identical waves that are exactly in phase. Just because they are initially in phase does not mean they will be in phase when they arrive at the cork. The reason is because Wave 2 had to travel a larger distance than Wave 1. The path difference = 
+d
+2
+ – 
+d
+1
+. The general rule is:
+
+•
+ If the path difference = 
+nλ
+ and, (
+n
+ = 0, 1, 2, …), the waves will be in phase and will therefore constructively interfere.
+
+•
+ If the path difference = (
+n
+ + ½)
+λ
+, the waves will be 180° out of phase and will therefore destructively interfere.
+
+If Wave 2 travels an integer number of wavelengths farther than Wave 1, the crests from each will still arrive at the same time. If Wave 2 travels 
+λ
+/2, 3
+λ
+/2, 5
+λ
+/2, etc. farther than Wave 1, the crest from one wave will arrive simultaneously with a trough from the other wave. Note that if the cork in the picture experiences constructive interference, it does not mean than neighboring corks will. The distance from 
+the sources to the other corks would be different. An example of this is Young’s Double-Slit experiment, where the two sources are small holes in a screen emitting light that is in phase. On the opposite wall is a screen that features alternating bright and dark fringes. Bright fringes are the result of constructive interference and dark fringes are the result of destructive interference. They alternate, since the path difference changes as you move up or down the screen.
+
+11.4 STANDING WAVES
+
+Let’s say that we have a long rope with one end in our fingers and the other end attached to a wall. We wiggle the rope up and down at a certain frequency, 
+f
+, and create waves of frequency 
+f
+ that travel down the length of the rope. When they hit the wall, they’ll be reflected. We now have two waves on the same rope (the wave we continue to generate plus the reflected wave) with the same frequency and amplitude but traveling in opposite directions. These waves will interfere. If the frequency is just right, the resulting wave seems to stand still; the rope continues to vibrate up and down, but the resultant wave no longer travels. The combination of these traveling waves produces a 
+standing wave
+, with the horizontal positions of the crests and troughs remaining fixed.
+
+Notice that each point along the rope has its own amplitude. Some points don’t vibrate up and down at all; these points are called 
+nodes
+ (points of 
+no
+ 
+d
+isplacement). Halfway between any two consecutive nodes are points where the amplitude is maximized; these positions are called 
+antinodes
+. Every other point has an amplitude that’s smaller than the amplitude at the antinode positions.
+
+To figure out the conditions under which a standing wave will be formed, we’ll look at the three simplest standing waves. In the figure at the top of the next page, we have a rope of length 
+L
+. The first picture shows the simplest standing wave that can form if we have nodes at the two ends; the second and third pictures show the next simplest standing waves that the rope could support.
+
+The distance between any two consecutive nodes is always one-half of the wavelength. The first picture shows us that one of these half-wavelengths is equal to 
+L
+; in the second picture, two half-wavelengths are equal to 
+L
+; and in the third picture, three half-wavelengths are equal to 
+L
+.
+
+Notice the pattern that emerges relating the length of the rope and the wavelength of the standing wave.
+
+Standing-Wave Wavelengths for Two Fixed Ends
+
+λ
+n
+ = 
+ where 
+n
+ = 1, 2, 3…
+
+The only standing waves that can be supported are those for which the length of the rope is equal to a whole number of half-wavelengths, so the wavelength must be twice the length of the rope divided by a whole number:
+
+The number 
+n
+ is called the 
+harmonic number
+. The first harmonic is usually called the 
+fundamental
+ because once we know the 
+fundamental wavelength
+, 
+λ
+1
+, we automatically know all the other harmonic wavelengths, because we can write 
+λ
+n
+ in terms of 
+λ
+1
+, like this: 
+λ
+n
+ = 
+λ
+1
+/
+n
+.
+
+Because the equation 
+v
+ = 
+λf
+ must always be true, and only certain wavelengths are allowed for a standing wave, then only certain frequencies will give standing waves. To find the harmonic frequencies, we just write 
+λ
+n
+f
+n
+ = 
+v
+, and solve for 
+f
+n
+:
+
+Standing-Wave Frequencies for Two Fixed Ends
+
+F
+n
+ = 
+v
+ where 
+n
+ = 1, 2, 3…
+
+In the same way that the fundamental wavelength can be used to figure out all the other harmonic wavelengths, the fundamental frequency can be used to figure out all the other harmonic frequencies: 
+f
+n
+ = 
+nf
+1
+. Memorizing this equation is helpful for the MCAT.
+
+It is possible to create standing waves with only one fixed end (node) and one non-fixed end (antinode), but the appropriate formulas to find frequency and wavelength for this situation are discussed in 
+Chapter 12
+. Regardless of the type of standing wave, the formula to find the appropriate harmonic from the fundamental frequency still holds (
+f
+n
+ = 
+nf
+1
+).
+
+Example 11-14:
+ If a rope of length 6 m supports a standing wave with exactly four nodes (which includes the ends of the rope), what is the wavelength of the standing wave?
+
+Solution:
+ Draw the standing wave. It should look just like the third harmonic drawn on the previous page. Therefore, the wavelength is 
+λ
+3
+ = 2
+L
+/3 = 2(6 m)/3 = 4 m.
+
+Example 11-15:
+ The speed of a transverse traveling wave along a certain 4-meter-long rope is 24 m/s. Which of the following frequencies could cause a standing wave to form on this rope, assuming both ends of the rope are fixed?
+
+A. 32 Hz
+
+B. 33 Hz
+
+C. 34 Hz
+
+D. 35 Hz
+
+Solution:
+ The fundamental frequency for this rope is 
+f
+1
+ = (1/2
+L
+)
+v
+ = 3 Hz. All harmonic frequencies are whole-number multiples of the fundamental, so any frequency that could cause a standing wave to form on the rope must be a multiple of 3 Hz. Of the choices given, only choice B, 33 Hz, is a multiple of 3 Hz.
+
+Example 11-16:
+ For a particular rope, it’s found that the fundamental frequency is 6 Hz. What’s the third-harmonic frequency?
+
+Solution:
+ From the equation 
+f
+n
+ = 
+nf
+1
+, we get 
+f
+3
+ = 3
+f
+1
+ = 3(6 Hz) = 18 Hz.
+
+Example 11-17:
+ For a particular rope, it’s found that the second-harmonic frequency is 8 Hz. What’s the fifth-harmonic frequency?
+
+Solution:
+ The equation 
+f
+n
+ = 
+nf
+1
+ gives us 
+f
+2
+ = 2
+f
+1
+. This means that 
+f
+1
+ = 
+f
+2
+/2 = (8 Hz)/2 = 4 Hz. Therefore, 
+f
+5
+ = 5
+f
+1
+ = 5(4 Hz) = 20 Hz.
+
+Example 11-18:
+ The second-harmonic wavelength for a rope fixed at both ends is 0.5 m. How fast do transverse waves travel along this rope if the fundamental frequency is 4 Hz?
+
+Solution:
+ Using the equation 
+λ
+n
+ = 
+λ
+1
+/
+n
+, we get 
+λ
+2
+ = 
+λ
+1
+/2. This means that 
+λ
+1
+ = 2
+λ
+2
+ = 2(0.5 m) = 1 m. Now, multiplying any harmonic wavelength by its corresponding harmonic frequency will give us the wave speed. In particular, we have 
+v
+ = 
+λ
+1
+f
+1
+, so 
+v
+ = (1 m)(4 Hz) = 4 m/s.
+
+Summary of Formulas
+
+Simple Harmonic Motion (SHM) requires:
+
+− dynamics condition: restoring force is directly proportional to displacement from equilibrium (
+x
+ = 0) and points towards that equilibrium point
+
+− kinematics condition: frequency and period are independent of the amplitude of oscillations
+
+Hooke’s law (spring): F = –
+k
+x
+
+Elastic potential energy (spring): 
+PE
+elastic
+ = 
+kx
+2
+
+Spring-block oscillator frequency: 
+f
+ = 
+
+Simple pendulum frequency (small oscillations): 
+f
+ = 
+
+Period/frequency
+(all harmonic motion and waves): 
+T
+ = 1/
+f
+
+Wave equation: 
+v = λf
+
+Two Big Rules for Waves to be used with wave equation:
+
+1) Wave speed 
+v
+ depends on wave type and the medium, not on frequency
+
+2) A single wave passing between media maintains a constant frequency
+
+Standing wave on a rope (both ends fixed nodes)
+
+Standing-wave wavelengths:
+ 
+
+λ
+n
+ = 
+ (
+n
+ = 1, 2, 3, …)
+
+ 
+
+Standing-wave frequencies:
+ 
+
+f
+n
+ = 
+ 
+v
+ (
+n
+ = 1, 2, 3, …)
+
+ 
+
+f
+n
+ = 
+nf
+1
+
+CHAPTER 11 FREESTANDING PRACTICE QUESTIONS
+
+ 
+1.
+ A 2 kg mass is attached to a massless, 0.5 m string and is used as a simple pendulum by extending it to an angle 
+θ
+ = 5° and allowing it to oscillate. Which of the following changes will increase the period of the pendulum?
+
+A) Replacing the mass with a 1 kg mass
+
+B) Changing the initial extension of the pendulum to a 10° angle
+
+C) Replacing the string with a 0.25 m string
+
+D) Moving the pendulum to the surface of the moon
+
+ 
+2.
+ A 100 kg bungee jumper attached to a bungee cord jumps off a bridge. The bungee cord stretches and the man reaches the lowest spot in his descent before beginning to rise. The force of the stretched bungee cord can be approximated using Hooke’s law, where the value of the spring constant is replaced by an elasticity constant, in this case, 100 kg/s
+2
+. If the cord is stretched by 30 m at the lowest spot of the man’s descent, then what his acceleration at the lowest spot?
+
+A) 0 m/s
+2
+
+B) 10 m/s
+2
+
+C) 20 m/s
+2
+
+D) 30 m/s
+2
+
+ 
+3.
+ A physics student is doing a wave experiment with a 1 m long cord stretched across the lab table. In the middle of the cord, a 1 cm section is painted red. A specially designed machine creates vibrations so that a sine wave will travel on the cord from the east side of the table to the west side of the table. The vibrations of the sine wave are parallel to the table and peak at the north side of the table and the south side of the table. Which of the following best describes the motion of the red spot?
+
+A) The spot moves from east to west along the sine wave.
+
+B) The spot moves from west to east along the sine wave.
+
+C) The spot remains in a fixed location on the table.
+
+D) The spot vibrates between the north side and south side of the table.
+
+ 
+4.
+ A parent is pushing a young child on a swing at the playground. When the parent stops pushing, the child’s swinging motion continues without assistance. Assume the chain on the swing has negligible mass and any friction is negligible. Which of the following would need to be true in order for the child’s motion on the swing to be considered simple harmonic motion?
+
+ I. The mass of the child is not too large
+
+ II. The child is not swinging too high, so the angle between the swing and the vertical is not too big
+
+III. The tension in the chain of the swing is negligible
+
+A) I only
+
+B) II only
+
+C) I and III
+
+D) I, II, and III
+
+ 
+5.
+ Immediately before a performance, a musician breaks a guitar string. The only string available to repair the guitar is twice the linear density of the string normally used. How can the musician adjust the new string so that it will still have the correct frequency? (Note: 
+v
+ = (Tension/
+µ
+)
+0.5
+, where 
+µ
+ = linear mass density.)
+
+A) The tension of the new string should be twice the tension of the old string.
+
+B) The tension of the new string should be half the tension of the old string.
+
+C) The amplitude of the new string should be twice the amplitude of the old string.
+
+D) The amplitude of the new string should be half the amplitude of the old string.
+
+ 
+6.
+ 
+The speed of a 2 kg mass on a spring is 4 m/s as it passes through its equilibrium position. What is its frequency if the amplitude is 2 m?
+
+A) 1/5 Hz
+
+B) 1/3 Hz
+
+C) 3 Hz
+
+D) 5 Hz
+
+ 
+7.
+ The distance from a trough to a crest is 20 cm on a 3 m rope of 1 kg. If the tension in the rope is 3 N, what is the period? (Note: 
+v
+ = [tension/linear density]
+0.5
+)
+
+A) 1/15 s
+
+B) 2/15 s
+
+C) 15/2 s
+
+D) 15 s
+
+CHAPTER 11 PRACTICE PASSAGE
+
+A physics student conducts an experiment to study pendulums and momentum. Using an apparatus known as 
+Newton’s cradle
+, the student conducts two different trials. The Newton’s cradle apparatus consists of five identical steel balls of equal size and mass. Each ball is suspended from two wires that connect it to a frame, so that the ball is in the air and can move side to side in a single plane. The balls are suspended so that they are touching each other and are free to move individually or as a group. Each ball can be considered a simple pendulum since the hanging wires have negligible mass. Assume there is no friction in the pendulum mechanism.
+
+For the first trial, Ball A is raised at an angle, 
+θ
+, from the vertical and let go. The ball swings down and hits Ball B. Momentum is transferred through Balls B, C, and D to Ball E, causing Ball E to swing up to a maximum angle, 
+θ
+, from the vertical on the right while Balls A, B, C, and D are stationary. Then Ball E swings down and hits Ball D, transferring momentum through Balls D, C, and B to Ball A, causing Ball A to swing up again to the same maximum angle, 
+θ
+, from the vertical while Balls E, D, C, and B are stationary. The period for this motion is measured to be 1.5 seconds.
+
+Figure 1
+ Newton’s Cradle Apparatus with Ball A raised at the start of Trial 1
+
+Figure 2
+ Newton’s Cradle Apparatus after transfer of momentum to Ball E during Trial 1
+
+For the second trial, both Ball A and Ball B are lifted together to the same angle, 
+θ
+, as in the first trial. The result of the swing is that both Ball D and Ball E swing up on the right with the same displacement angle, 
+θ
+. As in the first trial, momentum is conserved.
+
+ 
+1.
+ Which of the following is true during the experiment?
+
+A) Kinetic energy is not conserved and the collisions are inelastic.
+
+B) Kinetic energy is not conserved and the collisions are elastic.
+
+C) Kinetic energy is conserved and the collisions are inelastic.
+
+D) Kinetic energy is conserved and the collisions are elastic.
+
+ 
+2.
+ Which of the following is true when Ball E is at half of its maximum height as measured from its lowest point?
+
+ I. The kinetic energy is half of the total mechanical energy.
+
+ II. The velocity is half of the maximum velocity of the ball.
+
+III. The time elapsed from the time Ball E started in motion to the time it reached half of its maximum height is half of the period.
+
+A) I only
+
+B) I and III
+
+C) II and III
+
+D) I, II, and III
+
+ 
+3.
+ 
+What should be the measured period in Trial 2?
+
+A) 1.0 seconds
+
+B) 1.5 seconds
+
+C) 2.0 seconds
+
+D) 3.0 seconds
+
+ 
+4.
+ For Ball E, how does the maximum velocity in Trial 2, 
+v
+2
+, compare to the maximum velocity in Trial 1, 
+v
+1
+?
+
+A) 
+v
+2
+ = (1/2)
+v
+1
+
+B) 
+v
+2
+ = (1/
+)
+v
+1
+
+C) 
+v
+2
+ = 
+v
+1
+
+D) 
+v
+2
+ = 2
+v
+1
+
+ 
+5.
+ To help record results, the student attached pens of negligible mass to each ball and scrolled paper perpendicular to the axis of motion of the Newton’s cradle. The paper scrolls at a rate of 20 cm/s underneath the pens during the trials. What is the wavelength of the resulting wave graphed in Trial 1?
+
+A) 13 cm
+
+B) 20 cm
+
+C) 30 cm
+
+D) 33 cm
+
+ 
+6.
+ If 
+L
+ is the length of each string, what is the maximum height of Ball E in Trial 1 above its lowest position?
+
+A) 
+L
+ − cos 
+θ
+
+B) 
+L
+ − 
+L
+ cos 
+θ
+
+C) 
+L
+ + 
+L
+ cos 
+θ
+
+D) 
+L
+ cos 
+θ
+
+ 
+7.
+ In both Trial 1 and Trial 2 of the experiment, the number of balls that moved on the right side was the same as the number of balls lifted on the left side to start the motion, while all the central balls remained stationary. Which of the following changes to the experiment would most likely result in not having the same number of balls swing on each side of the apparatus?
+
+A) Raise three balls on the left side to start the motion.
+
+B) Increase the length of the wires holding the balls.
+
+C) Change the masses of the balls so that each mass is different from the others.
+
+D) Add a small space between each of the balls as they hang on the apparatus.
+
+SOLUTIONS TO CHAPTER 11 FREESTANDING QUESTIONS
+
+ 
+1.
+ 
+D
+ Based on the equation 
+T
+, = 2π 
+, we know that the period does not depend on either the mass or the initial angle of extension, eliminating choices A and B. Furthermore, we know that decreasing the length of the string will decrease the period, eliminating choice C. Moving the pendulum to the surface of the moon will lower the gravitational acceleration, which would increase the period. Therefore, choice D is correct.
+
+ 
+2.
+ 
+C
+ A force diagram of the jumper at the lowest spot is shown below.
+
+F
+bungee
+ = (100 kg/s
+2
+)(30 m) = 3000 N
+
+F
+g
+ = (100 kg)(10 m/s
+2
+) = 1000 N
+
+Since the force up is greater than the force down, there is a net upward force of 2000 N on the jumper and an upward acceleration. Acceleration = 
+F
+/
+m
+ = (2000 N)/(100 kg) = 20 m/s
+2
+.
+
+ 
+3.
+ 
+D
+ A sine wave is a transverse wave, so the vibration direction is perpendicular to the direction of propagation. The question states that the wave vibrates between the north and south and propagates from east to west. The red spot is simply a part of the cord and will vibrate in the same direction the cord is vibrating (choice C is wrong), namely between the north and south. Since a wave only transports energy, not material, it would be impossible for the spot to propagate along the wave, eliminating choices A and B and leaving choice D as the correct answer.
+
+ 
+4.
+ 
+B
+ Simple harmonic motion is by definition when the restoring force is proportional to the displacement of the object. In this case, the swing is similar to a simple pendulum (a simple pendulum has no mass in the material connecting the end of the pendulum to the rotation point, and the question states the chain has negligible mass). For a simple pendulum to experience simple harmonic motion, the restoring force must be proportional to the displacement. In this case, the displacement is the angle, 
+θ
+, between the swing and the vertical. The restoring force is the component of the weight directed toward the vertical. For a child of mass, 
+m
+, the restoring force is 
+mg
+ sin 
+θ
+. If the angle is small, then sin 
+θ
+ approximates 
+θ
+, so the motion is considered simple harmonic motion. Thus, Item II is true, eliminating choices A and C. Item I is false: The mass of the child will impact the magnitude of the restoring force, but will not indicate whether the motion is simple harmonic motion (choice D can be eliminated and choice B is correct). Item III is also false: The tension in the chain will have a variable value that is equal to the component of the weight directed along the chain, but it will have no impact on whether the motion is simple harmonic motion.
+
+ 
+5.
+ 
+A
+ 
+The amplitude of the wave on the string will not impact the frequency of the wave or the wave speed, eliminating choices C and D. Since the frequency = wave speed/wavelength, in order to keep the frequency constant, the wave speed should be kept constant. Wave speed is proportional to the square root of tension/linear density (
+v
+ = (Tension/
+μ
+)
+0.5
+) and since linear density is doubled, then tension should also be doubled in order to keep wave speed constant. The correct answer is choice A.
+
+ 
+6.
+ 
+B
+ The kinetic energy is at a maximum at the equilibrium position, and is equal to the potential energy at the amplitude: 
+kA
+2
+ = 
+mv
+2
+max
+. This equation can be solved for the spring constant, 
+k
+ = 8 N/m. The spring constant and the mass are all you need to determine the frequency from 
+f
+ = 
+, giving a frequency of approximately 0.33 Hz.
+
+ 
+7.
+ 
+B
+ The speed of the wave is 
+ = 3 m/s. From 
+v
+ = 
+fλ
+, and knowing that the wavelength is 40 cm = 
+m, the frequency is 15/2 Hz, making the period 
+s.
+
+SOLUTIONS TO CHAPTER 11 PRACTICE PASSAGE
+
+ 
+1.
+ 
+D
+ By definition, if a collision is elastic then kinetic energy is conserved and if a collision is inelastic then energy is not conserved, eliminating choices B and C. Momentum is always conserved during a collision. Before the collision, all the momentum is with Ball A, so 
+p
+before
+ = 
+mv
+A
+. After the collision, all the momentum is with Ball E, so 
+p
+after
+ = 
+mv
+E
+ = 
+p
+before
+ so 
+v
+A
+ = 
+v
+E
+. Since the masses and velocities are the same for Ball A and Ball E, the kinetic energy of Ball A before the collision = the kinetic energy of Ball E after the collision, so kinetic energy is conserved and the collision is elastic. The correct answer is choice D.
+
+ 
+2.
+ 
+A
+ 
+When Ball E is at its maximum height, all of its energy is potential energy and 
+E
+total
+ = 
+PE
+max
+ = 
+mgh
+max
+. When Ball E is at half of its maximum height, its potential energy is 
+mg
+(
+)
+h
+max
+ = (
+)
+PE
+max
+ = (
+)
+E
+total
+. Since the total mechanical energy is the sum of the potential energy and the kinetic energy, then the other half of the total energy must be kinetic energy. Item I is true (choice C can be eliminated). When the ball is at its lowest point, all of its mechanical energy will be kinetic energy and 
+E
+total
+ = 
+KE
+max
+ = 
+mv
+2
+max
+. As discussed above, at half the maximum height, half the total mechanical energy is kinetic energy. So 
+E
+total
+ = 
+KE
+max
+ = 
+mv
+2
+max
+ = 
+KE
+half
+. The kinetic energy can also be calculated using the velocity at the half height, 
+v
+half
+. So 
+KE
+half
+ = 
+mv
+2
+half
+ = 
+mv
+2
+max
+ and 
+v
+half
+ = 
+v
+max
+. Item II is false (choice D can be eliminated). The period is the time for one full cycle. This is the time from Ball A dropping, through Ball E rising, Ball E dropping, and Ball A rising again. The entire time Ball E is moving is half of the period. The time for it to rise half way is approximately 1/8 of the entire period. Item III is false (choice B can be eliminated). The correct answer is choice A.
+
+ 
+3.
+ 
+B
+ Period depends on the length of the wire and the acceleration due to gravity 
+T
+ = 2π
+. Neither of these changed between Trial 1 and Trial 2, so the period should be the same in Trial 2 as in Trial 1. The correct answer is choice B.
+
+ 
+4.
+ 
+C
+ For a pendulum, the maximum velocity is at the lowest point (when 
+θ
+ = 0). For Ball E, this occurs after the collision of Ball A, and again after falling from its maximum height. For both trials, since the angle of displacement is the same for Ball E, then the height of the ball is the same, the maximum potential energy is the same, the maximum kinetic energy is the same, and the maximum velocity is the same. The correct answer is choice C. (Note: The total mechanical energy for the system will be doubled in Trial 2 compared to Trial 1, but the question is asking specifically about Ball E, not the whole system.)
+
+ 
+5.
+ 
+C
+ The rate of the paper is the rate of propagation of the wave. Since 
+v = f λ
+, and 
+f
+ = 1/
+T
+, we have that 
+λ
+ = 
+vT
+. Then, 
+λ
+ = (20 cm/s)(1.5 s) = 30 cm. The correct answer is choice C.
+
+ 
+6.
+ 
+B
+ 
+The easiest way to solve this is to remember that at 
+θ
+ = 0° the height = 0. Plugging in 0° for the angle in each of the answer choices, only choice B gives the correct value of height = 0, eliminating choices A, C, and D. Another (longer) way solve the question is using a sketch like the one below.
+
+Using the sketch and basic trigonometry the equation is cos 
+θ
+ = (
+L
+ − 
+h
+)/
+L
+ and 
+h
+ = 
+L
+ − 
+L
+ cos 
+θ
+. The correct answer is choice B.
+
+ 
+7.
+ 
+C
+ Momentum is always conserved, so the momentum before the collision must equal the momentum after the collision. Since the balls all have the same mass, momentum is conserved when the number of balls in motion before the collision equals the number in motion after the collision. It seems likely that raising three balls to start the motion would result in three balls moving on the right side to conserve momentum (in fact, this is what happens), which is the pattern the question seeks to avoid, eliminating choice A. Changing the length of the wires will change the period of motion, but will not affect the collisions and the number of balls in motion, eliminating choice B. A small space between the balls does not affect their momentum, momentum will still be conserved, and the same number of balls will still move on each side of the apparatus, eliminating choice D. Changing the masses of the balls so that each is different means that a different combination of balls needs to move at potentially different speeds in order to conserve momentum, and a different number of balls would move on each side of the apparatus. The correct answer is choice C.
+
+1
+ The conversion between degrees and radians is as follows: 180 degrees = 
+π
+ radians. If the angle is given in degrees, the restoring force is approximately 
+mg θ
+(π/180°), which is still proportional to 
+θ
+.

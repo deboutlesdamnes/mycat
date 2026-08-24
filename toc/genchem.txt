@@ -1,0 +1,1897 @@
+===PAGE 1===
+
+General
+Chemistry
+Parti
+Sections I-V
+Section I
+Stoichiometry
+Section II
+Atomic Theory
+Section III
+Equilibrium
+Section IV
+Acids & Bases
+Section V
+Buffers & Titrations
+27^
+BERKELEY
+L/r»e«v»i«e«w*
+Specializing in MCAT Preparation
+
+===PAGE 2===
+
+ERRELEY
+REV- I^E • W*
+P.O. Box 40140, Berkeley, California 94704-0140
+(800)
+N CAT-TB R
+Phone:
+(800)
+622-882 7
+Internet:
+MCATprep@bcrkeleyreview.com
+http://www.berkelcyrcvievv.com
+The Berkeley Review and The Berkeley Review logo are registered trademarks of The Berkeley Review.
+This publication for The Berkeley Review® was written, edited, and composed on a desktop publishing system
+using Apple Macintosh® computers and Microsoft® Word. Pages were created on the Apple LaserWnte® Pro. Line
+artwas created using numerous graphics programs designed tor use onMacintosh computers. The majority ofthe
+text type anddisplay type was setinTimes Roman and Palatino.
+Cover Design by MacGraphics.
+Copyright ©2010, 2007, 2003, 2001, 2000, 1995, 1994, 1993, 1992 by The Berkeley Review. All rights reserved.
+No part of this publication may be reproduced, stored in aretrieval system, or transmitted, in any form or by any
+means, electronic, mechanical/photocopying, recording, orotherwise, without the prior written permission ofthe
+copyright owner.
+
+===PAGE 3===
+
+Section I
+Stoichiometry
+by Todd Bennett
+O.lOMMX(aq)
+JW^
+JW*
+jwv
+Unit Conversion
+a) Dimensional Analysis
+b) Density Determination
+c) Typical Conversions
+Elemental Analysis
+a) Mass Percent
+b) Empirical Formulas
+c) Molecular Formulas
+d) Combustion Analysis
+Solution Concentration
+a) Units and Terminology
+i.
+Molarity
+ii.
+Molality
+iii. Mass Percent (in Solution)
+iv. Density
+b) Dilution
+c) Beer's Law
+Balancing Reactions
+a) Standard Balancing
+b) Limiting Reagents
+Reaction Types
+a) Common Reactions
+b) Oxidation States
+Test-Taking Tips
+a) General Advice
+b) Mathematical Tricks
+i.
+Addition and Subtraction
+ii.
+Averaging
+iii. Multiplication
+iv. Division
+f?EBKELEY
+Specializing in MCAT Preparation
+
+===PAGE 4===
+
+Stoichiometry Section Goals
+Know how to convert one kind of concentration unit into another.
+The concentration of a solution can be measured in terms of molarity, molality, and density. You
+mustknow thedefinitions ofeach unitandhow they differ from one another. Although thetest
+does not feature a great deal of math, you should have an idea of how to convert between units.
+Understand the difference between empirical and molecular formulas.
+Know the difference between the molecular formula (actual ratio of atoms in a molecule) and the
+empiricalformula (simplestwholenumber ratioof the atoms in a molecule). Befamiliarwith the
+experimentsand informationneeded to determineboth ofthe formulas.
+Know the effect of standard conditions.
+Standard conditions are defined as 1 atm. and 298 K for thermodynamics, but STP (standard
+temperature andpressure) isdefined as1atm. and273 K. Many calculations ofgasvolume usethe
+ideal gas assumption that at STP, one mole of gas occupies22.4liters.
+Understand dilution and its effect on concentration of a solute.
+Dilution involves a reduction in the concentration of a solute in solution by the addition of solvent
+to the mixture. The addition of solvent therefore dilutes the concentration, but does not change the
+moles of solute. The equation that you must recallis based on the constant number of solute moles:
+Minitial-Vinitial = Mfinal-Vfinal.
+Recognize standard reactions from general chemistry.
+The most commonly recurring reactionsin general chemistry that you are expected to know include
+combustion, single replacement, double displacement,and proton transfer, to name just a few. You
+must recognizethese reactionsand have a basicunderstanding of them.
+Recognize the limiting reagent in a reaction and know its effect on the reaction.
+The limiting reagent dictates theamount ofproduct thatcanbeformed andconsequently thepercent
+yield for a reaction. Using only starting values andthestoichiometric equation, you mustbe able
+to determine which reactant is the limiting reagent in the reaction.
+Understand the stoichiometric ratios in combustion reactions.
+In the combustion of both hydrocarbons and carbohydrates, there is a consistent relation between
+the number of oxygen molecules on the reactant side, and the number of water and carbon dioxide
+molecules that form on the product side. Know each reaction so that you may easily balance the
+coefficients.
+
+===PAGE 5===
+
+General Chemistry
+Stoichiometry
+Stoichiometry
+The perfect spot to start any review of general chemistry is the basics, which
+traditionally include stoichiometry and chemical equations.
+The most
+fundamental perspective of a chemical reaction, where bonds are broken so that
+new bonds can be formed, is at the atomic and molecular levels.
+Due to the
+minute size of atoms, we can never actually view a chemical reaction (so states
+Heisenberg's uncertainty principle). We must therefore rely upon developing
+models that can account for changes in all of the atoms and molecules involved
+in a chemical reaction or physical process. At the molecular level, we consider
+molecules. At the macroscopic level, we consider moles. Stoichiometry allows
+us to convert one into the other and to shift between these two perspectives. The
+number of molecules is converted into the number of moles using Avogadro's
+number (6.022 x 1023). The concept of a mole is based upon the amount of
+carbon-12 that is contained in exactly 12.0 grams of carbon, a quantity
+determined by knowing the volume of a 12.0-g carbon sample, the type of
+molecular packing in it, and the dimensions of the carbon atom.
+This task of
+quantifying atoms in a mole is similar to guessing the number of peas that are
+contained in an aquarium. It is important that you utilize the mole concept to
+understand, and later to balance and manipulate, chemical equations.
+In the stoichiometry section, we focus on those skills needed to solve ratio
+questions.
+Stoichiometry is most commonly thought of as the mathematical
+portion of general chemistry.
+The MCAT, however, has relatively few
+calculations. It is a conceptual test, emphasizing logical thought process rather
+than calculations. For some of you, this is great news. But before celebrating too
+much, consider where the mathematical aspects of general chemistry fit into a
+conceptual exam.
+The MCAT does involve some math, but it is not too
+complicated. Math-related calculations required for MCAT questions involve
+making approximations, determining ratios, setting up calculations, and
+estimating the effect of errors on results. The initial problems presented in this
+section involve slightly more calculations than you should expect to see on the
+MCAT. Some of them may look familiar to you from your general chemistry
+courses and should stimulate your recall. As the section proceeds, less emphasis
+is placed on calculating and estimating, and more emphasis is placed on the art
+ofquickly determining ratios and approximating values.
+The focus of the stoichiometry section is problem-solving, with special attention
+to the idiosyncrasies of each type of problem. Definitions of important terms are
+presented with sample questions and their solutions. Answer solutions discuss
+test strategy and the information needed to obtain the correct answer.
+Each
+problem in the stoichiometry section represents what we might call the "book
+keeping" of reactions in general chemistry, and it offers an ideal opportunity to
+begin work on fast math skills as well. As you do each of the questions,learn the
+definitions and develop an approach that works well for you. You may want to
+consider multiple pathways to arrive at the correct answer. It is important that
+you be able to solve questions in several different ways and to get into the
+mindset of the test writers. As you read a passage, think about the questions that
+could be asked about it.
+If a passage gives values for various masses and
+volumes, there will probably be a question about density. If it gives values for
+moles and solution volume, there will probably be questions on concentration
+and dilution. Use your intuition and common sense as much as you can, and
+make every effort to develop your test-taking logic.
+Introduction
+Copyright © by The Berkeley Review
+Exclusive MCAT Preparation
+
+===PAGE 6===
+
+General Chemistiy
+Stoichiometry
+Unit Conversion
+Unit Conversion
+Dimensional Analysis
+Dimensional analysis is a mathematical conversion from one set of units into
+another. It involves multiplyinga given value by a conversion factor or a series
+of conversion factors until the value is finally expressed in the desired units.
+Converting from one set ofunits toanother isa critical skill needed toeliminate
+incorrect answer choices in the physical sciences section. Be systematicwhen
+converting between units. The standard measurements thatcan be expressed in
+a variety ofunits are distance (1 m = 1.094 yd,2.54 cm= 1.00 in,and 1.609 km=
+1.00 mile), mass (1.00 kg = 2.205 lb and 453.6 g = 1.00 lb),volume (3.79 L = 1.00
+gal and 1.00 L = 1.06 qt), and time (3600 s = 1.00 hr). Always convert units as
+they appear in a problem into the units indicated in the answer choices (the so-
+called "target units").
+Example 1.1
+Sprinters can run 100 meters injustunder 10 seconds. Atwhat average speed in
+miles perhourmusta runner travel tocover 100 meters in10.0 seconds?
+A.
+3.7 miles/hour
+B.
+11.2 miles/hour
+C.
+22.4 miles/hour
+D.
+36.0 miles/hour
+Solution
+The first task is to determine the given units and the target units. From there,
+convert the given units into the target units. We are given 100 meters in 10
+seconds, but the answer choices are expressed in miles per hour. Use the correct
+conversion factors, as follows:
+10.0 s
+hour
+Conversion ofdistance: 10°mxmiles - miles
+10.0 s
+rn
+s
+Conversionof time:10°m x-§- =-^3_
+10.0 s
+hr
+hour
+mnm.. 1km x 1mile y 3600s _
+100x3600
+miles
+10.0 s
+1000 m
+1.609 km
+1.00 hr
+10 x 1000 x 1.609 hour
+100x3600
+_
+3600
+_
+36
+miles
+10x1000x1.609
+10x10x1.609
+1.609 hour
+36<
+2
+36 ,<36 where 36 _ 18and 36 = 36. So18<^6_ < 36
+1.609
+1
+2
+1
+1.609
+Only choice C falls within the range of 18 to 36.
+A frequent task in chemistry is the conversion between various types of
+temperature units, volume units, pressure units, and concentration units.
+Chemists, like mostscientists, employ the MKS system, so the conversion from
+conventional units less commonly used in science to MKS units is routine.
+Example 1.2 demonstrates the interconversion between the conventional
+Fahrenheit unit and the scientific Celsius unit of temperature.
+Copyright ©by The Berkeley Review
+4
+The Berkeley Review
+
+===PAGE 7===
+
+General ChemiStiy
+Stoichiometry
+Unit Conversion
+Example 1.2
+At what temperature is the numerical value the same, whether the units are in
+Celsius or Fahrenheit?
+A.
+32°
+B.
+0°
+C.
+-40°
+D.
+-273°
+Solution
+The formulas for conversion between Celsius and Fahrenheit are as follows:
+T.F =£t.c +32 .-. T-c = §• (T-f- 32)
+5
+9
+Answering the question requires setting T>f= T>(\
+T-F =£ T-c +32 becomes: T=£T+32, soT=1.8 T+32
+5
+5
+T = 1.8T + 32=> -0.8T = 32.\ T = -40°
+Density Determination
+The density of a material or solution is the mass of the sample divided by the
+volume of the sample.
+Density is a measured quantity, determined
+experimentally. Understand the techniques used to measure density. The term
+specific gravityrefers to the density of a material relative to the density of water,
+and may be used in a question in lieu of density. For our purposes, specific
+gravity means the same thing as density, but it has no expressed units.
+Determining density is a typical example of dimensional analysis.
+Example 1.3
+Exactly 10.07 mL of an unknown non-volatile liquid is poured into an empty
+25.41-gram open flask. The combined mass of the unknown non-volatile liquid
+and the flask is 34.12grams. What is the density of the unknown liquid?
+A
+34.13 g
+n
+8.71 g
+B.
+10.07 mL
+10.07 mL
+c
+10-07g
+D 8.71 mL
+8.71 mL
+* 10.07 g
+Solution
+The density of the liquid is found by dividing the mass of the liquid by the
+volume of the liquid.
+This results in units of grams per milliliter, which
+eliminates choice D. The volume of the liquid is 10.07mL, so 10.07should be in
+the denominator.
+This eliminates choice C.
+The mass of the liquid is the
+difference between the final mass of the flask and liquid combined, and the mass
+of the flask (34.12 - 25.41), which is equal to 8.71 grams. This means that the
+numerator should be 8.71. The correct answer is choice B. incidentally, the
+question did not state the reason for using a non-volatile liquid. The liquid must
+be non-volatile, to prevent any loss due to evaporation from the open flask. In
+the event the liquid evaporates away, then the mass you determine is too small,
+due to the loss of vapor molecules.
+Copyright © by The BerkeleyReview
+5
+Exclusive MCAT Preparation
+
+===PAGE 8===
+
+General Chemistry
+Stoichiometry
+Unit Conversion
+Density questions may onoccasion involve a more intricate conversion ofunits.
+Forany density question, keep in mind that the targetunits are masssolution
+divided byvolume solution. The mass percent ofa solute ismass solute divided
+by mass solution. The product ofthedensity and mass percent is mass solute
+dividedby volume solution. Converting the massofsoluteinto moles ofsolute
+yields molarity. Example 1.4shows this.
+Example 1.4
+Whatis themolarity ofa 3% NaClsolution witha densityof1.05 grams/mL?
+A.
+0.497 M NaCl
+B.
+0.504 M NaCl
+C
+0.539 M NaCl
+D.
+0.724 M NaCl
+Solution
+Thefirststepis todetermine theunitsyou are looking for, whichin this example
+is moles solute per liter solution. You must find both moles solute and liters
+solution. The density of the solution is 1.05 grams/mL which means that one
+liter of the solutionweighs1050 g. Threepercent (3%) of the solution is sodium
+chloride, so the mass of sodium chloride is 0.03 x 1050g. This is the same as 3%
+of 1000 g + 3% of50g, which is 30g + 1.5 g = 31.5 g of NaClper liter solution.
+The grams of sodium chloride are converted to moles by dividing by the
+molecular weightofNaCl(58.6 grams/mole). Theunit factor method is shown
+below:
+1.05 gsolution x1000 mLx
+3gNaCl
+x1mole NaCl
+mL solution
+L
+100gsolution
+58.6g NaCl
+_ 1.05 x 1000 x 3 moles NaCl - 3.15 x lOmoles NaCl
+100 x 58.6 L solution
+58.6
+L solution
+On the MCAT, you will not have time to solve for values precisely, so you must
+makean approximation. Select the answerthat is closest to that approximation.
+3L5.>30 _1_ somevalue isgreaterthan0.500 M
+58.6
+60
+2
+315.<33_11 __55./ so mevalueis lessthan 0.550 M
+58.6
+60
+20
+100
+The value falls between 0.500 M and 0.550 M, so choices A and D are eliminated.
+Next you must choose between 0.504 M and 0.539 M. The value is not close
+enough to 0.504 M, so you should choose C, and be a wise student! Wise
+students are a good thing.
+Some questions on the MCAT may present
+mathematical set-ups,withoutsolvingfor an exactnumber.
+The physical sciences section of the exam incorporates physics and general
+chemistry, so from the beginning of your review, make a conscious effort to
+consider physics when working on general chemistry and to consider general
+chemistry whenworking onphysics. Determining density is a problem common
+to both disciplines. Example 1.5 shows an approach to the concept of density
+that is more typical ofwhat isfound in a physicsproblem.
+Copyright ©byThe Berkeley Review
+6
+The BerkeleyReview
+
+===PAGE 9===
+
+General Chemistry
+Stoichiometry
+Unit Conversion
+Example 1.5
+What can be concluded about the density of a metal object which, when placed in
+a beaker of water at room temperature, sinks to the bottom?
+A. The density of the metal is less than the density of either water or ice.
+B. The density of the metal is less than the density of water, but greater than the
+density of ice.
+C. The density of the metal is greater than the density of water, but less than the
+density of ice.
+D. The density of the metal is greater than the density of either water or ice.
+Solution
+When an object floats in a liquid medium, its density is less than that of the
+medium surrounding it. The fact that it floats means the buoyant force pushing
+upward against it (pmedium'Vobjecfg) Isgreater thangravitation force pushing
+downward (weight = mg = PobjecfVobject'g)- Thus, an object floats when
+Pmedium > Pobject- Because the metal object sinks in water, it mustbe denser
+than water. Ice floats in water, meaning that ice is less dense than water and thus
+less dense than the metal object. The density of the metal must be greater than
+the density of either water or ice. The correct answer is therefore choice D.
+Typical Conversions
+In chemistry, conversions between products and reactants are common, so the
+mole concept is frequently employed.
+The mole concept is pertinent in the
+interconversion between moles and mass, using either atomic mass (for
+elements) or molecular mass (for compounds). These calculations involve using
+the unit factor method (also known as dimensional analysis.)
+Example 1.6
+How many moles of NaHCC>3 are contained in 33.6grams NaHCC>3?
+A.
+0.20 moles NaHC03
+B.
+0.40 moles NaHC03
+C.
+0.50 moles NaHC03
+D.
+0.60 moles NaHC03
+Solution
+Thefirst step in determining the number of molesis to determinethe molecular
+mass of NaHC03. The mass is 23 + 1 + 12 + 48 = 84 grams. The number of moles
+of NaHC03 is found by dividing 33.6 by 84, which is less than 0.50. This
+eliminates choices C and D. The number is greater than 0.25 (21 over 84) and
+thus greater than 0.20, so choiceA is eliminated. The only value left is choice B,
+0.40 moles.
+Beyond deteirnining the moles from grams for the same compound are questions
+where the moles of products are determined from the grams of reactants. These
+questions require converting from grams of a given substance to moles of the
+given substance, and then expressing the quantity of a finalsubstancein terms of
+moles, grams, or liters. Bybalancing the reaction, the mass of a selected product
+that is formed in the reaction can be calculated based on the mass of a selected
+reactant (which must be the limiting reagent).
+Examples 1.7 and 1.8 involve
+determining moles, mass, and volume from the given values.
+Copyright ©byThe Berkeley Review
+7
+Exclusive MCAT Preparation
+
+===PAGE 10===
+
+General Chemistry
+Stoichiometry
+Unit Conversion
+Example 1.7
+Based on the following reaction, how many grams of water would form from
+0.33moles C4H10O reactingwith an unlimited amount of oxygen gas?
+C4HioO(g) + 6 02(g)
+*
+"
+4C02(g) + 5H20(g)
+A. 18.00 grams
+B.
+24.00 grams
+C.
+30.00 grams
+D. 36.00 grams
+Solution
+With an excess of oxygen, the limiting reagent in this reaction is C4H10O. The
+amount of water formed is determined by the 0.33 moles of C4H10O reactant.
+Using the balanced equation, the ratio of H20 to moles C4H10O is 5 :1, so 1.667
+moles of water are formed. At 18 grams per mole, this means that fewer than 36
+grams but more than 27grams are formed. This makes choiceC the best answer.
+0.33molesC4H10Ox 5molesH2Q x 18gH2Q =ix5x 18gH20=30gH20
+1 mole C4H10O
+1 mole H20
+3
+Example 1.8
+How many litersofC02(g) result from the completedecomposition of 10.0grams
+of CaC03(s) to carbon dioxide and calcium oxide at STP?
+CaC03(s)
+*~
+CaO(s) + C02(g)
+A.
+1.12 liters
+B.
+2.24 liters
+C.
+3.36 liters
+D.
+4.48 liters
+Solution
+You are asked to determine the amount of product from a known quantity of
+reactant. The first step in problems of this type is to make sure the reaction is
+balanced.
+In this case, it is already balanced.
+The mole ratio of the two
+compounds is 1 : 1. The required conversion involves changing from mass
+reactant, to moles reactant, to moles product, and finally to volume product.
+This is one variation of unit conversion via mole ratio calculation. In addition,
+there is the "g - m - m - g" conversion and the "v - m - m - g" conversion. You
+need three steps to go from grams reactant to the target (liters product). Units
+are important here. The units for the mass of reactant is grams. You need to
+multiply massby molesand divide by grams. This is the same as dividing by the
+MW. The second step is to read the mole ratio from the balanced equation. In
+this reaction, the mole ratio is 1:1 (the units of both numerator and denominator
+are moles). The third and final step is to convert from moles product into liters
+product (i.e., multiply by liters and divide by moles.)
+This is done by
+multiplying by the molar volume of the product gas, which at STP (standard
+temperature and pressure) is 22.4liters.
+10gramsCaCO3X l™leCaC03 x 1mole CO; x22.4 liters CQ2
+100gramsCaC03
+lmoleCaC03
+lmoleCOfc
+=10x22.4 = 2.24 liters C02
+100
+Copyright©by TheBerkeley Review
+8
+The Berkeley Review
+
+===PAGE 11===
+
+General Chemistry
+Stoichiometry
+Elemental Analysis
+Elemental analysis determines the atomic composition of an unknown molecule.
+It is based on the idea that all molecules of the same substance combine atoms of
+that substance in the same way. In other words, water always has two hydrogen
+atoms and one oxygen atom. Because of this feature of structural uniformity, it is
+possible to determine the atomic composition of any molecule. The fundamental
+process of elemental analysis involves oxidizing an unknown completely and
+collecting the products. The amount of each element that was present in the
+unknown compound can be determined from the amount of oxidized product.
+These mass values can be converted to mass percent and mole ratio values. In
+the determination of the empirical formula, the mass percent is converted to a
+relative mass value and then a relative mole value.
+The mass percent of an
+element within a compound must be determined prior to determining the
+empirical formula for an unknown compound. An empirical formula, you may
+recall, is the simplest whole number ratio of the atoms in a molecule.
+Mass Percent (Percent Composition by mass)
+The mass percent of a particular element within a compound is found by
+dividing the mass of that element by the mass of the compound and then
+converting the fraction to a percentage. This is shown in Equation 1.1.
+mass percent = mass atoms
+x 100o/o
+mass compound
+(1.1)
+Mass percent can never exceed 100%for any component element. Determining
+the mass percent of an element from the molecular formula is a straightforward
+task, although the math may be challenging. Mass percent questions can be
+asked in a conceptual or mathematical manner. Masspercent is independent of
+the total mass of the sample of compound.
+Table 1.1shows the relative masses of oxygen and carbon from different samples
+of carbon dioxide. This demonstrates the law of multiple proportions. Atoms
+combine in a fixed ratio in terms of mass and moles. Note that the outcome is the
+same in all four trials measuring the ratio of oxygengas that reactswith a known
+mass of carbon. The experiment involves oxidizing a known amount of carbon
+and collecting the product gas. The mass of this product gasis deterrnined, and
+the mass of oxygenis assumed to be the difference betweenthe initialand final
+weighed masses of the carbon sample.
+Mass Carbon
+Mass Oxygen
+MassO/
+'Mass C
+1.33 g
+3.53 g
+3'53/l.33 =2-65
+1.07 g
+2.87 g
+lx 07 =2.68
+1.11 g
+2.96 g
+2.96 /
+_ 9 fin
+/l.H-2.67
+1.27 g
+3.39 g
+339/127 =2.67
+Table 1.1
+The mass ratio of oxygen to carbon in the four trials averages out to be 2.67 : 1,
+which is roughly 8 : 3. This means that for the oxidation product of carbon, the
+ratio ofoxygen to carbon is 8 grams to 3 grams, equivalent to 2 moles to 1 mole.
+Elemental Analysis
+Copyright © by The Berkeley Review
+Exclusive MCAT Preparation
+
+===PAGE 12===
+
+General Chemistry
+Stoichiometry
+Elemental Analysis
+Example 1.9
+How much calciummetal combines with one gram of oxygen to form CaO?
+A. 1.00 gCa
+B.
+1.25 gCa
+C.
+1.67 gCa
+D. 2.50gCa
+Solution
+From the molecular formula, the mole ratio of calcium to oxygen is 1 : 1. The
+atomic mass of calcium (Ca) is 40.08, while the atomic mass of oxygen (O) is
+16.00. The mass ratio for the compound is 40.08to 16.00, which reduces to 2.505 :
+1,which rounds to 2.50 to 1. This means that 2.50grams of calcium combine with
+1.00 grams ofoxygento formCaO. ChoiceD is best.
+Example 1.10
+What is the mass ratio of iron to oxygen in Fe203?
+A. 1.08g Fe to 1.00g O
+B.
+1.63 g Fe to 1.00 g O
+C. 2.33 gFe to 1.00gO
+D. 3.49 g Fe to 1.00g O
+Solution
+From the molecular formula, the mole ratio of iron to oxygen is 2: 3. The atomic
+mass of iron (Fe)is 55.85,while the atomic mass of oxygen (O) is 16.00. The mass
+ratio of iron to oxygen for the compound is 2(55.85) to 3(16.00), which equals
+111.7 : 48.0. This ratio is approximately equal to 116 : 50, or 232 : 100, which
+reduces to 2.32 :1. Both numbers must be increased proportionally to keep the
+ratio the same. Choice C is a ratio of 2.33 to 1, which is the closest of the choices.
+This means that 2.33 grams of iron combine with 1.00grams of oxygen to form
+Fe203- Choice C is best. You should note that iron and oxygen can combine to
+make other compounds (with different molecular formulas).
+One of these
+compoundsis FeO, witha massratioof55.85 to 16.00, which reducesto a ratioof
+3.49 :1.00. The mass ratio (and mole ratio) of an oxide can be used to identify a
+specific compound. Thisprocessis known as combustion analysis.
+Examples 1.9 and 1.10 demonstrate how mass percent questions can be
+mathematical. Masspercentquestions can alsobe asked in a conceptual manner,
+where the relative masspercentage of a specific elementis compared for several
+compounds. Examples 1.11,1.12, and 1.13 demonstrate some different formsof
+this type of question, starting with typical examples and graduating to more
+abstract ways of asking for mass percent.
+Example 1.11
+What is the mass percent of oxygen in carbon dioxide?
+A.
+27.3%
+B.
+57.1%
+C.
+62.5%
+D.
+72.7%
+Copyright ©byThe Berkeley Review
+10
+The Berkeley Review
+
+===PAGE 13===
+
+General Chemistry
+Stoichiometry
+Elemental Analysis
+Solution
+The mass of carbon in C02 is 12 grams, and the mass of oxygen in C02 is 32
+grams. The total mass of C02 is 44 grams, so the mass percent of oxygen is the
+ratio of 32 to 44. This ratio reduces to 8 over 11.
+Mass percentO = 32g° x100% =22. x 100% =-§- x100%
+44gC02
+44
+11
+Quick Calculation Technique:
+Quick calculations require knowing the values of selected fractions.
+One-
+eleventh is equal to 0.091; therefore, eight-elevenths is equal to 8(0.091) = 0.728.
+This method gets an exact value and is very fast, if you know how to do it.
+_8_ = 8x J- = 8x 0.091 = 0.728 = 72.8%
+11
+11
+Narrowing-Down-Choices Technique:
+On a multiple-choice exam, you can eliminate answers by narrowing down the
+range into which the answer fits. 8 over 11is less than 9 over 12,but greater than
+7 over 10. A range has beenestablished between -2- and -7-. 9 over12is 75%,
+12
+10
+and 7 over 10 is 70%, so the correct answer falls between 70% and 75%.
+-2_ > _8_ > _7_, where -2- = 75% and-7- = 70%. So: 75% >-§- > 70%
+12
+11
+10
+12
+10
+11
+Choice D is the best answer.
+Example 1.12
+What is the mass percent of nitrogen in NH4NO3?
+A.
+28%
+B.
+35%
+C.
+42%
+D.
+50%
+Solution
+The total mass of the nitrogen in the compound is 28 g/mole, because there are
+two nitrogen atoms in the compound at 14 g/mole each.
+The mass of the
+compound is 28 + 4 + 48= 80g/mole. You must divide 28 by 80quickly. The
+common denominator ofboth is 4. Reducing by 4yields afraction of -7-.
+Mass percent N =
+?**£**
+x 100% =2&x 100% =-7- x 100%
+80gNH4NO3
+80
+20
+Quick Calculation Technique:
+Quick calculations may involve getting a denominator to some easy-to-use
+number, such as 10,100, or 1000. It is easy to convert a fraction into decimals or
+percents when the denominator is either 10, 100, or 1000. For this question, a
+denominator of 100 works well. To convert 20 to 100, we must multiply by 5.
+Multiply both numerator and denominator by 5, to change the fraction -7- to-^2_.
+V3
+y
+6
+20
+100
+The percentage is 35%, so choice B is correct.
+28 = _7_ = 7x5
+= .35. = 0.35 = 35%
+80
+20
+20x5
+100
+Copyright ©byThe Berkeley Review
+11
+Exclusive MCAT Preparation
+
+===PAGE 14===
+
+General Chemistry
+Stoichiometry
+Elemental Analysis
+Narrowing-Down-Choices Technique:
+Narrowing down the range into which the answer fits can be applied to any
+multiple-choicemath question. 28 over 80 reduces to 7 over 20. The value of 7
+over 20 is greater than 7 over 21, but less than 8 over 20. A range has been
+established between-7- and -£-. Thevalue of 7 over 21is 33.3%, and the value of
+21
+20
+8 over 20 is 40%,so the correct answer falls between 33.3% and 40%. Only choice
+B fits in this range, so choice Bmust be the correct answer.
+-7_ < -Z. < A, where -7- = 33.3% and-§- = 40%. So33.3% <-7- < 40%
+21
+20
+20
+21
+20
+20
+Example 1.13
+Which of the following samples yields the MOSTmoles of sodium cation?
+A. 1.0 g NaCl
+B.
+l.OgNaBr
+C
+1.0gNaNO3
+D. 1.0gNa2CO3
+Solution
+This question is a subtle way of asking, "Which salt has the greatest mass percent
+of sodium?" All choices are 1.0 g of compound, so the most moles of sodium are
+found in the compound with the greatest mass percentage of sodium. Choices A,
+B,and C have the same number of sodium atoms in the compound (one), so they
+each have the same numerator in the mass percent formula. The best choice of
+those three salts is the lightest compound (resulting in the smallest denominator
+when calculating mass percent). The lightest compound of the three choices A,
+B, and C is the salt with the lightest anion, which is choice A, NaCl. Now the
+question involves comparing the mass percent of sodium in NaCl to the mass
+percent of sodium in Na2C03, choice D.
+Mass percent Na in NaCl = 23,0gNa x100% =-22_ x100%
+58.5 g NaCl
+58.5
+Mass percent Na inNa2C03 = 46,0gNa— x100% =-^- x100% =23 x100%
+106gNa2CO3
+106
+53
+22. > -2£_f sochoice D is thebestanswer.
+53
+58.5
+Empirical Formula
+An empirical formula for molecules uses the smallest whole number ratio of the
+atoms in a compound. It is the formula that gives the relative numerical values
+for each element in the molecule in such a way that the numbers in the ratio
+cannot be reduced without involving fractions. An empirical formula may or
+may not be the actual formula of the molecule. It is calculated from the mass
+percentage of each element within a compound.
+You may recall from your
+general chemistry courses that we start by assuming a 100-gram sample, so that
+the percentages can be changed easily into mass figures. From this point, it is a
+matter of converting from mass into moles, using the atomic masses for each
+element. The empirical formula is a whole number ratio of these mole values.
+Empirical formulas must include whole number quantities as subscripts.
+Copyright © by The Berkeley Review
+12
+The Berkeley Review
+
+===PAGE 15===
+
+General Chemistry
+Stoichiometry
+Elemental Analysis
+Example 1.14
+Which of the following is an empirical formula?
+A.
+C2H6
+B.
+C3H8
+C.
+C4H10
+D.
+C6H6
+Solution
+An empirical formula for a molecule is defined as the formula in which the
+constituent atoms are in their smallest possible whole number ratio. Choice A,
+C2H6, can be reduced to C1H3 (normally written as CH3), so choice A is not an
+empirical formula. Choice C, C4H10, can be reduced to C2Hs, so choice C is not
+an empirical formula.
+Choice D, CgH6, can be reduced to C1H1 (normally
+written as CH), so choice D is not an empirical formula. This eliminates all of the
+choices except choice B, C3H8. The ratio of 3 : 8 cannot be reduced any further,
+so C3H8 is an empirical formula, making choice B the correct answer. In the case
+of C3H8, the empirical formula and the molecular formula are the same, because
+the compound is completely saturated with hydrogens. CgHi6 has too many
+hydrogens and is not a possible formula. Organic chemistry rules can help to
+save time on formula questions.
+Example 1.15
+What is the empirical formula for a compound that is 72% C, 12% H, and
+composed solely of carbon, hydrogen, and oxygen?
+A.
+C3H60
+B.
+C6Hi20
+C.
+C6H14O
+D.
+C7H14O
+Solution
+For empirical formula calculations, assume a 100-gramsample of the compound.
+A 100-gramsample in this case would contain 72 grams C, 12 grams H, and 16
+grams O. The 16 grams of oxygen are determined from the differencebetween
+the mass of carbon plus hydrogen and the 100grams of sample. Next, you must
+convert the grams of each element into the corresponding moles of each element.
+To go from grams to moles, divide the mass of the element by its atomic mass. In
+this case,72grams of C is equivalent to 6 moles ofC, 12grams of H is equivalent
+to 12 moles of H, and 16 grams of O is equivalent to 1 mole of O. This is a
+particularly easy example, because the ratios turn out to be whole numbers. In
+cases where they don't come out whole, you must divide the mole quantity of
+each element in the compound by the lowest mole quantity for any of the
+elements. However, for this example the best answer is choiceB. Drawn below
+is a useful layout of empirical formula calculations. It is often easier just to plug
+terms into an equation such as this, because you don't have to show your work
+on the MCAT.
+Do the questions as quickly and carefully as you can,
+emphasizing organization in your path to a solution.
+Q percentage carbon j-Jpercentage hydrogen Q percentage oxygen = Cl72Hl2Ql6 = CgHl2Ol
+molarmasscarbon
+molarmasshydrogen
+molarmassoxygen
+12
+1
+16
+Copyright ©byThe Berkeley Review
+13
+Exclusive MCAT Preparation
+
+===PAGE 16===
+
+General Chemistry
+Stoichiometry
+Elemental Analysis
+Example 1.16
+What is the empiricalformulaof an oxide ofsulfur that is 60% oxygenby
+weight?
+A.
+SO
+B.
+S02
+C.
+s2o5
+D.
+SO3
+Solution
+Here againyou should assumea 100-gram sample. A 100-gram sample would
+have 60 grams of oxygen and 40 grams of sulfur. The moles ofO=°-2> and the
+16
+moles ofS=^. $0. ismore than double 40., sothere aremore than two oxygen
+32
+16
+32
+atoms persulfur atom. This eliminates choices Aand B. Upon reducing sQ. to20.,
+r
+32
+16
+we see that the ratio of oxygen to sulfur is 3 :1, making choice D the best answer.
+g percentage sulfurQ percentage oxygen = S40_O60 = S20O60 = S\O3
+molarmasssulfur
+molarmassoxygen
+32
+16
+16
+16
+The test emphasizes ratios, so the more numerical intuition you develop, the
+better. To make problem-solving less mathematical, focus on eliminating choices
+by comparing relative ratios. An alternative way to ask an empirical formula
+question with reduced math is shown in Example 1.17.
+Example 1.17
+If a molecule is composed of only two elements (Xand Y),and if X and Y
+combine in equal mass quantities, and if Yis less than twice as heavy as X,which
+of the following molecular formulas is NOT possible?
+A.
+XY
+B.
+XY2
+C
+X3Y2
+D.
+X3Y
+Solution
+If Ywere exactly twice as heavy as X,then equal masses of Xand Ywould result
+in exactly twice as many moles of Xas Y,a 2 :1 ratio of X to Y. Because Y is less
+than twice as heavy as X, there are fewer than twice as many moles of X as Y.
+Thus, the ratio of X : Y must be 2 :1 or smaller. This limiting ratio is true of all
+the answers except choice D. The wording of this question allows for the
+possibility that the molecular mass of X is equal to or greater than Y.
+Molecular Formula
+The molecular formula is the actual mole ratio of the elements within the
+compound.
+The molecular formula is found by multiplying the empirical
+formula by the whole number ratio of the molecular mass to the empirical mass
+(including 1, in some cases). Therefore, conversion from the empirical formula to
+the molecular formula requires knowing the molecular mass of the compound. If
+the molecular mass is double the empirical mass, then all of the elements in the
+empirical formula are doubled to get the molecular formula.
+Copyright ©by The Berkeley Review
+14
+The Berkeley Review
+
+===PAGE 17===
+
+General Chemistry
+Stoichiometry
+Elemental Analysis
+Example 1.18
+What is the molecular formula for a compound that is 82.76%C, has a molecular
+mass of 58.1 grams per mole, and is composed solely of carbon and hydrogen?
+A.
+CH2
+B.
+C2H5
+C.
+C3H8
+D.
+C4H10
+Solution
+Choice B is eliminated immediately, because a hydrocarbon cannot have an odd
+number of hydrogens. For neutral C2Hs to exist, it would have to be a free
+radical.
+Continuing to use organic chemistry logic, choice A is not physically
+possible. One carbon requires four bonds to hydrogen atoms to form a stable
+molecule (methane). CiH2 would be a carbene (:CH2), which is not stable due to
+its lack of an octet. To decide between choices C and D, you must first find the
+empirical formula, and then convert that into the molecular formula.
+C percentage carbon H percentage hydrogen = C82.76H17.24 = Cg.93H 17.24
+molarmasscarbon
+molarmasshydrogen
+12
+1
+empirical formula: CemHlZM. =C\H!Z£. = QH2.5 =QH5
+r
+6.93
+6.93
+7
+An empirical formula of QH5 when multiplied by a whole number cannot yield
+C3H8, so choice C is eliminated. This leaves only choice D. The correct ratio of
+molecular mass to empirical mass confirms that choiceD is the best answer. The
+molecular formula is found using the molecular mass of 58.1 grams per mole.
+The empirical mass is 2(12) + 5 = 29. This value is only half of the molecular
+mass, so the formula must be doubled to yield C4H10. This question could have
+been solved in seconds by seeing that only choice D has a molecular mass of 58.
+Example 1.19
+An unknown stable gas is composed of 13.10% H, 52.23% C, and the remainder
+O. A 0.10-mole sample weighs 4.61 grams. What is the molecular formula for
+the compound?
+A.
+C2H60
+B.
+C3H80
+C.
+C3H9O
+D.
+C4HgO
+Solution
+A stable compound made of carbon,hydrogen, and oxygen cannothave an odd
+number of hydrogens, so choiceC is eliminated. Neutral C3H9O would have to
+be a free radical. The remaining choices obey the octet rule. The molecular mass
+is 46.1,so choice A is the correct answer. That is the method you should use on a
+multiple-choice exam. Now let's confirm that by using the molecular formula.
+Firstyou must assume a 100-gram sample, resulting in 13.10 g H, 52.23 g C, and
+34.67 g O. Next, the numbers are converted into moles, and then the values are
+reduced to a whole number ratio. The calculation of the empirical formula is
+shown below, where a formula arrangement is used to help keep track of the
+values.
+C52.23 H13.10 Q34.67 = C4 4H13 102 2 =CilHlM-O^ = QHaOi
+12
+1
+16
+'
+2.2
+2.2
+2.2
+The empirical mass is 2(12) + 6 + 16 = 46. This value is equal to the molecular
+mass, so the empirical formula is the molecular formula.
+Copyright ©byThe Berkeley Review
+15
+Exclusive MCAT Preparation
+
+===PAGE 18===
+
+General Chemistry
+Stoichiometry
+Elemental Analysis
+Combustion Analysis (an Experimental Procedure)
+Combustion analysis entails determining the mass percent of each component
+element in an unknown compound.
+It is accomplished by oxidizing the
+unknown with excess oxygen (to ensure completecombustion), followed by the
+separation and collection ofall ofthe oxidized products. This isanexperimental
+procedure, which makes it a likely topic on a conceptual exam such as the
+MCAT. When a hydrocarbon is oxidized, carbon dioxide and water are formed.
+Carbon dioxide and water can be separated using various methods. One method
+involves passing theC02 gas and H20 vapor across a hygroscopic saltofknown
+mass. The hygroscopic salt absorbs the water, and thus increasesin mass.
+Thehygroscopic saltmustnot react with carbon dioxide. A good choice for the
+hygroscopic salt iseither calcium chloride or magnesium sulfate (both of which
+youshould have used asdrying agents in yourorganic chemistry lab). Once the
+water is absorbed, the remaining gas is passed across a sample of KOH of known
+mass. KOH undergoes a combination reaction with carbon dioxide to form
+potassium bicarbonate (KHCO3). The potassium hydroxide salt absorbs the
+carbon dioxide, and thus increases in mass.
+Knowing the masses of C02 and
+H20, we can determine the masses of carbon and hydrogen by multiplying the
+mass percent of each element by the mass of its respective oxide product that
+was collected. Upon dividing these numbers by the mass of the original sample,
+the masspercents ofhydrogen and carbonin the original sampleare determined.
+The carbon dioxide and water can be separated and collected using a different
+method than passing the gasesover salts that bind the products. Bylowering the
+temperature, carbon dioxide and water can be converted to their solid states.
+Because solids do not flow, they can be collected easily. The math is the same,
+once the quantity of each product has been established.
+Figure 1-1 shows a typical apparatus used in a combustion analysis. The oxygen
+tank serves to provide excess oxygen to the system constantly. The pressure
+valve is a one-way valve designed so that oxygen can flow into the sample
+chamber, but no gases can flow back. The resistor in the base of the sample
+chamber provides heat to initiate the oxidation. The tube to the right of the
+sample chamber is connected to a vacuum, to generate a low pressure. Once the
+reaction is complete, Valve #3 is closed so that no gases are lost to the
+environment, and Valve #1 is opened. Gases flow into the region above the
+magnesiumsulfate. Magnesium sulfate absorbs moisture from the gases. Aftera
+time, Valve #2 is opened so that gases flow into the region above sodium
+hydroxide. Sodium hydroxide absorbs carbon dioxide gas. Oxygen gas is then
+used to flush any remaining gas in the sample chamber through the system.
+Copyright © by The Berkeley Review
+Pressure
+valve
+Oxygen
+tank
+Sample
+chamber
+Resistor
+rWWVHn
+Adjustable voltage
+Trap I
+Figure 1-1
+16
+Valve #2
+Valve #3
+Trap 11
+The Berkeley Review
+
+===PAGE 19===
+
+General ChemiStiy
+Stoichiometry
+Solution Concentration
+Solution Concentration
+Units and Terminolgy
+Solutions are mixtures formed by the addition of a solute to a solvent. A solution
+may contain several different solutes. The amount of solute is measured relative
+to the amount of solvent, which results in a certain concentration for the solution.
+Concentration units include molarity (moles solute per liter of solution), molality
+(moles solute per kilogram of solvent), mass percent (mass solute per mass of
+solution), and density (mass solution per volume solution). The concentration of
+a solute can be changed by changing the amount of solvent. Addition of solvent
+to solution is referred to as dilution and results in a lower concentration by any
+measurement. Paramount to solving problems involving concentrations and
+dilution is an understanding of the different units.
+Molarity
+Molarity (M) is the concentration of a fluid solution defined as the moles of a
+solute per volume of solution, where the volume is measured in liters (L). To
+determine the molarity of a solution, the moles of solute are divided by the liters
+of solution.
+Example 1.20
+What is the molarity of 500.0 mL of solution containing 20.0 grams of CaC03(s)?
+A.
+0.15 M CaC03(aq)
+B.
+0.20 M CaC03(aq)
+C.
+0.33 M CaC03(aq)
+D. 0.40 M CaC03(aq)
+Solution
+Molarityis defined as moles of solute per liter of solution. In this question, you
+must convertfromgrams CaC03 into molesCaC03by dividingby themolecular
+mass of CaC03, and then dividing this value by the liters of solution:
+20 grams CaCC^ =Q2Q moles CaC03
+^^"lole
+0.20 moles CaCQ3 =O20 MCa0o3 =0,40 MCaCo3 =0.40 MCa003, choice D
+0.50 L solution
+0.50
+1
+These questions can be trickier if the units are milligrams, milliliters, or
+millimolar. The question uses similar math, but there are more opportunities to
+make an error. A common error to avoid is the "factor of a thousand" error. To
+become more conscious of possible trick questions, ask yourself: "If I were
+writing this testquestion, what would I ask?" Ifyouconsider questions fromthe
+test writer's point of view, the tricks become more apparent.
+Molality
+Molality (m) is the concentration of a fluid solution defined as the moles of a
+solute per kilogram of solvent. The molality of a solution does not change with
+temperature, so it is often used to determine a change in the solution's
+temperature when the change depends on concentration. Notableexamplesof
+this include boiling-point elevation and freezing-pointdepression. To determine
+the molalityof a solution, the moles of solute are divided by the kilogramsof the
+solvent.
+Copyright ©byThe Berkeley Review
+17
+Exclusive MCAT Preparation
+
+===PAGE 20===
+
+General Chemistry
+Stoichiometry
+Solution Concentration
+Example 1.21
+What is the molality of a solution made by adding 7.46 g KCl to 250 g of water?
+A. 0.20mKCl(aq)
+B.
+0.33mKCl(aq)
+C
+0.40mKCl(aq)
+D. 0.50mKCl(aq)
+Solution
+Molality is defined as moles of solute per kilogram of solvent. In this question,
+you must convert from grams KCl into moles KCl by dividing by the molecular
+mass of KCl,and then dividing this value by the kilograms of solvent:
+7.46 grams KCl =010molesKa
+^"tole
+0.10 moles KCl =O10 mKC1=O40 m KCl =0.40 m KCl, choice C
+0.25kgH2O
+0.25
+1
+Mass Percent (in Solution)
+Mass percent is the concentration of a fluid solution defined as the mass of solute
+per mass of solution multiplied by one hundred percent. The mass percent of a
+solution remains constant as temperature changes.
+To determine the mass
+percent of a solution, the mass of solute is divided by the mass of the solution
+(where both are measured in grams). Mass percent is a unitless value, because
+mass is divided by mass.
+Example 1.22
+What is the mass percent of a 1.0 m NaCl(aq) solution?
+A. 5.53% NaCl by mass
+B. 5.85%NaCl by mass
+C. 6.22%NaCl by mass
+D. 9.50% NaCl by mass
+Solution
+Mass percent is defined as grams of solute per grams of solution.
+In this
+question, you must convert from moles NaCl into grams NaCl by multiplying by
+the molecular mass of NaCl, and then dividing this value by the total mass of
+solution. The total mass of solution is the sum of the mass of solute and the mass
+of solvent. It is easy to forget to consider the mass of solute in the total mass,
+which leads to the incorrect answer choice B.
+1.0 moles NaCl(aq) x58.5 S/mole =58.5 gNaCl
+Total mass solution = 58.5 g NaCl +1000 g H2O = 1058.5g solution
+Mass %NaCl =
+58.5 gNaCl ^^
+58.5
+< 585 = 5.85%
+1058.5g solution
+1058.5
+1000
+Only choice A is less than 5.85%, so choice A is the best answer. Sometimes
+questions that would normally require a calculator for a precise answer can be
+determined well enough without one to answer a multiple-choice test question.
+Copyright © by The Berkeley Review
+18
+The Berkeley Review
+
+===PAGE 21===
+
+General Chemistiy
+Stoichiometry
+Solution Concentration
+Density
+Density (p) is the concentration of a fluid solution defined as the mass of solution
+per volume of solution. The density of a solution varies with temperature. The
+density of a solution is uniform throughout, so a smallsample of the solution has
+the same density as the entire solution. To determine the density of a solution,
+the mass of a sample of the solution is divided by the volume of the sample
+(usually measured in milliliters). Examples 1.3 and 1.5 addressed the topic of
+density.
+Dilution
+Dilution involves the addition of solvent to a solution, thus resulting in an
+increase in the volume of the solution and a decrease in the concentration of the
+solute in solution. Equation 1.2below describessimple dilution where a solvent
+is added to solution. Determining the concentration when two solutions are
+mixed requires more work than simple dilution.
+MinitiarVinitial= Mfinal'Vfinal
+ft-2)
+When working with dilution questions, be aware of a common twist that the
+writerscan employ. Theirquestionmay askfor volume added rather than asking
+for the final total volume. Percent dilution may also be discussed. Multiple
+containers are used in standard dilution procedure, so rinsing ensures that the
+concentration of solution on the walls of the new containers are equilibrated with
+the contents they will hold. Youmay recall filling a volumetric pipette with a
+solution in general chemistry lab, thendraining thepipette before filling it with
+thesample to be transferred. This is doneto ensure thatanyresidual liquid in
+thepipette has thesame concentration as thesolution being transferred and that
+any water in the pipette is rinsed away.
+Example 1.23
+Whatis the molarityof a solutionmade by mixing 200 mLpure water with 100
+mL0.75MKCl(aq)?
+A. 0.25MKCl(aq)
+B. 0.50MKCl(aq)
+C.
+1.50MKCl(aq)
+D. 2.25MKCl(aq)
+Solution
+Because water has been added to the solution, the concentration must decrease,
+so choicesC and D are eliminated. Solvingthis questioninvolvesusing Equation
+1.2 to determine the effect of dilution on the molarity. The initial molarity
+(Minitial) &0.75 M, the initialvolume (Vinitial) is 100 mL, and the final volume
+(Vfinal)is 300 mL- Thequestion requires solving forthefinal molarity (Mfinal)-
+Minitial-Vinitial = Mnnal-Vfinal - 0.75M-100mL = Mnnal-300 mL
+Mnnal -^^ .-. Mnnal •^M-lOOmL, Q75MM =Q25U
+Vfinai
+300 mL
+V3/
+Thefinalmolarityis 0.25 M,so choice A is the bestanswer. Because the molarity
+is decreased by a factor of three, the dilution process in thisexample is referred
+to as a threefold dilution. That is, when two parts solvent are added to one part
+solution, the volume is tripled and the dilution is threefold. This terminology
+may be unfamiliar at first, but in a short time it should makesense.
+Copyright ©by The Berkeley Review
+19
+Exclusive MCAT Preparation
+
+===PAGE 22===
+
+General Chemistiy
+Stoichiometry
+Solution Concentration
+Example 1.24
+How many milliliters of water are needed to dilute 80 mL 5.00 M KN03(aq) to
+LOOM?
+A.
+160mLH2O
+B.
+320mLH2O
+C.
+400mLH2O
+D. 480mLH2O
+Solution
+Again, Equation 1.2should be employed to calculate the change in concentration
+of a solution after dilution from the addition of solvent. First we must solve for
+the final volume. You are provided with values for Minitial' Mfinal/ and Vjnitial/
+so you can manipulate the equation to solve for Vfinal-
+Vfinai =initial'Vinitial =5.00Mx80mL= 5x 80mL =400mL
+Mfinal
+1-00 M
+The question asks how much water is added, not the final volume. The volume
+added is the difference between the initial volume (80 mL) and the final volume
+(400 mL). The difference between the two values is 320 mL, so 320 mL of water
+must be added to 80 mL of 5.00 M KN03(aq) to dilute it from 5.00 M KN03(aq) to
+1.00 M KN03(aq). Choice B is the best answer.
+Example 1.25
+Which dilution converts 6.00M HCl(aq) to 0.30 M HCl(aq)?
+A. 11 parts water to 1 part 6.00 M HCl(aq)
+B. 19 parts water to 1 part 6.00M HCl(aq)
+C. 20 parts water to 1 part 6.00M HCl(aq)
+D. 21 parts water to 1 part 6.00 M HCl(aq)
+Solution
+Hydrochloric acid goes from 6.00 M to 0.30 M, which is a twenty fold dilution.
+This means that the final volume is twenty (20) times the initial volume. When
+dealing with answer choices that present the dilution in terms of parts, the ratio
+is volume of solvent added to volume of original solution. For the final volume
+to be twenty times greater than the initial volume, nineteen parts must be added.
+JVfinaL=MinitiaL^JVfinaL =4QQJM =20/.Vfinal =20 (Vinitial)
+Vinitial
+Mfinal
+Vinitial
+0.30 M
+Vadded = Vfinal- Vinitial = 20 Vinitial - Vinitial = 19 (Vinitial)
+The ratio of the volume added to the volume of solution initially present is 19 :1,
+so the best answer is choice B. A part can be any set volume. A 20 :1 dilution
+would result in a final volume that is 21 times the initial volume, so the final
+concentration would be less than 0.30 M.
+A solution can be diluted by adding solvent or another solution to it.
+The
+addition of pure solvent is known as a simpledilution. Mixing two solutions is
+more complicated than a simple dilution where pure solvent is added, because
+solute from both initial solutions must be considered. The final concentration lies
+somewhere between the two initial concentration values before mixing. The final
+concentration is a weighted average of the initial concentrations.
+Copyright © by The Berkeley Review
+20
+The Berkeley Review
+
+===PAGE 23===
+
+General ChemiStiy
+Stoichiometry
+Solution Concentration
+Example 1.26
+What is the final concentration of CI" ions after mixing equal volumes of 0.20 M
+KCl(aq)with 0.40 M CaCl2(aq)?
+A. 0.20MCl-(aq)
+B. 0.30MCl"(aq)
+C. 0.40MCl"(aq)
+D. 0.50MCl"(aq)
+Solution
+The salt KCl yields one chloride ion when it dissociates in water, so the chloride
+concentration is 0.20 M.
+The salt CaCl2 yields two chloride ions when it
+dissociates in water, so the chloride concentration is 0.80 M.
+The final
+concentration equals the total CI"ions from both solutions divided by the new
+total volume. Because equal volumes are mixed, the final concentration will be
+an average of the two initial concentrations.
+0.20Mcr + 0.80Mcr -l.ooMcr = 050 MC1-
+2
+2
+If the volumes are not equal, then a weighted average yields the final
+concentration. For this example, choice D is the best answer.
+Example 1.27
+What is the concentration of K+ ions in solution after 25.0 mL of 0.10 M
+K2S04(aq) is added to 50.0 mL of 0.40 M KOH(aq)?
+A. 0.25MK+(aq)
+B. 0.30MK+(aq)
+C
+0.33MK+(aq)
+D. 0.50MK+(aq)
+Solution
+The salt KOH yields onepotassium ion when it dissociates in water, so the K+
+concentration is 0.40 M. The salt K2S04 yields two potassium ions when it
+dissociates in water, so the K+ concentration is 0.20 M. The final concentration
+equals the total K+ ions from both solutions divided by the new total volume.
+Because unequal volumes are mixed, the final concentration is a weighted
+average ofthe twoinitial concentrations. The mixture involves 25 mL0.20 MK+
+with 50 mL 0.40 M K+, so the final concentration must fall between 0.20 M and
+0.40 M. This eliminates choice D. If the two volumes were equal, the final
+concentration would be 0.30 M K+, the average of the two concentrations. But
+because there is more of the more concentrated solution, the final concentration is
+greater than 0.30M, so choices A and Bare eliminated. Only choice C remains.
+25 mLx 0.20 MK+ +50 mLx 0.40 MK+ =1 (0.20MKV- (0-40 MK+)
+75 mL
+75 mL
+3
+3
+= 2. + 3. MK+ = I MK+ = 0.33 MK+, choiceC
+3
+3
+3
+Beer's Law
+When electromagnetic radiation is passed through a solution, the solute may
+absorb some of the light. The fight absorbed is in a specific wavelength range,
+and the intensity of the absorbance varies with the concentration of solute. A
+generic absorbance spectrum for a hypothetical solute is shown in Figure 1-2.
+Copyright ©byThe Berkeley Review
+21
+Exclusive MCAT Preparation
+
+===PAGE 24===
+
+General Chemistry
+Stoichiometry
+Solution Concentration
+^ma
+Wavelength (nm)
+Figure 1-2
+Because the absorbance of light varies with concentration, absorbance can be
+used to determine the concentration of a solute. This is the essence of Beer's law.
+Beer's law is expressed in Equation 1.3, where e is a constant for the solute at
+Xmax (the wavelength of greatest absorbance), C is the solute concentration (C=
+[Solute]), and 1is the width of the cuvette (length of the pathway through which
+the light passes).
+Absorbance = £C1
+(1.3)
+The key featureof thisequationis its expressionof the principle that absorbance
+is proportional to concentration. By knowing the absorbance for solutions of
+known concentration, the concentration of an unknown solution can be
+determined by comparing its absorbancevalue to the known values.
+Example 1.28
+For 100 mL of a solution with an absorbance of 0.511, what amount of water must
+be added to reduce the absorbance to 0.100?
+A.
+389mLH20
+B.
+411mLH20
+C.
+488mLH20
+D. 511mLH20
+Solution
+For this question, a hybrid of Equations 1.2 and 1.3 should be employed to
+determine the volume that must be added to dilute the solution.
+Because
+absorbance is directly proportional to concentration, Equation 1.2 can be re
+written as follows:
+Absinitial-Vinitial = Absfinal'Vfinal
+First, we must solve for the final volume.
+You are provided with values for
+Absinitial/ Absfinal,and Vinitial, so you can solve for Vfjnal.
+Vfi
+_Absinitial-Vinitial _0.511 x100 mL =5.11 x100 mL _ 511 mL
+Absfinal
+0.100
+1
+The question asks for how much water is added, which is the differencebetween
+the initial volume (100 mL) and the final volume (511 mL).
+The difference
+between the two values is 411 mL; therefore, 411 mL of water must be added.
+The best answer is choice B.
+Copyright © by The Berkeley Review
+22
+The Berkeley Review
+
+===PAGE 25===
+
+General ChemiStry
+Stoichiometry
+Balancing Reactions
+Standard Balancing
+Let us briefly address the process of balancing chemical reactions. Reactions are
+written from reactants to products. Because of the law of conservation of matter,
+the number of atoms must be identical on each side of the reaction.
+The two
+sides of the reaction are separated by an arrow drawn from left to right.
+C5Hu(l) + Oz(§)
+•
+C02(g) + H20(g)
+There are carbon atoms, hydrogen atoms, and oxygen atoms on both sides of the
+reaction. To balance the reaction, keep track of the atoms on each side of the
+reaction. Start with the compound whose atoms are least present in the reaction
+(carbon and hydrogen are present in only two compounds each, so we start with
+Q>Hi2). Starting with one C5H12, the atoms must be balanced step by step:
+\ CsHi2(D + 02(g)
+•
+C02(g) + H20(£)
+5C
+?C
+12 H
+?H
+?o
+?o
+Balance carbon atoms by multiplying C02 by five:
+1 C5Hi2(/) + Oz(g)
+•
+5 C02(g) + H20(#)
+5C
+5C
+12 H
+?H
+?0
+10 + ?O
+Balancehydrogen atoms by multiplying H20 by six:
+1C5H12W + Q2^
+•
+5 C02(g) + 6 H2Ofg)
+5C
+5C
+12 H
+12 H
+?0
+16 O
+Balance oxygen atoms by multiplying 02 by eight:
+\C5Hu(l) + 8 02(g)
+•
+5C02(g) + 6H20(g)
+5C
+5C
+12 H
+12 H
+16O
+16O
+Example
+What are
+1.29
+the correct coef
+Co(OH)3(s) +
+1 :6
+1 :3
+1:3
+1:6
+ficients needed to balance the following reaction?
+A.
+2:3:
+B.
+3:2:
+C.
+2:3:
+D. 3:2:
+1i2oU4(tuj)
+*-
+^.u^.jw^jim/,/ t
+ii^vu/
+Solution
+Balancing equations requires that you keep track of each atom. In this case,
+because of cobalt, the ratio of Co(OH)3fs) to Co2(S04)3(aq) must be 2 :1, which
+eliminates choices Band D. The correct answer is found using water. Two moles
+of Co(OH)3(s> and three moles of H2SC>4(aq) have a total of in 12 H atoms and 18
+O atoms, making choice A the best answer.
+Copyright ©byThe Berkeley Review
+23
+Exclusive MCAT Preparation
+
+===PAGE 26===
+
+General ChemiStiy
+Stoichiometry
+Balancing Reactions
+Balanced equations can be used to determine the amount of a product from a
+given amount ofreactant. As wesawinExample 1.7, balanced equations can be
+used to determine how much product is formed from a given mass of a reactant.
+Werefer to these questions asgram-to-mole-to-mole-to-gram conversions, where
+the overallconversion processis fromgrams reactant to grams product.
+Example 1.30
+How many grams of water are formed when 25.0 grams of pentane (CsHi2)
+reacts with oxygen?
+A. 18.8 gH20
+B. 25.0 g H20
+C.
+37.5 g H20
+D. 75.0 g H20
+Solution
+Step1:Convertgramsreactantto molesreactantby dividing by molecularmass
+of the reactant:
+grams reactant x mole reactant _moies reactant
+grams reactant
+Step 2:Convert molesreactant to moles product using the coefficient ratio from
+the balanced reaction:
+,
+L
+L
+moles product
+,
+,
+.
+moles reactant x
+*-
+= moles product
+moles reactant
+Step 3: Convert moles product to grams product by multiplying by molecular
+mass of the product:
+moles product xsi
+E
+=grams product
+moles product
+The overall conversion is as shown below:
+25.0 gC5Hi2 xlmoleC5H12x 6moleH2Q x 18gH2Q =37J.
+72gC5Hi2
+ImoleCsHn
+lmoleH20
+The ratio of water to pentane comes from the balanced oxidation reaction. The
+product of 6 x 18 is 108, which is greater than 72. This means that the original
+25.0 grams is multiplied by a number greater than 1, which in turn means that
+the final number is greater than 25.0g. This eliminates choices A and B. 108over
+72 is less than two, so the final value is less than 50.0 grams, so choice D is
+eliminated. The only answer that remains is choice C, 37.5 g.
+Limiting Reagents
+Determining thelimiting reagentin a reactionrequirescomparingthe number of
+moles of each of the reactants.
+The limiting reagent is the reactant that is
+exhausted first, not necessarily the reactant with the lowest number of moles.
+Whenthe limiting reagent iscompletely consumed,the reactionstops, regardless
+of the amount of the other reactant.
+To determine the limiting reagent, the
+amount of all reactants and the mole ratio of the reactants must be known. If the
+ratio of the moles of Reactant A to Reactant Bis greater than the ratio of Reactant
+A to Reactant B from the balanced equation, then Reactant B is the limiting
+reagent. If the ratioofthe molesof ReactantA to ReactantBis less than the ratio
+of Reactant A to Reactant B from the balanced equation, then Reactant A is the
+limiting reagent.
+Copyright ©by TheBerkeley Review
+24
+The Berkeley Review
+
+===PAGE 27===
+
+General ChemiStry
+Stoichiometry
+Balancing Reactions
+Example 1.31
+Assuming that the following reaction between oxygen and hydrogen goes to
+completion, which statement is true if 10.0grams of hydrogen are mixed with
+64.0grams of oxygen?
+2H2(g) + 02(g)
+•
+2 H20(1)
+A. The limiting reagent is oxygen.
+B.
+74.0 grams of water will form.
+C. 3.0moles of hydrogen will be left over following the reaction.
+D. 68.0 grams of water will form.
+Solution
+In limiting reagent reactions, you must decide which reactant is depleted first.
+Limiting reagent questions often look like ordinary stoichiometric questions. The
+rule is simple:If they give you quantities for all reactants,it is probably a limiting
+reagent problem. In this question, you are given quantities for both hydrogen
+and oxygen. 10grams of H is equal to 5 moles of H2,and 64grams of oxygen is 2
+moles of 02 (remember your diatomic elements!) From the balanced equation,
+we learn that twice as many moles of hydrogen as oxygen are needed. The
+number of moles indicates there is a 5 : 2 ratio of hydrogen to oxygen, which is
+greater than a 2:1 reaction ratio, so oxygen is depleted first. The correct choice is
+answer A. The question gives you opposing choices in A and B. One of these
+two choices must be true. The correct choice is A.
+Example 1.32
+What is the limiting reagent when 22.0 grams C3H8 are mixed with 48.0 grams
+o2?
+C3H8(1) + 02(g)
+•
+C02(g) + H20(g)
+A. Oxygen is the limiting reagent.
+B. Propane is the limiting reagent.
+C.
+Water is the limiting reagent.
+D. There is no limiting reagent.
+Solution
+This question is more difficult than the previous question, but you are still
+deciding which reactant is depleted first.
+Because the limiting reagent is a
+reactant, choice C (a product) is eliminated. To solve the question, stick to this
+simple rule: Compare the actual ratio of the two reactants to the balanced
+equation ratio of the two reactants. In this question, you are given unequal mass
+quantities of C3H8 and 02 and a mole ratio that is not 1:1.
+Good luck.
+Remember, the first step is to balance the reaction.
+1 C3H8(1) + 5 02(g)
+•
+3 C02(g) + 4 H20(g)
+22 grams ofC3H8 is22. moles ofC3H8, which is0.50 moles C3H8. 48 grams of02
+44
+is 22- moles of O2: (remember your diatomic elements!), which is 1.50moles of 02.
+From the balanced equation, we see that we need 5 moles of 02 for 1 mole of
+C3H8. The number of moles indicates there is a 1.50 : 0.50 ratio of 02 to C3H8,
+which is less than 5:1. This means that oxygen (02) is depleted first. Oxygen
+gas is the limiting reagent, so choice A is the best answer.
+Copyright © by The BerkeleyReview
+25
+Exclusive MCAT Preparation
+
+===PAGE 28===
+
+General Chemistiy
+Stoichiometry
+Reaction Types
+'t^m^k^s^E:..•'
+-
+"': .1''".:• ..• .• 7.-:.Z-
+Common Reactions
+Thereare somereaction typesthat are standard reactions in inorganicchemistry.
+Included among the common reaction types are the following five: 1)
+precipitation reactions (also known as double-displacement reactions), 2) acid-
+base reactions(alsoknown as neutralization reactions),3) composition reactions,
+4) decomposition reactions, and 5) oxidation-reduction reactions (electron-
+transfer reactions). Oxidation-reduction reactions can be categorized as either
+single replacement or combustion. Each reaction typewillbe addressed in more
+detail in later sections,so let us consider each type of reaction in minimal detail
+in this section.
+Precipitation Reactions
+A reaction that involves two aqueous salts being added together to form
+spectator ionsand a solidsaltprecipitate that drops out ofsolutionis knownasa
+precipitation reaction. It mayalsobe referredto as a double-displacement reaction,
+although that term isnot as usefulin describingthe chemistry. Drawn belowis a
+sample precipitation reaction:
+Na2Cr04(aq) + Sr(N03)2(aq)
+•
+2NaN03(aq) + SrCr04(s)
+AqueousSalt
+AqueousSalt
+Ions
+Precipitate
+Precipitationreactions canbe recognizedby the solid salt on the product side of
+the equation. Recognition of the type of reaction is useful for predicting the
+product. Recognizing a precipitate is highly beneficial in identifying a double-
+displacement reaction.
+The following solubility rules can be helpful in
+identifyingthe likelihoodof a precipitate'sforming:
+1. Most salts containing alkali metal cations (Li+, Na+, K+, CS+,
+Rb+) and ammonium (NH4+)are water-soluble.
+2.
+Most nitrate (NO3")salts are water-soluble.
+3.
+Most salts containing halide anions (CI", Br", I") are water-soluble
+(with heavy metal exceptions such asAg+ andPb2"*).
+4.
+Most salts containing sulfate anions (SO42") are water-soluble
+(with exceptions such as Ba2+, Pb2+, Hg2+, and Ca2+).
+5.
+Most hydroxide anion (OH") salts are only slightly water-soluble.
+KOH and NaOH are substantially soluble, while Ca(OH)2,
+Sr(OH)2, and Ba(OH)2are fairly soluble in water.
+6.
+Most carbonate anion (CO32"), chromate anion (Cr042"),
+phosphate anion (P043"), and sulfide anion (S2") salts are only
+slightly water-soluble.
+Acid-Base Reactions
+A reactionbetweenan acid (aproton donor) and a base (a proton acceptor)forms
+a neutral salt and water. For now, recognize that proton donors (acids) must
+have a proton on an acid (H—Acid). Acids to recognize are HC1, HBr, HI, HNO3,
+H2S04, and NH4+. Basesto recognize are NaOH, KOH, LiOH, and CaC03-
+HC104(aq) + LiOH(aq)
+•
+LiC104(aq) + H20(1)
+Acid
+Base
+Salt
+Water
+Acid-base reactions canberecognized by the formation ofa salt and water on the
+product side of the equation. Aqueousacid-base reactionscan be identifiedby
+the transfer of an H from the acid to the hydroxide of the base on the reactant
+side of the equation.
+Copyright ©byTheBerkeley Review
+26
+The Berkeley Review
+
+===PAGE 29===
+
+General Chemistry
+Stoichiometry
+Reaction Types
+Composition Reactions
+A composition reaction involves the combining of reactants to form a product.
+The number of reactants exceeds the number of products in a composition
+reaction.
+Entropy decreases and more bonds are formed than are broken in
+composition reactions.
+PCl3(g) + Cl2(g)
+•
+PCl5(g)
+2 Reactants
+1 Product
+Composition reactions may fall into other reaction categories as well. In the
+sample reaction, when PCI3 reacts with Cl2, PCI3 is oxidized and Cl2 is reduced.
+Decomposition Reactions
+A decomposition reaction is the opposite of a composition reaction. It involves
+reactants decomposing to form multiple products. The number of reactants is
+less than the number of products in a decomposition reaction. Entropy increases
+and more bonds are broken than are formed in decomposition reactions.
+CaS03(g)
+•
+S02(g) + CaO(s)
+1 Reactant
+2 Products
+Like composition reactions, decomposition reactions can also fall into other
+reaction categories as well.
+Oxidation-Reduction Reactions
+An oxidation-reduction reaction involves the transfer of electrons from one atom
+to another. Loss of electrons is defined as oxidation, while gain of electrons is
+defined as reduction (LeoGer).
+The atom (or compound) losing electrons is
+causing reduction, so it is referred to as the reductant (reducing agent), while the
+atom (or compound) gaining electrons is causing oxidation, so it is referred to as
+the oxidant (oxidizing agent). The oxidation states must change in an oxidation-
+reduction reaction. A sample reaction (below) shows how magnesium is losing
+electrons (thus being oxidized and having an increase in oxidation state) to
+bromine (which is being reduced and having a decrease in oxidation state):
+Mg(s)
++
+Br2(l)
+*- MgBr2(s)
+Reductant
+Oxidant
+Salt
+Combustion Reactions
+Combustion reactions are a special case of oxidation-reduction reactions, where
+the oxidizing agent is oxygen gas, and the products are oxides. Typical examples
+of combustion reactions include the oxidation of organic compounds, such as
+hydrocarbons and carbohydrates, into carbon dioxide and water.
+lC3H8(aq) +5 02(g)
+•
+3C02(g) +4 H20(1)
+Hydrocarbon Oxygen
+Carbon dioxide
+Water
+Combustion reactions of both hydrocarbons and monosaccharides balance in a
+predictable manner, as shown below:
+Hydrocarbon Combustion
+CxHy +(x +y)02(g)
+•
+xC02(g) +^H20(g)
+3
+4
+2
+Monosaccharide Combustion
+CxH2xOx + x02(g)
+•
+xC02(g) + xH20(g)
+Copyright ©by The BerkeleyReview
+27
+Exclusive MCAT Preparation
+
+===PAGE 30===
+
+General Chemistry
+Stoichiometry
+Reaction Types
+Example 1.33
+Thefollowing reaction isanexample ofwhichtypeofreaction?
+MgCl2(aq) + AgN03(aq)
+•
+Mg(N03)2(aq) + AgCl(s)
+A.
+Cation-crossover
+B.
+Oxidation-reduction
+C.
+Neutralization
+D. Double-displacement
+Solution
+Ofthegeneric reactions withwhich youarefamiliar, thereare typical features to
+note. In this example, you have two salts undergoing an exchange reaction to
+yield a precipitate. This makes it a precipitation reaction. No proton was
+transferred (eliminating neutralization), and no oxidation states changed
+(eliminating oxidation-reduction). Cation-crossover is a fabricated name, so
+choice A is eliminated. Choice D, double-displacement, is another name for a
+precipitation reaction. In double-displacement reactions, you have two salts
+undergoing a reaction where they exchange counterions, and one of the new
+combinationsformsa precipitate. Thisis shown in a genericfashion below:
+MX(aq) + NY(aq)
+•
+MY(aq) + NX(s)
+Oxidation States
+Assigning an oxidation state to an atom is a matter of distributing electrons
+within a bond based on which atom is more electronegative. The oxidation state
+of an atom can be determined by assigning it a value of positive one (+1) for
+everybond it formswith a more electronegative atom and assigning it a value of
+negative one (-1) for every bond it forms with a less electronegative atom. The
+oxidation state is a sum of all these bonding values. In general chemistry, it is
+often easiest to say oxygen is -2 (except in molecular oxygen and peroxides),
+hydrogen is +1 (exceptin molecular hydrogen and hydrides), and halides are -1
+(exceptwhen they are a central atom in an oxyacid). The sum of the oxidation
+states of the elements in the compound must equal the overall charge, so the
+oxidation state of any remaining atom can be determined by finding the
+difference between its charge and the sum of the known oxidation states.
+Example 1.34
+What is the oxidation state of manganese in KMn04?
+A.
++1
+B.
++3
+C.
++5
+D.
++7
+Solution
+To simplify thisexample,we willconsider that O = -2,and alkali metals = +1. In
+this case, K = +1, and there are 4 Os valued at -2 each, for a net oxidation state of
+-8. Summingoxygen and potassiumyieldsa total of -7. Thismeans that for the
+molecule to be neutral, the Mn (the only atom remaining) must cancel out that -7
+by being +7.
+In other words, the sum of the oxidation states equals the
+molecule'sformalcharge(zero). Soin this case,the oxidation state of manganese
+is +7. The correct answer is choice D.
+Copyright ©by TheBerkeley Review
+28
+The Berkeley Review
