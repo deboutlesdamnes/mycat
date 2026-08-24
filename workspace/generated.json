@@ -1,0 +1,496 @@
+[
+  {
+    "id": "gen-cell-theory-recall",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.1 Cell Theory",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "recall",
+    "question": "Which of the following best describes the cell theory?",
+    "explanation": "The cell theory has three tenets: (1) all living things are made of cells; (2) the cell is the basic unit of life; and (3) all cells arise from pre-existing cells.",
+    "options": [
+      "all living organisms are composed of cells, and the cell is the basic structural and functional unit of life",
+      "The cell theory states that cells arise through spontaneous generation.",
+      "All cells contain a membrane-bound nucleus.",
+      "Only multicellular organisms are composed of cells."
+    ],
+    "correct": 0
+  },
+  {
+    "id": "gen-cell-theory-except",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.1 Cell Theory",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "except",
+    "question": "All of the following are true of the cell theory EXCEPT:",
+    "explanation": "The exception (the false statement) is the correct answer. The cell theory has three tenets: (1) all living things are made of cells; (2) the cell is the basic unit of life; and (3) all cells arise from pre-existing cells.",
+    "options": [
+      "Viruses are acellular and are therefore not classified as living organisms.",
+      "The cell theory states that cells arise through spontaneous generation.",
+      "All cells arise from pre-existing cells.",
+      "Cells are the smallest units capable of carrying out life processes."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "gen-cell-theory-roman",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.1 Cell Theory",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "roman",
+    "question": "Which of the following statements regarding the cell theory is/are correct?\nI. All cells arise from pre-existing cells.\nII. The cell theory states that cells arise through spontaneous generation.\nIII. Cells are the smallest units capable of carrying out life processes.\nIV. All cells contain a membrane-bound nucleus.",
+    "explanation": "The cell theory has three tenets: (1) all living things are made of cells; (2) the cell is the basic unit of life; and (3) all cells arise from pre-existing cells.",
+    "options": [
+      "I and III only",
+      "I and II only",
+      "II and IV only",
+      "I, II, III, and IV"
+    ],
+    "correct": 0
+  },
+  {
+    "id": "gen-nucleoside-recall",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.2 Eukaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "recall",
+    "question": "Which of the following best describes the nucleoside?",
+    "explanation": "A nucleoside is a nitrogenous base linked to a pentose sugar. Adding one or more phosphate groups converts it into a nucleotide, the subunit of nucleic acids.",
+    "options": [
+      "The sugar component of a nucleoside is a six-carbon hexose.",
+      "Nucleosides are found only in RNA and never in DNA.",
+      "a molecule composed of a nitrogenous base bonded to a five-carbon (pentose) sugar, without any phosphate group",
+      "A nucleoside contains a nitrogenous base, a sugar, and a phosphate group."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "gen-nucleoside-except",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.2 Eukaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "except",
+    "question": "All of the following are true of the nucleoside EXCEPT:",
+    "explanation": "The exception (the false statement) is the correct answer. A nucleoside is a nitrogenous base linked to a pentose sugar. Adding one or more phosphate groups converts it into a nucleotide, the subunit of nucleic acids.",
+    "options": [
+      "Adding one or more phosphate groups to a nucleoside converts it into a nucleotide.",
+      "The sugar in a DNA nucleoside is deoxyribose.",
+      "Nucleosides lack the phosphate groups found in nucleotides.",
+      "A nucleoside contains a nitrogenous base, a sugar, and a phosphate group."
+    ],
+    "correct": 3
+  },
+  {
+    "id": "gen-dna-helix-recall",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.2 Eukaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "recall",
+    "question": "Which of the following best describes the DNA double helix?",
+    "explanation": "DNA is a double helix of two antiparallel strands. Adenine pairs with thymine (two hydrogen bonds) and cytosine with guanine (three hydrogen bonds); the sugar-phosphate backbone is on the outside.",
+    "options": [
+      "Uracil replaces thymine in the DNA double helix.",
+      "two antiparallel strands of nucleotides held together by hydrogen bonds between complementary purine-pyrimidine base pairs",
+      "Adenine pairs with guanine via three hydrogen bonds.",
+      "The two strands of the helix run in the same 5' to 3' direction."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "gen-dna-helix-except",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.2 Eukaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "except",
+    "question": "All of the following are true of the DNA double helix EXCEPT:",
+    "explanation": "The exception (the false statement) is the correct answer. DNA is a double helix of two antiparallel strands. Adenine pairs with thymine (two hydrogen bonds) and cytosine with guanine (three hydrogen bonds); the sugar-phosphate backbone is on the outside.",
+    "options": [
+      "Adenine pairs with guanine via three hydrogen bonds.",
+      "Adenine pairs with thymine via two hydrogen bonds.",
+      "Cytosine pairs with guanine via three hydrogen bonds.",
+      "The sugar-phosphate backbone lies on the exterior of the helix."
+    ],
+    "correct": 0
+  },
+  {
+    "id": "gen-dna-helix-roman",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.2 Eukaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "roman",
+    "question": "Which of the following statements regarding the DNA double helix is/are correct?\nI. Adenine pairs with thymine via two hydrogen bonds.\nII. Adenine pairs with guanine via three hydrogen bonds.\nIII. Cytosine pairs with guanine via three hydrogen bonds.\nIV. The two strands of the helix run in the same 5' to 3' direction.",
+    "explanation": "DNA is a double helix of two antiparallel strands. Adenine pairs with thymine (two hydrogen bonds) and cytosine with guanine (three hydrogen bonds); the sugar-phosphate backbone is on the outside.",
+    "options": [
+      "II and IV only",
+      "I, II, III, and IV",
+      "I and III only",
+      "I and II only"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "gen-transcription-recall",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "recall",
+    "question": "Which of the following best describes the transcription?",
+    "explanation": "Transcription copies a gene into single-stranded mRNA using RNA polymerase. The enzyme reads the template 3' to 5' and builds mRNA 5' to 3', using uracil in place of thymine.",
+    "options": [
+      "RNA polymerase requires a primer to initiate transcription.",
+      "mRNA is synthesized in the 3' to 5' direction.",
+      "the synthesis of a single-stranded messenger RNA (mRNA) molecule complementary to a DNA template strand",
+      "Transcription produces a double-stranded DNA copy of a gene."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "gen-transcription-except",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "except",
+    "question": "All of the following are true of the transcription EXCEPT:",
+    "explanation": "The exception (the false statement) is the correct answer. Transcription copies a gene into single-stranded mRNA using RNA polymerase. The enzyme reads the template 3' to 5' and builds mRNA 5' to 3', using uracil in place of thymine.",
+    "options": [
+      "RNA polymerase reads the template strand in the 3' to 5' direction.",
+      "mRNA is synthesized in the 5' to 3' direction.",
+      "Uracil is incorporated into mRNA in place of thymine.",
+      "Transcription produces a double-stranded DNA copy of a gene."
+    ],
+    "correct": 3
+  },
+  {
+    "id": "gen-transcription-roman",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "roman",
+    "question": "Which of the following statements regarding the transcription is/are correct?\nI. RNA polymerase reads the template strand in the 3' to 5' direction.\nII. Transcription produces a double-stranded DNA copy of a gene.\nIII. mRNA is synthesized in the 5' to 3' direction.\nIV. RNA polymerase requires a primer to initiate transcription.",
+    "explanation": "Transcription copies a gene into single-stranded mRNA using RNA polymerase. The enzyme reads the template 3' to 5' and builds mRNA 5' to 3', using uracil in place of thymine.",
+    "options": [
+      "I, II, III, and IV",
+      "I and III only",
+      "I and II only",
+      "II and IV only"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "gen-dna-polymerase-recall",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "recall",
+    "question": "Which of the following best describes the DNA polymerase?",
+    "explanation": "DNA polymerase extends a DNA strand in the 5' to 3' direction from an existing 3' hydroxyl group, reads the template 3' to 5', and proofreads via its 3' to 5' exonuclease activity.",
+    "options": [
+      "It synthesizes the RNA primers used during replication.",
+      "the enzyme that synthesizes new DNA by adding nucleotides to the 3' hydroxyl end of a growing strand",
+      "It can initiate synthesis of a new strand without a primer.",
+      "It synthesizes DNA in the 3' to 5' direction."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "gen-dna-polymerase-except",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "except",
+    "question": "All of the following are true of the DNA polymerase EXCEPT:",
+    "explanation": "The exception (the false statement) is the correct answer. DNA polymerase extends a DNA strand in the 5' to 3' direction from an existing 3' hydroxyl group, reads the template 3' to 5', and proofreads via its 3' to 5' exonuclease activity.",
+    "options": [
+      "It can initiate synthesis of a new strand without a primer.",
+      "It reads the template strand in the 3' to 5' direction.",
+      "It requires a primer with a free 3' hydroxyl group.",
+      "It has proofreading (3' to 5' exonuclease) activity."
+    ],
+    "correct": 0
+  },
+  {
+    "id": "gen-dna-polymerase-roman",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "roman",
+    "question": "Which of the following statements regarding the DNA polymerase is/are correct?\nI. It reads the template strand in the 3' to 5' direction.\nII. It can initiate synthesis of a new strand without a primer.\nIII. It requires a primer with a free 3' hydroxyl group.\nIV. It synthesizes DNA in the 3' to 5' direction.",
+    "explanation": "DNA polymerase extends a DNA strand in the 5' to 3' direction from an existing 3' hydroxyl group, reads the template 3' to 5', and proofreads via its 3' to 5' exonuclease activity.",
+    "options": [
+      "I, II, III, and IV",
+      "I and III only",
+      "I and II only",
+      "II and IV only"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "gen-telomerase-recall",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "recall",
+    "question": "Which of the following best describes the telomerase?",
+    "explanation": "Telomerase adds repetitive sequences to telomeres using an internal RNA template, compensating for the end-replication problem that would otherwise shorten chromosomes each cycle.",
+    "options": [
+      "It uses a DNA template to extend chromosome ends.",
+      "It is a DNA polymerase that replicates the leading strand.",
+      "a ribonucleoprotein enzyme that extends the telomeres at the ends of linear chromosomes",
+      "It shortens telomeres with each round of replication."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "gen-telomerase-except",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "except",
+    "question": "All of the following are true of the telomerase EXCEPT:",
+    "explanation": "The exception (the false statement) is the correct answer. Telomerase adds repetitive sequences to telomeres using an internal RNA template, compensating for the end-replication problem that would otherwise shorten chromosomes each cycle.",
+    "options": [
+      "It counteracts the progressive shortening of chromosomes during replication.",
+      "It carries an RNA template complementary to the telomeric repeat sequence.",
+      "It is highly active in germ cells and stem cells but low in most somatic cells.",
+      "It shortens telomeres with each round of replication."
+    ],
+    "correct": 3
+  },
+  {
+    "id": "gen-central-dogma-recall",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "recall",
+    "question": "Which of the following best describes the central dogma?",
+    "explanation": "The central dogma describes the flow of genetic information: DNA is replicated, transcribed into RNA, and translated into protein. RNA does not serve as the permanent genetic storage molecule.",
+    "options": [
+      "Proteins are reverse-transcribed back into DNA in normal cells.",
+      "Translation occurs before transcription in the flow of information.",
+      "RNA is used as the permanent storage molecule for genetic information.",
+      "genetic information flows from DNA to RNA to protein"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "gen-central-dogma-sequence",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "sequence",
+    "question": "Which of the following is the correct order of the flow of genetic information?",
+    "explanation": "The central dogma describes the flow of genetic information: DNA is replicated, transcribed into RNA, and translated into protein. RNA does not serve as the permanent genetic storage molecule.",
+    "options": [
+      "transcription (DNA to mRNA) -> DNA replication -> RNA processing -> translation (mRNA to protein)",
+      "transcription (DNA to mRNA) -> RNA processing -> translation (mRNA to protein) -> DNA replication",
+      "DNA replication -> transcription (DNA to mRNA) -> RNA processing -> translation (mRNA to protein)",
+      "translation (mRNA to protein) -> RNA processing -> transcription (DNA to mRNA) -> DNA replication"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "gen-cell-cycle-recall",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "Reproduction",
+    "knowledge_point": "2.1 The Cell Cycle and Mitosis",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "recall",
+    "question": "Which of the following best describes the cell cycle?",
+    "explanation": "The cell cycle proceeds G1 -> S -> G2 -> M. DNA is synthesized in S phase, and the duplicated chromosomes are segregated and the cell divides during M phase.",
+    "options": [
+      "DNA replication occurs during G1 phase.",
+      "The cell divides before it duplicates its DNA.",
+      "M phase occurs before S phase.",
+      "the ordered series of events by which a cell grows, duplicates its DNA, and divides"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "gen-cell-cycle-sequence",
+    "section": "Biological & Biochemical Foundations",
+    "subject": "Biology",
+    "topic": "Reproduction",
+    "knowledge_point": "2.1 The Cell Cycle and Mitosis",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "sequence",
+    "question": "Which of the following is the correct order of the phases of the eukaryotic cell cycle?",
+    "explanation": "The cell cycle proceeds G1 -> S -> G2 -> M. DNA is synthesized in S phase, and the duplicated chromosomes are segregated and the cell divides during M phase.",
+    "options": [
+      "S phase (DNA synthesis) -> G1 phase (growth) -> G2 phase (growth and preparation) -> M phase (mitosis and cytokinesis)",
+      "S phase (DNA synthesis) -> G2 phase (growth and preparation) -> M phase (mitosis and cytokinesis) -> G1 phase (growth)",
+      "G1 phase (growth) -> S phase (DNA synthesis) -> G2 phase (growth and preparation) -> M phase (mitosis and cytokinesis)",
+      "M phase (mitosis and cytokinesis) -> G2 phase (growth and preparation) -> S phase (DNA synthesis) -> G1 phase (growth)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "gen-vignette-telomerase",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill2",
+    "subtype": "vignette",
+    "question": "A researcher deletes the gene encoding telomerase in a cultured line of rapidly dividing cancer cells. Compared with untreated cells, the treated cells are most likely to exhibit:",
+    "options": [
+      "an increase in the rate of ribosomal RNA transcription",
+      "no change in chromosome length over successive divisions",
+      "progressive shortening of chromosome ends over successive divisions",
+      "lengthening of telomeres after each round of replication"
+    ],
+    "correct": 2,
+    "explanation": "Telomerase maintains telomere length. Without it, the end-replication problem causes telomeres to shorten with each cell division.",
+    "section": "Biological & Biochemical Foundations"
+  },
+  {
+    "id": "gen-vignette-nonsense",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "vignette",
+    "question": "A single nucleotide substitution in a protein-coding gene changes a glutamic acid codon (GAG) into a stop codon (UAG). This change is best classified as a:",
+    "options": [
+      "missense mutation",
+      "silent mutation",
+      "frameshift mutation",
+      "nonsense mutation"
+    ],
+    "correct": 3,
+    "explanation": "A substitution that creates a premature stop codon is a nonsense mutation, which typically truncates and inactivates the protein.",
+    "section": "Biological & Biochemical Foundations"
+  },
+  {
+    "id": "gen-data-gc-tm",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.2 Eukaryotic Cells",
+    "type": "discrete",
+    "skill": "skill4",
+    "subtype": "data-interp",
+    "question": "The melting temperature (Tm) of double-stranded DNA increases as the proportion of G-C base pairs increases. Three DNA samples contain 20%, 35%, and 50% G-C content. Which sample has the highest Tm?",
+    "options": [
+      "All three samples have the same Tm",
+      "The sample with 50% G-C content",
+      "The sample with 20% G-C content",
+      "The sample with 35% G-C content"
+    ],
+    "correct": 1,
+    "explanation": "G-C pairs form three hydrogen bonds (versus two for A-T), so greater G-C content increases the energy required to separate the strands, raising the melting temperature.",
+    "section": "Biological & Biochemical Foundations"
+  },
+  {
+    "id": "gen-data-cell-cycle",
+    "subject": "Biology",
+    "topic": "Reproduction",
+    "knowledge_point": "2.1 The Cell Cycle and Mitosis",
+    "type": "discrete",
+    "skill": "skill4",
+    "subtype": "data-interp",
+    "question": "Flow cytometry measures the DNA content per cell in a population of dividing cells. At which phase of the cell cycle does the DNA content per cell double?",
+    "options": [
+      "G2 phase",
+      "M phase",
+      "S phase",
+      "G1 phase"
+    ],
+    "correct": 2,
+    "explanation": "DNA is replicated during S phase, so the DNA content per cell doubles between G1 and G2.",
+    "section": "Biological & Biochemical Foundations"
+  },
+  {
+    "id": "gen-yesno-telomerase",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.4 Genetics and Growth of Prokaryotic Cells",
+    "type": "discrete",
+    "skill": "skill2",
+    "subtype": "yes-no",
+    "question": "Is it accurate to state that telomerase uses an RNA template to extend chromosome ends?",
+    "options": [
+      "Yes, because telomerase contains an RNA template complementary to the telomeric repeat",
+      "Yes, because telomerase carries a DNA template that guides elongation",
+      "No, because telomerase consists only of protein subunits",
+      "No, because telomerase does not catalyze DNA synthesis"
+    ],
+    "correct": 0,
+    "explanation": "Telomerase is a ribonucleoprotein whose RNA component serves as the template for the DNA repeats it adds to telomeres.",
+    "section": "Biological & Biochemical Foundations"
+  },
+  {
+    "id": "gen-compare-nucleoside",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "knowledge_point": "1.2 Eukaryotic Cells",
+    "type": "discrete",
+    "skill": "skill1",
+    "subtype": "compare",
+    "question": "Which statement correctly distinguishes a nucleoside from a nucleotide?",
+    "options": [
+      "A nucleotide contains a hexose sugar, whereas a nucleoside contains a pentose",
+      "A nucleoside and a nucleotide differ only in their nitrogenous base",
+      "A nucleotide contains one or more phosphate groups, whereas a nucleoside does not",
+      "A nucleoside contains phosphate groups, whereas a nucleotide does not"
+    ],
+    "correct": 2,
+    "explanation": "A nucleotide is a nucleoside with one or more phosphate groups added; a nucleoside is only a nitrogenous base plus a pentose sugar.",
+    "section": "Biological & Biochemical Foundations"
+  }
+]
