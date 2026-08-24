@@ -404,3 +404,25 @@ body {
 
 .special-card { width: 100%; margin-bottom: 4px; }
 .srs-note { font-size: 0.8rem; color: var(--muted); }
+
+/* Difficulty tag */
+.diff-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+.diff-easy { color: #2f9e57; border: 1px solid #2f9e57; }
+.diff-medium { color: #c98a00; border: 1px solid #e08a2e; }
+.diff-hard { color: #d1453b; border: 1px solid #d1453b; }
+
+/* Test-mode timer */
+.test-timer {
+  font-size: 1rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+  white-space: nowrap;
+}

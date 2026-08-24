@@ -9,9 +9,12 @@ let current = 0;
 let sessionCorrect = 0;
 let answered = false;
 
-// Assign every question a stable id and carry a deck-level passage (if any)
-// onto each question so context still shows up when reviewed out of order.
-DECKS.forEach((deck) => {
+// Combine hand-written decks with the full-length generated decks.
+const ALL_DECKS = (typeof DECKS !== "undefined" ? DECKS : []).concat(
+  typeof FULL_DECKS !== "undefined" ? FULL_DECKS : []
+);
+
+ALL_DECKS.forEach((deck) => {
   deck.questions.forEach((q, i) => {
     q.id = `${deck.id}-${i}`;
     if (deck.passage) q.passage = deck.passage;
@@ -19,7 +22,12 @@ DECKS.forEach((deck) => {
 });
 
 const ALL_QUESTIONS = {};
-DECKS.forEach((d) => d.questions.forEach((q) => { ALL_QUESTIONS[q.id] = q; }));
+ALL_DECKS.forEach((d) => d.questions.forEach((q) => { ALL_QUESTIONS[q.id] = q; }));
+
+const DIFFICULTIES = ["easy", "medium", "hard"];
+function difficultyOf(q) {
+  return DIFFICULTIES.includes(q.difficulty) ? q.difficulty : "medium";
+}
 
 // ---------- persistent state (localStorage) ----------
 function loadState() {
@@ -105,7 +113,7 @@ function getDueQuestions() {
   const s = loadState();
   const now = Date.now();
   const out = [];
-  DECKS.forEach((d) => d.questions.forEach((q) => {
+  ALL_DECKS.forEach((d) => d.questions.forEach((q) => {
     const c = s.cards[q.id];
     if (c && c.due && c.due <= now) out.push(q);
   }));
@@ -115,7 +123,7 @@ function getDueQuestions() {
 function getMissedQuestions() {
   const s = loadState();
   const out = [];
-  DECKS.forEach((d) => d.questions.forEach((q) => {
+  ALL_DECKS.forEach((d) => d.questions.forEach((q) => {
     const c = s.cards[q.id];
     if (c && c.lastCorrect === false) out.push(q);
   }));
@@ -125,6 +133,29 @@ function getMissedQuestions() {
 function getSavedQuestions() {
   const s = loadState();
   return s.saved.map((id) => ALL_QUESTIONS[id]).filter(Boolean);
+}
+
+function getByDifficulty(diff) {
+  const out = [];
+  ALL_DECKS.forEach((d) => d.questions.forEach((q) => {
+    if (difficultyOf(q) === diff) out.push(q);
+  }));
+  return out;
+}
+
+function getFullLengthDecks() {
+  return typeof FULL_DECKS !== "undefined" ? FULL_DECKS : [];
+}
+
+function sectionSeconds(section) {
+  if (/CARS|Critical Analysis/i.test(section)) return 90 * 60;
+  return 95 * 60;
+}
+
+function formatTime(sec) {
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return `${m}:${String(s).padStart(2, "0")}`;
 }
 
 function countDue(deck) {
@@ -190,10 +221,61 @@ function renderHome() {
     root.appendChild(b);
   });
 
+  // --- Practice by difficulty ---
+  const diffHeading = document.createElement("p");
+  diffHeading.className = "home-heading";
+  diffHeading.textContent = "Practice by difficulty";
+  root.appendChild(diffHeading);
+
+  const diffGrid = document.createElement("div");
+  diffGrid.className = "set-grid";
+  DIFFICULTIES.forEach((diff) => {
+    const qs = getByDifficulty(diff);
+    if (!qs.length) return;
+    const label = diff.charAt(0).toUpperCase() + diff.slice(1);
+    const card = document.createElement("button");
+    card.className = "set-card";
+    card.innerHTML = `
+      <span class="set-title">${label}</span>
+      <span class="set-section">${qs.length} questions</span>
+      <span class="diff-tag diff-${diff}">${diff}</span>
+    `;
+    card.addEventListener("click", () => startDeck({ id: `diff-${diff}`, title: label, section: "Practice by difficulty", questions: qs }));
+    diffGrid.appendChild(card);
+  });
+  root.appendChild(diffGrid);
+
+  // --- Practice Tests (full-length, timed) ---
+  const testHeading = document.createElement("p");
+  testHeading.className = "home-heading";
+  testHeading.textContent = "Practice Tests (timed)";
+  root.appendChild(testHeading);
+
+  const testGrid = document.createElement("div");
+  testGrid.className = "set-grid";
+  getFullLengthDecks().forEach((deck) => {
+    const card = document.createElement("button");
+    card.className = "set-card";
+    card.innerHTML = `
+      <span class="set-title">${deck.title}</span>
+      <span class="set-section">${deck.section}</span>
+      <span class="set-count">${deck.questions.length} questions · timed</span>
+    `;
+    card.addEventListener("click", () => startTest(deck));
+    testGrid.appendChild(card);
+  });
+  root.appendChild(testGrid);
+
+  // --- Topic decks ---
+  const topicHeading = document.createElement("p");
+  topicHeading.className = "home-heading";
+  topicHeading.textContent = "Topic decks";
+  root.appendChild(topicHeading);
+
   const grid = document.createElement("div");
   grid.className = "set-grid";
 
-  DECKS.forEach((deck) => {
+  (typeof DECKS !== "undefined" ? DECKS : []).forEach((deck) => {
     const dueCount = countDue(deck);
     const newCount = countNew(deck);
     const card = document.createElement("button");
@@ -216,6 +298,8 @@ function renderHome() {
 
 function startDeck(deck) {
   root.classList.remove("home");
+  stopTimer();
+  testMode = false;
   activeDeck = deck;
   current = 0;
   sessionCorrect = 0;
@@ -243,7 +327,7 @@ function render() {
 
   const indexEl = document.createElement("div");
   indexEl.className = "q-index";
-  indexEl.innerHTML = `${activeDeck.section} · Card ${current + 1} <span class="q-type-tag">${q.passage ? "Passage-based" : "Discrete"}</span>`;
+  indexEl.innerHTML = `${activeDeck.section} · Card ${current + 1} <span class="q-type-tag">${q.passage ? "Passage-based" : "Discrete"}</span> <span class="diff-tag diff-${difficultyOf(q)}">${difficultyOf(q)}</span>`;
   header.appendChild(indexEl);
 
   const saveBtn = document.createElement("button");
@@ -336,6 +420,170 @@ function gradeAndNext(grade) {
   applyGrade(activeDeck.questions[current].id, grade);
   current++;
   render();
+}
+
+function startTest(deck) {
+  root.classList.remove("home");
+  stopTimer();
+  activeDeck = deck;
+  current = 0;
+  testMode = true;
+  testAnswers = [];
+  testSecondsLeft = sectionSeconds(deck.section);
+  renderTest();
+  startTimer();
+}
+
+function startTimer() {
+  stopTimer();
+  testTimer = setInterval(() => {
+    testSecondsLeft--;
+    const el = document.getElementById("test-timer");
+    if (el) el.textContent = formatTime(testSecondsLeft);
+    if (testSecondsLeft <= 0) {
+      stopTimer();
+      finishTest();
+    }
+  }, 1000);
+}
+
+function stopTimer() {
+  if (testTimer) {
+    clearInterval(testTimer);
+    testTimer = null;
+  }
+}
+
+function renderTest() {
+  if (current >= activeDeck.questions.length) {
+    finishTest();
+    return;
+  }
+
+  const q = activeDeck.questions[current];
+  progressLabel.textContent = `${activeDeck.title} · Question ${current + 1} of ${activeDeck.questions.length}`;
+
+  root.innerHTML = "";
+  answered = false;
+
+  const header = document.createElement("div");
+  header.className = "card-header";
+
+  const indexEl = document.createElement("div");
+  indexEl.className = "q-index";
+  indexEl.textContent = `${activeDeck.section} · Question ${current + 1}`;
+  header.appendChild(indexEl);
+
+  const timerEl = document.createElement("span");
+  timerEl.className = "test-timer";
+  timerEl.id = "test-timer";
+  timerEl.textContent = formatTime(testSecondsLeft);
+  header.appendChild(timerEl);
+  root.appendChild(header);
+
+  if (q.passage) {
+    const p = document.createElement("div");
+    p.className = "passage";
+    p.textContent = q.passage;
+    root.appendChild(p);
+  }
+
+  const qText = document.createElement("p");
+  qText.className = "q-text";
+  qText.textContent = q.question;
+  root.appendChild(qText);
+
+  const optionsEl = document.createElement("div");
+  optionsEl.className = "options";
+  const letters = ["A", "B", "C", "D"];
+  q.options.forEach((optionText, i) => {
+    const b = document.createElement("button");
+    b.className = "option";
+    b.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${optionText}</span>`;
+    b.addEventListener("click", () => selectTestOption(i, b, optionsEl));
+    optionsEl.appendChild(b);
+  });
+  root.appendChild(optionsEl);
+}
+
+function selectTestOption(i, btn, optionsEl) {
+  if (answered) return;
+  answered = true;
+
+  const q = activeDeck.questions[current];
+  const wasCorrect = i === q.correct;
+  testAnswers.push({ id: q.id, wasCorrect });
+
+  const allButtons = optionsEl.querySelectorAll(".option");
+  allButtons.forEach((b, idx) => {
+    b.disabled = true;
+    if (idx === q.correct) b.classList.add("correct");
+    else if (idx === i) b.classList.add("wrong");
+  });
+
+  current++;
+  setTimeout(() => renderTest(), 350);
+}
+
+function finishTest() {
+  stopTimer();
+  testMode = false;
+
+  const results = testAnswers;
+  const correctCount = results.filter((a) => a.wasCorrect).length;
+  const total = results.length;
+  const missedIds = results.filter((a) => !a.wasCorrect).map((a) => a.id);
+
+  // Feed the SRS: correct -> "good", wrong -> "again".
+  results.forEach((a) => applyGrade(a.id, a.wasCorrect ? "good" : "again"));
+
+  progressLabel.textContent = "";
+  root.innerHTML = "";
+
+  const wrap = document.createElement("div");
+  wrap.className = "summary";
+
+  const setLabel = document.createElement("div");
+  setLabel.className = "q-index";
+  setLabel.textContent = activeDeck.title;
+  wrap.appendChild(setLabel);
+
+  const scoreEl = document.createElement("div");
+  scoreEl.className = "score";
+  scoreEl.innerHTML = `<span>${correctCount}</span> / ${total}`;
+  wrap.appendChild(scoreEl);
+
+  const msg = document.createElement("p");
+  msg.textContent = pickMessage(correctCount, total);
+  wrap.appendChild(msg);
+
+  const note = document.createElement("p");
+  note.className = "srs-note";
+  note.textContent = "Missed questions were saved to Review Missed for later practice.";
+  wrap.appendChild(note);
+
+  const btnRow = document.createElement("div");
+  btnRow.className = "summary-actions";
+
+  if (missedIds.length) {
+    const reviewBtn = document.createElement("button");
+    reviewBtn.className = "next-btn";
+    reviewBtn.textContent = `Review ${missedIds.length} missed`;
+    reviewBtn.addEventListener("click", () => {
+      const missedQs = missedIds.map((id) => ALL_QUESTIONS[id]).filter(Boolean);
+      startDeck({ id: "test-missed", title: "Test Missed", section: "Missed from test", questions: missedQs });
+    });
+    btnRow.appendChild(reviewBtn);
+  }
+
+  const homeBtn = document.createElement("button");
+  homeBtn.className = "restart-btn";
+  homeBtn.textContent = "All decks";
+  homeBtn.addEventListener("click", renderHome);
+  btnRow.appendChild(homeBtn);
+
+  wrap.appendChild(btnRow);
+  root.appendChild(wrap);
 }
 
 function renderSummary() {
