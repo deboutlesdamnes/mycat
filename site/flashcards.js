@@ -94,8 +94,8 @@
       <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
         <div style="font-family:var(--font-heading);font-weight:600;font-size:14px">${activeDeck.title}</div>
         <div class="text-muted" style="font-size:12px">Card ${idx + 1} of ${activeDeck.questions.length}</div>
-        <div class="bar2" style="flex:1"><span style="width:${(idx / activeDeck.questions.length) * 100}%"></span></div>
-        <span class="tag2 tag2-neutral">Spaced repetition</span>
+        <div class="bar" style="flex:1"><span style="width:${(idx / activeDeck.questions.length) * 100}%"></span></div>
+        <span class="tag tag-neutral">Spaced repetition</span>
       </div>
       <div class="flash-card">
         <div class="k">Front</div>
@@ -106,17 +106,17 @@
     `;
     const backSlot = document.getElementById("back-slot");
     if (!revealed) {
-      backSlot.innerHTML = `<button class="btn2 btn2-primary" id="reveal-btn" style="margin-top:24px">Show answer</button>`;
+      backSlot.innerHTML = `<button class="btn btn-primary" id="reveal-btn" style="margin-top:24px">Show answer</button>`;
       document.getElementById("reveal-btn").addEventListener("click", () => { revealed = true; renderCard(); });
     } else {
       backSlot.innerHTML = `
-        <hr class="hr2" style="margin:28px 0">
+        <hr class="hr" style="margin:28px 0">
         <div class="k">Back</div>
         <p style="font-size:16px;line-height:1.7;margin:10px 0 0;opacity:.9"><strong>${letters[q.correct]}.</strong> ${escapeHtml(q.options[q.correct])}</p>
         <p style="font-size:14px;line-height:1.6;margin-top:10px;opacity:.8">${escapeHtml(q.explanation)}</p>
         <div style="display:flex;gap:6px;margin-top:20px">
-          ${q.topic ? `<span class="tag2 tag2-accent">${q.topic}</span>` : ""}
-          <span class="tag2 tag2-neutral">${q.section ? q.section.replace(" Foundations", "") : ""}</span>
+          ${q.topic ? `<span class="tag tag-accent">${q.topic}</span>` : ""}
+          <span class="tag tag-neutral">${q.section ? q.section.replace(" Foundations", "") : ""}</span>
         </div>
       `;
       renderGradeRow(q.id);
@@ -127,11 +127,11 @@
     const slot = document.getElementById("grade-slot");
     slot.innerHTML = `
       <div class="k" style="margin-top:24px">How well did you know it?</div>
-      <div class="grade-row2" style="margin-top:10px">
-        <button class="grade-btn2 grade2-again" data-key="again">Again</button>
-        <button class="grade-btn2 grade2-hard" data-key="hard">Hard</button>
-        <button class="grade-btn2 grade2-good" data-key="good">Good</button>
-        <button class="grade-btn2 grade2-easy" data-key="easy">Easy</button>
+      <div class="review-row" style="margin-top:10px">
+        <button class="grade-btn review-again" data-key="again">Again</button>
+        <button class="grade-btn review-hard" data-key="hard">Hard</button>
+        <button class="grade-btn review-good" data-key="good">Good</button>
+        <button class="grade-btn review-easy" data-key="easy">Easy</button>
       </div>
     `;
     slot.querySelectorAll("button").forEach((btn) => {

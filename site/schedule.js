@@ -23,7 +23,7 @@
         <div class="page-head"><h2 style="margin:0">Schedule</h2></div>
         <div class="panel panel-pad">
           <p>Set a test date to generate a study schedule.</p>
-          <a class="btn2 btn2-primary" href="onboarding.html">Set up your plan</a>
+          <a class="btn btn-primary" href="onboarding.html">Set up your plan</a>
         </div>`;
       return;
     }
@@ -35,16 +35,16 @@
         <div class="cal-toolbar">
           <h3 style="margin:0">${monthName}</h3>
           <div style="display:flex;gap:2px">
-            <button class="btn2 btn2-secondary btn2-icon" id="prev-month">${icon("chevron-left", { size: 16 })}</button>
-            <button class="btn2 btn2-secondary btn2-icon" id="next-month">${icon("chevron-right", { size: 16 })}</button>
+            <button class="btn btn-secondary btn-icon" id="prev-month">${icon("chevron-left", { size: 16 })}</button>
+            <button class="btn btn-secondary btn-icon" id="next-month">${icon("chevron-right", { size: 16 })}</button>
           </div>
           <div class="cal-legend">
             <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--color-accent)"></span>Practice</div>
             <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--color-accent-300)"></span>Content review</div>
             <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--color-text)"></span>Full-length</div>
           </div>
-          <a class="btn2 btn2-secondary" href="onboarding.html">Edit availability</a>
-          <button class="btn2 btn2-primary" id="rebalance">Rebalance plan</button>
+          <a class="btn btn-secondary" href="onboarding.html">Edit availability</a>
+          <button class="btn btn-primary" id="rebalance">Rebalance plan</button>
         </div>
         <div class="cal-body">
           <div>
@@ -119,10 +119,10 @@
             <div class="row-main">
               <div class="row-title">${t.label}</div>
             </div>
-            ${t.type === "exam" ? '<span class="tag2 tag2-accent">Exam</span>' : ""}
+            ${t.type === "exam" ? '<span class="tag tag-accent">Exam</span>' : ""}
           </div>`).join("")}
       </div>
-      ${tasks.some((t) => t.type !== "rest") ? `<a class="btn2 btn2-primary btn2-block" href="practice.html">Start today's plan ${icon("arrow-right", { size: 14 })}</a>` : ""}
+      ${tasks.some((t) => t.type !== "rest") ? `<a class="btn btn-primary btn-block" href="practice.html">Start today's plan ${icon("arrow-right", { size: 14, className: "icon-push-end" })}</a>` : ""}
     `;
   }
 

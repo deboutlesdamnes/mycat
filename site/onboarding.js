@@ -34,38 +34,38 @@
                 ? "Based on your most recent full-length sitting. Set a target score and test date and we'll build your study plan around it."
                 : "No full-length attempt yet — enter a baseline if you know one (a past AAMC or MyCat full-length score), or leave it blank and we'll estimate it as you practice."}
             </p>
-            <hr class="hr2">
+            <hr class="hr">
 
             <form id="onboard-form">
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px">
-                <div class="field2">
+                <div class="field">
                   <label>Baseline score ${autoBaseline ? "(from your last sitting)" : "(optional)"}</label>
-                  <input class="input2" type="number" min="472" max="528" id="f-baseline" value="${p.baselineScore || autoBaseline || ""}" ${autoBaseline ? "readonly" : ""} placeholder="e.g. 502">
+                  <input class="input" type="number" min="472" max="528" id="f-baseline" value="${p.baselineScore || autoBaseline || ""}" ${autoBaseline ? "readonly" : ""} placeholder="e.g. 502">
                 </div>
-                <div class="field2">
+                <div class="field">
                   <label>Target score</label>
-                  <input class="input2" type="number" min="472" max="528" id="f-target" value="${p.targetScore || ""}" required placeholder="e.g. 515">
+                  <input class="input" type="number" min="472" max="528" id="f-target" value="${p.targetScore || ""}" required placeholder="e.g. 515">
                 </div>
               </div>
 
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
-                <div class="field2">
+                <div class="field">
                   <label>Test date</label>
-                  <input class="input2" type="date" id="f-date" value="${p.testDate || ""}" required>
+                  <input class="input" type="date" id="f-date" value="${p.testDate || ""}" required>
                   <div class="text-muted" style="font-size:11px;margin-top:6px" id="weeks-away">${weeks != null ? `${weeks} weeks away` : ""}</div>
                 </div>
-                <div class="field2">
+                <div class="field">
                   <label>Weekly study hours</label>
-                  <div class="seg2" style="width:100%">
+                  <div class="seg" style="width:100%">
                     ${["5-10", "10-15", "15-20", "20+"].map((label, i) => {
                       const mid = [7, 12, 17, 22][i];
                       const checked = p.weeklyHours ? p.weeklyHours === mid : i === 1;
-                      return `<label class="seg2-opt" style="flex:1;justify-content:center"><input type="radio" name="hrs" value="${mid}" ${checked ? "checked" : ""}>${label}</label>`;
+                      return `<label class="seg-opt" style="flex:1;justify-content:center"><input type="radio" name="hrs" value="${mid}" ${checked ? "checked" : ""}>${label}</label>`;
                     }).join("")}
                   </div>
                 </div>
               </div>
-              <button type="submit" class="btn2 btn2-primary" style="margin-top:28px">Build my study plan ${icon("arrow-right", { size: 15 })}</button>
+              <button type="submit" class="btn btn-primary btn-block" style="margin-top:28px">Build my study plan ${icon("arrow-right", { size: 15, className: "icon-push-end" })}</button>
             </form>
           </div>
 

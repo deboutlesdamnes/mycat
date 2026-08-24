@@ -64,7 +64,7 @@
             ${delta14 != null ? `<span style="color:${delta14 >= 0 ? "var(--color-correct)" : "var(--color-wrong)"};font-weight:600">${delta14 >= 0 ? "+" : ""}${delta14}</span> <span class="text-muted">last 14 days</span>` : `<span class="text-muted">~${pctl}th percentile (approx.)</span>`}
           </div>
         </div>
-        <div class="bar2" style="margin-top:14px"><span style="width:${pct}%"></span></div>
+        <div class="bar" style="margin-top:14px"><span style="width:${pct}%"></span></div>
         <div style="display:flex;justify-content:space-between;font-size:11px;margin-top:6px" class="text-muted">
           <span>472</span><span>${target ? `Target ${target}` : "528"}</span>
         </div>
@@ -117,8 +117,8 @@
                 <div class="row-title">${item.title}</div>
                 <div class="row-sub">${item.subtitle}</div>
               </div>
-              <span class="tag2 ${item.tagClass}">${item.tag}</span>
-              <a class="btn2 btn2-primary" href="${item.href}">Start</a>
+              <span class="tag ${item.tagClass}">${item.tag}</span>
+              <a class="btn btn-primary" href="${item.href}">Start</a>
             </div>`).join("")}
         </div>
         ${nextExam ? `
@@ -128,7 +128,7 @@
               <div style="font-size:14px;font-weight:600;margin-top:6px">${new Date(nextExam[0]).toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" })}</div>
             </div>
             <div class="stat-tile" style="display:grid;place-items:center">
-              <a class="btn2 btn2-secondary" href="exams.html">View</a>
+              <a class="btn btn-secondary" href="exams.html">View</a>
             </div>
           </div>` : ""}
       </div>`;
@@ -150,12 +150,12 @@
               <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px">
                 <span>${r.label}</span><strong>${r.score != null ? r.score : "—"}</strong>
               </div>
-              <div class="bar2"><span style="width:${r.acc != null ? Math.round(r.acc * 100) : 0}%"></span></div>
+              <div class="bar"><span style="width:${r.acc != null ? Math.round(r.acc * 100) : 0}%"></span></div>
             </div>`).join("")}
         </div>
         <div style="border-bottom:2px solid var(--color-divider);padding-bottom:10px;margin-top:24px"><h4 style="margin:0">Weakest topics</h4></div>
         ${weakest.length ? `
-          <table class="table2"><tbody>
+          <table class="table"><tbody>
             ${weakest.map((w) => `<tr><td>${w.topic}</td><td style="text-align:right;width:60px" class="text-muted">${Math.round(w.accuracy * 100)}%</td></tr>`).join("")}
           </tbody></table>` : `<p class="text-muted" style="font-size:13px">Answer a few more questions in each topic to see this.</p>`}
       </div>`;

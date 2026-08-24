@@ -1,5 +1,8 @@
 // Injects the shared top nav into <div id="nav-root"></div>, present on
 // every new page, so the markup isn't duplicated across HTML files.
+// Structure matches the mockup exactly: flat children of .nav (brand, then
+// bare <a> links, then streak/avatar), relying on .nav-brand's
+// margin-right:auto to push everything else to the right as a group.
 function renderNav(active) {
   const root = document.getElementById("nav-root");
   if (!root) return;
@@ -16,15 +19,11 @@ function renderNav(active) {
   const streak = Stats.streak(s.activityLog);
 
   root.innerHTML = `
-    <div class="nav2">
-      <a class="nav2-brand" href="index.html">
-        <span aria-hidden="true">🩺</span> MyCat
-      </a>
-      <div class="nav2-links">
-        ${links.map((l) => `<a href="${l.href}" ${l.key === active ? 'aria-current="page"' : ""}>${l.label}</a>`).join("")}
-      </div>
-      ${streak > 0 ? `<div class="nav2-streak">${icon("flame", { size: 15 })}${streak}-day streak</div>` : ""}
-      <div class="nav2-avatar" title="MyCat">🩺</div>
+    <div class="nav">
+      <div class="nav-brand"><span aria-hidden="true">🩺</span>MyCat</div>
+      ${links.map((l) => `<a href="${l.href}" ${l.key === active ? 'aria-current="page"' : ""}>${l.label}</a>`).join("")}
+      ${streak > 0 ? `<div class="nav-streak">${icon("flame", { size: 15 })}${streak}-day streak</div>` : ""}
+      <div class="nav-avatar" title="MyCat">🩺</div>
     </div>
   `;
 }

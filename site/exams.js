@@ -28,7 +28,7 @@
     root.innerHTML = `
       <div class="page-head">
         <h2 style="margin:0">Exams</h2>
-        <button class="btn2 btn2-primary" id="start-exam">Start full exam day</button>
+        <button class="btn btn-primary" id="start-exam">Start full exam day</button>
       </div>
       ${sittings.length ? `
         <div class="panel panel-pad">
@@ -40,7 +40,7 @@
                   <div class="row-sub">${a.correct} / ${a.total} correct</div>
                 </div>
                 <div class="num" style="font-size:22px;color:var(--color-accent)">${a.compositeScore}</div>
-                <a class="btn2 btn2-secondary" href="exams.html?attempt=${a.date}">View report</a>
+                <a class="btn btn-secondary" href="exams.html?attempt=${a.date}">View report</a>
               </div>`).join("")}
           </div>
         </div>` : `<div class="empty-state">No full-length attempts yet. A full exam day runs all four sections back to back with real per-section timers.</div>`}
@@ -80,27 +80,27 @@
           <div class="player-toolbar">
             <div style="font-family:var(--font-heading);font-weight:800;font-size:13px">${deck.title}</div>
             <div class="text-muted" style="font-size:12px">Question ${qi + 1} of ${deck.questions.length} · Section ${si + 1} of ${sections.length}</div>
-            <div class="bar2" style="flex:1"><span style="width:${(qi / deck.questions.length) * 100}%"></span></div>
-            <div style="display:flex;align-items:center;gap:6px;font-size:13px">${icon("clock", { size: 15 })}<span class="timer2" id="exam-timer">${fmt(secondsLeft)}</span></div>
+            <div class="bar" style="flex:1"><span style="width:${(qi / deck.questions.length) * 100}%"></span></div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:13px">${icon("clock", { size: 15 })}<span class="timer" id="exam-timer">${fmt(secondsLeft)}</span></div>
           </div>
           <div class="player-grid">
-            ${q.passage ? `<div class="player-passage"><div class="k" style="margin-bottom:10px">Passage</div><div class="passage2">${escapeHtml(q.passage)}</div></div>` : ""}
+            ${q.passage ? `<div class="player-passage"><div class="k" style="margin-bottom:10px">Passage</div><div class="passage-block">${escapeHtml(q.passage)}</div></div>` : ""}
             <div class="player-question" style="${q.passage ? "" : "grid-column:1 / -1;max-width:640px;margin:0 auto"}">
-              <p class="q-text2">${escapeHtml(q.question)}</p>
-              <div class="options2" id="options">
-                ${q.options.map((opt, i) => `<button class="option2" data-i="${i}"><span class="option-letter">${letters[i]}.</span><span class="option2-text">${escapeHtml(opt)}</span></button>`).join("")}
+              <p class="question-text">${escapeHtml(q.question)}</p>
+              <div class="answer-options" id="options">
+                ${q.options.map((opt, i) => `<button class="answer-option" data-i="${i}"><span class="answer-letter">${letters[i]}.</span><span class="answer-option-text">${escapeHtml(opt)}</span></button>`).join("")}
               </div>
             </div>
           </div>
         </div>
       `;
-      document.querySelectorAll("#options .option2").forEach((btn) => {
+      document.querySelectorAll("#options .answer-option").forEach((btn) => {
         btn.addEventListener("click", () => selectAnswer(Number(btn.dataset.i), q));
       });
     }
 
     function selectAnswer(i, q) {
-      document.querySelectorAll("#options .option2").forEach((b) => (b.disabled = true));
+      document.querySelectorAll("#options .answer-option").forEach((b) => (b.disabled = true));
       const ms = Date.now() - qStartedAt;
       const wasCorrect = i === q.correct;
       const r = results[si];
@@ -165,7 +165,7 @@
             </div>`).join("")}
         </div>
       </div>
-      <div style="text-align:right"><button class="btn2 btn2-primary" id="continue-btn">Continue to report ${icon("arrow-right", { size: 14 })}</button></div>
+      <div style="text-align:right"><button class="btn btn-primary" id="continue-btn">Continue to report ${icon("arrow-right", { size: 14 })}</button></div>
     `;
     document.querySelectorAll("#missed-list .row-item").forEach((row) => {
       const qid = row.dataset.qid;
@@ -209,7 +209,7 @@
     root.innerHTML = `
       <div class="page-head">
         <h2 style="margin:0">Exam review</h2>
-        <a class="btn2 btn2-secondary" href="exams.html">All attempts</a>
+        <a class="btn btn-secondary" href="exams.html">All attempts</a>
       </div>
       <div class="panel">
         <div class="score-hero-row">
@@ -217,13 +217,13 @@
             <div class="k">Full-length · ${new Date(attempt.date).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" })}</div>
             <div class="score-num-lg">${attempt.compositeScore}</div>
             <div style="font-size:14px;opacity:.9">~${pctl}th percentile (approx.)${prev ? ` · <strong>${attempt.compositeScore - prev.compositeScore >= 0 ? "+" : ""}${attempt.compositeScore - prev.compositeScore}</strong> from last sitting` : ""}</div>
-            <hr class="hr2" style="background:rgba(255,255,255,.35)">
+            <hr class="hr" style="background:rgba(255,255,255,.35)">
             <div class="kv-row" style="border-color:rgba(255,255,255,.2)"><span style="opacity:.8">Target</span><strong>${store.profile.targetScore || "—"}</strong></div>
             <div class="kv-row" style="border-color:rgba(255,255,255,.2)"><span style="opacity:.8">Gap</span><strong>${store.profile.targetScore ? Math.max(0, store.profile.targetScore - attempt.compositeScore) : "—"}</strong></div>
           </div>
           <div class="score-detail">
             <h4>Section scores</h4>
-            <table class="table2">
+            <table class="table">
               <thead><tr><th>Section</th><th style="text-align:right">Score</th><th style="text-align:right">Correct</th><th style="width:36%">Accuracy</th></tr></thead>
               <tbody>
                 ${attempt.sectionScores.map((s) => `
@@ -231,7 +231,7 @@
                     <td>${s.section}</td>
                     <td style="text-align:right"><strong>${s.score}</strong></td>
                     <td style="text-align:right" class="text-muted">${s.correct}/${s.total}</td>
-                    <td><div class="bar2"><span style="width:${s.total ? Math.round((s.correct / s.total) * 100) : 0}%"></span></div></td>
+                    <td><div class="bar"><span style="width:${s.total ? Math.round((s.correct / s.total) * 100) : 0}%"></span></div></td>
                   </tr>`).join("")}
               </tbody>
             </table>
@@ -266,7 +266,7 @@
                 ${icon("chevron-right", { size: 16, className: "text-muted" })}
               </a>
             </div>
-            <a class="btn2 btn2-primary btn2-block" href="schedule.html">Apply to my plan ${icon("arrow-right", { size: 14 })}</a>
+            <a class="btn btn-primary btn-block" href="schedule.html">Apply to my plan ${icon("arrow-right", { size: 14, className: "icon-push-end" })}</a>
           </div>
         </div>
       </div>

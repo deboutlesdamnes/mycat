@@ -88,26 +88,26 @@
       ${specials.length ? `
         <div>
           <div class="k" style="margin-bottom:10px">Continue where you left off</div>
-          <div class="set-grid">
-            ${specials.map((s) => `<a class="set-card" href="${s.href}"><span class="set-title">${s.title}</span><span class="set-section">${s.sub}</span></a>`).join("")}
+          <div class="deck-grid">
+            ${specials.map((s) => `<a class="deck-tile" href="${s.href}"><span class="deck-tile-title">${s.title}</span><span class="deck-tile-sub">${s.sub}</span></a>`).join("")}
           </div>
         </div>` : ""}
       <div>
         <div class="k" style="margin-bottom:10px">By section</div>
-        <div class="set-grid">
-          ${bySection.map((x) => `<a class="set-card" href="practice.html?mode=section&section=${encodeURIComponent(x.s)}"><span class="set-title">${x.s.replace(" Foundations", "")}</span><span class="set-count">${x.n} questions</span></a>`).join("")}
+        <div class="deck-grid">
+          ${bySection.map((x) => `<a class="deck-tile" href="practice.html?mode=section&section=${encodeURIComponent(x.s)}"><span class="deck-tile-title">${x.s.replace(" Foundations", "")}</span><span class="deck-tile-count">${x.n} questions</span></a>`).join("")}
         </div>
       </div>
       <div>
         <div class="k" style="margin-bottom:10px">By difficulty</div>
-        <div class="set-grid">
-          ${byDiff.map((x) => `<a class="set-card" href="practice.html?mode=diff&value=${x.d}"><span class="set-title">${x.d[0].toUpperCase() + x.d.slice(1)}</span><span class="set-count">${x.n} questions</span></a>`).join("")}
+        <div class="deck-grid">
+          ${byDiff.map((x) => `<a class="deck-tile" href="practice.html?mode=diff&value=${x.d}"><span class="deck-tile-title">${x.d[0].toUpperCase() + x.d.slice(1)}</span><span class="deck-tile-count">${x.n} questions</span></a>`).join("")}
         </div>
       </div>
       <div>
         <div class="k" style="margin-bottom:10px">Topic decks</div>
-        <div class="set-grid">
-          ${Data.decks.map((deck) => `<a class="set-card" href="practice.html?mode=deck&id=${deck.id}"><span class="set-title">${deck.title}</span><span class="set-section">${deck.section}</span><span class="set-count">${deck.questions.length} questions</span></a>`).join("")}
+        <div class="deck-grid">
+          ${Data.decks.map((deck) => `<a class="deck-tile" href="practice.html?mode=deck&id=${deck.id}"><span class="deck-tile-title">${deck.title}</span><span class="deck-tile-sub">${deck.section}</span><span class="deck-tile-count">${deck.questions.length} questions</span></a>`).join("")}
         </div>
       </div>
     `;
@@ -117,7 +117,7 @@
     root.innerHTML = `
       <div class="page-head"><h2 style="margin:0">${setLabel}</h2></div>
       <div class="empty-state">Nothing here right now.</div>
-      <div style="text-align:center"><a class="btn2 btn2-secondary" href="practice.html">Back to practice</a></div>
+      <div style="text-align:center"><a class="btn btn-secondary" href="practice.html">Back to practice</a></div>
     `;
   }
 
@@ -154,28 +154,28 @@
         <div class="player-toolbar">
           <div style="font-family:var(--font-heading);font-weight:800;font-size:13px">${setLabel}</div>
           <div class="text-muted" style="font-size:12px">Question ${idx + 1} of ${queue.length}</div>
-          <div class="bar2" style="flex:1"><span style="width:${(idx / queue.length) * 100}%"></span></div>
-          <div style="display:flex;align-items:center;gap:6px;font-size:13px">${icon("clock", { size: 15 })}<span class="timer2" id="q-timer">0:00</span></div>
-          <button class="btn2 btn2-secondary" id="flag-btn">${icon("flag", { size: 14 })}${flagged ? "Flagged" : "Flag"}</button>
-          <button class="btn2 btn2-secondary" id="save-btn">${icon("bookmark", { size: 14 })}${saved ? "Saved" : "Save"}</button>
+          <div class="bar" style="flex:1"><span style="width:${(idx / queue.length) * 100}%"></span></div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:13px">${icon("clock", { size: 15 })}<span class="timer" id="q-timer">0:00</span></div>
+          <button class="btn btn-secondary" id="flag-btn">${icon("flag", { size: 14 })}${flagged ? "Flagged" : "Flag"}</button>
+          <button class="btn btn-secondary" id="save-btn">${icon("bookmark", { size: 14 })}${saved ? "Saved" : "Save"}</button>
         </div>
         <div class="player-grid">
           ${passage ? `
             <div class="player-passage">
               <div class="k" style="margin-bottom:10px">Passage</div>
-              <div class="passage2">${escapeHtml(passage)}</div>
+              <div class="passage-block">${escapeHtml(passage)}</div>
             </div>` : ""}
           <div class="player-question" style="${passage ? "" : "grid-column:1 / -1;max-width:640px;margin:0 auto"}">
             <div style="display:flex;gap:8px;align-items:center;margin-bottom:12px">
-              <span class="diff-tag2 diff2-${Data.difficultyOf(q)}">${Data.difficultyOf(q)}</span>
-              ${q.topic ? `<span class="tag2 tag2-neutral">${q.topic}</span>` : ""}
+              <span class="diff-tag level-${Data.difficultyOf(q)}">${Data.difficultyOf(q)}</span>
+              ${q.topic ? `<span class="tag tag-neutral">${q.topic}</span>` : ""}
             </div>
-            <p class="q-text2">${escapeHtml(q.question)}</p>
-            <div class="options2" id="options">
+            <p class="question-text">${escapeHtml(q.question)}</p>
+            <div class="answer-options" id="options">
               ${q.options.map((opt, i) => `
-                <button class="option2" data-i="${i}">
-                  <span class="option-letter">${letters[i]}.</span>
-                  <span class="option2-text">${escapeHtml(opt)}</span>
+                <button class="answer-option" data-i="${i}">
+                  <span class="answer-letter">${letters[i]}.</span>
+                  <span class="answer-option-text">${escapeHtml(opt)}</span>
                 </button>`).join("")}
             </div>
             <div id="explain-slot"></div>
@@ -195,7 +195,7 @@
       document.getElementById("save-btn").innerHTML = `${icon("bookmark", { size: 14 })}${now ? "Saved" : "Save"}`;
     });
 
-    document.querySelectorAll("#options .option2").forEach((btn) => {
+    document.querySelectorAll("#options .answer-option").forEach((btn) => {
       btn.addEventListener("click", () => selectOption(Number(btn.dataset.i), q));
     });
   }
@@ -211,7 +211,7 @@
     Store.logAnswer({ qid: q.id, section: q.section, topic: q.topic, correct: wasCorrect, ms });
 
     const letters = ["A", "B", "C", "D"];
-    document.querySelectorAll("#options .option2").forEach((btn, bi) => {
+    document.querySelectorAll("#options .answer-option").forEach((btn, bi) => {
       btn.disabled = true;
       if (bi === q.correct) btn.classList.add("correct");
       else if (bi === i) btn.classList.add("wrong");
@@ -220,14 +220,14 @@
     const selfAcc = selfAccuracyOnTopic(q.topic, q.id);
     const slot = document.getElementById("explain-slot");
     slot.innerHTML = `
-      <div class="explanation2">
+      <div class="answer-explanation">
         <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap">
           <strong>${wasCorrect ? "Correct" : "Not quite"} — answer: ${letters[q.correct]}.</strong>
-          ${selfAcc != null ? `<span class="tag2 tag2-neutral">Your accuracy on ${q.topic}: ${selfAcc}%</span>` : ""}
+          ${selfAcc != null ? `<span class="tag tag-neutral">Your accuracy on ${q.topic}: ${selfAcc}%</span>` : ""}
         </div>
         <p>${escapeHtml(q.explanation)}</p>
       </div>
-      <div class="grade-row2" id="grade-row"></div>
+      <div class="review-row" id="grade-row"></div>
     `;
     renderGradeButtons(q.id, wasCorrect);
   }
@@ -239,7 +239,7 @@
       { key: "good", label: "Good" }, { key: "easy", label: "Easy" },
     ];
     row.innerHTML = grades.map((g) => `
-      <button class="grade-btn2 grade2-${g.key} ${((g.key === "again" && !wasCorrect) || (g.key === "good" && wasCorrect)) ? "suggested" : ""}" data-key="${g.key}">${g.label}</button>
+      <button class="grade-btn review-${g.key} ${((g.key === "again" && !wasCorrect) || (g.key === "good" && wasCorrect)) ? "suggested" : ""}" data-key="${g.key}">${g.label}</button>
     `).join("");
     row.querySelectorAll("button").forEach((btn) => {
       btn.addEventListener("click", () => { Store.applyGrade(qid, btn.dataset.key); idx += 1; renderPlayer(); });
@@ -248,13 +248,13 @@
 
   function renderSummary() {
     root.innerHTML = `
-      <div class="summary2">
+      <div class="result-summary">
         <div class="k">${setLabel}</div>
         <div class="score"><span>${sessionCorrect}</span> / ${queue.length}</div>
         <p>Cards were rescheduled with spaced repetition — revisit due cards later to lock them in.</p>
-        <div class="summary2-actions">
-          <a class="btn2 btn2-primary" href="practice.html">Back to practice</a>
-          <a class="btn2 btn2-secondary" href="index.html">Dashboard</a>
+        <div class="result-summary-actions">
+          <a class="btn btn-primary" href="practice.html">Back to practice</a>
+          <a class="btn btn-secondary" href="index.html">Dashboard</a>
         </div>
       </div>
     `;
