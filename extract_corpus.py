@@ -1,12 +1,20 @@
 # -*- coding: utf-8 -*-
-"""Extract text from corpus PDF and EPUB files into UTF-8 .txt files."""
-import os, zipfile, re, sys
-import fitz  # PyMuPDF
+"""Extract full text from every corpus PDF/EPUB into extracted/*.txt.
+
+Uses whole-document text extraction for PDFs (much faster than per-page),
+skips files that were already extracted, and logs progress.
+"""
+import os
+import zipfile
+import re
+
+import fitz
 from bs4 import BeautifulSoup
 
 CORPUS = r"c:\Users\jason\Documents\mycat\corpus"
 OUT = r"c:\Users\jason\Documents\mycat\extracted"
 os.makedirs(OUT, exist_ok=True)
+
 
 def clean(text):
     text = text.replace("\u00a0", " ")
@@ -14,26 +22,29 @@ def clean(text):
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
 
+
 def extract_pdf(path):
     doc = fitz.open(path)
     parts = []
-    for i, page in enumerate(doc):
-        parts.append(f"\n===PAGE {i+1}===\n")
-        parts.append(page.get_text("text"))
+    n = doc.page_count
+    for i in range(n):
+        parts.append(f"\n===PAGE {i + 1}===\n")
+        parts.append(doc[i].get_text("text"))
+        if (i + 1) % 200 == 0:
+            print(f"    {os.path.basename(path)}: page {i + 1}/{n}", flush=True)
     doc.close()
     return clean("\n".join(parts))
+
 
 def extract_epub(path):
     z = zipfile.ZipFile(path)
     names = z.namelist()
-    # find container.xml to locate OPF
     opf = None
     if "META-INF/container.xml" in names:
         soup = BeautifulSoup(z.read("META-INF/container.xml"), "lxml-xml")
         rootfile = soup.find("rootfile")
         if rootfile:
             opf = rootfile.get("full-path")
-    # find spine order from OPF if possible
     spine = []
     if opf and opf in names:
         soup = BeautifulSoup(z.read(opf), "lxml-xml")
@@ -46,7 +57,6 @@ def extract_epub(path):
                     full = os.path.normpath(os.path.join(base, href)).replace("\\", "/")
                     spine.append(full)
     if not spine:
-        # fallback: all xhtml/html files sorted
         spine = sorted([n for n in names if re.search(r"\.(x?html?|xml)$", n, re.I)])
     parts = []
     for n in spine:
@@ -54,24 +64,27 @@ def extract_epub(path):
             continue
         try:
             data = z.read(n)
-        except Exception as e:
+        except Exception:
             continue
         soup = BeautifulSoup(data, "lxml")
         for tag in soup(["script", "style"]):
             tag.decompose()
-        text = soup.get_text("\n")
         parts.append(f"\n===FILE {n}===\n")
-        parts.append(clean(text))
+        parts.append(clean(soup.get_text("\n")))
     return clean("\n".join(parts))
 
+
 def main():
-    results = []
     for fn in sorted(os.listdir(CORPUS)):
         path = os.path.join(CORPUS, fn)
         if not os.path.isfile(path):
             continue
         ext = os.path.splitext(fn)[1].lower()
-        print(f"Processing {fn} ...", flush=True)
+        outfn = os.path.join(OUT, os.path.splitext(fn)[0] + ".txt")
+        if os.path.exists(outfn) and os.path.getsize(outfn) > 0:
+            print(f"SKIP {fn} (already extracted)", flush=True)
+            continue
+        print(f"START {fn}", flush=True)
         try:
             if ext == ".pdf":
                 text = extract_pdf(path)
@@ -80,17 +93,13 @@ def main():
             else:
                 continue
         except Exception as e:
-            print(f"  ERROR {fn}: {e}", flush=True)
-            results.append((fn, 0, str(e)))
+            print(f"ERROR {fn}: {e}", flush=True)
             continue
-        outfn = os.path.splitext(fn)[0] + ".txt"
-        with open(os.path.join(OUT, outfn), "w", encoding="utf-8") as f:
+        with open(outfn, "w", encoding="utf-8") as f:
             f.write(text)
-        results.append((fn, len(text), "OK"))
-        print(f"  -> {outfn} ({len(text)} chars)", flush=True)
-    print("\n===SUMMARY===", flush=True)
-    for fn, n, status in results:
-        print(f"{fn}: {status} {n} chars", flush=True)
+        print(f"DONE {fn} -> {os.path.basename(outfn)} ({len(text)} chars)", flush=True)
+    print("ALL DONE", flush=True)
+
 
 if __name__ == "__main__":
     main()

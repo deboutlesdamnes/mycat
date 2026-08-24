@@ -38,6 +38,10 @@ def to_site_question(q):
     }
     if q.get("passage"):
         out["passage"] = q["passage"]
+    if q.get("figure"):
+        out["figure"] = q["figure"]
+        out["figure_caption"] = q.get("figure_caption", "")
+        out["figure_type"] = q.get("figure_type", "")
     return out
 
 
@@ -76,20 +80,24 @@ def main():
         id TEXT PRIMARY KEY,
         section TEXT, subject TEXT, topic TEXT, knowledge_point TEXT,
         type TEXT, skill TEXT, subtype TEXT, difficulty TEXT,
-        passage TEXT, figure TEXT, question TEXT,
+        passage TEXT, figure TEXT, figure_caption TEXT, figure_type TEXT, question TEXT,
         options TEXT, correct INTEGER, explanation TEXT
     )""")
     for q in qs:
+        cols = ["id", "section", "subject", "topic", "knowledge_point", "type",
+                "skill", "subtype", "difficulty", "passage", "figure",
+                "figure_caption", "figure_type", "question", "options",
+                "correct", "explanation"]
+        vals = [q["id"], q["section"], q["subject"], q["topic"], q["knowledge_point"],
+                q["type"], q["skill"], q["subtype"], q.get("difficulty"),
+                q.get("passage"), q.get("figure"), q.get("figure_caption"),
+                q.get("figure_type"), q["question"],
+                json.dumps(q["options"], ensure_ascii=False),
+                q["correct"], q["explanation"]]
+        ph = ",".join(["?"] * len(cols))
         c.execute(
-            f"""INSERT OR REPLACE INTO {TABLE}
-               (id, section, subject, topic, knowledge_point, type, skill, subtype,
-                difficulty, passage, figure, question, options, correct, explanation)
-               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
-            (q["id"], q["section"], q["subject"], q["topic"], q["knowledge_point"],
-             q["type"], q["skill"], q["subtype"], q.get("difficulty"),
-             q.get("passage"), q.get("figure"),
-             q["question"], json.dumps(q["options"], ensure_ascii=False),
-             q["correct"], q["explanation"]),
+            f"INSERT OR REPLACE INTO {TABLE} ({','.join(cols)}) VALUES ({ph})",
+            vals,
         )
     conn.commit()
     n = c.execute(f"SELECT COUNT(*) FROM {TABLE}").fetchone()[0]

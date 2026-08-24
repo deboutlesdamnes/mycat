@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="100%" style="max-width:640px" role="img">
+<rect width="640" height="320" fill="#ffffff"/>
+<text x="320" y="24" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#2b2320">¹H NMR of ethanol</text>
+<line x1="56" y1="258" x2="622" y2="258" stroke="#2b2320" stroke-width="1.5"/>
+<line x1="508.8" y1="258" x2="508.8" y2="190.0" stroke="#3b82c4" stroke-width="2.5"/>
+<text x="508.8" y="184.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#2b2320">t</text>
+<line x1="386.2" y1="258" x2="386.2" y2="222.0" stroke="#3b82c4" stroke-width="2.5"/>
+<text x="386.2" y="216.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#2b2320">s</text>
+<line x1="273.0" y1="258" x2="273.0" y2="206.0" stroke="#3b82c4" stroke-width="2.5"/>
+<text x="273.0" y="200.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#2b2320">q</text>
+<text x="339" y="306" text-anchor="middle" font-family="Arial" font-size="12" fill="#2b2320">Chemical shift (ppm)</text>
+</svg>

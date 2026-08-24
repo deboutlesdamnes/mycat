@@ -29,6 +29,20 @@ function difficultyOf(q) {
   return DIFFICULTIES.includes(q.difficulty) ? q.difficulty : "medium";
 }
 
+function appendFigure(container, q) {
+  if (!q.figure) return;
+  const fig = document.createElement("div");
+  fig.className = "figure";
+  fig.innerHTML = q.figure; // trusted SVG/HTML produced by our own renderer
+  container.appendChild(fig);
+  if (q.figure_caption) {
+    const cap = document.createElement("div");
+    cap.className = "figure-caption";
+    cap.textContent = q.figure_caption;
+    container.appendChild(cap);
+  }
+}
+
 // ---------- persistent state (localStorage) ----------
 function loadState() {
   try {
@@ -350,6 +364,8 @@ function render() {
     root.appendChild(p);
   }
 
+  appendFigure(root, q);
+
   const qText = document.createElement("p");
   qText.className = "q-text";
   qText.textContent = q.question;
@@ -487,6 +503,8 @@ function renderTest() {
     p.textContent = q.passage;
     root.appendChild(p);
   }
+
+  appendFigure(root, q);
 
   const qText = document.createElement("p");
   qText.className = "q-text";

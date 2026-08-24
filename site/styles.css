@@ -426,3 +426,25 @@ body {
   color: var(--accent);
   white-space: nowrap;
 }
+
+/* Figures (charts, tables, spectra, structures, diagrams) */
+.figure {
+  margin: 4px 0 12px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+.figure svg { height: auto; display: block; }
+.figure-caption {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: -4px 0 12px;
+  text-align: center;
+}
+.mcat-table { border-collapse: collapse; font-size: 0.9rem; color: #2b2320; }
+.mcat-table th, .mcat-table td { border: 1px solid #d8d0c6; padding: 6px 10px; text-align: center; }
+.mcat-table th { background: #f0eae2; font-weight: 700; }
