@@ -1,13 +1,15 @@
 const root = document.getElementById("quiz-root");
 const progressLabel = document.getElementById("progress-label");
-const STORAGE_KEY = "mycat_progress_v1";
+const STORE_KEY = "mycat_state_v2";
+const DAY_MS = 24 * 60 * 60 * 1000;
+const MIN_EASE = 1.3;
 
 let activeDeck = null;
 let current = 0;
-let score = 0;
+let sessionCorrect = 0;
 let answered = false;
 
-// Give every question a stable id and carry its deck's passage (if any)
+// Assign every question a stable id and carry a deck-level passage (if any)
 // onto each question so context still shows up when reviewed out of order.
 DECKS.forEach((deck) => {
   deck.questions.forEach((q, i) => {
@@ -16,51 +18,130 @@ DECKS.forEach((deck) => {
   });
 });
 
-function loadProgress() {
+const ALL_QUESTIONS = {};
+DECKS.forEach((d) => d.questions.forEach((q) => { ALL_QUESTIONS[q.id] = q; }));
+
+// ---------- persistent state (localStorage) ----------
+function loadState() {
   try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+    return JSON.parse(localStorage.getItem(STORE_KEY)) || { cards: {}, saved: [] };
   } catch {
-    return {};
+    return { cards: {}, saved: [] };
   }
 }
 
-function saveProgress(progress) {
+function saveState(state) {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+    localStorage.setItem(STORE_KEY, JSON.stringify(state));
   } catch {
     // ignore storage failures (private browsing, quota, etc.)
   }
 }
 
-function recordAnswer(questionId, wasCorrect) {
-  const progress = loadProgress();
-  const entry = progress[questionId] || { timesSeen: 0, timesMissed: 0, missed: false };
-  entry.timesSeen += 1;
-  entry.missed = !wasCorrect;
-  if (!wasCorrect) entry.timesMissed += 1;
-  progress[questionId] = entry;
-  saveProgress(progress);
-}
-
-function getMissedCount(deck) {
-  const progress = loadProgress();
-  return deck.questions.filter((q) => progress[q.id] && progress[q.id].missed).length;
-}
-
-function buildMissedDeck() {
-  const progress = loadProgress();
-  const missedQuestions = [];
-  DECKS.forEach((deck) => {
-    deck.questions.forEach((q) => {
-      if (progress[q.id] && progress[q.id].missed) missedQuestions.push(q);
-    });
-  });
-  return {
-    id: "missed-review",
-    title: "Review Missed",
-    section: "Cards you got wrong last time",
-    questions: missedQuestions
+function getCard(qid) {
+  const s = loadState();
+  return s.cards[qid] || {
+    interval: 0, ease: 2.5, reps: 0, lapses: 0, due: 0,
+    lastGrade: null, lastCorrect: null, seen: 0, missed: 0,
   };
+}
+
+function setCard(qid, card) {
+  const s = loadState();
+  s.cards[qid] = card;
+  saveState(s);
+}
+
+function isSaved(qid) {
+  return loadState().saved.includes(qid);
+}
+
+function toggleSaved(qid) {
+  const s = loadState();
+  const i = s.saved.indexOf(qid);
+  if (i >= 0) s.saved.splice(i, 1);
+  else s.saved.push(qid);
+  saveState(s);
+}
+
+// ---------- Anki-style SM-2 scheduler ----------
+function applyGrade(qid, grade) {
+  const card = getCard(qid);
+  card.seen += 1;
+  card.lastGrade = grade;
+
+  if (grade === "again") {
+    card.lastCorrect = false;
+    card.missed += 1;
+    card.reps = 0;
+    card.lapses += 1;
+    card.ease = Math.max(MIN_EASE, card.ease - 0.2);
+    card.interval = 10 / (60 * 24); // 10 minutes (relearn)
+    card.due = Date.now() + 10 * 60 * 1000;
+  } else {
+    card.lastCorrect = true;
+    if (grade === "hard") {
+      card.ease = Math.max(MIN_EASE, card.ease - 0.15);
+      card.interval = card.reps === 0 ? 1 : Math.max(card.interval, 0.5) * 1.2;
+      card.reps += 1;
+    } else if (grade === "good") {
+      if (card.reps === 0) card.interval = 1;
+      else if (card.reps === 1) card.interval = 6;
+      else card.interval = card.interval * card.ease;
+      card.reps += 1;
+    } else { // easy
+      card.ease = Math.min(3.0, card.ease + 0.15);
+      card.interval = card.reps === 0 ? 4 : card.interval * card.ease * 1.3;
+      card.reps += 1;
+    }
+    card.due = Date.now() + Math.round(card.interval * DAY_MS);
+  }
+
+  setCard(qid, card);
+}
+
+// ---------- derived decks ----------
+function getDueQuestions() {
+  const s = loadState();
+  const now = Date.now();
+  const out = [];
+  DECKS.forEach((d) => d.questions.forEach((q) => {
+    const c = s.cards[q.id];
+    if (c && c.due && c.due <= now) out.push(q);
+  }));
+  return out;
+}
+
+function getMissedQuestions() {
+  const s = loadState();
+  const out = [];
+  DECKS.forEach((d) => d.questions.forEach((q) => {
+    const c = s.cards[q.id];
+    if (c && c.lastCorrect === false) out.push(q);
+  }));
+  return out;
+}
+
+function getSavedQuestions() {
+  const s = loadState();
+  return s.saved.map((id) => ALL_QUESTIONS[id]).filter(Boolean);
+}
+
+function countDue(deck) {
+  const s = loadState();
+  const now = Date.now();
+  return deck.questions.filter((q) => {
+    const c = s.cards[q.id];
+    return c && c.due && c.due <= now;
+  }).length;
+}
+
+function countNew(deck) {
+  const s = loadState();
+  return deck.questions.filter((q) => {
+    const c = s.cards[q.id];
+    return !c || c.due === 0;
+  }).length;
 }
 
 function renderHome() {
@@ -74,31 +155,57 @@ function renderHome() {
   heading.textContent = "Choose a deck";
   root.appendChild(heading);
 
-  const totalMissed = DECKS.reduce((sum, deck) => sum + getMissedCount(deck), 0);
-  if (totalMissed > 0) {
-    const missedCard = document.createElement("button");
-    missedCard.className = "set-card missed-card";
-    missedCard.innerHTML = `
-      <span class="set-title">Review Missed</span>
-      <span class="set-section">Cards you got wrong last time</span>
-      <span class="set-count">${totalMissed} card${totalMissed === 1 ? "" : "s"}</span>
-    `;
-    missedCard.addEventListener("click", () => startDeck(buildMissedDeck()));
-    root.appendChild(missedCard);
+  const due = getDueQuestions();
+  const missed = getMissedQuestions();
+  const saved = getSavedQuestions();
+
+  const specials = [];
+  if (due.length) {
+    specials.push({
+      title: "Review (Anki)",
+      section: `${due.length} due card${due.length === 1 ? "" : "s"}`,
+      deck: { id: "due", title: "Review (Anki)", section: "Due for review", questions: due },
+    });
   }
+  if (missed.length) {
+    specials.push({
+      title: "Review Missed",
+      section: `${missed.length} card${missed.length === 1 ? "" : "s"} you got wrong`,
+      deck: { id: "missed", title: "Review Missed", section: "Cards you got wrong", questions: missed },
+    });
+  }
+  if (saved.length) {
+    specials.push({
+      title: "Saved",
+      section: `${saved.length} bookmarked card${saved.length === 1 ? "" : "s"}`,
+      deck: { id: "saved", title: "Saved", section: "Bookmarked questions", questions: saved },
+    });
+  }
+
+  specials.forEach((sp) => {
+    const b = document.createElement("button");
+    b.className = "set-card special-card";
+    b.innerHTML = `<span class="set-title">${sp.title}</span><span class="set-section">${sp.section}</span>`;
+    b.addEventListener("click", () => startDeck(sp.deck));
+    root.appendChild(b);
+  });
 
   const grid = document.createElement("div");
   grid.className = "set-grid";
 
   DECKS.forEach((deck) => {
-    const missedCount = getMissedCount(deck);
+    const dueCount = countDue(deck);
+    const newCount = countNew(deck);
     const card = document.createElement("button");
     card.className = "set-card";
     card.innerHTML = `
       <span class="set-title">${deck.title}</span>
       <span class="set-section">${deck.section}</span>
       <span class="set-count">${deck.questions.length} cards</span>
-      ${missedCount > 0 ? `<span class="set-missed">${missedCount} missed last time</span>` : ""}
+      <span class="badges">
+        ${dueCount ? `<span class="set-due">${dueCount} due</span>` : ""}
+        ${newCount ? `<span class="set-new">${newCount} new</span>` : ""}
+      </span>
     `;
     card.addEventListener("click", () => startDeck(deck));
     grid.appendChild(card);
@@ -111,12 +218,12 @@ function startDeck(deck) {
   root.classList.remove("home");
   activeDeck = deck;
   current = 0;
-  score = 0;
+  sessionCorrect = 0;
   render();
 }
 
 function render() {
-  if (activeDeck.questions.length === 0) {
+  if (!activeDeck || activeDeck.questions.length === 0) {
     renderEmpty();
     return;
   }
@@ -126,21 +233,37 @@ function render() {
   }
 
   const q = activeDeck.questions[current];
-  progressLabel.textContent = `${activeDeck.title} · Card ${current + 1} of ${activeDeck.questions.length} · Score: ${score}`;
+  progressLabel.textContent = `${activeDeck.title} · Card ${current + 1} of ${activeDeck.questions.length} · Correct: ${sessionCorrect}`;
 
   root.innerHTML = "";
   answered = false;
 
+  const header = document.createElement("div");
+  header.className = "card-header";
+
   const indexEl = document.createElement("div");
   indexEl.className = "q-index";
   indexEl.innerHTML = `${activeDeck.section} · Card ${current + 1} <span class="q-type-tag">${q.passage ? "Passage-based" : "Discrete"}</span>`;
-  root.appendChild(indexEl);
+  header.appendChild(indexEl);
+
+  const saveBtn = document.createElement("button");
+  const savedNow = isSaved(q.id);
+  saveBtn.className = "save-btn" + (savedNow ? " saved" : "");
+  saveBtn.textContent = savedNow ? "★ Saved" : "☆ Save";
+  saveBtn.addEventListener("click", () => {
+    toggleSaved(q.id);
+    const nowSaved = isSaved(q.id);
+    saveBtn.classList.toggle("saved", nowSaved);
+    saveBtn.textContent = nowSaved ? "★ Saved" : "☆ Save";
+  });
+  header.appendChild(saveBtn);
+  root.appendChild(header);
 
   if (q.passage) {
-    const passageEl = document.createElement("div");
-    passageEl.className = "passage";
-    passageEl.textContent = q.passage;
-    root.appendChild(passageEl);
+    const p = document.createElement("div");
+    p.className = "passage";
+    p.textContent = q.passage;
+    root.appendChild(p);
   }
 
   const qText = document.createElement("p");
@@ -152,11 +275,11 @@ function render() {
   optionsEl.className = "options";
   const letters = ["A", "B", "C", "D"];
   q.options.forEach((optionText, i) => {
-    const btn = document.createElement("button");
-    btn.className = "option";
-    btn.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${optionText}</span>`;
-    btn.addEventListener("click", () => selectOption(i, btn, optionsEl));
-    optionsEl.appendChild(btn);
+    const b = document.createElement("button");
+    b.className = "option";
+    b.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${optionText}</span>`;
+    b.addEventListener("click", () => selectOption(i, b, optionsEl));
+    optionsEl.appendChild(b);
   });
   root.appendChild(optionsEl);
 }
@@ -167,7 +290,7 @@ function selectOption(i, btn, optionsEl) {
 
   const q = activeDeck.questions[current];
   const wasCorrect = i === q.correct;
-  recordAnswer(q.id, wasCorrect);
+  if (wasCorrect) sessionCorrect++;
 
   const allButtons = optionsEl.querySelectorAll(".option");
   allButtons.forEach((b, idx) => {
@@ -176,8 +299,7 @@ function selectOption(i, btn, optionsEl) {
     else if (idx === i) b.classList.add("wrong");
   });
 
-  if (wasCorrect) score++;
-  progressLabel.textContent = `${activeDeck.title} · Card ${current + 1} of ${activeDeck.questions.length} · Score: ${score}`;
+  progressLabel.textContent = `${activeDeck.title} · Card ${current + 1} of ${activeDeck.questions.length} · Correct: ${sessionCorrect}`;
 
   const letters = ["A", "B", "C", "D"];
   const explanation = document.createElement("div");
@@ -185,33 +307,35 @@ function selectOption(i, btn, optionsEl) {
   explanation.innerHTML = `<strong>${wasCorrect ? "Correct" : "Not quite"} — answer: ${letters[q.correct]}.</strong> ${q.explanation}`;
   root.appendChild(explanation);
 
-  const actions = document.createElement("div");
-  actions.className = "actions";
-  const nextBtn = document.createElement("button");
-  nextBtn.className = "next-btn";
-  nextBtn.textContent = current === activeDeck.questions.length - 1 ? "See results" : "Next card";
-  nextBtn.addEventListener("click", () => {
-    current++;
-    render();
-  });
-  actions.appendChild(nextBtn);
-  root.appendChild(actions);
+  showGradeButtons(wasCorrect);
 }
 
-function renderEmpty() {
-  progressLabel.textContent = "";
-  root.innerHTML = "";
-  const wrap = document.createElement("div");
-  wrap.className = "summary";
-  const msg = document.createElement("p");
-  msg.textContent = "No missed cards right now — clear a few decks first, and anything you get wrong will show up here.";
-  wrap.appendChild(msg);
-  const homeBtn = document.createElement("button");
-  homeBtn.className = "next-btn";
-  homeBtn.textContent = "All decks";
-  homeBtn.addEventListener("click", renderHome);
-  wrap.appendChild(homeBtn);
-  root.appendChild(wrap);
+function showGradeButtons(wasCorrect) {
+  const row = document.createElement("div");
+  row.className = "grade-row";
+  const grades = [
+    { key: "again", label: "Again" },
+    { key: "hard", label: "Hard" },
+    { key: "good", label: "Good" },
+    { key: "easy", label: "Easy" },
+  ];
+  grades.forEach((g) => {
+    const b = document.createElement("button");
+    b.className = "grade-btn grade-" + g.key;
+    b.textContent = g.label;
+    if ((g.key === "again" && !wasCorrect) || (g.key === "good" && wasCorrect)) {
+      b.classList.add("suggested");
+    }
+    b.addEventListener("click", () => gradeAndNext(g.key));
+    row.appendChild(b);
+  });
+  root.appendChild(row);
+}
+
+function gradeAndNext(grade) {
+  applyGrade(activeDeck.questions[current].id, grade);
+  current++;
+  render();
 }
 
 function renderSummary() {
@@ -228,12 +352,17 @@ function renderSummary() {
 
   const scoreEl = document.createElement("div");
   scoreEl.className = "score";
-  scoreEl.innerHTML = `<span>${score}</span> / ${activeDeck.questions.length}`;
+  scoreEl.innerHTML = `<span>${sessionCorrect}</span> / ${activeDeck.questions.length}`;
   wrap.appendChild(scoreEl);
 
   const msg = document.createElement("p");
-  msg.textContent = pickMessage(score, activeDeck.questions.length);
+  msg.textContent = pickMessage(sessionCorrect, activeDeck.questions.length);
   wrap.appendChild(msg);
+
+  const note = document.createElement("p");
+  note.className = "srs-note";
+  note.textContent = "Cards were rescheduled with spaced repetition — revisit the due cards later to lock them into memory.";
+  wrap.appendChild(note);
 
   const btnRow = document.createElement("div");
   btnRow.className = "summary-actions";
@@ -254,6 +383,26 @@ function renderSummary() {
   root.appendChild(wrap);
 }
 
+function renderEmpty() {
+  progressLabel.textContent = "";
+  root.innerHTML = "";
+
+  const wrap = document.createElement("div");
+  wrap.className = "summary";
+
+  const msg = document.createElement("p");
+  msg.textContent = "Nothing to review right now. Study a deck, and cards you need to review will appear here.";
+  wrap.appendChild(msg);
+
+  const homeBtn = document.createElement("button");
+  homeBtn.className = "next-btn";
+  homeBtn.textContent = "All decks";
+  homeBtn.addEventListener("click", renderHome);
+  wrap.appendChild(homeBtn);
+
+  root.appendChild(wrap);
+}
+
 function pickMessage(s, total) {
   const ratio = s / total;
   if (ratio === 1) return "Perfect score on this deck.";
@@ -266,11 +415,14 @@ const resetLink = document.getElementById("reset-progress");
 if (resetLink) {
   resetLink.addEventListener("click", (e) => {
     e.preventDefault();
-    if (confirm("Clear all tracked progress and missed cards?")) {
-      localStorage.removeItem(STORAGE_KEY);
+    if (confirm("Clear all progress, saved cards, and the review schedule?")) {
+      localStorage.removeItem(STORE_KEY);
       renderHome();
     }
   });
 }
 
 renderHome();
+
+
+

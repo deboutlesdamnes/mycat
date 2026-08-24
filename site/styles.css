@@ -337,3 +337,70 @@ body {
   font-size: 0.78rem;
   font-weight: 700;
 }
+
+/* Card header (index label + save button) */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Save / bookmark button */
+.save-btn {
+  flex: none;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color .15s ease, color .15s ease;
+}
+.save-btn:hover { border-color: var(--accent); color: var(--accent); }
+.save-btn.saved {
+  color: #c98a00;
+  border-color: #f5b301;
+  background: rgba(245, 179, 1, 0.12);
+}
+
+/* Anki-style grade buttons */
+.grade-row {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+.grade-btn {
+  flex: 1;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 6px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.9;
+  transition: opacity .15s ease, transform .1s ease;
+}
+.grade-btn:hover { opacity: 1; transform: translateY(-1px); }
+.grade-btn.suggested { outline: 2px solid var(--ink); outline-offset: 2px; opacity: 1; }
+.grade-again { background: #d1453b; }
+.grade-hard { background: #e08a2e; }
+.grade-good { background: #2f9e57; }
+.grade-easy { background: #3b82c4; }
+
+/* Deck badges */
+.badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.set-due, .set-new {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.set-due { color: var(--accent); border: 1px solid var(--accent); }
+.set-new { color: var(--correct); border: 1px solid var(--correct); }
+
+.special-card { width: 100%; margin-bottom: 4px; }
+.srs-note { font-size: 0.8rem; color: var(--muted); }
