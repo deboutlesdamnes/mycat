@@ -1,0 +1,1336 @@
+// Essay / concept-check questions (open-ended, with model answers).
+const ESSAY_QUESTIONS = [
+  {
+    "id": "essay-001",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "The Cell",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the relationship between cell determination, differentiation, and potency. Use the terms totipotent, pluripotent, and multipotent in your explanation, and describe how potency changes as cells progress from the morula stage to more specialized cell types.",
+    "model_answer": "Cell determination commits a cell to a specific lineage, while differentiation is the process by which the cell assumes the structure, function, and biochemistry of that cell type. Potency refers to the range of cell types a stem cell can become; totipotent cells (like those in the early morula) can differentiate into any cell type including placental structures, pluripotent cells (like those in the inner cell mass) can differentiate into any cell type except placental, and multipotent cells (like hematopoietic stem cells) can only differentiate into a limited set of related cell types. As cells become more specialized, their potency decreases.",
+    "key_points": [
+      "Definition of determination and differentiation.",
+      "Definition of potency and its spectrum nature.",
+      "Hierarchy: totipotent > pluripotent > multipotent with examples.",
+      "Potency decreases as differentiation progresses."
+    ]
+  },
+  {
+    "id": "essay-002",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "Reproduction",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the significance of crossing over during prophase I of meiosis and how it contributes to genetic diversity, including its role in gene linkage and the production of recombinant chromatids.",
+    "model_answer": "Crossing over during prophase I involves the exchange of genetic material between homologous chromosomes, resulting in recombinant chromatids with altered but structurally complete sets of genes. This process can unlink linked genes, thereby increasing genetic diversity among gametes. Genes farther apart on a chromosome are more likely to undergo crossing over, which is used to map gene distances in centimorgans. This genetic recombination is a key advantage of sexual reproduction over asexual reproduction, as it enhances the ability of a species to adapt to changing environments.",
+    "key_points": [
+      "Crossing over occurs during prophase I and involves exchange between homologous chromosomes.",
+      "It produces recombinant chromatids with altered but structurally complete gene sets.",
+      "It can unlink linked genes, increasing genetic variation.",
+      "The likelihood of crossing over between genes increases with physical distance, used for gene mapping in centimorgans.",
+      "This genetic diversity enhances a species' ability to evolve and adapt."
+    ]
+  },
+  {
+    "id": "essay-003",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "Embryogenesis and Development",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the hormonal changes that occur during the first and second trimesters of pregnancy, focusing on the roles of hCG and progesterone, and how these hormones prevent the onset of a new menstrual cycle.",
+    "model_answer": "During the first trimester, the corpus luteum is maintained by human chorionic gonadotropin (hCG), which ensures continued progesterone secretion to sustain the endometrium. In the second trimester, hCG levels decline, but the placenta takes over progesterone secretion, so progesterone levels remain high. The elevated levels of progesterone and estrogen inhibit GnRH secretion from the hypothalamus, which in turn suppresses FSH and LH release from the anterior pituitary, preventing ovulation and the start of a new menstrual cycle.",
+    "key_points": [
+      "hCG preserves the corpus luteum during the first trimester, maintaining progesterone secretion.",
+      "In the second trimester, the placenta secretes progesterone as hCG levels decline.",
+      "High progesterone and estrogen inhibit GnRH, leading to decreased FSH and LH.",
+      "Suppression of FSH and LH prevents ovulation and the onset of a new menstrual cycle."
+    ]
+  },
+  {
+    "id": "essay-004",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "The Nervous System",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Compare and contrast the somatic and autonomic nervous systems, including their components, functions, and the effects of their activation. Provide specific examples of physiological responses.",
+    "model_answer": "The somatic nervous system controls voluntary movements by innervating skeletal muscles, while the autonomic nervous system regulates involuntary functions such as heart rate, digestion, and glandular secretions. The autonomic system is further divided into the sympathetic and parasympathetic divisions, which often have antagonistic effects: sympathetic activation prepares the body for 'fight or flight' (e.g., increased heart rate, dilated pupils), whereas parasympathetic activation promotes 'rest and digest' (e.g., decreased heart rate, increased digestive activity). Both systems use afferent and efferent neurons, but the somatic efferent pathway is a single neuron from the CNS to the muscle, while autonomic pathways involve two neurons (preganglionic and postganglionic).",
+    "key_points": [
+      "Somatic nervous system controls voluntary skeletal muscle movement",
+      "Autonomic nervous system controls involuntary functions (cardiac muscle, smooth muscle, glands)",
+      "Autonomic is subdivided into sympathetic (fight-or-flight) and parasympathetic (rest-and-digest)",
+      "Effects: sympathetic increases heart rate, dilates pupils; parasympathetic decreases heart rate, stimulates digestion",
+      "Both use afferent (sensory) and efferent (motor) neurons; autonomic has two-neuron chain"
+    ]
+  },
+  {
+    "id": "essay-005",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "The Endocrine System",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the roles of the hypothalamus and the anterior pituitary gland in the endocrine system, including how they interact and provide an example of a hormone pathway they control.",
+    "model_answer": "The hypothalamus acts as a link between the nervous and endocrine systems, producing releasing and inhibiting hormones that regulate the anterior pituitary. The anterior pituitary, in turn, secretes tropic hormones that stimulate other endocrine glands to release their hormones, forming a negative feedback loop. For example, the hypothalamus releases thyrotropin-releasing hormone (TRH) to stimulate the anterior pituitary to secrete thyroid-stimulating hormone (TSH), which then stimulates the thyroid to release thyroid hormones T3 and T4, which inhibit TRH and TSH secretion.",
+    "key_points": [
+      "Hypothalamus connects nervous and endocrine systems via releasing/inhibiting hormones.",
+      "Anterior pituitary secretes tropic hormones that target other endocrine glands.",
+      "Negative feedback loop regulates hormone levels.",
+      "Example: TRH → TSH → thyroid hormones (T3/T4) and their feedback inhibition."
+    ]
+  },
+  {
+    "id": "essay-006",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "The Respiratory System",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the primary functions of the respiratory system beyond gas exchange, and explain how each function is integrated with other body systems. Additionally, discuss the role of surfactant and the relationships among lung volumes (VC, IRV, ERV, TV).",
+    "model_answer": "Besides gas exchange, the respiratory system participates in thermoregulation, immunity, and pH regulation. Thermoregulation occurs through warming and humidifying air; immunity involves mucus and cilia trapping pathogens; pH regulation is via the bicarbonate buffer system, where CO2 levels influence blood pH. Surfactant reduces surface tension in alveoli, preventing collapse and facilitating inflation. Lung volumes are related by VC = IRV + ERV + TV.",
+    "key_points": [
+      "Identify non-gas exchange functions: thermoregulation, immunity, pH regulation.",
+      "Explain integration with other systems (e.g., circulatory for gas transport, immune for defense).",
+      "State purpose of surfactant: reduce surface tension, prevent alveolar collapse.",
+      "Provide mathematical relationship: VC = IRV + ERV + TV.",
+      "Mention bicarbonate buffer system in pH regulation."
+    ]
+  },
+  {
+    "id": "essay-007",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "The Cardiovascular System",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the role of the lymphatic system in the cardiovascular system, including the pathway of lymph flow and the consequences of a blockage in a lymph node.",
+    "model_answer": "The lymphatic system is a one-way circulatory system that collects excess interstitial fluid, now called lymph, and returns it to the cardiovascular system via the thoracic duct into the left subclavian vein. This maintains blood volume and pressure. If a lymph node is blocked, lymph cannot flow properly, leading to lymphedema (swelling) distal to the blockage and impaired immune function because lymph nodes are sites where B-cells proliferate and immune responses are mounted.",
+    "key_points": [
+      "Lymphatic system is a one-way system returning fluid to the cardiovascular system.",
+      "Thoracic duct delivers lymph into the left subclavian vein.",
+      "Blockage causes fluid accumulation (lymphedema) and impaired immune function.",
+      "Lymph nodes are sites of B-cell proliferation and immune response."
+    ]
+  },
+  {
+    "id": "essay-008",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "The Immune System",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the difference between innate and adaptive immunity, including examples of defenses and cells involved in each. How do these two systems interact to protect the body from disease?",
+    "model_answer": "Innate immunity is nonspecific and provides immediate defense against pathogens, including physical barriers like skin and mucous membranes, as well as cellular responses by phagocytes such as macrophages and neutrophils. Adaptive immunity is specific and slower, involving lymphocytes like B cells (antibody production) and T cells (cell-mediated immunity), and it has memory. These systems interact: innate immune cells present antigens to adaptive immune cells, and adaptive responses enhance innate mechanisms like inflammation and phagocytosis.",
+    "key_points": [
+      "Innate immunity is nonspecific, immediate, includes physical barriers and phagocytes.",
+      "Adaptive immunity is specific, slower, involves B and T lymphocytes, and has memory.",
+      "Interaction: antigen presentation by innate cells activates adaptive response, and adaptive immunity enhances innate effector functions."
+    ]
+  },
+  {
+    "id": "essay-009",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "The Digestive System",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Compare and contrast mechanical and chemical digestion, and explain how the enteric nervous system and the autonomic nervous system regulate digestive activities.",
+    "model_answer": "Mechanical digestion involves physical breakdown of food, such as chewing and peristalsis, increasing surface area, while chemical digestion involves enzymatic cleavage of macromolecules into monomers. The enteric nervous system, a network of neurons in the gut wall, coordinates peristalsis and can function independently. The autonomic nervous system regulates it: parasympathetic division stimulates digestive activities (e.g., secretions, peristalsis), while sympathetic division inhibits them, explaining postprandial lethargy.",
+    "key_points": [
+      "Mechanical digestion: physical breakdown (chewing, peristalsis) increases surface area.",
+      "Chemical digestion: enzymatic breakdown of polysaccharides, fats, proteins into monosaccharides, fatty acids, amino acids.",
+      "Enteric nervous system: ~100 million neurons in gut wall, triggers peristalsis, functions independently.",
+      "Autonomic regulation: parasympathetic stimulates, sympathetic inhibits digestive activities."
+    ]
+  },
+  {
+    "id": "essay-010",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "Homeostasis",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the roles of the two pancreatic hormones in glucose homeostasis, including their sources, the stimuli for their release, and their effects on blood glucose concentrations.",
+    "model_answer": "The two pancreatic hormones primarily involved in glucose homeostasis are insulin and glucagon. Insulin is secreted by beta cells of the pancreatic islets in response to high blood glucose, promoting glucose uptake and storage, thereby decreasing blood glucose. Glucagon is secreted by alpha cells in response to low blood glucose, stimulating glycogenolysis and gluconeogenesis, thereby increasing blood glucose.",
+    "key_points": [
+      "Insulin is produced by beta cells and lowers blood glucose.",
+      "Glucagon is produced by alpha cells and raises blood glucose.",
+      "Insulin is released in response to high blood glucose; glucagon in response to low blood glucose.",
+      "Insulin promotes glucose uptake and storage; glucagon promotes glycogen breakdown and glucose production."
+    ]
+  },
+  {
+    "id": "essay-011",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "The Musculoskeletal System",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the structural and functional differences between compact bone and spongy bone, and explain how osteoblasts, osteoclasts, and chondrocytes contribute to bone growth and remodeling.",
+    "model_answer": "Compact bone is dense and forms the outer layer of bones, providing strength and support, while spongy bone is less dense, with a porous structure that houses red bone marrow and reduces weight. Osteoblasts synthesize bone matrix and are responsible for bone formation, osteoclasts break down bone tissue for remodeling and calcium release, and chondrocytes maintain cartilage, which is essential for endochondral ossification and linear growth at the epiphyseal plates. Together, these cells regulate bone homeostasis and growth.",
+    "key_points": [
+      "Compact bone is dense and forms the outer layer; spongy bone is porous and contains marrow.",
+      "Osteoblasts build bone, osteoclasts resorb bone, and chondrocytes maintain cartilage.",
+      "Chondrocytes are key for linear growth at the epiphyseal plates.",
+      "Bone remodeling involves the coordinated action of osteoblasts and osteoclasts."
+    ]
+  },
+  {
+    "id": "essay-012",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "Genetics and Evolution",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the Hardy–Weinberg principle and its significance in population genetics. Include the conditions required for a population to be in Hardy–Weinberg equilibrium and how deviations from these conditions can lead to evolutionary change.",
+    "model_answer": "The Hardy–Weinberg principle describes a theoretical population in which allele and genotype frequencies remain constant across generations, serving as a null model for detecting evolution. The conditions include no mutations, random mating, no natural selection, large population size (no genetic drift), and no gene flow (migration). If any of these conditions are violated, allele frequencies change, indicating that evolution is occurring. For example, if natural selection favors one allele, its frequency will increase over time, leading to a deviation from Hardy–Weinberg equilibrium.",
+    "key_points": [
+      "Definition of Hardy–Weinberg equilibrium as constant allele and genotype frequencies across generations.",
+      "List all five conditions: no mutations, random mating, no natural selection, large population size, no gene flow.",
+      "Use as a null model: deviations from expected frequencies indicate evolutionary forces at work.",
+      "Provide an example of a condition violation (e.g., selection) and its effect on allele frequencies."
+    ]
+  },
+  {
+    "id": "essay-013",
+    "type": "essay",
+    "subject": "Biochemistry",
+    "topic": "Amino Acids, Peptides, and Proteins",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "easy",
+    "prompt": "Describe the structural features of α-amino acids that make them both acidic and basic, and explain how these features relate to their pKa values in the context of peptide formation.",
+    "model_answer": "α-amino acids contain both a carboxylic acid group (pKa ~2-3) and an amino group (pKa ~9-10), making them amphoteric. In aqueous solution, they exist as zwitterions, with the carboxyl group deprotonated and the amino group protonated. During peptide bond formation, the carboxyl group of one amino acid reacts with the amino group of another, releasing water. The peptide bond itself is stabilized by resonance between the carbonyl and amino groups, which gives it partial double-bond character and makes it resistant to hydrolysis.",
+    "key_points": [
+      "α-amino acids have both acidic (carboxyl, pKa 2-3) and basic (amino, pKa 9-10) groups.",
+      "They exist as zwitterions in solution.",
+      "Peptide bonds form between carboxyl and amino groups with loss of water.",
+      "Resonance stabilization of the peptide bond contributes to its stability."
+    ]
+  },
+  {
+    "id": "essay-014",
+    "type": "essay",
+    "subject": "Biochemistry",
+    "topic": "Enzymes and Enzyme Kinetics",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Compare and contrast the lock-and-key and induced-fit models of enzyme-substrate interaction. How does the induced-fit model better explain the stabilization of the transition state and the lowering of activation energy? Include a discussion of enzyme specificity in your answer.",
+    "model_answer": "The lock-and-key model posits a rigid active site that perfectly complements the substrate, whereas the induced-fit model proposes that the active site is flexible and undergoes a conformational change upon substrate binding to achieve tight binding. The induced-fit model better explains transition state stabilization because the conformational change allows the enzyme to optimally interact with and stabilize the high-energy transition state, thereby lowering the activation energy. Enzyme specificity is maintained because only the correct substrate can induce the necessary conformational change; a substrate with the wrong shape cannot initiate this change, thus preventing catalysis.",
+    "key_points": [
+      "Describe lock-and-key as rigid active site with pre-formed complementarity.",
+      "Describe induced-fit as conformational change upon substrate binding to achieve tight binding.",
+      "Explain how induced-fit allows for optimal transition state stabilization, lowering activation energy.",
+      "Explain specificity in terms of the substrate's ability to induce the conformational change.",
+      "Mention that induced-fit model is more widely accepted for explaining enzyme function."
+    ]
+  },
+  {
+    "id": "essay-015",
+    "type": "essay",
+    "subject": "Biochemistry",
+    "topic": "Carbohydrates and Glycobiology",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the two major routes for the acid-catalyzed hydrolysis of glycosides and explain how the stability of polysaccharides is affected by the presence or absence of a catalyst.",
+    "model_answer": "The acid-catalyzed hydrolysis of glycosides proceeds via two major routes: one involving protonation of the glycosidic oxygen followed by cleavage of the C-O bond, leading to an oxocarbenium ion intermediate that reacts with water; the other route may involve direct nucleophilic attack by water at the anomeric carbon with proton transfer. In the absence of a catalyst (enzyme or mineral acid), polysaccharides are among the most stable biopolymers because the glycosidic bonds require significant activation energy to cleave. The presence of an enzyme or acid catalyst lowers the activation energy, enabling hydrolysis under mild conditions.",
+    "key_points": [
+      "Identify two distinct mechanistic routes for acid-catalyzed hydrolysis (e.g., protonation and oxocarbenium ion formation vs. direct water attack).",
+      "Mention the oxocarbenium ion intermediate or its equivalent.",
+      "State that polysaccharides are very stable without a catalyst.",
+      "Explain that enzymes or mineral acids catalyze hydrolysis by lowering activation energy."
+    ]
+  },
+  {
+    "id": "essay-016",
+    "type": "essay",
+    "subject": "Biochemistry",
+    "topic": "Lipids and Biological Membranes",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the structural features that distinguish different classes of membrane lipids and explain how these features relate to their functions in the cell membrane.",
+    "model_answer": "Membrane lipids include phospholipids, glycolipids, and cholesterol. Phospholipids have a glycerol backbone with two fatty acid chains and a phosphate-containing head group, making them amphipathic and suitable for forming bilayers. Glycolipids (e.g., glycosphingolipids) contain a sugar group attached to a sphingosine backbone, protruding from the membrane to serve as cell signaling markers. Cholesterol is a cyclic molecule that intercalates in the bilayer to maintain fluidity and prevent rigidity. In contrast, triacylglycerols are not membrane lipids but serve as energy storage; they lack the amphipathic nature needed for membrane structure.",
+    "key_points": [
+      "Phospholipids have a glycerol backbone, fatty acid chains, and phosphate head group; they are amphipathic and form bilayers.",
+      "Glycosphingolipids contain a sugar attached to a sphingosine backbone and act as cell signaling markers.",
+      "Cholesterol is cyclic and maintains membrane fluidity; without it, the bilayer becomes too rigid.",
+      "Triacylglycerols are not membrane lipids; they are storage fats with ester bonds between glycerol and fatty acids."
+    ]
+  },
+  {
+    "id": "essay-017",
+    "type": "essay",
+    "subject": "Biochemistry",
+    "topic": "DNA Structure and Replication",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain why DNA polymerase can only synthesize DNA in the 5' to 3' direction, and describe how this limitation leads to the formation of Okazaki fragments on the lagging strand. Include the roles of RNA primers and DNA ligase in this process.",
+    "model_answer": "DNA polymerase can only add nucleotides to a free 3' hydroxyl group, thus it synthesizes new DNA in the 5' to 3' direction. Since the two template strands are antiparallel, the leading strand is synthesized continuously toward the replication fork, while the lagging strand is synthesized discontinuously away from the fork in short segments called Okazaki fragments. Each fragment requires an RNA primer to provide a free 3' OH for DNA polymerase to extend. After the RNA primers are removed and replaced with DNA, DNA ligase seals the nicks between Okazaki fragments to create a continuous strand.",
+    "key_points": [
+      "DNA polymerase requires a free 3' OH and synthesizes DNA in the 5' to 3' direction.",
+      "The antiparallel nature of DNA leads to continuous synthesis on the leading strand and discontinuous synthesis on the lagging strand.",
+      "Okazaki fragments are short DNA segments on the lagging strand, each initiated by an RNA primer.",
+      "DNA ligase joins Okazaki fragments after RNA primers are replaced with DNA."
+    ]
+  },
+  {
+    "id": "essay-018",
+    "type": "essay",
+    "subject": "Biochemistry",
+    "topic": "Transcription and Translation",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the relationship between the redundancy of the genetic code and the observation that some point mutations do not alter the protein product. Use the terms codon, degeneracy, and silent mutation in your answer.",
+    "model_answer": "The genetic code is degenerate, meaning that multiple codons can specify the same amino acid. This redundancy allows some point mutations, called silent mutations, to occur in the DNA sequence without changing the amino acid sequence of the protein. For example, a change from one codon to a synonymous codon that codes for the same amino acid will not affect the final protein product. Thus, degeneracy provides a buffer against the potential harmful effects of certain mutations.",
+    "key_points": [
+      "Define degeneracy as multiple codons coding for the same amino acid.",
+      "Explain that a silent mutation is a base change that does not alter the amino acid.",
+      "Connect degeneracy to the possibility of silent mutations.",
+      "Mention that the protein product remains unchanged."
+    ]
+  },
+  {
+    "id": "essay-019",
+    "type": "essay",
+    "subject": "Biochemistry",
+    "topic": "Metabolism: Glycolysis, TCA Cycle, and Oxidative Phosphorylation",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the regulatory and thermodynamic basis for why certain steps of glycolysis are considered irreversible, and describe how gluconeogenesis circumvents these barriers. Include specific enzymes involved.",
+    "model_answer": "Glycolysis has three irreversible steps—hexokinase, phosphofructokinase-1, and pyruvate kinase—characterized by large negative ΔG values. Gluconeogenesis bypasses these with distinct enzymes: glucose 6-phosphatase, fructose 1,6-bisphosphatase, and the pyruvate carboxylase/PEP carboxykinase pair, allowing glucose synthesis from non-carbohydrate precursors.",
+    "key_points": [
+      "Identify the three irreversible steps of glycolysis and their enzymes.",
+      "Explain that these steps have large negative ΔG, making them thermodynamically favorable in the forward direction.",
+      "Describe the bypass enzymes used in gluconeogenesis for each irreversible step.",
+      "Mention that gluconeogenesis is not simply the reverse of glycolysis due to these barriers."
+    ]
+  },
+  {
+    "id": "essay-020",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "Acids and Bases",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the relationship among the Arrhenius, Brønsted–Lowry, and Lewis definitions of acids and bases, and provide an example of a species that is a Lewis acid but not a Brønsted–Lowry acid.",
+    "model_answer": "The Arrhenius definition is the narrowest, describing acids as substances that produce H+ in water and bases as those that produce OH−. The Brønsted–Lowry definition broadens this to any species that can donate or accept protons, encompassing reactions in non-aqueous solvents. The Lewis definition is the broadest, defining acids as electron-pair acceptors and bases as electron-pair donors, which includes species like BF3 that accept electron pairs but do not donate protons. Thus, all Arrhenius acids and bases are Brønsted–Lowry, and all Brønsted–Lowry are Lewis, but the reverse is not true.",
+    "key_points": [
+      "Arrhenius: acids produce H+ in water, bases produce OH−.",
+      "Brønsted–Lowry: acids donate protons, bases accept protons.",
+      "Lewis: acids accept electron pairs, bases donate electron pairs.",
+      "All Arrhenius are Brønsted–Lowry, all Brønsted–Lowry are Lewis, but not vice versa.",
+      "Example: BF3 is a Lewis acid but not a Brønsted–Lowry acid because it lacks a hydrogen to donate."
+    ]
+  },
+  {
+    "id": "essay-021",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "Chemical Equilibrium",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain Le Chatelier's principle and describe how a change in volume affects the equilibrium position of a gas-phase reaction. Use a specific example to illustrate your explanation.",
+    "model_answer": "Le Chatelier's principle states that when a system at equilibrium is stressed, the reaction shifts to partially relieve the stress and reestablish equilibrium. For a gas-phase reaction, changing the volume changes the pressure: if volume increases, pressure decreases, and the equilibrium shifts toward the side with more moles of gas to increase pressure. For example, in the reaction 2 SO2(g) + O2(g) ⇌ 2 SO3(g), if the volume is increased, the equilibrium shifts toward the reactants (left), which have 3 moles of gas compared to 2 moles of product.",
+    "key_points": [
+      "State Le Chatelier's principle: stress causes shift to relieve stress.",
+      "Explain the inverse relationship between volume and pressure.",
+      "Describe how shift direction depends on moles of gas on each side.",
+      "Use a concrete example with correct shift (e.g., increase volume shifts to side with more moles)."
+    ]
+  },
+  {
+    "id": "essay-022",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "Oxidation-Reduction Reactions",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the difference between oxidation and reduction in terms of electron transfer, and describe how to identify the oxidizing and reducing agents in a reaction. Use the reaction Mg(s) + Br2(l) → MgBr2(s) as an example, and include the changes in oxidation states.",
+    "model_answer": "Oxidation is the loss of electrons, while reduction is the gain of electrons (LEO says GER). In the reaction, Mg loses electrons and is oxidized, so its oxidation state increases from 0 to +2. Br2 gains electrons and is reduced, so its oxidation state decreases from 0 to -1. The reducing agent is the species that donates electrons (Mg), and the oxidizing agent is the species that accepts electrons (Br2). Oxidation states must change for a reaction to be classified as redox.",
+    "key_points": [
+      "Definition of oxidation (loss of electrons) and reduction (gain of electrons).",
+      "Identification of Mg as the reducing agent (loses electrons) and Br2 as the oxidizing agent (gains electrons).",
+      "Oxidation states: Mg goes from 0 to +2, Br goes from 0 to -1.",
+      "Redox reactions involve changes in oxidation states."
+    ]
+  },
+  {
+    "id": "essay-023",
+    "type": "essay",
+    "subject": "Organic Chemistry",
+    "topic": "Functional Groups and Nomenclature",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the IUPAC priority system for naming organic compounds that contain multiple functional groups. Use an example to illustrate how the highest-priority functional group determines the parent chain suffix, while other groups are treated as modifiers.",
+    "model_answer": "The IUPAC priority system assigns a hierarchy to functional groups, with carboxylic acids at the top and halides at the bottom. When a molecule contains multiple functional groups, the one with the highest priority determines the parent chain, and its suffix (e.g., -oic acid, -al, -one, -ol) is used in the name. Other functional groups are treated as modifiers (prefixes like hydroxy-, oxo-, amino-). For example, a molecule with both a carbonyl and a hydroxy group would be named as a ketone (e.g., -one) because the carbonyl has higher priority than the alcohol, making the hydroxy a substituent (hydroxy-). This ensures a consistent and unambiguous nomenclature system.",
+    "key_points": [
+      "List the priority order: carboxylic acids > esters > amides > nitriles > aldehydes > ketones > alcohols > amines > ethers > nitro > halides.",
+      "The parent chain is the longest carbon chain that contains the highest-priority functional group.",
+      "The suffix of the parent chain corresponds to the highest-priority group (e.g., -oic acid, -al, -one, -ol).",
+      "Lower-priority groups are named as prefixes (modifiers) such as hydroxy-, oxo-, amino-, etc.",
+      "Provide a specific example, such as a compound with both an alcohol and a ketone, and explain why it is named as a ketone with a hydroxy substituent."
+    ]
+  },
+  {
+    "id": "essay-024",
+    "type": "essay",
+    "subject": "Organic Chemistry",
+    "topic": "Stereochemistry",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Compare and contrast the use of line structures, Fischer projections, and wedge-dash depictions in conveying stereochemical information. Provide specific examples from the provided material to illustrate your points.",
+    "model_answer": "Line structures show only constitution and connectivity, not stereochemistry. Fischer projections are designed to convey absolute configuration (R/S) by representing a molecule in a specific two-dimensional orientation. Wedge-dash depictions can show either relative stereochemistry (e.g., cis/trans) when the absolute configuration is unknown, as with cis-5-methylcyclohex-2-enol drawn with two wedges, or absolute stereochemistry when specific enantiomers are intended, such as the 1S,5S enantiomer with wedges and the R,R enantiomer with dashes. The choice of depiction must match the information to be conveyed.",
+    "key_points": [
+      "Line structures convey only constitution and connectivity, not stereochemistry.",
+      "Fischer projections are specifically for conveying absolute configuration (R/S).",
+      "Wedge-dash can show relative stereochemistry (cis/trans) when absolute configuration is unknown.",
+      "Wedge-dash can also show absolute stereochemistry when specific enantiomers are intended (e.g., 1S,5S vs R,R).",
+      "The choice of depiction depends on the stereochemical information to be communicated."
+    ]
+  },
+  {
+    "id": "essay-025",
+    "type": "essay",
+    "subject": "Organic Chemistry",
+    "topic": "Carbonyl Chemistry",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the three zones of reactivity for a carbonyl group and explain how each zone contributes to the typical reactions of aldehydes and ketones.",
+    "model_answer": "The carbonyl group has three zones: the electrophilic carbon, the weakly Lewis basic oxygen, and the weakly Brønsted acidic α-protons. The carbon is electron-deficient due to polarization of σ and π bonds, making it susceptible to nucleophilic attack. The oxygen's lone pairs can coordinate to Lewis acids, including protonation. The α-protons can be deprotonated by strong base, forming an enolate stabilized by resonance with the negative charge on oxygen.",
+    "key_points": [
+      "Identify the three zones: electrophilic carbon, Lewis basic oxygen, and acidic α-protons.",
+      "Explain the electrophilicity of the carbonyl carbon due to bond polarization.",
+      "Describe the Lewis basicity of oxygen and its role in protonation or coordination.",
+      "Explain the acidity of α-protons and the resonance stabilization of the enolate."
+    ]
+  },
+  {
+    "id": "essay-026",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "Atomic Structure",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the roles and properties of protons, neutrons, and electrons in determining atomic identity and charge, and explain how experiments like Rutherford's, Thomson's, and Millikan's contributed to our understanding of these particles.",
+    "model_answer": "Protons define the atomic number and carry a +1 charge, while electrons carry -1 charge and neutrons are neutral; both protons and neutrons have approximately 1 amu mass and reside in the nucleus, whereas electrons are much lighter. Rutherford's experiment showed that atoms have a dense, positively charged nucleus, Thomson discovered the electron, and Millikan measured its charge, providing a model of atomic structure where protons and neutrons form the nucleus and electrons orbit around it.",
+    "key_points": [
+      "Identify protons, neutrons, and electrons with their charges and approximate masses.",
+      "Explain that atomic number is determined by protons and that isotopes differ in neutron number.",
+      "Describe Rutherford's experiment as revealing a dense nucleus with most mass and positive charge.",
+      "Mention Thomson's discovery of the electron and Millikan's measurement of its charge.",
+      "Connect these to the modern model of the atom with electrons outside the nucleus."
+    ]
+  },
+  {
+    "id": "essay-027",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "The Periodic Table",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain how the modern periodic table organizes elements and how effective nuclear charge (Zeff) and valence shell size contribute to periodic trends. Describe how these factors change across a period and down a group, and give an example of a trend that results from these changes.",
+    "model_answer": "The modern periodic table organizes elements by increasing atomic number into periods (rows) and groups (columns). Across a period, effective nuclear charge increases because more protons are added while core electrons shield incompletely, pulling valence electrons closer and decreasing atomic size. Down a group, the valence shell increases, placing electrons farther from the nucleus, which increases atomic size despite the increase in nuclear charge. These factors explain trends like atomic radius, ionization energy, and electronegativity.",
+    "key_points": [
+      "Periodic table is arranged by atomic number, with periods and groups.",
+      "Across a period, Zeff increases, leading to smaller atomic radius.",
+      "Down a group, valence shell increases, leading to larger atomic radius.",
+      "Trends like atomic radius are explained by the combination of Zeff and valence shell size."
+    ]
+  },
+  {
+    "id": "essay-028",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "Bonding and Chemical Interactions",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the difference between ionic and covalent bonds, and describe how the periodic table can be used to predict which type of bond will form between two elements. Use examples from the chapter introduction.",
+    "model_answer": "Ionic bonds form between a metal and a nonmetal, where electrons are transferred from the less electronegative atom to the more electronegative atom, resulting in charged ions that attract each other. Covalent bonds form between nonmetals, where electrons are shared between atoms. The periodic table helps predict bond type: metals (left side) tend to lose electrons and form cations, while nonmetals (right side) tend to gain electrons and form anions. For example, sodium (a metal) and chlorine (a nonmetal) form an ionic bond, while two chlorine atoms share electrons to form a covalent bond.",
+    "key_points": [
+      "Ionic bonds involve electron transfer between a metal and a nonmetal, creating ions.",
+      "Covalent bonds involve electron sharing between nonmetals.",
+      "Periodic table position indicates tendency to lose or gain electrons.",
+      "Examples: NaCl (ionic) and Cl2 (covalent)."
+    ]
+  },
+  {
+    "id": "essay-029",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "Compounds and Stoichiometry",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the concept of formal charge and its role in determining the most stable Lewis structure of a molecule, using carbon monoxide (CO) as an example. How does formal charge relate to the dipole moment of a molecule?",
+    "model_answer": "Formal charge is a bookkeeping tool that assigns electrons to atoms in a molecule, calculated as valence electrons minus nonbonding electrons minus half of bonding electrons. In CO, the most stable structure has a triple bond and a lone pair on both atoms, giving carbon a formal charge of -1 and oxygen a +1, which minimizes formal charges and places negative charge on the more electronegative atom. Formal charge helps identify the most plausible resonance structure, while dipole moment (p = qd) depends on the distribution of electron density, which is influenced by electronegativity differences and molecular geometry, not just formal charge.",
+    "key_points": [
+      "Definition and calculation of formal charge.",
+      "Use of formal charge to choose the best Lewis structure (minimizing formal charges, electronegativity considerations).",
+      "Application to CO with specific formal charges.",
+      "Distinction between formal charge and dipole moment, and how dipole moment relates to molecular polarity."
+    ]
+  },
+  {
+    "id": "essay-030",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "Chemical Kinetics",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain how the rate-determining step in a reaction mechanism relates to the overall reaction rate, and describe how the concept of intermediates is involved. Use an example of a two-step mechanism where the first step is slow and the second step is fast.",
+    "model_answer": "The rate-determining step is the slowest step in a reaction mechanism and therefore limits the overall rate because the overall reaction cannot proceed faster than this step. Intermediates are species produced in one step and consumed in a later step; they do not appear in the overall balanced equation. For example, in a mechanism where A + B → C (slow) and C + D → E (fast), C is an intermediate and the rate law is determined by the slow step: rate = k[A][B].",
+    "key_points": [
+      "The rate-determining step is the slowest step and controls the overall reaction rate.",
+      "Intermediates are transient species that appear in mechanisms but not in the overall reaction.",
+      "The rate law is derived from the rate-determining step, not from the overall stoichiometry.",
+      "Example: slow step A + B → C (rate = k[A][B]), fast step C + D → E, C is an intermediate."
+    ]
+  },
+  {
+    "id": "essay-031",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "Equilibrium",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the relationship between the reaction quotient (Q) and the equilibrium constant (K) in determining the direction a reaction will shift to reach equilibrium. Include a description of how Le Chatelier's principle applies when an external stress is applied, and note any exceptions where K changes.",
+    "model_answer": "When Q < K, the reaction shifts to the right to increase products and decrease reactants until Q equals K. When Q > K, the reaction shifts to the left to decrease products and increase reactants. Le Chatelier's principle states that a system at equilibrium will respond to an external stress (changes in concentration, pressure, volume, or temperature) by shifting to partially relieve the stress. However, for all stresses except temperature changes, K remains constant; only a change in temperature alters the value of K. Adding a pure solid or pure liquid does not affect equilibrium or K.",
+    "key_points": [
+      "Comparison of Q and K determines direction: Q<K shifts right, Q>K shifts left.",
+      "Le Chatelier's principle: system shifts to relieve stress and reestablish equilibrium.",
+      "K remains constant for concentration, pressure, volume changes, but changes with temperature.",
+      "Pure solids and liquids do not affect equilibrium or K."
+    ]
+  },
+  {
+    "id": "essay-032",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "Thermochemistry",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the difference between kinetic and thermodynamic control of a chemical reaction, and discuss how temperature and heat transfer influence which product is favored.",
+    "model_answer": "Kinetic control favors the product that forms fastest, which is determined by the activation energy (the free energy difference between reactants and transition state). At low temperatures with low heat transfer, kinetic products dominate because there is insufficient energy to overcome higher activation barriers. Thermodynamic control favors the most stable product, which has the lowest free energy. At high temperatures with high heat transfer, thermodynamic products dominate because the system has enough energy to reach equilibrium and form the most stable product. Thus, temperature and heat transfer determine whether a reaction is under kinetic or thermodynamic control.",
+    "key_points": [
+      "Kinetic products are favored at low temperatures with low heat transfer.",
+      "Kinetic pathways have a smaller free energy gain to reach the transition state.",
+      "Thermodynamic products are favored at high temperatures with high heat transfer.",
+      "Thermodynamic products have a lower free energy (more stable).",
+      "Temperature and heat transfer determine which control dominates."
+    ]
+  },
+  {
+    "id": "essay-033",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "The Gas Phase",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain how a phase diagram can be used to determine the state of a substance at a given temperature and pressure. In your answer, identify the regions, lines, and the triple point, and describe the conditions under which each phase is stable.",
+    "model_answer": "A phase diagram plots pressure versus temperature and is divided into three regions: solid, liquid, and gas. The lines separating these regions represent equilibrium between two phases, and the triple point is where all three phases coexist. At low temperatures and high pressures, the solid phase is stable; at moderate temperatures and pressures, the liquid is stable; and at high temperatures and low pressures, the gas is stable. The liquid-gas line terminates at the critical point, beyond which the substance is a supercritical fluid.",
+    "key_points": [
+      "Identify the three regions (solid, liquid, gas) and the conditions for each (solid: low T, high P; liquid: moderate T/P; gas: high T, low P).",
+      "Lines represent phase equilibria (solid-liquid, liquid-gas, solid-gas).",
+      "Triple point is where all three phases coexist at a specific T and P.",
+      "The liquid-gas line ends at the critical point."
+    ]
+  },
+  {
+    "id": "essay-034",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "Solutions",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the process of solvation and how it relates to the solubility of a compound. Describe the key steps involved when an ionic solid dissolves in water, and discuss how temperature affects solubility for endothermic versus exothermic dissolution processes, using Le Châtelier's principle.",
+    "model_answer": "Solvation is the process by which solute particles are surrounded by solvent molecules, stabilizing them in solution. For an ionic solid in water, the positive ions attract the partially negative oxygen of water and the negative ions attract the partially positive hydrogen, overcoming the lattice energy. Solubility is the maximum amount of solute that can dissolve in a given amount of solvent at a specific temperature. For an endothermic dissolution, increasing temperature increases solubility because heat is a reactant; for an exothermic dissolution, increasing temperature decreases solubility because heat is a product, as predicted by Le Châtelier's principle.",
+    "key_points": [
+      "Define solvation as solute-solvent interactions that stabilize solute particles.",
+      "Describe ion-dipole interactions for ionic solutes in water.",
+      "Explain solubility as maximum solute that dissolves at a given temperature.",
+      "Apply Le Châtelier's principle to temperature effects on solubility (endothermic vs exothermic)."
+    ]
+  },
+  {
+    "id": "essay-035",
+    "type": "essay",
+    "subject": "General Chemistry",
+    "topic": "Electrochemistry",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain how the right-hand rule is used to determine the direction of the magnetic force on a current-carrying wire in a magnetic field, and derive the expression for the magnitude of this force. Include the conditions under which the force is maximum and minimum.",
+    "model_answer": "The right-hand rule states that if you point your fingers in the direction of the magnetic field and your thumb in the direction of the current, the force on the wire is directed out of your palm, perpendicular to both. The magnitude of the force is given by F = I L B sin θ, where θ is the angle between the wire and the magnetic field. The force is maximum when the wire is perpendicular to the field (θ = 90°) and zero when parallel (θ = 0°).",
+    "key_points": [
+      "Use of right-hand rule: fingers along B, thumb along current, palm points in direction of force.",
+      "Force magnitude formula: F = I L B sin θ.",
+      "Maximum force at θ = 90° and zero at θ = 0°.",
+      "Force is perpendicular to both current and field."
+    ]
+  },
+  {
+    "id": "essay-036",
+    "type": "essay",
+    "subject": "Physics",
+    "topic": "Kinematics and Dynamics",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the relationship between work, kinetic energy, and potential energy in a closed system where only conservative forces act. Use the equations for kinetic energy, gravitational potential energy, and the work–energy theorem to support your explanation.",
+    "model_answer": "In a closed system with only conservative forces, the total mechanical energy (kinetic plus potential) is conserved, so ΔE = ΔU + ΔK = 0. This means that any increase in kinetic energy comes at the expense of potential energy and vice versa. The work–energy theorem states that the net work done on an object equals its change in kinetic energy (W_net = ΔK). Since the work done by conservative forces is also equal to the negative change in potential energy (W_c = -ΔU), combining these shows that ΔK = -ΔU, which is equivalent to conservation of mechanical energy.",
+    "key_points": [
+      "Mention that total mechanical energy (E = U + K) is conserved when only conservative forces act.",
+      "Use the equation ΔE = ΔU + ΔK = 0.",
+      "Relate work done by conservative forces to change in potential energy (W_c = -ΔU).",
+      "Use the work–energy theorem W_net = ΔK to connect work and kinetic energy.",
+      "Conclude that ΔK = -ΔU, showing energy transformation between kinetic and potential forms."
+    ]
+  },
+  {
+    "id": "essay-037",
+    "type": "essay",
+    "subject": "Physics",
+    "topic": "Work and Energy",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the relationship between work and kinetic energy using the work–kinetic energy theorem, and discuss how this relationship illustrates the concept of energy as the ability to do work. Include an example of how net work changes the kinetic energy of an object.",
+    "model_answer": "The work–kinetic energy theorem states that the net work done on an object equals the change in its kinetic energy (W_net = ΔKE). This illustrates that energy is the ability to do work: when work is done on an object, its kinetic energy changes, either increasing or decreasing depending on the direction of the net force relative to motion. For example, if a car accelerates from rest, the net work done by the engine increases its kinetic energy, whereas braking does negative work, reducing kinetic energy. Thus, work is a transfer of energy that alters the motion of an object.",
+    "key_points": [
+      "State the work–kinetic energy theorem: W_net = ΔKE.",
+      "Explain that work changes kinetic energy, linking work and energy as interconvertible.",
+      "Provide an example showing positive work increasing kinetic energy and negative work decreasing it.",
+      "Mention that energy is the ability to do work, as defined in the corpus."
+    ]
+  },
+  {
+    "id": "essay-038",
+    "type": "essay",
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the zeroth law of thermodynamics and describe how it establishes the concept of temperature. Include an example involving thermal equilibrium among three objects.",
+    "model_answer": "The zeroth law states that if object A is in thermal equilibrium with object B, and object B is in thermal equilibrium with object C, then A and C are also in thermal equilibrium. This law allows us to define temperature as a property that determines whether objects are in thermal equilibrium; when objects have the same temperature, no net heat flows between them. For example, a warm cup of tea (A) in equilibrium with a metal stirring stick (B), and the stick in equilibrium with your hand (C), implies your hand and the tea are at the same temperature, so no heat flows if they are brought into contact.",
+    "key_points": [
+      "State the zeroth law: if A is in equilibrium with B, and B with C, then A and C are in equilibrium.",
+      "Explain that this law provides a basis for temperature measurement.",
+      "Use a concrete example (e.g., tea, stirring stick, hand) to illustrate thermal equilibrium.",
+      "Mention that no net heat flows between objects in thermal equilibrium."
+    ]
+  },
+  {
+    "id": "essay-039",
+    "type": "essay",
+    "subject": "Physics",
+    "topic": "Fluids",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the concept of viscosity and its role in fluid flow, distinguishing between ideal and real fluids. How does viscosity affect energy conservation in fluids, and what assumption is typically made on the MCAT?",
+    "model_answer": "Viscosity is a fluid's internal resistance to flow; high-viscosity fluids like honey flow slowly and experience significant viscous drag, while low-viscosity fluids like water flow easily. Ideal fluids are inviscid, meaning they have no viscosity. Viscous forces are nonconservative, causing energy loss during flow, which complicates energy conservation. On the MCAT, unless otherwise stated, viscosity is assumed negligible, allowing Bernoulli's equation to express energy conservation.",
+    "key_points": [
+      "Define viscosity as internal resistance to flow and give examples of high vs. low viscosity fluids.",
+      "Explain that viscosity creates viscous drag, a nonconservative force analogous to air resistance.",
+      "Describe ideal fluids as inviscid and low-viscosity fluids as behaving more like ideal fluids.",
+      "State that on the MCAT, viscosity is assumed negligible unless otherwise indicated, so Bernoulli's equation applies."
+    ]
+  },
+  {
+    "id": "essay-040",
+    "type": "essay",
+    "subject": "Physics",
+    "topic": "Electrostatics and Magnetism",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the relationship between electric potential energy and electric potential, and describe how they apply in a uniform electric field between two parallel plates.",
+    "model_answer": "Electric potential energy is the energy a charge has due to its position in an electric field, given by U = qV, where q is the charge and V is the electric potential. Electric potential is the potential energy per unit charge, V = U/q, and is a scalar quantity measured in volts. In a uniform electric field between parallel plates, the potential changes linearly with distance, and the potential difference is ΔV = Ed, where E is the field strength and d is the separation. This setup is commonly used in capacitors, where the stored energy is related to the potential difference.",
+    "key_points": [
+      "Define electric potential energy (U = qV) and electric potential (V = U/q).",
+      "Explain that potential is scalar and measured in volts.",
+      "Describe the uniform field between plates: ΔV = Ed.",
+      "Mention application in capacitors."
+    ]
+  },
+  {
+    "id": "essay-041",
+    "type": "essay",
+    "subject": "Physics",
+    "topic": "Circuits",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the difference between series and parallel circuits in terms of current flow and potential difference across components. Include an example of how equivalent resistance is calculated for two resistors in each arrangement.",
+    "model_answer": "In a series circuit, components are connected end-to-end so the same current flows through each, but the potential difference (voltage) is divided among them. In a parallel circuit, components are connected in branches so the same voltage is applied across each, but the current is divided. For two resistors in series, the equivalent resistance is the sum: R_eq = R1 + R2. For two in parallel, the equivalent resistance is the reciprocal sum: 1/R_eq = 1/R1 + 1/R2, or R_eq = (R1*R2)/(R1+R2).",
+    "key_points": [
+      "Series: same current through all components, voltage divides.",
+      "Parallel: same voltage across all components, current divides.",
+      "Series equivalent resistance: R_eq = R1 + R2.",
+      "Parallel equivalent resistance: 1/R_eq = 1/R1 + 1/R2."
+    ]
+  },
+  {
+    "id": "essay-042",
+    "type": "essay",
+    "subject": "Physics",
+    "topic": "Waves and Sound",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the relationship between sound intensity and sound level (in decibels), and describe how a change in intensity affects the perceived loudness. Include the formula and the threshold reference.",
+    "model_answer": "Sound level β is calculated as β = 10 log(I/I₀), where I is the sound intensity and I₀ is the threshold of hearing (1 × 10⁻¹² W/m²). Because it's a logarithmic scale, an increase of 10 dB corresponds to a tenfold increase in intensity. For example, normal conversation at 60 dB has an intensity of 1 × 10⁻⁶ W/m², while busy traffic at 80 dB has an intensity of 1 × 10⁻⁴ W/m², which is 100 times more intense. Thus, a 20 dB increase represents a 100-fold increase in intensity, but the perceived loudness approximately doubles for every 10 dB increase.",
+    "key_points": [
+      "Use the formula β = 10 log(I/I₀) with I₀ = 1 × 10⁻¹² W/m²",
+      "Explain that dB is a logarithmic scale, so each 10 dB increase corresponds to a tenfold increase in intensity",
+      "Provide an example from the table (e.g., 60 dB to 80 dB corresponds to a 100-fold increase in intensity)",
+      "Mention that perceived loudness does not increase linearly; it roughly doubles per 10 dB"
+    ]
+  },
+  {
+    "id": "essay-043",
+    "type": "essay",
+    "subject": "Physics",
+    "topic": "Light and Optics",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "easy",
+    "prompt": "Explain the relationship between wavelength, frequency, and energy for electromagnetic radiation, and describe how this relationship determines the relative properties of red and blue light in a vacuum.",
+    "model_answer": "In a vacuum, all electromagnetic waves travel at the same speed c, so the relationship c = λf implies that higher frequency corresponds to shorter wavelength. The energy of a photon is given by E = hf, so higher frequency (and shorter wavelength) corresponds to higher energy. Therefore, blue light, which has a higher frequency and shorter wavelength than red light, carries more energy per photon, but both travel at the same speed c.",
+    "key_points": [
+      "All electromagnetic waves travel at the same speed c in a vacuum.",
+      "Frequency and wavelength are inversely related via c = λf.",
+      "Photon energy is proportional to frequency (E = hf).",
+      "Blue light has higher frequency, shorter wavelength, and higher energy than red light.",
+      "Red and blue light travel at the same speed in vacuum."
+    ]
+  },
+  {
+    "id": "essay-044",
+    "type": "essay",
+    "subject": "Organic Chemistry",
+    "topic": "Nomenclature and Functional Groups",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the IUPAC rules for naming a compound that contains both a hydroxy group and a carbonyl group, using an example such as 5-(2-hydroxypropyl)decan-3,6-dione. Describe how the parent chain is chosen and how the functional groups are named as parent or modifier.",
+    "model_answer": "In IUPAC nomenclature, the parent chain is the longest carbon chain that contains the highest priority functional group. For a compound with both hydroxy and carbonyl groups, the carbonyl (ketone) has higher priority, so the parent chain is named with the '-one' suffix (e.g., decan-3,6-dione) and the hydroxy group is treated as a substituent, indicated by the 'hydroxy-' prefix. The parent chain must also include as many double bonds as possible, even if that shortens the chain. Thus, in 5-(2-hydroxypropyl)decan-3,6-dione, the decane chain contains the two ketone carbonyls, and the hydroxy group is a modifier on a propyl substituent.",
+    "key_points": [
+      "Identify the highest priority functional group (carbonyl over hydroxy).",
+      "Choose the longest chain containing the highest priority group and as many double bonds as possible.",
+      "Use the appropriate suffix for the parent (e.g., '-one' for ketone) and prefix for modifiers (e.g., 'hydroxy-').",
+      "Provide a correct example that demonstrates these rules."
+    ]
+  },
+  {
+    "id": "essay-045",
+    "type": "essay",
+    "subject": "Organic Chemistry",
+    "topic": "Stereochemistry and Isomers",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the difference between constitutional (structural) isomers and stereoisomers, and within stereoisomers, distinguish between enantiomers and diastereomers. Use specific examples from the provided material to illustrate your explanation.",
+    "model_answer": "Constitutional isomers differ in the connectivity of atoms, such as n-pentane and isopentane, which have the same formula but different bonding arrangements. Stereoisomers have the same connectivity but differ in spatial arrangement. Enantiomers are non-superimposable mirror images, while diastereomers are stereoisomers that are not mirror images. For example, a molecule with three chiral centers has eight stereoisomers: four pairs of enantiomers, and each pair's members are diastereomers to the others.",
+    "key_points": [
+      "Constitutional isomers have different connectivity (e.g., n-pentane vs. isopentane).",
+      "Stereoisomers share connectivity but differ in spatial arrangement.",
+      "Enantiomers are non-superimposable mirror images; diastereomers are non-mirror-image stereoisomers.",
+      "With n chiral centers, there are 2^n stereoisomers, split into enantiomeric pairs and diastereomeric relationships."
+    ]
+  },
+  {
+    "id": "essay-046",
+    "type": "essay",
+    "subject": "Organic Chemistry",
+    "topic": "Acids and Bases in Organic Chemistry",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the relationships among Arrhenius, Brønsted–Lowry, and Lewis definitions of acids and bases using examples. Also, explain the concepts of amphoteric and amphiprotic species, and discuss how the pKa values of carboxylic acids, phenols, and alkyl ammonium cations influence their acid strength.",
+    "model_answer": "Arrhenius acids produce H+ in water, bases produce OH−; Brønsted–Lowry acids donate protons and bases accept protons; Lewis acids accept electron pairs and bases donate electron pairs. Every Arrhenius acid/base is also Brønsted–Lowry and Lewis, but not vice versa (e.g., BF3 is a Lewis acid but not a Brønsted–Lowry acid). Amphoteric species can act as either acid or base; amphiprotic species specifically can donate or accept protons (e.g., water, HCO3−). Carboxylic acids have pKa ~3-5, phenols ~9-10, and alkyl ammonium cations ~9-10; lower pKa indicates stronger acid, so carboxylic acids are stronger than phenols and alkyl ammonium salts.",
+    "key_points": [
+      "Define Arrhenius, Brønsted–Lowry, and Lewis acids/bases with examples.",
+      "Explain the hierarchy: Arrhenius ⊂ Brønsted–Lowry ⊂ Lewis.",
+      "Define amphoteric and amphiprotic, giving water as an example.",
+      "State typical pKa ranges: carboxylic acids 3-5, phenols 9-10, alkyl ammonium 9-10.",
+      "Relate pKa to acid strength: lower pKa = stronger acid."
+    ]
+  },
+  {
+    "id": "essay-047",
+    "type": "essay",
+    "subject": "Organic Chemistry",
+    "topic": "Substitution and Elimination Reactions",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Consider the reaction: PCl3(g) + Cl2(g) → PCl5(g). Identify the reaction type and discuss whether this reaction can also be classified as an oxidation-reduction reaction. In your answer, define oxidation and reduction, and explain how the classification of a reaction can overlap with other categories.",
+    "model_answer": "The reaction is a composition reaction because two reactants combine to form a single product. It also qualifies as an oxidation-reduction reaction: PCl3 is oxidized (loses electrons) as its oxidation state increases from +3 to +5, while Cl2 is reduced (gains electrons) as its oxidation state decreases from 0 to -1. This demonstrates that a single reaction can belong to multiple categories.",
+    "key_points": [
+      "Identify the reaction as a composition reaction (two reactants → one product).",
+      "Define oxidation as loss of electrons and reduction as gain of electrons (LEO says GER).",
+      "Explain that PCl3 is oxidized (P goes from +3 to +5) and Cl2 is reduced (Cl goes from 0 to -1).",
+      "Conclude that reactions can be classified in multiple ways."
+    ]
+  },
+  {
+    "id": "essay-048",
+    "type": "essay",
+    "subject": "Organic Chemistry",
+    "topic": "Laboratory Techniques and Spectroscopy",
+    "section": "Chemical & Physical Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the three broad categories of separation techniques and explain how their underlying chemical principles differ. Include a practical consideration regarding their scalability, and mention how isotopes are used in separation and detection methods.",
+    "model_answer": "The three broad categories are distillation, chromatography, and extraction, each based on different chemical principles: distillation relies on differences in boiling points, chromatography on differential partitioning between a stationary and mobile phase, and extraction on differential solubility in immiscible solvents. Scalability is a key differentiator: distillation can handle large volumes easily, whereas chromatography is more laborious and expensive for large quantities. Isotopes, such as deuterium or carbon-13, can be used as labels in experiments and are detected by mass spectrometry or NMR, which are mass-based separation techniques.",
+    "key_points": [
+      "Identify the three categories: distillation, chromatography, and extraction.",
+      "Explain the principle behind each: boiling point, partitioning, solubility.",
+      "Discuss scalability: distillation is scalable; chromatography is difficult for large amounts.",
+      "Mention isotope labeling and detection via mass spectrometry or NMR."
+    ]
+  },
+  {
+    "id": "essay-049",
+    "type": "essay",
+    "subject": "Biochemistry",
+    "topic": "Amino Acids and Proteins",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the acid-base properties of amino acids, focusing on the pKa ranges of the α-carboxyl group, α-amino group, and side chains. Explain how the protonation states of these groups change with pH and how this relates to the overall charge of an amino acid.",
+    "model_answer": "Amino acids contain an α-carboxyl group with a pKa around 2-3, an α-amino group with a pKa around 9-10, and variable side chains. At low pH, both groups are protonated (COOH and NH3+), giving a net positive charge. As pH increases, the carboxyl group loses a proton first (around pH 2-3), yielding a zwitterion with no net charge. At higher pH, the amino group loses a proton (around pH 9-10), resulting in a net negative charge. Side chains with ionizable groups (e.g., histidine, lysine, aspartic acid) have their own pKa values that influence the overall charge at physiological pH.",
+    "key_points": [
+      "Identify the pKa ranges: α-carboxyl (2-3), α-amino (9-10), and side chains (e.g., histidine ~6, lysine ~10.5, aspartic acid ~4).",
+      "Describe protonation states at different pH values: low pH positive, neutral pH zwitterion, high pH negative.",
+      "Explain the role of side chain pKa in determining net charge and behavior in proteins.",
+      "Mention the concept of zwitterion and isoelectric point."
+    ]
+  },
+  {
+    "id": "essay-050",
+    "type": "essay",
+    "subject": "Biochemistry",
+    "topic": "Enzymes",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the role of lysosomes in cellular digestion and apoptosis, including the types of enzymes they contain and how their activity is regulated by pH and compartmentalization.",
+    "model_answer": "Lysosomes are membrane-bound organelles containing hydrolytic enzymes that degrade various substrates, including endocytosed materials and cellular waste. These enzymes are most active at an acidic pH, which is maintained by the lysosomal membrane's proton pumps. The membrane sequesters these enzymes to prevent damage to the cell. However, if the lysosomal membrane is compromised, the release of hydrolytic enzymes into the cytoplasm triggers autolysis and leads to apoptosis, or programmed cell death.",
+    "key_points": [
+      "Lysosomes contain hydrolytic enzymes that break down substrates from endocytosis and cellular waste.",
+      "The lysosomal membrane sequesters these enzymes to protect the cell from their degradative activity.",
+      "The acidic pH inside lysosomes is optimal for enzyme activity.",
+      "Release of lysosomal enzymes (autolysis) can trigger apoptosis.",
+      "Lysosomes work with endosomes in the endocytic pathway."
+    ]
+  },
+  {
+    "id": "essay-051",
+    "type": "essay",
+    "subject": "Biochemistry",
+    "topic": "Carbohydrates and Lipids",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the role of cholesterol in cell membranes and contrast it with the role of glycosphingolipids. How does the presence of cholesterol affect membrane fluidity, and what would happen to the membrane if cholesterol were absent?",
+    "model_answer": "Cholesterol is a cyclic lipid that intercalates within the phospholipid bilayer, modulating fluidity by preventing the membrane from becoming too rigid. It also helps maintain membrane shape and integrity. Glycosphingolipids, on the other hand, are sphingolipids with sugar head groups that protrude from the membrane and act as markers for cell signaling. Without cholesterol, the membrane would become overly rigid, impairing its function.",
+    "key_points": [
+      "Cholesterol maintains membrane fluidity and prevents rigidity.",
+      "Glycosphingolipids serve as cell signaling markers.",
+      "Cholesterol is a cyclic molecule; glycosphingolipids have sugar head groups.",
+      "Absence of cholesterol leads to excessive rigidity."
+    ]
+  },
+  {
+    "id": "essay-052",
+    "type": "essay",
+    "subject": "Biochemistry",
+    "topic": "Nucleic Acids and Gene Expression",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the roles of genetic recombination and crossing over in increasing genetic diversity during gametogenesis, and describe how the physical distance between genes on a chromosome relates to their likelihood of being inherited together.",
+    "model_answer": "Genetic recombination, particularly crossing over during prophase I of meiosis, exchanges genetic material between homologous chromosomes, creating new combinations of alleles and unlinking linked genes. This increases genetic diversity in gametes, which is beneficial for adaptation. The likelihood of crossing over between two genes is proportional to their physical distance; genes farther apart are more likely to undergo recombination, so they are less likely to be inherited together, and this relationship allows geneticists to map gene distances in centimorgans.",
+    "key_points": [
+      "Crossing over occurs during prophase I and involves exchange of genetic material between homologous chromosomes.",
+      "Recombination unlinks linked genes, increasing genetic combinations in gametes.",
+      "Genetic diversity enhances a species' ability to evolve and adapt.",
+      "Genes farther apart are more likely to undergo crossing over, reducing linkage.",
+      "Recombination frequency is used to map gene distances in centimorgans."
+    ]
+  },
+  {
+    "id": "essay-053",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Sensation and Perception",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the relationship between the two-point threshold and physiological zero in the context of somatosensation. How do these concepts relate to the processing of touch and temperature, and what might happen if the somatosensory cortex were damaged?",
+    "model_answer": "The two-point threshold is the minimum distance at which two simultaneous touch stimuli are perceived as distinct, reflecting the density of touch receptors and their cortical representation. Physiological zero is the normal skin temperature, serving as a baseline for perceiving temperature changes. Damage to the somatosensory cortex would impair the ability to localize and discriminate touch and temperature, potentially increasing the two-point threshold and altering temperature perception relative to physiological zero.",
+    "key_points": [
+      "Define two-point threshold as minimum distance for perceiving two touches as distinct.",
+      "Define physiological zero as the normal skin temperature baseline.",
+      "Explain that these relate to somatosensory processing in the somatosensory cortex.",
+      "Damage to somatosensory cortex could impair discrimination and temperature perception, increasing two-point threshold and shifting perceived temperature relative to physiological zero."
+    ]
+  },
+  {
+    "id": "essay-054",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Learning",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the difference between habituation and sensitization, and explain why they are considered forms of nonassociative learning. Provide a real-world example for each.",
+    "model_answer": "Habituation is a decrease in response to a repeated, benign stimulus, whereas sensitization is an increase in response to a stimulus, often after a strong or threatening event. They are nonassociative because learning involves only a single stimulus, without pairing it with another stimulus or a reinforcement. For example, a person initially startled by construction noise may eventually ignore it (habituation), but after a stressful event, they may become hyper-responsive to any sound (sensitization).",
+    "key_points": [
+      "Habituation: decrease in response to repeated stimulus.",
+      "Sensitization: increase in response, often after strong stimulus.",
+      "Both are nonassociative because they involve a single stimulus.",
+      "Examples: ignoring traffic noise (habituation), heightened startle after trauma (sensitization)."
+    ]
+  },
+  {
+    "id": "essay-055",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Memory",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Compare and contrast the different types of memory (sensory, short-term/working, long-term) and their subcategories (explicit/declarative vs. implicit/nondeclarative). Provide examples of each and explain how they relate to each other in the process of memory formation and retrieval.",
+    "model_answer": "Memory is divided into sensory, short-term (working), and long-term stores. Sensory memory briefly holds raw sensory input (iconic for visual, echoic for auditory). Short-term memory (working memory) actively processes information, with limited capacity, and can be encoded into long-term memory. Long-term memory includes explicit (declarative) memory, which is consciously encoded and retrieved, encompassing semantic (facts) and episodic (events) types, and implicit (nondeclarative) memory, which includes procedural skills, priming, and conditioned responses. For example, recalling a scientific fact (semantic) or a personal event (episodic) involves explicit memory, while riding a bike (procedural) is implicit. Sensory memory feeds into short-term memory, which can be consolidated into long-term memory through processes like spaced repetition.",
+    "key_points": [
+      "Define sensory memory (iconic, echoic) and short-term/working memory.",
+      "Explain long-term memory and its subdivision into explicit (declarative) and implicit (nondeclarative).",
+      "Provide examples: semantic (facts), episodic (events), procedural (skills).",
+      "Mention that sensory memory feeds into short-term, which can be encoded into long-term.",
+      "Note that explicit memory is conscious, implicit is unconscious."
+    ]
+  },
+  {
+    "id": "essay-056",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Cognition and Language",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain how the Sapir-Whorf hypothesis can be tested using the number of words a language has for a concept, such as color. What would a researcher expect to find if the hypothesis is true, and what alternative explanation might account for the results?",
+    "model_answer": "The Sapir-Whorf hypothesis posits that language influences thought, so a researcher would predict that speakers of a language with more words for a color (e.g., red) would show finer discrimination and better memory for shades of that color than speakers of languages with fewer terms. If the hypothesis holds, language 1 (with the most red words) would enable more detailed color memory. However, an alternative explanation is that cultural or environmental factors, not language itself, drive both vocabulary and perceptual differences, making the correlation spurious.",
+    "key_points": [
+      "Define Sapir-Whorf hypothesis: language shapes cognition/perception.",
+      "Predict more words → more detailed memory/discrimination (e.g., Language 1 for red).",
+      "Acknowledge alternative: culture/environment may explain differences.",
+      "Mention that the hypothesis is correlational, not causal."
+    ]
+  },
+  {
+    "id": "essay-057",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Consciousness and Sleep",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Compare and contrast the EEG, EMG, and physiological characteristics of REM sleep with those of slow-wave sleep (Stages 3 and 4). Explain how these differences relate to the occurrence of sleepwalking and the role of the pons.",
+    "model_answer": "REM sleep is characterized by beta waves on EEG with inconsistent frequency, low EMG activity (muscle atonia), and elevated heart rate and respiration similar to wakefulness. In contrast, slow-wave sleep (Stages 3 and 4) shows delta waves with high amplitude and lower frequency, moderate EMG activity, and reduced physiological functions. Sleepwalking occurs during slow-wave sleep, not REM, because the pons normally inhibits movement during REM, preventing physical responses to dreams. The low EMG in REM reflects this inhibition, whereas in slow-wave sleep, the pons is not as active in suppressing movement.",
+    "key_points": [
+      "REM sleep: beta waves, low EMG, heart rate/respiration similar to wakefulness.",
+      "Slow-wave sleep: delta waves, high amplitude, low frequency, moderate EMG.",
+      "Sleepwalking occurs in Stages 3 and 4 (slow-wave sleep).",
+      "The pons prevents movement during REM, leading to muscle atonia.",
+      "EMG differences: low in REM, moderate in slow-wave sleep."
+    ]
+  },
+  {
+    "id": "essay-058",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Motivation and Emotion",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Compare and contrast the James-Lange, Cannon-Bard, and Schachter-Singer theories of emotion, focusing on the role of physiological arousal and cognitive interpretation. Use a specific example to illustrate each theory.",
+    "model_answer": "The James-Lange theory posits that an external stimulus triggers physiological arousal, which is then interpreted as emotion (e.g., seeing a bear causes trembling, and we feel fear because we tremble). The Cannon-Bard theory argues that physiological arousal and emotion occur simultaneously and independently (e.g., seeing a bear causes both trembling and fear at the same time). The Schachter-Singer two-factor theory adds cognitive interpretation: physiological arousal occurs first, and then we identify the reason for the arousal to label the emotion (e.g., seeing a bear causes trembling, and we interpret that trembling as fear because of the context). Thus, James-Lange and Schachter-Singer both sequence arousal before emotion, but Schachter-Singer emphasizes cognitive appraisal, whereas Cannon-Bard rejects a causal sequence.",
+    "key_points": [
+      "James-Lange: stimulus -> physiological arousal -> emotion",
+      "Cannon-Bard: stimulus triggers arousal and emotion simultaneously",
+      "Schachter-Singer: stimulus -> arousal -> cognitive interpretation -> emotion",
+      "Provide an example for each theory"
+    ]
+  },
+  {
+    "id": "essay-059",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Stress and Coping",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the cognitive appraisal model of stress, including primary and secondary appraisal, and explain how constant reappraisal and reframing can be used as coping strategies.",
+    "model_answer": "The cognitive appraisal model, proposed by Lazarus, involves primary appraisal, where an individual assesses whether a situation is a threat or stressor, and secondary appraisal, where they evaluate coping options. Constant reappraisal involves monitoring the stressor to determine if it still poses a threat, allowing for adjustments in coping. Reframing is a technique where an individual changes their perspective to view a stressor as eustress (positive stress) rather than distress, which can be motivating.",
+    "key_points": [
+      "Primary appraisal: assessment of threat or stressor.",
+      "Secondary appraisal: evaluation of coping strategies.",
+      "Constant reappraisal: ongoing monitoring of the stressor.",
+      "Reframing: changing perspective to see stressor as eustress.",
+      "Eustress is positive stress; distress is negative stress."
+    ]
+  },
+  {
+    "id": "essay-060",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Personality",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the key differences between borderline personality disorder (BPD) and obsessive-compulsive personality disorder (OCPD), particularly focusing on how individuals with each disorder perceive their symptoms. Use the concepts of ego-syntonic and ego-dystonic to explain this difference.",
+    "model_answer": "Borderline personality disorder is characterized by emotional instability, impulsivity, and unstable relationships, and individuals often experience significant distress from their symptoms, which are ego-dystonic. In contrast, obsessive-compulsive personality disorder involves rigidity, perfectionism, and preoccupation with orderliness, and individuals with OCPD view their symptoms as rational and desirable, making them ego-syntonic. Thus, BPD symptoms are typically distressing and unwanted, while OCPD symptoms are aligned with the individual's self-image and perceived as adaptive.",
+    "key_points": [
+      "BPD involves emotional instability, impulsivity, and unstable relationships.",
+      "OCPD involves rigidity, perfectionism, and preoccupation with orderliness.",
+      "BPD symptoms are ego-dystonic (cause distress, unwanted).",
+      "OCPD symptoms are ego-syntonic (seen as rational and desirable).",
+      "Individuals with BPD often experience their symptoms as problematic, while those with OCPD do not."
+    ]
+  },
+  {
+    "id": "essay-061",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Psychological Disorders",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the difference between ego-syntonic and ego-dystonic symptoms, and describe how this distinction can aid in differentiating personality disorders from anxiety disorders. Provide an example to illustrate your explanation.",
+    "model_answer": "Ego-syntonic symptoms are those that align with an individual's self-concept and are perceived as part of their personality, whereas ego-dystonic symptoms are experienced as distressing and inconsistent with one's self-image. Personality disorders often feature ego-syntonic symptoms, making them less likely to prompt seeking help, while anxiety disorders typically involve ego-dystonic symptoms that cause discomfort. For example, a person with obsessive-compulsive personality disorder may view their perfectionism as a positive trait (ego-syntonic), while a person with generalized anxiety disorder recognizes their excessive worry as problematic (ego-dystonic). This distinction helps clinicians differentiate between these categories and understand why individuals may or may not seek treatment.",
+    "key_points": [
+      "Define ego-syntonic and ego-dystonic.",
+      "Personality disorders are often ego-syntonic.",
+      "Anxiety disorders are often ego-dystonic.",
+      "Provide a concrete example.",
+      "Explain the clinical utility."
+    ]
+  },
+  {
+    "id": "essay-062",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Developmental Psychology",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain how observational learning, as demonstrated in Bandura's Bobo doll experiment, and the biological processes of synaptic pruning and neuroplasticity contribute to developmental changes in behavior during childhood.",
+    "model_answer": "Observational learning, shown in the Bobo doll experiment, allows children to acquire new behaviors by watching others, which is crucial for social development. Synaptic pruning strengthens frequently used neural connections while eliminating unused ones, refining the brain's circuitry based on experience. Neuroplasticity enables the brain to reorganize and adapt, supporting the learning and memory processes that underlie developmental changes. Together, these mechanisms illustrate how experience shapes both behavior and brain structure during development.",
+    "key_points": [
+      "Observational learning involves acquiring behaviors through watching models, as in Bandura's Bobo doll study.",
+      "Synaptic pruning removes underused synapses, refining neural circuits during development.",
+      "Neuroplasticity allows the brain to change and adapt in response to experience.",
+      "These processes together explain how environmental and biological factors influence developmental changes."
+    ]
+  },
+  {
+    "id": "essay-063",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Social Psychology",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the phenomenon of social facilitation, and explain how it can lead to opposite performances in two individuals performing the same task in front of an audience. Use the example of cheerleaders Jamie and Rebecca to illustrate your explanation.",
+    "model_answer": "Social facilitation refers to the tendency for individuals to perform better on simple or well-learned tasks when in the presence of others, but worse on complex or unfamiliar tasks. Jamie, who had practiced the routine often and found it simple, performed better due to the arousal from the audience enhancing her dominant response. Rebecca, who was less familiar and perceived the task as difficult, experienced impaired performance because the arousal increased her dominant but incorrect responses, leading to a mistake.",
+    "key_points": [
+      "Define social facilitation as improved performance on simple/well-learned tasks in the presence of others.",
+      "Note that arousal from others enhances dominant responses, which can be correct for simple tasks and incorrect for complex tasks.",
+      "Apply to Jamie: well-practiced, simple task, so arousal improved performance.",
+      "Apply to Rebecca: less familiar, difficult task, so arousal worsened performance."
+    ]
+  },
+  {
+    "id": "essay-064",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Biological Bases of Behavior",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the hierarchy of acid–base definitions (Arrhenius, Brønsted–Lowry, and Lewis) and describe how water can act as both an acid and a base. Provide an example of a species that is amphoteric but not amphiprotic, and justify your answer.",
+    "model_answer": "The Arrhenius definition is the most restrictive, applying only to substances that produce H+ or OH− in water. The Brønsted–Lowry definition broadens this to any proton donor or acceptor, regardless of solvent. The Lewis definition is the most general, involving electron-pair donation and acceptance, which includes species without hydrogen. Water is amphoteric because it can act as either an acid or a base; specifically, it is amphiprotic because it can donate or accept a proton (H+). An example of an amphoteric but not amphiprotic species is Al(OH)3, which can react with both acids and bases but does not donate or accept protons in a Brønsted–Lowry sense; instead, it acts as a Lewis acid or base by accepting or donating electron pairs.",
+    "key_points": [
+      "Correctly orders the definitions from most to least restrictive: Arrhenius < Brønsted–Lowry < Lewis.",
+      "Explains that water is both amphoteric and amphiprotic because it can donate or accept a proton.",
+      "Provides a valid example of an amphoteric but not amphiprotic species (e.g., Al(OH)3, ZnO, etc.) and explains why it is not amphiprotic (it does not donate/accept H+).",
+      "Clarifies that amphiprotic is a subset of amphoteric specifically involving proton transfer."
+    ]
+  },
+  {
+    "id": "essay-065",
+    "type": "essay",
+    "subject": "Psychology",
+    "topic": "Research Methods and Statistics",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the FINER method for evaluating a research question. For each component, provide a brief explanation and an example of a potential issue that would make a study fail that criterion.",
+    "model_answer": "The FINER method evaluates research questions based on Feasibility, Interest, Novelty, Ethics, and Relevance. Feasibility concerns whether the study can be conducted given resources, time, and access to subjects. Interest refers to whether the scientific community finds the question worth investigating. Novelty asks if the question adds new knowledge. Ethics ensures the study respects participants' rights and welfare. Relevance considers whether the findings will apply to real-world settings or advance the field. For example, a study needing rare bacteria might fail feasibility, and a study with coercive recruitment would violate ethics.",
+    "key_points": [
+      "Define FINER as Feasibility, Interest, Novelty, Ethics, Relevance.",
+      "Explain each component with an example of a failure for each.",
+      "Mention practical constraints like resources, time, and subject availability for feasibility.",
+      "Highlight ethical considerations, especially in human subjects research.",
+      "Note that relevance involves applicability to real-world populations or settings."
+    ]
+  },
+  {
+    "id": "essay-066",
+    "type": "essay",
+    "subject": "Sociology",
+    "topic": "Social Structure and Institutions",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Define social movements and framing, and explain how these concepts relate to institutional change, using examples from the NHS documents.",
+    "model_answer": "A social movement is a collective challenge based on common purposes and social solidarities, involving sustained interaction with elites and authorities, as defined by Tarrow. Framing is the process by which leaders construct and articulate their message to win people to their cause and call them to action. In the NHS, social movements were compared to project management approaches, emphasizing peer-to-peer change, while framing was used by change agents to promote institutional transformation.",
+    "key_points": [
+      "Define social movement using Tarrow's or Zirakzadeh's definition.",
+      "Define framing as message construction to inspire action.",
+      "Explain how social movements and framing apply to institutional change, citing NHS examples.",
+      "Contrast social movement approach with project management approach."
+    ]
+  },
+  {
+    "id": "essay-067",
+    "type": "essay",
+    "subject": "Sociology",
+    "topic": "Culture and Socialization",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the four stages of culture shock and describe the possible outcomes of an individual's experience with culture shock, as outlined in the study material.",
+    "model_answer": "Culture shock progresses through four stages: honeymoon, negotiation, adjustment, and acceptance. In the honeymoon phase, the individual is excited and fascinated by the new culture. The negotiation phase involves frustration, anxiety, and homesickness. During adjustment, the person becomes accustomed to the new culture and establishes routines. Finally, in acceptance, the individual can fully participate in the new culture. Possible outcomes include rejection (poor adjustment), assimilation (complete adoption of new culture, rare, ~10%), cosmopolitanism (blend of old and new cultures, ~30%), and marginalization or other outcomes, with some individuals cycling through stages.",
+    "key_points": [
+      "List the four stages of culture shock in correct order: honeymoon, negotiation, adjustment, acceptance.",
+      "Describe key characteristics of each stage, especially negotiation (anxiety, loneliness, homesickness) and acceptance (full participation).",
+      "Mention possible outcomes: rejection, assimilation (10%), cosmopolitanism (30%), and note that non-assimilation is not a typical outcome.",
+      "Explain that some individuals may not fully adjust and may perceive the new culture as hostile."
+    ]
+  },
+  {
+    "id": "essay-068",
+    "type": "essay",
+    "subject": "Sociology",
+    "topic": "Social Stratification and Inequality",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the difference between a class system and a caste system, and describe how each affects social mobility. Provide an example of each.",
+    "model_answer": "A class system is a form of social stratification based on achieved status, where individuals can move up or down the social hierarchy through their own efforts, such as education or employment. A caste system, in contrast, is based on ascribed status, where social position is determined at birth and is rigid, with little to no mobility. For example, in a class system, a person born into poverty can become wealthy through hard work, while in a caste system, a person born into a lower caste is typically confined to that caste for life, with societal restrictions preventing upward mobility.",
+    "key_points": [
+      "Class system: based on achieved status, allows social mobility through individual effort.",
+      "Caste system: based on ascribed status, rigid and limits mobility, often determined by birth.",
+      "Example of class system: moving from a lower to higher socioeconomic class via education or career.",
+      "Example of caste system: being born into a specific caste and being restricted to it, with barriers to education or occupation."
+    ]
+  },
+  {
+    "id": "essay-069",
+    "type": "essay",
+    "subject": "Sociology",
+    "topic": "Demography and Urbanization",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Explain the demographic transition model proposed by Warren Thompson, including the characteristics of each stage and the implications for population growth. How does this model relate to urbanization and modernization?",
+    "model_answer": "The demographic transition model describes the shift from high birth and death rates in pre-industrial societies to low birth and death rates in industrialized societies. Stage 1 (pre-industrial) has high fertility and mortality rates, leading to stable population. Stage 2 (urbanization/early industrial) sees declining death rates due to improved medicine and sanitation, causing rapid population growth. Stage 3 (mature industrial) has declining birth rates due to urbanization and education, slowing growth. Stage 4 (post-industrial) has low birth and death rates, with stable or declining population. This model links to urbanization as people move to cities, and modernization as economic and social changes occur.",
+    "key_points": [
+      "Stage 1: high fertility and mortality, stable population",
+      "Stage 2: declining mortality, high fertility, rapid growth",
+      "Stage 3: declining fertility, slowing growth",
+      "Stage 4: low fertility and mortality, stable or declining",
+      "Connection to urbanization and modernization"
+    ]
+  },
+  {
+    "id": "essay-070",
+    "type": "essay",
+    "subject": "Sociology",
+    "topic": "Social Interaction and Groups",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the difference between symbolic interactionism and social constructionism, and provide an example of each from social interaction.",
+    "model_answer": "Symbolic interactionism focuses on the meanings individuals create and exchange through everyday interactions, emphasizing micro-level processes. Social constructionism, on the other hand, explains how society collectively assigns value and meaning to constructs, such as respect or money. For example, raising hands in class is a symbolic interaction that conveys respect, while the assignment of value to rare stones as currency reflects social constructionism.",
+    "key_points": [
+      "Symbolic interactionism is micro-level, focusing on meanings in interactions.",
+      "Social constructionism is about society assigning value/meaning to constructs.",
+      "Provide a clear example for each theory."
+    ]
+  },
+  {
+    "id": "essay-071",
+    "type": "essay",
+    "subject": "Sociology",
+    "topic": "Social Change and Globalization",
+    "section": "Psychological, Social, & Biological Foundations",
+    "difficulty": "medium",
+    "prompt": "Based on the provided excerpts, compare and contrast the definitions of a 'social movement' given by Cyrus Zirakzadeh and Sidney Tarrow. How might these definitions apply to a contemporary example, such as the climate change movement or a grassroots health campaign?",
+    "model_answer": "Zirakzadeh's definition emphasizes a conscious attempt to build a radically new social order, involving people from diverse backgrounds and using confrontational, disruptive tactics. Tarrow's definition focuses on collective challenges based on common purposes and social solidarities, in sustained interaction with elites, opponents, and authorities. A contemporary example like the climate change movement can be seen through both lenses: it seeks radical change (Zirakzadeh) but also engages in sustained interaction with governments and corporations (Tarrow).",
+    "key_points": [
+      "Zirakzadeh: conscious attempt at a radically new social order, broad social backgrounds, confrontational/disruptive tactics.",
+      "Tarrow: collective challenges, common purposes, social solidarities, sustained interaction with elites/opponents/authorities.",
+      "Application to a contemporary movement: show how it fits both or one definition, and discuss the implications for strategy and success."
+    ]
+  },
+  {
+    "id": "essay-072",
+    "type": "essay",
+    "subject": "Biology",
+    "topic": "Nervous and Endocrine Systems",
+    "section": "Biological & Biochemical Foundations",
+    "difficulty": "medium",
+    "prompt": "Describe the functional organization of the human nervous system, including the central and peripheral divisions. Differentiate between afferent and efferent neurons, and explain the roles of the somatic and autonomic nervous systems. Additionally, outline the physiological effects of the sympathetic and parasympathetic systems.",
+    "model_answer": "The nervous system is divided into the central nervous system (CNS), comprising the brain and spinal cord, and the peripheral nervous system (PNS), which includes all neural tissue outside the CNS. Afferent (sensory) neurons transmit signals from sensory receptors to the CNS, while efferent (motor) neurons carry commands from the CNS to effectors such as muscles and glands. The PNS is functionally divided into the somatic nervous system, which controls voluntary movements via motor neurons, and the autonomic nervous system, which regulates involuntary functions. The autonomic system has two divisions: the sympathetic system, which prepares the body for 'fight or flight' (increasing heart rate, dilating pupils, etc.), and the parasympathetic system, which promotes 'rest and digest' (slowing heart rate, stimulating digestion). Together, these systems maintain homeostasis and coordinate responses to internal and external stimuli.",
+    "key_points": [
+      "Distinguishes between CNS (brain, spinal cord) and PNS (all other neural tissue).",
+      "Defines afferent neurons as carrying sensory info to CNS and efferent neurons as carrying motor commands away from CNS.",
+      "Explains somatic nervous system controls voluntary actions; autonomic controls involuntary functions.",
+      "Describes sympathetic effects (e.g., increased heart rate, bronchodilation) and parasympathetic effects (e.g., decreased heart rate, increased digestion).",
+      "Mentions the role in homeostasis and coordination."
+    ]
+  },
+  {
+    "id": "essay-073",
+    "type": "essay",
+    "subject": "Critical Analysis and Reasoning Skills (CARS)",
+    "topic": "Philosophy and Ethics",
+    "section": "Critical Analysis and Reasoning Skills",
+    "difficulty": "medium",
+    "prompt": "Compare and contrast the principle of autonomy in medical ethics with the principle of respect for persons in research ethics, using the four tenets of medical ethics and the Belmont Report principles.",
+    "model_answer": "In medical ethics, autonomy refers to the patient's right to make decisions about their own healthcare, and it is one of the four core tenets alongside beneficence, nonmaleficence, and justice. In research ethics, the Belmont Report's principle of respect for persons encompasses two distinct requirements: the need to acknowledge autonomy (which involves informed consent and protecting those with diminished autonomy) and the need to protect persons with diminished autonomy, such as children or those with cognitive impairments. Thus, while autonomy focuses on respecting an individual's choices in clinical care, respect for persons in research extends to safeguarding vulnerable populations and ensuring that participation is voluntary and informed.",
+    "key_points": [
+      "Define autonomy as a patient's right to make healthcare decisions.",
+      "Define respect for persons as encompassing both autonomy and protection of those with diminished autonomy.",
+      "Mention the Belmont Report's three principles: respect for persons, beneficence, justice.",
+      "Explain that respect for persons includes additional protections for vulnerable populations.",
+      "Note that in research, informed consent is a key application of respect for persons."
+    ]
+  },
+  {
+    "id": "essay-074",
+    "type": "essay",
+    "subject": "Critical Analysis and Reasoning Skills (CARS)",
+    "topic": "Literature and Literary Criticism",
+    "section": "Critical Analysis and Reasoning Skills",
+    "difficulty": "medium",
+    "prompt": "Describe the author's argument in the provided excerpt regarding the lack of scientific evidence for SARS-CoV-2, and explain how the author uses rhetorical questions and analogies to support this argument. What is the author's underlying purpose in questioning the existence of the virus?",
+    "model_answer": "The author argues that there is no direct scientific evidence for the isolation of SARS-CoV-2, its spike proteins, or its mechanism of infection, suggesting that the virus may not exist as described. They use rhetorical questions to emphasize the absence of proof and an analogy comparing electron micrographs to 'bits of paper' to undermine the validity of visual evidence. The underlying purpose is to cast doubt on the official narrative and encourage skepticism toward scientific claims, possibly to influence public opinion on health measures.",
+    "key_points": [
+      "Identifies the claim that no direct evidence exists for virus isolation, spike proteins, or infection mechanism.",
+      "Notes the use of rhetorical questions to highlight gaps in evidence.",
+      "Mentions the analogy of electron micrographs to 'bits of paper' to critique visual evidence.",
+      "Explains the purpose as promoting skepticism or challenging mainstream scientific consensus."
+    ]
+  },
+  {
+    "id": "essay-075",
+    "type": "essay",
+    "subject": "Critical Analysis and Reasoning Skills (CARS)",
+    "topic": "Art History and Aesthetics",
+    "section": "Critical Analysis and Reasoning Skills",
+    "difficulty": "medium",
+    "prompt": "Based on the provided excerpts, explain the author's critique of 'smart' technologies and their connection to the concept of a 'Smart Grid' and 'smart cities'. What broader societal concern does the author raise about these technologies and their implementation?",
+    "model_answer": "The author critiques 'smart' technologies as tools of surveillance and control, arguing they interlock into a global Smart Grid that connects human society and minds into a centrally-dictated 'hive' mind. 'Smart cities' are described as megacities of total surveillance and control through AI. The broader concern is that these technologies are rolled out without adequate testing, and that they are designed to enforce conformity and eliminate independent income, ultimately leading to a loss of individual autonomy.",
+    "key_points": [
+      "Identifies 'smart' technologies as controlling and surveillance-oriented.",
+      "Explains the Smart Grid as a system that connects human minds to a 'hive' mind.",
+      "Defines 'smart cities' as centers of AI-driven total surveillance.",
+      "Mentions lack of testing (e.g., 5G) and the goal of forcing people into the system.",
+      "Highlights the threat to individual autonomy and independent income."
+    ]
+  },
+  {
+    "id": "essay-076",
+    "type": "essay",
+    "subject": "Critical Analysis and Reasoning Skills (CARS)",
+    "topic": "History",
+    "section": "Critical Analysis and Reasoning Skills",
+    "difficulty": "medium",
+    "prompt": "Discuss the historical significance of Sabbatai Zevi and the Sabbatian movement as described in the provided excerpts. How did the movement's practices and beliefs contrast with mainstream Judaism, and what was the reaction of traditional Jewish authorities?",
+    "model_answer": "According to the excerpts, Sabbatai Zevi led a messianic movement in the 17th century that attracted a massive following across Africa and Asia, promising a return to the Promised Land. However, the movement was not Judaism but an inversion of its principles: it celebrated on fast days, encouraged forbidden acts, and even included incest. Traditional rabbis excommunicated Zevi, and later Frank, indicating strong opposition from mainstream Jewish authorities.",
+    "key_points": [
+      "Sabbatai Zevi led a large 17th-century messianic movement.",
+      "The movement inverted Jewish practices, e.g., feasting on fast days and encouraging forbidden acts.",
+      "Traditional rabbis excommunicated Zevi and Frank, showing rejection by mainstream Judaism.",
+      "The movement's goal was a return to the Promised Land."
+    ]
+  },
+  {
+    "id": "essay-077",
+    "type": "essay",
+    "subject": "Critical Analysis and Reasoning Skills (CARS)",
+    "topic": "Political Science and Government",
+    "section": "Critical Analysis and Reasoning Skills",
+    "difficulty": "medium",
+    "prompt": "Explain how the author's depiction of behavioral science advisory groups (e.g., SPI-B) and their role in government decision-making reflects broader claims about the relationship between science, political authority, and public consent.",
+    "model_answer": "The author argues that behavioral science advisory groups like SPI-B are not neutral scientific bodies but instruments of state manipulation designed to engineer public compliance. By framing their advice as 'the science' that politicians follow, the author claims that political authority is bolstered by a manufactured scientific consensus, undermining genuine democratic consent and enabling 'government fascism through public compliance.' This reflects a distrust of institutional science and a belief that expertise is co-opted for political control.",
+    "key_points": [
+      "Describes SPI-B and similar groups as tools for manipulating public behavior.",
+      "Connects the use of 'the science' to legitimizing government policy.",
+      "Argues that this undermines genuine public consent and democratic processes.",
+      "Highlights the author's view of science as co-opted by political agendas."
+    ]
+  },
+  {
+    "id": "essay-078",
+    "type": "essay",
+    "subject": "Critical Analysis and Reasoning Skills (CARS)",
+    "topic": "Economics and Business",
+    "section": "Critical Analysis and Reasoning Skills",
+    "difficulty": "medium",
+    "prompt": "Based on the provided excerpts, explain the author's central claim about the relationship between lockdowns and the concentration of wealth. What evidence or reasoning does the author use to support this claim, and what are the potential weaknesses in this reasoning?",
+    "model_answer": "The author claims that lockdowns were intentionally implemented to destroy small businesses and concentrate wealth among large corporations like Amazon and Walmart, which were deemed 'essential.' Evidence cited includes the financial growth of wealthy individuals like Jeff Bezos and the closure of 'mom and pop' businesses. Weaknesses include overgeneralization from anecdotal evidence, a conspiracy narrative without direct evidence, and ignoring public health justifications for lockdowns.",
+    "key_points": [
+      "Identifies the author's claim: lockdowns are a deliberate scheme to increase dependency and wealth concentration.",
+      "Provides supporting examples from the text: 'essential' large corporations vs. small businesses, wealth of Bezos etc.",
+      "Critiques the reasoning: anecdotal evidence, lack of causal proof, omission of health rationale."
+    ]
+  },
+  {
+    "id": "essay-079",
+    "type": "essay",
+    "subject": "Critical Analysis and Reasoning Skills (CARS)",
+    "topic": "Sociology and Anthropology",
+    "section": "Critical Analysis and Reasoning Skills",
+    "difficulty": "medium",
+    "prompt": "Explain the difference between manifest and latent functions and dysfunctions in sociology, using the example of Social Security as described in the corpus. Provide a specific illustration of each concept.",
+    "model_answer": "Manifest functions are the intended and recognized consequences of a social institution, while latent functions are unintended and unrecognized. Dysfunctions are consequences that disrupt social order. For Social Security, a manifest function is providing financial security for lower-income workers, while a latent dysfunction is creating opportunities for identity theft. Another latent function could be promoting employment in administrative sectors.",
+    "key_points": [
+      "Define manifest and latent functions/dysfunctions",
+      "Use Social Security as the example",
+      "Provide at least one manifest function (e.g., financial security)",
+      "Provide at least one latent dysfunction (e.g., identity theft)",
+      "Optionally mention another latent function (e.g., employment)"
+    ]
+  },
+  {
+    "id": "essay-080",
+    "type": "essay",
+    "subject": "Critical Analysis and Reasoning Skills (CARS)",
+    "topic": "Psychology and Social Behavior",
+    "section": "Critical Analysis and Reasoning Skills",
+    "difficulty": "medium",
+    "prompt": "Explain the difference between primary socialization and secondary socialization, and provide an example of each. How does anticipatory socialization differ from these two types?",
+    "model_answer": "Primary socialization occurs in young children as they first learn the expectations and values of their society, typically through family. Secondary socialization involves learning norms and values that apply to a subgroup within society, such as learning professional norms in medical school. Anticipatory socialization is when an individual rehearses behaviors in preparation for future social relationships, such as a student practicing interviewing skills before a job interview.",
+    "key_points": [
+      "Define primary socialization as early learning of societal norms and values.",
+      "Define secondary socialization as learning subgroup-specific norms and values.",
+      "Provide examples for each type.",
+      "Define anticipatory socialization and contrast it with primary/secondary."
+    ]
+  },
+  {
+    "id": "essay-081",
+    "type": "essay",
+    "subject": "Critical Analysis and Reasoning Skills (CARS)",
+    "topic": "Philosophy of Science and Technology",
+    "section": "Critical Analysis and Reasoning Skills",
+    "difficulty": "medium",
+    "prompt": "Discuss the claim that 'Science is no longer what is, but whatever people can be manipulated to believe that it is.' In your response, evaluate the epistemological implications of this statement, consider how it relates to the scientific method, and argue whether such a view is consistent with the practice of science as described in standard academic sources.",
+    "model_answer": "The claim suggests that science has become a social construct manipulated by powerful interests, rather than an objective pursuit of truth. Epistemologically, this undermines the foundational principle of empiricism and falsifiability, as it implies that scientific conclusions are determined by persuasion rather than evidence. While science is indeed influenced by social factors, the scientific method's reliance on reproducible experiments and peer review provides a mechanism to correct biases. Therefore, the claim is hyperbolic and inconsistent with the normative practice of science, though it highlights real concerns about the integrity of scientific communication.",
+    "key_points": [
+      "Identify the epistemological challenge to objective knowledge.",
+      "Reference the scientific method's principles (empiricism, falsifiability, peer review).",
+      "Acknowledge social influences on science while arguing for its self-correcting nature.",
+      "Critique the claim as exaggerated but note legitimate concerns about manipulation."
+    ]
+  },
+  {
+    "id": "essay-082",
+    "type": "essay",
+    "subject": "Critical Analysis and Reasoning Skills (CARS)",
+    "topic": "Cultural Studies and Religion",
+    "section": "Critical Analysis and Reasoning Skills",
+    "difficulty": "easy",
+    "prompt": "Explain the difference between cultural transmission and cultural assimilation, and provide an example of each from the context of immigrant communities.",
+    "model_answer": "Cultural transmission refers to the process by which culture is passed down from one generation to the next, such as when Russian-American children learn traditional Russian dance forms from their parents or grandparents. Cultural assimilation, on the other hand, occurs when a minority group adopts the cultural norms of the dominant society, often leading to a loss of their original cultural practices. An example of cultural assimilation would be Russian-Americans who grow up in American neighborhoods and become avid followers of American sports, thereby adopting mainstream American cultural practices.",
+    "key_points": [
+      "Cultural transmission is the passing of cultural elements (e.g., dance forms) across generations.",
+      "Cultural assimilation is the adoption of the dominant culture's practices, often at the expense of one's original culture.",
+      "The example of Russian-American children partaking in Russian dance forms illustrates cultural transmission.",
+      "The example of Russian-Americans following American sports illustrates cultural assimilation."
+    ]
+  }
+];

@@ -5,7 +5,8 @@ const Data = (function () {
   const decks = typeof DECKS !== "undefined" ? DECKS : [];
   const fullDecks = typeof FULL_DECKS !== "undefined" ? FULL_DECKS : [];
   const hardDecks = typeof HARD_DECKS !== "undefined" ? HARD_DECKS : [];
-  const allDecks = decks.concat(fullDecks).concat(hardDecks);
+  const scenarioDecks = typeof SCENARIO_DECKS !== "undefined" ? SCENARIO_DECKS : [];
+  const allDecks = decks.concat(fullDecks).concat(hardDecks).concat(scenarioDecks);
 
   allDecks.forEach((deck) => {
     deck.questions.forEach((q, i) => {
@@ -31,5 +32,5 @@ const Data = (function () {
     "Critical Analysis and Reasoning Skills",
   ];
 
-  return { decks, fullDecks, hardDecks, allDecks, allQuestions, DIFFICULTIES, difficultyOf, SECTIONS };
+  return { decks, fullDecks, hardDecks, scenarioDecks, allDecks, allQuestions, DIFFICULTIES, difficultyOf, SECTIONS };
 })();

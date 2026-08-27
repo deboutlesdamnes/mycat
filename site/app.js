@@ -12,7 +12,8 @@ let answered = false;
 // Combine hand-written decks with the full-length generated decks.
 const ALL_DECKS = (typeof DECKS !== "undefined" ? DECKS : []).concat(
   typeof FULL_DECKS !== "undefined" ? FULL_DECKS : [],
-  typeof HARD_DECKS !== "undefined" ? HARD_DECKS : []
+  typeof HARD_DECKS !== "undefined" ? HARD_DECKS : [],
+  typeof SCENARIO_DECKS !== "undefined" ? SCENARIO_DECKS : []
 );
 
 ALL_DECKS.forEach((deck) => {
@@ -303,6 +304,30 @@ function renderHome() {
       hardGrid.appendChild(card);
     });
     root.appendChild(hardGrid);
+  }
+
+  // --- Scenario-based questions ---
+  const scenarioDecks = (typeof SCENARIO_DECKS !== "undefined" ? SCENARIO_DECKS : []);
+  if (scenarioDecks.length) {
+    const scenHeading = document.createElement("p");
+    scenHeading.className = "home-heading";
+    scenHeading.textContent = "Scenario questions";
+    root.appendChild(scenHeading);
+
+    const scenGrid = document.createElement("div");
+    scenGrid.className = "set-grid";
+    scenarioDecks.forEach((deck) => {
+      const card = document.createElement("button");
+      card.className = "set-card";
+      card.innerHTML = `
+        <span class="set-title">${deck.title}</span>
+        <span class="set-section">${deck.section}</span>
+        <span class="set-count">${deck.questions.length} questions · untimed</span>
+      `;
+      card.addEventListener("click", () => startDeck(deck));
+      scenGrid.appendChild(card);
+    });
+    root.appendChild(scenGrid);
   }
 
   // --- Topic decks ---
