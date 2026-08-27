@@ -167,7 +167,7 @@
             </div>` : ""}
           <div class="player-question" style="${passage ? "" : "grid-column:1 / -1;max-width:640px;margin:0 auto"}">
             <div style="display:flex;gap:8px;align-items:center;margin-bottom:12px">
-              <span class="diff-tag level-${Data.difficultyOf(q)}">${Data.difficultyOf(q)}</span>
+              <span class="level-tag level-${Data.difficultyOf(q)}">${Data.difficultyOf(q)}</span>
               ${q.topic ? `<span class="tag tag-neutral">${q.topic}</span>` : ""}
             </div>
             <p class="question-text">${escapeHtml(q.question)}</p>
@@ -239,7 +239,7 @@
       { key: "good", label: "Good" }, { key: "easy", label: "Easy" },
     ];
     row.innerHTML = grades.map((g) => `
-      <button class="grade-btn review-${g.key} ${((g.key === "again" && !wasCorrect) || (g.key === "good" && wasCorrect)) ? "suggested" : ""}" data-key="${g.key}">${g.label}</button>
+      <button class="review-btn review-${g.key} ${((g.key === "again" && !wasCorrect) || (g.key === "good" && wasCorrect)) ? "suggested" : ""}" data-key="${g.key}">${g.label}</button>
     `).join("");
     row.querySelectorAll("button").forEach((btn) => {
       btn.addEventListener("click", () => { Store.applyGrade(qid, btn.dataset.key); idx += 1; renderPlayer(); });

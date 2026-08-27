@@ -128,10 +128,10 @@
     slot.innerHTML = `
       <div class="k" style="margin-top:24px">How well did you know it?</div>
       <div class="review-row" style="margin-top:10px">
-        <button class="grade-btn review-again" data-key="again">Again</button>
-        <button class="grade-btn review-hard" data-key="hard">Hard</button>
-        <button class="grade-btn review-good" data-key="good">Good</button>
-        <button class="grade-btn review-easy" data-key="easy">Easy</button>
+        <button class="review-btn review-again" data-key="again">Again</button>
+        <button class="review-btn review-hard" data-key="hard">Hard</button>
+        <button class="review-btn review-good" data-key="good">Good</button>
+        <button class="review-btn review-easy" data-key="easy">Easy</button>
       </div>
     `;
     slot.querySelectorAll("button").forEach((btn) => {

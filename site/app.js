@@ -11,7 +11,8 @@ let answered = false;
 
 // Combine hand-written decks with the full-length generated decks.
 const ALL_DECKS = (typeof DECKS !== "undefined" ? DECKS : []).concat(
-  typeof FULL_DECKS !== "undefined" ? FULL_DECKS : []
+  typeof FULL_DECKS !== "undefined" ? FULL_DECKS : [],
+  typeof HARD_DECKS !== "undefined" ? HARD_DECKS : []
 );
 
 ALL_DECKS.forEach((deck) => {
@@ -279,6 +280,30 @@ function renderHome() {
     testGrid.appendChild(card);
   });
   root.appendChild(testGrid);
+
+  // --- Hard / complex scenarios ---
+  const hardDecks = (typeof HARD_DECKS !== "undefined" ? HARD_DECKS : []);
+  if (hardDecks.length) {
+    const hardHeading = document.createElement("p");
+    hardHeading.className = "home-heading";
+    hardHeading.textContent = "Hard scenarios";
+    root.appendChild(hardHeading);
+
+    const hardGrid = document.createElement("div");
+    hardGrid.className = "set-grid";
+    hardDecks.forEach((deck) => {
+      const card = document.createElement("button");
+      card.className = "set-card";
+      card.innerHTML = `
+        <span class="set-title">${deck.title}</span>
+        <span class="set-section">${deck.section}</span>
+        <span class="set-count">${deck.questions.length} questions · untimed</span>
+      `;
+      card.addEventListener("click", () => startDeck(deck));
+      hardGrid.appendChild(card);
+    });
+    root.appendChild(hardGrid);
+  }
 
   // --- Topic decks ---
   const topicHeading = document.createElement("p");
