@@ -13,7 +13,8 @@ let answered = false;
 const ALL_DECKS = (typeof DECKS !== "undefined" ? DECKS : []).concat(
   typeof FULL_DECKS !== "undefined" ? FULL_DECKS : [],
   typeof HARD_DECKS !== "undefined" ? HARD_DECKS : [],
-  typeof SCENARIO_DECKS !== "undefined" ? SCENARIO_DECKS : []
+  typeof SCENARIO_DECKS !== "undefined" ? SCENARIO_DECKS : [],
+  typeof TOPUP_DECKS !== "undefined" ? TOPUP_DECKS : []
 );
 
 ALL_DECKS.forEach((deck) => {
@@ -330,32 +331,37 @@ function renderHome() {
     root.appendChild(scenGrid);
   }
 
-  // --- Topic decks ---
+  // --- Topic decks (built from the full bank, grouped by topic) ---
   const topicHeading = document.createElement("p");
   topicHeading.className = "home-heading";
   topicHeading.textContent = "Topic decks";
   root.appendChild(topicHeading);
 
+  const topicMap = {};
+  ALL_DECKS.forEach((d) => d.questions.forEach((q) => {
+    const t = q.topic || d.section || "Other";
+    (topicMap[t] = topicMap[t] || []).push(q);
+  }));
+
   const grid = document.createElement("div");
   grid.className = "set-grid";
-
-  (typeof DECKS !== "undefined" ? DECKS : []).forEach((deck) => {
-    const dueCount = countDue(deck);
-    const newCount = countNew(deck);
-    const card = document.createElement("button");
-    card.className = "set-card";
-    card.innerHTML = `
-      <span class="set-title">${deck.title}</span>
-      <span class="set-section">${deck.section}</span>
-      <span class="set-count">${deck.questions.length} cards</span>
-      <span class="badges">
-        ${dueCount ? `<span class="set-due">${dueCount} due</span>` : ""}
-        ${newCount ? `<span class="set-new">${newCount} new</span>` : ""}
-      </span>
-    `;
-    card.addEventListener("click", () => startDeck(deck));
-    grid.appendChild(card);
-  });
+  Object.entries(topicMap)
+    .sort((a, b) => b[1].length - a[1].length)
+    .forEach(([topic, qs]) => {
+      const card = document.createElement("button");
+      card.className = "set-card";
+      card.innerHTML = `
+        <span class="set-title">${topic}</span>
+        <span class="set-count">${qs.length} questions</span>
+      `;
+      card.addEventListener("click", () => startDeck({
+        id: "topic-" + topic.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+        title: topic,
+        section: topic,
+        questions: qs,
+      }));
+      grid.appendChild(card);
+    });
 
   root.appendChild(grid);
 }

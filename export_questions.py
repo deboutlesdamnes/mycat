@@ -35,6 +35,9 @@ def to_site_question(q):
         "correct": q["correct"],
         "explanation": q["explanation"],
         "difficulty": q.get("difficulty", "medium"),
+        "section": q.get("section", ""),
+        "topic": q.get("topic", ""),
+        "subject": q.get("subject", ""),
     }
     if q.get("passage"):
         out["passage"] = q["passage"]

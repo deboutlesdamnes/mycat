@@ -64,6 +64,17 @@
     return null;
   }
 
+  function topicDecks() {
+    const map = {};
+    Object.values(Data.allQuestions).forEach((q) => {
+      const t = q.topic || q.section || "Other";
+      map[t] = (map[t] || 0) + 1;
+    });
+    return Object.entries(map)
+      .map(([topic, n]) => ({ topic, n }))
+      .sort((a, b) => b.n - a.n);
+  }
+
   function renderPicker() {
     const store = Store.load();
     const due = Stats.dueCards(store);
@@ -107,7 +118,7 @@
       <div>
         <div class="k" style="margin-bottom:10px">Topic decks</div>
         <div class="deck-grid">
-          ${Data.decks.map((deck) => `<a class="deck-tile" href="practice.html?mode=deck&id=${deck.id}"><span class="deck-tile-title">${deck.title}</span><span class="deck-tile-sub">${deck.section}</span><span class="deck-tile-count">${deck.questions.length} questions</span></a>`).join("")}
+          ${topicDecks().map((t) => `<a class="deck-tile" href="practice.html?mode=topic&topic=${encodeURIComponent(t.topic)}"><span class="deck-tile-title">${t.topic}</span><span class="deck-tile-count">${t.n} questions</span></a>`).join("")}
         </div>
       </div>
     `;
