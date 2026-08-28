@@ -20,6 +20,7 @@ function defaultState() {
     activityLog: {},
     schedule: null,
     lastAnswerAt: 0,
+    updatedAt: 0,
   };
 }
 
@@ -43,15 +44,19 @@ const Store = {
       activityLog: s.activityLog || d.activityLog,
       schedule: s.schedule || d.schedule,
       lastAnswerAt: s.lastAnswerAt || 0,
+      updatedAt: s.updatedAt || 0,
     };
   },
 
   save(state) {
     try {
+      state.updatedAt = Date.now();
       localStorage.setItem(STORE_KEY, JSON.stringify(state));
     } catch {
       // ignore storage failures (private browsing, quota, etc.)
     }
+    // Optional cross-device sync (auth.js). No-op unless signed in.
+    if (typeof Auth !== "undefined" && Auth.notifyLocalChange) Auth.notifyLocalChange();
   },
 
   reset() {
