@@ -23,6 +23,6 @@
 //     for update using (auth.uid() = user_id);
 // ---------------------------------------------------------------------------
 window.SUPABASE_CONFIG = {
-  url: "",      // e.g. "https://abcdefghijklmno.supabase.co"
-  anonKey: "",  // the "anon" / "public" API key
+  url: "https://cesnimeepkzkhrtlvorf.supabase.co",     
+  anonKey: "sb_publishable_ejzLDuN30T5ecOl4H2tcuA_9jpdXSN1",  // the "anon" / "public" API key
 };

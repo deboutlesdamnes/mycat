@@ -4,7 +4,20 @@
 // and new pages. app.js only ever reads/writes `cards` and `saved` and does
 // a read-modify-write of the whole object, so extra top-level keys added
 // here round-trip through it safely without any migration needed.
-const STORE_KEY = "mycat_state_v2";
+//
+// When a local account is signed in (auth.js "local" mode), progress is
+// stored under a per-account key ("mycat_state_v2_<id>") instead, so each
+// account gets its own isolated progress in this browser.
+const GUEST_KEY = "mycat_state_v2";
+
+function storeKey() {
+  try {
+    const u = (typeof Auth !== "undefined" && Auth.localUser) ? Auth.localUser() : null;
+    return u ? GUEST_KEY + "_" + u.id : GUEST_KEY;
+  } catch (e) {
+    return GUEST_KEY;
+  }
+}
 const DAY_MS = 24 * 60 * 60 * 1000;
 const MIN_EASE = 1.3;
 const IDLE_CAP_MS = 5 * 60 * 1000; // don't count gaps longer than this as study time
@@ -28,7 +41,7 @@ const Store = {
   load() {
     let s;
     try {
-      s = JSON.parse(localStorage.getItem(STORE_KEY));
+      s = JSON.parse(localStorage.getItem(storeKey()));
     } catch {
       s = null;
     }
@@ -51,7 +64,7 @@ const Store = {
   save(state) {
     try {
       state.updatedAt = Date.now();
-      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+      localStorage.setItem(storeKey(), JSON.stringify(state));
     } catch {
       // ignore storage failures (private browsing, quota, etc.)
     }
@@ -60,7 +73,7 @@ const Store = {
   },
 
   reset() {
-    try { localStorage.removeItem(STORE_KEY); } catch {}
+    try { localStorage.removeItem(storeKey()); } catch {}
   },
 
   // ---------- SRS cards (SM-2), same scheduler as the classic app.js ----------

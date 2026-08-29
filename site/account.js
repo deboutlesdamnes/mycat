@@ -65,14 +65,20 @@
 
   function renderSignedIn() {
     const email = Auth.email() || "your account";
+    const callout = Auth.mode === "supabase"
+      ? `<div class="callout" style="margin-bottom:18px">
+          <div class="k">Cross-device sync is on</div>
+          <p>Your progress, saved cards, stats and study plan sync automatically to this account whenever they change.</p>
+        </div>`
+      : `<div class="callout" style="margin-bottom:18px">
+          <div class="k">Account active</div>
+          <p>Your progress, saved cards, stats and study plan are saved to this account in this browser.</p>
+        </div>`;
     root.innerHTML = shell(`
       <div class="k" style="margin-bottom:8px">Account</div>
       <h1 style="font-size:28px;margin-bottom:6px">Signed in</h1>
       <p class="text-muted" style="margin-bottom:16px">${esc(email)}</p>
-      <div class="callout" style="margin-bottom:18px">
-        <div class="k">Cross-device sync is on</div>
-        <p>Your progress, saved cards, stats and study plan sync automatically to this account whenever they change.</p>
-      </div>
+      ${callout}
       <div style="display:flex;gap:10px;flex-wrap:wrap">
         <button class="btn btn-secondary" id="btn-sync">Sync now</button>
         <button class="btn btn-secondary" id="btn-signout">Log out</button>
@@ -99,9 +105,13 @@
       <div class="k" style="margin-bottom:8px">Account</div>
       <h1 style="font-size:28px;margin-bottom:6px">${isSignup ? "Create your account" : "Log in"}</h1>
       <p class="text-muted" style="margin-bottom:16px">
-        ${isSignup
-          ? "An account keeps your progress synced across every device you study on."
-          : "Welcome back — pick up where you left off on any device."}
+        ${Auth.mode === "supabase"
+          ? (isSignup
+              ? "An account keeps your progress synced across every device you study on."
+              : "Welcome back — pick up where you left off on any device.")
+          : (isSignup
+              ? "Create a local account to keep your progress separate and saved in this browser."
+              : "Welcome back — log in to your local account.")}
       </p>
 
       <div class="seg" style="width:100%;margin-bottom:18px">
@@ -124,8 +134,11 @@
                  autocomplete="${isSignup ? "new-password" : "current-password"}"
                  minlength="${isSignup ? 8 : 1}" required>
         </div>
-        ${isSignup ? '<div class="text-muted" style="font-size:11px;margin-bottom:12px">At least 8 characters.</div>'
-                   : '<button type="button" class="text-link" id="acct-forgot" style="margin-bottom:12px">Forgot password?</button>'}
+        ${isSignup
+          ? '<div class="text-muted" style="font-size:11px;margin-bottom:12px">At least 8 characters.</div>'
+          : (Auth.mode === "supabase"
+              ? '<button type="button" class="text-link" id="acct-forgot" style="margin-bottom:12px">Forgot password?</button>'
+              : '')}
         <button type="submit" class="btn btn-primary btn-block" style="justify-content:center;margin-top:6px">
           ${isSignup ? "Create account" : "Log in"}
         </button>
