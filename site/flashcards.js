@@ -8,15 +8,182 @@
     return d.innerHTML;
   }
 
+  // Flashcard decks must not be smaller than this. The question bank carries
+  // ~100 fine-grained topics (10-20 questions each), which made for dozens of
+  // stubby decks; TOPIC_CONSOLIDATION rolls them up into a handful of broad
+  // decks, and enforceMinDeck() is the backstop for anything not in the map.
+  const MIN_DECK = 30;
+
+  const TOPIC_CONSOLIDATION = {
+    // Biological & Biochemical Foundations
+    "Amino Acids, Peptides, and Proteins": "Biochemistry: Proteins & Enzymes",
+    "Amino Acids and Proteins": "Biochemistry: Proteins & Enzymes",
+    "Protein Structure": "Biochemistry: Proteins & Enzymes",
+    "Enzymes": "Biochemistry: Proteins & Enzymes",
+    "Enzymes and Enzyme Kinetics": "Biochemistry: Proteins & Enzymes",
+    "Enzyme Kinetics": "Biochemistry: Proteins & Enzymes",
+    "Enzymes and Metabolic Regulation": "Biochemistry: Proteins & Enzymes",
+    "Metabolism: Glycolysis, TCA Cycle, and Oxidative Phosphorylation": "Biochemistry: Metabolism & Biomolecules",
+    "Bioenergetics and Cellular Respiration": "Biochemistry: Metabolism & Biomolecules",
+    "Carbohydrates and Glycobiology": "Biochemistry: Metabolism & Biomolecules",
+    "Carbohydrates and Lipids": "Biochemistry: Metabolism & Biomolecules",
+    "Lipids and Biological Membranes": "Biochemistry: Metabolism & Biomolecules",
+    "Transcription and Translation": "Molecular Biology & Genetics",
+    "DNA Structure and Replication": "Molecular Biology & Genetics",
+    "Nucleic Acids and Gene Expression": "Molecular Biology & Genetics",
+    "Genetics and Evolution": "Molecular Biology & Genetics",
+    "Molecular Genetics and Mutations": "Molecular Biology & Genetics",
+    "Molecular Biology Techniques": "Molecular Biology & Genetics",
+    "The Cell": "Cell Biology & Development",
+    "Reproduction": "Cell Biology & Development",
+    "Embryogenesis and Development": "Cell Biology & Development",
+    "The Nervous System": "Physiology: Nervous & Endocrine Systems",
+    "The Endocrine System": "Physiology: Nervous & Endocrine Systems",
+    "Endocrine System": "Physiology: Nervous & Endocrine Systems",
+    "Nervous and Endocrine Systems": "Physiology: Nervous & Endocrine Systems",
+    "The Respiratory System": "Physiology: Organ Systems",
+    "The Cardiovascular System": "Physiology: Organ Systems",
+    "The Immune System": "Physiology: Organ Systems",
+    "The Digestive System": "Physiology: Organ Systems",
+    "The Musculoskeletal System": "Physiology: Organ Systems",
+    "Muscle Tissue and Physiology": "Physiology: Organ Systems",
+    "Homeostasis": "Physiology: Organ Systems",
+    // Chemical & Physical Foundations
+    "Atomic Structure": "General Chemistry: Atomic Structure & Bonding",
+    "The Periodic Table": "General Chemistry: Atomic Structure & Bonding",
+    "Periodic Table Trends": "General Chemistry: Atomic Structure & Bonding",
+    "Bonding and Chemical Interactions": "General Chemistry: Atomic Structure & Bonding",
+    "Compounds and Stoichiometry": "General Chemistry: Atomic Structure & Bonding",
+    "Chemical Kinetics": "General Chemistry: Thermo, Kinetics & Equilibrium",
+    "Equilibrium": "General Chemistry: Thermo, Kinetics & Equilibrium",
+    "Chemical Equilibrium": "General Chemistry: Thermo, Kinetics & Equilibrium",
+    "Thermochemistry": "General Chemistry: Thermo, Kinetics & Equilibrium",
+    "Thermodynamics": "General Chemistry: Thermo, Kinetics & Equilibrium",
+    "Acids and Bases": "General Chemistry: Acids/Bases, Redox & Solutions",
+    "Oxidation-Reduction Reactions": "General Chemistry: Acids/Bases, Redox & Solutions",
+    "Electrochemistry": "General Chemistry: Acids/Bases, Redox & Solutions",
+    "The Gas Phase": "General Chemistry: Acids/Bases, Redox & Solutions",
+    "Solutions": "General Chemistry: Acids/Bases, Redox & Solutions",
+    "Stereochemistry and Isomers": "Organic Chemistry",
+    "Stereochemistry": "Organic Chemistry",
+    "Stereochemistry and Isomerism": "Organic Chemistry",
+    "Substitution and Elimination Reactions": "Organic Chemistry",
+    "Carbonyl Chemistry": "Organic Chemistry",
+    "Functional Groups and Nomenclature": "Organic Chemistry",
+    "Nomenclature and Functional Groups": "Organic Chemistry",
+    "Acids and Bases in Organic Chemistry": "Organic Chemistry",
+    "Organic Reaction Mechanisms": "Organic Chemistry",
+    "Laboratory Techniques and Spectroscopy": "Organic Chemistry",
+    "Spectroscopy and Structure Determination": "Organic Chemistry",
+    "Kinematics and Dynamics": "Physics: Mechanics & Fluids",
+    "Work and Energy": "Physics: Mechanics & Fluids",
+    "Fluids": "Physics: Mechanics & Fluids",
+    "Circuits": "Physics: Electromagnetism, Waves & Optics",
+    "Electrostatics and Magnetism": "Physics: Electromagnetism, Waves & Optics",
+    "Electromagnetism": "Physics: Electromagnetism, Waves & Optics",
+    "Waves and Sound": "Physics: Electromagnetism, Waves & Optics",
+    "Light and Optics": "Physics: Electromagnetism, Waves & Optics",
+    // Psychological, Social, & Biological Foundations
+    "Sensation and Perception": "Psych: Cognition, Memory & Biological Bases",
+    "Learning": "Psych: Cognition, Memory & Biological Bases",
+    "Learning and Behavior": "Psych: Cognition, Memory & Biological Bases",
+    "Cognition and Language": "Psych: Cognition, Memory & Biological Bases",
+    "Memory": "Psych: Cognition, Memory & Biological Bases",
+    "Consciousness and Sleep": "Psych: Cognition, Memory & Biological Bases",
+    "Biological Bases of Behavior": "Psych: Cognition, Memory & Biological Bases",
+    "Biopsychosocial Model": "Psych: Cognition, Memory & Biological Bases",
+    "Research Methods and Statistics": "Psych: Cognition, Memory & Biological Bases",
+    "Personality": "Psych: Personality, Development & Disorders",
+    "Self and Identity": "Psych: Personality, Development & Disorders",
+    "Psychological Disorders": "Psych: Personality, Development & Disorders",
+    "Developmental Psychology": "Psych: Personality, Development & Disorders",
+    "Motivation and Emotion": "Psych: Personality, Development & Disorders",
+    "Stress and Coping": "Psych: Personality, Development & Disorders",
+    "Social Psychology": "Sociology & Social Psychology",
+    "Attribution Theory": "Sociology & Social Psychology",
+    "Social Interaction and Groups": "Sociology & Social Psychology",
+    "Social Structure and Institutions": "Sociology & Social Psychology",
+    "Social Stratification and Inequality": "Sociology & Social Psychology",
+    "Social Stratification": "Sociology & Social Psychology",
+    "Culture and Socialization": "Sociology & Social Psychology",
+    "Demography and Urbanization": "Sociology & Social Psychology",
+    "Social Change and Globalization": "Sociology & Social Psychology",
+    // Critical Analysis and Reasoning Skills
+    "Literature and Literary Criticism": "CARS: Humanities",
+    "Philosophy and Ethics": "CARS: Humanities",
+    "Art History and Aesthetics": "CARS: Humanities",
+    "History": "CARS: Humanities",
+    "Cultural Studies and Religion": "CARS: Humanities",
+    "Philosophy of Science and Technology": "CARS: Humanities",
+    "Main Idea and Structure": "CARS: Humanities",
+    "Tone and Rhetoric": "CARS: Humanities",
+    "Detail and Evidence": "CARS: Humanities",
+    "Strengthen-Weaken Reasoning": "CARS: Humanities",
+    "Political Science and Government": "CARS: Social Sciences",
+    "Sociology and Anthropology": "CARS: Social Sciences",
+    "Economics and Business": "CARS: Social Sciences",
+    "Psychology and Social Behavior": "CARS: Social Sciences",
+  };
+
+  const SECTION_DECK = {
+    "Biological & Biochemical Foundations": "Bio/Biochem review",
+    "Chemical & Physical Foundations": "Chem/Phys review",
+    "Psychological, Social, & Biological Foundations": "Psych/Soc review",
+    "Critical Analysis and Reasoning Skills": "CARS review",
+  };
+
+  function consolidatedTopic(q) {
+    const raw = q.topic || q.section || "General review";
+    return TOPIC_CONSOLIDATION[raw] || raw;
+  }
+
+  // Backstop for any topic not covered by TOPIC_CONSOLIDATION: fold every
+  // sub-threshold deck into its dominant section's review deck, then fold any
+  // still-short deck into the largest remaining deck, so nothing ships < MIN_DECK
+  // (unless the whole bank has fewer than MIN_DECK questions).
+  function enforceMinDeck(byTopic) {
+    const sectionOf = (qs) => {
+      const c = {};
+      qs.forEach((q) => { const s = q.section || ""; c[s] = (c[s] || 0) + 1; });
+      const top = Object.keys(c).sort((a, b) => c[b] - c[a])[0] || "";
+      return SECTION_DECK[top] || "Mixed review";
+    };
+    Object.keys(byTopic).forEach((t) => {
+      if (byTopic[t].length >= MIN_DECK) return;
+      const target = sectionOf(byTopic[t]);
+      if (target === t) return;
+      byTopic[target] = (byTopic[target] || []).concat(byTopic[t]);
+      delete byTopic[t];
+    });
+    let guard = 0;
+    while (guard++ < 50) {
+      const keys = Object.keys(byTopic);
+      if (keys.length <= 1) break;
+      const small = keys.filter((k) => byTopic[k].length < MIN_DECK);
+      if (!small.length) break;
+      const largest = keys.sort((a, b) => byTopic[b].length - byTopic[a].length)[0];
+      small.forEach((k) => {
+        if (k === largest) return;
+        byTopic[largest] = byTopic[largest].concat(byTopic[k]);
+        delete byTopic[k];
+      });
+    }
+    return byTopic;
+  }
+
   function topicDecks() {
     const byTopic = {};
     Object.values(Data.allQuestions).forEach((q) => {
-      const t = q.topic || q.section;
-      byTopic[t] = byTopic[t] || [];
-      byTopic[t].push(q);
+      const t = consolidatedTopic(q);
+      (byTopic[t] = byTopic[t] || []).push(q);
     });
+    enforceMinDeck(byTopic);
     return Object.entries(byTopic)
-      .map(([topic, questions]) => ({ id: `topic:${topic}`, title: topic, questions }))
+      .map(([topic, group]) => {
+        const seen = {}, questions = [];
+        group.forEach((q) => { if (!seen[q.id]) { seen[q.id] = 1; questions.push(q); } });
+        return { id: `topic:${topic}`, title: topic, questions };
+      })
       .sort((a, b) => a.title.localeCompare(b.title));
   }
 

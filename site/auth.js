@@ -206,7 +206,15 @@ const Auth = (function () {
   // ---- auth actions ----
   async function signUp(email, password) {
     if (mode === "supabase") {
-      const { data, error } = await client.auth.signUp({ email, password });
+      const { data, error } = await client.auth.signUp({
+        email,
+        password,
+        // Where the confirmation-email link lands after Supabase verifies it.
+        // Without this, Supabase falls back to the project's "Site URL", which
+        // may not resolve to a real page. account.html picks up the session
+        // from the URL (detectSessionInUrl) and shows the signed-in state.
+        options: { emailRedirectTo: location.origin + "/account.html" },
+      });
       if (error) throw error;
       currentUser = data.session ? data.user : null;
       if (currentUser) await syncNow();
