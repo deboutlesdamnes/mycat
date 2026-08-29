@@ -1,0 +1,213 @@
+{
+  "agent_stats": {
+    "high": {
+      "persona": "High-skill test-taker",
+      "description": "Expert (~top 1-2%, 520+). Deep accurate content; rarely errs.",
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "by_difficulty": {
+        "easy": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "medium": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "medium": {
+      "persona": "Medium-skill test-taker",
+      "description": "Typical (~60th-70th percentile, ~500-505). Solid core; errs on hard items.",
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "by_difficulty": {
+        "easy": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "medium": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "low": {
+      "persona": "Low-skill test-taker",
+      "description": "Struggling (~30th percentile, ~490). Large gaps; guesses on hard items.",
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "by_difficulty": {
+        "easy": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "medium": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        }
+      }
+    }
+  },
+  "aggregate_by_difficulty": {
+    "easy": {
+      "correct": 3,
+      "total": 3,
+      "accuracy": 1.0
+    },
+    "hard": {
+      "correct": 3,
+      "total": 3,
+      "accuracy": 1.0
+    },
+    "medium": {
+      "correct": 3,
+      "total": 3,
+      "accuracy": 1.0
+    }
+  },
+  "calibration": {
+    "monotonic": true,
+    "expected_order": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "observed_order_by_accuracy": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "notes": []
+  },
+  "anomalies": [
+    {
+      "id": "llm-198",
+      "difficulty": "hard",
+      "topic": "History",
+      "detail": "low-skill agent answered a 'hard' item correctly (possibly too easy for 'hard')"
+    },
+    {
+      "id": "llm-198",
+      "difficulty": "hard",
+      "topic": "History",
+      "detail": "'hard' item answered correctly by every agent (possibly too easy for 'hard')"
+    }
+  ],
+  "items": [
+    {
+      "id": "llm-153",
+      "section": "Psychological, Social, & Biological Foundations",
+      "topic": "Research Methods and Statistics",
+      "difficulty": "easy",
+      "correct": 3,
+      "high": {
+        "choice": 3,
+        "correct": true,
+        "confidence": 1.0,
+        "reasoning": "Experimental designs with random assignment are the only method that can establish causality by controlling extraneous variables and manipulating the independent variable."
+      },
+      "medium": {
+        "choice": 3,
+        "correct": true,
+        "confidence": 0.95,
+        "reasoning": "Experimental design with random assignment is the only method that manipulates variables and controls for confounds, allowing causal inference."
+      },
+      "low": {
+        "choice": 3,
+        "correct": true,
+        "confidence": 0.6,
+        "reasoning": "I remember that experiments with random assignment are best for cause and effect."
+      },
+      "pass_rate": 1.0
+    },
+    {
+      "id": "llm-126",
+      "section": "Psychological, Social, & Biological Foundations",
+      "topic": "Memory",
+      "difficulty": "medium",
+      "correct": 2,
+      "high": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.95,
+        "reasoning": "Sleep after learning improves delayed recall, indicating enhanced consolidation, not encoding or retrieval."
+      },
+      "medium": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.85,
+        "reasoning": "Sleep after learning improves delayed recall, indicating a role in consolidation."
+      },
+      "low": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.6,
+        "reasoning": "Sleep after learning helps memory, so it likely aids consolidation."
+      },
+      "pass_rate": 1.0
+    },
+    {
+      "id": "llm-198",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "History",
+      "difficulty": "hard",
+      "correct": 2,
+      "high": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.95,
+        "reasoning": "The author argues that historical narratives are shaped by present needs, similar to a country rewriting textbooks to serve national unity."
+      },
+      "medium": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.9,
+        "reasoning": "The author argues historical narratives are shaped by present needs, similar to a country rewriting textbooks to unify the nation."
+      },
+      "low": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.7,
+        "reasoning": "The author says historical narratives serve present needs, like the textbook rewriting that unifies by downplaying divisions."
+      },
+      "pass_rate": 1.0
+    }
+  ],
+  "input": "C:\\Users\\jason\\Documents\\mycat\\workspace\\generated_full.jsonl",
+  "sample_size": 3,
+  "agents_run": [
+    "high",
+    "medium",
+    "low"
+  ],
+  "question_ids": [
+    "llm-153",
+    "llm-126",
+    "llm-198"
+  ]
+}

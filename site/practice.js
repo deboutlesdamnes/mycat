@@ -4,6 +4,118 @@
   const params = new URLSearchParams(location.search);
   const mode = params.get("mode");
 
+  // The raw question bank carries ~100 fine-grained `topic` strings, most with
+  // only 10–20 questions each and many near-duplicates ("Stereochemistry" vs
+  // "Stereochemistry and Isomers"). Roll them up into ~two-dozen consolidated
+  // decks, each grouping closely related topics so every topic drill holds a
+  // worthwhile number of questions (>=30, most landing in the 35–55 range).
+  const TOPIC_GROUPS = {
+    "Metabolism & Bioenergetics": [
+      "Metabolism: Glycolysis, TCA Cycle, and Oxidative Phosphorylation",
+      "Bioenergetics and Cellular Respiration",
+      "Carbohydrates and Glycobiology", "Carbohydrates and Lipids",
+      "Lipids and Biological Membranes",
+    ],
+    "Proteins & Enzymes": [
+      "Amino Acids and Proteins", "Amino Acids, Peptides, and Proteins",
+      "Protein Structure", "Enzymes", "Enzymes and Enzyme Kinetics",
+      "Enzyme Kinetics", "Enzymes and Metabolic Regulation",
+    ],
+    "Genetics & Molecular Biology": [
+      "Genetics and Evolution", "Transcription and Translation",
+      "DNA Structure and Replication", "Nucleic Acids and Gene Expression",
+      "Molecular Genetics and Mutations", "Molecular Biology Techniques",
+    ],
+    "Cell Biology & Reproduction": [
+      "The Cell", "Reproduction", "Embryogenesis and Development",
+    ],
+    "Nervous & Endocrine Systems": [
+      "The Nervous System", "Nervous and Endocrine Systems",
+      "The Endocrine System", "Endocrine System",
+    ],
+    "Circulation, Respiration & Immunity": [
+      "The Cardiovascular System", "The Respiratory System", "The Immune System",
+    ],
+    "Digestion, Musculoskeletal & Homeostasis": [
+      "The Digestive System", "The Musculoskeletal System",
+      "Muscle Tissue and Physiology", "Homeostasis",
+    ],
+    "Atomic Structure & Bonding": [
+      "Atomic Structure", "The Periodic Table", "Periodic Table Trends",
+      "Bonding and Chemical Interactions", "Compounds and Stoichiometry",
+    ],
+    "Equilibrium & Acid-Base Chemistry": [
+      "Acids and Bases", "Chemical Equilibrium", "Equilibrium",
+    ],
+    "Thermodynamics, Kinetics & Gases": [
+      "Thermochemistry", "Thermodynamics", "Chemical Kinetics", "The Gas Phase",
+    ],
+    "Redox, Electrochemistry & Solutions": [
+      "Oxidation-Reduction Reactions", "Electrochemistry", "Solutions",
+    ],
+    "Organic Structure & Stereochemistry": [
+      "Stereochemistry", "Stereochemistry and Isomers",
+      "Stereochemistry and Isomerism", "Functional Groups and Nomenclature",
+      "Nomenclature and Functional Groups",
+      "Laboratory Techniques and Spectroscopy",
+      "Spectroscopy and Structure Determination",
+    ],
+    "Organic Reactions & Mechanisms": [
+      "Carbonyl Chemistry", "Substitution and Elimination Reactions",
+      "Organic Reaction Mechanisms", "Acids and Bases in Organic Chemistry",
+    ],
+    "Mechanics, Fluids & Energy": [
+      "Kinematics and Dynamics", "Work and Energy", "Fluids",
+    ],
+    "Waves, Optics & Electromagnetism": [
+      "Light and Optics", "Waves and Sound", "Circuits",
+      "Electrostatics and Magnetism", "Electromagnetism",
+    ],
+    "Sensation, Perception & Consciousness": [
+      "Sensation and Perception", "Consciousness and Sleep",
+      "Biological Bases of Behavior", "Memory",
+    ],
+    "Learning, Cognition & Research Methods": [
+      "Learning", "Learning and Behavior", "Cognition and Language",
+      "Research Methods and Statistics", "Motivation and Emotion",
+    ],
+    "Personality, Development & Disorders": [
+      "Personality", "Psychological Disorders", "Developmental Psychology",
+      "Stress and Coping", "Self and Identity", "Biopsychosocial Model",
+    ],
+    "Social Interaction & Behavior": [
+      "Social Psychology", "Attribution Theory", "Social Interaction and Groups",
+      "Culture and Socialization", "Sociology and Anthropology",
+    ],
+    "Social Structure & Inequality": [
+      "Social Structure and Institutions", "Social Stratification and Inequality",
+      "Social Stratification", "Demography and Urbanization",
+      "Social Change and Globalization",
+    ],
+    "CARS: Literature, Art & Culture": [
+      "Literature and Literary Criticism", "Art History and Aesthetics",
+      "Cultural Studies and Religion",
+    ],
+    "CARS: Philosophy & History": [
+      "Philosophy and Ethics", "History", "Philosophy of Science and Technology",
+    ],
+    "CARS: Social Sciences & Reasoning": [
+      "Political Science and Government", "Economics and Business",
+      "Psychology and Social Behavior", "Detail and Evidence",
+      "Main Idea and Structure", "Tone and Rhetoric",
+      "Strengthen-Weaken Reasoning",
+    ],
+  };
+  const MIN_DECK = 30;
+  const topicToGroup = {};
+  Object.entries(TOPIC_GROUPS).forEach(([g, ts]) => ts.forEach((t) => { topicToGroup[t] = g; }));
+
+  // Map any question to its consolidated deck name. Unmapped topics fall back to
+  // their section so nothing silently disappears from Practice.
+  function groupForQuestion(q) {
+    return topicToGroup[q.topic] || q.section || q.topic || "Other Topics";
+  }
+
   let queue = [];
   let idx = 0;
   let answered = false;
@@ -36,7 +148,11 @@
     if (mode === "topic") {
       const topic = params.get("topic") || "";
       setLabel = `Weak-area drill · ${topic}`;
-      const qs = Object.values(Data.allQuestions).filter((q) => q.topic === topic);
+      // `topic` may be a consolidated deck name or, from older weak-area links,
+      // a single fine-grained topic. Match either.
+      const isGroup = Object.prototype.hasOwnProperty.call(TOPIC_GROUPS, topic);
+      const qs = Object.values(Data.allQuestions).filter((q) =>
+        isGroup ? groupForQuestion(q) === topic : q.topic === topic);
       qs.sort((a, b) => {
         const rank = (q) => { const c = store.cards[q.id]; if (!c) return 0; return c.lastCorrect === false ? 1 : 2; };
         return rank(a) - rank(b);
@@ -67,9 +183,16 @@
   function topicDecks() {
     const map = {};
     Object.values(Data.allQuestions).forEach((q) => {
-      const t = q.topic || q.section || "Other";
-      map[t] = (map[t] || 0) + 1;
+      const g = groupForQuestion(q);
+      map[g] = (map[g] || 0) + 1;
     });
+    // Fold any under-sized leftover bucket into "Other Topics" so every deck
+    // shown holds at least MIN_DECK questions.
+    let other = 0;
+    Object.keys(map).forEach((g) => {
+      if (map[g] < MIN_DECK && g !== "Other Topics") { other += map[g]; delete map[g]; }
+    });
+    if (other) map["Other Topics"] = (map["Other Topics"] || 0) + other;
     return Object.entries(map)
       .map(([topic, n]) => ({ topic, n }))
       .sort((a, b) => b.n - a.n);

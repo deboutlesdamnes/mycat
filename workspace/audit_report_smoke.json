@@ -1,0 +1,162 @@
+{
+  "input": "C:\\Users\\jason\\Documents\\mycat\\workspace\\generated_full.jsonl",
+  "coverage": {
+    "expected_total": 230,
+    "actual_total": 229,
+    "section_counts": {
+      "Biological & Biochemical Foundations": 59,
+      "Chemical & Physical Foundations": 58,
+      "Psychological, Social, & Biological Foundations": 59,
+      "Critical Analysis and Reasoning Skills": 53
+    },
+    "missing_topics": [],
+    "under_covered_topics": [
+      {
+        "section": "Chemical & Physical Foundations",
+        "subject": "Physics",
+        "topic": "Electrostatics and Magnetism",
+        "expected": 3,
+        "actual": 2
+      }
+    ],
+    "covered_topics": 85,
+    "extra_topics": [],
+    "coverage_rate": 98.8,
+    "science_skill_mix": {
+      "targets": {
+        "skill1": 35,
+        "skill2": 45,
+        "skill3": 20,
+        "skill4": 5
+      },
+      "actual_pct": {
+        "skill1": 64.2,
+        "skill2": 27.3,
+        "skill4": 8.5
+      },
+      "delta_pct": {
+        "skill1": 29.2,
+        "skill2": -17.7,
+        "skill3": -20.0,
+        "skill4": 3.5
+      },
+      "raw_counts": {
+        "skill1": 113,
+        "skill2": 48,
+        "skill4": 15
+      }
+    },
+    "cars_skill_mix": {
+      "targets": {
+        "cars-foc": 30,
+        "cars-rwt": 30,
+        "cars-rbt": 40
+      },
+      "actual_pct": {
+        "cars-foc": 64.2,
+        "cars-rbt": 15.1,
+        "cars-rwt": 20.8
+      },
+      "delta_pct": {
+        "cars-foc": 34.2,
+        "cars-rwt": -9.2,
+        "cars-rbt": -24.9
+      },
+      "raw_counts": {
+        "cars-foc": 34,
+        "cars-rwt": 11,
+        "cars-rbt": 8
+      }
+    },
+    "difficulty_mix": {
+      "easy": 113,
+      "medium": 95,
+      "hard": 21
+    },
+    "type_by_section": {
+      "Biological & Biochemical Foundations": {
+        "discrete": 56,
+        "passage": 3
+      },
+      "Chemical & Physical Foundations": {
+        "discrete": 54,
+        "passage": 4
+      },
+      "Critical Analysis and Reasoning Skills": {
+        "passage": 48,
+        "discrete": 5
+      },
+      "Psychological, Social, & Biological Foundations": {
+        "discrete": 53,
+        "passage": 6
+      }
+    },
+    "expected_passage_discrete_per_science_section": {
+      "passage": 44,
+      "discrete": 15
+    },
+    "duplicate_ids": [],
+    "duplicate_stems": [
+      {
+        "id": "llm-183",
+        "duplicate_of": "llm-177"
+      },
+      {
+        "id": "llm-193",
+        "duplicate_of": "llm-177"
+      },
+      {
+        "id": "llm-215",
+        "duplicate_of": "llm-188"
+      },
+      {
+        "id": "llm-225",
+        "duplicate_of": "llm-177"
+      }
+    ]
+  },
+  "accuracy": {
+    "sampled": 2,
+    "verdict_counts": {
+      "accurate": 2
+    },
+    "flag_rate": 0.0,
+    "flagged": [],
+    "results": [
+      {
+        "id": "llm-041",
+        "section": "Biological & Biochemical Foundations",
+        "topic": "Amino Acids, Peptides, and Proteins",
+        "difficulty": "medium",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "Valine is hydrophobic and buried in the core; replacing it with polar serine disrupts hydrophobic packing and introduces an unsatisfied polar group, destabilizing the folded state and making ΔG of folding less negative. This is standard MCAT biochemistry."
+      },
+      {
+        "id": "llm-113",
+        "section": "Chemical & Physical Foundations",
+        "topic": "Metabolism: Glycolysis, TCA Cycle, and Oxidative Phosphorylation",
+        "difficulty": "easy",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "PFK-1 is the classic rate-limiting enzyme of glycolysis; explanation correctly distinguishes hexokinase, pyruvate kinase, and GAPDH. Corpus excerpt confirms PFK-1 is a regulated step of glycolysis."
+      }
+    ]
+  },
+  "summary": {
+    "actual_total": 229,
+    "expected_total": 230,
+    "coverage_rate_pct": 98.8,
+    "missing_topic_count": 0,
+    "under_covered_topic_count": 1,
+    "extra_topic_count": 0,
+    "duplicate_id_count": 0,
+    "duplicate_stem_count": 4,
+    "accuracy_audit": {
+      "accurate": 2
+    },
+    "accuracy_flag_rate_pct": 0.0
+  }
+}

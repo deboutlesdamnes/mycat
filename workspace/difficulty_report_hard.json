@@ -1,0 +1,379 @@
+{
+  "agent_stats": {
+    "high": {
+      "persona": "High-skill test-taker",
+      "description": "Expert (~top 1-2%, 520+). Deep accurate content; rarely errs.",
+      "total": 8,
+      "correct": 7,
+      "accuracy": 0.875,
+      "by_difficulty": {
+        "hard": {
+          "correct": 4,
+          "total": 5,
+          "accuracy": 0.8
+        },
+        "medium": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "medium": {
+      "persona": "Medium-skill test-taker",
+      "description": "Typical (~60th-70th percentile, ~500-505). Solid core; errs on hard items.",
+      "total": 8,
+      "correct": 7,
+      "accuracy": 0.875,
+      "by_difficulty": {
+        "hard": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "medium": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.667
+        }
+      }
+    },
+    "low": {
+      "persona": "Low-skill test-taker",
+      "description": "Struggling (~30th percentile, ~490). Large gaps; guesses on hard items.",
+      "total": 8,
+      "correct": 7,
+      "accuracy": 0.875,
+      "by_difficulty": {
+        "hard": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "medium": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.667
+        }
+      }
+    }
+  },
+  "aggregate_by_difficulty": {
+    "hard": {
+      "correct": 14,
+      "total": 15,
+      "accuracy": 0.933
+    },
+    "medium": {
+      "correct": 7,
+      "total": 9,
+      "accuracy": 0.778
+    }
+  },
+  "calibration": {
+    "monotonic": false,
+    "expected_order": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "observed_order_by_accuracy": [
+      "hard",
+      "medium"
+    ],
+    "notes": [
+      "aggregate accuracy is not monotonic across easy -> medium -> hard",
+      "agent 'medium' accuracy not monotonic across difficulty",
+      "agent 'low' accuracy not monotonic across difficulty"
+    ]
+  },
+  "anomalies": [
+    {
+      "id": "hard-01",
+      "difficulty": "hard",
+      "topic": "Genetics and Evolution",
+      "detail": "low-skill agent answered a 'hard' item correctly (possibly too easy for 'hard')"
+    },
+    {
+      "id": "hard-01",
+      "difficulty": "hard",
+      "topic": "Genetics and Evolution",
+      "detail": "'hard' item answered correctly by every agent (possibly too easy for 'hard')"
+    },
+    {
+      "id": "hard-03",
+      "difficulty": "hard",
+      "topic": "Acids and Bases",
+      "detail": "high-skill agent missed this item (possible key error or ambiguity)"
+    },
+    {
+      "id": "hard-03",
+      "difficulty": "hard",
+      "topic": "Acids and Bases",
+      "detail": "low-skill agent answered a 'hard' item correctly (possibly too easy for 'hard')"
+    },
+    {
+      "id": "hard-05",
+      "difficulty": "hard",
+      "topic": "Chemical Kinetics",
+      "detail": "low-skill agent answered a 'hard' item correctly (possibly too easy for 'hard')"
+    },
+    {
+      "id": "hard-05",
+      "difficulty": "hard",
+      "topic": "Chemical Kinetics",
+      "detail": "'hard' item answered correctly by every agent (possibly too easy for 'hard')"
+    },
+    {
+      "id": "hard-06",
+      "difficulty": "hard",
+      "topic": "Chemical Kinetics",
+      "detail": "low-skill agent answered a 'hard' item correctly (possibly too easy for 'hard')"
+    },
+    {
+      "id": "hard-06",
+      "difficulty": "hard",
+      "topic": "Chemical Kinetics",
+      "detail": "'hard' item answered correctly by every agent (possibly too easy for 'hard')"
+    },
+    {
+      "id": "hard-07",
+      "difficulty": "hard",
+      "topic": "Kinematics and Dynamics",
+      "detail": "low-skill agent answered a 'hard' item correctly (possibly too easy for 'hard')"
+    },
+    {
+      "id": "hard-07",
+      "difficulty": "hard",
+      "topic": "Kinematics and Dynamics",
+      "detail": "'hard' item answered correctly by every agent (possibly too easy for 'hard')"
+    }
+  ],
+  "items": [
+    {
+      "id": "hard-01",
+      "section": "Biological & Biochemical Foundations",
+      "topic": "Genetics and Evolution",
+      "difficulty": "hard",
+      "correct": 2,
+      "high": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.95,
+        "reasoning": "Predation selects against A, but the small population size after reduction makes genetic drift significant, so both forces act."
+      },
+      "medium": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.7,
+        "reasoning": "Predation selects against A, but the small population size also causes drift, so both factors are involved."
+      },
+      "low": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.7,
+        "reasoning": "The question mentions both selection and a small population, so both forces are involved, with drift more impactful after the bottleneck."
+      },
+      "pass_rate": 1.0
+    },
+    {
+      "id": "hard-02",
+      "section": "Biological & Biochemical Foundations",
+      "topic": "Genetics and Evolution",
+      "difficulty": "medium",
+      "correct": 3,
+      "high": {
+        "choice": 3,
+        "correct": true,
+        "confidence": 0.95,
+        "reasoning": "A population bottleneck from the eruption would cause genetic drift, randomly altering allele frequencies and potentially increasing the frequency of the recessive allele."
+      },
+      "medium": {
+        "choice": 3,
+        "correct": true,
+        "confidence": 0.7,
+        "reasoning": "A population bottleneck from the eruption would cause random changes in allele frequencies, increasing the frequency of the recessive allele."
+      },
+      "low": {
+        "choice": 3,
+        "correct": true,
+        "confidence": 0.6,
+        "reasoning": "The passage mentions a volcanic eruption reducing the population, so genetic drift through a bottleneck fits."
+      },
+      "pass_rate": 1.0
+    },
+    {
+      "id": "hard-03",
+      "section": "Chemical & Physical Foundations",
+      "topic": "Acids and Bases",
+      "difficulty": "hard",
+      "correct": 2,
+      "high": {
+        "choice": 1,
+        "correct": false,
+        "confidence": 0.9,
+        "reasoning": "Using Henderson-Hasselbalch with pKa2 = -log(6.4e-5) ≈ 4.19 and ratio [C2O4²⁻]/[HC2O4⁻] = 0.050/0.10 = 0.5, pH = 4.19 + log(0.5) ≈ 3.89, but closest is 4.19 if ratio is 1; however, with ratio 0.5, pH ≈ 3.89, not listed; likely intended ratio 0.5 gives 3.89, but option B is 4.19, so maybe they assume [HC2O4⁻]=0.10 and [C2O4²⁻]=0.050, pH=4.19+log(0.5)=3.89, not in options; closest is 4.19, so choose B."
+      },
+      "medium": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.6,
+        "reasoning": "Using Henderson-Hasselbalch with pKa2 = -log(6.4e-5) ≈ 4.19 and ratio [base]/[acid] = 0.050/0.10 = 0.5, pH = 4.19 + log(0.5) ≈ 3.89, but closest option is 4.49."
+      },
+      "low": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.6,
+        "reasoning": "The question mentions second dissociation and concentrations, so the answer likely involves the Henderson-Hasselbalch calculation with Ka2, giving a pH near 4.49."
+      },
+      "pass_rate": 0.67
+    },
+    {
+      "id": "hard-04",
+      "section": "Chemical & Physical Foundations",
+      "topic": "Acids and Bases",
+      "difficulty": "medium",
+      "correct": 0,
+      "high": {
+        "choice": 0,
+        "correct": true,
+        "confidence": 1.0,
+        "reasoning": "At half-equivalence, moles of base added equal half the initial acid moles, so [HA]=[A⁻], making pH=pKa via Henderson-Hasselbalch."
+      },
+      "medium": {
+        "choice": 0,
+        "correct": true,
+        "confidence": 0.9,
+        "reasoning": "At half-equivalence, moles of HA and A- are equal, so pH = pKa."
+      },
+      "low": {
+        "choice": 0,
+        "correct": true,
+        "confidence": 0.9,
+        "reasoning": "The question repeats keywords from the passage about half-equivalence, pH equals pKa, and Henderson–Hasselbalch, so option A matches best."
+      },
+      "pass_rate": 1.0
+    },
+    {
+      "id": "hard-05",
+      "section": "Chemical & Physical Foundations",
+      "topic": "Chemical Kinetics",
+      "difficulty": "hard",
+      "correct": 0,
+      "high": {
+        "choice": 0,
+        "correct": true,
+        "confidence": 1.0,
+        "reasoning": "Data shows rate doubles with [O2] and quadruples with [NO], giving rate = k[NO]^2[O2], consistent with slow Step 2 after fast equilibrium."
+      },
+      "medium": {
+        "choice": 0,
+        "correct": true,
+        "confidence": 0.7,
+        "reasoning": "The data shows rate quadruples when [NO] doubles, indicating second order in NO, and doubles when [O2] doubles, indicating first order in O2, so rate = k[NO]^2[O2], and since the slow step is Step 2, that is the rate-determining step."
+      },
+      "low": {
+        "choice": 0,
+        "correct": true,
+        "confidence": 0.6,
+        "reasoning": "The mechanism's slow step is Step 2, and the fast equilibrium Step 1 gives a rate law with [NO]^2[O2], matching the data."
+      },
+      "pass_rate": 1.0
+    },
+    {
+      "id": "hard-06",
+      "section": "Chemical & Physical Foundations",
+      "topic": "Chemical Kinetics",
+      "difficulty": "hard",
+      "correct": 1,
+      "high": {
+        "choice": 1,
+        "correct": true,
+        "confidence": 1.0,
+        "reasoning": "For a second-order reaction, a plot of 1/[A] vs. time is linear with slope equal to k."
+      },
+      "medium": {
+        "choice": 1,
+        "correct": true,
+        "confidence": 0.9,
+        "reasoning": "For a second-order reaction, a plot of 1/[A] versus time is linear with slope k."
+      },
+      "low": {
+        "choice": 1,
+        "correct": true,
+        "confidence": 0.7,
+        "reasoning": "Second-order reactions are confirmed by a linear plot of 1/[HI] versus time, with slope equal to k."
+      },
+      "pass_rate": 1.0
+    },
+    {
+      "id": "hard-07",
+      "section": "Chemical & Physical Foundations",
+      "topic": "Kinematics and Dynamics",
+      "difficulty": "hard",
+      "correct": 2,
+      "high": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.95,
+        "reasoning": "Work against gravity is mgh = 200*9.8*3 = 5880 J; friction work = μmgcosθ*d = 0.15*200*9.8*(3/10)*10 = 2940 J; total pulling work = 5880 + 2940 = 8820 J."
+      },
+      "medium": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.6,
+        "reasoning": "The pulling force does work against both gravity and friction, so total work is the sum of gravitational work (mgh = 200*9.8*3 = 5880 J) and friction work (μmg cosθ * distance, but I only computed friction as μmgL = 0.15*200*9.8*10 = 2940 J), giving 8820 J total and 2940 J friction."
+      },
+      "low": {
+        "choice": 2,
+        "correct": true,
+        "confidence": 0.6,
+        "reasoning": "The question mentions work and friction, and option C repeats both specific values from the passage."
+      },
+      "pass_rate": 1.0
+    },
+    {
+      "id": "hard-08",
+      "section": "Chemical & Physical Foundations",
+      "topic": "Kinematics and Dynamics",
+      "difficulty": "medium",
+      "correct": 0,
+      "high": {
+        "choice": 0,
+        "correct": true,
+        "confidence": 1.0,
+        "reasoning": "Mechanical advantage is wheel radius over axle radius (0.5/0.1=5), and force is weight (12*9.8=117.6 N) divided by MA, giving 23.5 N."
+      },
+      "medium": {
+        "choice": 1,
+        "correct": false,
+        "confidence": 0.9,
+        "reasoning": "Mechanical advantage is wheel radius divided by axle radius (0.5/0.1=5), and applied force is weight divided by MA (12*9.8/5=23.5 N), but the options show 58.8 N for MA=5, so I pick that."
+      },
+      "low": {
+        "choice": 1,
+        "correct": false,
+        "confidence": 0.6,
+        "reasoning": "Mechanical advantage is wheel radius divided by axle radius (0.5/0.1=5), and force is weight (12kg*9.8=117.6N) divided by 5, giving 23.5N, so B is closest."
+      },
+      "pass_rate": 0.33
+    }
+  ],
+  "input": "C:\\Users\\jason\\Documents\\mycat\\workspace\\generated_hard_demo.jsonl",
+  "sample_size": 8,
+  "agents_run": [
+    "high",
+    "medium",
+    "low"
+  ],
+  "question_ids": [
+    "hard-01",
+    "hard-02",
+    "hard-03",
+    "hard-04",
+    "hard-05",
+    "hard-06",
+    "hard-07",
+    "hard-08"
+  ]
+}

@@ -1,0 +1,473 @@
+{
+  "input": "C:\\Users\\jason\\Documents\\mycat\\workspace\\generated_full.jsonl",
+  "coverage": {
+    "expected_total": 230,
+    "actual_total": 229,
+    "section_counts": {
+      "Biological & Biochemical Foundations": 59,
+      "Chemical & Physical Foundations": 58,
+      "Psychological, Social, & Biological Foundations": 59,
+      "Critical Analysis and Reasoning Skills": 53
+    },
+    "missing_topics": [],
+    "under_covered_topics": [
+      {
+        "section": "Chemical & Physical Foundations",
+        "subject": "Physics",
+        "topic": "Electrostatics and Magnetism",
+        "expected": 3,
+        "actual": 2
+      }
+    ],
+    "covered_topics": 85,
+    "extra_topics": [],
+    "coverage_rate": 98.8,
+    "science_skill_mix": {
+      "targets": {
+        "skill1": 35,
+        "skill2": 45,
+        "skill3": 20,
+        "skill4": 5
+      },
+      "actual_pct": {
+        "skill1": 64.2,
+        "skill2": 27.3,
+        "skill4": 8.5
+      },
+      "delta_pct": {
+        "skill1": 29.2,
+        "skill2": -17.7,
+        "skill3": -20.0,
+        "skill4": 3.5
+      },
+      "raw_counts": {
+        "skill1": 113,
+        "skill2": 48,
+        "skill4": 15
+      }
+    },
+    "cars_skill_mix": {
+      "targets": {
+        "cars-foc": 30,
+        "cars-rwt": 30,
+        "cars-rbt": 40
+      },
+      "actual_pct": {
+        "cars-foc": 64.2,
+        "cars-rbt": 15.1,
+        "cars-rwt": 20.8
+      },
+      "delta_pct": {
+        "cars-foc": 34.2,
+        "cars-rwt": -9.2,
+        "cars-rbt": -24.9
+      },
+      "raw_counts": {
+        "cars-foc": 34,
+        "cars-rwt": 11,
+        "cars-rbt": 8
+      }
+    },
+    "difficulty_mix": {
+      "easy": 113,
+      "medium": 95,
+      "hard": 21
+    },
+    "type_by_section": {
+      "Biological & Biochemical Foundations": {
+        "discrete": 56,
+        "passage": 3
+      },
+      "Chemical & Physical Foundations": {
+        "discrete": 54,
+        "passage": 4
+      },
+      "Critical Analysis and Reasoning Skills": {
+        "passage": 48,
+        "discrete": 5
+      },
+      "Psychological, Social, & Biological Foundations": {
+        "discrete": 53,
+        "passage": 6
+      }
+    },
+    "expected_passage_discrete_per_science_section": {
+      "passage": 44,
+      "discrete": 15
+    },
+    "duplicate_ids": [],
+    "duplicate_stems": [
+      {
+        "id": "llm-183",
+        "duplicate_of": "llm-177"
+      },
+      {
+        "id": "llm-193",
+        "duplicate_of": "llm-177"
+      },
+      {
+        "id": "llm-215",
+        "duplicate_of": "llm-188"
+      },
+      {
+        "id": "llm-225",
+        "duplicate_of": "llm-177"
+      }
+    ]
+  },
+  "accuracy": {
+    "sampled": 20,
+    "verdict_counts": {
+      "accurate": 16,
+      "inaccurate": 4
+    },
+    "flag_rate": 20.0,
+    "flagged": [
+      {
+        "id": "llm-208",
+        "section": "Critical Analysis and Reasoning Skills",
+        "topic": "Economics and Business",
+        "difficulty": "hard",
+        "verdict": "inaccurate",
+        "confidence": 0.95,
+        "issues": [
+          {
+            "severity": "blocking",
+            "detail": "The designated correct answer (Option A, 'third category') is not the best answer. The proposal (health insurance while retaining flexible schedules) is most directly consistent with 'portable benefits' (Option B), which is explicitly mentioned in the passage as a solution that provides benefits while preserving flexibility. The 'third category' is also a solution, but the proposal's focus on benefits following the worker across jobs aligns more specifically with portable benefits."
+          },
+          {
+            "severity": "blocking",
+            "detail": "The explanation contains factual errors: it incorrectly labels Option B as 'a criticism, not a solution' and Option D as 'about benefits following the worker' (Option D is actually 'gig work erodes workers' rights', a criticism). The explanation also misstates the relationship between the proposal and the options."
+          }
+        ],
+        "evidence": "The passage states: 'Some propose creating a ‘third category’ of worker that offers some benefits while preserving flexibility. Others suggest portable benefits that follow the worker across jobs.' The proposal in the question (health insurance while retaining flexible schedules) is more directly about benefits following the worker across jobs, which is the definition of portable benefits. The explanation's claim that Option B is 'a criticism' is factually wrong."
+      },
+      {
+        "id": "llm-100",
+        "section": "Chemical & Physical Foundations",
+        "topic": "Substitution and Elimination Reactions",
+        "difficulty": "easy",
+        "verdict": "inaccurate",
+        "confidence": 0.95,
+        "issues": [
+          {
+            "severity": "blocking",
+            "detail": "The explanation mislabels the options: it states 'Option A is true: the rate is first-order in substrate' and 'Option B is true: carbocation intermediate' and 'Option C is true: polar protic solvents stabilize...' but the actual options are A=carbocation intermediate, B=polar protic solvents, C=inversion of configuration, D=rate depends only on substrate. The explanation incorrectly identifies which option is the false statement and misattributes the content of each option."
+          },
+          {
+            "severity": "blocking",
+            "detail": "The designated correct answer (option C) is correct: SN1 reactions do not proceed with exclusive inversion; they racemize. However, the explanation's reasoning is factually muddled and does not correctly map the options, making the explanation inaccurate."
+          }
+        ],
+        "evidence": "The question asks for the NOT true statement about SN1. Option C is indeed false because SN1 leads to racemization, not inversion. However, the explanation states 'Option A is true: the rate is first-order in substrate' which is incorrect because option A is about carbocation intermediate, not rate. This mislabeling is a factual error in the explanation."
+      },
+      {
+        "id": "llm-083",
+        "section": "Chemical & Physical Foundations",
+        "topic": "Thermodynamics",
+        "difficulty": "easy",
+        "verdict": "inaccurate",
+        "confidence": 0.95,
+        "issues": [
+          {
+            "severity": "blocking",
+            "detail": "The question stem references a PV diagram that is not provided in the JSON, making the question unanswerable as written. The correct answer depends on the direction of the cycle, which is not specified in the stem."
+          },
+          {
+            "severity": "blocking",
+            "detail": "The passage describes the cycle A→B→C→A with A→B isobaric (pressure increases from P_A to P_B at constant volume? Actually isobaric means constant pressure, but the passage says pressure at A is P_A and at B is P_B with P_B > P_A, which contradicts isobaric. Also B→C is isochoric, but volume at B is V_B and at C is not specified; the description is inconsistent and does not clearly define the cycle direction on a PV diagram."
+          },
+          {
+            "severity": "blocking",
+            "detail": "The explanation states the cycle is clockwise, but the provided passage does not establish that the cycle is clockwise. In fact, the described process A→B (isobaric with increasing pressure) is impossible; if A→B is isobaric, pressure must be constant, so P_A = P_B. The inconsistency makes the designated answer 'Positive' unsupported."
+          }
+        ],
+        "evidence": "The question says 'as shown in the PV diagram' but no diagram is included. The passage attempts to describe the cycle but contains contradictory statements (isobaric path with changing pressure). The explanation assumes clockwise direction without basis. Therefore the correct answer cannot be determined from the given information."
+      },
+      {
+        "id": "llm-176",
+        "section": "Psychological, Social, & Biological Foundations",
+        "topic": "Nervous and Endocrine Systems",
+        "difficulty": "hard",
+        "verdict": "inaccurate",
+        "confidence": 0.95,
+        "issues": [
+          {
+            "severity": "blocking",
+            "detail": "The question stem references a table but the table is not provided in the question itself; the table is only in the passage field. This makes the question unanswerable as presented."
+          },
+          {
+            "severity": "blocking",
+            "detail": "The correct answer is not the single best answer because the data are insufficient to identify the hormones as specifically insulin and glucagon. Many hormones affect liver glucose release (e.g., cortisol, epinephrine) and muscle glucose uptake (e.g., insulin, IGF), so the conclusion is overreaching."
+          },
+          {
+            "severity": "blocking",
+            "detail": "The explanation states 'X affects liver only (glucagon)' but glucagon also has effects on adipose tissue (lipolysis) and other tissues, so the claim that glucagon affects liver only is factually inaccurate."
+          }
+        ],
+        "evidence": "The question stem says 'The following table shows...' but no table is embedded in the question; the table is only in the passage field. The data show only one effect per tissue, but hormone actions are not exclusive to single tissues. Glucagon also acts on adipose tissue to stimulate lipolysis, so the explanation's claim that glucagon affects liver only is incorrect. Therefore, the designated answer is not the only possible conclusion."
+      }
+    ],
+    "results": [
+      {
+        "id": "llm-041",
+        "section": "Biological & Biochemical Foundations",
+        "topic": "Amino Acids, Peptides, and Proteins",
+        "difficulty": "medium",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The question is clear and answerable. Valine is hydrophobic and buried in the core; serine is polar. Replacing a buried hydrophobic residue with a polar one disrupts hydrophobic interactions and introduces an unfavorable polar group into the core, destabilizing the folded state and making ΔG of folding less negative. This is standard MCAT biochemistry. The explanation is correct and the distractors are clearly incorrect."
+      },
+      {
+        "id": "llm-113",
+        "section": "Chemical & Physical Foundations",
+        "topic": "Metabolism: Glycolysis, TCA Cycle, and Oxidative Phosphorylation",
+        "difficulty": "easy",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "PFK-1 is widely recognized as the rate-limiting enzyme of glycolysis; the explanation correctly distinguishes it from hexokinase, pyruvate kinase, and GAPDH. Corpus excerpt 1 also references PFK-1 as one of the regulated steps of glycolysis."
+      },
+      {
+        "id": "llm-208",
+        "section": "Critical Analysis and Reasoning Skills",
+        "topic": "Economics and Business",
+        "difficulty": "hard",
+        "verdict": "inaccurate",
+        "confidence": 0.95,
+        "issues": [
+          {
+            "severity": "blocking",
+            "detail": "The designated correct answer (Option A, 'third category') is not the best answer. The proposal (health insurance while retaining flexible schedules) is most directly consistent with 'portable benefits' (Option B), which is explicitly mentioned in the passage as a solution that provides benefits while preserving flexibility. The 'third category' is also a solution, but the proposal's focus on benefits following the worker across jobs aligns more specifically with portable benefits."
+          },
+          {
+            "severity": "blocking",
+            "detail": "The explanation contains factual errors: it incorrectly labels Option B as 'a criticism, not a solution' and Option D as 'about benefits following the worker' (Option D is actually 'gig work erodes workers' rights', a criticism). The explanation also misstates the relationship between the proposal and the options."
+          }
+        ],
+        "evidence": "The passage states: 'Some propose creating a ‘third category’ of worker that offers some benefits while preserving flexibility. Others suggest portable benefits that follow the worker across jobs.' The proposal in the question (health insurance while retaining flexible schedules) is more directly about benefits following the worker across jobs, which is the definition of portable benefits. The explanation's claim that Option B is 'a criticism' is factually wrong."
+      },
+      {
+        "id": "llm-165",
+        "section": "Psychological, Social, & Biological Foundations",
+        "topic": "Demography and Urbanization",
+        "difficulty": "easy",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The demographic transition model is defined as changes in birth and death rates during industrialization, matching option B. Distractors are clearly incorrect: A is too broad, C describes urbanization, D describes population pyramids. Explanation is accurate."
+      },
+      {
+        "id": "llm-008",
+        "section": "Biological & Biochemical Foundations",
+        "topic": "Reproduction",
+        "difficulty": "hard",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The table shows treated rats have lower FSH and LH on all days and lack the day-3 LH peak seen in controls, supporting suppression of the LH surge and prevention of ovulation. The explanation correctly rejects the other options."
+      },
+      {
+        "id": "llm-100",
+        "section": "Chemical & Physical Foundations",
+        "topic": "Substitution and Elimination Reactions",
+        "difficulty": "easy",
+        "verdict": "inaccurate",
+        "confidence": 0.95,
+        "issues": [
+          {
+            "severity": "blocking",
+            "detail": "The explanation mislabels the options: it states 'Option A is true: the rate is first-order in substrate' and 'Option B is true: carbocation intermediate' and 'Option C is true: polar protic solvents stabilize...' but the actual options are A=carbocation intermediate, B=polar protic solvents, C=inversion of configuration, D=rate depends only on substrate. The explanation incorrectly identifies which option is the false statement and misattributes the content of each option."
+          },
+          {
+            "severity": "blocking",
+            "detail": "The designated correct answer (option C) is correct: SN1 reactions do not proceed with exclusive inversion; they racemize. However, the explanation's reasoning is factually muddled and does not correctly map the options, making the explanation inaccurate."
+          }
+        ],
+        "evidence": "The question asks for the NOT true statement about SN1. Option C is indeed false because SN1 leads to racemization, not inversion. However, the explanation states 'Option A is true: the rate is first-order in substrate' which is incorrect because option A is about carbocation intermediate, not rate. This mislabeling is a factual error in the explanation."
+      },
+      {
+        "id": "llm-178",
+        "section": "Critical Analysis and Reasoning Skills",
+        "topic": "Philosophy and Ethics",
+        "difficulty": "easy",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The passage explicitly states that deontology forbids certain actions regardless of consequences and that pulling the lever involves intentionally causing death, violating the categorical imperative. Option B directly paraphrases this. The other options are either utilitarian, unsupported, or irrelevant. The explanation correctly identifies the deontological reasoning and dismisses the distractors appropriately."
+      },
+      {
+        "id": "llm-153",
+        "section": "Psychological, Social, & Biological Foundations",
+        "topic": "Research Methods and Statistics",
+        "difficulty": "easy",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The question and answer align with standard MCAT research methods: experimental designs with random assignment are the only option that can establish cause-and-effect by manipulating the independent variable and controlling confounds. The explanation correctly distinguishes the other designs as descriptive or correlational. No contradiction with corpus excerpts."
+      },
+      {
+        "id": "llm-002",
+        "section": "Biological & Biochemical Foundations",
+        "topic": "The Cell",
+        "difficulty": "easy",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The question and explanation align with standard MCAT biology: cytoskeleton functions include maintaining cell shape, intracellular transport (motor proteins), and cell division, while metabolic reactions are catalyzed by enzymes, not the cytoskeleton. Corpus excerpts do not contradict this."
+      },
+      {
+        "id": "llm-099",
+        "section": "Chemical & Physical Foundations",
+        "topic": "Acids and Bases in Organic Chemistry",
+        "difficulty": "medium",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The designated answer (option index 2, text B) correctly orders each pair: thiols more acidic than alcohols (I), chloroacetic acid more acidic than acetic acid (II), and alcohols more acidic than amines (III). The explanation correctly invokes conjugate base stability and electronegativity/atom size. No contradiction with corpus excerpts, which cover Brønsted-Lowry acidity and conjugate stability."
+      },
+      {
+        "id": "llm-184",
+        "section": "Critical Analysis and Reasoning Skills",
+        "topic": "Literature and Literary Criticism",
+        "difficulty": "easy",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The passage explicitly states that interpretive communities 'provide a check on unlimited subjectivity' and that readings are 'constrained by the shared norms of a community,' directly supporting the correct answer. The explanation correctly identifies the other options as incorrect."
+      },
+      {
+        "id": "llm-152",
+        "section": "Psychological, Social, & Biological Foundations",
+        "topic": "Biological Bases of Behavior",
+        "difficulty": "medium",
+        "verdict": "accurate",
+        "confidence": 0.9,
+        "issues": [],
+        "evidence": "Right hemisphere damage classically causes contralateral neglect (left side of space), while language deficits are typically left-hemisphere. The explanation correctly notes prosopagnosia can involve right fusiform face area but spatial neglect is the most classic right-hemisphere syndrome."
+      },
+      {
+        "id": "llm-048",
+        "section": "Biological & Biochemical Foundations",
+        "topic": "DNA Structure and Replication",
+        "difficulty": "easy",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The question and explanation correctly describe DNA as antiparallel with phosphodiester bonds running in opposite directions, hydrogen bonding between bases, and sugar-phosphate backbones on the outside. All distractors are clearly incorrect. The corpus excerpts do not contradict this standard MCAT content."
+      },
+      {
+        "id": "llm-083",
+        "section": "Chemical & Physical Foundations",
+        "topic": "Thermodynamics",
+        "difficulty": "easy",
+        "verdict": "inaccurate",
+        "confidence": 0.95,
+        "issues": [
+          {
+            "severity": "blocking",
+            "detail": "The question stem references a PV diagram that is not provided in the JSON, making the question unanswerable as written. The correct answer depends on the direction of the cycle, which is not specified in the stem."
+          },
+          {
+            "severity": "blocking",
+            "detail": "The passage describes the cycle A→B→C→A with A→B isobaric (pressure increases from P_A to P_B at constant volume? Actually isobaric means constant pressure, but the passage says pressure at A is P_A and at B is P_B with P_B > P_A, which contradicts isobaric. Also B→C is isochoric, but volume at B is V_B and at C is not specified; the description is inconsistent and does not clearly define the cycle direction on a PV diagram."
+          },
+          {
+            "severity": "blocking",
+            "detail": "The explanation states the cycle is clockwise, but the provided passage does not establish that the cycle is clockwise. In fact, the described process A→B (isobaric with increasing pressure) is impossible; if A→B is isobaric, pressure must be constant, so P_A = P_B. The inconsistency makes the designated answer 'Positive' unsupported."
+          }
+        ],
+        "evidence": "The question says 'as shown in the PV diagram' but no diagram is included. The passage attempts to describe the cycle but contains contradictory statements (isobaric path with changing pressure). The explanation assumes clockwise direction without basis. Therefore the correct answer cannot be determined from the given information."
+      },
+      {
+        "id": "llm-200",
+        "section": "Critical Analysis and Reasoning Skills",
+        "topic": "Political Science and Government",
+        "difficulty": "easy",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The passage explicitly states the Athenian model 'empowered citizens to participate directly in legislative and judicial functions' and describes the assembly where citizens debated and voted on policies, supporting option C. The passage also notes exclusion of women, slaves, and non-citizens (A incorrect), describes representative democracy as a later development (B incorrect), and attributes checks and balances to the Roman Republic (D incorrect). The explanation is consistent with the passage and standard MCAT-level content."
+      },
+      {
+        "id": "llm-134",
+        "section": "Psychological, Social, & Biological Foundations",
+        "topic": "Motivation and Emotion",
+        "difficulty": "medium",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The Yerkes-Dodson law states that performance increases with arousal to an optimal point, then decreases, and that optimal arousal is lower for complex tasks. High anxiety (high arousal) on a complex exam would exceed the optimal level and impair performance. The explanation correctly identifies the correct answer and refutes the distractors."
+      },
+      {
+        "id": "llm-018",
+        "section": "Biological & Biochemical Foundations",
+        "topic": "The Respiratory System",
+        "difficulty": "easy",
+        "verdict": "accurate",
+        "confidence": 1.0,
+        "issues": [],
+        "evidence": "The question asks for the primary site of gas exchange; the correct answer is alveoli, which is standard MCAT biology. The explanation correctly states that alveoli are thin-walled sacs surrounded by capillaries and that trachea, bronchi, and bronchioles are conducting airways. This is consistent with the corpus excerpt: 'Oxygen is taken up by the blood, while carbon dioxide is released for exhalation' and the respiratory pathway includes structures leading to alveoli."
+      },
+      {
+        "id": "llm-096",
+        "section": "Chemical & Physical Foundations",
+        "topic": "Nomenclature and Functional Groups",
+        "difficulty": "medium",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The molecule HOOC-CH2-CH(NH2)-CH2-SH contains a carboxylic acid, an amine, and a thiol, but no ester. The designated answer (Ester) is correct and the explanation is accurate."
+      },
+      {
+        "id": "llm-196",
+        "section": "Critical Analysis and Reasoning Skills",
+        "topic": "History",
+        "difficulty": "medium",
+        "verdict": "accurate",
+        "confidence": 0.95,
+        "issues": [],
+        "evidence": "The passage states that 'bourgeoisie' is a 'retrospective construct' created by historians to impose order on the past, so 'Invented' is the correct meaning. The explanation correctly distinguishes 'Invented' from 'Discovered', 'Inherited', and 'Obvious'."
+      },
+      {
+        "id": "llm-176",
+        "section": "Psychological, Social, & Biological Foundations",
+        "topic": "Nervous and Endocrine Systems",
+        "difficulty": "hard",
+        "verdict": "inaccurate",
+        "confidence": 0.95,
+        "issues": [
+          {
+            "severity": "blocking",
+            "detail": "The question stem references a table but the table is not provided in the question itself; the table is only in the passage field. This makes the question unanswerable as presented."
+          },
+          {
+            "severity": "blocking",
+            "detail": "The correct answer is not the single best answer because the data are insufficient to identify the hormones as specifically insulin and glucagon. Many hormones affect liver glucose release (e.g., cortisol, epinephrine) and muscle glucose uptake (e.g., insulin, IGF), so the conclusion is overreaching."
+          },
+          {
+            "severity": "blocking",
+            "detail": "The explanation states 'X affects liver only (glucagon)' but glucagon also has effects on adipose tissue (lipolysis) and other tissues, so the claim that glucagon affects liver only is factually inaccurate."
+          }
+        ],
+        "evidence": "The question stem says 'The following table shows...' but no table is embedded in the question; the table is only in the passage field. The data show only one effect per tissue, but hormone actions are not exclusive to single tissues. Glucagon also acts on adipose tissue to stimulate lipolysis, so the explanation's claim that glucagon affects liver only is incorrect. Therefore, the designated answer is not the only possible conclusion."
+      }
+    ]
+  },
+  "summary": {
+    "actual_total": 229,
+    "expected_total": 230,
+    "coverage_rate_pct": 98.8,
+    "missing_topic_count": 0,
+    "under_covered_topic_count": 1,
+    "extra_topic_count": 0,
+    "duplicate_id_count": 0,
+    "duplicate_stem_count": 4,
+    "accuracy_audit": {
+      "accurate": 16,
+      "inaccurate": 4
+    },
+    "accuracy_flag_rate_pct": 20.0
+  }
+}

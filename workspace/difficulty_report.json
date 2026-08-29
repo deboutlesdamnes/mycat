@@ -1,0 +1,528 @@
+{
+  "agent_stats": {
+    "high": {
+      "persona": "High-skill test-taker",
+      "description": "Expert (~top 1-2%, 520+). Deep accurate content; rarely errs.",
+      "ability_profile": {
+        "easy": 0.95,
+        "medium": 0.9,
+        "hard": 0.8
+      },
+      "total": 12,
+      "correct": 10,
+      "accuracy": 0.833,
+      "by_difficulty": {
+        "easy": {
+          "correct": 4,
+          "total": 4,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 2,
+          "total": 4,
+          "accuracy": 0.5
+        },
+        "medium": {
+          "correct": 4,
+          "total": 4,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "medium": {
+      "persona": "Medium-skill test-taker",
+      "description": "Typical (~60th-70th percentile, ~500-505). Solid core; errs on hard items.",
+      "ability_profile": {
+        "easy": 0.85,
+        "medium": 0.65,
+        "hard": 0.4
+      },
+      "total": 12,
+      "correct": 8,
+      "accuracy": 0.667,
+      "by_difficulty": {
+        "easy": {
+          "correct": 3,
+          "total": 4,
+          "accuracy": 0.75
+        },
+        "hard": {
+          "correct": 1,
+          "total": 4,
+          "accuracy": 0.25
+        },
+        "medium": {
+          "correct": 4,
+          "total": 4,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "low": {
+      "persona": "Low-skill test-taker",
+      "description": "Struggling (~30th percentile, ~490). Large gaps; guesses on hard items.",
+      "ability_profile": {
+        "easy": 0.6,
+        "medium": 0.35,
+        "hard": 0.15
+      },
+      "total": 12,
+      "correct": 3,
+      "accuracy": 0.25,
+      "by_difficulty": {
+        "easy": {
+          "correct": 2,
+          "total": 4,
+          "accuracy": 0.5
+        },
+        "hard": {
+          "correct": 1,
+          "total": 4,
+          "accuracy": 0.25
+        },
+        "medium": {
+          "correct": 0,
+          "total": 4,
+          "accuracy": 0.0
+        }
+      }
+    }
+  },
+  "aggregate_by_difficulty": {
+    "easy": {
+      "correct": 9,
+      "total": 12,
+      "accuracy": 0.75
+    },
+    "hard": {
+      "correct": 4,
+      "total": 12,
+      "accuracy": 0.333
+    },
+    "medium": {
+      "correct": 8,
+      "total": 12,
+      "accuracy": 0.667
+    }
+  },
+  "calibration": {
+    "monotonic": true,
+    "expected_order": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "observed_order_by_accuracy": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "notes": [
+      "agent 'medium' accuracy rises from 'easy' to 'medium' - expected monotonic decrease",
+      "agent 'low' accuracy rises from 'medium' to 'hard' - expected monotonic decrease"
+    ]
+  },
+  "anomalies": [
+    {
+      "id": "llm-225",
+      "difficulty": "easy",
+      "topic": "Cultural Studies and Religion",
+      "detail": "'easy' item missed by most agents (pass rate 0.33)"
+    },
+    {
+      "id": "llm-223",
+      "difficulty": "hard",
+      "topic": "Philosophy of Science and Technology",
+      "detail": "high-skill agent missed this item (possible key error or ambiguity)"
+    },
+    {
+      "id": "llm-218",
+      "difficulty": "hard",
+      "topic": "Psychology and Social Behavior",
+      "detail": "low-skill agent answered a 'hard' item correctly (possibly too easy for 'hard')"
+    },
+    {
+      "id": "llm-218",
+      "difficulty": "hard",
+      "topic": "Psychology and Social Behavior",
+      "detail": "'hard' item answered correctly by every agent (possibly too easy for 'hard')"
+    },
+    {
+      "id": "llm-212",
+      "difficulty": "hard",
+      "topic": "Sociology and Anthropology",
+      "detail": "high-skill agent missed this item (possible key error or ambiguity)"
+    }
+  ],
+  "items": [
+    {
+      "id": "llm-226",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "Cultural Studies and Religion",
+      "difficulty": "easy",
+      "correct": 2,
+      "high": {
+        "choice": 2,
+        "correct": true,
+        "best_choice": 2,
+        "confidence": 0.9,
+        "reasoning": "The passage likely discusses how both symbols have been used to represent political power, as they were adopted by empires and states."
+      },
+      "medium": {
+        "choice": 2,
+        "correct": true,
+        "best_choice": 2,
+        "confidence": 0.6,
+        "reasoning": "Both symbols have been used to represent political power historically."
+      },
+      "low": {
+        "choice": 2,
+        "correct": true,
+        "best_choice": 2,
+        "confidence": 0.4,
+        "reasoning": "I recall that both symbols have been used by empires and states to represent authority."
+      },
+      "pass_rate": 1.0
+    },
+    {
+      "id": "llm-228",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "Cultural Studies and Religion",
+      "difficulty": "medium",
+      "correct": 1,
+      "high": {
+        "choice": 1,
+        "correct": true,
+        "best_choice": 1,
+        "confidence": 0.9,
+        "reasoning": "The passage likely discusses how sacredness is socially constructed and context-dependent, not inherent."
+      },
+      "medium": {
+        "choice": 1,
+        "correct": true,
+        "best_choice": 1,
+        "confidence": 0.6,
+        "reasoning": "The passage likely discusses how sacredness is socially constructed, making context key."
+      },
+      "low": {
+        "choice": 0,
+        "correct": false,
+        "best_choice": 1,
+        "confidence": 0.25,
+        "reasoning": "I think sacred might depend on context, but I'm not sure."
+      },
+      "pass_rate": 0.67
+    },
+    {
+      "id": "llm-229",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "Cultural Studies and Religion",
+      "difficulty": "hard",
+      "correct": 3,
+      "high": {
+        "choice": 3,
+        "correct": true,
+        "best_choice": 3,
+        "confidence": 0.9,
+        "reasoning": "The passage likely discusses how new religious movements sacralize everyday objects, and their meanings evolve over time."
+      },
+      "medium": {
+        "choice": 0,
+        "correct": false,
+        "best_choice": 3,
+        "confidence": 0.6,
+        "reasoning": "New religious movements often sacralize everyday objects, and their meanings typically evolve over time."
+      },
+      "low": {
+        "choice": 0,
+        "correct": false,
+        "best_choice": 3,
+        "confidence": 0.4,
+        "reasoning": "Religious symbols often take on new meanings as movements evolve, so D seems plausible."
+      },
+      "pass_rate": 0.33
+    },
+    {
+      "id": "llm-225",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "Cultural Studies and Religion",
+      "difficulty": "easy",
+      "correct": 0,
+      "high": {
+        "choice": 0,
+        "correct": true,
+        "best_choice": 0,
+        "confidence": 0.95,
+        "reasoning": "The passage likely argues that religious symbols are context-dependent and evolve, not fixed."
+      },
+      "medium": {
+        "choice": 2,
+        "correct": false,
+        "best_choice": 0,
+        "confidence": 0.75,
+        "reasoning": "The passage likely argues that symbols change meaning over time and context, so A is the best fit."
+      },
+      "low": {
+        "choice": 3,
+        "correct": false,
+        "best_choice": 0,
+        "confidence": 0.4,
+        "reasoning": "The passage likely discusses how symbols change meaning over time and across societies, so option A seems familiar and likely correct."
+      },
+      "pass_rate": 0.33
+    },
+    {
+      "id": "llm-227",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "Cultural Studies and Religion",
+      "difficulty": "medium",
+      "correct": 0,
+      "high": {
+        "choice": 0,
+        "correct": true,
+        "best_choice": 0,
+        "confidence": 0.9,
+        "reasoning": "The passage likely uses these empires as examples of how political powers adopted religious symbols for legitimacy."
+      },
+      "medium": {
+        "choice": 0,
+        "correct": true,
+        "best_choice": 0,
+        "confidence": 0.6,
+        "reasoning": "The mention likely illustrates how empires used religious symbols for political ends, a common historical pattern."
+      },
+      "low": {
+        "choice": 3,
+        "correct": false,
+        "best_choice": 0,
+        "confidence": 0.3,
+        "reasoning": "I remember something about emperors using religion to control people, so it might be about political use."
+      },
+      "pass_rate": 0.67
+    },
+    {
+      "id": "llm-223",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "Philosophy of Science and Technology",
+      "difficulty": "hard",
+      "correct": 1,
+      "high": {
+        "choice": 0,
+        "correct": false,
+        "best_choice": 0,
+        "confidence": 0.85,
+        "reasoning": "If most 19th-century inventions were based on existing science, it suggests science precedes technology, weakening co-production."
+      },
+      "medium": {
+        "choice": 0,
+        "correct": false,
+        "best_choice": 3,
+        "confidence": 0.7,
+        "reasoning": "This directly contradicts co-production by showing a case where science proceeds without technological input."
+      },
+      "low": {
+        "choice": 0,
+        "correct": false,
+        "best_choice": 1,
+        "confidence": 0.3,
+        "reasoning": "If technology is just applied science, that supports a one-way direction, weakening co-production."
+      },
+      "pass_rate": 0.0
+    },
+    {
+      "id": "llm-221",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "Philosophy of Science and Technology",
+      "difficulty": "easy",
+      "correct": 0,
+      "high": {
+        "choice": 0,
+        "correct": true,
+        "best_choice": 0,
+        "confidence": 0.95,
+        "reasoning": "The passage states that the steam engine was developed by practical engineers before thermodynamics was formalized, illustrating technology preceding science."
+      },
+      "medium": {
+        "choice": 0,
+        "correct": true,
+        "best_choice": 0,
+        "confidence": 0.9,
+        "reasoning": "The passage states that the steam engine was developed by practical engineers before thermodynamics was formalized, illustrating technology preceding science."
+      },
+      "low": {
+        "choice": 3,
+        "correct": false,
+        "best_choice": 0,
+        "confidence": 0.7,
+        "reasoning": "The passage says the steam engine was developed before thermodynamics, so technology came first."
+      },
+      "pass_rate": 0.67
+    },
+    {
+      "id": "llm-224",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "Philosophy of Science and Technology",
+      "difficulty": "medium",
+      "correct": 2,
+      "high": {
+        "choice": 2,
+        "correct": true,
+        "best_choice": 2,
+        "confidence": 0.9,
+        "reasoning": "This scenario shows a bidirectional relationship where science informs technology and technology is improved by scientific discovery, matching co-production."
+      },
+      "medium": {
+        "choice": 2,
+        "correct": true,
+        "best_choice": 2,
+        "confidence": 0.7,
+        "reasoning": "The passage describes co-production as a bidirectional relationship where technology enables science and science improves technology, which is directly shown in option C."
+      },
+      "low": {
+        "choice": 1,
+        "correct": false,
+        "best_choice": 2,
+        "confidence": 0.3,
+        "reasoning": "I think co-production means science and technology affect each other, and the particle accelerator example shows both directions."
+      },
+      "pass_rate": 0.67
+    },
+    {
+      "id": "llm-218",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "Psychology and Social Behavior",
+      "difficulty": "hard",
+      "correct": 2,
+      "high": {
+        "choice": 2,
+        "correct": true,
+        "best_choice": 2,
+        "confidence": 0.95,
+        "reasoning": "This shows that reducing the authority's physical presence reduces obedience, directly supporting situational influence."
+      },
+      "medium": {
+        "choice": 2,
+        "correct": true,
+        "best_choice": 2,
+        "confidence": 0.75,
+        "reasoning": "This shows that changing the situational factor (presence of authority) reduces obedience, supporting situational influence."
+      },
+      "low": {
+        "choice": 2,
+        "correct": true,
+        "best_choice": 2,
+        "confidence": 0.4,
+        "reasoning": "If obedience drops when authority is less present, it shows the situation matters."
+      },
+      "pass_rate": 1.0
+    },
+    {
+      "id": "llm-220",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "Philosophy of Science and Technology",
+      "difficulty": "easy",
+      "correct": 0,
+      "high": {
+        "choice": 0,
+        "correct": true,
+        "best_choice": 0,
+        "confidence": 0.95,
+        "reasoning": "The passage emphasizes the bidirectional and complex relationship between science and technology, rejecting a unidirectional model."
+      },
+      "medium": {
+        "choice": 0,
+        "correct": true,
+        "best_choice": 0,
+        "confidence": 0.9,
+        "reasoning": "The passage discusses the bidirectional influence between science and technology, supporting option A."
+      },
+      "low": {
+        "choice": 0,
+        "correct": true,
+        "best_choice": 0,
+        "confidence": 0.7,
+        "reasoning": "The passage emphasizes the bidirectional influence between science and technology, so A matches best."
+      },
+      "pass_rate": 1.0
+    },
+    {
+      "id": "llm-222",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "Philosophy of Science and Technology",
+      "difficulty": "medium",
+      "correct": 0,
+      "high": {
+        "choice": 0,
+        "correct": true,
+        "best_choice": 0,
+        "confidence": 0.9,
+        "reasoning": "The passage uses Kuhn and Latour to illustrate different perspectives on the science-technology relationship, but neither fully captures the bidirectional interplay."
+      },
+      "medium": {
+        "choice": 0,
+        "correct": true,
+        "best_choice": 0,
+        "confidence": 0.7,
+        "reasoning": "The passage discusses both Kuhn and Latour to show different perspectives on science and technology, but notes neither fully captures the bidirectional relationship."
+      },
+      "low": {
+        "choice": 1,
+        "correct": false,
+        "best_choice": 0,
+        "confidence": 0.5,
+        "reasoning": "The passage discusses both Kuhn and Latour to illustrate different perspectives on the science-technology relationship, but doesn't fully endorse either."
+      },
+      "pass_rate": 0.67
+    },
+    {
+      "id": "llm-212",
+      "section": "Critical Analysis and Reasoning Skills",
+      "topic": "Sociology and Anthropology",
+      "difficulty": "hard",
+      "correct": 3,
+      "high": {
+        "choice": 1,
+        "correct": false,
+        "best_choice": 3,
+        "confidence": 0.95,
+        "reasoning": "If sleeping arrangements are determined by lottery, they would not reflect social hierarchies, directly weakening the claim."
+      },
+      "medium": {
+        "choice": 1,
+        "correct": false,
+        "best_choice": 3,
+        "confidence": 0.7,
+        "reasoning": "If sleeping arrangements are random, they cannot reflect or reinforce social hierarchies."
+      },
+      "low": {
+        "choice": 1,
+        "correct": false,
+        "best_choice": 3,
+        "confidence": 0.6,
+        "reasoning": "If sleeping arrangements are assigned by lottery, social hierarchies wouldn't determine sleep, directly weakening the claim."
+      },
+      "pass_rate": 0.0
+    }
+  ],
+  "input": "C:\\Users\\jason\\Documents\\mycat\\workspace\\generated_full.jsonl",
+  "sample_size": 12,
+  "agents_run": [
+    "high",
+    "medium",
+    "low"
+  ],
+  "question_ids": [
+    "llm-226",
+    "llm-228",
+    "llm-229",
+    "llm-225",
+    "llm-227",
+    "llm-223",
+    "llm-221",
+    "llm-224",
+    "llm-218",
+    "llm-220",
+    "llm-222",
+    "llm-212"
+  ]
+}
