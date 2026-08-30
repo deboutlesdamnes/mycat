@@ -36,7 +36,7 @@ function renderNav(active) {
 
   root.innerHTML = `
     <div class="nav">
-      <div class="nav-brand"><span aria-hidden="true">🩺</span>MyCat</div>
+      <div class="nav-brand">${mycatMark(26)}<span style="letter-spacing:-.01em">my<span style="color:var(--color-accent)">cat</span></span></div>
       ${links.map((l) => `<a href="${l.href}" ${l.key === active ? 'aria-current="page"' : ""}>${l.label}</a>`).join("")}
       ${streak > 0 ? `<div class="nav-streak">${icon("flame", { size: 15 })}${streak}-day streak</div>` : ""}
       ${acctHtml}

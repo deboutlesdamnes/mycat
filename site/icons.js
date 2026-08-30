@@ -26,3 +26,15 @@ function icon(name, { size = 16, className = "" } = {}) {
   const body = ICON_PATHS[name] || "";
   return `<svg viewBox="0 0 24 24" width="${size}" height="${size}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="${className}" aria-hidden="true">${body}</svg>`;
 }
+
+// The mycat brand mark: a single stethoscope tube bent into a cat's head, the
+// earpieces landing on the ear tips and the chestpiece hanging below. Matches
+// the "00 — Logo" board in the MCAT mockups. Head fills white, everything else
+// is currentColor so it inherits the surrounding text colour; the nose stays a
+// fixed pink. Whiskers and mouth are dropped below ~20px where they'd blur.
+function mycatMark(size = 26) {
+  const detail = size >= 20
+    ? '<path d="M32 37.8 L32 39.1 M32 39.1 C30.9 41.3 28.6 41.1 27.8 39.4 M32 39.1 C33.1 41.3 35.4 41.1 36.2 39.4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.5 34.6 L15.8 33.2 M21.5 37.4 L16.2 39.2 M42.5 34.6 L48.2 33.2 M42.5 37.4 L47.8 39.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'
+    : "";
+  return `<svg viewBox="0 0 64 64" width="${size}" height="${size}" fill="none" style="flex:none" aria-hidden="true"><path d="M13 10 C15.5 15.2 20 18.6 25.5 20.2 C29.4 18 34.6 18 38.5 20.2 C44 18.6 48.5 15.2 51 10 C54 17.5 54.2 28 51.5 35.2 C49 44 41 48.6 32 48.6 C23 48.6 15 44 12.5 35.2 C9.8 28 10 17.5 13 10 Z" fill="#ffffff" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="13" cy="9" r="4.5" fill="currentColor"/><circle cx="51" cy="9" r="4.5" fill="currentColor"/><path d="M32 48.5 C32 54 36 56.5 40 57" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/><circle cx="46.5" cy="57" r="5.5" stroke="currentColor" stroke-width="4.5"/><circle cx="24.5" cy="30.5" r="2.8" fill="currentColor"/><circle cx="39.5" cy="30.5" r="2.8" fill="currentColor"/><ellipse cx="32" cy="35.6" rx="2.7" ry="2.2" fill="#f0879e"/>${detail}</svg>`;
+}

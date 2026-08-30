@@ -613,7 +613,7 @@ body {
   position: sticky; top: 0; z-index: 10;
 }
 .app2 .nav-brand {
-  display: flex; align-items: center; gap: 8px;
+  display: flex; align-items: center; gap: 9px;
   font-family: var(--font-heading); font-weight: var(--font-heading-weight);
   font-size: 18px; margin-right: auto; color: var(--color-text);
 }
