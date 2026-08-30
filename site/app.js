@@ -416,7 +416,7 @@ function render() {
   if (q.passage) {
     const p = document.createElement("div");
     p.className = "passage";
-    p.textContent = q.passage;
+    p.innerHTML = Glossary.linkify(q.passage);
     root.appendChild(p);
   }
 
@@ -424,7 +424,7 @@ function render() {
 
   const qText = document.createElement("p");
   qText.className = "q-text";
-  qText.textContent = q.question;
+  qText.innerHTML = Glossary.linkify(q.question);
   root.appendChild(qText);
 
   const optionsEl = document.createElement("div");
@@ -433,7 +433,7 @@ function render() {
   q.options.forEach((optionText, i) => {
     const b = document.createElement("button");
     b.className = "option";
-    b.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${optionText}</span>`;
+    b.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${Glossary.linkify(optionText)}</span>`;
     b.addEventListener("click", () => selectOption(i, b, optionsEl));
     optionsEl.appendChild(b);
   });
@@ -460,7 +460,7 @@ function selectOption(i, btn, optionsEl) {
   const letters = ["A", "B", "C", "D"];
   const explanation = document.createElement("div");
   explanation.className = "explanation";
-  explanation.innerHTML = `<strong>${wasCorrect ? "Correct" : "Not quite"} — answer: ${letters[q.correct]}.</strong> ${q.explanation}`;
+  explanation.innerHTML = `<strong>${wasCorrect ? "Correct" : "Not quite"} — answer: ${letters[q.correct]}.</strong> ${Glossary.linkify(q.explanation)}`;
   root.appendChild(explanation);
 
   showGradeButtons(wasCorrect);
@@ -556,7 +556,7 @@ function renderTest() {
   if (q.passage) {
     const p = document.createElement("div");
     p.className = "passage";
-    p.textContent = q.passage;
+    p.innerHTML = Glossary.linkify(q.passage);
     root.appendChild(p);
   }
 
@@ -564,7 +564,7 @@ function renderTest() {
 
   const qText = document.createElement("p");
   qText.className = "q-text";
-  qText.textContent = q.question;
+  qText.innerHTML = Glossary.linkify(q.question);
   root.appendChild(qText);
 
   const optionsEl = document.createElement("div");
@@ -573,7 +573,7 @@ function renderTest() {
   q.options.forEach((optionText, i) => {
     const b = document.createElement("button");
     b.className = "option";
-    b.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${optionText}</span>`;
+    b.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${Glossary.linkify(optionText)}</span>`;
     b.addEventListener("click", () => selectTestOption(i, b, optionsEl));
     optionsEl.appendChild(b);
   });

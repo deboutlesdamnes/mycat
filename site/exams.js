@@ -84,11 +84,11 @@
             <div style="display:flex;align-items:center;gap:6px;font-size:13px">${icon("clock", { size: 15 })}<span class="timer" id="exam-timer">${fmt(secondsLeft)}</span></div>
           </div>
           <div class="player-grid">
-            ${q.passage ? `<div class="player-passage"><div class="k" style="margin-bottom:10px">Passage</div><div class="passage-block">${escapeHtml(q.passage)}</div></div>` : ""}
+            ${q.passage ? `<div class="player-passage"><div class="k" style="margin-bottom:10px">Passage</div><div class="passage-block">${Glossary.linkify(q.passage)}</div></div>` : ""}
             <div class="player-question" style="${q.passage ? "" : "grid-column:1 / -1;max-width:640px;margin:0 auto"}">
-              <p class="question-text">${escapeHtml(q.question)}</p>
+              <p class="question-text">${Glossary.linkify(q.question)}</p>
               <div class="answer-options" id="options">
-                ${q.options.map((opt, i) => `<button class="answer-option" data-i="${i}"><span class="answer-letter">${letters[i]}.</span><span class="answer-option-text">${escapeHtml(opt)}</span></button>`).join("")}
+                ${q.options.map((opt, i) => `<button class="answer-option" data-i="${i}"><span class="answer-letter">${letters[i]}.</span><span class="answer-option-text">${Glossary.linkify(opt)}</span></button>`).join("")}
               </div>
             </div>
           </div>

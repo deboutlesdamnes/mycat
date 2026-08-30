@@ -297,19 +297,19 @@
           ${passage ? `
             <div class="player-passage">
               <div class="k" style="margin-bottom:10px">Passage</div>
-              <div class="passage-block">${escapeHtml(passage)}</div>
+              <div class="passage-block">${Glossary.linkify(passage)}</div>
             </div>` : ""}
           <div class="player-question" style="${passage ? "" : "grid-column:1 / -1;max-width:640px;margin:0 auto"}">
             <div style="display:flex;gap:8px;align-items:center;margin-bottom:12px">
               <span class="level-tag level-${Data.difficultyOf(q)}">${Data.difficultyOf(q)}</span>
               ${q.topic ? `<span class="tag tag-neutral">${q.topic}</span>` : ""}
             </div>
-            <p class="question-text">${escapeHtml(q.question)}</p>
+            <p class="question-text">${Glossary.linkify(q.question)}</p>
             <div class="answer-options" id="options">
               ${q.options.map((opt, i) => `
                 <button class="answer-option" data-i="${i}">
                   <span class="answer-letter">${letters[i]}.</span>
-                  <span class="answer-option-text">${escapeHtml(opt)}</span>
+                  <span class="answer-option-text">${Glossary.linkify(opt)}</span>
                 </button>`).join("")}
             </div>
             <div id="explain-slot"></div>
@@ -359,7 +359,7 @@
           <strong>${wasCorrect ? "Correct" : "Not quite"} — answer: ${letters[q.correct]}.</strong>
           ${selfAcc != null ? `<span class="tag tag-neutral">Your accuracy on ${q.topic}: ${selfAcc}%</span>` : ""}
         </div>
-        <p>${escapeHtml(q.explanation)}</p>
+        <p>${Glossary.linkify(q.explanation)}</p>
       </div>
       <div class="review-row" id="grade-row"></div>
     `;

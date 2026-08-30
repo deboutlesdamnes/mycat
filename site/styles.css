@@ -862,3 +862,52 @@ body {
 .page-foot { text-align: center; font-size: .85rem; padding: 20px; opacity: .6; }
 .text-link { color: inherit; text-decoration: underline; font-size: .78rem; cursor: pointer; background: none; border: none; font-family: var(--font-body); }
 .text-link:hover { color: var(--color-accent); }
+
+/* ---------------- concept hover definitions (glossary.js) ---------------- */
+.concept {
+  border-bottom: 1px dashed color-mix(in srgb, currentColor 55%, transparent);
+  cursor: help;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
+}
+.concept:hover,
+.concept:focus-visible {
+  background-color: color-mix(in srgb, currentColor 20%, transparent);
+  border-bottom: 1px solid currentColor;
+}
+/* Classic quiz page (uses --accent tokens). */
+.app .concept:hover,
+.app .concept:focus-visible {
+  background-color: color-mix(in srgb, var(--accent) 22%, transparent);
+  border-bottom: 1px solid var(--accent);
+}
+/* New dashboard pages (use --color-accent tokens). */
+.app2 .concept:hover,
+.app2 .concept:focus-visible {
+  background-color: color-mix(in srgb, var(--color-accent) 22%, transparent);
+  border-bottom: 1px solid var(--color-accent);
+}
+#concept-tooltip {
+  position: fixed;
+  z-index: 9999;
+  max-width: min(340px, calc(100vw - 24px));
+  padding: 10px 13px;
+  background: #17212b;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  pointer-events: none;
+}
+#concept-tooltip[hidden] { display: none; }
+.concept-tooltip-term {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.concept-tooltip-def {
+  display: block;
+  opacity: 0.9;
+}

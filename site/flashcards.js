@@ -171,9 +171,19 @@
     return byTopic;
   }
 
+  // CARS questions only make sense read against their passage, so they're a poor
+  // fit for standalone recall cards — keep them out of every flashcard deck.
+  function isCars(q) {
+    return (
+      q.section === "Critical Analysis and Reasoning Skills" ||
+      /\(CARS\)/.test(q.subject || "")
+    );
+  }
+
   function topicDecks() {
     const byTopic = {};
     Object.values(Data.allQuestions).forEach((q) => {
+      if (isCars(q)) return;
       const t = consolidatedTopic(q);
       (byTopic[t] = byTopic[t] || []).push(q);
     });
@@ -190,7 +200,8 @@
   function missedDeck(store) {
     const qs = Object.entries(store.cards)
       .filter(([, c]) => c.lastCorrect === false)
-      .map(([id]) => Data.allQuestions[id]).filter(Boolean);
+      .map(([id]) => Data.allQuestions[id])
+      .filter((q) => q && !isCars(q));
     return { id: "missed", title: "Missed questions", questions: qs, auto: true };
   }
 
@@ -266,7 +277,7 @@
       </div>
       <div class="flash-card">
         <div class="k">Front</div>
-        <p style="font-family:var(--font-heading);font-size:22px;line-height:1.3;font-weight:600;margin:10px 0 0">${escapeHtml(q.question)}</p>
+        <p style="font-family:var(--font-heading);font-size:22px;line-height:1.3;font-weight:600;margin:10px 0 0">${Glossary.linkify(q.question)}</p>
         <div id="back-slot" style="margin-top:auto"></div>
       </div>
       <div id="grade-slot"></div>
@@ -279,8 +290,8 @@
       backSlot.innerHTML = `
         <hr class="hr" style="margin:28px 0">
         <div class="k">Back</div>
-        <p style="font-size:16px;line-height:1.7;margin:10px 0 0;opacity:.9"><strong>${letters[q.correct]}.</strong> ${escapeHtml(q.options[q.correct])}</p>
-        <p style="font-size:14px;line-height:1.6;margin-top:10px;opacity:.8">${escapeHtml(q.explanation)}</p>
+        <p style="font-size:16px;line-height:1.7;margin:10px 0 0;opacity:.9"><strong>${letters[q.correct]}.</strong> ${Glossary.linkify(q.options[q.correct])}</p>
+        <p style="font-size:14px;line-height:1.6;margin-top:10px;opacity:.8">${Glossary.linkify(q.explanation)}</p>
         <div style="display:flex;gap:6px;margin-top:20px">
           ${q.topic ? `<span class="tag tag-accent">${q.topic}</span>` : ""}
           <span class="tag tag-neutral">${q.section ? q.section.replace(" Foundations", "") : ""}</span>
