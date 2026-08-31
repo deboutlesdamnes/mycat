@@ -438,7 +438,7 @@ body {
   justify-content: center;
   overflow-x: auto;
 }
-.figure svg { height: auto; display: block; }
+.figure svg { max-width: 100%; height: auto; display: block; }
 .figure-caption {
   font-size: 0.82rem;
   color: var(--muted);
@@ -709,6 +709,15 @@ body {
 .stat-tile { background: var(--color-surface); padding: 16px 18px; }
 .bar { height: 6px; background: var(--color-accent-200); position: relative; }
 .bar > span { display: block; height: 100%; background: var(--color-accent); }
+.bar-band {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--color-accent) 22%, transparent);
+  border-left: 1px solid var(--color-accent-600);
+  border-right: 1px solid var(--color-accent-600);
+}
 .chart-bars { display: flex; align-items: flex-end; gap: 4px; height: 56px; }
 .chart-bars > div { flex: 1; background: var(--color-accent-400); min-height: 3px; }
 .chart-bars > div.today { background: var(--color-accent); }
@@ -887,6 +896,43 @@ body {
 .app2 .concept:focus-visible {
   background-color: color-mix(in srgb, var(--color-accent) 22%, transparent);
   border-bottom: 1px solid var(--color-accent);
+}
+/* Key-concept pill (topic chip). Shares the .concept tooltip/hover behavior. */
+.concept.concept-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 12px 0 0;
+  padding: 4px 10px;
+  border: 1px solid var(--color-accent);
+  border-radius: 999px;
+  background: var(--color-accent-100);
+  color: var(--color-accent-800);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: help;
+}
+.app .concept.concept-chip {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  color: var(--accent);
+}
+.concept.concept-chip:hover,
+.concept.concept-chip:focus-visible {
+  background: var(--color-accent-200);
+  border-color: var(--color-accent);
+}
+.app .concept.concept-chip:hover,
+.app .concept.concept-chip:focus-visible {
+  background: color-mix(in srgb, var(--accent) 26%, transparent);
+  border-color: var(--accent);
+}
+.concept-chip-label {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 10px;
+  font-weight: 800;
+  opacity: 0.75;
 }
 #concept-tooltip {
   position: fixed;

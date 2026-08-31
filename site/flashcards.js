@@ -268,6 +268,7 @@
     }
     const q = activeDeck.questions[idx];
     const letters = ["A", "B", "C", "D"];
+    const kc = Glossary.keyConcepts(q);
     main.innerHTML = `
       <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
         <div style="font-family:var(--font-heading);font-weight:600;font-size:14px">${activeDeck.title}</div>
@@ -277,7 +278,8 @@
       </div>
       <div class="flash-card">
         <div class="k">Front</div>
-        <p style="font-family:var(--font-heading);font-size:22px;line-height:1.3;font-weight:600;margin:10px 0 0">${Glossary.linkify(q.question)}</p>
+        <p style="font-family:var(--font-heading);font-size:22px;line-height:1.3;font-weight:600;margin:10px 0 0">${Glossary.linkify(q.question, { terms: kc.terms, limit: 2 })}</p>
+        ${Glossary.conceptChip(kc.topic)}
         <div id="back-slot" style="margin-top:auto"></div>
       </div>
       <div id="grade-slot"></div>
@@ -290,8 +292,9 @@
       backSlot.innerHTML = `
         <hr class="hr" style="margin:28px 0">
         <div class="k">Back</div>
-        <p style="font-size:16px;line-height:1.7;margin:10px 0 0;opacity:.9"><strong>${letters[q.correct]}.</strong> ${Glossary.linkify(q.options[q.correct])}</p>
-        <p style="font-size:14px;line-height:1.6;margin-top:10px;opacity:.8">${Glossary.linkify(q.explanation)}</p>
+        <p style="font-size:16px;line-height:1.7;margin:10px 0 0;opacity:.9"><strong>${letters[q.correct]}.</strong> ${Glossary.linkify(q.options[q.correct], { terms: kc.terms, limit: 3 })}</p>
+        <p style="font-size:14px;line-height:1.6;margin-top:10px;opacity:.8">${Glossary.linkify(q.explanation, { terms: kc.terms, limit: 3 })}</p>
+        ${Glossary.conceptChip(kc.topic)}
         <div style="display:flex;gap:6px;margin-top:20px">
           ${q.topic ? `<span class="tag tag-accent">${q.topic}</span>` : ""}
           <span class="tag tag-neutral">${q.section ? q.section.replace(" Foundations", "") : ""}</span>

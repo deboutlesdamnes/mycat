@@ -280,8 +280,10 @@
     const q = queue[idx];
     const passage = q.passage || setPassage;
     const letters = ["A", "B", "C", "D"];
+    const kc = Glossary.keyConcepts(q);
     const flagged = Store.isFlagged(q.id);
     const saved = Store.isSaved(q.id);
+    const fig = Glossary.figureHTML(q);
 
     root.innerHTML = `
       <div class="panel">
@@ -297,19 +299,21 @@
           ${passage ? `
             <div class="player-passage">
               <div class="k" style="margin-bottom:10px">Passage</div>
-              <div class="passage-block">${Glossary.linkify(passage)}</div>
+              <div class="passage-block">${Glossary.linkify(passage, { limit: 3 })}</div>
+              ${fig}
             </div>` : ""}
           <div class="player-question" style="${passage ? "" : "grid-column:1 / -1;max-width:640px;margin:0 auto"}">
             <div style="display:flex;gap:8px;align-items:center;margin-bottom:12px">
               <span class="level-tag level-${Data.difficultyOf(q)}">${Data.difficultyOf(q)}</span>
               ${q.topic ? `<span class="tag tag-neutral">${q.topic}</span>` : ""}
             </div>
-            <p class="question-text">${Glossary.linkify(q.question)}</p>
+            <p class="question-text">${Glossary.linkify(q.question, { terms: kc.terms, limit: 2 })}</p>
+            ${passage ? "" : fig}
             <div class="answer-options" id="options">
               ${q.options.map((opt, i) => `
                 <button class="answer-option" data-i="${i}">
                   <span class="answer-letter">${letters[i]}.</span>
-                  <span class="answer-option-text">${Glossary.linkify(opt)}</span>
+                  <span class="answer-option-text">${Glossary.linkify(opt, { terms: kc.terms, limit: 3 })}</span>
                 </button>`).join("")}
             </div>
             <div id="explain-slot"></div>
@@ -351,6 +355,7 @@
       else if (bi === i) btn.classList.add("wrong");
     });
 
+    const kc = Glossary.keyConcepts(q);
     const selfAcc = selfAccuracyOnTopic(q.topic, q.id);
     const slot = document.getElementById("explain-slot");
     slot.innerHTML = `
@@ -359,7 +364,8 @@
           <strong>${wasCorrect ? "Correct" : "Not quite"} — answer: ${letters[q.correct]}.</strong>
           ${selfAcc != null ? `<span class="tag tag-neutral">Your accuracy on ${q.topic}: ${selfAcc}%</span>` : ""}
         </div>
-        <p>${Glossary.linkify(q.explanation)}</p>
+        <p>${Glossary.linkify(q.explanation, { terms: kc.terms, limit: 3 })}</p>
+        ${Glossary.conceptChip(kc.topic)}
       </div>
       <div class="review-row" id="grade-row"></div>
     `;

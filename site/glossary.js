@@ -326,6 +326,126 @@
       definition: "A principle permitting an action with a foreseeable but unintended harmful side effect if the intended effect is good and the harm is proportionate." },
   ];
 
+  // Concise definitions for every question `topic` used in the bank. These
+  // power the per-question "Key concept" chip and its hover definition.
+  const TOPIC_DEFINITIONS = {
+    // Biochemistry & Biology
+    "Amino Acids, Peptides, and Proteins": "Amino acid chemistry, peptide bonding, and protein structure.",
+    "Amino Acids and Proteins": "Amino acid ionization, peptide bonds, and protein structure and function.",
+    "Protein Structure": "Primary, secondary, tertiary, and quaternary protein organization and the forces that stabilize each level.",
+    "Enzymes": "Biological catalysts that lower activation energy, including active sites, specificity, and regulation.",
+    "Enzymes and Enzyme Kinetics": "Enzyme function with a focus on Michaelis–Menten kinetics, Km, Vmax, and inhibition.",
+    "Enzyme Kinetics": "Quantitative study of enzyme reaction rates: Km, Vmax, and the effects of inhibitors.",
+    "Enzymes and Metabolic Regulation": "How committed, allosterically regulated enzymes act as control points in metabolic pathways.",
+    "Metabolism: Glycolysis, TCA Cycle, and Oxidative Phosphorylation": "The central energy pathways: glucose breakdown, the citric acid cycle, and ATP production via the electron transport chain.",
+    "Bioenergetics and Cellular Respiration": "Energy flow in cells, including ATP, redox reactions, and aerobic respiration.",
+    "Carbohydrates and Glycobiology": "Structure and biological roles of carbohydrates.",
+    "Carbohydrates and Lipids": "Structure, properties, and biological roles of carbohydrates and lipids.",
+    "Lipids and Biological Membranes": "Lipid structure and the assembly and function of biological membranes.",
+    "Transcription and Translation": "Gene expression: DNA-to-RNA transcription and RNA-to-protein translation.",
+    "DNA Structure and Replication": "The double-helix structure of DNA and its semiconservative replication.",
+    "Nucleic Acids and Gene Expression": "DNA and RNA structure and the regulation of gene expression.",
+    "Genetics and Evolution": "Mendelian genetics, heredity, and the mechanisms of evolution.",
+    "Molecular Genetics and Mutations": "The molecular basis of genes, including mutation types and their consequences.",
+    "Molecular Biology Techniques": "Laboratory methods such as blotting, PCR, and sequencing used to study nucleic acids and proteins.",
+    "The Cell": "Cell structure, organelles, and basic cellular processes.",
+    "Reproduction": "Cellular and organismal reproduction, including mitosis and meiosis.",
+    "Embryogenesis and Development": "Stages of embryonic development and the processes of determination and differentiation.",
+    "The Nervous System": "Neuron structure and signaling, and the organization of the nervous system.",
+    "The Endocrine System": "Hormones, endocrine glands, and their regulation of physiology.",
+    "Endocrine System": "Hormonal signaling and the glands that regulate the body.",
+    "Nervous and Endocrine Systems": "Integration of neural and hormonal control of the body.",
+    "The Respiratory System": "Anatomy and physiology of breathing and gas exchange.",
+    "The Cardiovascular System": "The heart, blood vessels, and circulation.",
+    "The Immune System": "Innate and adaptive immune defenses.",
+    "The Digestive System": "Mechanical and chemical digestion and nutrient absorption.",
+    "The Musculoskeletal System": "Muscle and bone structure, function, and movement.",
+    "Muscle Tissue and Physiology": "Muscle cell types, contraction mechanisms, and their regulation.",
+    "Homeostasis": "Maintenance of a stable internal environment through feedback control.",
+
+    // General Chemistry
+    "Atomic Structure": "Subatomic particles, atomic number, isotopes, and electron configuration.",
+    "The Periodic Table": "Organization of the elements and the information it encodes.",
+    "Periodic Table Trends": "Periodic trends in atomic radius, ionization energy, electronegativity, and electron affinity.",
+    "Bonding and Chemical Interactions": "Ionic, covalent, and intermolecular interactions.",
+    "Compounds and Stoichiometry": "Chemical formulas, moles, and quantitative relationships in reactions.",
+    "Chemical Kinetics": "Reaction rates, rate laws, and the factors that affect reaction speed.",
+    "Equilibrium": "Dynamic balance between forward and reverse reactions.",
+    "Chemical Equilibrium": "Equilibrium constants, reaction quotients, and Le Chatelier's principle.",
+    "Thermochemistry": "Heat changes in chemical processes, including ΔH and calorimetry.",
+    "Thermodynamics": "Energy, enthalpy, entropy, and Gibbs free energy in chemical and physical processes.",
+    "Acids and Bases": "Acid–base definitions, pH, pKa, buffers, and titrations.",
+    "Oxidation-Reduction Reactions": "Electron-transfer reactions and oxidation states.",
+    "Electrochemistry": "Redox reactions in galvanic and electrolytic cells.",
+    "The Gas Phase": "Ideal and real gas behavior, PV = nRT.",
+    "Solutions": "Concentration, solubility, and colligative properties.",
+
+    // Organic Chemistry
+    "Stereochemistry and Isomers": "Spatial arrangement of atoms and the relationships between isomers.",
+    "Stereochemistry": "Three-dimensional molecular arrangement and chirality.",
+    "Stereochemistry and Isomerism": "Isomer types, including constitutional, conformational, and configurational isomers.",
+    "Substitution and Elimination Reactions": "SN1/SN2 substitution and E1/E2 elimination mechanisms.",
+    "Carbonyl Chemistry": "Reactions of aldehydes, ketones, and carboxylic acid derivatives.",
+    "Functional Groups and Nomenclature": "Identifying functional groups and naming organic compounds.",
+    "Nomenclature and Functional Groups": "IUPAC naming and functional-group recognition.",
+    "Acids and Bases in Organic Chemistry": "Organic acid–base reactivity and pKa in organic contexts.",
+    "Organic Reaction Mechanisms": "Step-by-step pathways of organic reactions.",
+    "Laboratory Techniques and Spectroscopy": "Purification and separation methods and structural determination.",
+    "Spectroscopy and Structure Determination": "IR, NMR, and mass spectrometry for identifying molecular structure.",
+
+    // Physics
+    "Kinematics and Dynamics": "Motion and the forces that cause it, including Newton's laws.",
+    "Work and Energy": "Work, kinetic and potential energy, and conservation of energy.",
+    "Fluids": "Pressure, buoyancy, and fluid flow.",
+    "Circuits": "Current, voltage, resistance, and circuit analysis.",
+    "Electrostatics and Magnetism": "Electric charge, fields, and magnetic forces.",
+    "Electromagnetism": "Electric and magnetic fields and their interactions.",
+    "Waves and Sound": "Wave properties and sound phenomena.",
+    "Light and Optics": "Electromagnetic radiation, lenses, and mirrors.",
+
+    // Psychology & Sociology
+    "Sensation and Perception": "Sensory processing and the interpretation of stimuli.",
+    "Learning": "Classical and operant conditioning and observational learning.",
+    "Learning and Behavior": "Behavioral theories of how learning occurs.",
+    "Cognition and Language": "Thinking, problem solving, memory, and language.",
+    "Memory": "Encoding, storage, and retrieval of information.",
+    "Consciousness and Sleep": "States of consciousness and sleep stages and disorders.",
+    "Biological Bases of Behavior": "Neural and endocrine underpinnings of behavior.",
+    "Biopsychosocial Model": "The interplay of biological, psychological, and social factors in health and behavior.",
+    "Research Methods and Statistics": "Experimental design, measurement, and statistical inference.",
+    "Personality": "Theories and assessment of personality.",
+    "Self and Identity": "Self-concept, identity formation, and social identity.",
+    "Psychological Disorders": "Classification and characteristics of mental disorders.",
+    "Developmental Psychology": "Cognitive, social, and physical development across the lifespan.",
+    "Motivation and Emotion": "Drives that direct behavior and the experience of emotion.",
+    "Stress and Coping": "Stress responses and coping strategies.",
+    "Social Psychology": "How individuals influence and are influenced by others.",
+    "Attribution Theory": "How people explain the causes of behavior and events.",
+    "Social Interaction and Groups": "Dynamics of groups, norms, and social interaction.",
+    "Social Structure and Institutions": "Organized patterns of social relationships and institutions.",
+    "Social Stratification and Inequality": "Hierarchical ranking and unequal distribution of resources.",
+    "Social Stratification": "Ranking of individuals and groups into a social hierarchy.",
+    "Culture and Socialization": "Transmission of culture and the process of socialization.",
+    "Demography and Urbanization": "Population structure, change, and urban growth.",
+    "Social Change and Globalization": "How societies change and global interconnectedness.",
+
+    // CARS
+    "Literature and Literary Criticism": "Analysis of literary texts and critical approaches.",
+    "Philosophy and Ethics": "Philosophical arguments and ethical frameworks.",
+    "Art History and Aesthetics": "Artistic movements and theories of aesthetic value.",
+    "History": "Interpreting historical narratives and causation.",
+    "Cultural Studies and Religion": "Culture and religious systems in society.",
+    "Philosophy of Science and Technology": "Epistemology of science and the role of technology.",
+    "Main Idea and Structure": "Identifying a passage's central claim and organization.",
+    "Tone and Rhetoric": "Authorial attitude and rhetorical strategies.",
+    "Detail and Evidence": "Locating and interpreting specific passage details.",
+    "Strengthen-Weaken Reasoning": "Evaluating how evidence strengthens or weakens an argument.",
+    "Political Science and Government": "Political systems, power, and governance.",
+    "Sociology and Anthropology": "Social structures, culture, and human societies.",
+    "Economics and Business": "Economic principles and business behavior.",
+    "Psychology and Social Behavior": "Psychological principles applied to social behavior.",
+  };
+
   // ---------------------------------------------------------------------
   // Matching + escaping
   // ---------------------------------------------------------------------
@@ -351,10 +471,8 @@
     return !!ch && /[A-Za-z0-9]/.test(ch);
   }
 
-  function linkify(text) {
-    const src = String(text == null ? "" : text);
-    if (!src) return "";
-
+  // Find every glossary match in a plain-text string: [{start, end, entry}].
+  function findMatches(src) {
     const lower = src.toLowerCase();
     const matches = [];
     for (const e of entries) {
@@ -374,10 +492,26 @@
         }
       }
     }
+    return matches;
+  }
+
+  // Escape text and wrap recognized concepts in hoverable spans.
+  // opts.terms — optional array of canonical terms; when set, only those
+  //              concepts are highlighted.
+  // opts.limit — optional cap on the number of DISTINCT concepts highlighted.
+  function linkify(text, opts) {
+    const src = String(text == null ? "" : text);
+    if (!src) return "";
+
+    let matches = findMatches(src);
+    if (opts && Array.isArray(opts.terms)) {
+      const allowed = new Set(opts.terms);
+      matches = matches.filter((m) => allowed.has(m.entry.term));
+    }
 
     if (!matches.length) return escapeHtml(src);
 
-    // Keep the longest matches and drop any that overlap an accepted one.
+    // Longest matches first; drop overlaps; then clamp distinct concepts.
     matches.sort((a, b) => (b.end - b.start) - (a.end - a.start) || a.start - b.start);
     const accepted = [];
     for (const m of matches) {
@@ -386,9 +520,19 @@
     }
     accepted.sort((a, b) => a.start - b.start);
 
+    let final = accepted;
+    if (opts && typeof opts.limit === "number" && opts.limit > 0) {
+      const chosen = [];
+      for (const m of accepted) {
+        if (chosen.length >= opts.limit) break;
+        if (chosen.indexOf(m.entry.term) === -1) chosen.push(m.entry.term);
+      }
+      final = accepted.filter((m) => chosen.indexOf(m.entry.term) !== -1);
+    }
+
     let out = "";
     let cursor = 0;
-    for (const m of accepted) {
+    for (const m of final) {
       out += escapeHtml(src.slice(cursor, m.start));
       const dataTerm = escapeHtml(m.entry.term);
       out += '<span class="concept" tabindex="0" data-term="' + dataTerm + '">' +
@@ -397,6 +541,28 @@
     }
     out += escapeHtml(src.slice(cursor));
     return out;
+  }
+
+  // The question's core concepts: its `topic` plus the technical glossary
+  // terms that matter most to this question. Stem hits rank before
+  // explanation hits; longer terms rank first; capped at `limit`.
+  function keyConcepts(q, limit) {
+    const topic = q && q.topic ? String(q.topic) : null;
+    const cap = limit || 3;
+    const ranked = [];
+    const seen = new Set();
+    function collect(text, weight) {
+      if (!text) return;
+      findMatches(String(text)).forEach((m) => {
+        if (seen.has(m.entry.term)) return;
+        seen.add(m.entry.term);
+        ranked.push({ term: m.entry.term, weight: weight, len: m.entry.term.length });
+      });
+    }
+    collect(q && q.question, 0);
+    collect(q && q.explanation, 1);
+    ranked.sort((a, b) => a.weight - b.weight || b.len - a.len);
+    return { topic: topic, terms: ranked.slice(0, cap).map((t) => t.term) };
   }
 
   // ---------------------------------------------------------------------
@@ -416,9 +582,36 @@
     return tooltipEl;
   }
 
-  function findByTerm(term) {
-    for (const g of GLOSSARY) if (g.term === term) return g;
-    return null;
+  function definitionFor(term) {
+    for (const g of GLOSSARY) if (g.term === term) return g.definition;
+    if (TOPIC_DEFINITIONS[term]) return TOPIC_DEFINITIONS[term];
+    if (term) {
+      if (typeof console !== "undefined" && console.warn) {
+        console.warn("[glossary] missing definition for:", term);
+      }
+      return "A key MCAT concept under " + term + ".";
+    }
+    return "";
+  }
+
+  // Highlighted, hoverable pill for a question's primary key concept.
+  function conceptChip(term) {
+    if (!term) return "";
+    const t = String(term);
+    return '<span class="concept concept-chip" tabindex="0" data-term="' + escapeHtml(t) + '">' +
+      '<span class="concept-chip-label">Key concept</span>' + escapeHtml(t) + '</span>';
+  }
+
+  // Render a question's figure as a `.figure` block plus an optional caption.
+  // `q.figure` is trusted SVG/HTML produced by our own renderer (figure_lib.py),
+  // so it is inserted verbatim; only the caption is escaped.
+  function figureHTML(q) {
+    if (!q || !q.figure) return "";
+    let html = '<div class="figure">' + q.figure + '</div>';
+    if (q.figure_caption) {
+      html += '<div class="figure-caption">' + escapeHtml(q.figure_caption) + '</div>';
+    }
+    return html;
   }
 
   function coordsOf(e) {
@@ -431,12 +624,13 @@
   }
 
   function show(span, e) {
-    const def = findByTerm(span.dataset.term);
+    const term = span.dataset.term;
+    const def = definitionFor(term);
     if (!def) return;
     const tip = getTooltip();
     tip.innerHTML =
-      '<strong class="concept-tooltip-term">' + escapeHtml(def.term) + '</strong>' +
-      '<span class="concept-tooltip-def">' + escapeHtml(def.definition) + '</span>';
+      '<strong class="concept-tooltip-term">' + escapeHtml(term) + '</strong>' +
+      '<span class="concept-tooltip-def">' + escapeHtml(def) + '</span>';
     tip.hidden = false;
     position(coordsOf(e));
   }
@@ -525,7 +719,11 @@
 
   window.Glossary = {
     GLOSSARY: GLOSSARY,
+    TOPIC_DEFINITIONS: TOPIC_DEFINITIONS,
     linkify: linkify,
+    keyConcepts: keyConcepts,
+    conceptChip: conceptChip,
+    figureHTML: figureHTML,
     initTooltips: initTooltips,
   };
 

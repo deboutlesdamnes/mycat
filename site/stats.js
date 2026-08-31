@@ -62,6 +62,28 @@ const Stats = (function () {
     return sum;
   }
 
+  // Approximate 95% confidence half-width (points) for the projected
+  // composite. Sections with few answered questions contribute wider
+  // uncertainty, so the band narrows as the user answers more questions.
+  function confidenceBand(answerLog, sections) {
+    if (answerLog.length < 5) return null;
+    const secAcc = bySection(answerLog);
+    let varSum = 0;
+    sections.forEach((s) => {
+      const b = secAcc[s];
+      if (b && b.total >= 2) {
+        const p = Math.max(0, Math.min(1, b.correct / b.total));
+        const seP = Math.sqrt(p * (1 - p) / b.total);
+        varSum += (seP * 14) * (seP * 14);
+      } else {
+        varSum += 7 * 7; // unobserved section: assume mid-scale uncertainty
+      }
+    });
+    const se = Math.sqrt(varSum);
+    const half = Math.max(2, Math.min(14, Math.round(2 * se)));
+    return { half };
+  }
+
   // Rough public percentile bands for the 472-528 composite scale, linearly
   // interpolated between anchors. Approximate — labeled as such wherever shown.
   const PCTL_ANCHORS = [
@@ -241,7 +263,7 @@ const Stats = (function () {
 
   return {
     bySection, byTopic, accuracy, weakestTopics,
-    estimateSectionScore, estimateComposite, approxPercentile,
+    estimateSectionScore, estimateComposite, confidenceBand, approxPercentile,
     streak, weeklyMinutes, scoreDeltaOverDays,
     dueCards, adaptiveQueue, generateSchedule, dayKey,
   };

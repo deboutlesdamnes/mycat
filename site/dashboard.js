@@ -22,6 +22,7 @@
   const composite = Stats.estimateComposite(answerLog, Data.SECTIONS);
   const delta14 = Stats.scoreDeltaOverDays(answerLog, Data.SECTIONS, 14);
   const pctl = Stats.approxPercentile(composite);
+  const band = Stats.confidenceBand(answerLog, Data.SECTIONS);
 
   const uniqueAnswered = new Set(answerLog.map((a) => a.qid)).size;
   const totalBank = Object.keys(Data.allQuestions).length;
@@ -55,6 +56,11 @@
     }
     const target = store.profile.targetScore;
     const pct = Math.max(0, Math.min(100, ((composite - 472) / (528 - 472)) * 100));
+    const half = band ? band.half : 0;
+    const low = Math.max(472, composite - half);
+    const high = Math.min(528, composite + half);
+    const lowPct = ((low - 472) / 56) * 100;
+    const highPct = ((high - 472) / 56) * 100;
     return `
       <div class="stat-tile">
         <div class="k">Projected score <span class="text-muted" style="text-transform:none;letter-spacing:0;font-weight:400">(estimated)</span></div>
@@ -62,9 +68,13 @@
           <div class="num" style="font-size:52px;color:var(--color-accent)">${composite}</div>
           <div style="font-size:13px;padding-bottom:8px">
             ${delta14 != null ? `<span style="color:${delta14 >= 0 ? "var(--color-correct)" : "var(--color-wrong)"};font-weight:600">${delta14 >= 0 ? "+" : ""}${delta14}</span> <span class="text-muted">last 14 days</span>` : `<span class="text-muted">~${pctl}th percentile (approx.)</span>`}
+            ${band ? `<div style="margin-top:3px"><span class="text-muted">Confidence band</span> <strong>${low}–${high}</strong></div>` : ""}
           </div>
         </div>
-        <div class="bar" style="margin-top:14px"><span style="width:${pct}%"></span></div>
+        <div class="bar" style="margin-top:14px">
+          <span style="width:${pct}%"></span>
+          ${band ? `<div class="bar-band" style="left:${lowPct}%;width:${highPct - lowPct}%"></div>` : ""}
+        </div>
         <div style="display:flex;justify-content:space-between;font-size:11px;margin-top:6px" class="text-muted">
           <span>472</span><span>${target ? `Target ${target}` : "528"}</span>
         </div>

@@ -387,6 +387,7 @@ function render() {
   }
 
   const q = activeDeck.questions[current];
+  const kc = Glossary.keyConcepts(q);
   progressLabel.textContent = `${activeDeck.title} · Card ${current + 1} of ${activeDeck.questions.length} · Correct: ${sessionCorrect}`;
 
   root.innerHTML = "";
@@ -416,7 +417,7 @@ function render() {
   if (q.passage) {
     const p = document.createElement("div");
     p.className = "passage";
-    p.innerHTML = Glossary.linkify(q.passage);
+    p.innerHTML = Glossary.linkify(q.passage, { limit: 3 });
     root.appendChild(p);
   }
 
@@ -424,7 +425,7 @@ function render() {
 
   const qText = document.createElement("p");
   qText.className = "q-text";
-  qText.innerHTML = Glossary.linkify(q.question);
+  qText.innerHTML = Glossary.linkify(q.question, { terms: kc.terms, limit: 2 });
   root.appendChild(qText);
 
   const optionsEl = document.createElement("div");
@@ -433,7 +434,7 @@ function render() {
   q.options.forEach((optionText, i) => {
     const b = document.createElement("button");
     b.className = "option";
-    b.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${Glossary.linkify(optionText)}</span>`;
+    b.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${Glossary.linkify(optionText, { terms: kc.terms, limit: 3 })}</span>`;
     b.addEventListener("click", () => selectOption(i, b, optionsEl));
     optionsEl.appendChild(b);
   });
@@ -445,6 +446,7 @@ function selectOption(i, btn, optionsEl) {
   answered = true;
 
   const q = activeDeck.questions[current];
+  const kc = Glossary.keyConcepts(q);
   const wasCorrect = i === q.correct;
   if (wasCorrect) sessionCorrect++;
 
@@ -460,7 +462,7 @@ function selectOption(i, btn, optionsEl) {
   const letters = ["A", "B", "C", "D"];
   const explanation = document.createElement("div");
   explanation.className = "explanation";
-  explanation.innerHTML = `<strong>${wasCorrect ? "Correct" : "Not quite"} — answer: ${letters[q.correct]}.</strong> ${Glossary.linkify(q.explanation)}`;
+  explanation.innerHTML = `<strong>${wasCorrect ? "Correct" : "Not quite"} — answer: ${letters[q.correct]}.</strong> ${Glossary.linkify(q.explanation, { terms: kc.terms, limit: 3 })} ${Glossary.conceptChip(kc.topic)}`;
   root.appendChild(explanation);
 
   showGradeButtons(wasCorrect);
@@ -533,6 +535,7 @@ function renderTest() {
   }
 
   const q = activeDeck.questions[current];
+  const kc = Glossary.keyConcepts(q);
   progressLabel.textContent = `${activeDeck.title} · Question ${current + 1} of ${activeDeck.questions.length}`;
 
   root.innerHTML = "";
@@ -556,7 +559,7 @@ function renderTest() {
   if (q.passage) {
     const p = document.createElement("div");
     p.className = "passage";
-    p.innerHTML = Glossary.linkify(q.passage);
+    p.innerHTML = Glossary.linkify(q.passage, { limit: 3 });
     root.appendChild(p);
   }
 
@@ -564,7 +567,7 @@ function renderTest() {
 
   const qText = document.createElement("p");
   qText.className = "q-text";
-  qText.innerHTML = Glossary.linkify(q.question);
+  qText.innerHTML = Glossary.linkify(q.question, { terms: kc.terms, limit: 2 });
   root.appendChild(qText);
 
   const optionsEl = document.createElement("div");
@@ -573,7 +576,7 @@ function renderTest() {
   q.options.forEach((optionText, i) => {
     const b = document.createElement("button");
     b.className = "option";
-    b.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${Glossary.linkify(optionText)}</span>`;
+    b.innerHTML = `<span class="option-letter">${letters[i]}</span><span class="option-text">${Glossary.linkify(optionText, { terms: kc.terms, limit: 3 })}</span>`;
     b.addEventListener("click", () => selectTestOption(i, b, optionsEl));
     optionsEl.appendChild(b);
   });

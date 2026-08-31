@@ -75,6 +75,8 @@
       const q = deck.questions[qi];
       qStartedAt = Date.now();
       const letters = ["A", "B", "C", "D"];
+      const kc = Glossary.keyConcepts(q);
+      const fig = Glossary.figureHTML(q);
       root.innerHTML = `
         <div class="panel">
           <div class="player-toolbar">
@@ -84,11 +86,12 @@
             <div style="display:flex;align-items:center;gap:6px;font-size:13px">${icon("clock", { size: 15 })}<span class="timer" id="exam-timer">${fmt(secondsLeft)}</span></div>
           </div>
           <div class="player-grid">
-            ${q.passage ? `<div class="player-passage"><div class="k" style="margin-bottom:10px">Passage</div><div class="passage-block">${Glossary.linkify(q.passage)}</div></div>` : ""}
+            ${q.passage ? `<div class="player-passage"><div class="k" style="margin-bottom:10px">Passage</div><div class="passage-block">${Glossary.linkify(q.passage, { limit: 3 })}</div>${fig}</div>` : ""}
             <div class="player-question" style="${q.passage ? "" : "grid-column:1 / -1;max-width:640px;margin:0 auto"}">
-              <p class="question-text">${Glossary.linkify(q.question)}</p>
+              <p class="question-text">${Glossary.linkify(q.question, { terms: kc.terms, limit: 2 })}</p>
+              ${q.passage ? "" : fig}
               <div class="answer-options" id="options">
-                ${q.options.map((opt, i) => `<button class="answer-option" data-i="${i}"><span class="answer-letter">${letters[i]}.</span><span class="answer-option-text">${Glossary.linkify(opt)}</span></button>`).join("")}
+                ${q.options.map((opt, i) => `<button class="answer-option" data-i="${i}"><span class="answer-letter">${letters[i]}.</span><span class="answer-option-text">${Glossary.linkify(opt, { terms: kc.terms, limit: 3 })}</span></button>`).join("")}
               </div>
             </div>
           </div>
@@ -217,6 +220,7 @@
             <div class="k">Full-length · ${new Date(attempt.date).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" })}</div>
             <div class="score-num-lg">${attempt.compositeScore}</div>
             <div style="font-size:14px;opacity:.9">~${pctl}th percentile (approx.)${prev ? ` · <strong>${attempt.compositeScore - prev.compositeScore >= 0 ? "+" : ""}${attempt.compositeScore - prev.compositeScore}</strong> from last sitting` : ""}</div>
+            <div style="font-size:13px;opacity:.85;margin-top:4px">Confidence band ${attempt.compositeScore - 2}–${attempt.compositeScore + 2}</div>
             <hr class="hr" style="background:rgba(255,255,255,.35)">
             <div class="kv-row" style="border-color:rgba(255,255,255,.2)"><span style="opacity:.8">Target</span><strong>${store.profile.targetScore || "—"}</strong></div>
             <div class="kv-row" style="border-color:rgba(255,255,255,.2)"><span style="opacity:.8">Gap</span><strong>${store.profile.targetScore ? Math.max(0, store.profile.targetScore - attempt.compositeScore) : "—"}</strong></div>
@@ -229,12 +233,13 @@
                 ${attempt.sectionScores.map((s) => `
                   <tr>
                     <td>${s.section}</td>
-                    <td style="text-align:right"><strong>${s.score}</strong></td>
+                    <td style="text-align:right"><strong>${s.score}</strong> <span class="text-muted" style="font-weight:400;font-size:12px">±1</span></td>
                     <td style="text-align:right" class="text-muted">${s.correct}/${s.total}</td>
                     <td><div class="bar"><span style="width:${s.total ? Math.round((s.correct / s.total) * 100) : 0}%"></span></div></td>
                   </tr>`).join("")}
               </tbody>
             </table>
+            <p class="text-muted" style="font-size:12px;margin-top:8px">Confidence bands: total ±2 · section ±1.</p>
           </div>
         </div>
         <div class="report-cols">
