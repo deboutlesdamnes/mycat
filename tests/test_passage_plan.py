@@ -27,8 +27,8 @@ class TestPassagePlan(unittest.TestCase):
         self.assertEqual(validate_plan(), [])
 
     def test_totals(self):
-        self.assertEqual(passage_question_count(), 185)
-        self.assertEqual(discrete_question_count(), 45)
+        self.assertEqual(passage_question_count(), 143)
+        self.assertEqual(discrete_question_count(), 87)
         self.assertEqual(passage_question_count() + discrete_question_count(), 230)
 
     def test_passages_are_majority(self):
@@ -36,8 +36,8 @@ class TestPassagePlan(unittest.TestCase):
 
     def test_science_sections(self):
         for sec in (CHEM, BIO, PSYCH):
-            self.assertEqual(self.psec.get(sec, 0), 44)
-            self.assertEqual(self.dsec.get(sec, 0), 15)
+            self.assertEqual(self.psec.get(sec, 0), 30)
+            self.assertEqual(self.dsec.get(sec, 0), 29)
 
     def test_cars_section(self):
         self.assertEqual(self.psec.get(CARS, 0), 53)
@@ -45,7 +45,10 @@ class TestPassagePlan(unittest.TestCase):
 
     def test_every_passage_in_range(self):
         for p in self.plan["passages"]:
-            self.assertTrue(4 <= p["n"] <= 7, p)
+            if p["is_cars"]:
+                self.assertIn(p["n"], (5, 6), p)
+            else:
+                self.assertEqual(p["n"], 5, p)
 
     def test_discrete_counts_positive(self):
         for d in self.plan["discrete"]:

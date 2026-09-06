@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """Generate authentic MCAT practice-test PASSAGE sets (the majority of the exam).
 
-Each passage-plan entry yields one PassageSpec (passage + figures + 4-7 questions),
+Each passage-plan entry yields one PassageSpec (a ~500-word passage + figures),
 validated against the framework and written as question_schema.json records to
-workspace/generated_passage.jsonl.
+workspace/generated_passage.jsonl. Science passages have exactly 5 questions;
+CARS passages have 5-6 questions.
 
 Usage: python generate_passages.py [--limit N]
 """

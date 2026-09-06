@@ -38,8 +38,8 @@ DEFAULT_OUT = ROOT / "workspace" / "audit_report.json"
 SCIENCE_SKILL_TARGETS = {"skill1": 35, "skill2": 45, "skill3": 20, "skill4": 5}
 # AAMC CARS skill targets (percent of CARS questions).
 CARS_SKILL_TARGETS = {"cars-foc": 30, "cars-rwt": 30, "cars-rbt": 40}
-# Expected passage/discrete split per science section (from SUMMARY.md).
-EXPECTED_PASSAGE_DISCRETE = {"passage": 44, "discrete": 15}
+# Expected passage/discrete split per science section (50/50 plan).
+EXPECTED_PASSAGE_DISCRETE = {"passage": 30, "discrete": 29}
 
 AUDITOR_SYSTEM = """\
 You are a rigorous MCAT content auditor. You are given a practice question (as JSON,

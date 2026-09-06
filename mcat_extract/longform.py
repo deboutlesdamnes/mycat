@@ -28,9 +28,10 @@ CARS_SKILLS = {"cars-foc", "cars-rwt", "cars-rbt"}
 DIFFICULTIES = {"easy", "medium", "hard"}
 FIGURE_TYPES = {"line", "bar", "scatter", "table", "spectrum", "nmr", "ir", "diagram", "molecule"}
 
-MIN_QUESTIONS, MAX_QUESTIONS = 4, 7
-SCIENCE_WORDS = (80, 800)
-CARS_WORDS = (150, 900)
+SCIENCE_QUESTIONS = 5
+CARS_QUESTIONS = (5, 6)  # real MCAT CARS: 9 passages totaling 53 questions
+TARGET_WORDS = 500
+PASSAGE_WORDS = (450, 600)  # "around 500 words" for both science and CARS passages
 
 
 # --------------------------------------------------------------------------- #
@@ -135,15 +136,20 @@ class PassageSpec:
             errors.append("missing passage text")
 
         wc = len(self.passage.split())
-        lo, hi = CARS_WORDS if self.is_cars else SCIENCE_WORDS
+        lo, hi = PASSAGE_WORDS
         if not (lo <= wc <= hi):
-            errors.append(f"passage word count {wc} outside [{lo}, {hi}]")
+            errors.append(f"passage word count {wc} outside [{lo}, {hi}] (target {TARGET_WORDS})")
 
         if self.is_cars and self.figures:
             errors.append("CARS passages must not have figures")
 
-        if not (MIN_QUESTIONS <= len(self.questions) <= MAX_QUESTIONS):
-            errors.append(f"must have {MIN_QUESTIONS}-{MAX_QUESTIONS} questions, got {len(self.questions)}")
+        if self.is_cars:
+            lo_q, hi_q = CARS_QUESTIONS
+            if not (lo_q <= len(self.questions) <= hi_q):
+                errors.append(f"CARS passage must have {lo_q}-{hi_q} questions, got {len(self.questions)}")
+        else:
+            if len(self.questions) != SCIENCE_QUESTIONS:
+                errors.append(f"must have exactly {SCIENCE_QUESTIONS} questions, got {len(self.questions)}")
 
         nums = [f.number for f in self.figures]
         if len(nums) != len(set(nums)):
@@ -292,9 +298,10 @@ Given a subject/topic and reference excerpts from a study corpus, write ONE pass
 that mirrors the real MCAT format:
 
 - A passage header "Passage N (Questions X-Y)" is implied; do NOT include it in the text.
-- Science passages have a context -> methods -> results arc (2-4 paragraphs, 80-800 words).
-- CARS passages (is_cars=true) are humanities/social-science texts (150-900 words), NO figures.
-- 4-7 multiple-choice questions; each has exactly 4 options and one correct answer (0-based index).
+- Science passages have a context -> methods -> results arc (2-4 paragraphs, around 500 words).
+- CARS passages (is_cars=true) are humanities/social-science texts (around 500 words), NO figures.
+- Science passages have exactly 5 questions; CARS passages have 5 or 6 questions.
+- Each question has exactly 4 options and one correct answer (0-based index).
 - Questions use lead-ins such as "Which of the following...", "Based on Figure 1...",
   "According to the passage...", "Which conclusion is best supported by the data?".
 - Skills: skill1 (knowledge), skill2 (reasoning), skill3 (research design),
@@ -328,6 +335,9 @@ Return ONLY a JSON object with EXACTLY these keys and shapes:
   ]
 }
 
+The "questions" array must contain exactly 5 question objects for a science passage,
+or 5-6 question objects for a CARS passage.
+
 Every question object MUST include the exact keys: skill, subtype, difficulty,
 question, options (4 strings), correct (int 0-3), explanation, figure_refs (list of
 figure numbers, or [] when the question does not reference a figure).
@@ -340,9 +350,10 @@ def build_passage_user(subject, topic, excerpts_text, n_questions=None):
         ref += f"\n--- excerpt {i} ---\n{ex}\n"
     if not ref:
         ref = "(no corpus excerpt found)"
-    count = f" Write exactly {n_questions} questions." if n_questions else " Write 4-7 questions."
+    count = f" Write exactly {n_questions} questions." if n_questions else f" Write exactly {SCIENCE_QUESTIONS} questions."
     return (
         f"Subject: {subject}. Topic: {topic}.\n"
         f"Reference material from the study corpus (ground your passage in this):\n{ref}\n"
+        f"Passage length: around {TARGET_WORDS} words.\n"
         f"Generate one practice-test passage set.{count} Return JSON."
     )

@@ -10,7 +10,7 @@ project's corpus — especially the **actual MCAT practice-test passages** extra
 
 | Format | Where it lives | Anatomy |
 |---|---|---|
-| **A. MCAT practice-test passage** (the reference format) | [`extracted/images_extracted.json`](../extracted/images_extracted.json) | `Passage N (Questions X-Y)` header → 2–4 paragraph passage (context → methods → results) → 1–3 Figures/Tables → 4–7 MCQs |
+| **A. MCAT practice-test passage** (the reference format) | [`extracted/images_extracted.json`](../extracted/images_extracted.json) | `Passage N (Questions X-Y)` header → 2–4 paragraph passage (context → methods → results) → 1–3 Figures/Tables → 5–6 MCQs |
 | **B. ESSAY concept check** | [`workspace/generated_essay.jsonl`](../workspace/generated_essay.jsonl) | `prompt` (open-ended) + `model_answer` (2–5 sentences) + `key_points` (3–5 rubric bullets) + `difficulty` |
 | **C. SCENARIO long question** | [`workspace/generated_scenario.jsonl`](../workspace/generated_scenario.jsonl) | `scenario` (research/experimental paragraph) + 3–4 MCQs, each `{question, options[4], correct, explanation}` |
 
@@ -31,7 +31,8 @@ Grounding numbers pulled from the 230 extracted questions:
 | Bio/Biochem | 59 | 10 | 15 | 4–5 |
 | Psych/Soc | 59 | 10 | 15 | 4–5 |
 
-Observed passage length: roughly 150–500 words (2–4 paragraphs).
+Observed passage length: roughly 150–500 words (2–4 paragraphs). Target for
+generated passages: ~500 words (450–600).
 
 **Figure/table usage by section** (observed):
 
@@ -66,7 +67,8 @@ up to 3–4 figures (data-heavy Bio/Biochem passages).
 
 ### 3.2 Question anatomy
 
-- 4–7 questions per passage (CARS up to 7).
+- Science passages: exactly 5 questions. CARS passages: 5–6 questions (9 CARS passages
+  totaling 53, as on the real exam).
 - Stem + exactly 4 options (A–D), exactly one correct.
 - Stems begin with a **lead-in** that anchors to passage/figure/table.
 - A question may carry its own small figure (structure/chart in the stem).
@@ -115,7 +117,7 @@ flowchart TD
 | `knowledge_points` | list[str] | yes | 1–3 KP labels the passage tests |
 | `passage` | str | yes | full passage text; `\n\n` between paragraphs |
 | `figures` | list[FigureSpec] | no | 0–4 |
-| `questions` | list[QuestionSpec] | yes | 4–7 |
+| `questions` | list[QuestionSpec] | yes | 5 (science); 5–6 (CARS) |
 | `attribution` | str | no | "Adapted from …" |
 | `is_cars` | bool | yes | flips skill set + forbids figures |
 
@@ -204,8 +206,8 @@ Lead-ins below are paraphrases of the **actual** extracted stems.
 | `apply` | cars-rbt | "Which scenario is most analogous to …?" | wrong analogy axis |
 
 **Per-passage mix rule** (science): 2–3 subtypes; require ≥1 `data-interp` or
-`research-design` or `graph-select` when the passage has figures. For 6 questions:
-2×skill1, 2×skill2, 1×skill3, 1×skill4. CARS: cover all three CARS skills across the set.
+`research-design` or `graph-select` when the passage has figures. For 5 questions:
+1×skill1, 2×skill2, 1×skill3, 1×skill4. CARS: cover all three CARS skills across the set.
 
 ---
 
@@ -276,7 +278,7 @@ QUESTION <X>   [skill=<…>] [subtype=<…>] [difficulty=<…>] [figure_refs=<�
 A passage set is valid only if **all** hold (each is directly testable in code):
 
 - [ ] `section` is one of the four canonical values; `subject` is in the known set.
-- [ ] 4 ≤ `len(questions)` ≤ 7.
+- [ ] Science: `len(questions)` == 5. CARS: 5 ≤ `len(questions)` ≤ 6.
 - [ ] Every question has exactly 4 non-empty options and `0 ≤ correct ≤ 3`.
 - [ ] Every `difficulty` ∈ {easy, medium, hard}; every `skill` is valid for the section.
 - [ ] Science skill mix within tolerance of §3.3; CARS uses only `cars-*` skills.
@@ -285,7 +287,7 @@ A passage set is valid only if **all** hold (each is directly testable in code):
       the required `spec` keys for that type.
 - [ ] `render_figure(figure.spec)` returns non-null output (render smoke test).
 - [ ] Each `explanation` non-empty and mentions at least the correct option's principle.
-- [ ] Passage word count within [80, 800]; CARS within [150, 900].
+- [ ] Passage word count within [450, 600] (~500 words).
 - [ ] No verbatim overlap with source excerpts (if grounded via [`retrieve.py`](../retrieve.py:55)).
 
 ---

@@ -32,6 +32,18 @@ def good_question():
     )
 
 
+def good_cars_question():
+    return QuestionSpec(
+        skill="cars-foc",
+        subtype="main-idea",
+        difficulty="medium",
+        question="Which best expresses the central thesis?",
+        options=["A", "B", "C", "D"],
+        correct=0,
+        explanation="The thesis is A because ...",
+    )
+
+
 def good_passage(is_cars=False):
     p = PassageSpec(
         id="p-test",
@@ -40,8 +52,8 @@ def good_passage(is_cars=False):
         subject=("Critical Analysis and Reasoning Skills (CARS)" if is_cars else "Biochemistry"),
         topic="Enzymes and Enzyme Kinetics",
         knowledge_points=["2.2 Reaction Rates"],
-        passage=" ".join(["word"] * 200) if is_cars else " ".join(["word"] * 120),
-        questions=[good_question() for _ in range(4)],
+        passage=" ".join(["word"] * 500),
+        questions=[good_question() for _ in range(5)],
         figures=[] if is_cars else [FigureSpec(1, "line", "Fig 1", line_spec())],
         is_cars=is_cars,
     )
@@ -90,8 +102,28 @@ class TestPassageSpec(unittest.TestCase):
 
     def test_too_few_questions(self):
         p = good_passage()
-        p.questions = p.questions[:3]
-        self.assertTrue(any("must have 4-7" in e for e in p.validate()))
+        p.questions = p.questions[:4]
+        self.assertTrue(any("must have exactly 5" in e for e in p.validate()))
+
+    def test_science_six_questions_rejected(self):
+        p = good_passage()
+        p.questions = [good_question() for _ in range(6)]
+        self.assertTrue(any("must have exactly 5" in e for e in p.validate()))
+
+    def test_cars_five_or_six_questions_valid(self):
+        for n in (5, 6):
+            p = PassageSpec(
+                id="p-cars",
+                section="Critical Analysis and Reasoning Skills (CARS)",
+                subject="Critical Analysis and Reasoning Skills (CARS)",
+                topic="Philosophy and Ethics",
+                knowledge_points=["Philosophy of Science and Technology"],
+                passage=" ".join(["word"] * 500),
+                questions=[good_cars_question() for _ in range(n)],
+                figures=[],
+                is_cars=True,
+            )
+            self.assertEqual(p.validate(), [], f"CARS {n}-question passage should be valid")
 
     def test_cars_with_figures_rejected(self):
         p = good_passage(is_cars=True)
@@ -111,7 +143,7 @@ class TestPassageSpec(unittest.TestCase):
     def test_compile_to_schema(self):
         p = good_passage()
         records = p.compile_to_schema()
-        self.assertEqual(len(records), 4)
+        self.assertEqual(len(records), 5)
         rec = records[0]
         self.assertEqual(rec["type"], "passage")
         self.assertEqual(rec["correct"], 1)
@@ -123,7 +155,7 @@ class TestPassageSpec(unittest.TestCase):
         p = good_passage()
         p2 = PassageSpec.from_dict(p.to_dict())
         self.assertEqual(p2.id, p.id)
-        self.assertEqual(len(p2.questions), 4)
+        self.assertEqual(len(p2.questions), 5)
         self.assertEqual(p2.validate(), [])
 
     def test_build_user(self):
@@ -131,6 +163,8 @@ class TestPassageSpec(unittest.TestCase):
         self.assertIn("Biology", user)
         self.assertIn("excerpt one", user)
         self.assertIn("excerpt two", user)
+        self.assertIn("around 500 words", user)
+        self.assertIn("exactly 5 questions", user)
 
 
 if __name__ == "__main__":
