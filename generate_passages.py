@@ -41,37 +41,53 @@ def main(limit=None):
             continue
         print(f"PASSAGE {t['section']} / {t['subject']} / {t['topic']} ({t['n']} Q) ...", flush=True)
         excerpts = [ex["text"] for ex in retrieve(t["topic"], k=3)]
-        try:
-            data = chat(
-                [{"role": "system", "content": LONGFORM_PASSAGE_SYSTEM},
-                 {"role": "user", "content": build_passage_user(
-                     t["subject"], t["topic"], excerpts, n_questions=t["n"])}],
-                temperature=0.8,
-                max_tokens=8000,
-            )
-        except Exception as e:
-            print(f"  ERROR: {e}", flush=True)
-            continue
+        base_user = build_passage_user(t["subject"], t["topic"], excerpts, n_questions=t["n"])
 
-        if not isinstance(data, dict):
-            print("  ERROR: non-dict response", flush=True)
-            continue
+        spec = None
+        errors = []
+        for attempt in range(3):
+            user = base_user
+            if attempt and errors:
+                user += (
+                    "\n\nYour previous JSON was rejected by the validator for these reasons:\n"
+                    + "\n".join(f"- {e}" for e in errors)
+                    + "\n\nReturn a corrected JSON object. Make sure the passage is "
+                    "420-650 words and the questions array has exactly the requested count."
+                )
+            try:
+                data = chat(
+                    [{"role": "system", "content": LONGFORM_PASSAGE_SYSTEM},
+                     {"role": "user", "content": user}],
+                    temperature=0.8,
+                    max_tokens=8000,
+                )
+            except Exception as e:
+                print(f"  ERROR: {e}", flush=True)
+                break
 
-        spec = PassageSpec.from_dict(data)
-        # The plan is authoritative for metadata: the model's section/subject may be
-        # lowercased or paraphrased, which would fail validation.
-        spec.section = t["section"]
-        spec.subject = t["subject"]
-        spec.topic = t["topic"]
-        spec.is_cars = bool(t.get("is_cars", False))
-        if not spec.knowledge_points:
-            spec.knowledge_points = [t["topic"]]
-        if not spec.id:
-            spec.id = f"passage-{len(done):03d}"
+            if not isinstance(data, dict):
+                print("  ERROR: non-dict response", flush=True)
+                break
 
-        errors = spec.validate()
-        if errors:
-            print(f"  INVALID ({len(errors)} errors); first: {errors[0]}", flush=True)
+            spec = PassageSpec.from_dict(data)
+            # The plan is authoritative for metadata: the model's section/subject may be
+            # lowercased or paraphrased, which would fail validation.
+            spec.section = t["section"]
+            spec.subject = t["subject"]
+            spec.topic = t["topic"]
+            spec.is_cars = bool(t.get("is_cars", False))
+            if not spec.knowledge_points:
+                spec.knowledge_points = [t["topic"]]
+            if not spec.id:
+                spec.id = f"passage-{len(done):03d}"
+
+            errors = spec.validate()
+            if not errors:
+                break
+            print(f"  attempt {attempt + 1} invalid ({len(errors)} errors); first: {errors[0]}", flush=True)
+
+        if spec is None or errors:
+            print(f"  SKIPPED after retries ({len(errors)} errors)", flush=True)
             continue
 
         for rec in spec.compile_to_schema():

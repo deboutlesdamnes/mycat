@@ -31,7 +31,7 @@ FIGURE_TYPES = {"line", "bar", "scatter", "table", "spectrum", "nmr", "ir", "dia
 SCIENCE_QUESTIONS = 5
 CARS_QUESTIONS = (5, 6)  # real MCAT CARS: 9 passages totaling 53 questions
 TARGET_WORDS = 500
-PASSAGE_WORDS = (450, 600)  # "around 500 words" for both science and CARS passages
+PASSAGE_WORDS = (420, 650)  # "around 500 words" for both science and CARS passages
 
 
 # --------------------------------------------------------------------------- #
@@ -264,10 +264,13 @@ class PassageSpec:
                 correct = int(q.get("correct", 0))
             except (TypeError, ValueError):
                 correct = 0
+            diff = str(q.get("difficulty", "medium")).strip().lower()
+            if diff not in DIFFICULTIES:
+                diff = "medium"
             questions.append(QuestionSpec(
                 skill=q.get("skill", "skill2"),
                 subtype=q.get("subtype", "application"),
-                difficulty=q.get("difficulty", "medium"),
+                difficulty=diff,
                 question=stem,
                 options=opts,
                 correct=correct,
@@ -298,10 +301,13 @@ Given a subject/topic and reference excerpts from a study corpus, write ONE pass
 that mirrors the real MCAT format:
 
 - A passage header "Passage N (Questions X-Y)" is implied; do NOT include it in the text.
-- Science passages have a context -> methods -> results arc (2-4 paragraphs, around 500 words).
-- CARS passages (is_cars=true) are humanities/social-science texts (around 500 words), NO figures.
+- Science passages have a context -> methods -> results arc: 4 substantial paragraphs,
+  420-650 words total (aim for ~500; count the words before returning).
+- CARS passages (is_cars=true) are humanities/social-science texts, 420-650 words
+  (aim for ~500), NO figures.
 - Science passages have exactly 5 questions; CARS passages have 5 or 6 questions.
 - Each question has exactly 4 options and one correct answer (0-based index).
+- difficulty must be exactly one of "easy", "medium", "hard" (lowercase).
 - Questions use lead-ins such as "Which of the following...", "Based on Figure 1...",
   "According to the passage...", "Which conclusion is best supported by the data?".
 - Skills: skill1 (knowledge), skill2 (reasoning), skill3 (research design),
