@@ -1,0 +1,5564 @@
+# MCAT Question Bank — Extracted from Screenshots (Claude Vision)
+
+
+
+_Transcribed from 351 screenshots in `images/` using the Claude vision model. Passages, questions, and options are grouped and de-duplicated; split questions are merged. Figures include a detailed description; tables are transcribed as markdown. Source image filenames are listed for cross-reference._
+
+
+# Section 1 — Chemical and Physical Foundations of Biological Systems (Chem/Phys)
+
+
+## Passage 1 (Questions 1-4)
+
+_Source images: images/Screenshot 2026-08-30 220927.png_
+
+> HIV protease is an example of an aspartyl protease; an enzyme that
+> utilizes an aspartate side chain during the catalytic cleavage of a peptide
+> bond. Since HIV protease is a relatively small homodimer of a 99-residue
+> protein, it can be directly synthesized, or cloned and expressed in fast
+> growing cells. For this reason, it was targeted for structure-based drug
+> design in order to treat HIV infection.
+> A portion of the peptide cleaved by HIV protease is shown in Figure 1.
+> Protease
+> cleavage
+> Ph
+> Ph
+> CONH2
+> H
+> N
+> O
+> N
+> H
+> O
+> O
+> H
+> N
+> O
+> H
+> CONH2
+> Using molecular models of the HIV protease enzyme, researchers
+> designed and synthesized transition state analogs. One such molecule is
+> Compound 1, shown in Figure 2, which is a potent HIV protease inhibitor.
+> Compound 1 has an in vivo half-life of 1.8 h and is primarily metabolized
+> by CYP3A, an enzyme in the cytochrome P450 family. The major metabolite
+> of Compound 1 results from dealkylation of CH2R groups attached to the
+> piperazine ring system (Reaction 1).
+> Compound 1
+> CYP3A
+> OH
+> N
+> H
+> N
+> N
+> R
+> CONHCMe3
+> +
+> Reaction 1
+> One of the main side effects of prolonged use of Compound 1 is the
+> formation of kidney stones composed of calcium oxalate CaC2O4.
+> Researchers used their knowledge of the HIV protease active site, and the
+> metabolic pathways that lead to destruction of Compound 1, to design and
+> synthesize several derivatives of Compound 1 in an effort to modify its
+> properties and increase its potency and half-life.
+
+
+**The peptide bond cleaved by HIV protease**  
+_Source: images/Screenshot 2026-08-30 220927.png, images/Screenshot 2026-08-30 220939.png_
+
+> _A peptide backbone drawn in zigzag skeletal form, running left to right, representing a portion of the substrate cleaved by HIV protease. A dashed vertical line labeled 'Protease cleavage' bisects the chain at the scissile amide bond. Left of the cleavage site: a wavy bond (indicating chain continuation) leads to a residue bearing a benzyl ('Ph', phenylalanine-like) side chain on a hashed wedge, connected via an amide bond (H-N/C=O) to a residue bearing a CONH2 (asparagine-like) side chain, connected via another amide bond to a second residue bearing a benzyl ('Ph') side chain on a hashed wedge; the carbonyl of this residue is the one cleaved. Right of the cleavage site: the nitrogen is part of a five-membered pyrrolidine (proline-like) ring, connected via an amide bond to a residue bearing a long side chain terminating in CONH2 (glutamine/asparagine-like, drawn on a wedge), connected via an amide bond (H-N) to a residue with a branched sec-butyl/isoleucine-like side chain, ending in a carbonyl and wavy bond (H-N) indicating chain continuation. All backbone amide linkages are drawn with explicit C=O and N-H groups; stereocenters at the side-chain-bearing alpha carbons are shown with wedge/hash bonds._
+
+
+### Question 1
+
+_Source images: images/Screenshot 2026-08-30 220948.png_
+
+Compound 1 is used to treat HIV infection based on its ability to act as:
+
+- **A.** an agonist.
+
+- **B.** an antagonist.
+
+- **C.** a placebo.
+
+- **D.** a catalyst.
+
+
+### Question 2
+
+_Source images: images/Screenshot 2026-08-30 220958.png_
+
+How many stereoisomers of Compound 1 exist?
+
+- **A.** 8
+
+- **B.** 16
+
+- **C.** 32
+
+- **D.** 64
+
+
+### Question 3
+
+_Source images: images/Screenshot 2026-08-30 221006.png_
+
+Why do kidney stones form in some individuals treated with Compound 1?
+
+- **A.** [Ca2+] + [C2O4 2-] > Ksp
+
+- **B.** [Ca2+][C2O4 2-] > Ksp
+
+- **C.** [Ca2+] + [C2O4 2-] < Ksp
+
+- **D.** [Ca2+][C2O4 2-] < Ksp
+
+
+### Question 4
+
+_Source images: images/Screenshot 2026-08-30 221013.png_
+
+The peptide bond between which two amino acid residues is cleaved by HIV protease?
+
+- **A.** Phe and Ala
+
+- **B.** Pro and Val
+
+- **C.** Val and Ala
+
+- **D.** Phe and Pro
+
+
+## Passage 2 (Questions 5-9)
+
+_Source images: images/Screenshot 2026-08-30 221026.png, images/Screenshot 2026-08-30 221246.png_
+
+> The central nervous system is an example of an electrical system within
+> the human body. Neurons are the basic electrical components of the central
+> nervous system, and exist in three classes: sensory neurons, motor neurons,
+> and interneurons. Each neuron is made of three main components: the nerve
+> cell, the axons, and the dendrites. The longest axons are approximately 1 m
+> in length, and the axon outer membrane is surrounded by an extracellular
+> aqueous solution of protein, sodium, potassium, and chloride ions. A
+> summary of the electrical properties of axons is shown in Table 1 and in
+> Property
+> Nonmyelinated axon
+> Myelinated axon
+> Axon radius, rA
+> 5 x 10-6 m
+> 5 x 10-6 m
+> Resistance per unit length of
+> fluid both inside and outside
+> axon, rm
+> 6.37 x 109 Ω/m
+> 6.37 x 109 Ω/m
+> Conductivity per unit length of
+> axon membrane, σ
+> 1.25 x 10-4 (mΩ·m)-1
+> 3 x 10-7 (mΩ·m)-1
+> Capacitance per unit length of
+> Property
+> Nonmyelinated axon
+> Myelinated axon
+> Axon radius, rA
+> 5 x 10-6 m
+> 5 x 10-6 m
+> Resistance per unit length of
+> fluid both inside and outside
+> axon, rm
+> 6.37 x 109 Ω/m
+> 6.37 x 109 Ω/m
+> Conductivity per unit length of
+> axon membrane, σ
+> 1.25 x 10-4 (mΩ·m)-1
+> 3 x 10-7 (mΩ·m)-1
+> Capacitance per unit length of
+> axon, Cm
+> 3 x 10-7 F/m
+> 8 x 10-10 F/m
+> Thickness of membrane or
+> myelin, t
+> 5 x 10-9 m
+> 2 x 10-6 m
+> a
+> Ri
+> Ri
+> Ri
+> Ri
+> Rm
+> Rm
+> Rm
+> Rm
+> b
+> Ro
+> Ro
+> Ro
+> Ro
+> Scientists can study the electrical properties of neurons by inserting
+> probes into them to measure voltage changes as a response to stimulus. A
+> typical plot of this action potential is shown in Figure 2.
+> 60
+> Potential (mV)
+> 0
+> 1 msec
+> Time (ms)
+> -60
+> A nerve conduction velocity test (NCV) exploits the electrical properties of
+> neurons to test for nerve damage. In this test, two electrodes are placed on
+> a patient's body, with an electrical shock placed on one and the nerve
+> response measured on the other. The pulse travels at a constant speed of
+> 100 m/s.
+> Adapted from P. H. Bunton, W. P. Henry and J. P. Wikswo, A simple integrated circuit model of propagation along an excitable axon.
+> American Journal of Physics. ©1996 American Association of Physics Teachers.;R. K. Hobbie, Nerve conduction in the pre-medical
+> physics course. American Journal of Physics. ©1973 American Association of Physics Teachers.
+
+
+**A segment of a simplified electric circuit model of the axon**  
+_Source: images/Screenshot 2026-08-30 221035.png, images/Screenshot 2026-08-30 221042.png_
+
+> _An equivalent-circuit (ladder network) diagram modeling the axon as a repeating series of electrical elements between two parallel horizontal lines labeled 'a' (top, representing the inside/axoplasm) and 'b' (bottom, representing the outside/extracellular fluid). Along the top line, four resistors labeled 'Ri' are connected in series representing intracellular (axoplasmic) resistance per segment. Along the bottom line, four resistors labeled 'Ro' are connected in series representing extracellular fluid resistance per segment. Between the top and bottom lines, at each of four junction points, a vertical resistor labeled 'Rm' connects line a to line b, representing the membrane resistance per unit length at that segment (this parallel Rm would also include the membrane capacitance Cm in a full model, though only resistors are drawn here)._
+
+
+**A typical nerve impulse, also known as the action potential**  
+_Source: images/Screenshot 2026-08-30 221042.png_
+
+> _A line graph of membrane potential (mV) on the y-axis versus time (ms) on the x-axis. Y-axis gridlines shown at -60, 0, and 60 mV. The trace begins at a resting potential just below -60 mV (a slightly wavy flat baseline), then rapidly spikes upward to a peak of about +30 to +40 mV (overshoot above 0), then rapidly falls past the resting level down to an undershoot of roughly -75 to -80 mV (hyperpolarization), followed by a slow, gradual return/drift back up toward the resting potential near -60 mV. A horizontal double-headed arrow labeled '1 msec' indicates the time scale near the top of the spike region. X-axis is labeled 'Time (ms)' with small tick marks; y-axis is labeled 'Potential (mV)'._
+
+
+_Source: images/Screenshot 2026-08-30 221026.png, images/Screenshot 2026-08-30 221035.png, images/Screenshot 2026-08-30 221246.png_
+
+**The Electrical Properties of Axons**
+
+| Property | Nonmyelinated axon | Myelinated axon |
+|---|---|---|
+| Axon radius, rA | 5 x 10-6 m | 5 x 10-6 m |
+| Resistance per unit length of fluid both inside and outside axon, rm | 6.37 x 109 Ω/m | 6.37 x 109 Ω/m |
+| Conductivity per unit length of axon membrane, σ | 1.25 x 10-4 (mΩ·m)-1 | 3 x 10-7 (mΩ·m)-1 |
+| Capacitance per unit length of axon, Cm | 3 x 10-7 F/m | 8 x 10-10 F/m |
+| Thickness of membrane or myelin, t | 5 x 10-9 m | 2 x 10-6 m |
+
+
+### Question 5
+
+_Source images: images/Screenshot 2026-08-30 221125.png_
+
+Which image best illustrates the electric field lines between the inside of an axon and the surrounding extracellular solution?
+
+- **A.** Membrane Axon interior Extracellular fluid
+
+- **B.** Membrane Axon interior Extracellular fluid
+
+- **C.** Membrane Axon interior Extracellular fluid
+
+- **D.** Membrane Axon interior Extracellular fluid
+
+_(Figure 0: B. (option diagram, no numbered caption, partially shown) — Diagram showing a vertical cross-section of an axon membrane (two parallel wavy-topped vertical lines) with 'Membrane' labeled above and an arrow pointing down to the membrane. To the left of the membrane is labeled 'Axon interior' and to the right 'Extracellular fluid'. Five horizontal arrows are drawn pointing rightward (from axon interior toward extracellular fluid), crossing through the membrane lines, representing electric field lines pointing outward from inside the axon to the extracellular fluid.)_
+
+
+### Question 6
+
+_Source images: images/Screenshot 2026-08-30 221253.png_
+
+One function of the myelin sheath is to:
+
+- **A.** insulate the axon from the surroundings.
+
+- **B.** decrease the radius of the axon.
+
+- **C.** produce Schwann cells.
+
+- **D.** increase the capacitance of the axon.
+
+
+### Question 7
+
+_Source images: images/Screenshot 2026-08-30 221303.png_
+
+Channel X transmits only the smallest substances dissolved in the extracellular fluid through the axon membrane. Which substance does Channel X transmit?
+
+- **A.** Proteins
+
+- **B.** Sodium ions
+
+- **C.** Potassium ions
+
+- **D.** Chloride ions
+
+
+### Question 8
+
+_Source images: images/Screenshot 2026-08-30 221309.png_
+
+What is the closest distance the electrodes used in an NCV test can be placed on a nerve in order to measure the voltage change as a response to the stimulus?
+
+- **A.** 0.01 m
+
+- **B.** 0.1 m
+
+- **C.** 1.0 m
+
+- **D.** 10 m
+
+
+### Question 9
+
+_Source images: images/Screenshot 2026-08-30 221316.png_
+
+What information about an axon is required to calculate the current associated with an NCV pulse?
+
+- **A.** Conductivity, resistivity, and length
+
+- **B.** Potential, conductivity, and radius
+
+- **C.** Potential, resistivity, and radius
+
+- **D.** Potential, resistance per unit length, and length
+
+
+## Passage 4 (Questions 18-21)
+
+_Source images: images/Screenshot 2026-08-30 221553.png, images/Screenshot 2026-08-30 221649.png_
+
+> Celecoxib (Compound 1) is an anti-inflammatory drug that decreases the
+> synthesis of inflammatory mediators by specific inhibition of the enzyme
+> cyclooxygenase 2 (COX-2). More recently, Compound 1 has been reported to
+> decrease the risk of developing colorectal cancer in humans due to these
+> anti-inflammatory properties. Compound 1 is eliminated from the body in
+> the urine following metabolism by the enzyme cytochrome P450 2C9
+> (CYP2C9), a hemoprotein involved in the processing of many therapeutic
+> drugs.
+> CYP2C9
+> Compound 1
+> Compound 2
+> Structure of Compound 1 and the CYP2C9-mediated production
+> of Compound 2
+> In addition to the wild-type enzyme (CYP2C9*1), known point mutations
+> within the CYP2C9 gene have given rise to allelic variants of this enzyme in
+> the human population. Two specific variants, CYP2C9*2 and CYP2C9*3, are
+> associated with the decreased metabolism and elimination of many
+> therapeutic drugs, which affects dosage protocols and increases potential for
+> side effects. Table 1 shows the reaction kinetics of the three forms of CYP2C9
+> towards Compound 1.
+> In vitro Kinetics of Compound 1 Evaluated with Recombinant
+> CYP2C9*1, CYP2C9*2, and CYP2C9*3 Enzyme Variants
+> Compound 1 is known to increase the rate of adverse drug side effects in
+> humans when administered with the anti-coagulant warfarin, due to
+> inhibition of the CYP2C9-mediated processing of warfarin (Figure 2).
+> Compound 1 is known to increase the rate of adverse drug side effects in
+> humans when administered with the anti-coagulant warfarin, due to
+> inhibition of the CYP2C9-mediated processing of warfarin (Figure 2).
+> 1/V0 (min/μM)
+> +Compound 1
+> No inhibitor
+> 1/[Warfarin] (μM-1)
+> The Lineweaver–Burk plot of CYP2C9*1 processing of warfarin in
+> the presence and absence of Compound 1
+
+
+**Structure of Compound 1 and the CYP2C9-mediated production of Compound 2**  
+_Source: images/Screenshot 2026-08-30 221553.png, images/Screenshot 2026-08-30 221649.png_
+
+> _Left structure (Compound 1, celecoxib): a central pyrazole ring substituted at one carbon with a para-methylphenyl (tolyl) group, at the adjacent carbon with a trifluoromethyl (CF3) group, and at the ring nitrogen with a para-substituted phenyl group bearing a sulfonamide (H2N–SO2–) group. An arrow labeled 'CYP2C9' points right to the product. Right structure (Compound 2): identical pyrazole/CF3/sulfonamide-phenyl core, but the tolyl methyl group has been oxidized to a hydroxymethyl group (HOH2C–) on the phenyl ring, indicating benzylic hydroxylation by CYP2C9._
+
+
+**The Lineweaver–Burk plot of CYP2C9*1 processing of warfarin in the presence and absence of Compound 1**  
+_Source: images/Screenshot 2026-08-30 221626.png, images/Screenshot 2026-08-30 221703.png_
+
+> _A Lineweaver-Burk (double-reciprocal) plot with y-axis labeled 1/V0 (min/µM) and x-axis labeled 1/[Warfarin] (µM⁻¹). Two dashed straight lines are plotted, both intersecting the y-axis at the same positive point (a common y-intercept), indicating the same Vmax for both conditions. The line labeled '+Compound 1' has a steeper slope and a less negative (closer to zero, further right on positive side... actually crosses x-axis closer to origin) x-intercept, indicating a higher apparent KM (competitive inhibition pattern). The line labeled 'No inhibitor' has a shallower slope and a more negative x-intercept, indicating a lower apparent KM. Both lines converge at the same point on the y-axis, consistent with competitive inhibition where Vmax is unchanged but KM increases in the presence of Compound 1._
+
+
+_Source: images/Screenshot 2026-08-30 221615.png, images/Screenshot 2026-08-30 221657.png_
+
+**In vitro Kinetics of Compound 1 Evaluated with Recombinant CYP2C9*1, CYP2C9*2, and CYP2C9*3 Enzyme Variants**
+
+| Enzyme | Substitution | KM (μM) | Vmax (nmol/min/nmol CYP2CP) |
+|---|---|---|---|
+| CYP2C9*1 | Wild-type | 3.3 ± 0.26 | 8.9 ± 0.28 |
+| CYP2C9*2 | R144C | 3.4 ± 0.13 | 4.1 ± 0.17 |
+| CYP2C9*3 | I359L | 3.6 ± 0.36 | 0.9 ± 0.3 |
+
+
+### Question 18
+
+_Source images: images/Screenshot 2026-08-30 221641.png_
+
+Researchers used reverse-phase high performance liquid chromatography (HPLC) (polar mobile phase and non-polar stationary phase) to separate Compound 2 from Compound 1. Which statement accurately describes this process?
+
+- **A.** Increasing the polarity of the mobile phase will decrease the retention time of Compound 1 relative to Compound 2.
+
+- **B.** Compound 1 will elute first because it is more polar than Compound 2.
+
+- **C.** Decreasing the affinity of Compound 1 for the stationary phase will increase its retention time relative to Compound 2.
+
+- **D.** Compound 2 will elute first because it does not interact as favorably with the stationary phase as Compound 1.
+
+
+### Question 19
+
+_Source images: images/Screenshot 2026-08-30 221714.png_
+
+Which data suggest that the differences in Compound 1 metabolism between the variant and wild-type CYP2C9 enzymes are NOT due to changes in the binding affinity toward Compound 1?
+
+- **A.** Compound 1 is still eliminated from the body of patients expressing the CYP2C9*3 allele.
+
+- **B.** The KM values for the variant enzymes do not differ significantly from the wild-type enzyme.
+
+- **C.** The amino acid substitutions at positions 144 and 359 do not change the binding pocket of the variant enzymes.
+
+- **D.** The side chains of the amino acid residues at positions 144 and 359 are charged at physiological pH.
+
+
+### Question 20
+
+_Source images: images/Screenshot 2026-08-30 221722.png_
+
+If the data used to generate the kinetic parameters in Table 1 were displayed in a Lineweaver–Burk plot, the plot would show that the y-intercept:
+
+- **A.** is the same for all three variants.
+
+- **B.** is the same for CYP2C9*1 and CYP2C9*2 but different for CYP2C9*3.
+
+- **C.** is the same for CYP2C9*2 and CYP2C9*3 but different for CYP2C*1.
+
+- **D.** is different for all three variants.
+
+
+### Question 21
+
+_Source images: images/Screenshot 2026-08-30 221730.png_
+
+The overall reaction scheme for enzymes of the CYP450 enzyme family is shown with R representing the substrate. NADPH + H+ + O2 + R–H → NADP+ + H2O + R–OH In this reaction, NADPH functions as:
+
+- **A.** an oxidizing agent.
+
+- **B.** a reducing agent.
+
+- **C.** a catalyst.
+
+- **D.** an electrophile.
+
+
+## Passage 5 (Questions 22-25)
+
+_Source images: images/Screenshot 2026-08-30 221739.png_
+
+> Movement of gas particles in and out of the lungs can be explained using
+> the Ideal Gas Law, which relates the pressure P, volume V, number of
+> particles n, and temperature T of gaseous samples. When movement of
+> particles into the lungs is required, lung volume is increased, resulting in a
+> pressure decrease. Movement of gas particles into the expanded lung
+> volume allows the pressure inside the lung to become equal to the pressure
+> of the atmosphere. The ideal gas constant R relates the four parameters (P,
+> V, n, and T).
+> The ideal gas constant R can be found by measuring the volume that a
+> given amount of gas occupies at a certain temperature and pressure. One
+> technique for accomplishing this is to react a known amount of magnesium
+> with acid to produce hydrogen gas.
+> 2HCl(aq) + Mg(s) → MgCl2(aq) + H2(g)
+> Reaction 1
+> A piece of magnesium ribbon was wound up and suspended in the open
+> end of a 50-mL buret. The buret was then inverted into a beaker containing
+> 100 mL of water. Vacuum was used to suck the air out of the tip of the buret,
+> filling it with water from the beaker. Air was then allowed in through the tip
+> of the buret until the water level decreased to the 50.00-mL mark, the
+> highest mark on the buret (see Figure 1). Then 100 mL of 6 M HCl was
+> added to the beaker. After the magnesium ribbon was completely reacted,
+> the water level was read. The difference between the two readings was the
+> volume of the hydrogen gas produced.
+> 50.00 mL
+
+
+**Figure 1**  
+_Source: images/Screenshot 2026-08-30 221756.png_
+
+> _A diagram of an inverted 50-mL graduated buret clamped vertically with its open tip submerged in a beaker of water. A coiled piece of magnesium ribbon is suspended at the bottom of the buret, near the submerged tip. The top of the buret has a stopcock/valve fitting. An arrow points to a graduation mark on the buret labeled '50.00 mL', indicating the initial water level reading inside the inverted buret before acid is added to the beaker._
+
+
+### Question 22
+
+_Source images: images/Screenshot 2026-08-30 221802.png_
+
+What type of reaction is Reaction 1?
+
+- **A.** Oxidation/reduction
+
+- **B.** Lewis acid/Lewis base
+
+- **C.** Double replacement
+
+- **D.** Ionization
+
+
+### Question 23
+
+_Source images: images/Screenshot 2026-08-30 221808.png_
+
+Suppose that at the end of Reaction 1 the level of the aqueous solution were 26 cm higher inside the buret than outside. Compared to ambient pressure, the pressure of the gas inside the buret would be:
+
+- **A.** lower.
+
+- **B.** the same.
+
+- **C.** 2 times greater.
+
+- **D.** 26 times greater.
+
+
+### Question 24
+
+_Source images: images/Screenshot 2026-08-30 221813.png_
+
+How should the ideal gas equation be rearranged to most easily use the values from the experiment in the passage to calculate the gas constant?
+
+- **A.** PV = nRT
+
+- **B.** R = nPT/V
+
+- **C.** nR = PV/T
+
+- **D.** R = PV/nT
+
+
+### Question 25
+
+_Source images: images/Screenshot 2026-08-30 221819.png_
+
+What was the major goal of the experiment in the passage?
+
+- **A.** To evaluate the molar mass of H2 gas
+
+- **B.** To study the mechanism of Reaction 1
+
+- **C.** To determine the measured variables of the Ideal Gas Law
+
+- **D.** To study the reactivity of magnesium with acids
+
+
+## Passage 6 (Questions 30-33)
+
+_Source images: images/Screenshot 2026-08-30 221923.png_
+
+> When studying new drug candidates, it is important to understand how
+> they interact with plasma proteins as drug delivery to tissues is facilitated by
+> the plasma. Serum albumin (SA) is the most prominent protein in the
+> plasma and contains several binding sites that can accommodate a
+> structurally diverse set of ligands. Although diverse, the ligands tend to be
+> mainly hydrophobic with anionic or electronegative features, and many
+> commonly used pharmaceuticals fall within this category. Therefore, binding
+> affinity to SA is a main factor in determining the bioavailability of a drug. A
+> study was conducted to understand the interactions between a drug called
+> ciprofloxacin (CPFX, Figure 1) and bovine serum albumin (BSA).
+> ...iprofen (BSA, Figure 1) and bovine serum albumin (BSA).
+> CPFX
+> Warfarin
+> Ibuprofen
+> The binding constant of CPFX to BSA was determined using spectroscopic
+> techniques. In addition, known BSA binders warfarin and ibuprofen (Figure
+> 1) were used to determine the specific binding site of CPFX, since warfarin
+> and ibuprofen have been shown to specifically bind to separate sites (sites I
+> and II, respectively). These data are shown in Table 1.
+> Ibuprofen (Note: K0 represents the affinity constant of CPFX in
+> the presence of BSA only.)
+> Site marker | Ka (M⁻¹) | Ka/K0
+> Warfarin | 0.755 × 10⁴ | 0.46
+> Ibuprofen | 1.430 × 10⁴ | 0.87
+> Analysis of the data showed that electrostatics were important to CPFX
+> binding. Additionally, the effects of metal ions and temperature on CPFX-BSA
+> binding were investigated. The results of these studies are shown in tables 2
+> and 3.
+> (Note: K0 is the binding constant of CPFX-BSA in the absence of
+> a metal ion.)
+> System | Ka (M⁻¹) | Ka/K0
+> BSA-CPFX-Mg2+ | 2.030 × 10⁴ | 0.87
+> BSA-CPFX-Ca2+ | 1.538 × 10⁴ | 0.66
+> BSA-CPFX-Mn2+ | 1.653 × 10⁴ | 0.71
+> BSA-CPFX-Cu2+ | 1.634 × 10⁴ | 0.70
+> BSA-CPFX-Zn2+ | 1.489 × 10⁴ | 0.64
+> (Note: K0 is the binding constant of CPFX-BSA in the absence of
+> a metal ion.)
+> System | Ka (M⁻¹) | Ka/K0
+> BSA-CPFX-Mg2+ | 2.030 × 10⁴ | 0.87
+> BSA-CPFX-Ca2+ | 1.538 × 10⁴ | 0.66
+> BSA-CPFX-Mn2+ | 1.653 × 10⁴ | 0.71
+> BSA-CPFX-Cu2+ | 1.634 × 10⁴ | 0.70
+> BSA-CPFX-Zn2+ | 1.489 × 10⁴ | 0.64
+> BSA-CPFX-La3+ | 1.933 × 10⁴ | 0.83
+> BSA-CPFX-Ce3+ | 1.992 × 10⁴ | 0.85
+> Interactions at pH 7.4 (Note: ND stands for not determined.)
+> T (K) | Ka (M⁻¹) | ΔH (kJ mol⁻¹) | ΔG (kJ mol⁻¹) | ΔS (J mol⁻¹ K⁻¹)
+> 298 | 2.169 × 10⁴ | ND | −24.742 | ND
+> 304 | 1.877 × 10⁴ | −18.873 | −24.860 | 19.969
+> 310 | 1.615 × 10⁴ | ND | −24.979 | ND
+
+
+**Structures of CPFX, warfarin, and ibuprofen**  
+_Source: images/Screenshot 2026-08-30 221932.png_
+
+> _Three chemical structures shown left to right/top to bottom. (1) CPFX (ciprofloxacin): a bicyclic quinolone core (fused six-membered pyridone ring and benzene ring) with a ketone (=O) at C4 of the pyridone ring, a carboxylic acid (-COOH) at C3, a fluorine (F) substituent on the benzene ring, a cyclopropyl group attached to the ring nitrogen (N) of the pyridone, and a piperazine ring (HN-containing six-membered ring with two N atoms) attached to the benzene ring opposite the fluorine. (2) Warfarin: a benzopyran-2-one (coumarin) bicyclic ring system with a ketone at the lactone carbonyl (C=O) and a hydroxyl (OH) group on the pyranone ring at C4; attached to the ring is a chain -CH(phenyl)-CH2-C(=O)-CH3, i.e., a phenyl-substituted carbon bearing a ketone side chain (acetonyl-benzyl substituent), with the phenyl ring shown as a separate benzene ring. (3) Ibuprofen: a benzene ring with an isobutyl group (-CH2-CH(CH3)2, labeled with two CH3 groups) at the para position and a 2-methylpropanoic acid group (-CH(CH3)-COOH, with CH3 and OH labeled) at the other para position._
+
+
+_Source: images/Screenshot 2026-08-30 221942.png_
+
+**BSA-CPFX Binding Experiments in the Presence of Warfarin and Ibuprofen (Note: K0 represents the affinity constant of CPFX in the presence of BSA only.)**
+
+| Site marker | Ka (M⁻¹) | Ka/K0 |
+|---|---|---|
+| Warfarin | 0.755 × 10⁴ | 0.46 |
+| Ibuprofen | 1.430 × 10⁴ | 0.87 |
+
+
+_Source: images/Screenshot 2026-08-30 221942.png, images/Screenshot 2026-08-30 221952.png_
+
+**BSA-CPFX Binding Experiments in the Presence of Metal Ions (Note: K0 is the binding constant of CPFX-BSA in the absence of a metal ion.) [continues in next image]**
+
+| System | Ka (M⁻¹) | Ka/K0 |
+|---|---|---|
+| BSA-CPFX-Mg2+ | 2.030 × 10⁴ | 0.87 |
+| BSA-CPFX-Ca2+ | 1.538 × 10⁴ | 0.66 |
+| BSA-CPFX-Mn2+ | 1.653 × 10⁴ | 0.71 |
+| BSA-CPFX-Cu2+ | 1.634 × 10⁴ | 0.70 |
+| BSA-CPFX-Zn2+ | 1.489 × 10⁴ | 0.64 |
+| BSA-CPFX-La3+ | 1.933 × 10⁴ | 0.83 |
+| BSA-CPFX-Ce3+ | 1.992 × 10⁴ | 0.85 |
+
+
+_Source: images/Screenshot 2026-08-30 221952.png_
+
+**Binding Constants and Thermodynamic Parameters of CPFX-BSA Interactions at pH 7.4 (Note: ND stands for not determined.)**
+
+| T (K) | Ka (M⁻¹) | ΔH (kJ mol⁻¹) | ΔG (kJ mol⁻¹) | ΔS (J mol⁻¹ K⁻¹) |
+|---|---|---|---|---|
+| 298 | 2.169 × 10⁴ | ND | −24.742 | ND |
+| 304 | 1.877 × 10⁴ | −18.873 | −24.860 | 19.969 |
+| 310 | 1.615 × 10⁴ | ND | −24.979 | ND |
+
+
+### Question 30
+
+_Source images: images/Screenshot 2026-08-30 221958.png_
+
+Metal ions present in plasma are expected to:
+
+- **A.** increase the amount of CPFX bound to BSA.
+
+- **B.** decrease the amount of CPFX bound to BSA.
+
+- **C.** decrease the amount of free CPFX found in plasma.
+
+- **D.** have little effect on the amount of bound CPFX.
+
+
+### Question 31
+
+_Source images: images/Screenshot 2026-08-30 222004.png_
+
+Which naturally occurring biological molecule would be most likely to bind in the same site as ibuprofen?
+
+- **A.** Glucose
+
+- **B.** ATP
+
+- **C.** Glycerol
+
+- **D.** Palmitoleic acid
+
+
+### Question 32
+
+_Source images: images/Screenshot 2026-08-30 222009.png_
+
+Based on the data in Table 1, the binding site of CPFX on BSA was determined to be:
+
+- **A.** primarily at Site II.
+
+- **B.** equally partitioned between Site I and Site II.
+
+- **C.** primarily at Site I.
+
+- **D.** at a site distinct from either Site I or Site II.
+
+
+### Question 33
+
+_Source images: images/Screenshot 2026-08-30 222015.png_
+
+Sites I and II are most likely lined with the side chains of which amino acids?
+
+- **A.** R and L
+
+- **B.** E and Y
+
+- **C.** D and E
+
+- **D.** D and H
+
+
+## Passage 7 (Questions 34-37)
+
+_Source images: images/Screenshot 2026-08-30 222036.png_
+
+> Researchers performed an experiment to investigate the thermal
+> properties of human skin with regard to heat transfer. For this purpose an
+> iron wire with known electric and thermal properties was mounted in a
+> specially designed holder and placed 5 cm away from the forearm skin of a
+> volunteer. The design enabled heat from the wire to be transferred to the
+> skin. At room temperature the wire had a length L of 4 m, a diameter D of
+> 4 × 10⁻⁴ m, and a mass M of 4 × 10⁻³ kg. The wire was connected in series
+> with an ammeter, a power supply, and a switch.
+> The researchers selected a voltage (V) and closed the switch so current
+> (I) flowed through the circuit, raising the wire's temperature (T). The values
+> in Table 1 were measured in five trials with different wire temperatures.
+> (Note: The initial value of R, the circuit's resistance, was measured at a
+> temperature of 293 K with an ohmmeter. The other values of R were
+> calculated from the values of V and L.)
+> The change in wire length (ΔL) is related to the change in temperature
+> (ΔT) by the relationship ΔL = αLΔT, where α, the coefficient of thermal
+> expansion, is a constant. A similar relationship, ΔD = αDΔT, describes how
+> the diameter of a wire changes when it is heated. The constant has the same
+> value in both equations.
+> The energy radiated from a heated wire each second is AσT⁴, where A is
+> the surface area of the wire, and σ = 5.67 × 10⁻⁸ J/m²·s·K⁴ is the
+> Stefan·Boltzmann constant.
+
+
+_Source: images/Screenshot 2026-08-30 222046.png_
+
+**Data for Thermal and Electrical Properties of Iron Wire**
+
+| Trial | T (K) | L (m) | R (Ω) | I (A) | V (V) |
+|---|---|---|---|---|---|
+| 1 | 293 | 4.000 | 4.0 | 0 | 0 |
+| 2 | 373 | 4.004 | 6.1 | 0.75 | 4.6 |
+| 3 | 473 | 4.009 | 8.7 | 1.18 | 10 |
+| 4 | 573 | 4.014 | 11.3 | 1.60 | 18 |
+| 5 | 673 | 4.019 | 13.9 | 2.00 | 28 |
+
+
+### Question 34
+
+_Source images: images/Screenshot 2026-08-30 222054.png_
+
+What is the approximate density of the wire at 473 K? (Note: The volume of the wire is 5 × 10⁻⁷ m³.)
+
+- **A.** 2000 kg/m³
+
+- **B.** 3600 kg/m³
+
+- **C.** 6400 kg/m³
+
+- **D.** 8000 kg/m³
+
+
+### Question 35
+
+_Source images: images/Screenshot 2026-08-30 222120.png_
+
+Which of the following graphs best illustrates the relationship between T and R?
+
+- **A.** 
+
+- **B.** 
+
+- **C.** 
+
+- **D.** 
+
+_(Figure 1: Option A graph — Small line graph with vertical axis labeled R and horizontal axis labeled T (arrow pointing right). A straight line with a constant positive slope starts partway up the R-axis and rises linearly to the upper right, indicating R increases linearly with T.)_
+
+_(Figure 2: Option B graph — Small line graph with vertical axis labeled R and horizontal axis labeled T. A horizontal straight line near the top of the plot area, indicating R remains constant (does not change) as T increases.)_
+
+_(Figure 3: Option C graph — Small line graph with vertical axis labeled R and horizontal axis labeled T. A curve starts low/flat near the origin and curves upward with increasing steepness toward the upper right (concave up, exponential-like growth), indicating R increases at an increasing rate as T increases.)_
+
+_(Figure 4: Option D graph — Small line graph with vertical axis labeled R and horizontal axis labeled T (arrow pointing right). A curve starts high near the top of the R-axis and decreases toward the right, with the curve concave down and leveling off (decreasing at a decreasing rate), indicating R decreases as T increases.)_
+
+
+### Question 36
+
+_Source images: images/Screenshot 2026-08-30 222135.png_
+
+What is the minimum amount of heat energy required to increase T from 373 K to 573 K? (Note: The specific heat capacity of iron is 460 J/kg·K.)
+
+- **A.** 368 J
+
+- **B.** 550 J
+
+- **C.** 1840 J
+
+- **D.** 3680 J
+
+
+### Question 37
+
+_Source images: images/Screenshot 2026-08-30 222146.png_
+
+During Trial 5, the wire was heated from 293 K to 673 K while V was held constant at 28 V. How did the current through the circuit change during this time?
+
+- **A.** It remained constant at 2 A.
+
+- **B.** It remained constant at 4.6 A.
+
+- **C.** It increased from 2 A to 4.6 A.
+
+- **D.** It decreased from 4.6 A to 2 A.
+
+
+## Passage 8 (Questions 38-42)
+
+_Source images: images/Screenshot 2026-08-30 222304.png_
+
+> Terpenes constitute a class of nonsaponifiable lipids whose carbon
+> skeletons are composed of isoprene (2-methyl-1,3-butadiene) units.
+> According to the Isoprene Rule, adjacent isoprene units in terpenes are
+> linked preferentially between carbon atoms located at opposite ends of the
+> isoprene structural subunit (head-to-tail, Figure 1). Head-to-head and tail-
+> to-tail connections, when they occur, are exceptions to this rule.
+> Head-to-Head
+> Tail-to-Tail
+> Head-to-Tail
+> terpenes
+> In human metabolism, squalene, a C30 terpene (Compound 1, Figure 2),
+> is utilized as a precursor for the synthesis of many lipids.
+> Squalene
+> Compound 1
+> Mevalonate (Compound 2, Reaction 3) is a key intermediate in squalene
+> biosynthesis. The biosynthetic pathway by which optically active mevalonate
+> is synthesized in vivo from acetate has been elucidated by using specifically
+> ¹⁴CH₃ labeled acetylCoA (reactions 1-3).
+> HSCoA
+> +
+> Acetyl CoA
+> Acetyl CoA
+> Thiolase
+> AcetoacetylCOA
+> AcetoacetylCOA
+> Reaction 1
+> Acetyl CoA
+> AcetoacetylCOA
+> H2O
+> CoA
+> Enzyme 1
+> HydroxymethylglutarylCoA
+> Reaction 2
+> CoA
+> +
+> 2NADPH
+> 2NADP+
+> HydroxymethylglutarylCoA
+> Enzyme 2
+> Mevalonate
+> Compound 2
+> Reaction 3
+
+
+**Three types of linkages that can occur between isoprene units in terpenes**  
+_Source: images/Screenshot 2026-08-30 222304.png, images/Screenshot 2026-08-30 222321.png_
+
+> _Three skeletal (zigzag) chemical structure fragments, each composed of two branched isoprene-derived carbon chain segments joined by a dashed bond representing the inter-unit linkage. Left structure labeled 'Head-to-Head': two chain fragments each with a methyl branch near the dashed (linking) bond, joined so that the branched (head) ends face each other. Middle structure labeled 'Tail-to-Tail': two chain fragments joined so that the unbranched (tail) ends face each other across the dashed bond, with methyl branches at the outer ends. Bottom structure labeled 'Head-to-Tail': two chain fragments joined with a branched (head) end of one unit connected via the dashed bond to the unbranched (tail) end of the other unit, methyl branch at one outer end only._
+
+
+**Structure of squalene (Compound 1)**  
+_Source: images/Screenshot 2026-08-30 222316.png, images/Screenshot 2026-08-30 222321.png_
+
+> _Full skeletal (zigzag) structure of squalene, a linear C30 isoprenoid triterpene, drawn horizontally with carbon atoms numbered 1 through 24 at branch/vertex positions along the chain. The chain contains six methyl branch points (at carbons bearing the numbered substituents, e.g., near C2, C6, C10, C15, C19, C23) and multiple C=C double bonds distributed along the backbone (visible near C2-C3, C6-C7, C10-C11, C14-C15, C18-C19, C22-C23), consistent with squalene's six isoprene units joined in a tail-to-tail fashion at the center of the molecule, giving the structure symmetry about its midpoint. Labeled below the structure: 'Squalene' and 'Compound 1'._
+
+
+### Question 38
+
+_Source images: images/Screenshot 2026-08-30 222327.png_
+
+Carbon-14 labeled mevalonic acid (Compound 2) produced from 14C-labeled acetylCoA (reactions 1-3) is converted in vivo into isopentenyl pyrophosphate (Compound 3). What is the expected 14C labeling pattern found in isopentenyl phosphate produced this way? Labeled carbon atoms should be found at:
+
+- **A.** C1, C3, and C4.
+
+- **B.** C1, C3, and C5.
+
+- **C.** C2, C3, and C5.
+
+- **D.** C2, C4, and C5.
+
+_(Figure 1: Mevalonate to Compound 3 (isopentenyl pyrophosphate) — Left structure: mevalonate derivative -O-C(=O)-CH2-C(CH3)(OPO3^-)-CH2-CH2-OPO2OPO3^2-, with the quaternary carbon bearing a CH3 group on a hashed wedge. An arrow labeled 'Pi + CO2' (released) points to the right, converting this into Compound 3: an isopentenyl pyrophosphate structure drawn as CH2=C(CH3)-CH2-CH2-OPO2OPO3^2-, with carbons numbered 1 (CH2 attached to pyrophosphate), 2 (adjacent CH2), 3 (alkene carbon bearing the methyl branch), 4 (terminal =CH2 alkene carbon), and 5 (the methyl branch carbon on carbon 3).)_
+
+
+### Question 39
+
+_Source images: images/Screenshot 2026-08-30 222334.png_
+
+Mevalonate exists in equilibrium with Compound X in aqueous solution. What is the structure of Compound X?
+
+- **A.** CH3 OH O O
+
+- **B.** CH3 OH HO O
+
+- **C.** O-O CH3 -O OH
+
+- **D.** O CH3 O OH
+
+_(Figure 1: Option A — A six-membered ring lactone (delta-valerolactone): the ring contains one oxygen and a carbonyl carbon (C=O) adjacent to that ring oxygen, forming an ester (lactone) linkage. A quaternary ring carbon bears a CH3 group (hashed wedge) and an OH group.)_
+
+_(Figure 2: Option B — A six-membered ring (tetrahydropyran) with a ring oxygen; the carbon adjacent to the ring oxygen bears an OH substituent (drawn as HO- outside the ring, a hemiketal/lactol-like carbon) rather than a carbonyl. Another ring carbon bears a CH3 group (hashed wedge) and OH substituent.)_
+
+_(Figure 3: Option C — A five-membered ring containing an O-O (peroxide-like) linkage at the top, labeled 'O-O CH3' with the CH3 on a hashed wedge substituent on a ring carbon. An -O substituent hangs off the ring at bottom left, and an open CH2CH2OH chain extends from the ring carbon bearing the CH3 group.)_
+
+_(Figure 4: Option D — A four-membered ring (beta-lactone) with a carbonyl (C=O, double-bonded O) in the ring next to the ring oxygen. The carbon bearing the CH3 group (hashed wedge) also carries an open-chain CH2CH2OH substituent extending outside the ring.)_
+
+
+### Question 40
+
+_Source images: images/Screenshot 2026-08-30 222339.png_
+
+Mevalonate (Compound 2, Reaction 3) is expected to display prominent absorption in which region(s) of its infrared spectrum? I. 3200-3500 cm-1 II. 1700-1750 cm-1 III. 1580-1610 cm-1
+
+- **A.** II only
+
+- **B.** I and II only
+
+- **C.** II and III only
+
+- **D.** I, II, and III
+
+
+### Question 41
+
+_Source images: images/Screenshot 2026-08-30 222344.png_
+
+What factor explains how a single stereoisomer is formed in Reaction 2?
+
+- **A.** One of the reactants is chiral.
+
+- **B.** Both reactants are chiral.
+
+- **C.** The solvent medium is chiral.
+
+- **D.** The enzyme is chiral.
+
+
+### Question 42
+
+_Source images: images/Screenshot 2026-08-30 222349.png_
+
+Which substance is NOT a product of squalene metabolism?
+
+- **A.** Glucose
+
+- **B.** Testosterone
+
+- **C.** Cholesterol
+
+- **D.** Cortisone
+
+
+## Passage 9 (Questions 47-51)
+
+_Source images: images/Screenshot 2026-08-30 223308.png_
+
+> Pantothenate kinases (PanK) catalyze the phosphorylation of
+> pantothenate (Vitamin B5) to form phosphopantothenate (Figure 1). This
+> reaction uses ATP and is the first step in the biosynthesis of Coenzyme A.
+> Three types of PanK have been identified: PanK1, PanK2, and PanK3.
+> Mutations in the PANK2 gene are linked to pantothenate kinase-associated
+> neurodegeneration in humans. PanK1 and PanK3 are found in bacteria, and
+> bacterial PanK3 is a potential target for new antibiotics.
+> Pantothenate
+> ATP
+> PanK
+> ADP
+> Phosphopantothenate
+> NH2
+> Coenzyme A
+> The reaction catalyzed by PanK to make the precursor to CoA
+> (Note: Compounds are shown in the non-ionized state.)
+> The enzyme kinetic data for a bacterial PanK3 are shown in Figure 2. The
+> reaction was monitored using an assay that couples the reactions of
+> pyruvate kinase and lactate dehydrogenase. ADP produced by the PanK-
+> catalyzed reaction is used by pyruvate kinase to convert
+> phosphoenolpyruvate (PEP) to pyruvate. The pyruvate is then converted to
+> lactate by lactate dehydrogenase with simultaneous use of NADH. The PanK
+> reaction was initiated by adding 0.27 µM PanK to a buffer containing
+> pyruvate kinase, lactate dehydrogenase, 2 mM PEP, 0.3 mM NADH, and
+> appropriate amounts of ATP and pantothenate. The consumption of NADH
+> was measured spectrophotometrically. Figure 2 shows the initial velocity of
+> the reaction as a function of the initial concentration of pantothenate fitted to
+> the Michaelis–Menten equation.
+> Velocity of reaction (µM/min)
+> 1.0
+> 0.8
+> 0.6
+> 0.4
+> 0.2
+> 0
+> [ATP] = 16 mM
+> 0
+> 20
+> 40
+> 60
+> 80
+> 100
+> Concentration of pantothenate (µM)
+> Concentration of pantothenate (µM)
+> Plot of initial velocity versus panthothenate concentration at a
+> fixed concentration of ATP
+> The structures of the PanK3 dimer in complex with its substrate
+> (pantothenate), with its product (phosphopantothenate), with both ADP and
+> pantothenate, as well as apoPanK3 have been determined by X-ray
+> crystallography. These structures reveal that binding is stabilized by
+> interactions between C2' and C4' hydroxyl groups of pantothenate and a
+> carboxylate group of PanK3, and, in the ternary complex of PanK3 with
+> pantothenate and ADP, the binding of ADP involves predominantly ionic
+> interactions.
+> Adapted from B. S. Hong et al., Crystal structures of human pantothenate kinases, insights into allosteric regulation and mutations
+> linked to a neurodegeneration disorder. Journal of Biological Chemistry. ©2007 American Society for Biochemistry and Molecular
+> Biology.; K. Yang, E. Strauss, C. Huerta, and H. Zhang, Structural basis for substrate binding and the catalytic mechanism of type III
+> pantothenate kinase. Biochemistry. ©2008 American Chemical Society.
+
+
+**The reaction catalyzed by PanK to make the precursor to CoA (Note: Compounds are shown in the non-ionized state.)**  
+_Source: images/Screenshot 2026-08-30 223308.png, images/Screenshot 2026-08-30 223319.png_
+
+> _Continuation of the Figure 1 reaction scheme: three stacked downward arrows above the structure indicate additional, unshown biosynthetic steps proceeding from phosphopantothenate to the final product, labeled 'Coenzyme A'. The CoA structure shows an adenine base (purine ring system with an NH2 group at the top position, and ring nitrogens labeled N) attached via its ring nitrogen to a ribose sugar drawn with bold wedge bonds (OH at the 2'-position and a phosphate group, shown as O=P-OH with an additional OH, esterified at the 3'-position). The 5'-CH2 of the ribose connects through a diphosphate bridge (two phosphate groups drawn in series as HO-P-O- and HO-P=O) to a pantetheine arm containing the gem-dimethyl carbon, a stereocenter with a hashed-wedge HO substituent, an amide C(=O)NH, a two-carbon chain, a second amide C(=O)NH, and a two-carbon chain terminating in a thiol (SH) group — the reactive end of Coenzyme A._
+
+
+**Figure 2**  
+_Source: images/Screenshot 2026-08-30 223326.png_
+
+> _Michaelis–Menten saturation curve (scatter plot with fitted hyperbolic curve). Y-axis: 'Velocity of reaction (µM/min)', ranging from 0 to 1.0 in increments of 0.2. X-axis: 'Concentration of pantothenate (µM)', ranging from 0 to 100 in increments of 20. Data points with vertical error bars appear approximately at (5, 0.44), (10, 0.65), (20, 0.80), (40, 0.86), (60, 0.89), and (80, 0.88), showing a steep initial rise in velocity at low substrate concentration that plateaus near a maximal velocity (Vmax) of about 0.9 µM/min at higher pantothenate concentrations, consistent with Michaelis–Menten saturation kinetics. A text annotation '[ATP] = 16 mM' appears within the plot area, indicating the fixed ATP concentration used for this titration. (Figure caption, 'Figure 2 Plot of initial velocity versus panthothenate concentration at a fixed concentration of ATP', appears on the following image.)_
+
+
+### Question 47
+
+_Source images: images/Screenshot 2026-08-30 223339.png_
+
+What is the net charge of both pantothenate and phosphopantothenate in aqueous solution at pH 7?
+
+- **A.** 0 for pantothenate and 0 for phosphopantothenate
+
+- **B.** −1 for pantothenate and −1 for phosphopantothenate
+
+- **C.** −1 for pantothenate and −3 for phosphopantothenate
+
+- **D.** −3 for pantothenate and −4 for phosphopantothenate
+
+
+### Question 48
+
+_Source images: images/Screenshot 2026-08-30 223346.png_
+
+What are the components that comprise Coenzyme A (Figure 1)?
+
+- **A.** β-Mercaptoethylamine, phosphopantothenate, dAMP with additional 3'–phosphate
+
+- **B.** β-Mercaptopropylamine, pantothenate, AMP with additional 5'–phosphate
+
+- **C.** β-Mercaptopropylamine, phosphopantothenate, dAMP with additional 5'–phosphate
+
+- **D.** β-Mercaptoethylamine, pantothenate, ADP with additional 3'–phosphate
+
+
+### Question 49
+
+_Source images: images/Screenshot 2026-08-30 223351.png_
+
+The stabilization of pantothenate in PanK3 is most likely due to an active site:
+
+- **A.** arginine.
+
+- **B.** asparagine.
+
+- **C.** aspartate.
+
+- **D.** glutamine.
+
+
+### Question 50
+
+_Source images: images/Screenshot 2026-08-30 223356.png_
+
+The amino acids Asp6, Asn9, Thr10, His11, and Arg27 are found near the ADP binding site of PanK3. Which two amino acids contribute to the stabilization of ADP binding described in the passage?
+
+- **A.** Asn9 and Thr10
+
+- **B.** His11 and Arg27
+
+- **C.** Asp6 and Arg27
+
+- **D.** Asp6 and His11
+
+
+### Question 51
+
+_Source images: images/Screenshot 2026-08-30 223401.png_
+
+What is the fate of the NADH used in the assay described in the passage?
+
+- **A.** Oxidation of NADH to NAD+
+
+- **B.** Reduction of NADH to NAD+
+
+- **C.** Oxidation of NAD+ to NADH
+
+- **D.** Reduction of NAD+ to NADH
+
+
+## Passage 10 (Questions 52-56)
+
+_Source images: images/Screenshot 2026-08-30 223431.png, images/Screenshot 2026-08-30 223511.png_
+
+> A hospital uses metastable, radioactive technetium-99 (99mTc) for the
+> nuclear angiography of a patient's heart, after Doppler ultrasound indicates
+> that a lesion constricts the vein leading into the left ventricle.
+> The 99mTc necessary for the procedure is generated by a molybdenum-99/
+> technetium-99m (99Mo/99mTc) generator. In the generator, the radioactive
+> 99Mo adheres to an aluminum oxide column placed inside a glass tube. The
+> 99Mo decays to 99mTc, releasing a beta particle β− and an antineutrino ῡ. To
+> extract the 99mTc, a saline solution is passed through the glass tube and over
+> the aluminum oxide column, as shown in Figure 1. The resulting eluate is
+> sodium pertechnetate (Na99mTcO4).
+> Saline solution
+> Aluminum oxide column
+> with 99Mo + 99mTc
+> Na99mTcO4
+> In order for the pertechnetate to be used as a tag for red blood cells, the
+> hospital combines it with a stannous solution (such as stannous chloride),
+> and Reaction 1 occurs.
+> 2TcO4− + 3Sn2+ + 16H+ → 2Tc4+ + 3Sn4+ + 3H2O
+> Reaction 1
+> This solution is introduced into a patient prior to a test that involves
+> observing the heart at rest and during exercise on a stationary bicycle with a
+> load of 30 W. 99mTc decays to 99Tc by emitting 140-keV gamma photons
+> detected by a suitable camera. The resulting image of blood flow around and
+> through the heart allows an accurate diagnosis of the patient's circulatory
+> system. The radioactivity of 99mTc is shown in Figure 2.
+> Adapted from S. Banerjee et al., Evolution of Tc-99m in diagnostic pharmaceuticals. Seminars in Nuclear Medicine. ©2001 W. B.
+> Saunders Company.; Fubini et al., Use of radionuclide angiography and an electrocardiographic stress test to diagnose multivessel
+> disease after a first episode of uncomplicated myocardial infarction. British Heart Journal. ©1986 British Heart Journal.; L. S. Lerner,
+
+
+**Schematic of a 99Mo/99mTc generator.**  
+_Source: images/Screenshot 2026-08-30 223438.png, images/Screenshot 2026-08-30 223520.png_
+
+> _A vertical glass tube (drawn as a tall hexagonal column, wide in the middle and tapering to points at top and bottom) contains an aluminum oxide column labeled '99Mo + 99mTc'. An arrow labeled 'Saline solution' points down into the top of the tube. At the bottom, a tube bends and exits to the left, with an upward-pointing arrow leading to the label 'Na99mTcO4', indicating the eluate collected after saline passes through the column._
+
+
+**Time dependence of 99mTc radioactivity**  
+_Source: images/Screenshot 2026-08-30 223448.png, images/Screenshot 2026-08-30 223534.png_
+
+> _A line graph with the y-axis labeled 'Radioactivity (MBq)' ranging from 0 to 600 in increments of 100, and the x-axis labeled 'Time (hours)' ranging from 0 to 30 in increments of 5. The curve starts at approximately (0, 500) and decreases in a smooth exponential decay pattern, dropping steeply at first (to about 300 MBq by 5 hours, 175 MBq by 10 hours), then leveling off more gradually, reaching approximately 20-30 MBq by 28-30 hours. This represents typical exponential radioactive decay._
+
+
+### Question 52
+
+_Source images: images/Screenshot 2026-08-30 223501.png_
+
+What is the frequency of the emitted gamma photons? (Note: Use Planck's constant h = 6.6 x 10−34 Js and the elementary charge e = 1.6 x 10−19 C.)
+
+- **A.** 2.11 × 1035 Hz
+
+- **B.** 3.38 × 1019 Hz
+
+- **C.** 3.01 × 10−20 Hz
+
+- **D.** 1.45 × 10−47 Hz
+
+
+### Question 53
+
+_Source images: images/Screenshot 2026-08-30 223545.png_
+
+Based on the information in Figure 2, what is the half-life of 99mTc?
+
+- **A.** 6 h
+
+- **B.** 12 h
+
+- **C.** 18 h
+
+- **D.** 24 h
+
+
+### Question 54
+
+_Source images: images/Screenshot 2026-08-30 223552.png_
+
+The electrically charged particle emitted during the decay of 99Mo is:
+
+- **A.** a photon.
+
+- **B.** a neutrino.
+
+- **C.** an electron.
+
+- **D.** a positron.
+
+
+### Question 55
+
+_Source images: images/Screenshot 2026-08-30 223557.png_
+
+The advantage of the Doppler ultrasound technique over the standard ultrasound technique is that it also allows:
+
+- **A.** distinguishing between fluids and tissue.
+
+- **B.** measuring the blood flow.
+
+- **C.** measuring the tissue density.
+
+- **D.** measuring the heart wall thickness.
+
+
+### Question 56
+
+_Source images: images/Screenshot 2026-08-30 223602.png_
+
+What is the work done by the patient during a 3-minute exercise on the bicycle?
+
+- **A.** 5400 J
+
+- **B.** 90 J
+
+- **C.** 6 J
+
+- **D.** 0.16 J
+
+
+## Standalone Questions
+
+
+### Question 10
+
+_Source images: images/Screenshot 2026-08-30 221324.png_
+
+What was the pH of the unknown aqueous solution?
+
+- **A.** 4
+
+- **B.** 5
+
+- **C.** 9
+
+- **D.** 10
+
+
+### Question 11
+
+_Source images: images/Screenshot 2026-08-30 221330.png_
+
+The unknown compound was probably a:
+
+- **A.** weak base.
+
+- **B.** strong base.
+
+- **C.** weak acid.
+
+- **D.** strong acid.
+
+
+### Question 12
+
+_Source images: images/Screenshot 2026-08-30 221336.png_
+
+Two additional compounds were studied: NO2(OH) dissolved in water and produced an acidic solution, and Ni(OH)2 dissolved only in an acidic solution. What type of compounds were these?
+
+- **A.** Both were oxyacids.
+
+- **B.** Both were bases.
+
+- **C.** NO2(OH) was a base and Ni(OH)2 was an oxyacid.
+
+- **D.** NO2(OH) was an oxyacid and Ni(OH)2 was a base.
+
+
+### Question 13
+
+_Source images: images/Screenshot 2026-08-30 221344.png_
+
+The central atom, A, of the unknown compound was most likely:
+
+- **A.** an alkali or alkaline earth metal.
+
+- **B.** a transition metal.
+
+- **C.** a nonmetal.
+
+- **D.** a noble gas.
+
+
+### Question 14
+
+_Source images: images/Screenshot 2026-08-30 221458.png_
+
+The structure of the triterpene squalene is shown. Squalene Squalene is produced in the human body as a precursor to which important class of compounds?
+
+- **A.** Triacyl glycerols
+
+- **B.** Phospholipids
+
+- **C.** Steroid hormones
+
+- **D.** Prostaglandins
+
+_(Figure 1: Squalene — Skeletal (line-angle) structure of squalene, a linear triterpene composed of six isoprene units arranged in a zigzag chain with methyl branch substituents. The chain contains six carbon-carbon double bonds distributed along its length, each flanked by methyl group branches (visible as short line stubs off the main chain), consistent with the head-to-tail/tail-to-tail isoprenoid pattern. The molecule is drawn symmetrically, with both termini ending in a trisubstituted alkene bearing two methyl groups (isopropenyl/prenyl-like ends), and no rings are present (fully acyclic structure).)_
+
+
+### Question 15
+
+_Source images: images/Screenshot 2026-08-30 221505.png_
+
+What is the concentration of Cl- ions in a 0.1 M solution of calcium chloride?
+
+- **A.** 0.02 M
+
+- **B.** 0.05 M
+
+- **C.** 0.10 M
+
+- **D.** 0.20 M
+
+
+### Question 16
+
+_Source images: images/Screenshot 2026-08-30 221524.png_
+
+Addition of which disaccharide to a solution of Ag2O in NH3(aq) will NOT result in the deposition of shiny silver mirror on the walls of the reaction vessel?
+
+- **A.** Cellobiose
+
+- **B.** Lactose
+
+- **C.** Maltose
+
+- **D.** Sucrose
+
+_(Figure 1: Cellobiose (Option A) — Two six-membered pyranose sugar rings drawn in chair conformation, joined by a glycosidic C–O–C bridge between the anomeric carbon of the right ring and the C4 of the left ring. Left ring: exocyclic HO–CH2 group at top, with HO substituents labeled at two lower ring carbons and another HO at the far ring carbon, ring oxygen at top right. Right ring: exocyclic CH2–OH group at top right, HO substituents at two ring carbons (labeled HO, HO), ring oxygen bridging to left ring, and a terminal anomeric –OH at bottom right. Labeled 'Cellobiose' beneath the structure.)_
+
+_(Figure 2: Lactose (Option B) — A glucopyranose ring (left, six-membered, chair form) with exocyclic HO–CH2 group at top and HO substituents at two ring carbons, joined via its anomeric carbon through an O bridge to the anomeric carbon of a fructofuranose ring (right, five-membered). The fructofuranose ring bears an exocyclic CH2OH group at top, an HO substituent, a ring HO, and a terminal CH2–OH group; both anomeric carbons are involved in the glycosidic bond, leaving no free reducing end. Labeled 'Sucrose' beneath the structure.)_
+
+_(Figure 3: Option C (structure cut off at bottom of image, label not visible) — Partial view of a disaccharide structure: left pyranose ring with exocyclic HO–CH2 group at top and HO substituents at two ring carbons, connected via a glycosidic O bridge (drawn extending down from the anomeric carbon) toward a second ring shown only partially (HO substituent and ring oxygen visible) before the image is cropped.)_
+
+
+### Question 17
+
+_Source images: images/Screenshot 2026-08-30 221540.png_
+
+What is the net charge of the peptide Arg–Ala–Phe–Leu at pH 8?
+
+- **A.** -1
+
+- **B.** 0
+
+- **C.** +1
+
+- **D.** +2
+
+
+### Question 26
+
+_Source images: images/Screenshot 2026-08-30 221842.png_
+
+The average human body contains approximately 5 liters of blood. If the blood has a density of 1060 kg/m3, what is the total mass of blood in the average human? (Note: 1 L = 1000 cm3.)
+
+- **A.** 0.212 kg
+
+- **B.** 0.530 kg
+
+- **C.** 5.30 kg
+
+- **D.** 10.6 kg
+
+
+### Question 27
+
+_Source images: images/Screenshot 2026-08-30 221850.png_
+
+An ultrasound examination could show the motion of a fetus. In order to image this motion, the ultrasound examination devices requires what minimal information?
+
+- **A.** The speeds of the sound and of the moving object.
+
+- **B.** The speed of the sound, and the frequencies of the sound waves emitted and observed.
+
+- **C.** The speeds of the sound and of the moving object, and the frequencies of the sound waves emitted and observed.
+
+- **D.** The speeds of the sound and of the moving object, and the frequencies and wavelengths of the sound waves emitted and observed.
+
+
+### Question 28
+
+_Source images: images/Screenshot 2026-08-30 221901.png_
+
+Which of the following statements explains why the boiling point of HF is abnormally high when compared to the boiling points of other Group 7A hydrides?
+
+- **A.** The H-F bond is much less polar than the bonds between H and the other halogens.
+
+- **B.** HF has the lowest molecular mass of the Group 7A hydrides.
+
+- **C.** HF is affected by hydrogen-bonding interactions to a much greater degree than the other Group 7A hydrides.
+
+- **D.** HF has the highest vapor pressure among the Group 7A hydrides.
+
+
+### Question 29
+
+_Source images: images/Screenshot 2026-08-30 221915.png_
+
+The principal quantum number is a measure of which of the following?
+
+- **A.** Approximate radial size of an electron cloud
+
+- **B.** Approximate shape of an electron cloud
+
+- **C.** Number of valence electrons that orbit a nucleus
+
+- **D.** Number of protons and neutrons found in the nucleus of an atom
+
+
+### Question 43
+
+_Source images: images/Screenshot 2026-08-30 222807.png_
+
+Myopia is a condition of the eye where the crystalline lens focuses the light rays to a position between the lens and the retina. To correct for this condition, a thin lens is placed in front of the eye that will help to focus light on the retina. The type of lens required is:
+
+- **A.** cylindrical.
+
+- **B.** converging.
+
+- **C.** diverging.
+
+- **D.** spherical.
+
+
+### Question 44
+
+_Source images: images/Screenshot 2026-08-30 222813.png_
+
+One method of isolating polypeptides and proteins from aqueous extracts is freeze drying. The aqueous solution of the polypeptide or protein is frozen. What procedure can be used to remove the water from the frozen sample?
+
+- **A.** Sublimation under reduced pressure
+
+- **B.** Distillation using steam
+
+- **C.** Extraction with organic solvent
+
+- **D.** Addition of magnesium sulfate
+
+
+### Question 45
+
+_Source images: images/Screenshot 2026-08-30 222822.png_
+
+Although highly toxic, amygdalin has been investigated as a potential anti- cancer compound. When refluxed in H2SO4(aq), amygdalin breaks down to produce glucose (2 equivalents), HCN (1 equivalent), and benzaldehyde (C6H5CHO, 1 equivalent). Which structure most likely corresponds to amygdalin?
+
+- **A.** 
+
+- **B.** 
+
+- **C.** 
+
+- **D.** 
+
+_(Figure 1: Answer choice A — A disaccharide of two pyranose sugar rings joined by a glycosidic oxygen linkage. The first ring (upper left) bears HOCH2, HO, HO, HO substituents; its anomeric oxygen links to the second pyranose ring (lower middle, substituents HO, HO, HO), whose anomeric oxygen extends through an O-CH2 linkage to a benzylic carbon. That carbon bears an H (shown above it), a nitrile group (C≡N) to the right, and a phenyl ring bonded directly below it. Overall it depicts a disaccharide O-glycosidically linked to mandelonitrile (Ph-CH(CN)-O-sugar), i.e., a benzaldehyde cyanohydrin glycoside — the structure of amygdalin.)_
+
+_(Figure 2: Answer choice B — A single pyranose sugar ring (top, substituents HOH2C, HO, HO, HO) whose anomeric oxygen connects to a central carbon labeled 'C'. This central carbon is directly bonded (C-C, not through O) to a phenyl ring via an 'HC' group, to a nitrile group (C≡N, drawn vertically below the central carbon), and to a second pyranose sugar ring (lower right, substituents HO, HO, HO) that terminates in a free anomeric -OH rather than continuing a glycosidic chain. This connectivity differs from true amygdalin because the phenyl and nitrile are attached via C-C bonds directly to the sugar's anomeric carbon rather than through a glycosidic oxygen to a separate mandelonitrile carbon.)_
+
+
+### Question 46
+
+_Source images: images/Screenshot 2026-08-30 222833.png_
+
+The density of a human body can be calculated from its weight in air, Wair, and its weight while submersed in water, Ww. The density of a human body is proportional to:
+
+- **A.** Wair/ (Wair − Ww).
+
+- **B.** (Wair − Ww)/Wair.
+
+- **C.** (Wair − Ww)/Ww.
+
+- **D.** Ww/(Wair − Ww).
+
+
+### Question 57
+
+_Source images: images/Screenshot 2026-08-30 223728.png_
+
+When choosing a buffer to use for an experiment conducted at pH 5.3, it would be best to choose one with a pKa of:
+
+- **A.** 2.14.
+
+- **B.** 4.75.
+
+- **C.** 6.5.
+
+- **D.** 7.0.
+
+
+### Question 58
+
+_Source images: images/Screenshot 2026-08-30 223733.png_
+
+An object with a mass of 0.1 kg absorbs 250 J of heat while changing temperature from 20°C to 25°C. What is the specific heat of the object?
+
+- **A.** 125 J/(kg·°C)
+
+- **B.** 250 J/(kg·°C)
+
+- **C.** 375 J/(kg·°C)
+
+- **D.** 500 J/(kg·°C)
+
+
+### Question 59
+
+_Source images: images/Screenshot 2026-08-30 223738.png_
+
+During glycolysis, pyruvate CH3C(=O)CO2⁻ is reduced to lactate CH3CH(OH)CO2⁻ by nicotinamide adenine dinucleotide (NADH). What is the balanced reaction for this conversion?
+
+- **A.** CH3C(=O)CO2⁻ + 2NADH → CH3CH(OH)CO2⁻ + 2NAD⁺
+
+- **B.** CH3C(=O)CO2⁻ + 2NADH + 2H⁺ → CH3CH(OH)CO2⁻ + 2NAD⁺
+
+- **C.** CH3C(=O)CO2⁻ + NADH + 2H⁺ → CH3CH(OH)CO2⁻ + NAD⁺
+
+- **D.** CH3C(=O)CO2⁻ + NADH + H⁺ → CH3CH(OH)CO2⁻ + NAD⁺
+
+
+# Section 2 — Critical Analysis and Reasoning Skills (CARS)
+
+
+## Passage 1 (Questions 1-7)
+
+_Source images: images/Screenshot 2026-08-30 223759.png_
+
+> In the second half of the twentieth century, as the threat of
+> communicable diseases receded, public medicine turned its attention to
+> preventing and treating health problems that were not caused by germs. The
+> death rates for chronic heart disease, in particular, seemed to be soaring
+> after World War II. Some observers cautioned that the apparent increase
+> might be the result of diagnostic advances, which had improved doctors'
+> ability to detect heart ailments. However, this possibility failed to deter the
+> press and advocacy groups like the American Heart Association from
+> declaring the arrival of a frightening epidemic.
+> One theory blamed the problem on the American diet, and specifically on
+> cholesterol—both the kind that you ingest when you eat animal products and
+> the kind that your body produces when you eat saturated fats. After all,
+> cholesterol is one component of the plaque that clogs arteries and causes
+> heart attacks. But isolating the true causes of coronary disease proved
+> elusive. In addition to diet, multiple factors were potential contributors,
+> including genetics and personal habits such as smoking. Numerous studies
+> on diet proved so inconclusive that, in 1969, the National Institutes of Health
+> found no hard evidence that what people ate had a significant impact on
+> heart disease.
+> Nevertheless, in the 1970s, the Select Committee on Nutrition and Human
+> Needs decided to fight the apparent epidemic by making nutritional
+> recommendations. Settling on the unproven theory that cholesterol was
+> behind heart disease, the committee issued its guidelines in 1977. The
+> guidelines urged people to reduce the fat that they consumed, principally by
+> eating less meat and consuming fewer dairy products. The committee also
+> advised raising carbohydrate intake and cutting one's intake of cholesterol by
+> a quarter.
+> Some of the country's leading researchers spoke out against the
+> guidelines and against population-wide dietary recommendations in general.
+> Edward Ahrens, an expert in the chemistry of fatty substances at Rockefeller
+> University, characterized the guidelines as "simplistic and a promoter of false
+> hopes." Ahrens complained that the guidelines treated the population as "a
+> homogeneous group of [laboratory] rats while ignoring the wide variation" in
+> individual diet and blood chemistry.
+> The latest nutritional thinking has actually focused on carbohydrates as a
+> potential cause of heart disease. Several studies have concluded that easily
+> digestible carbohydrates, in particular—such as potatoes, white rice, bread
+> from processed flour, and refined sugar—make it difficult to burn fat and also
+> increase inflammations that can cause heart attacks.
+> Supporters of the guidelines have increasingly struggled to justify them,
+> sometimes resorting to political arguments. Without clear dietary guidelines,
+> they claim, the food industry and other special interests could lobby political
+> leaders and influence policy in unhealthy ways. But this argument makes
+> sense only if you assume that the government's guidelines will be any
+> healthier. Supporters also argue that the government's success in persuading
+> people to stop smoking, equally paternalistic, justifies its efforts to change
+> American eating habits. But the major scientific dissenters from government
+> dietary policy are not especially concerned with governmental paternalism,
+> though that is a legitimate issue. They dissent because they find the
+> government's evidence inadequate and its recommendations potentially
+> harmful.
+> The best thing that the U.S. government can do to promote health is to
+> encourage people to develop their own individually-tailored diet and exercise
+> programs, in consultation with health-care professionals. Otherwise, public
+> health medicine risks violating the central principle of medical ethics: First,
+> do no harm.
+
+
+### Question 1
+
+_Source images: images/Screenshot 2026-08-30 223815.png_
+
+The passage implies that "some observers" (first paragraph) believed that:
+
+- **A.** there was no real increase in heart disease after World War II.
+
+- **B.** new diagnostic techniques were mistakenly identifying heart disease.
+
+- **C.** the increase in death rates after World War II had little to do with the increase in heart disease.
+
+- **D.** the increase in heart disease after World War II was somehow related to the decline in communicable disease.
+
+
+### Question 2
+
+_Source images: images/Screenshot 2026-08-30 223821.png_
+
+The author suggests that concluding that diet is responsible for heart disease would be:
+
+- **A.** mistaking cause for effect.
+
+- **B.** mistaking correlation for causation.
+
+- **C.** failing to consider a common cause.
+
+- **D.** failing to consider additional causes.
+
+
+### Question 3
+
+_Source images: images/Screenshot 2026-08-30 224103.png_
+
+Edward Ahrens's criticism, as it is presented in the passage, essentially points to: I. complexity. II. flexibility. III. diversity.
+
+- **A.** I only
+
+- **B.** I and II only
+
+- **C.** II and III only
+
+- **D.** I and III only
+
+
+### Question 4
+
+_Source images: images/Screenshot 2026-08-30 224109.png_
+
+The author mentions "easily digestible carbohydrates" (paragraph 5) most likely in order to:
+
+- **A.** imply that the 1977 guidelines may actually have harmed public health.
+
+- **B.** suggest that nutritional thinking changes over time.
+
+- **C.** explain one cause of the current obesity crisis in the U.S.
+
+- **D.** criticize the make-up of the dominant diet in the U.S.
+
+
+### Question 5
+
+_Source images: images/Screenshot 2026-08-30 224115.png_
+
+Which of the following, if assumed to be true, would provide the best evidence to support the author's conclusion about how government should promote health?
+
+- **A.** Making the presentation of nutritional information on food packaging mandatory was proposed by lobbyists.
+
+- **B.** America's obesity rate was far lower back when nutrition was largely a parental responsibility.
+
+- **C.** Most public health officials support some government involvement in nutrition policy.
+
+- **D.** Government efforts to reduce smoking rates in the U.S. have been quite effective.
+
+
+### Question 6
+
+_Source images: images/Screenshot 2026-08-30 224121.png_
+
+Which of the following criticisms of a proposed space shuttle flight is most like that of the "major scientific dissenters" (paragraph 6), as the author presents their views?
+
+- **A.** The composition of the shuttle crew violates equal rights legislation.
+
+- **B.** The shuttle flight is motivated mostly by political objectives.
+
+- **C.** The shuttle assembly has serious design flaws.
+
+- **D.** The shuttle flight costs too many taxpayer dollars.
+
+
+### Question 7
+
+_Source images: images/Screenshot 2026-08-30 224126.png_
+
+The author's arguments about government imply that he or she would be likely to oppose which of the following?
+
+- **A.** Legislation limiting the number of hours one can work per week
+
+- **B.** A decrease in governmental subsidies to colleges and universities
+
+- **C.** Legislation loosening regulations on lobbyists
+
+- **D.** A decrease in governmental oversight of school lunches
+
+
+## Passage 2 (Questions 8-12)
+
+_Source images: images/Screenshot 2026-08-30 224141.png_
+
+> Salvador Dali was a painter who, by persistently making a spectacle of himself, focused attention more on his personality and less on his artistic performances. They were not, in the eyes of innumerable people interested in art, the ultimate end of all his efforts, but the stage set on which he struck an attitude like some fascinating actor. People were used to seeing him in the guise of a great eccentric, indulging endlessly in scandalous pronouncements and amusing turns rather than paintings. Dali was the man who landed in New York for the first time holding a roll of bread eight feet long, who appeared in public in a suit sewn over with artificial flies, who delivered lectures dressed in a diving suit or arrived in a Rolls Royce filled with cauliflower, who made countless declarations on the radio and television about grooming his famously long moustache. Behavior like this guaranteed a reputation as brilliant as it was misleading. A great many people have been taken in by it. Late in life, Dali himself regretted this misunderstanding and said, "The day when people take my work seriously, they will realize that my painting is like an iceberg, which only shows a tenth of itself above the water."
+> In fact, behind the good-natured buffoon, who amused some and exasperated others, there lay an admirable creator. Dali was, before anything else, a man possessed by painting. There was even fairly convincing proof that this frivolous and exuberant impresario was capable of the strictest asceticism while he was painting a picture.
+> However, we should avoid the other extreme in interpreting him and not dissociate the artist too categorically from the circus performer. His provocative attitudes were not adopted for publicity purposes only, but satisfied a need to keep his mind in a state of excitement that would be congenial to his artistic activity. They were useful, too, in winning immediate acceptance for his most fantastic works, because their extravagances appeared to illustrate an intellectual drama.
+> So much subversive good humor led him to Surrealism, and he flung himself into it with complete abandonment. The members of the movement welcomed him in Paris as an unhoped-for recruit. Dali seized on the guiding principles of Surrealism and gave them their most extreme interpretation; he transformed its interest in the revelations of the unconscious and psychopathological states into a way of living and thinking. He invented the "paranoiac-critical system," a real delirium of organized interpretation, which consisted of cultivating his hallucinations and putting himself into a state of feigned madness in order to create without losing his lucidity. "The Only difference between a madman and me is that I am not mad," Dali declared.
+> difference between a madman and me is that I am not mad," Dali declared. All his phobias and his obsessions were flaunted in his behavior and his work and demonstrated that the artist, for the same reasons as a child, was not responsible for his instincts.
+> His fantastic imagination, which was so fertile in its dazzling inventions, ended by worrying the Surrealist group; it overstepped the mark and even invited the public to make fun of the movement's convictions. Still, while Surrealism rejected Dali, Dali continued to represent Surrealism for a large part of the public. Indeed, the aim behind his work was always the search for the unforgettable. Future generations will only forget what Dali did if they forget the history of modern painting itself.
+
+
+### Question 8
+
+_Source images: images/Screenshot 2026-08-30 224159.png_
+
+Which of the following is an assertion that is supported by strong evidence in the passage?
+
+- **A.** Surrealists were all as eclectic and scandalous as Dali.
+
+- **B.** Dali will be remembered for his paintings long after other artists are forgotten.
+
+- **C.** Dali was capable of total focus when painting.
+
+- **D.** Dali's bizarre public actions had rational causes.
+
+
+### Question 9
+
+_Source images: images/Screenshot 2026-08-30 224207.png_
+
+Given the passage discussion of Dali and the Surrealists, which of the following works of art would be most reasonably considered to be Surrealist?
+
+- **A.** An abstract sculpture that demonstrates the calming effects of symmetry
+
+- **B.** A painting that renders an artist's anxiety with seemingly unrelated objects
+
+- **C.** A painting that demonstrates the skill of an artist to recreate a scene with detail
+
+- **D.** A newsworthy photograph by an eccentric journalist that is regarded as controversial
+
+
+### Question 10
+
+_Source images: images/Screenshot 2026-08-30 224212.png_
+
+The author's apparent attitude toward Dali's strange behavior in public is that it was:
+
+- **A.** the result of his lifelong struggles against madness.
+
+- **B.** the sort of action in which most Surrealists indulged.
+
+- **C.** necessary for artistic and publicity reasons.
+
+- **D.** needed to divert attention from his unskilled paintings.
+
+
+### Question 11
+
+_Source images: images/Screenshot 2026-08-30 224217.png_
+
+Dali once helped create a dream sequence for the film Spellbound, a psychological thriller directed by Alfred Hitchcock. Which of the following is information from the passage that best explains why Hitchcock would seek Dali's assistance?
+
+- **A.** Dali became part of Surrealism to gain wider recognition.
+
+- **B.** Dali's madness was greatly appreciated by the public.
+
+- **C.** Dali was a dedicated artist.
+
+- **D.** Dali created art based on images from the subconscious.
+
+
+### Question 12
+
+_Source images: images/Screenshot 2026-08-30 224221.png_
+
+Given the information in the passage, one would most reasonably assume that Surrealism tries to:
+
+- **A.** put hallucinations and dreamlike visions on canvas.
+
+- **B.** encourage artists to act in childlike ways in public.
+
+- **C.** reflect the world as clearly as possible.
+
+- **D.** give an outlet for artists to relieve stress caused by their creativity.
+
+
+## Passage 3 (Questions 13-19)
+
+_Source images: images/Screenshot 2026-08-30 224717.png_
+
+> In 1926, projectile points made of flint rock were discovered among the
+> bones of extinct bison at a site near the town of Folsom, New Mexico. This
+> find constituted the first record of human-made artifacts found in association
+> with the bones of big game animals in the New World. Clearly, this was a
+> society of hunters. Subsequent investigations showed that these ancient
+> hunters, called the Folsom people by archeologists because of the location of
+> the initial discovery, lived throughout the western plains and Rocky
+> Mountains of what are now the United States and Canada, between about
+> 10,900 and 10,400 years ago. Over fifty campsites have been found from
+> southern Saskatchewan in Canada to northern Texas in the United States.
+> These sites are the remains of the culture of the earliest Indians, or
+> Paleoindians.
+> In 1978, a new Folsom site was found in the San Luis Valley of the
+> Colorado Rocky Mountains. What makes this site unusual is that the area
+> now has many sand dunes, and wind erosion is continuously exposing new
+> artifacts. This has enabled archeologists to study a wide variety of pointed
+> and other tools, as well as skeletons of the hunters and their prey.
+> An important conclusion from investigations at this site, as well as from
+> comparisons to other Folsom hunter sites, is that each small population of
+> hunters made tools out of material that they gathered themselves. There
+> was apparently little trading and no long-distance movement between the
+> geographically separated bands of Paleoindians. The San Luis site has
+> projectiles made from high-quality flint, petrified wood, and quartzite, which
+> are plentiful in the central and northern Rockies. Some of the rock sources
+> for the tools appear to be at a distance of fifty miles or so north of the valley,
+> indicating that the hunters moved into the valley, perhaps following herds of
+> bison in the fall.
+> During the period when the Folsom people occupied the site, the climate
+> was different from what it is now. There were numerous lakes, marshes, and
+> ponds, which were surrounded by the grassy dunes which attracted bison
+> and other game animals. Indeed, the remains of bison at these sites are
+> almost always found near waterholes, indicating that the Folsom hunters
+> may have hid in the tall grass and ambushed the bison when they came to
+> drink.
+> The tools found at the San Luis site are quite versatile. A single tool might
+> have several edges, each with a different use depending on its angle and
+> sharpness. For example, blunt edges might be used to crack open bones,
+> and fluted scrapers might be used to work on animal hides. Often, there are
+> clusters of tools and bones, indicating the remains of a hearth around which
+> domestic activities took place. The Folsom Indians apparently did not dig
+> deep fire pits, but rather shallow hearths. At the San Luis site, a thin layer of
+> oxidized soil is all that remains of the fire site, the rest of it having been lost
+> due to erosion and the churning effect of burrowing creatures such as
+> spiders and mice.
+> Digging and collecting at the San Luis site have proceeded with some
+> urgency, since wind erosion is exposing and damaging many artifacts. Future
+> excavations are planned for the regions surrounding the eroded site, since
+> they contain additional bison bones and may represent additional sites of
+> ancient human activity.
+
+
+### Question 14
+
+_Source images: images/Screenshot 2026-08-30 224731.png_
+
+According to the passage, which of the following activities was common to each band of Folsom Indians?
+
+- **A.** Cultivating a number of different crops
+
+- **B.** Eating a wide variety of wild game
+
+- **C.** Interacting with other bands
+
+- **D.** Making tools out of nearby rocks
+
+
+### Question 15
+
+_Source images: images/Screenshot 2026-08-30 224736.png_
+
+The passage suggests that the presence of human remains, tools, and animal bones at a single location means that:
+
+- **A.** bison and other animals migrated from one place to another.
+
+- **B.** communal tasks were performed at the site.
+
+- **C.** erosion has not yet occurred at the site.
+
+- **D.** extensive interactions occurred among bands of Paleoindians.
+
+
+### Question 16
+
+_Source images: images/Screenshot 2026-08-30 224742.png_
+
+Assume that a new Folsom hunter site has just been discovered in northern Texas. On the basis of the information contained in the passage, this site would most likely contain all of the following EXCEPT:
+
+- **A.** clusters of bones and tools.
+
+- **B.** human bones.
+
+- **C.** remains of hearths.
+
+- **D.** tools made of Colorado flint.
+
+
+### Question 17
+
+_Source images: images/Screenshot 2026-08-30 225011.png_
+
+According to the passage, bands of Paleoindians did not trade with one another. What is the evidence for this statement?
+
+- **A.** Tools of a band came only from local resources.
+
+- **B.** Tool shapes were unique to each band.
+
+- **C.** Food sources were unique to each band.
+
+- **D.** Each band had its unique language and customs.
+
+
+### Question 18
+
+_Source images: images/Screenshot 2026-08-30 225017.png_
+
+Given the information contained in the passage, if a large number of deer bones were discovered at the San Luis Valley site, the most likely explanation for their presence would be that the deer:
+
+- **A.** accidentally died at the scene.
+
+- **B.** competed with bison for food.
+
+- **C.** migrated from another region.
+
+- **D.** served as food for the Indians.
+
+
+### Question 19
+
+_Source images: images/Screenshot 2026-08-30 225021.png_
+
+Which of the following discoveries would most strengthen the hypothesis that Folsom hunters killed the bison they ate?
+
+- **A.** Bone breaks consistent with the shapes of the Folsom hunters' pointed tools
+
+- **B.** No evidence of an alternative animal food source
+
+- **C.** Bison bones at a Folsom site
+
+- **D.** Similar accumulation of bison bones at many Folsom sites
+
+
+## Passage 4 (Questions 20-25)
+
+_Source images: images/Screenshot 2026-08-30 225033.png_
+
+> It stands to the everlasting credit of the International Fraternity of
+> Biologists that biologists, with rare exceptions, never pushed the
+> development of biological weapons. Also, biologists persuaded the
+> governments of those countries that had started serious biological weapons
+> programs to abandon their programs and to destroy their stockpiles of
+> weapons.
+> The man who did more than any other single person to rid the world of
+> biological weapons is Matthew Meselson.
+> Meselson knew little about biological weapons when he came to the Arms
+> Control and Disarmament Agency. He talked with army officers who
+> specialized in biological warfare, and read their writings. He moved freely in
+> the world of biological agents and distribution systems. What he saw there
+> appalled him.
+> The most frightening of all the things Meselson discovered was Army Field
+> Manual 3-10. This was a booklet issued to combat units to instruct them in
+> the details of biological warfare. A series of graphs is presented that tell how
+> many biological-agent bomblets an aircraft should drop to cover a given area
+> under given conditions, daytime or nighttime, for various types of terrain and
+> various types of human target. It said that the United States was equipped
+> and prepared for biological warfare, that this was the way a modern army
+> should be trained, that every country that wanted to keep up with the
+> Joneses must have its own biological agents and bomblets too.
+> After he read Field Manual 3-10, Meselson vowed that he would fight
+> against this nonsense and not rest until he had got rid of it. He worked
+> indefatigably to expose the idiocy of biological warfare. His arguments rested
+> on three main points. First, biological weapons are uniquely dangerous in
+> providing opportunities for a small and poor country, or even for a group of
+> terrorists, to do grave and widespread damage to a large country such as
+> the United States. Second, the chief factors increasing the risk that other
+> countries might acquire and use biological weapons are our own
+> development of agents and our own propaganda as typified by Field Manual
+> 3-10. Third, biological weapons are uniquely unreliable and therefore
+> inappropriate to any rational military mission for which the United States
+> might intend to use them, even including the mission of retaliation in kind
+> for a biological attack on our own people.
+> Meselson found that it was not difficult to persuade military and political
+> leaders to agree with his first two points. The crucial question was the third
+> one. Did there exist any realistic military requirement for United States
+> biological weapons? Here there was a division of opinion between the
+> biological warfare generals and the rest of the military establishment. The
+> biological warfare generals sincerely believed that we needed biological
+> weapons to deter by threat of retaliation the use of biological weapons by
+> others. Meselson had to show that their belief was based on an illusion. He
+> confronted them when they came to argue for their programs before
+> congressional committees. He asked, “General, we would like to know,
+> supposing that the United States had been attacked with biological weapons
+> and the President had given the order to retaliate, just what would you do?
+> Where, and how, and against whom, would you use our weapons?” The
+> generals were never able to give him a clear answer. There was in fact no
+> answer to these questions. After listening to Meselson’s questions and to the
+> generals’ answers, the congressmen became convinced that his third point
+> was valid. Even from the narrowest military point of view, our biological
+> weapons policy made no sense.
+> In November 1969, President Nixon announced the unilateral
+> abandonment of all development of biological weapons, the destruction of
+> our weapon stockpiles, and the conversion of our biological warfare
+> laboratories to open programs of medical research.
+> Adapted from F.J.Dyson, Disturbing the Universe. ©1979 the Author.
+
+
+### Question 20
+
+_Source images: images/Screenshot 2026-08-30 225050.png_
+
+The author claims that on the question of developing biological weapons, biologists were:
+
+- **A.** generally supportive.
+
+- **B.** generally opposed.
+
+- **C.** split nearly evenly.
+
+- **D.** unanimously opposed.
+
+
+### Question 21
+
+_Source images: images/Screenshot 2026-08-30 225055.png_
+
+Based on the passage, the attitude of the United States military as reflected in Field Manual 3-10 was that the military:
+
+- **A.** disapproved of the development and/or use of biological weapons by any nation.
+
+- **B.** approved of the development of biological weapons, but did not see the use of biological weapons as logical.
+
+- **C.** saw the development and use of biological weapons as logical.
+
+- **D.** thought biological warfare was ineffective.
+
+
+### Question 22
+
+_Source images: images/Screenshot 2026-08-30 225100.png_
+
+According to the passage, Meselson asked some generals about the details of the possible use of biological weapons in order to show that:
+
+- **A.** biological weapons do little damage.
+
+- **B.** biological weapons serve no reasonable purpose.
+
+- **C.** biological weapons should only be used in retaliation.
+
+- **D.** the U.S. needed to develop more effective biological weapons.
+
+
+### Question 23
+
+_Source images: images/Screenshot 2026-08-30 225107.png_
+
+The passage suggests that biologists were influential in persuading the United States government to: I. destroy stockpiles of biological weapons. II. abandon programs of biological weapons development. III. better utilize existing biological weapons rather than rely on new ones.
+
+- **A.** I only
+
+- **B.** I and II only
+
+- **C.** I and III only
+
+- **D.** II and III only
+
+
+### Question 24
+
+_Source images: images/Screenshot 2026-08-30 225113.png_
+
+The passage suggests that Meselson’s opposition to development of biological weapons was based, in part, on the claim that:
+
+- **A.** biological weapons do not work.
+
+- **B.** biological weapons research is very expensive.
+
+- **C.** U.S. laboratories should be converted to medical research laboratories.
+
+- **D.** biological weapons in the hands of small and poor countries constitute a particular danger.
+
+
+### Question 25
+
+_Source images: images/Screenshot 2026-08-30 225117.png_
+
+According to the passage, the United States government eventually made the decision to abandon development of biological weapons because:
+
+- **A.** they were too expensive to continue to develop, especially during a time of tightened defense budgets.
+
+- **B.** other nations would suspend development or use if the U.S. would.
+
+- **C.** they would never be used except in retaliation for another country’s using them against the U.S. first.
+
+- **D.** they could not be shown to serve a logical military purpose.
+
+
+## Passage 5 (Questions 26-30)
+
+_Source images: images/Screenshot 2026-08-30 225412.png_
+
+> Opera singer Maria Callas holds an assured place in the pantheon of great
+> artists, but details concerning the components of her greatness are often
+> mired in platitudes that conflate biography, public persona, and myth with
+> her actual approach to opera. Moreover, Callas worked in a milieu that itself
+> has always been mercurial and difficult to evaluate. There are two principal
+> areas in which her contributions may be examined: the circumstances of the
+> works revived and their stylistic treatment in her interpretations. While the
+> citation of Callas as a fountainhead for the refamiliarization of various works
+> is not unfounded, Callas did not herself actually restore long-dormant works.
+> Indeed, even without her, there was considerable interest in unearthing early
+> operas in Italy during the 1950s and 1960s. Of the revivals for which she is
+> given credit, (1) nearly none had been absent from the stage for long, (2)
+> they were not operas that Callas herself discovered, and (3) few remained in
+> the regular repertoire without her particular genius.
+> Callas’s external attitude toward opera was often frustratingly
+> unadventurous and ill-informed. Not only was she content to observe so-
+> called traditional cuts in standard operas—even in studio recordings,
+> mechanically defending their necessity in order to “keep the action
+> moving”—but her mentors of the 1950s introduced further cuts to which
+> Callas never objected. As for the revivals of so-called dormant operas, most
+> editions made for Callas were eviscerated, rearranged, and even recomposed
+> to a point that the hand of the composer was sometimes scarcely
+> perceptible. In addition to the removal of entire arias and scenes, the editing
+> consisted of numerous smaller splices that ruined the phrase structure and
+> obscured the original character of the music; the cuts never really move the
+> action forward as purported, but radically compromise the composers'
+> styles and forms. Yet inexplicably, long and dreary sections of music were retained
+> in Callas performances largely untouched.
+> Even more surprisingly, Callas's understanding of performance practice,
+> as we now think of it, was quite threadbare and unstudied. One can find
+> many examples in Callas's studio and live-broadcast recordings in which
+> obvious and expected unwritten cadential trills are omitted; perhaps these
+> errors would be understandable if the tradition had been long dead, but it
+> was not. The cadential trill was basic for all performers from the seventeenth
+> century through at least 1930. One could have expected Callas, as the
+> putative champion of dormant traditions, to inform herself better about
+> relevant performance practice issues.
+> It is interesting to determine what in Callas's performances continues to
+> make her the operatic artist whose recordings outsell those of all other
+> singers after more than fifty years, whose name is recognized by persons for
+> whom opera is alien, and whose results set the standard by which other
+> singers are measured. The single word that sums it up is authenticity. In
+> historical performance circles, the word has a bad reputation, often
+> It is interesting to determine what in Callas's performances continues to
+> make her the operatic artist whose recordings outsell those of all other
+> singers after more than fifty years, whose name is recognized by persons for
+> whom opera is alien, and whose results set the standard by which other
+> singers are measured. The single word that sums it up is authenticity. In
+> historical performance circles, the word has a bad reputation, often
+> describing performances with correct external and musicological trappings
+> that lack musical or artistic vitality and have a sense of the academy or the
+> museum, rather than the stage. Callas's approach to opera raised to an
+> unparalleled peak its most significant, universal element: the complete—and
+> in her case, uncanny—fusion of musical complexity and textual significance.
+> There is no "acting" in Callas's work at its best. Whatever she sang feels
+> inevitable even when the listener is fully aware of problems with
+> performance practice and editorial mishandling. Callas's musical insights are
+> authentic in the most profound sense, her art a transcendent probing of the
+> music and an evocation of its inherent humanity.
+
+
+### Question 26
+
+_Source images: images/Screenshot 2026-08-30 225430.png_
+
+Suppose that a long-dormant ballet is being revived. Based on the passage discussion of how operas were edited for Callas, one can most reasonably infer that the passage author would prefer changes to the ballet that:
+
+- **A.** make it easier to perform.
+
+- **B.** retain its original style.
+
+- **C.** modify its form.
+
+- **D.** help to "keep the action moving."
+
+
+### Question 27
+
+_Source images: images/Screenshot 2026-08-30 225436.png_
+
+Which of the following views is most contrary to the author's opinion regarding the largely unedited sections of music retained in Callas performances?
+
+- **A.** They are considered beautiful by most listeners.
+
+- **B.** They were left unedited to highlight Callas's voice.
+
+- **C.** They contain some necessary editing.
+
+- **D.** They do not help "keep the action moving."
+
+
+### Question 28
+
+_Source images: images/Screenshot 2026-08-30 225440.png_
+
+Of the following passage assertions, which one is LEAST supported by evidence or an example in the passage?
+
+- **A.** Callas's performances are characterized by their authenticity.
+
+- **B.** Callas's editions of some operas scarcely resembled the composers' originals.
+
+- **C.** Callas's understanding of performance practice was quite unstudied.
+
+- **D.** Callas was the putative champion of dormant traditions in opera.
+
+
+### Question 29
+
+_Source images: images/Screenshot 2026-08-30 225448.png_
+
+Given the information presented in the third paragraph, which of the following statements could most reasonably be inferred?
+
+- **A.** Only obvious cadential trills were left unwritten.
+
+- **B.** Cadential trills were often written in unexpected places.
+
+- **C.** Written cadential trills were often omitted by singers.
+
+- **D.** Unwritten cadential trills were often expected to be sung.
+
+
+### Question 30
+
+_Source images: images/Screenshot 2026-08-30 225453.png_
+
+Assume that a film adaptation of a novel has authenticity, as the author claims the term is used in historical performance circles. Of the following statements about the film, which one is most likely to be true?
+
+- **A.** The film's plot diverges markedly from the plot in the novel.
+
+- **B.** The film uses images to reproduce the feelings expressed by the novel's prose.
+
+- **C.** The film's re-creations of scenes from the novel lack emotion.
+
+- **D.** The film manages to evoke a sense of humanity in the viewer.
+
+
+## Passage 6 (Questions 31-36)
+
+_Source images: images/Screenshot 2026-08-30 225524.png_
+
+> The lesson was not yet clear in the eighteenth century that the presence
+> of disunity in the military about method and strategy, and among the
+> nation's people about the rightness of the war aim, makes it impossible for a
+> war of any duration to be fought effectively and won.
+> The accepted view was that inadequate naval force was the primary
+> reason for Britain's defeat in the War for American Independence. Disunited
+> and ill-disciplined the [British] Royal Navy certainly was. Its numbers were
+> too few for its tasks. Its governors were men of limited intelligence, limited
+> experience, no coherent strategy and unlimited assurance of winning. At no
+> time in the war did they take seriously the possibility of the Americans
+> winning.
+> Inadequacy of decision-making by the war Cabinet was a primary defect.
+> Lord Sandwich begged the King to require that "meetings of the Cabinet"
+> should reduce its decisions to writing, "and when a question is agitated it
+> ought to be decided one way or another, and not be put off as now most
+> frequently happens, without any determination." Failure to focus available
+> resources on a single objective and give that objective absolute priority was
+> a major failure in strategy.
+> In 1778, Britain had no one capable of a decisive determination of that
+> kind. Not the King. While George III had no trouble making up his mind, it
+> contained only one idea—to conquer, but not how. The King's two chief war
+> ministers, Germain and Sandwich, were emphatic enough, but not usefully,
+> having no clear plan of strategy and sloppy about implementing any plan
+> they conceived. The basic fault was complacency rather than mental
+> incapacity.
+> The danger in complacency is that it causes the possessor to ignore as
+> unimportant the local factors and conditions that govern other people with
+> whom it deals. Britons faced with the American Revolution were not
+> interested in Americans or in their magnificent continent reaching from
+> ocean to ocean. No British monarch had ever seen his domain across the
+> Atlantic, and no British minister in the fifteen years, 1760–1775, when
+> insurgency was brewing to a boil visited the Colonies to learn what was
+> exercising the unruly subjects or what kind of people they were. The
+> consequence was ignorance, which is a disadvantage in war.
+> Planlessness followed from the start of the war, when the British assumed
+> that no plan was needed to suppress a rebellion—only hard blows.
+> Carelessness followed from the assumption that the superiority of British
+> force was so great that it made taking pains in performance unnecessary. A
+> more basic deteriorating factor was dissension at home.
+> Politics as much as anything defeated the British in the American war. The
+> British have always been obsessed with politics, not so much in terms of
+> opposing systems of belief as in terms of who's in and who's out.
+> Transmitted to the navy, it cut like a carving knife through the solidity of the
+> senior service. "So violent was the spirit of party and faction" in the fleet "as
+> almost to extinguish every patriotic sentiment."
+> From B.W. Tuchman, The First Salute. ©1988 the Author.
+
+
+### Question 31
+
+_Source images: images/Screenshot 2026-08-30 230723.png_
+
+The passage suggests that the outcome of the Revolutionary War could have been altered if:
+
+- **A.** Britain's navy had been allowed to fight in force.
+
+- **B.** Britain had committed itself to a war of longer duration.
+
+- **C.** Britain had developed a comprehensive strategic plan.
+
+- **D.** King George III had been in charge of British plans.
+
+
+### Question 32
+
+_Source images: images/Screenshot 2026-08-30 230731.png_
+
+According to the passage, the British assumed they would be victorious over the Colonists because of:
+
+- **A.** the element of surprise.
+
+- **B.** a strategic employment of forces.
+
+- **C.** the Colonists' unwillingness to fight.
+
+- **D.** a vastly superior military force.
+
+
+### Question 33
+
+_Source images: images/Screenshot 2026-08-30 230742.png_
+
+According to the passage, it is true of King George III that he: I. had trouble making up his mind. II. wanted conquest but had no plan. III. had a detailed plan of how to win the war.
+
+- **A.** I only
+
+- **B.** II only
+
+- **C.** III only
+
+- **D.** I and II only
+
+
+### Question 34
+
+_Source images: images/Screenshot 2026-08-30 230749.png_
+
+Which of the following conclusions would be most in accord with a theme of the passage?
+
+- **A.** Politics often detracts from a war effort.
+
+- **B.** Settlement by treaty is the only option in a colonial war.
+
+- **C.** A country's leader should decide if war is justified and then delegate strategy to the military.
+
+- **D.** Powerful countries throughout the ages have promoted peace through compromise.
+
+
+### Question 35
+
+_Source images: images/Screenshot 2026-08-30 230756.png_
+
+According to the passage, Britain's complacency toward the colonies resulted in
+
+- **A.** lack of knowledge about colonial life.
+
+- **B.** buildup of American forces.
+
+- **C.** rivalry between British political factions.
+
+- **D.** base of power for the British Empire.
+
+
+### Question 36
+
+_Source images: images/Screenshot 2026-08-30 230802.png_
+
+Based on the passage, it is reasonable to conclude that a nation's war effort is significantly affected by the:
+
+- **A.** development of war-related technology.
+
+- **B.** attitudes and perceptions of its leaders.
+
+- **C.** ability to quickly mobilize troops and supplies.
+
+- **D.** establishment of a morally correct national position.
+
+
+## Passage 7 (Questions 37-42)
+
+_Source images: images/Screenshot 2026-08-30 230848.png_
+
+> Metaphor is for most people a device of the poetic imagination and the
+> rhetorical flourish—a matter of extraordinary rather than ordinary language.
+> Moreover, metaphor is typically viewed as characteristic of language alone, a
+> matter of words rather than thought or action. For these reasons, most
+> people think they can get along perfectly well without metaphor. We have
+> found, on the contrary, that metaphor is pervasive in everyday life, not just
+> in language but in thought and action. Our ordinary conceptual system, in
+> terms of which we both think and act, is fundamentally metaphorical in
+> nature.
+> The concepts that govern our thought are not just matters of the intellect.
+> They also govern our everyday functioning, down to the most mundane
+> details. Our concepts structure what we perceive, how we get around in the
+> world, and how we relate to other people. Our conceptual system thus plays
+> a central role in defining our everyday realities. If we are right in suggesting
+> that our conceptual system is largely metaphorical, then the way we think,
+> what we experience, and what we do every day is very much a matter of
+> metaphor.
+> But our conceptual system is not something we are normally aware of. In
+> most of the little things we do every day, we simply think and act more or
+> less automatically along certain lines. Just what these lines are is by no
+> means obvious. One way to find out is by looking at language. Since
+> communication is based on the same conceptual system that we use in
+> thinking and acting, language is an important source of evidence for what
+> that system is like.
+> Primarily on the basis of linguistic evidence, we have found that most of
+> our ordinary conceptual system is metaphorical in nature. And we have
+> found a way to begin to identify in detail just what the metaphors are that
+> structure how we perceive, how we think, and what we do.
+> To give some idea of what it could mean for a concept to be metaphorical
+> and for such a concept to structure an everyday activity, let us start with the
+> concept ARGUMENT and the conceptual metaphor ARGUMENT IS WAR. This
+> metaphor is reflected in our everyday language by a wide variety of
+> expressions:
+> Your claims are indefensible.
+> He attacked every weak point in my argument…
+> If you use that strategy, he'll wipe you out.
+> He shot down all of my arguments.
+> It is important to see that we don't just talk about arguments in terms of
+> war. We can actually win or lose arguments. We see the person we are
+> arguing with as an opponent. We attack his positions and we defend our
+> own. We gain and lose ground. We plan and use strategies. Many of the
+> things we do in arguing are partially structured by the concept of war.
+> Though there is no physical battle, there is a verbal battle, and the structure
+> of an argument—attack, defense, counterattack, etc.—reflects this. It is in
+> this sense that the ARGUMENT IS WAR metaphor is one that we live by in
+> this culture; it structures the actions we perform in arguing.
+> Try to imagine a culture where arguments are not viewed in terms of war,
+> where no one wins or loses, where there is no sense of attacking or
+> defending, gaining or losing ground. Imagine a culture where an argument is
+> viewed as a dance, the participants are seen as performers, and the goal is
+> to perform in a balanced and aesthetically pleasing way. In such a culture,
+> people would view arguments differently, experience them differently, carry
+> them out differently, and talk about them differently. But we would probably
+> not view them as arguing at all: they would simply be doing something
+> different. It would seem strange even to call what they were doing "arguing."
+> Perhaps the most neutral way of describing this difference between their
+> culture and ours would be to say that we have a discourse form structured in
+> terms of battle and they have one structured in terms of dance.
+
+
+### Question 37
+
+_Source images: images/Screenshot 2026-08-30 230921.png_
+
+The central thesis of the passage is that:
+
+- **A.** we are basically unaware of our conceptual system.
+
+- **B.** a culture can view argument as an aesthetically pleasing dance or as war.
+
+- **C.** metaphors control our perceptions, thoughts, and actions.
+
+- **D.** metaphor is a poetic as well as a rhetorical device.
+
+
+### Question 38
+
+_Source images: images/Screenshot 2026-08-30 230929.png_
+
+Given the claims made in the passage, the expressions "She's brimming with vim and vigor," "She's overflowing with vitality," "He's devoid of energy," and "I don't have any energy left at the end of the day" would suggest that:
+
+- **A.** some people have more energy than other people.
+
+- **B.** most people wish that they had more energy.
+
+- **C.** many people think of vitality as a substance.
+
+- **D.** some people think that vitality affects our ability to argue.
+
+
+### Question 39
+
+_Source images: images/Screenshot 2026-08-30 230945.png_
+
+According to the passage, if a speaker says, "I've never won an argument with him," he or she is most likely thinking that:
+
+- **A.** arguments are violent.
+
+- **B.** arguments are like contests.
+
+- **C.** conceptual systems are metaphorical.
+
+- **D.** competition is unpleasant.
+
+
+### Question 40
+
+_Source images: images/Screenshot 2026-08-30 230956.png_
+
+The ideas discussed in this passage would likely be of most use to:
+
+- **A.** an ambassador to a different culture.
+
+- **B.** a senator engaged in a serious debate.
+
+- **C.** a financial analyst for a large corporation.
+
+- **D.** a general preparing for battle.
+
+
+### Question 41
+
+_Source images: images/Screenshot 2026-08-30 231003.png_
+
+The expression "This is driving me around the bend" and "They were pushed off the deep end" would best support a metaphor that compares sanity to:
+
+- **A.** a location.
+
+- **B.** a vehicle.
+
+- **C.** a road.
+
+- **D.** a force.
+
+
+### Question 42
+
+_Source images: images/Screenshot 2026-08-30 231012.png_
+
+According to information in the passage, how would a member from a culture that views an argument as a dance argue their point?
+
+- **A.** By methodically attacking a person's weaker claims.
+
+- **B.** By calmly responding to a person's points.
+
+- **C.** By explaining that arguments are like dances.
+
+- **D.** By irrationally defending their position.
+
+
+## Passage 8 (Questions 43-47)
+
+_Source images: images/Screenshot 2026-08-30 231320.png_
+
+> To emigrate is to be extracted from one socioeconomic system and
+> inserted into a different one. The change projects immigrants into a new
+> hierarchical distribution of power, privilege, and prestige that embodies
+> systematically differentiated conditions of life. The consequences are many.
+> Our understanding of one important consequence derives from
+> epidemiological findings that repeatedly demonstrate an inverse relationship
+> between socioeconomic status and psychological problems. The stability of
+> these findings has endured through three generations of successively
+> improved studies that have increasingly focused on an explanation of this
+> relationship.
+> Social-stress explanations are particularly relevant to this focus because
+> they document the structural distribution of stress in the environments into
+> which immigrants are inserted. Thus, one study indicates that the magnitude
+> of social stress in the United States, as measured by an index of desirable
+> and undesirable life events, is not only related in the usual way to
+> socioeconomic status but increases geometrically as social status declines.
+> This nonlinear relationship seemingly parallels the distribution of many
+> mental health problems. At the bottom of the stratification heap, any source
+> of stress tends to be pervasively disruptive in its effects. This is the
+> socioeconomic point of entry in the U.S. of substantial numbers
+> Immigrants in the labor force are likely to have been selectively recruited
+> in emigration by their exceptionally strong achievement motivation, including
+> aspirations for the upward mobility of their offspring. Yet their socioeconomic
+> point of entry affects the life chances of their offspring into future
+> generations. Even so, the effect of this transfer within families of
+> socioeconomic advantages or disadvantages is not constant from one
+> generation to the next. The continuity of status attainment depends, among
+> other things, on the economic climate of the host society.
+> In fact, new arrivals are often downwardly mobile in their occupation,
+> sometimes undertaking employment that differs qualitatively from the work
+> for which they were educated. Thus despite Australia's abandonment in 1972
+> of a racially restrictive immigration policy, institutional barriers, epitomized
+> by a bureaucratic apparatus for the official recognition of professional
+> qualifications, kept immigrants from exercising their skills, thus diverting
+> their human resources from their objective in emigrating. As a result,
+> substantial numbers of professionally qualified Chinese and Indian
+> immigrants reluctantly opened small businesses in Brisbane and Sydney.
+> Downgraded from careers in medicine, teaching, or accountancy, they sold
+> newspapers, frozen seafood, or real estate.
+> Examination of the discontinuities in socioeconomic status contingent on
+> immigration justifies the conclusion that the customary stress assessment
+> models do not provide an adequate explanation. The failure of such models
+> to exhaust the possibilities for psychological research on immigrants is
+> clearly indicated by research on the value of biculturalism. Aside from the
+> socioeconomic and cultural environment of immigrants, their feelings of
+> satisfaction and renewal are also relevant to their adaptation. Learning
+> opportunities emerge as new social institutions interact in myriad ways with
+> the psychological responses of immigrants and unforeseen problems often
+> give rise to flexible responses. In fact, many of the reluctant entrepreneurs
+> in Australia subsequently came to enjoy the freedom and independence of
+> being their own bosses.
+> Contemporary large-scale cross cultural migrations offer promising
+> research targets for the study of human adaptation. As migration-induced
+> changes rupture the continuity of experience in a sociocultural context,
+> adaptations so profound ensue that some immigrants have called them a
+> second birth. As currently formulated, social-stress models of adjustment are
+> not adequate to account for the complex exchanges between humans and
+> social organizations involved in these changes.
+> Adapted from L. Rogler, International migration. © 1994 the American Psychological Association
+
+
+### Question 43
+
+_Source images: images/Screenshot 2026-08-30 231351.png_
+
+A new U.S. citizen who was trained as an engineer is unable to find employment in this field. What advice would the author be most likely to give this person?
+
+- **A.** Consider a new occupation that offers other advantages.
+
+- **B.** Look for work that offers the respect due to an engineer.
+
+- **C.** Try to find work in a field that is related to engineering.
+
+- **D.** Conceal your background when applying for entry-level jobs.
+
+
+### Question 44
+
+_Source images: images/Screenshot 2026-08-30 231400.png_
+
+The author suggests that adjustment is difficult for the poorest immigrants to the U.S. because of:
+
+- **A.** an expectation that the status of their children would exceed their own.
+
+- **B.** an unexpected discrepancy between the new culture and the familiar one.
+
+- **C.** prejudices by employers that prevent their finding employment.
+
+- **D.** a tendency for particular problems to affect many aspects of their lives.
+
+
+### Question 45
+
+_Source images: images/Screenshot 2026-08-30 231406.png_
+
+The social-stress explanation of adaptation difficulties among immigrants would be most challenged by the finding that:
+
+- **A.** many report no increase in their level of stress.
+
+- **B.** those with the lowest status report the least stress.
+
+- **C.** the only stress reported occurs during social encounters.
+
+- **D.** most skilled workers report finding work in their field.
+
+
+### Question 46
+
+_Source images: images/Screenshot 2026-08-30 231414.png_
+
+According to the passage, recent immigrants are particularly likely to experience a loss of socioeconomic status if:
+
+- **A.** qualification policies prevent them from practicing their profession.
+
+- **B.** their limited education forces them to work in low-paying fields.
+
+- **C.** they are too demoralized to pursue opportunities for advancement.
+
+- **D.** language barriers reduce their usefulness to potential employers.
+
+
+### Question 47
+
+_Source images: images/Screenshot 2026-08-30 231429.png_
+
+How would the author be most likely to interpret the finding that the motivation of immigrants and their eventual incomes are positively correlated?
+
+- **A.** Stress level is not the only factor in immigrant adjustment.
+
+- **B.** Lower-income immigrants may be less likely to join labor unions.
+
+- **C.** The ability of immigrants to communicate determines the prestige of their jobs.
+
+- **D.** Employers assume that immigrants with this trait are high in status.
+
+
+## Standalone Questions
+
+
+### Question 13
+
+_Source images: images/Screenshot 2026-08-30 224704.png_
+
+Why is the San Luis site being investigated urgently?
+
+- **A.** Artifacts are few in number.
+
+- **B.** Artifacts are being eroded by the wind.
+
+- **C.** Bison bones are few in number.
+
+- **D.** Excessive rainfall is damaging the site.
+
+
+### Question 48
+
+_Source images: images/Screenshot 2026-08-30 231549.png_
+
+According to the passage, an image is a versatile tool that:
+
+- **A.** is always visual, never abstract.
+
+- **B.** can be either abstract or visual.
+
+- **C.** is always abstract, never visual.
+
+- **D.** is neither visual nor abstract.
+
+
+### Question 49
+
+_Source images: images/Screenshot 2026-08-30 231559.png_
+
+An experiment found that dogs can remember a new signal for only five minutes, whereas six-year-old children can remember the same signal much longer. Based on the information in the passage, this finding is probably explained by the fact that:
+
+- **A.** a human being possesses a larger store of symbolic images than a dog possesses.
+
+- **B.** the human brain evolved more quickly than the brain of a dog.
+
+- **C.** the children were probably much older than the dogs.
+
+- **D.** most dogs are color-blind.
+
+
+### Question 50
+
+_Source images: images/Screenshot 2026-08-30 231610.png_
+
+Which of the following findings would most weaken the claim that the use of symbolic imagery is unique to humans?
+
+- **A.** Chimpanzees are capable of learning at least some sign language.
+
+- **B.** Certain species of birds are able to migrate great distances by instinct alone.
+
+- **C.** Human beings have larger frontal lobes than do other animals.
+
+- **D.** Some animals have brains that are larger than human brains.
+
+
+### Question 51
+
+_Source images: images/Screenshot 2026-08-30 231623.png_
+
+It has been said that language does not merely describe reality but actually helps to bring reality into existence. Which of the points made in the passage would best support this claim?
+
+- **A.** To imagine means to make images and move them about in one’s head.
+
+- **B.** The tool that puts the human mind ahead of the animal’s is imagery.
+
+- **C.** There is no specific center for language in the brain of any animal except the human being.
+
+- **D.** Images play out events that are not present, thereby guarding the past and creating the future.
+
+
+### Question 52
+
+_Source images: images/Screenshot 2026-08-30 231708.png_
+
+In order to defend poets from the charge that they were liars, Sidney noted in paragraph 6 that “a maker must imagine things that are not.” Sidney’s point is that:
+
+- **A.** a true poet must possess a powerful imagination.
+
+- **B.** in order to create something, one must first imagine it.
+
+- **C.** poets are the most creative people in our society.
+
+- **D.** imagination is not a gift unique to poets, but is possessed by all creative people.
+
+
+### Question 53
+
+_Source images: images/Screenshot 2026-08-30 231716.png_
+
+In the context of the passage, the statement in paragraph 7, “if thereby we die a thousand deaths, that is the price we pay for living a thousand lives,” is most likely meant to suggest that:
+
+- **A.** we must guard against using our imaginations toward destructive ends.
+
+- **B.** although imagination sometimes causes pain, its positive aspects outweigh its negative ones.
+
+- **C.** it is possible to be too imaginative for one’s own good.
+
+- **D.** without imagination, the uniquely human awareness of death would not exist.
+
+
+# Section 3 — Biological and Biochemical Foundations of Living Systems (Bio/Biochem)
+
+
+## Passage 1 (Questions 1-5)
+
+_Source images: images/Screenshot 2026-08-30 231907.png_
+
+> Proper biomolecular trafficking, including protein packaging by the Golgi
+> apparatus, is essential to the compartmentalized eukaryotic cell. Therapeutic
+> agents that disrupt the function of the Golgi apparatus reduce cell viability
+> and can serve as effective treatments for carcinoma.
+> ADP-ribosylation factor I (Arf1) plays an essential role in vesicle formation
+> and is responsible for the recruitment of cytosolic coat protein complexes
+> (COPs) and subsequent retrograde transport from the Golgi apparatus. Arf1
+> is activated by guanine nucleotide exchange factors (GEFs), which replace
+> guanosine diphosphate (GDP) with guanosine triphosphate (GTP). Upon GTP
+> exchange, Arf1 undergoes a conformational change that releases the
+> myristoylated N-terminus of the polypeptide chain from a structural groove
+> in the protein and initiates localization to phospholipid bilayers. Once
+> associated with a bilayer, Arf1 further facilitates vesicle formation by the
+> recruitment of the hetero-tetrameric (dimer of dimers) coatomer protein
+> complex βδ/γζ-COP1 (subunits are represented by β, δ, γ, and ζ). The Arf1
+> GTPase activating protein (GAP) catalyzes the conversion of Arf1-bound GTP
+> to GDP and inorganic phosphate, thereby converting the protein to the
+> inactive form. GAP activity is increased by Arf1 binding to βδ/γζ-COP1.
+> Brefeldin A (BFA), a lactone compound isolated from fungi, has been
+> shown to inhibit Arf1-driven vesicle formation, resulting in reversible
+> disruption of the Golgi apparatus and tumor remission in vitro. Because of its
+> low bioavailability, BFA is not a suitable candidate for pharmaceutical
+> deployment; however, it has led to the identification of AMF-26 as a
+> promising drug candidate.
+> AMF-26 is predicted to bind to a protein–protein contact interface of Arf1,
+> preventing GTP exchange by GEF and disrupting Arf1 membrane localization
+> in the initial critical step of COP1 recruitment and vesicle formation. In
+> clinical settings, oral administration of AMF-26 has led to remission of breast
+> cancer xenografts in mice model systems.
+> Adapted from Y. Ohashi et al., AMF-26, a novel inhibitor of the golgi system, targeting ADP-ribosylation factor 1 (Arf1) with potential
+> for cancer therapy. Journal of Biological Chemistry. ©2012 The American Society for Biochemistry and Molecular Biology, Inc.; Y.
+> Xinchao, M. Breitman, and J. Goldberg, A structure-based mechanism for arf1-dependent recruitment of coatomer to membranes.
+> Cell. ©2012 Elsevier, Inc.
+
+
+### Question 1
+
+_Source images: images/Screenshot 2026-08-30 231915.png_
+
+Hydrolysis of the γ phosphate of GTP bound to Arf1 results in:
+
+- **A.** denaturation.
+
+- **B.** activation.
+
+- **C.** inactivation.
+
+- **D.** membrane association.
+
+
+### Question 2
+
+_Source images: images/Screenshot 2026-08-30 231922.png_
+
+The Arf1-activating molecule GTP is most closely related to which family of biomolecules?
+
+- **A.** Nucleotides
+
+- **B.** Amino acids
+
+- **C.** Lipids
+
+- **D.** Carbohydrate
+
+
+### Question 3
+
+_Source images: images/Screenshot 2026-08-30 231927.png_
+
+GAP belongs to what class of enzymes?
+
+- **A.** Transferase
+
+- **B.** Phosphatase
+
+- **C.** Kinase
+
+- **D.** Isomerase
+
+
+### Question 4
+
+_Source images: images/Screenshot 2026-08-30 231932.png_
+
+Proteins that are encapsulated in Arf1-COP derived vesicles are bound for the:
+
+- **A.** endoplasmic reticulum.
+
+- **B.** cellular membrane.
+
+- **C.** nucleus.
+
+- **D.** cytosol.
+
+
+### Question 5
+
+_Source images: images/Screenshot 2026-08-30 231937.png_
+
+Based on the mode of action described for BFA in the passage, the drug would be most effective against:
+
+- **A.** eukarya.
+
+- **B.** viruses.
+
+- **C.** bacteria.
+
+- **D.** archaea.
+
+
+## Passage 2 (Questions 6-10)
+
+_Source images: images/Screenshot 2026-08-30 232010.png_
+
+> The tissue injury that results from ischemia (loss of blood flow) and
+> subsequent blood reperfusion underlies several common, life-threatening
+> disorders including heart attack, stroke, organ failure, and circulatory shock.
+> Until recently, it was believed that the devastating tissue damage in these
+> conditions resulted exclusively from anoxia (lack of oxygen).
+> A scientist observed that during these disorders, neutrophils (a type of
+> leukocyte) adhered to the vascular endothelium and then migrated into
+> surrounding tissues. The adherence of neutrophils was facilitated by an
+> adhesion receptor on the neutrophil membrane. During reperfusion,
+> adherent neutrophils released toxic products including oxygen-derived free
+> radicals, proteases, and prostaglandin products. The scientist hypothesized
+> that most of the tissue damage was actually a neutrophil-mediated
+> phenomenon (the toxic products were the actual cause of tissue damage).
+> After extensive research, the scientist found that the neutrophil adhesion
+> receptors are heterodimer molecules consisting of a beta subunit
+> noncovalently associated with an alpha subunit. The two subunits were
+> isolated from neutrophils and each was used to generate mouse antibodies.
+> Antibody A was directed against the alpha subunit and antibody B was
+> directed against the beta subunit. When these antibodies were applied to lab
+> animals subjected to ischemia of the heart, only animals that received
+> A scientist observed that during these disorders, neutrophils (a type of
+> leukocyte) adhered to the vascular endothelium and then migrated into
+> surrounding tissues. The adherence of neutrophils was facilitated by an
+> adhesion receptor on the neutrophil membrane. During reperfusion,
+> adherent neutrophils released toxic products including oxygen-derived free
+> radicals, proteases, and prostaglandin products. The scientist hypothesized
+> that most of the tissue damage was actually a neutrophil-mediated
+> phenomenon (the toxic products were the actual cause of tissue damage).
+> After extensive research, the scientist found that the neutrophil adhesion
+> receptors are heterodimer molecules consisting of a beta subunit
+> noncovalently associated with an alpha subunit. The two subunits were
+> isolated from neutrophils and each was used to generate mouse antibodies.
+> Antibody A was directed against the alpha subunit and antibody B was
+> directed against the beta subunit. When these antibodies were applied to lab
+> animals subjected to ischemia of the heart, only animals that received
+> antibody B showed a great reduction in subsequent tissue injury; antibody A
+> had no effect and the animals died. The scientist concluded that the majority
+> of the injury was indeed caused by neutrophils.
+
+
+### Question 6
+
+_Source images: images/Screenshot 2026-08-30 232034.png_
+
+Which of the following experiments would provide the best supporting evidence that neutrophils are the cause of the reperfusion injury?
+
+- **A.** Performing the ischemia/reperfusion experiment using animals whose B (antibody-producing) cells are depleted and examining whether the degree of tissue damage is reduced
+
+- **B.** Performing the ischemia/reperfusion experiment using neutrophil- depleted animals and examining whether the degree of tissue damage is reduced
+
+- **C.** Repeating the experiment with another antibody directed against the entire alpha/beta heterodimer, and examining whether the degree of tissue damage is reduced
+
+- **D.** Repeating the experiment with another antibody directed against the beta subunit, and examining whether the degree of tissue damage is reduced
+
+
+### Question 7
+
+_Source images: images/Screenshot 2026-08-30 232047.png_
+
+Information in the passage suggests most strongly that the function of the beta subunit involves:
+
+- **A.** adhering neutrophils to the endothelium.
+
+- **B.** transferring proteases from endothelium to neutrophils.
+
+- **C.** hydrogen bonding with the alpha subunit.
+
+- **D.** the generation of antibody against the subunit.
+
+
+### Question 8
+
+_Source images: images/Screenshot 2026-08-30 232131.png_
+
+The scientist claimed that antibody B offers a better means for preventing organ injury than agents such as free radical or protease inhibitors. Which of the following reasons offers the best support for this claim?
+
+- **A.** Antibody B is a high-affinity antibody; therefore, it will not be rejected by the patient.
+
+- **B.** Antibody B can block the initiation of events that result in the release of harmful, biologically active molecules.
+
+- **C.** Antibody B is a very specific antibody; therefore, it will not recognize anything other than the beta subunit.
+
+- **D.** Antibody B exhibits a high half-life and can be used at any dosage at any time.
+
+
+### Question 9
+
+_Source images: images/Screenshot 2026-08-30 232139.png_
+
+The scientist wanted to use antibody B clinically (to treat humans), but this proposal was rejected. Which of the following is the most logical reason for the rejection?
+
+- **A.** Because the antibody was generated in the mouse, it can never be used in humans.
+
+- **B.** Because the antibody was generated in the mouse, repeated usage in the same patient would elicit the production of human anti- mouse antibodies.
+
+- **C.** Because the antibody was generated in the mouse, it will not recognize human antigens.
+
+- **D.** Because the antibody was generated in the mouse, it can only be used in vitro.
+
+
+### Question 10
+
+_Source images: images/Screenshot 2026-08-30 232145.png_
+
+A neutrophil has point mutations in the genes coding for the alpha and the beta subunits of the adhesion receptor. However, this cell can still migrate through endothelium. Which of the following conclusions about the effect of this mutation can be drawn?
+
+- **A.** The cell cannot release toxic products such as prostaglandins.
+
+- **B.** The cell has only functional beta subunits.
+
+- **C.** The cell can bind to endothelium.
+
+- **D.** The cell has a defective cell membrane.
+
+
+## Passage 3 (Questions 11-14)
+
+_Source images: images/Screenshot 2026-08-30 232154.png_
+
+> The most common form of hemophilia is caused by a deficiency of the
+> functional form of a soluble blood protein that is essential for blood clotting
+> (Factor VIII). Factor VIII is manufactured in liver cells and secreted into the
+> blood-stream. When a blood vessel is damaged, Factor VIII is activated as
+> part of a cascade of enzymatic reactions that results in the production of
+> thrombin, which converts the soluble protein, fibrinogen, into insoluble fibrin.
+> Fibrin then forms a netlike structure, entrapping platelets and other cells and
+> plugging the wound. Blood clots in hemophilia patients form slowly and are
+> structurally weak. These symptoms are partially relieved by regular
+> transfusions of concentrated Factor VIII made from the pooled blood of many
+> donors.
+> The Factor VIII gene is 186,000 nucleotides long, and the Factor VIII
+> protein is only 2332 amino acids long. This size discrepancy is due to introns
+> (long intervening sequences common only in eukaryotes) that interrupt the
+> gene. During the synthesis of Factor VIII, the cell first transcribes the entire
+> gene, then cuts the introns out of the transcript and splices the remaining
+> pieces. Genetic defects leading to hemophilia may take the form of either
+> nonsense mutations or deletions within the Factor VIII gene.
+> The Factor VIII gene lies on the X chromosome; thus, the inheritance of
+> the recessive hemophilia allele follows the typical pattern of sex-linkage.
+> Because men have only one X chromosome, the frequency of hemophiliac
+> men approximates the frequency of hemophilia alleles in the gene pool.
+
+
+### Question 11
+
+_Source images: images/Screenshot 2026-08-30 232205.png_
+
+A hypothesis states that all mutations leading to hemophilia occur within the Factor VIII gene. Which of the following pairs of inheritance patterns would fail to support this hypothesis? I. Normal sons born to hemophiliac fathers II. Normal sons born to hemophiliac mothers III. Hemophiliac sons born to normal fathers IV. Hemophiliac daughters born to normal fathers
+
+- **A.** I and II only
+
+- **B.** I and III only
+
+- **C.** II and IV only
+
+- **D.** III and IV only
+
+
+### Question 12
+
+_Source images: images/Screenshot 2026-08-30 232226.png_
+
+A scientist claimed that hemophilia is caused by a functional deficiency in Factor VIII. The evidence in the passage that would best support this claim is that Factor VIII is:
+
+- **A.** a soluble blood protein.
+
+- **B.** produced by a gene on the X chromosome.
+
+- **C.** able to relieve hemophilia symptoms.
+
+- **D.** encoded by a gene that contains introns.
+
+
+### Question 13
+
+_Source images: images/Screenshot 2026-08-30 232236.png_
+
+The cutting of introns and the splicing associated with the expression of the Factor VIII gene occur during which of the following steps in the protein- synthesis process?
+
+- **A.** DNA → mRNA
+
+- **B.** DNA → tRNA
+
+- **C.** mRNA → tRNA
+
+- **D.** tRNA → protein
+
+
+### Question 14
+
+_Source images: images/Screenshot 2026-08-30 232242.png_
+
+Recombinant DNA technology allows scientists to mass-produce some human proteins by transferring human genes into bacteria. The characteristic of bacteria that would most likely prevent Factor VIII from being produced in this way is that bacteria:
+
+- **A.** are too small to incorporate the Factor VIII gene.
+
+- **B.** possess no equivalent to the human X chromosome.
+
+- **C.** lack a membrane-bound nucleus.
+
+- **D.** lack a mechanism for splicing out introns.
+
+
+## Passage 4 (Questions 19-22)
+
+_Source images: images/Screenshot 2026-08-30 232358.png_
+
+> Variations in the human gene CDKAL1, which encodes CDKAL1, are
+> associated with impaired insulin secretion and increased risk of type 2
+> diabetes (T2D). CDKAL1 and its bacterial homolog YqeV (encoded by
+> yqeV) are methylthiotransferases that complete the synthesis of a modified
+> nucleotide called ms²t⁶A (Figure 1) immediately 3' of the UUU anticodon in
+> lysine tRNA.
+> The ms²t⁶A modification was detected in total pancreatic RNA from wild-type mice, but not from Cdkal1⁻/⁻ mice. When total mouse tissue RNA from wild-type mice was run over a column that specifically binds tRNALys(UUU) by hybridization, no ms²t⁶A-modified tRNA was detected in the elutant.
+> To examine whether the ms²t⁶A modification is required for the accurate translation of tRNALys(UUU)'s cognate codons, a dual luciferase-based reporter assay was used in wild-type and yqeV-deficient (ΔyqeV) bacteria strains. Because Lys529 in firefly luciferase is essential for enzymatic activity, inaccurate translation of this codon results in a loss of luciferase activity. Two constructs in which Lys529 is encoded by either an AAA or AAG codon were introduced into wild-type and ΔyqeV strains, and relative firefly luciferase activity was measured (Figure 2).
+> RL
+> FL
+> Renilla luciferase
+> Firefly luciferase
+> Lys529(AAA or AAG)
+> 1.5
+> 1.0
+> 0.5
+> 0
+> FL activity/RL activity
+> wild-type bacteria
+> ΔyqeV bacteria
+> Lys529
+> (AAA)
+> Lys529
+> (AAG)
+> The human insulin gene contains two Lys(AAG) codons. One Lys residue is located at the cleavage site between the C-peptide and A chain of insulin. Misreading of this codon during insulin synthesis (Equation 1) may cause aberrant processing, which has an impact on glucose homeostasis.
+> Removal of
+> signal peptide
+> Removal of
+> C-peptide
+> Preproinsulin
+> Proinsulin
+> Insulin
+> Equation 1
+> Figures 3 and 4 show the effects of CDKAL1 deficiency on insulin production in wild-type and Cdkal1⁻/⁻ mice.
+> Pancreatic tissue source
+> wild-type mice
+> Cdkal1⁻/⁻ mice
+> 30
+> 20
+> 10
+> 0
+> Pancreatic
+> C-peptide content
+> (ng/mg total protein)
+> Pancreatic tissue source
+> wild-type mice
+> Cdkal1⁻/⁻ mice
+> 3
+> 2
+> 1
+> 0
+> Relative proinsulin
+> synthesis
+> 2.8 mM
+> 16.7 mM
+> Inducing glucose
+> concentration
+> Adapted from F.-Y. Wei et al., Deficit of tRNALys modification by Cdkal 1 causes the development of type 2 diabetes in mice. Journal of Clinical Investigation. ©2011 American Society for Clinical Investigation.
+
+
+**Structure of ms²t⁶A**  
+_Source: images/Screenshot 2026-08-30 232358.png_
+
+> _Chemical structure of the modified nucleotide ms²t⁶A. A ribose sugar ring (drawn with wedge/dash bonds indicating stereochemistry) is shown at bottom left, with the 5' carbon bearing a CH2-O-(zigzag, representing continuation of the RNA backbone) group, and the 3' carbon bearing an -O-(zigzag, continuation of the RNA backbone) group; the 2' carbon bears an -OH group. The ribose C1' is attached via N9 to a purine (adenine-like) base drawn as a fused five-membered imidazole ring and six-membered pyrimidine ring. On the six-membered ring, position 2 bears a -S-CH3 (methylthio, the 'ms²' modification) substituent attached via S. Position 6 of the purine ring bears an -NH- group (exocyclic amine) connected to a carbonyl carbon (C=O), which is in turn connected to another -NH- group, forming a urea-like linkage (the 't⁶' threonylcarbamoyl modification). This second NH is attached to a CH group bearing a -COOH (carboxylic acid) substituent and, on an adjacent carbon, a -OH substituent with a terminal CH3 group (i.e., a threonine-derived side chain: CH3-CH(OH)-CH(NH-)-COOH)._
+
+
+**Effect of ms²t⁶A deficiency on translation in wild-type and ΔyqeV bacteria (Note: Data are presented as the mean ± SEM. *p < 0.001 by Student's t test.)**  
+_Source: images/Screenshot 2026-08-30 232419.png_
+
+> _Top: schematic of a dual luciferase reporter construct showing Renilla luciferase (RL) fused to Firefly luciferase (FL), with Lys529 (encoded by AAA or AAG codon) located within the firefly luciferase portion near the fusion junction. Bottom: bar graph, y-axis 'FL activity/RL activity' ranging 0 to 1.5 in increments of 0.5, x-axis has two groups 'Lys529 (AAA)' and 'Lys529 (AAG)'. For each group there are two bars: black bar = wild-type bacteria, gray/white bar = ΔyqeV bacteria. In the Lys529 (AAA) group, wild-type bar is ~1.0 with small error bar, ΔyqeV bar is ~0.5 with asterisk indicating significance. In the Lys529 (AAG) group, wild-type bar is ~1.05, ΔyqeV bar is ~0.3 with asterisk. ΔyqeV bacteria show significantly reduced FL/RL activity compared to wild-type in both codon contexts, with a greater reduction for the AAG codon than the AAA codon._
+
+
+**Equation 1**  
+_Source: images/Screenshot 2026-08-30 232427.png_
+
+> _Linear reaction scheme showing three-step protein processing: 'Preproinsulin' with an arrow labeled 'Removal of signal peptide' pointing to 'Proinsulin', then an arrow labeled 'Removal of C-peptide' pointing to 'Insulin'._
+
+
+**Effect of CDKAL1 deficiency on C-peptide content in pancreatic cells of wild-type mice and Cdkal1⁻/⁻ mice (Note: Values were normalized to total protein concentration; *p < 0.05 by Student's t test.)**  
+_Source: images/Screenshot 2026-08-30 232427.png_
+
+> _Bar graph with legend box labeled 'Pancreatic tissue source': black square = wild-type mice, gray square = Cdkal1⁻/⁻ mice. Y-axis 'Pancreatic C-peptide content (ng/mg total protein)' ranges from 0 to 30 in increments of 10. Two bars shown: black bar (wild-type) at approximately 22-23 with error bar extending to ~26; gray bar (Cdkal1⁻/⁻) at approximately 12-13 with error bar and an asterisk denoting statistical significance, indicating lower C-peptide content in Cdkal1⁻/⁻ mice than wild-type._
+
+
+**Proinsulin synthesis in wild-type mice and Cdkal1⁻/⁻ mice under basal condition (2.8mM glucose) or stimulated condition (16.7mM glucose). (Note: *p < 0.05 by Student's t test.)**  
+_Source: images/Screenshot 2026-08-30 232431.png_
+
+> _Bar graph with legend box labeled 'Pancreatic tissue source': black square = wild-type mice, gray square = Cdkal1⁻/⁻ mice. Y-axis 'Relative proinsulin synthesis' ranges 0 to 3 in increments of 1. X-axis has two groups: '2.8 mM' and '16.7 mM' under heading 'Inducing glucose concentration'. At 2.8 mM, black and gray bars are both approximately 1.0 with similar small error bars (no significant difference). At 16.7 mM, black bar (wild-type) is approximately 2.35 with error bar, gray bar (Cdkal1⁻/⁻) is approximately 1.9 with error bar and asterisk denoting significance, showing reduced glucose-stimulated proinsulin synthesis in Cdkal1⁻/⁻ mice._
+
+
+### Question 19
+
+_Source images: images/Screenshot 2026-08-30 232437.png_
+
+The modified nucleotide ms²t⁶A is a derivative of which amino acid?
+
+- **A.** Tyrosine
+
+- **B.** Threonine
+
+- **C.** Lysine
+
+- **D.** Tryptophan
+
+
+### Question 20
+
+_Source images: images/Screenshot 2026-08-30 232449.png_
+
+In the assay presented in Figure 2, which combination of Lys529 codon (AAA or AAG) and genetic background (wild-type or ΔyqeV) resulted in the highest level of mistranslation of the codon?
+
+- **A.** AAA codon in the wild-type background
+
+- **B.** AAA codon in the ΔyqeV background
+
+- **C.** AAG codon in the wild-type background
+
+- **D.** AAG codon in the ΔyqeV background
+
+
+### Question 21
+
+_Source images: images/Screenshot 2026-08-30 232457.png_
+
+Based on the passage, CDKAL1 deficiency most likely causes which of the following to increase in mouse β cells?
+
+- **A.** Cleavage of proinsulin
+
+- **B.** Synthesis of proinsulin
+
+- **C.** Misfolding of proinsulin
+
+- **D.** Ratio of wild-type to variant proinsulin
+
+
+### Question 22
+
+_Source images: images/Screenshot 2026-08-30 232504.png_
+
+Based on the passage, the level of which of the following is most likely lower in nonfasting wild-type mice than in nonfasting Cdkal1⁻/⁻ mice?
+
+- **A.** Blood glucose levels
+
+- **B.** Cellular glucose uptake
+
+- **C.** Liver glycogen synthesis
+
+- **D.** Cellular protein synthesis
+
+
+## Passage 5 (Questions 23-27)
+
+_Source images: images/Screenshot 2026-08-30 232556.png_
+
+> In the ocean, many animals use organic material dissolved in seawater as
+> a nutrient source. The ability of these organisms to absorb dissolved organic
+> matter (DOM), such as amino acids, across the body wall is believed to play
+> an important role in their survival in low-food, nutrient-poor conditions.
+> Moreover, survival in a nutrient-poor water column is likely enhanced if
+> animals have low rates of utilization of cellular energy reserves.
+> Recently, scientists examined the role of DOM as a source of nutrients for
+> the larvae of two different species of starfish. The larvae of one species,
+> Linckia, were collected in the warm waters of the tropical Pacific, whereas
+> the larvae of the other species, Odontaster, were collected in the extreme
+> cold environment of the Southern Ocean. In the laboratory, intracellular
+> rates of amino acid transport and the biochemical composition of whole-
+> animal tissues were measured.
+> Time course experiments were performed across a range of different L-
+> alanine concentrations to determine the kinetics of amino acid transport in
+> larval Linckia and Odontaster at the appropriate temperature for each
+> species (Figure 1).
+> Linckia
+> Odontaster
+> 20
+> 18
+> 16
+> 14
+> 12
+> 10
+> 8
+> 6
+> 4
+> 2
+> 0
+> 0
+> 20
+> 40
+> 60
+> 80
+> 100
+> Alanine concentration (μM)
+> 26°C) and Odontaster (at –2°C)
+> The protein and lipid content of whole-animal tissues from larval Linckia
+> and Odontaster were analyzed (Figure 2). Carbohydrate content was not
+> measured because it comprises only a small fraction (<4%) of the total
+> organic material found in the tissues of these organisms.
+> protein
+> lipid
+> 100
+> 90
+> 80
+> 70
+> 60
+> 50
+> 40
+> 30
+> 20
+> 10
+> 0
+> Linckia
+> Odontaster
+> total biomass (Note: Data are expressed as mean values ±
+> standard error.)
+
+
+**Kinetics of L-alanine transport across the body wall of Linckia (at 26°C) and Odontaster (at –2°C)**  
+_Source: images/Screenshot 2026-08-30 232603.png_
+
+> _A scatter plot with saturation (Michaelis-Menten-like) curves fitted to two data series. X-axis: Alanine concentration (μM), ranging from 0 to 100. Y-axis: Transport rate (pmol alanine μg⁻¹h⁻¹), ranging from 0 to 20. Filled circles represent Linckia data, which rise steeply from near 0 at 0 μM to about 10 at 5 μM, 15 at 10 μM, 16 at 20 μM, plateauing around 16-17 by 50 μM, with a data point at 100 μM near 20 (slightly above the fitted plateau curve). Open circles represent Odontaster data, which rise more gradually from near 0-2 at 0 μM, to about 3.5-5 between 2-5 μM, 6 at 10-20 μM, plateauing around 6.5-8 by 50-100 μM. The Linckia curve reaches a much higher plateau (~16.5) than the Odontaster curve (~6.5), and the Linckia curve rises more steeply at low concentrations, indicating higher transport capacity and possibly higher affinity._
+
+
+**Protein and lipid content of whole-animal tissues as percent of total biomass (Note: Data are expressed as mean values ± standard error.)**  
+_Source: images/Screenshot 2026-08-30 232608.png_
+
+> _A grouped bar chart with two categories on the x-axis, Linckia and Odontaster, and y-axis 'Percent of dry organic weight' from 0 to 100. For each category there are two bars with error bars (mean ± standard error): black bars represent protein, gray bars represent lipid. For Linckia, protein is about 41-42% (error bar to about 45%) and lipid is about 20% (error bar to about 30%), so protein > lipid. For Odontaster, protein is about 15% (small error bar to about 20%) and lipid is about 70% (error bar to about 77%), so lipid >> protein. Overall trend: Linckia tissue is protein-dominant while Odontaster tissue is lipid-dominant._
+
+
+### Question 23
+
+_Source images: images/Screenshot 2026-08-30 232616.png_
+
+Which feature of the kinetics of L-alanine transport would provide evidence that DOM is an important source of nutrients under low-food conditions?
+
+- **A.** High-affinity transport (Kt) of L-alanine
+
+- **B.** Low-affinity transport (Kt) of L-alanine
+
+- **C.** High transport capacity (Jmax) of L-alanine
+
+- **D.** Low transport capacity (Jmax) of L-alanine
+
+
+### Question 24
+
+_Source images: images/Screenshot 2026-08-30 232622.png_
+
+If the concentration of amino acid transport protein is increased, the transport affinity Kt of L-alanine will:
+
+- **A.** level off rapidly.
+
+- **B.** decrease.
+
+- **C.** not change.
+
+- **D.** quickly reach the maximum value.
+
+
+### Question 25
+
+_Source images: images/Screenshot 2026-08-30 232629.png_
+
+Assuming the amino acid transport protein complex examined in Figure 1 follows standard Michaelis–Menten kinetics, Kt is equal to:
+
+- **A.** two times the maximal transport capacity.
+
+- **B.** the substrate concentration at one-half the maximal transport capacity.
+
+- **C.** the transport capacity at one-half the substrate concentration.
+
+- **D.** the substrate concentration at one-third the overall transport rate.
+
+
+### Question 26
+
+_Source images: images/Screenshot 2026-08-30 232637.png_
+
+A separate group of scientists repeated the amino acid transport experiments described in the passage. All protocols were performed as outlined in the initial study with one major exception: D-alanine was used as the primary amino acid substrate. What effect will this change have on the synthesis of new proteins in the animals studied? Protein synthesis will:
+
+- **A.** increase two-fold.
+
+- **B.** not change.
+
+- **C.** decrease by one-half.
+
+- **D.** be inhibited.
+
+
+### Question 27
+
+_Source images: images/Screenshot 2026-08-30 232643.png_
+
+Which information about the larvae of each species, when combined with data presented in Figure 2, would help scientists predict which species of starfish is best suited to withstand periods of long-term nutrient deprivation?
+
+- **A.** Ambient water temperature
+
+- **B.** Average mass of an individual
+
+- **C.** Average metabolic rate
+
+- **D.** Duration of daily light exposure
+
+
+## Passage 6 (Questions 32-35)
+
+_Source images: images/Screenshot 2026-08-30 232741.png_
+
+> Antigenic variation is a survival strategy used by the human malaria
+> parasite Plasmodium falciparum to avoid destruction by the host's immune
+> system. This variation is mediated by the differential control of a family of
+> surface adhesion molecules termed PfEMP1, which are encoded by
+> approximately 60 var genes. PfEMP1 enhances P. falciparum survival by
+> binding infected erythrocytes to endothelium. Different PfEMP1 subsets bind
+> different endothelial proteins; for example, binding of infected erythrocytes
+> to ICAM1 protein in brain venules causes cerebral malaria.
+> Expression of var genes is mutually exclusive. The specific var gene
+> expressed, and consequently, the antigenicity of the specific PfEMP1 on the
+> erythrocyte surface, switches throughout an infection. The spatial
+> organization of chromosomes appears to be central to the differential
+> expression of the var genes, with location at the nuclear periphery a
+> precondition for gene silencing. The transcriptionally inactive state correlates
+> with the presence of molecular markers for facultative heterochromatin
+> (fHC). Activation of a single member of the var repertoire is linked to its
+> relocation into a transcriptionally competent area.
+> Given the apparent role of subnuclear positioning in monoallelic var gene
+> expression, researchers aimed to identify the genetic elements in the gene
+> tethering process. The researchers explored the capacity of the var gene,
+> with and without repeats of intron fragment iNPE18, to alter the random
+> location of var gene-containing episomes in transfected P. falciparum. The
+> structure of the var gene, including the iNPE18 repeats, is shown in Figure 1.
+> The subnuclear locations of the episomes in transfected P. falciparum are
+> shown in Figure 2.
+> var gene structure
+> Intron
+> var gene
+> Exon I
+> Exon II
+> iNPE18-containing repeats
+> var intron
+> iNPE18
+> Zones in nucleus
+> zone 1
+> zone 2
+> zone 3
+> Percentage of episome per zone (%)
+> 80
+> 60
+> 40
+> 20
+> 0
+> none
+> intron
+> intron
+> repeats
+> only
+> introns
+> with
+> repeats
+> deleted
+> exon I
+> exon II
+> var sequence in episome
+> zones
+> Affinity chromatography identified actin as an essential component of the
+> complex that interacts with the var intron. Perturbation of normal actin with
+> jasplakinolide, an actin stabilizer, results in movement from the
+> heterochromatin clusters and activation of previously silent var genes.
+> Adapted from Q. Zhang et al., A critical role of perinuclear filamentous acin in spatial repositioning and mutually exclusive of
+> virulence genes in malaria parasites. Cell Host & Microbe. ©2011 Elsevier Inc.; K. Kim, Malaria var gene expression: keeping up
+> with the neighbors. Cell Host & Microbe. ©Elsevier Inc.
+
+
+**Structure of the var gene showing repeats of intron fragment iNPE18**  
+_Source: images/Screenshot 2026-08-30 232745.png_
+
+> _Schematic diagram of the var gene structure. A horizontal line labeled 'var gene' with double-slash (//) marks on both ends (indicating the gene extends further off-screen) has a small bent arrow near the left end marking the transcription start site. Along this line are two boxes: a larger box labeled 'Exon I' followed by a small region bracketed and labeled 'Intron' at the top, then a smaller box labeled 'Exon II', followed by another double-slash. Below this, dashed guide lines extend from the intron region down to an expanded/magnified horizontal bar labeled 'var intron', divided into several segments. Near the middle of this expanded bar, four shaded/hatched vertical segments are marked with rightward arrows above them and labeled 'iNPE18-containing repeats', representing four tandem repeats of the iNPE18 fragment located within the intron._
+
+
+**Location of the episomes with respect to defined subnuclear zones**  
+_Source: images/Screenshot 2026-08-30 232749.png_
+
+> _Top: a small schematic of three concentric circles representing 'Zones in nucleus', with a legend showing zone 1 = black square, zone 2 = gray square, zone 3 = white/open square; the circle diagram itself has the innermost two rings labeled '1' and '2' close together near the edge and the large inner area labeled '3'. Below is a grouped bar chart. Y-axis: 'Percentage of episome per zone (%)', scaled 0 to 80 in increments of 20. X-axis: 'var sequence in episome' with six groups, each containing three bars (black = zone 1, gray = zone 2, white = zone 3): 'none' (~24%, ~36%, ~40%); 'intron' (~60%, ~25%, ~14%); 'intron repeats only' (~60%, ~27%, ~12%); 'introns with repeats deleted' (~35%, ~40%, ~25%); 'exon I' (~27%, ~38%, ~35%); 'exon II' (~24%, ~31%, ~45%). The trend shows that var sequences containing the intron (with or without only the repeats) strongly favor localization to zone 1 (nuclear periphery), whereas deleting the repeats from the intron, or using exon I or exon II sequences, results in more even distribution across zones or a shift toward zone 3 (nuclear interior)._
+
+
+### Question 32
+
+_Source images: images/Screenshot 2026-08-30 232759.png_
+
+Based on the passage, switching of var gene expression probably most directly benefits P. falciparum by reducing the parasite's:
+
+- **A.** uptake by erythrocytes.
+
+- **B.** sensitivity to jasplakinolide.
+
+- **C.** overall adhesiveness to blood vessel walls.
+
+- **D.** elimination by the human adaptive immune system.
+
+
+### Question 33
+
+_Source images: images/Screenshot 2026-08-30 232808.png_
+
+The information in the passage supports the hypothesis that which type of filament is involved in the transport of var genes from heterochromatin to the active var gene expression site?
+
+- **A.** Microtubules
+
+- **B.** Microfilaments
+
+- **C.** Intermediate filaments
+
+- **D.** Sarcomere thin filaments
+
+
+### Question 34
+
+_Source images: images/Screenshot 2026-08-30 232819.png_
+
+The information in the passage suggests that which symptom or characteristic of malaria is PfEMP1-mediated?
+
+- **A.** Blood vessel blockage
+
+- **B.** Low red blood cell count
+
+- **C.** Recurring fever and chills
+
+- **D.** Sickle cell hemoglobin-mediated malaria resistance
+
+
+### Question 35
+
+_Source images: images/Screenshot 2026-08-30 232837.png_
+
+If a cerebral malaria-causing infected erythrocyte, as described in the passage, lost its adhesion to endothelium, it would most likely first flow into which type of blood vessels?
+
+- **A.** Arterioles
+
+- **B.** Veins
+
+- **C.** Capillaries
+
+- **D.** Arteries
+
+
+## Passage 7 (Questions 36-39)
+
+_Source images: images/Screenshot 2026-08-30 232903.png_
+
+> Normal color vision in humans is trichromatic, requiring three visual
+> pigments that individually absorb either green, red, or blue light. Color
+> blindness has a variety of genetic causes. Some color-blind individuals have
+> a reduced amount of one of the visual pigments and cannot distinguish as
+> many hues as individuals with normal color vision can. Other individuals
+> have a complete lack of one visual pigment and can therefore only absorb
+> light of two colors. Red or green color deficiency is a sex-linked trait affecting
+> 8% of Caucasian males in the United States. Blue defects are relatively rare
+> autosomal traits.
+> Separate but closely linked genes on the X chromosome encode for the
+> production of red and green pigments. The genes for these two pigments are
+> thought to have arisen by duplication of a segment of the chromosome
+> followed by DNA mutations. Four alleles are recognized for each pigment.
+> The allele for normal color vision (+) is dominant over the allele for color
+> weakness ('), which is dominant over the allele for extreme color weakness
+> ("), which is dominant over the allele for lack of pigment (-). Most defective
+> alleles arise from unequal combination, resulting in deletion or combination
+> (with partial chromosome loss) of the genes for red and green pigment.
+> Seven genotypes and their corresponding phenotypes for inheritance of
+> red-green color vision have been identified in Caucasian males (Table 1).
+> Caucasian Males
+> Table adapted from J. Nathans et al., "Molecular Genetics of Inherited Variation in Human Color Vision." ©1986 the American
+> Association for the Advancement of Sciences.
+
+
+_Source: images/Screenshot 2026-08-30 232917.png_
+
+**Distribution of Types of Inheritance of Red-Green Color Vision in Caucasian Males**
+
+| Frequency | Genotype | Phenotype |
+|---|---|---|
+| .92 | G+R+ | normal color vision |
+| .08 (subgroup: .562) | G'R+ | green weakness |
+| .08 (subgroup: .562) | G"R+ | extreme green weakness |
+| .08 (subgroup: .115) | G-R+ | green pigment absent |
+| .08 (subgroup: .125) | G+R' | red weakness |
+| .08 (subgroup: .125) | G+R" | extreme red weakness |
+| .08 (subgroup: .156) | G+R- | red pigment absent |
+
+
+### Question 36
+
+_Source images: images/Screenshot 2026-08-30 232928.png_
+
+When fewer visual pigment molecules are available to absorb light (for example, when a person has a color weakness), which of the following nervous system responses occurs?
+
+- **A.** Fewer signals of the weakly perceived color are sent to the brain.
+
+- **B.** A normal number of signals of the weakly perceived color is sent to the brain, but each signal is less intense.
+
+- **C.** The signals for the weakly perceived color are sent to the brain via other, more plentiful, pigments.
+
+- **D.** Light molecules stimulate the cells to make additional pigment.
+
+
+### Question 37
+
+_Source images: images/Screenshot 2026-08-30 232943.png_
+
+Based on the information in the graph below, which of the following statements best describes the color perception of a person with the phenotype "red pigment absent"? Wavelength (millimicrons) violet | blue | green | yellow | orange | red
+
+- **A.** Red colors appear more green than normal.
+
+- **B.** Green colors appear more red than normal.
+
+- **C.** Both red and green colors appear more blue than normal.
+
+- **D.** Neither red nor green colors are perceived.
+
+_(Figure 1: Light absorption spectra of visual pigments vs. wavelength — A line graph with x-axis 'Wavelength (millimicrons)' ranging from 400 to 700, and y-axis 'Light absorption (percentage of maximum)' ranging from 0 to 100. Four bell-shaped absorption curves are plotted, labeled (left to right by peak) blue, green, yellow, and orange/red (the rightmost curve is broader, spanning into red). The blue curve peaks near wavelength ~430-440 (peak value 100) with a labeled point '0' near 430 at baseline. The green curve peaks around 530 (labeled '97' near its peak) and crosses the blue curve around 440 (labeled point near baseline) and crosses another curve around 480-500 (labeled '67' and '36/31' near the crossing points with the yellow curve). The yellow curve peaks around 570 (labeled point near '83') and the orange/red curve peaks around 575-580 (labeled '99' and '83' near shared peak region, with crossing points labeled '42' further right around 600-620). Dashed vertical reference lines are drawn at several wavelengths connecting to the color-band key below the graph (violet, blue, green, yellow, orange, red) showing which wavelength ranges correspond to each perceived color name. Numeric labels (97, 83, 83, 99, 67, 36, 31, 42, 0) mark specific intersection/peak points on the curves used to reference absorption percentages at particular wavelengths.)_
+
+
+### Question 38
+
+_Source images: images/Screenshot 2026-08-30 232951.png_
+
+A mother and father with normal color vision have a son who is color-blind with green pigment absent. What genotype did the mother most likely have?
+
+- **A.** G⁺R⁺ / G⁻R⁻
+
+- **B.** G′R′ / G′R′
+
+- **C.** G⁺R⁺ / G⁻R⁺
+
+- **D.** G″R″ / G⁺R⁺
+
+
+### Question 39
+
+_Source images: images/Screenshot 2026-08-30 233006.png_
+
+The genes for red-green color blindness will affect production of proteins in which of the following types of cells?
+
+- **A.** Neurons in the visual center of the brain
+
+- **B.** Neurons making up the optic nerve
+
+- **C.** Pigment cells of the iris
+
+- **D.** Visual receptor cells in the retina
+
+
+## Passage 8 (Questions 40-43)
+
+_Source images: images/Screenshot 2026-08-30 233341.png_
+
+> Reproductive physiology in rodents is adversely affected by both pineal
+> gland secretions and high environmental temperatures. The following
+> experiment was designed to test for possible interactions between these two
+> variables.
+> Two groups of male golden hamsters of approximately equal ages and
+> weights were chosen. The pineal glands were removed from one group of
+> hamsters (Pinealectomy, or Px). The other group was subjected to an
+> operation identical to Px except that the pineal gland was not removed
+> (Sham). After a recovery period of 1 week at room temperature, half of each
+> group was placed at 35°C (Hot) while the other half remained at room
+> temperature, 20°C (Normal). The animals were kept in individual cages with
+> water and food pellets provided continuously.
+> After 30 days, the animals were euthanized and weighed. Pituitary glands,
+> adrenal glands, livers, testes, and seminal vesicles were removed and
+> weighed. Information on the role of the pineal gland in thermoregulation was
+> also determined by measuring brown adipose tissue (BAT) weight. BAT is the
+> primary site of nonshivering thermogenesis (heat production) in rodents.
+> Averaged results describing the interaction of temperature and pineal gland
+> activity on body and organ weights are shown in Table 1.
+> Organ Weights
+> Treatment
+> Sham
+> Pinealectomy (Px)
+> Variable
+> Normal
+> Hot
+> Normal
+> Hot
+> Body
+> 119 g
+> 83 g*
+> 108 g
+> 84 g*
+> Liver
+> 5.0 g
+> 2.7 g*
+> 4.6 g
+> 2.7 g*
+> Testes
+> 2.3 g
+> 0.8 g*
+> 3.0 g
+> 1.4 g*†
+> Pituitary
+> 1.8 mg
+> 1.9 mg
+> 2.2 mg†
+> 2.3 mg†
+> Adrenals
+> 16.5 mg
+> 12.5 mg*
+> 19.6 mg†
+> 15.8 mg*†
+> Seminal vesicles
+> 557 mg
+> 348 mg*
+> 590 mg
+> 601 mg†
+> BAT
+> 275 mg
+> 177 mg*
+> 287 mg
+> 161 mg*
+> * Significantly different from normal temperature with same treatment
+> † Significantly different from sham treatment at same temperature
+> Table adapted from U.A. Sod-Moriah, E. Magal, J. Kaplanski, N. Hirschman, and I. Nir, "The Role of the Pineal Gland in
+> Thermoregulation in Male Hamsters." ©1983 Pergamon Press Ltd.
+
+
+_Source: images/Screenshot 2026-08-30 233346.png_
+
+**Interaction of Temperature and Pineal Gland Activity on Body and Organ Weights**
+
+| Variable | Sham - Normal | Sham - Hot | Pinealectomy (Px) - Normal | Pinealectomy (Px) - Hot |
+|---|---|---|---|---|
+| Body | 119 g | 83 g* | 108 g | 84 g* |
+| Liver | 5.0 g | 2.7 g* | 4.6 g | 2.7 g* |
+| Testes | 2.3 g | 0.8 g* | 3.0 g | 1.4 g*† |
+| Pituitary | 1.8 mg | 1.9 mg | 2.2 mg† | 2.3 mg† |
+| Adrenals | 16.5 mg | 12.5 mg* | 19.6 mg† | 15.8 mg*† |
+| Seminal vesicles | 557 mg | 348 mg* | 590 mg | 601 mg† |
+| BAT | 275 mg | 177 mg* | 287 mg | 161 mg* |
+
+
+### Question 40
+
+_Source images: images/Screenshot 2026-08-30 233328.png, images/Screenshot 2026-08-30 233352.png_
+
+Which of the following organelles would be relatively more abundant in BAT than in typical white adipose tissue?
+
+- **A.** Mitochondria
+
+- **B.** Rough endoplasmic reticulum
+
+- **C.** Golgi apparatus
+
+- **D.** Lysosomes
+
+
+### Question 41
+
+_Source images: images/Screenshot 2026-08-30 233401.png_
+
+Which two of the following procedures served as controls in this experiment? I. Sham operation II. Pinealectomy III. Normal (20°C) exposure IV. Hot (35°C) exposure
+
+- **A.** I and II only
+
+- **B.** I and III only
+
+- **C.** II and IV only
+
+- **D.** III and IV only
+
+
+### Question 42
+
+_Source images: images/Screenshot 2026-08-30 233407.png_
+
+According to the passage, the pineal gland has what effect on thermogenesis in wintering natural populations of golden hamsters?
+
+- **A.** Increased thermogenesis, because BAT mass was greater in Normal/Px than in Hot/Px hamsters
+
+- **B.** Decreased thermogenesis, because BAT mass was greater in Hot/ Sham than in Hot/Px hamsters
+
+- **C.** No effect, because BAT mass was equivalent in Normal/Sham and Normal/Px hamsters
+
+- **D.** No effect, because BAT mass was equivalent in Normal/Px and Hot/ Px hamsters.
+
+
+### Question 43
+
+_Source images: images/Screenshot 2026-08-30 233415.png_
+
+Consider an experiment in which normal golden hamsters are injected with either pineal-gland extract (Pgex) or physiological saline (Psal). Which of the following results would NOT validate the results of the first experiment?
+
+- **A.** Pituitary weights of Pgex/Hot hamsters are less than those of Psal/ Hot hamsters.
+
+- **B.** Pituitary weights of Pgex/Hot hamsters are greater than those of Pgex/Normal hamsters.
+
+- **C.** Testes weights of Pgex/Hot hamsters are less than those of Pgex/ Normal hamsters.
+
+- **D.** Testes weights of Pgex/Hot hamsters are greater than those of Psal/Hot hamsters.
+
+
+## Passage 9 (Questions 48-51)
+
+_Source images: images/Screenshot 2026-08-30 233540.png_
+
+> Internal Respiration is the exchange of O2 and CO2 between tissue cells
+> and capillaries. As CO2 is produced in the cells, it enters the capillaries,
+> resulting in a blood partial pressure (PCO2) of approximately 45 mm Hg. In
+> the capillaries, 70% of the CO2 transported by the blood is converted to
+> bicarbonate ions (HCO3-) by the following reaction that occurs within the red
+> blood cells (RBCs).
+> Equation 1
+> Most of the HCO3- ions leave the RBCs and enter the plasma. The
+> resulting ionic imbalance in the RBCs is equalized by the rapid movement of
+> chloride (Cl-) ions into the RBCs from the plasma.
+> Another 23% of the CO2 is transported by the blood in the form of
+> carbaminohemoglobin (Hb•CO2). Both CO2 and H+ bind reversibly to the
+> globin portion of the hemoglobin (Hb) molecules in the RBCs. The
+> attachment of CO2 to form Hb•CO2 also facilitates the dissociation of O2 from
+> Hb at low PO2 levels in the tissue capillary beds. The final 7% of the CO2
+> produced by respiring cells dissolves directly into the plasma.
+> Another 23% of the CO2 is transported by the blood in the form of
+> carbaminohemoglobin (Hb•CO2). Both CO2 and H+ bind reversibly to the
+> globin portion of the hemoglobin (Hb) molecules in the RBCs. The
+> attachment of CO2 to form Hb•CO2 also facilitates the dissociation of O2 from
+> Hb at low PO2 levels in the tissue capillary beds. The final 7% of the CO2
+> produced by respiring cells dissolves directly into the plasma.
+> All forms of CO2 are transported from the tissues to the lungs, where they
+> are returned to gaseous form and are exhaled during external respiration
+> (the exchange of O2 and CO2 between the capillaries and the alveoli of the
+> lungs).
+
+
+**Equation 1**  
+_Source: images/Screenshot 2026-08-30 233540.png_
+
+> _A chemical reaction diagram showing the carbonic anhydrase reaction and carbonic acid dissociation. Reads left to right: CO2 (labeled 'carbon dioxide') + H2O (labeled 'water') connected by a double-headed equilibrium arrow labeled 'carbonic anhydrase' above it, yields H2CO3 (labeled 'carbonic acid'), which is connected by another double-headed equilibrium arrow to H+ (labeled 'hydrogen ion') + HCO3- (labeled 'bicarbonate ion'). Each chemical formula has an italicized descriptive label printed beneath it._
+
+
+### Question 48
+
+_Source images: images/Screenshot 2026-08-30 233551.png_
+
+Administration of a carbonic anhydrase inhibitor to the RBCs would most likely cause an increase in the concentration of:
+
+- **A.** HCO3- in the RBCs.
+
+- **B.** H2CO3 in the RBCs.
+
+- **C.** CO2 in the tissues.
+
+- **D.** H2O in the tissues.
+
+
+### Question 49
+
+_Source images: images/Screenshot 2026-08-30 233555.png_
+
+Would the Cl- concentration of the RBCs be expected to be greater in the systemic veins or the systemic arteries?
+
+- **A.** Veins, because the HCO3- concentration is higher in veins than in arteries.
+
+- **B.** Veins, because there are fewer RBCs in veins than in arteries.
+
+- **C.** Arteries, because the HCO3- concentration is higher in arteries than in veins.
+
+- **D.** Arteries, because there are fewer RBCs in veins than in arteries.
+
+
+### Question 50
+
+_Source images: images/Screenshot 2026-08-30 233601.png_
+
+O2 dissociates more readily from Hb in an acidic environment. This dissociation will therefore occur most readily when the PCO2 is:
+
+- **A.** high, because Equation 1 will proceed to the right.
+
+- **B.** high, because Equation 1 will proceed to the left.
+
+- **C.** low, because Equation 1 will proceed to the right.
+
+- **D.** low, because Equation 1 will proceed to the left.
+
+
+### Question 51
+
+_Source images: images/Screenshot 2026-08-30 233606.png_
+
+Lung capillaries are so narrow that RBCs must pass through them in single file. This feature aids respiration by:
+
+- **A.** increasing the production of CO2 in the RBCs.
+
+- **B.** allowing RBCs to have direct contact with alveoli.
+
+- **C.** giving maximum exposure of each RBC to diffusing gases.
+
+- **D.** making Hb available for CO2 but not O2 to bind.
+
+
+## Passage 10 (Questions 52-56)
+
+_Source images: images/Screenshot 2026-08-30 233637.png_
+
+> Shiga toxin (STx)-producing bacteria cause over one million deaths a
+> year, but treatment with antibiotics is not effective and no definitive medical
+> treatment is currently available. The STx protein is comprised of two
+> subunits, an α-helical 293-amino acid subunit A and a pentamer of 69-amino
+> acid B-subunits. Subunit B mediates retrograde trafficking from the cell
+> surface to the endoplasmic reticulum, after which subunit A is cleaved into
+> the catalytic A1 domain that functions by depurinating a specific position on
+> the ribosome. This halts protein synthesis. The C-terminal A2 domain
+> remains associated with subunit B. It was thought that GPP130, a host
+> membrane protein that cycles between the Golgi apparatus and endosomes,
+> might assist STx in evading degradation and reaching the endoplasmic
+> reticulum as it binds the toxin with a Kd of 25 mM. Prior research showed
+> that exposure to manganese (Mn2+) degrades GPP130.
+> In order to investigate whether GPP130 is involved in the movement of
+> STx from endosomes into the Golgi apparatus, researchers constructed
+> STxB, which contains a fluorescently tagged subunit B. They measured the
+> percentage of cellular STxB in the Golgi in cultured human cells and repeated
+> the experiment for fluorescently tagged cholera toxin (CTxB) (Figure 1),
+> which follows the same route as STx to the Golgi but does not require
+> GPP130.
+> Ctrl
+> Mn2+
+> Golgi STxB (% of total)
+> 80
+> 60
+> 40
+> 20
+> 0
+> p < 0.001
+> 0
+> 30
+> 60
+> Time (min)
+> Golgi CTxB (% of total)
+> 80
+> 60
+> 40
+> 20
+> 0
+> p > 0.05
+> 0
+> 30
+> 60
+> Time (min)
+> Mn2+
+> Adapted from S. Mukhopadhyay and A. Linstedt, Manganese blocks intracellular trafficking of shiga toxin and
+> protects against shiga toxicosis. Science. ©2012 The American Association for Advancement of Science.
+
+
+**Graph of percentage of STxB and CTxB in Golgi with and without Mn2+**  
+_Source: images/Screenshot 2026-08-30 233644.png_
+
+> _Two side-by-side line graphs sharing the same legend (solid line with triangle markers = Ctrl; dotted line with open circle markers = Mn2+). Left graph: y-axis 'Golgi STxB (% of total)' from 0-80, x-axis 'Time (min)' with points at 0, 30, 60. The Ctrl (solid) line rises sharply from ~0% at time 0 to ~72% at 30 min and stays at ~73% at 60 min. The Mn2+ (dotted) line stays low, near 0% at time 0, rising only to ~6% at 30 min and ~8% at 60 min, with the difference between curves marked 'p < 0.001'. Right graph: y-axis 'Golgi CTxB (% of total)' from 0-80, x-axis 'Time (min)' with points at 0, 30, 60. Both Ctrl and Mn2+ lines nearly overlap, rising together from ~5% at 0 min to ~58-60% at 30 min to ~65-70% at 60 min, labeled 'p > 0.05', indicating Mn2+ has no significant effect on CTxB Golgi trafficking._
+
+
+### Question 52
+
+_Source images: images/Screenshot 2026-08-30 233650.png_
+
+By allowing STx to move from the early endosome to the Golgi, subunit B permits the toxin to bypass which organelle?
+
+- **A.** Centriole
+
+- **B.** Plastid
+
+- **C.** Nucleolus
+
+- **D.** Lysosome
+
+
+### Question 53
+
+_Source images: images/Screenshot 2026-08-30 233656.png_
+
+The most likely result of various alanine to proline mutations in subunit A is:
+
+- **A.** lack of retrograde trafficking.
+
+- **B.** increased hydrogen bonding.
+
+- **C.** loss of secondary structure.
+
+- **D.** higher catalytic activity.
+
+
+### Question 54
+
+_Source images: images/Screenshot 2026-08-30 233701.png_
+
+Several strains of STx-producing E. coli are responsible for disease. Despite the availability of antibiotics that lyse E. coli cells, the reason this is NOT a recommended course of treatment is because:
+
+- **A.** GPP130 is also a target of several common antibiotics.
+
+- **B.** the bacterial lysate will disrupt host translation.
+
+- **C.** STx confers antibiotic resistance once inside the host cell.
+
+- **D.** antibiotics are not effective against viruses.
+
+
+### Question 55
+
+_Source images: images/Screenshot 2026-08-30 233707.png_
+
+A novel compound was developed which occupies the site on STx where GPP130 binds the toxin. A drug with which value of Kd for binding to STx is most effective?
+
+- **A.** 0.25 mM
+
+- **B.** 2.5 mM
+
+- **C.** 25 mM
+
+- **D.** 250 mM
+
+
+### Question 56
+
+_Source images: images/Screenshot 2026-08-30 233712.png_
+
+Which type of enzyme is responsible for activating subunit A?
+
+- **A.** Endonuclease
+
+- **B.** Exonuclease
+
+- **C.** Ribonuclease
+
+- **D.** Protease
+
+
+## Standalone Questions
+
+
+### Question 15
+
+_Source images: images/Screenshot 2026-08-30 232254.png_
+
+Organic acids, denoted by HA, are only minimally deprotonated when added to pure water. HA(aq) ⇌ H⁺(aq) + A⁻(aq) When dissolved in blood, however, HA fully dissociate. What factor can be used to explain this discrepancy?
+
+- **A.** In blood, the concentration of H⁺(aq) is maintained at low levels by other equilibria.
+
+- **B.** In blood, the reaction is coupled to ATP hydrolysis to make it more favorable.
+
+- **C.** In blood, the ionic strength of the solvent medium is much higher than pure water.
+
+- **D.** In blood, enzymes are used to catalyze the dissociation reaction.
+
+
+### Question 16
+
+_Source images: images/Screenshot 2026-08-30 232300.png_
+
+In oxidative phosphorylation, cytochrome c acts as:
+
+- **A.** a 1-electron carrier.
+
+- **B.** a 2-electron carrier.
+
+- **C.** a 3-electron carrier.
+
+- **D.** a 4-electron carrier.
+
+
+### Question 17
+
+_Source images: images/Screenshot 2026-08-30 232305.png_
+
+Which primer is most suitable for PCR?
+
+- **A.** 5'-ATTACGTTAACATGAAG-3'
+
+- **B.** 5'-ATATCGTTAACAAATTG-3'
+
+- **C.** 5'-GCTATAAAGATTGCAAA-3'
+
+- **D.** 5'-GCATAGAAGCATTCCGC-3'
+
+
+### Question 18
+
+_Source images: images/Screenshot 2026-08-30 232310.png_
+
+In which phase of meiosis does nondisjunction occur?
+
+- **A.** Anaphase I
+
+- **B.** Metaphase II
+
+- **C.** Prophase I
+
+- **D.** Telophase II
+
+
+### Question 28
+
+_Source images: images/Screenshot 2026-08-30 232649.png_
+
+Yeast cells can grow under either aerobic or anaerobic conditions. If the same concentration of glucose were used to grow two different yeast colonies, would the growth rate be faster under aerobic or anaerobic conditions?
+
+- **A.** Anaerobic, because the final product (alcohol) would contain more energy than the final product of respiration (H₂O)
+
+- **B.** Anaerobic, because the cells would not have to produce the enzymes needed for the citric acid cycle
+
+- **C.** Aerobic, because a much greater amount of ATP would be produced to provide energy for reproduction
+
+- **D.** Aerobic, because the CO₂ produced in fermentation would be toxic to the culture
+
+
+### Question 29
+
+_Source images: images/Screenshot 2026-08-30 232654.png_
+
+The figure below shows a population growth curve for a bacterial colony before and after the addition of a polysaccharide. Number of bacterial cells addition of polysaccharide Time Which of the following most likely explains why the bacterial colony did NOT grow immediately after the polysaccharide was added?
+
+- **A.** The bacteria that were unable to digest the polysaccharide died.
+
+- **B.** The digestive enzymes for the polysaccharide had to be transcribed and translated.
+
+- **C.** The hydrolysis of fatty acids is a slow process.
+
+- **D.** The polysaccharide directly inhibited bacterial fission.
+
+_(Figure 1:  — A sigmoidal (S-shaped) population growth curve. Y-axis (unlabeled scale) is 'Number of bacterial cells'; X-axis (unlabeled scale) is 'Time'. The curve begins flat/low (lag phase) at the left. An arrow labeled 'addition of polysaccharide' points from that text to a spot on the flat portion of the curve, indicating when the polysaccharide was added, just before the curve begins rising. After this point the curve stays flat briefly, then rises steeply (exponential growth phase), and finally levels off into a plateau (stationary phase) at the upper right.)_
+
+
+### Question 30
+
+_Source images: images/Screenshot 2026-08-30 232703.png_
+
+If the GAPDH gene is continuously expressed, where is it most likely found?
+
+- **A.** In euchromatin
+
+- **B.** In a telomere
+
+- **C.** In heterochromatin
+
+- **D.** In a centromere
+
+
+### Question 31
+
+_Source images: images/Screenshot 2026-08-30 232710.png_
+
+Which amino acid is neutral, but zwitterionic at pH 7, despite possessing two nitrogen atoms in its formula?
+
+- **A.** Gln
+
+- **B.** Lys
+
+- **C.** Tyr
+
+- **D.** Arg
+
+
+### Question 44
+
+_Source images: images/Screenshot 2026-08-30 233430.png_
+
+The individual cells making up a tissue differ from single-celled organisms such as Paramecium in that only the latter:
+
+- **A.** reproduce by mitosis.
+
+- **B.** have subcellular organelles.
+
+- **C.** are capable of extended independent life.
+
+- **D.** can metabolize nutrient molecules.
+
+
+### Question 45
+
+_Source images: images/Screenshot 2026-08-30 233443.png_
+
+When a striated muscle cell metabolizes glucose in the complete absence of O2, which of the following substances is NOT produced in a significant amount?
+
+- **A.** Pyruvic acid
+
+- **B.** Glucose-6-phosphate
+
+- **C.** Lactic acid
+
+- **D.** Acetyl-CoA
+
+
+### Question 46
+
+_Source images: images/Screenshot 2026-08-30 233450.png_
+
+A particular genome is composed of 23% adenine. What percentage of the genome is guanine?
+
+- **A.** 11%
+
+- **B.** 23%
+
+- **C.** 27%
+
+- **D.** 46%
+
+
+### Question 47
+
+_Source images: images/Screenshot 2026-08-30 233455.png_
+
+A fatty acid is comprised of a long hydrocarbon tail and a head consisting of:
+
+- **A.** a hydroxyl group.
+
+- **B.** a carboxyl group.
+
+- **C.** a phosphate group.
+
+- **D.** an amino group.
+
+
+### Question 57
+
+_Source images: images/Screenshot 2026-08-30 233725.png_
+
+The lac operon, which includes the lacZ gene, is regulated through the activity of the proteins CAP and LacI depending upon the availability of glucose and lactose, respectively. The table shows levels of lacZ transcription under different conditions. Given the information in the table, are CAP and LacI transcription activators or transcription repressors?
+
+- **A.** CAP is a transcription activator, and LacI is a transcription repressor.
+
+- **B.** CAP is a transcription repressor, and LacI is a transcription activator.
+
+- **C.** CAP is a transcription activator, and LacI is a transcription activator.
+
+- **D.** CAP is a transcription repressor, and LacI is a transcription repressor.
+
+
+### Question 58
+
+_Source images: images/Screenshot 2026-08-30 233739.png_
+
+Introduction of which amino acid substitution would result in the largest decrease in the entropic penalty associated with a protein folding into its native conformation?
+
+- **A.** Ile to Asp substitution at a buried site
+
+- **B.** Leu to Thr substitution at a surface-exposed site
+
+- **C.** Gly to Pro substitution in a flexible loop
+
+- **D.** Arg to Tyr substitution at a surface-exposed site
+
+
+### Question 59
+
+_Source images: images/Screenshot 2026-08-30 233744.png_
+
+In humans, the lining of which structure is NOT primarily derived from the endoderm?
+
+- **A.** Mouth
+
+- **B.** Bronchi
+
+- **C.** Bladder
+
+- **D.** Stomach
+
+
+# Section 4 — Psychological, Social, and Biological Foundations of Behavior (Psych/Soc)
+
+
+## Passage 1 (Questions 1-5)
+
+_Source images: images/Screenshot 2026-08-30 233801.png_
+
+> Researchers interested in the memory processes of Alzheimer patients
+> conducted a study comparing Alzheimer patients to adults with normal
+> memory. The participants were administered a list of 21 unrelated words, at
+> the rate of one word every three seconds. Immediately after the
+> presentation of the last word, the participants were asked to recall as many
+> words as they could from the list. The Alzheimer patients were 60 to 80
+> years of age. Participants without memory impairments were divided into
+> three age groups: 20–39, 40–59, and 60–80. After the recall task, the
+> participants were given a recognition task. The results of the study are
+> presented in Figure 1.
+> recall task
+> recognition task
+> Number of words
+> Ages
+> 20–39
+> Ages
+> 40–59
+> Ages
+> 60–80
+> Alzheimer's
+> patients
+> Study group
+> The list of words was presented in the same order to all groups. The
+> researchers were also interested in the percentage of total recall for words
+> from different parts of the list. More specifically, they analyzed the
+> percentage of each group's recall from the beginning, middle, and end of the
+> list. The results are presented in Figure 2. The performances of 20–39 and
+> 40–59 year-old groups did not differ significantly and are combined into one
+> group.
+> A finding that emerged from the recall task was that the participants
+> without memory impairments retrieved words that were related to the words
+> on the list, but had not actually appeared.
+> ages 20–59
+> ages 60–80
+> Alzheimer's patients
+> Percentage of words recalled
+> 100
+> 90
+> 80
+> 70
+> 60
+> 50
+> 40
+> 30
+> 20
+> 10
+> 0
+> Beginning
+> Middle
+> End
+> Position of word in the list
+
+
+**Figure 0**  
+_Source: images/Screenshot 2026-08-30 233801.png_
+
+> _A legend box shown below the passage text, indicating that a solid black square represents the 'recall task' and a light gray square represents the 'recognition task', used to interpret Figure 1 shown in the next image._
+
+
+**Number of words recalled and recognized**  
+_Source: images/Screenshot 2026-08-30 233807.png_
+
+> _A grouped bar chart with y-axis 'Number of words' ranging from 0 to 20 in increments of 2, and x-axis 'Study group' with four categories: Ages 20–39, Ages 40–59, Ages 60–80, and Alzheimer's patients. Each category has two bars: a black bar (recall task) and a gray bar (recognition task). Approximate values: Ages 20–39 — recall ≈12, recognition ≈18; Ages 40–59 — recall ≈11, recognition ≈16; Ages 60–80 — recall ≈8, recognition ≈17; Alzheimer's patients — recall ≈3, recognition ≈3. Trend shows recognition scores consistently higher than recall scores in all non-Alzheimer's groups, with recall declining with age, while Alzheimer's patients show low and nearly equal recall and recognition scores._
+
+
+**Percentage of words recalled as a function of position in the list**  
+_Source: images/Screenshot 2026-08-30 233812.png_
+
+> _Line graph with y-axis 'Percentage of words recalled' from 0 to 100 in increments of 10, and x-axis 'Position of word in the list' with three category ticks: Beginning, Middle, End. Three series per the legend: a dotted line for 'ages 20–59' starting at ~40% at Beginning, dipping to ~15% at Middle, then rising to ~45% at End; a dashed line for 'ages 60–80' starting at ~35% at Beginning, dipping lower to ~10% at Middle, then rising to ~55% at End (ending above the 20–59 line); and a solid line for 'Alzheimer's patients' starting at 0% at Beginning, remaining near 0% and rising only slightly to ~20% by Middle (crossing the other two lines there), then rising sharply and linearly to 100% at End. The overall pattern is a classic serial position curve (primacy dip and strong recency effect), with the Alzheimer's group showing essentially no primacy effect but an exaggerated recency effect._
+
+
+### Question 1
+
+_Source images: images/Screenshot 2026-08-30 233817.png_
+
+Which statement is NOT supported by the data in Figure 1?
+
+- **A.** As people grow older, their ability to recall declines.
+
+- **B.** Recognition is relatively stable in adults without memory impairments.
+
+- **C.** The memory problems in Alzheimer disease are an acceleration of the aging process.
+
+- **D.** Participants without memory impairments perform better in the recognition task compared to the recall task.
+
+
+### Question 2
+
+_Source images: images/Screenshot 2026-08-30 233847.png_
+
+The finding in the last paragraph regarding the retrieval of related words supports:
+
+- **A.** spreading activation.
+
+- **B.** depth of processing.
+
+- **C.** the serial position effect.
+
+- **D.** the existence of visuospatial sketchpad.
+
+
+### Question 3
+
+_Source images: images/Screenshot 2026-08-30 233853.png_
+
+In Figure 2, the group of Alzheimer patients demonstrated a clear:
+
+- **A.** primacy effect.
+
+- **B.** recency effect.
+
+- **C.** interference effect.
+
+- **D.** continuity effect.
+
+
+### Question 4
+
+_Source images: images/Screenshot 2026-08-30 233859.png_
+
+Which conclusion can be drawn from Figure 2 based on the recall pattern of participants without memory impairments?
+
+- **A.** Short term memory is the activated part of sensory memory.
+
+- **B.** Short term memory is the activated part of long term memory.
+
+- **C.** Short term memory and long term memory are uniform and function similarly.
+
+- **D.** Short term memory and long term memory represent separate memory systems.
+
+
+### Question 5
+
+_Source images: images/Screenshot 2026-08-30 233914.png_
+
+Is proactive interference expected in Alzheimer patients for the word list used in the study?
+
+- **A.** Yes, because their memory is weaker than all other groups, making them most vulnerable to proactive interference
+
+- **B.** Yes, because their working memory appears to be functioning, and that is where proactive interference takes place
+
+- **C.** No, because proactive interference requires information, previously stored in long term memory, which can impede the learning of new information
+
+- **D.** No, because proactive interference requires an intact temporal cortex, and Alzheimer patients have damage to the temporal cortex
+
+
+## Passage 2 (Questions 6-9)
+
+_Source images: images/Screenshot 2026-08-30 233921.png_
+
+> Born to a poor family in the rural Southeastern United States, Alice
+> walked five miles of dirt road everyday to attend a one-room school as a
+> child. Alice would eventually become the CEO of a large corporation, earning
+> over a million dollars in income each year. Raised in a working-class family in
+> an urban Midwestern city, Bill grew up with little knowledge of higher
+> education. With similar success as Alice, Bill became the president of a major
+> private university.
+> The stories of Alice and Bill are recounted in a study of exceptional
+> pathways to success. The research design utilized a snowball sampling
+> selection method, in which new participants were enrolled in the study using
+> the contacts of existing participants. The investigators placed their sample of
+> 100 subjects in one of two groups, which they labeled the Pathmakers and
+> the Followers. The Followers originated from favorable socioeconomic
+> backgrounds while the Pathmakers came from upbringings similar to those of
+> Alice and Bill. Both groups had relatively equivalent success later in life.
+> Research findings were derived from in-depth interviews, which were
+> subsequently coded to enable detailed analyses.
+> Locus of control was a central variable in the study. The researchers
+> hypothesized that the Pathmakers would have stronger internal locus of
+> control, while the Followers would have stronger external locus of control.
+> Results supported this hypothesis, indicating a statistically significant
+> difference in locus of control between the Pathmakers and Followers. In
+> addition to this finding, there was evidence that the Pathmakers were both
+> more self-conscious about their emotional well-being and more altruistic
+> than the Followers.
+> Adapted from C. Harrington and S. Boardman, Paths to Success: Beating the Odds in American Society. ©1997 the President and
+> Fellows of Harvard College.
+
+
+### Question 6
+
+_Source images: images/Screenshot 2026-08-30 233933.png_
+
+Which concept is LEAST applicable to the stories of Alice and Bill?
+
+- **A.** Meritocracy
+
+- **B.** Intergenerational mobility
+
+- **C.** Social reproduction
+
+- **D.** Relative poverty
+
+
+### Question 7
+
+_Source images: images/Screenshot 2026-08-30 233939.png_
+
+Which statement identifies a potential weakness of the study's research design?
+
+- **A.** The researchers did not assess demographic variables, such as age or gender.
+
+- **B.** The subjects are linked through social networks, leading to sampling bias.
+
+- **C.** In-depth interviews are time consuming, which results in researcher fatigue.
+
+- **D.** A small sample does not allow for quantifiable data, which limits data analysis.
+
+
+### Question 8
+
+_Source images: images/Screenshot 2026-08-30 233945.png_
+
+The main purpose for including the Followers in the study is:
+
+- **A.** to provide an additional set of variables for the researchers to analyze.
+
+- **B.** to allow the researchers to increase the study's sample size.
+
+- **C.** to allow comparisons for testing hypotheses related to paths to success.
+
+- **D.** to provide a different operational definition of the dependent variable.
+
+
+### Question 9
+
+_Source images: images/Screenshot 2026-08-30 233950.png_
+
+Based on the hypothesis stated in the last paragraph of the passage, which comment is likely to be attributed to a subject like Alice?
+
+- **A.** I worked very hard because I came from a poor family.
+
+- **B.** I did well in school because I had excellent teachers.
+
+- **C.** I got my first job because I was very lucky.
+
+- **D.** I am successful because I am a responsible person.
+
+
+## Passage 3 (Questions 10-13)
+
+_Source images: images/Screenshot 2026-08-30 234015.png_
+
+> An influential 1962 article provided the impetus for studying child abuse diagnosis and prevention in medicine. By asking a sample of hospitals to report suspected cases seen over the course of a year, the authors were among the first researchers to collect data on the incidence of child abuse. The article's lead author, C.H. Kempe, also led efforts for expanding child welfare laws. At the time, child abuse often went unrecognized for various reasons; for instance, physicians were not trained to look for evidence of abuse, the symptoms of abuse can be hard to interpret, and some parents misled physicians about the child's injuries. By the late 1960s, every state in the United States had passed legislation mandating that physicians report suspected abuse to child protection agencies.
+> Since the 1960s, research on child maltreatment (which includes child abuse, neglect, and sexual abuse) has increased steadily to the point where hundreds of peer-reviewed articles are published on the subject each year. For example, recent research has documented the long-term consequences in adults of maltreatment during childhood. The possible adverse outcomes include heart and liver disease, depression, anxiety, alcohol and drug abuse, unemployment, and unintended pregnancy. Despite common perceptions, research on incidence rates shows that the problem of child maltreatment cuts across all demographic groups. Increasing knowledge about child
+> Since the 1960s, research on child maltreatment (which includes child abuse, neglect, and sexual abuse) has increased steadily to the point where hundreds of peer-reviewed articles are published on the subject each year. For example, recent research has documented the long-term consequences in adults of maltreatment during childhood. The possible adverse outcomes include heart and liver disease, depression, anxiety, alcohol and drug abuse, unemployment, and unintended pregnancy. Despite common perceptions, research on incidence rates shows that the problem of child maltreatment cuts across all demographic groups. Increasing knowledge about child maltreatment has also been instrumental in the development of the pediatric subspecialty of child abuse pediatrics.
+> Despite advances in research, addressing child maltreatment is still a sensitive and controversial subject. The question that Kempe and colleagues raised in 1962, over what role medicine should play in addressing the problem and what should be left to other social institutions, continues to be debated. As these debates carry on, some advocates have argued that social and cultural awareness of child abuse prevention remains behind the medical technologies available for child abuse diagnosis.
+> Adapted from C. Jenny, "Medicine Discovers Child Abuse." ©2008 the American Medical Association; A.P. Giardino et al., "Child Abuse Pediatrics." ©2011 the American Academy of Pediatrics.
+
+
+### Question 10
+
+_Source images: images/Screenshot 2026-08-30 234032.png_
+
+As described in the passage, the long-term consequences of child maltreatment have been found to include all of the following outcomes EXCEPT:
+
+- **A.** chronic diseases.
+
+- **B.** mood disorders.
+
+- **C.** chronic stress.
+
+- **D.** personality disorders.
+
+
+### Question 11
+
+_Source images: images/Screenshot 2026-08-30 234040.png_
+
+The finding that incidence rates cut across demographic groups contradicts the perception that child maltreatment is subject to:
+
+- **A.** social reproduction.
+
+- **B.** institutional discrimination.
+
+- **C.** social stratification.
+
+- **D.** cultural relativism.
+
+
+### Question 12
+
+_Source images: images/Screenshot 2026-08-30 234047.png_
+
+Which piece of information from the passage is LEAST relevant for determining the possible influence of confirmation bias on child abuse diagnosis?
+
+- **A.** Parental concealment of child abuse from physicians
+
+- **B.** Physician attention to evidence of child abuse
+
+- **C.** Challenges posed by interpreting child abuse symptoms
+
+- **D.** Emotional sensitivities around child abuse as a subject
+
+
+### Question 13
+
+_Source images: images/Screenshot 2026-08-30 234053.png_
+
+Which development from the passage best illustrates an organizational change in the context of child abuse diagnosis and prevention?
+
+- **A.** The addition of a pediatric subspecialty in child abuse pediatrics
+
+- **B.** The increase in research on child abuse since the influential 1962 article
+
+- **C.** The passage of state laws in the 1960s that mandate child abuse reporting
+
+- **D.** The continued debate over how to understand the problem of child abuse
+
+
+## Passage 4 (Questions 17-20)
+
+_Source images: images/Screenshot 2026-08-30 234149.png_
+
+> Individuals diagnosed with Level 1 autism spectrum disorder (ASD) may
+> experience difficulties in social relationships and communication, often
+> without accompanying language and intellectual impairments. Level 1 ASD
+> may be associated with difficulties in attributing mental and emotional states
+> to others and in explaining and predicting behaviors based on these states.
+> In a study designed to investigate the genetic component in the
+> development of ASD, participants were neurotypical children living with
+> siblings who were diagnosed with Level 1 ASD. Their emotional processing
+> was compared to that of controls living with neurotypical siblings. The
+> participants in the ASD-sibling group and those in the control group were
+> matched in terms of age and biological sex. To assess emotional processing,
+> the researchers used the Eyes Test, which involves looking at photographs of
+> the eye region of a human face and choosing a word that best describes
+> what the person in the photograph is feeling or thinking. Higher scores on
+> the Eyes Test indicate increased accuracy in emotional processing. The
+> results showed that the control group was more accurate than the ASD-
+> sibling group on the Eyes Test.
+> Researchers have also been interested in the role of mirror neurons
+> (MNs) in difficulties with perspective-taking. Findings suggest that MNs are
+> found both in humans and other primates. MNs fire both when the individual
+> is performing an action and when the individual is watching another perform
+> the same action. Some studies have indicated that MNs may be active when
+> people are processing emotional expressions, leading researchers to
+> hypothesize that MNs might play a role in the development of perspective-
+> taking and understanding other people's internal states.
+> Adapted from L. Dorris, C.A.E. Espie, F. Knott, and J. Salt ©2004 Associations for Child Psychology and Psychiatry; J.H.G. Williams,
+> A. Whiten, T. Suddendorf, and D.I. Perrett ©2001 Elsevier Science.
+
+
+### Question 17
+
+_Source images: images/Screenshot 2026-08-30 234157.png_
+
+Based on the passage, the intellectual functioning of individuals diagnosed with Level 1 ASD is most compatible with which approach to intelligence?
+
+- **A.** Spearman's idea of general intelligence
+
+- **B.** Gardner's idea of eight intelligences
+
+- **C.** Galton's idea of hereditary genius
+
+- **D.** Binet's idea of mental age
+
+
+### Question 18
+
+_Source images: images/Screenshot 2026-08-30 234203.png_
+
+If individuals have impaired MN functioning, this is most likely to result in an impairment to which type of learning?
+
+- **A.** Operant conditioning
+
+- **B.** Classical conditioning
+
+- **C.** Observational learning
+
+- **D.** Latent learning
+
+
+### Question 19
+
+_Source images: images/Screenshot 2026-08-30 234208.png_
+
+Which element of the study limits the conclusion that genetic makeup plays a causal role on Level 1 ASD?
+
+- **A.** The participants in the study have varying levels of genetic relationships with individuals who are diagnosed with Level 1 ASD.
+
+- **B.** The participants are siblings of individuals who are diagnosed with Level 1 ASD rather than individuals who themselves are diagnosed with Level 1 ASD.
+
+- **C.** The researchers do not control for possible differences between same sex versus opposite sex siblings in the ASD-sibling group.
+
+- **D.** The participants in the ASD-sibling group likely share the same environment with individuals who are diagnosed with Level 1 ASD.
+
+
+### Question 20
+
+_Source images: images/Screenshot 2026-08-30 234213.png_
+
+Which intervention designed to support the emotional processing of children diagnosed with ASD makes use of extrinsic motivators?
+
+- **A.** Playing pleasant music while engaging the children in a task that requires recognizing emotional expressions
+
+- **B.** Putting emotionally expressive faces on the toys that the children play with
+
+- **C.** Giving the children ten minutes of play time every time they correctly name an emotional expression
+
+- **D.** Having the children play a memory game that requires matching emotional expressions with labels
+
+
+## Passage 5 (Questions 21-25)
+
+_Source images: images/Screenshot 2026-08-30 234220.png_
+
+> Researchers conducted a study (Study 1) to explore whether there are
+> immediate effects of televised violence on children's aggression levels. Boys
+> and girls from two different age groups (ages 5–6 years and 8–9 years) were
+> randomly assigned to the experimental group or the control group. The
+> experimental group watched a six-minute program of violent television
+> scenes containing an action sequence that showed a chase, two fist fights,
+> two shootings, and a knifing. The scenes were selected from nationally
+> televised programs. The control group spent six minutes working on a
+> coloring book. Afterwards, the experimenters told the participants that they
+> would be part of a game that another child was playing in a different room.
+> By pushing different buttons, each participant could either "help" or "hurt"
+> the other child. The researchers counted the number of times each
+> participant chose to help or hurt the other child. The results are shown in
+> violent program
+> coloring book
+> 12
+> 10
+> 8
+> 6
+> 4
+> 2
+> 0
+> Average number of "hurt"
+> button hits
+> Boys
+> Girls
+> Boys
+> Girls
+> 5–6 year-olds
+> 8–9 year-olds
+> In Study 2, researchers studied the way children played with toys after
+> exposure to violence. The participants were from the same age groups as in
+> Study 1. After watching the violent program or working on the coloring book,
+> the participants were taken to a playroom with aggressive toys (for example,
+> guns or knives) and non-aggressive toys (for example, dolls or building
+> blocks). Their behavior was videotaped and presented to raters who counted
+> In Study 2, researchers studied the way children played with toys after
+> exposure to violence. The participants were from the same age groups as in
+> Study 1. After watching the violent program or working on the coloring book,
+> the participants were taken to a playroom with aggressive toys (for example,
+> guns or knives) and non-aggressive toys (for example, dolls or building
+> blocks). Their behavior was videotaped and presented to raters who counted
+> each time the participant in the video engaged in aggressive play (for
+> example, playing with the aggressive toys or assaulting the dolls).
+> Adapted from R.M. Lieber and R.A. Baron, ©1972 American Psychological Association.
+
+
+**Average number of "hurt" button hits by condition**  
+_Source: images/Screenshot 2026-08-30 234227.png_
+
+> _Grouped bar chart. Y-axis: 'Average number of "hurt" button hits' ranging from 0 to 12 in increments of 2, with small error bars on each bar. X-axis: four pairs of bars grouped under two age brackets, '5–6 year-olds' and '8–9 year-olds'; within each age bracket there are 'Boys' and 'Girls' groupings, each containing a gray bar (violent program) and a white/unfilled bar (coloring book), per the legend at top. Approximate values: 5–6 year-old Boys: violent program ~11, coloring book ~6; 5–6 year-old Girls: violent program ~8, coloring book ~5; 8–9 year-old Boys: violent program ~10, coloring book ~5; 8–9 year-old Girls: violent program ~8, coloring book ~6. In every group, the violent-program bar is higher than the coloring-book bar, and boys' violent-program bars are higher than girls' violent-program bars within each age group._
+
+
+### Question 21
+
+_Source images: images/Screenshot 2026-08-30 234237.png_
+
+Considering the stage that the participants are in according to Kohlberg's theory of moral development, what changes to the study design are most likely to result in decreased aggression?
+
+- **A.** Lengthening the videos the participants viewed to one hour, with a 10-minute play break in between each 6-minute segment
+
+- **B.** The addition of a segment to the violent video that portrays the actors being put in prison for their illegal violent behaviors
+
+- **C.** The addition of a segment to the violent video that portrays the negative impact of violence on the victims
+
+- **D.** Having the participants work on an interactive task with other children before and after watching the video
+
+
+### Question 22
+
+_Source images: images/Screenshot 2026-08-30 234247.png_
+
+Which change to the design of Study 1 would test the hypothesis that frustration causes aggression?
+
+- **A.** Keeping the independent variable in Study 1 with the addition of telling the participants that the child they are helping or hurting is the same sex as they are or a member of the opposite sex
+
+- **B.** Replacing the independent variable in Study 1 with placing an attractive toy in the room and telling half of the participants that they are not allowed to play with this toy
+
+- **C.** Using the same experimental method but also assessing participants' frustration levels before and after they are given the opportunity to help or hurt the other child
+
+- **D.** Using the same experimental method but also taking measures of physiological arousal to ensure that the experimental and control groups differ on these measures
+
+
+### Question 23
+
+_Source images: images/Screenshot 2026-08-30 234253.png_
+
+How would the James–Lange theory of emotion explain the aggressive emotions experienced by the participants in the experimental condition? Participants experience physiological arousal from watching violent programs and:
+
+- **A.** this arousal is followed by aggressive emotions.
+
+- **B.** they simultaneously experience aggressive emotions.
+
+- **C.** they interpret their arousal, which results in aggressive emotions.
+
+- **D.** this leads to fight-or-flight responses that are perceived as aggressive emotions.
+
+
+### Question 24
+
+_Source images: images/Screenshot 2026-08-30 234258.png_
+
+Helping to instill norms and values related to violence and violent behavior, media exposure is an aspect of which process?
+
+- **A.** Assimilation
+
+- **B.** Discrimination
+
+- **C.** Socialization
+
+- **D.** Stratification
+
+
+### Question 25
+
+_Source images: images/Screenshot 2026-08-30 234303.png_
+
+The two age groups that participated in Study 1 are most likely to perform differently in which task developed by Piaget?
+
+- **A.** Looking for an object that the researcher hides from the participant's sight
+
+- **B.** Using accommodation to acquire knowledge about novel experiences
+
+- **C.** Deciding whether a given quantity of a liquid changes if it is poured from a narrow container to a wide container
+
+- **D.** Reasoning about how the end result of a story might have changed if the main character had acted differently
+
+
+## Passage 6 (Questions 30-34)
+
+_Source images: images/Screenshot 2026-08-30 234347.png_
+
+> As Jay is on his way to work in a crowded subway car, the train comes to a sudden halt and all the lights go off. Many passengers lose their balance and people start screaming. Within the commotion, several people stumble over Jay. He experiences intense fear: his heart begins to pound, he feels short of breath, and he begins to perspire.
+> After this event, Jay experiences physiological and emotional arousal whenever he is in a confined environment. He becomes unwilling to leave home because he feels that it is impossible for him to avoid confined spaces. To eliminate Jay's fear reaction, his therapist repeatedly places him in confined spaces. This causes Jay to experience intense discomfort initially, but the discomfort gradually subsides. His therapist continues this treatment until Jay's fear response is eliminated.
+> People who are subjected to traumatic events, such as Jay's incident on
+> the subway, sometimes report that they have a very vivid, emotional, and
+> lasting memory of all the details surrounding the experience. A researcher
+> surveyed 100 people about events they had experienced within the last year.
+> On the emotion scale, a measure of participants' emotional state, the
+> participants rated their emotional experience during each event on a scale
+> ranging from −10 (intensely negative) to 10 (extremely positive). On the
+> confidence scale, a measure of the participants' memory, the participants
+> indicated how confident they were regarding the accuracy of each memory
+> on a scale ranging from 0 (not at all confident) to 10 (highly confident). The
+> researcher hypothesized that participants experiencing intensely negative
+> emotions during an event would report higher confidence in their memory
+> than for events during which they had experienced intensely positive
+> emotions.
+
+
+### Question 30
+
+_Source images: images/Screenshot 2026-08-30 234355.png_
+
+Jay's fear of confined spaces results from:
+
+- **A.** stimulus discrimination.
+
+- **B.** stimulus generalization.
+
+- **C.** second-order conditioning.
+
+- **D.** spontaneous recovery.
+
+
+### Question 31
+
+_Source images: images/Screenshot 2026-08-30 234401.png_
+
+Which of Jay's responses is most likely to be an unconditioned response?
+
+- **A.** Intense panic reaction in an elevator
+
+- **B.** Physiological arousal in confined spaces
+
+- **C.** Emotional arousal during the commotion
+
+- **D.** Vivid memory of the event
+
+
+### Question 32
+
+_Source images: images/Screenshot 2026-08-30 234406.png_
+
+Based on the hypothesis of the study, the researcher most likely expects which finding?
+
+- **A.** A positive correlation between the participants' scores on the confidence scale and the number of events they recall from the last year
+
+- **B.** A positive correlation between the participants' scores on the emotion scale and their scores on the confidence scale
+
+- **C.** A negative correlation between the participants' scores on the confidence scale and the number of events they recall from the last year
+
+- **D.** A negative correlation between the participants' scores on the emotion scale and their scores on the confidence scale
+
+
+### Question 33
+
+_Source images: images/Screenshot 2026-08-30 234421.png_
+
+Increase in the activity of which branch of the nervous system is directly involved in Jay's physiological symptoms in confined spaces?
+
+- **A.** Parasympathetic nervous system
+
+- **B.** Central nervous system
+
+- **C.** Somatic nervous system
+
+- **D.** Sympathetic nervous system
+
+
+### Question 34
+
+_Source images: images/Screenshot 2026-08-30 234428.png, images/Screenshot 2026-08-30 234449.png_
+
+Levels of which hormone is most likely to reach higher levels as a part of Jay's conditioned response?
+
+- **A.** Oxytocin
+
+- **B.** Melatonin
+
+- **C.** Leptin
+
+- **D.** Cortisol
+
+
+## Passage 7 (Questions 35-38)
+
+_Source images: images/Screenshot 2026-08-30 234512.png_
+
+> Research has established that both biological factors (such as the
+> activation of the limbic system and low levels of inhibitory neurotransmitters)
+> and environmental factors (such as early attachment and parental control)
+> contribute to anxiety disorders. A study was designed to identify risk factors
+> for childhood anxiety. The researchers collected information on a sample of
+> child participants regarding the participants' parental history of anxiety
+> disorders, the parenting styles of the participants' parents, and the
+> participants' anxiety symptoms. Both parental history of anxiety disorders
+> and high parental criticism were found to be associated with childhood
+> anxiety. Selected results of the study are shown in Figure 1.
+> high
+> low
+> 60
+> 50
+> 40
+> 30
+> 20
+> 10
+> 0
+> Percentage of children with
+> high anxiety symptoms
+> Parental history
+> of anxiety
+> disorders
+> Parental
+> criticism
+> Percent of children with high anxiety symptoms by parental
+> history of anxiety disorders and parental criticism (Note: The
+> differences seen in the graph are statistically significant.)
+> A follow-up study included only the participants who showed high anxiety
+> symptoms. Researchers examined the role of coping strategies on anxiety
+> symptoms. Participating children were taught to engage in coping strategies
+> such as deep-breathing, positive thinking, and muscle relaxation. The
+> frequency with which the participants engaged in coping strategies was
+> assessed daily over a period of three weeks. During the first week, the
+> participants did not obtain any reward for engaging in coping strategies.
+> During the second week, they received a prize every time they engaged in a
+> learned coping strategy. During the third week, they received a prize in a
+> random fashion, only on some of the occasions when they engaged in a
+> learned coping strategy.
+> Adapted from J.L. Hudson and R.M. Rapee, “Parent-child Interactions and Anxiety Disorders: an Observational Study,” Behavior
+> Research and Therapy. ©2001 Elsevier; P.C. Kendall and C. Suveg, “Treating anxiety disorders in youth,” Child and Adolescent
+> Therapy: Cognitive-Behavioral Procedures. ©2006 Guilford Press.
+
+
+**Percent of children with high anxiety symptoms by parental history of anxiety disorders and parental criticism (Note: The differences seen in the graph are statistically significant.)**  
+_Source: images/Screenshot 2026-08-30 234518.png_
+
+> _Vertical bar graph. Y-axis: "Percentage of children with high anxiety symptoms," ranging from 0 to 60 in increments of 10. X-axis: two grouped categories, "Parental history of anxiety disorders" and "Parental criticism." Each category has two bars per the legend: black bar = "high", gray bar = "low". For "Parental history of anxiety disorders": high (black) bar ≈50%, low (gray) bar ≈15%. For "Parental criticism": high (black) bar ≈30%, low (gray) bar ≈15%. In both groupings, the high bar is taller than the low bar._
+
+
+### Question 35
+
+_Source images: images/Screenshot 2026-08-30 234530.png, images/Screenshot 2026-08-30 234830.png_
+
+Which procedure is being applied in the follow-up study of children who displayed high anxiety symptoms?
+
+- **A.** Extinction
+
+- **B.** Spontaneous recovery
+
+- **C.** Classical conditioning
+
+- **D.** Operant conditioning
+
+_(Figure 1: Percent of children with high anxiety symptoms by parental history of anxiety disorders and parental criticism (Note: The differences seen in the graph are statistically significant.) — Referenced figure caption only; the bar graph itself is not shown in this crop (text-only excerpt repeating the caption and follow-up study description).)_
+
+
+### Question 36
+
+_Source images: images/Screenshot 2026-08-30 234836.png_
+
+The schedule of reinforcement used in Week 3 of the follow-up study is:
+
+- **A.** variable ratio.
+
+- **B.** fixed ratio.
+
+- **C.** variable interval.
+
+- **D.** fixed interval.
+
+
+### Question 37
+
+_Source images: images/Screenshot 2026-08-30 234841.png_
+
+Based on the results of the first study, can the researchers conclude that genes play a causal role in anxiety disorders?
+
+- **A.** Yes, because the results revealed that children whose parents had anxiety symptoms were more likely to show these symptoms themselves
+
+- **B.** Yes, because the participants were randomly selected and the researchers controlled for parental history of anxiety
+
+- **C.** No, because high parental criticism, which is an environmental factor, was also related to an increase in anxiety symptoms
+
+- **D.** No because although parental history of anxiety predicts childhood anxiety, this may also be a result of social learning
+
+
+### Question 38
+
+_Source images: images/Screenshot 2026-08-30 234845.png_
+
+How is the frequency with which each child engages in coping strategies likely to change over the course of the follow-up study?
+
+- **A.** Decrease over the course of the study
+
+- **B.** Increase over the course of the study
+
+- **C.** Increase over the first two weeks of the study and decline on the third week
+
+- **D.** Be stable over the first two weeks of the study and fluctuate on the third week
+
+
+## Passage 8 (Questions 39-43)
+
+_Source images: images/Screenshot 2026-08-30 234927.png_
+
+> In Study 1, a study on stereotype threat, a group of men and women
+> were randomly assigned to take a standardized math assessment under
+> three different conditions. The conditions differed in terms of the information
+> that was given to the participants before they started working on the task.
+> The problem-solving group was told that the math assessment was a
+> problem-solving task. The math assessment group was told that their scores
+> were going to be used to study sex differences in mathematical ability. The
+> teaching intervention group was given the same information as the math
+> assessment group, but they were also instructed on what stereotype threat
+> is and how it may affect performance. Figure 1 summarizes the results of
+> this study.
+> men
+> women
+> men
+> women
+> Average percent correct
+> 70
+> 60
+> 50
+> 40
+> 30
+> 20
+> 10
+> 0
+> Problem
+> solving
+> Math
+> assessment
+> Teaching
+> intervention
+> Anxiety has often been considered an explanation for stereotype threat.
+> Study 2 was conducted to explore the role of anxiety on cognitive
+> performance. A group of participants was required to memorize lists of
+> target words. During the training phase, before each target word was
+> presented to them, the participants were asked to read a sentence aloud.
+> Half of the participants read sentences containing words that triggered self-
+> doubt, and the other half read sentences containing words that triggered
+> self-confidence. In the retrieval phase, the participants were asked to report
+> as many of the target words as they could remember. The participants
+> remembered more words under the self-confidence condition than the self-
+> doubt condition. As part of the design of Study 2, the researchers also
+> measured electrical skin conductance and salivary cortisol levels. They found
+> that the participants in the self-doubt condition had higher levels of skin
+> conductance and cortisol than those in the self-confidence condition.
+> Adapted from T. Schmader, "Stereotype Threat Deconstructed," Current Directions in Psychological Science. ©2010 SAGE
+> Publications.
+
+
+**Figure 0**  
+_Source: images/Screenshot 2026-08-30 234927.png_
+
+> _A small legend box shown inline with the passage text, containing two entries: a filled/gray square labeled 'men' and an open/white square labeled 'women'. This is the legend for Figure 1, shown separately before the actual figure._
+
+
+**Average percent correct on the math assessment by group**  
+_Source: images/Screenshot 2026-08-30 234931.png_
+
+> _A bar graph with y-axis 'Average percent correct' ranging from 0 to 70 in increments of 10, and x-axis showing three conditions: 'Problem solving', 'Math assessment', and 'Teaching intervention'. For each condition, there are two bars (with error bars) representing men (gray/filled) and women (white/open). Problem solving: men ~53%, women ~58% (women slightly higher, error bars overlapping). Math assessment: men ~62%, women ~38% (large gap, men substantially higher, women much lower, error bars not overlapping). Teaching intervention: men ~57%, women ~55% (nearly equal, error bars overlapping). This shows women underperform relative to men only in the math assessment condition (where stereotype threat is invoked), and the gap disappears in the problem-solving and teaching intervention conditions._
+
+
+### Question 39
+
+_Source images: images/Screenshot 2026-08-30 234940.png_
+
+The training procedure used in Study 2 primarily engages:
+
+- **A.** implicit memory.
+
+- **B.** procedural memory.
+
+- **C.** sensory memory.
+
+- **D.** working memory.
+
+
+### Question 40
+
+_Source images: images/Screenshot 2026-08-30 234954.png_
+
+Given the skin conductivity results from Study 2, participants in the self-doubt condition are likely to display all of the following characteristics EXCEPT:
+
+- **A.** increased sympathetic nervous system activity.
+
+- **B.** increased blood sugar through gluconeogenesis.
+
+- **C.** increased dilation of the pupils.
+
+- **D.** increased peristalsis along the digestive tract.
+
+
+### Question 41
+
+_Source images: images/Screenshot 2026-08-30 234959.png_
+
+The effect of stereotype threat is observed in the performance of:
+
+- **A.** the women in the problem-solving group.
+
+- **B.** the men in the teaching intervention group.
+
+- **C.** the women in the math assessment group.
+
+- **D.** both the men and women in the teaching intervention group.
+
+
+### Question 42
+
+_Source images: images/Screenshot 2026-08-30 235007.png_
+
+Which prediction is best supported by the findings in the passage?
+
+- **A.** Anxiety is an unlikely explanation for the effect of stereotype threat.
+
+- **B.** Given the results from Study 2, stereotype threat is caused by the arousal of the sympathetic nervous system due to self-doubt.
+
+- **C.** Given the results from the teaching intervention group, stereotype threat is not likely to be due to self-fulfilling prophecies.
+
+- **D.** The effect of stereotype threat may be eliminated if individuals are made aware of it.
+
+
+### Question 43
+
+_Source images: images/Screenshot 2026-08-30 235014.png_
+
+Which conclusion is NOT supported by Figure 1?
+
+- **A.** Participants' performance in the problem-solving and teaching intervention conditions was comparable.
+
+- **B.** Women in the teaching intervention condition outperformed the women in the math assessment condition.
+
+- **C.** Women performed significantly worse than men only in the math assessment condition.
+
+- **D.** Teaching intervention instructions improved both men's and women's performance.
+
+
+## Passage 9 (Questions 48-51)
+
+_Source images: images/Screenshot 2026-08-30 235047.png, images/Screenshot 2026-08-30 235056.png_
+
+> Categorical perception (CP) refers to perceiving continuous stimuli as
+> belonging to discrete categories. A defining characteristic of CP is that the
+> same physical difference between two stimuli can be detected when they
+> belong to different perceptual categories, but cannot be detected when the
+> two stimuli belong to the same category.
+> In a study examining CP of color (Study 1), native English speakers were
+> presented with a target color from the blue–green continuum. After a five-
+> second delay, they were shown the response options of two color patches,
+> one of which matched the target color. They were asked to select the option
+> that best matched the target color. Participants' responses were significantly
+> faster and more accurate when the response options belonged to different
+> color categories than when they were from the same color category. This
+> finding occurred even when the difference in hues between cross-category
+> options was equal to the difference in hues between within-category options.
+
+
+### Question 48
+
+_Source images: images/Screenshot 2026-08-30 235108.png_
+
+Study 1 is replicated with split-brain patients. Participants are presented with the target colors only in the left side of their visual field. This procedure would specifically allow the researchers to investigate whether:
+
+- **A.** the patients show CP in the absence of access to color names.
+
+- **B.** the corpus callosum plays a significant role in color processing.
+
+- **C.** the patients show CP in the absence of access to color perception.
+
+- **D.** the frontal lobe plays a significant role in the recognition of color.
+
+
+### Question 49
+
+_Source images: images/Screenshot 2026-08-30 235134.png_
+
+Which impairment is LEAST likely to interfere with a participant's performance in Study 1?
+
+- **A.** Having significantly fewer rods than the average human
+
+- **B.** Having significantly fewer cones than the average human
+
+- **C.** Having a lesion in the occipital cortex
+
+- **D.** Having a lesion in the fovea
+
+
+### Question 50
+
+_Source images: images/Screenshot 2026-08-30 235144.png_
+
+A follow-up study compares the perceptual discrimination performance of Berinmo speakers and native English speakers. What does the linguistic determinism hypothesis predict? Compared to the perceptual discrimination performance of native English speakers, performance of the Berinmo speakers will be:
+
+- **A.** equal on the nol-wor continuum and worse on the blue-green continuum.
+
+- **B.** equal on both the nol-wor continuum and the blue-green continuum.
+
+- **C.** worse on both the nol-wor continuum and the blue-green continuum.
+
+- **D.** worse on the nol-wor continuum and better on the blue-green continuum.
+
+
+### Question 51
+
+_Source images: images/Screenshot 2026-08-30 235152.png_
+
+The stimuli used in Study 1 most likely vary in which physical dimension?
+
+- **A.** Wavelength
+
+- **B.** Amplitude
+
+- **C.** Purity
+
+- **D.** Brightness
+
+
+## Passage 10 (Questions 52-55)
+
+_Source images: images/Screenshot 2026-08-30 235231.png_
+
+> Annually, more than one million Americans undergo cardiac
+> revascularization procedures, which include coronary artery bypass graft
+> surgery and percutaneous transluminal coronary angioplasty. Previous
+> research has indicated the existence of large and persistent differences in
+> the use of these procedures by race and gender.
+> To investigate disparities in revascularization usage, a team of
+> researchers randomly sampled 5880 Medicare beneficiaries from five states
+> (patients were between the ages of 65 and 75). From that random sample,
+> 567 patient records were excluded because the hospital refused to
+> participate or because medical records were either missing or incomplete.
+> The researchers reviewed medical records in order to collect the following
+> data: utilization and clinical appropriateness of revascularization by race and
+> gender; the proportion of patients for whom revascularization was medically
+> indicated but that did not receive treatment; and mortality rates for coronary
+> revascularization versus medical therapy.
+> The researchers controlled for patient characteristics, such as age and
+> income, and for hospital characteristics, such as hospital revascularization
+> rate. Analysis of the data found that revascularization procedures were
+> medically indicated more frequently among White patients than Black
+> patients. Revascularization procedures were also medically indicated more
+> among male patients than female patients. Study results comparing
+> revascularization rates by race and gender are presented in tables 1 and 2.
+> (Note: There were no significant differences by race or gender in terms of
+> patient election to have revascularization.)
+> (when Medically Indicated) by Race
+> (when Medically Indicated) by Gender
+> Adapted from A.M. Epstein et al., "Race and Gender Disparities in Rates of Cardiac Revascularization," Medical Care ©2003
+> Lippincott Williams & Wilkins, Inc.
+
+
+_Source: images/Screenshot 2026-08-30 235237.png_
+
+**Percentage of Patients Who Did Not Receive Revascularization (when Medically Indicated) by Race**
+
+| Race | Percentage |
+|---|---|
+| Black patients | 40% |
+| White patients | 23% |
+
+
+_Source: images/Screenshot 2026-08-30 235237.png_
+
+**Percentage of Patients Who Did Not Receive Revascularization (when Medically Indicated) by Gender**
+
+| Gender | Percentage |
+|---|---|
+| Male patients | 25% |
+| Female patients | 22% |
+
+
+### Question 52
+
+_Source images: images/Screenshot 2026-08-30 235247.png_
+
+Controlling for patient and hospital characteristics means that the researchers:
+
+- **A.** received information from the patients and hospitals in order to construct a sample.
+
+- **B.** conducted statistical analyses to establish a causal relationship between variables.
+
+- **C.** determined variations across the sample of patients and hospitals included in the study.
+
+- **D.** considered various factors in the sample that could be confounding variables.
+
+
+### Question 53
+
+_Source images: images/Screenshot 2026-08-30 235253.png_
+
+Which of the following conclusions about healthcare delivery is best supported by the research in the passage?
+
+- **A.** The study provides evidence of individual discrimination in provider attitudes, which confirms racial prejudice in revascularization use.
+
+- **B.** The study provides evidence that some healthcare providers may show racial prejudice when making decisions about revascularization use.
+
+- **C.** The study provides evidence of institutional discrimination in revascularization use, but cannot prove racial prejudice in provider attitudes.
+
+- **D.** The study provides evidence that disparities in revascularization use are unrelated to quality of care and thus do not show racial prejudice.
+
+
+### Question 54
+
+_Source images: images/Screenshot 2026-08-30 235259.png_
+
+Based on information in the passage, which aspect of the research design poses a methodological limitation?
+
+- **A.** The reliance upon medical records as a source of data
+
+- **B.** The lack of interview data with patients or providers
+
+- **C.** The percent from the sample that was excluded from the study
+
+- **D.** The number of patients who were included in the study
+
+
+### Question 55
+
+_Source images: images/Screenshot 2026-08-30 235305.png_
+
+A researcher suggests that the healthcare disparities described in the passage are partly due to cultural bias. Which concept is most relevant to this hypothesis?
+
+- **A.** Social reproduction
+
+- **B.** Stereotype threat
+
+- **C.** Social mobility
+
+- **D.** Ethnocentrism
+
+
+## Standalone Questions
+
+
+### Question 14
+
+_Source images: images/Screenshot 2026-08-30 234106.png_
+
+Four students, all of whom oppose a university policy to ban alcohol on campus, are placed in a room and asked to discuss their views on this policy for an hour. Which outcome is most likely?
+
+- **A.** The students' views will be unchanged.
+
+- **B.** The students will oppose the campus policy more strongly.
+
+- **C.** The students will no longer oppose the campus policy.
+
+- **D.** The students' views will become more moderate.
+
+
+### Question 15
+
+_Source images: images/Screenshot 2026-08-30 234112.png_
+
+From the perspective of conflict theory, which pair of factors would be assumed to have the greatest impact on patients' relationships with their doctors?
+
+- **A.** Norms and rituals
+
+- **B.** Power and status
+
+- **C.** Aggression and attachment
+
+- **D.** Conformity and assimilation
+
+
+### Question 16
+
+_Source images: images/Screenshot 2026-08-30 234119.png_
+
+Which statement best illustrates the concept of anomie?
+
+- **A.** A group promotes polarized thinking among its members.
+
+- **B.** An individual feels disconnected from the larger community.
+
+- **C.** A group overemphasizes consensus among its members.
+
+- **D.** An individual feels too influenced by the larger community.
+
+
+### Question 26
+
+_Source images: images/Screenshot 2026-08-30 234309.png_
+
+Country A has a relatively weak economy, a weak political infrastructure, and competes poorly in the globalized economy. Country A is also dependent on Country B, which has a much stronger economy. According to world systems theory, Country A is a:
+
+- **A.** core nation.
+
+- **B.** semi-periphery nation.
+
+- **C.** periphery nation.
+
+- **D.** developed nation.
+
+
+### Question 27
+
+_Source images: images/Screenshot 2026-08-30 234315.png_
+
+Some nonverbal behaviors are interpreted similarly across cultures, while other nonverbal behaviors show cultural variation. People in different cultures are most likely to vary in their interpretations of:
+
+- **A.** adults' facial expressions.
+
+- **B.** children's facial expressions.
+
+- **C.** postures and gestures.
+
+- **D.** frowns and smiles.
+
+
+### Question 28
+
+_Source images: images/Screenshot 2026-08-30 234320.png_
+
+Researchers surveyed participants on how frequently they help others in order to study the effect of age on altruistic behavior. Compared to older participants, younger participants reported engaging in altruistic behavior more frequently. Given the research design, which statement is NOT supported?
+
+- **A.** Participants' concerns about impression management could influence their survey responses.
+
+- **B.** The researchers could determine whether age is directly responsible for altruistic behaviors.
+
+- **C.** Variables such as gender and socioeconomic status could affect participants' responses.
+
+- **D.** Altruism was operationalized as the participants' responses on the survey.
+
+
+### Question 29
+
+_Source images: images/Screenshot 2026-08-30 234326.png_
+
+According to Mead, the spontaneous and autonomous part of our unified self is the:
+
+- **A.** id.
+
+- **B.** ego.
+
+- **C.** I.
+
+- **D.** me.
+
+
+### Question 44
+
+_Source images: images/Screenshot 2026-08-30 235026.png_
+
+XO XO XO XO XO XO Perceiving the characters shown as 6 units rather than as 12 individual characters is best explained by the Gestalt principle of:
+
+- **A.** similarity.
+
+- **B.** proximity.
+
+- **C.** continuity.
+
+- **D.** common fate.
+
+_(Figure 1:  — A row of the text characters 'XO' repeated six times with spacing between each pair, arranged horizontally: XO XO XO XO XO XO. The pairing of X and O together (with larger gaps between each XO pair than within each pair) causes the six pairs to be perceived as 6 grouped units rather than 12 separate individual letters.)_
+
+
+### Question 45
+
+_Source images: images/Screenshot 2026-08-30 235030.png_
+
+A college student is late for class and is running down the stairs with several textbooks. The student falls, dropping all of the books. The student is most likely to receive help if:
+
+- **A.** only one other student was present when the accident occurred.
+
+- **B.** the stairway was crowded when the accident occurred.
+
+- **C.** the accident occurred at the end of the day.
+
+- **D.** the college was in an urban neighborhood.
+
+
+### Question 46
+
+_Source images: images/Screenshot 2026-08-30 235035.png_
+
+Which statement best explains meritocracy in terms of status? Meritocracy occurs when selections are made based on:
+
+- **A.** master status rather than achieved status.
+
+- **B.** achieved status rather than ascribed status.
+
+- **C.** ascribed status rather than social status.
+
+- **D.** social status rather than achieved status.
+
+
+### Question 47
+
+_Source images: images/Screenshot 2026-08-30 235041.png_
+
+Some studies find that the association between discrimination and health is stronger for U.S.-born members of certain ethnic minority groups than it is for immigrant members of the same ethnic minority group. This finding suggests that the possible effect of discrimination on health is most likely related to:
+
+- **A.** social segregation in the U.S.
+
+- **B.** length of residence in the U.S.
+
+- **C.** place of residence in the U.S.
+
+- **D.** social integration in the U.S.
+
+
+### Question 56
+
+_Source images: images/Screenshot 2026-08-30 235313.png_
+
+Although many patients wait up to six weeks for an appointment at a busy clinic, an acquaintance of one of the clinic's physicians is regularly seen with less than a week's notice. This scenario best illustrates the use of:
+
+- **A.** social status.
+
+- **B.** social capital.
+
+- **C.** cultural capital.
+
+- **D.** charismatic authority.
+
+
+### Question 57
+
+_Source images: images/Screenshot 2026-08-30 235319.png_
+
+An employee is concerned with making a good impression at a new job. Struggling with feelings of being overly challenged by having to learn new office software, he repeatedly calls his computer "dumb" and "stupid." According to psychoanalytic theory, this behavior results from:
+
+- **A.** projection.
+
+- **B.** reaction formation.
+
+- **C.** regression.
+
+- **D.** sublimation.
+
+
+### Question 58
+
+_Source images: images/Screenshot 2026-08-30 235323.png_
+
+Which statement about technology is most consistent with social constructionism?
+
+- **A.** Technology is the predictable application of knowledge.
+
+- **B.** Technology is built from the collective effort of innovators.
+
+- **C.** Technology is the human response to environmental pressures.
+
+- **D.** Technology is embedded with the values of groups who create it.
+
+
+### Question 59
+
+_Source images: images/Screenshot 2026-08-30 235330.png_
+
+Which statement explains why looking at a dimly lit object with peripheral vision at night results in the clearest image of the object? When one looks to the side of an object:
+
+- **A.** two images of the object are sent to the brain, which results in a clearer image.
+
+- **B.** its image falls in the periphery of the retina, which is denser in rods.
+
+- **C.** its image falls on the fovea, which results in the clearest image.
+
+- **D.** a single image of the object is sent to the brain, which results in a clearer image.

@@ -1,0 +1,7 @@
+INFO: Could not find "tesseract".
+INFO: Could not find ";".
+INFO: Could not find "--version".
+INFO: Could not find "echo".
+INFO: Could not find "---;".
+INFO: Could not find "-c".
+INFO: Could not find "import PIL; from PIL import Image; im=Image.open(r'images/Screenshot 2026-08-30 220927.png'); print(im.size, im.mode)".

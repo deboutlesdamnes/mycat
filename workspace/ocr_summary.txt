@@ -1,0 +1,175 @@
+TOTAL IMAGES: 351
+[0] Screenshot 2026-08-30 220927.png  n=16
+      first: Passage 1 (Questions 1-4)
+      last : designed and synthesized transition state analogs. One such molecule is
+[1] Screenshot 2026-08-30 220939.png  n=15  gap=12s
+      first: Compound 1 has an in vivo half-life of 1.8 h and is primarily metabolized
+      last : properties and increase its potency and half-life.
+[2] Screenshot 2026-08-30 220948.png  n=6  gap=9s
+      first: Question 1
+      last : D. a catalyst.
+[3] Screenshot 2026-08-30 220958.png  n=6  gap=10s
+      first: Question 2
+      last : D. 64
+[4] Screenshot 2026-08-30 221006.png  n=6  gap=8s
+      first: Question 3
+      last : O D. [Ca2+][C2O42-] < Ksp
+[5] Screenshot 2026-08-30 221013.png  n=7  gap=7s
+      first: Question 4
+      last : D. Phe and Pro
+[6] Screenshot 2026-08-30 221026.png  n=26  gap=13s
+      first: Passage 2 (Questions 5-9)
+      last : Capacitance per unit length of
+[7] Screenshot 2026-08-30 221035.png  n=41  gap=9s
+      first: Table 1
+      last : RB
+[8] Screenshot 2026-08-30 221042.png  n=14  gap=7s
+      first: Figure 1 A segment of a simplified electric circuit model of the axon
+      last : 100 m/s.
+[9] Screenshot 2026-08-30 221118.png  n=3  gap=36s
+      first: AdaptedfromP.H.Bunton,W.P.HenryandJ.P.Wikswo,A simpleintegratedcircuit model ofp
+      last : physicscourse.AmericanJournalofPhysics.O1973AmericanAssociationofPhysicsTeachers
+[10] Screenshot 2026-08-30 221125.png  n=10  gap=7s
+      first: Question5
+      last : Membrane
+[11] Screenshot 2026-08-30 221137.png  n=11  gap=12s
+      first: O B.
+      last : fluid
+[12] Screenshot 2026-08-30 221146.png  n=11  gap=9s
+      first: Membrane
+      last : fluid
+[13] Screenshot 2026-08-30 221246.png  n=27  gap=60s
+      first: Passage 2 (Questions 5-9)
+      last : Capacitance per unit length of
+[14] Screenshot 2026-08-30 221253.png  n=6  gap=7s
+      first: Question6
+      last : D. increase the capacitance of the axon.
+[15] Screenshot 2026-08-30 221303.png  n=7  gap=10s
+      first: Question 7
+      last : D.Chloride ions
+[16] Screenshot 2026-08-30 221309.png  n=8  gap=6s
+      first: Question 8
+      last : D.10 m
+[17] Screenshot 2026-08-30 221316.png  n=8  gap=7s
+      first: Question 9
+      last : D. Potential, resistance per unit length, and length
+[18] Screenshot 2026-08-30 221324.png  n=6  gap=8s
+      first: Question 1o
+      last : D.10
+[19] Screenshot 2026-08-30 221330.png  n=6  gap=6s
+      first: Question 11
+      last : D. strong acid.
+[20] Screenshot 2026-08-30 221336.png  n=9  gap=6s
+      first: Question 12
+      last : D. NOz(OH) was an oxyacid and Ni(OH)2 was a base.
+[21] Screenshot 2026-08-30 221344.png  n=6  gap=8s
+      first: Question13
+      last : D.a noble gas.
+[22] Screenshot 2026-08-30 221458.png  n=9  gap=74s
+      first: Question 14
+      last : D. Prostaglandins
+[23] Screenshot 2026-08-30 221505.png  n=7  gap=7s
+      first: Question 15
+      last : D.0.20M
+[24] Screenshot 2026-08-30 221524.png  n=30  gap=19s
+      first: Question 16
+      last : HO
+[25] Screenshot 2026-08-30 221531.png  n=21  gap=7s
+      first: C.
+      last : Sucrose
+[26] Screenshot 2026-08-30 221540.png  n=6  gap=9s
+      first: Question 17
+      last : D.+2
+[27] Screenshot 2026-08-30 221553.png  n=19  gap=13s
+      first: Passage 4 (Questions 18-21)
+      last : of Compound 2
+[28] Screenshot 2026-08-30 221615.png  n=29  gap=22s
+      first: In addition to the wild-type enzyme (CYP2C9*1), known point mutations
+      last : inhibition of the CYP2C9-mediated processing of warfarin (Figure 2).
+[29] Screenshot 2026-08-30 221626.png  n=8  gap=11s
+      first: Compound 1 is known to increase the rate of adverse drug side effects in
+      last : the presence and absence of Compound 1
+[30] Screenshot 2026-08-30 221641.png  n=12  gap=15s
+      first: Question 18
+      last : favorably with the stationary phase as Compound 1.
+[31] Screenshot 2026-08-30 221649.png  n=19  gap=8s
+      first: Passage 4 (Questions 18-21)
+      last : of Compound 2
+[32] Screenshot 2026-08-30 221657.png  n=29  gap=8s
+      first: In addition to the wild-type enzyme (CYP2C9*1), known point mutations
+      last : inhibition of the CYP2C9-mediated processing of warfarin (Figure 2).
+[33] Screenshot 2026-08-30 221703.png  n=5  gap=6s
+      first: o(min/uM)
+      last : the presence and absence of Compound 1
+[34] Screenshot 2026-08-30 221714.png  n=12  gap=11s
+      first: Question 19
+      last : 359 are charged at physiological pH.
+[35] Screenshot 2026-08-30 221722.png  n=9  gap=8s
+      first: Question 20
+      last : OD. is different for all three variants.
+[36] Screenshot 2026-08-30 221730.png  n=9  gap=8s
+      first: Question 21
+      last : D. an electrophile.
+[37] Screenshot 2026-08-30 221739.png  n=20  gap=9s
+      first: Passage 5 (Questions 22-25)
+      last : of the buret until the water level decreased to the 50.o0-mL mark, the
+[38] Screenshot 2026-08-30 221756.png  n=6  gap=17s
+      first: highest mark on the buret (see Figure 1). Then 1o0 mL of 6 M HCl was
+      last : Figure 1
+[39] Screenshot 2026-08-30 221802.png  n=6  gap=6s
+      first: Question 22
+      last : D.Ionization
+[40] Screenshot 2026-08-30 221808.png  n=8  gap=6s
+      first: Question 23
+      last : O D. 26 times greater.
+[41] Screenshot 2026-08-30 221813.png  n=7  gap=5s
+      first: Question 24
+      last : D.R = PV/nT
+[42] Screenshot 2026-08-30 221819.png  n=6  gap=6s
+      first: Question25
+      last : D. To study the reactivity of magnesium with acids
+[43] Screenshot 2026-08-30 221842.png  n=8  gap=23s
+      first: Question 26
+      last : D. 10.6 kg
+[44] Screenshot 2026-08-30 221850.png  n=12  gap=8s
+      first: Question27
+      last : observed.
+[45] Screenshot 2026-08-30 221901.png  n=10  gap=11s
+      first: Question 28
+      last : D. HF has the highest vapor pressure among the Group 7A hydrides.
+[46] Screenshot 2026-08-30 221915.png  n=6  gap=14s
+      first: Question29
+      last : D. Number of protons and neutrons found in the nucleus of an atom
+[47] Screenshot 2026-08-30 221923.png  n=10  gap=8s
+      first: Passage 6 (Questions 30-33)
+      last : ciprofloxacin (CPFX, Figure 1) and bovine serum albumin (BSA).
+[48] Screenshot 2026-08-30 221932.png  n=15  gap=9s
+      first: HO
+      last : and II, respectivelv). These data are shown in Table 1.
+[49] Screenshot 2026-08-30 221942.png  n=38  gap=10s
+      first: Table 1
+      last : 0.64
+[50] Screenshot 2026-08-30 221952.png  n=49  gap=10s
+      first: Table 2
+      last : ND
+[51] Screenshot 2026-08-30 221958.png  n=6  gap=6s
+      first: Question3o
+      last : D. have little effect on the amount of bound CPFX.
+[52] Screenshot 2026-08-30 222004.png  n=7  gap=6s
+      first: Question 31
+      last : D.Palmitoleic acid
+[53] Screenshot 2026-08-30 222009.png  n=7  gap=5s
+      first: Question 32
+      last : D. at a site distinct from either Site I or Site II.
+[54] Screenshot 2026-08-30 222015.png  n=6  gap=6s
+      first: Question 33
+      last : D.D and H
+[55] Screenshot 2026-08-30 222036.png  n=15  gap=21s
+      first: Passage 7 (Questions 34-37)
+      last : calculated from the values of V and L.)
+[56] Screenshot 2026-08-30 222046.png  n=45  gap=10s
+      first: Table 1
+Traceback (most recent call last):
+  File "c:\Users\jason\Documents\mycat\analyze_ocr.py", line 30, in <module>
+    print(f"      last : {last[:80]}")
+UnicodeEncodeError: 'cp932' codec can't encode character '\xb7' in position 19: illegal multibyte sequence

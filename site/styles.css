@@ -912,6 +912,8 @@ body {
   font-weight: 600;
   cursor: help;
 }
+/* Link variant: the whole pill navigates to its practice deck. */
+.concept.concept-chip-link { cursor: pointer; }
 .app .concept.concept-chip {
   border-color: var(--accent);
   background: color-mix(in srgb, var(--accent) 14%, transparent);

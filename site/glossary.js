@@ -595,11 +595,16 @@
   }
 
   // Highlighted, hoverable pill for a question's primary key concept.
-  function conceptChip(term) {
+  // Pass `href` to render it as a link (e.g. "practice this deck") instead of a
+  // non-interactive span; it keeps the same .concept tooltip/hover behavior.
+  function conceptChip(term, href) {
     if (!term) return "";
     const t = String(term);
-    return '<span class="concept concept-chip" tabindex="0" data-term="' + escapeHtml(t) + '">' +
-      '<span class="concept-chip-label">Key concept</span>' + escapeHtml(t) + '</span>';
+    const inner = '<span class="concept-chip-label">Key concept</span>' + escapeHtml(t);
+    if (href) {
+      return '<a class="concept concept-chip concept-chip-link" href="' + escapeHtml(href) + '" data-term="' + escapeHtml(t) + '">' + inner + '</a>';
+    }
+    return '<span class="concept concept-chip" tabindex="0" data-term="' + escapeHtml(t) + '">' + inner + '</span>';
   }
 
   // Render a question's figure as a `.figure` block plus an optional caption.

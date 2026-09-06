@@ -1,0 +1,670 @@
+1: ===== IMAGE 000 | Screenshot 2026-08-30 220927.png | 1113x971 =====
+3: Passage 1 (Questions 1-4)
+16: Figure 1 The peptide bond cleaved by HIV protease
+20: ===== IMAGE 001 | Screenshot 2026-08-30 220939.png | 1138x816 =====
+38: ===== IMAGE 002 | Screenshot 2026-08-30 220948.png | 1133x534 =====
+40: Question 1
+47: ===== IMAGE 003 | Screenshot 2026-08-30 220958.png | 792x492 =====
+49: Question 2
+56: ===== IMAGE 004 | Screenshot 2026-08-30 221006.png | 1110x490 =====
+58: Question 3
+65: ===== IMAGE 005 | Screenshot 2026-08-30 221013.png | 1150x500 =====
+67: Question 4
+75: ===== IMAGE 006 | Screenshot 2026-08-30 221026.png | 1168x961 =====
+77: Passage 2 (Questions 5-9)
+85: Figure 1.
+86: Table 1
+104: ===== IMAGE 007 | Screenshot 2026-08-30 221035.png | 1186x943 =====
+106: Table 1
+148: ===== IMAGE 008 | Screenshot 2026-08-30 221042.png | 1108x1001 =====
+150: Figure 1 A segment of a simplified electric circuit model of the axon
+159: Figure 2 A typical nerve impulse, also known as the action potential
+165: ===== IMAGE 009 | Screenshot 2026-08-30 221118.png | 1127x115 =====
+171: ===== IMAGE 010 | Screenshot 2026-08-30 221125.png | 1194x994 =====
+173: Question5
+184: ===== IMAGE 011 | Screenshot 2026-08-30 221137.png | 1165x1010 =====
+198: ===== IMAGE 012 | Screenshot 2026-08-30 221146.png | 714x1006 =====
+212: ===== IMAGE 013 | Screenshot 2026-08-30 221246.png | 1174x949 =====
+214: Passage 2 (Questions 5-9)
+223: Figure 1.
+224: Table 1
+242: ===== IMAGE 014 | Screenshot 2026-08-30 221253.png | 741x440 =====
+244: Question6
+251: ===== IMAGE 015 | Screenshot 2026-08-30 221303.png | 1158x476 =====
+253: Question 7
+261: ===== IMAGE 016 | Screenshot 2026-08-30 221309.png | 1156x510 =====
+263: Question 8
+272: ===== IMAGE 017 | Screenshot 2026-08-30 221316.png | 1217x512 =====
+274: Question 9
+283: ===== IMAGE 018 | Screenshot 2026-08-30 221324.png | 785x438 =====
+285: Question 1o
+292: ===== IMAGE 019 | Screenshot 2026-08-30 221330.png | 651x436 =====
+294: Question 11
+301: ===== IMAGE 020 | Screenshot 2026-08-30 221336.png | 1156x509 =====
+303: Question 12
+313: ===== IMAGE 021 | Screenshot 2026-08-30 221344.png | 945x448 =====
+315: Question13
+322: ===== IMAGE 022 | Screenshot 2026-08-30 221458.png | 1144x931 =====
+324: Question 14
+334: ===== IMAGE 023 | Screenshot 2026-08-30 221505.png | 1127x422 =====
+336: Question 15
+344: ===== IMAGE 024 | Screenshot 2026-08-30 221524.png | 1121x960 =====
+346: Question 16
+377: ===== IMAGE 025 | Screenshot 2026-08-30 221531.png | 906x710 =====
+401: ===== IMAGE 026 | Screenshot 2026-08-30 221540.png | 1025x503 =====
+403: Question 17
+410: ===== IMAGE 027 | Screenshot 2026-08-30 221553.png | 1149x920 =====
+412: Passage 4 (Questions 18-21)
+429: Figure 1 Structure of Compound 1 and the CYP2C9-mediated production
+432: ===== IMAGE 028 | Screenshot 2026-08-30 221615.png | 1186x806 =====
+441: Table 1
+464: ===== IMAGE 029 | Screenshot 2026-08-30 221626.png | 1179x677 =====
+475: ===== IMAGE 030 | Screenshot 2026-08-30 221641.png | 1121x759 =====
+477: Question 18
+490: ===== IMAGE 031 | Screenshot 2026-08-30 221649.png | 1176x918 =====
+492: Passage 4 (Questions 18-21)
+509: Figure 1 Structure of Compound 1 and the CYP2C9-mediated production
+512: ===== IMAGE 032 | Screenshot 2026-08-30 221657.png | 1174x824 =====
+521: Table 1
+544: ===== IMAGE 033 | Screenshot 2026-08-30 221703.png | 1212x557 =====
+552: ===== IMAGE 034 | Screenshot 2026-08-30 221714.png | 1135x725 =====
+554: Question 19
+567: ===== IMAGE 035 | Screenshot 2026-08-30 221722.png | 1170x618 =====
+569: Question 20
+579: ===== IMAGE 036 | Screenshot 2026-08-30 221730.png | 1116x681 =====
+581: Question 21
+591: ===== IMAGE 037 | Screenshot 2026-08-30 221739.png | 1212x985 =====
+593: Passage 5 (Questions 22-25)
+614: ===== IMAGE 038 | Screenshot 2026-08-30 221756.png | 1177x959 =====
+621: Figure 1
+623: ===== IMAGE 039 | Screenshot 2026-08-30 221802.png | 581x496 =====
+625: Question 22
+632: ===== IMAGE 040 | Screenshot 2026-08-30 221808.png | 1172x533 =====
+634: Question 23
+643: ===== IMAGE 041 | Screenshot 2026-08-30 221813.png | 1157x545 =====
+645: Question 24
+653: ===== IMAGE 042 | Screenshot 2026-08-30 221819.png | 1032x499 =====
+655: Question25
+662: ===== IMAGE 043 | Screenshot 2026-08-30 221842.png | 1177x586 =====
+664: Question 26
+673: ===== IMAGE 044 | Screenshot 2026-08-30 221850.png | 1197x759 =====
+675: Question27
+688: ===== IMAGE 045 | Screenshot 2026-08-30 221901.png | 1093x670 =====
+690: Question 28
+701: ===== IMAGE 046 | Screenshot 2026-08-30 221915.png | 1103x513 =====
+703: Question29
+710: ===== IMAGE 047 | Screenshot 2026-08-30 221923.png | 1178x557 =====
+712: Passage 6 (Questions 30-33)
+723: ===== IMAGE 048 | Screenshot 2026-08-30 221932.png | 1258x939 =====
+734: Figure 1 Structures of CPFX, warfarin, and ibuprofen
+741: ===== IMAGE 049 | Screenshot 2026-08-30 221942.png | 1186x1005 =====
+743: Table 1
+759: Table 2
+782: ===== IMAGE 050 | Screenshot 2026-08-30 221952.png | 1182x991 =====
+784: Table 2
+812: Table 3
+834: ===== IMAGE 051 | Screenshot 2026-08-30 221958.png | 871x454 =====
+836: Question3o
+843: ===== IMAGE 052 | Screenshot 2026-08-30 222004.png | 1162x564 =====
+845: Question 31
+853: ===== IMAGE 053 | Screenshot 2026-08-30 222009.png | 1168x532 =====
+855: Question 32
+863: ===== IMAGE 054 | Screenshot 2026-08-30 222015.png | 1166x467 =====
+865: Question 33
+872: ===== IMAGE 055 | Screenshot 2026-08-30 222036.png | 1150x712 =====
+874: Passage 7 (Questions 34-37)
+890: ===== IMAGE 056 | Screenshot 2026-08-30 222046.png | 1176x820 =====
+892: Table 1
+938: ===== IMAGE 057 | Screenshot 2026-08-30 222054.png | 1138x548 =====
+940: Question 34
+948: ===== IMAGE 058 | Screenshot 2026-08-30 222120.png | 1167x986 =====
+950: Question35
+957: ===== IMAGE 059 | Screenshot 2026-08-30 222124.png | 426x337 =====
+963: ===== IMAGE 060 | Screenshot 2026-08-30 222135.png | 1192x605 =====
+965: Question36
+975: ===== IMAGE 061 | Screenshot 2026-08-30 222146.png | 1133x571 =====
+977: Question 37
+987: ===== IMAGE 062 | Screenshot 2026-08-30 222304.png | 1191x971 =====
+989: Passage 8 (Questions 38-42)
+998: Figure 1 Three types of linkages that can occur between isoprene units in
+1003: ===== IMAGE 063 | Screenshot 2026-08-30 222316.png | 1163x987 =====
+1008: Figure 2 Structure of squalene (Compound 1)
+1025: ===== IMAGE 064 | Screenshot 2026-08-30 222321.png | 1127x914 =====
+1055: ===== IMAGE 065 | Screenshot 2026-08-30 222327.png | 1216x903 =====
+1057: Question 38
+1073: ===== IMAGE 066 | Screenshot 2026-08-30 222334.png | 1183x976 =====
+1075: Question 39
+1088: ===== IMAGE 067 | Screenshot 2026-08-30 222339.png | 1116x727 =====
+1090: Question 40
+1101: ===== IMAGE 068 | Screenshot 2026-08-30 222344.png | 1080x507 =====
+1103: Question41
+1110: ===== IMAGE 069 | Screenshot 2026-08-30 222349.png | 956x565 =====
+1112: Question42
+1119: ===== IMAGE 070 | Screenshot 2026-08-30 222807.png | 1163x582 =====
+1121: Question 43
+1132: ===== IMAGE 071 | Screenshot 2026-08-30 222813.png | 1158x641 =====
+1134: Question44
+1143: ===== IMAGE 072 | Screenshot 2026-08-30 222822.png | 1138x867 =====
+1145: Question45
+1172: ===== IMAGE 073 | Screenshot 2026-08-30 222827.png | 811x692 =====
+1193: ===== IMAGE 074 | Screenshot 2026-08-30 222833.png | 1188x615 =====
+1195: Question 46
+1204: ===== IMAGE 075 | Screenshot 2026-08-30 223308.png | 1137x991 =====
+1206: Passage 9 (Questions 47-51)
+1228: ===== IMAGE 076 | Screenshot 2026-08-30 223319.png | 1139x786 =====
+1240: Figure 1 The reaction catalyzed by Pank to make the precursor to CoA
+1243: ===== IMAGE 077 | Screenshot 2026-08-30 223326.png | 1208x993 =====
+1270: ===== IMAGE 078 | Screenshot 2026-08-30 223334.png | 1213x771 =====
+1272: Figure 2 Plot of initial velocity versus panthothenate concentration at a
+1286: ===== IMAGE 079 | Screenshot 2026-08-30 223339.png | 1071x553 =====
+1288: Question47
+1295: ===== IMAGE 080 | Screenshot 2026-08-30 223346.png | 1155x654 =====
+1297: Question 48
+1308: ===== IMAGE 081 | Screenshot 2026-08-30 223351.png | 1217x456 =====
+1310: Question 49
+1317: ===== IMAGE 082 | Screenshot 2026-08-30 223356.png | 1197x602 =====
+1319: Question 50
+1328: ===== IMAGE 083 | Screenshot 2026-08-30 223401.png | 1148x465 =====
+1330: Question51
+1337: ===== IMAGE 084 | Screenshot 2026-08-30 223431.png | 1179x570 =====
+1339: Passage 10 (Questions 52-56)
+1351: ===== IMAGE 085 | Screenshot 2026-08-30 223438.png | 1213x798 =====
+1357: Figure 1 Schematic of a 99Mo/99mTc generator.
+1363: ===== IMAGE 086 | Screenshot 2026-08-30 223448.png | 1202x1016 =====
+1384: Figure 2 Time dependence of 99mTc radioactivity
+1389: ===== IMAGE 087 | Screenshot 2026-08-30 223501.png | 1154x517 =====
+1391: Question52
+1399: ===== IMAGE 088 | Screenshot 2026-08-30 223511.png | 1173x539 =====
+1401: Passage 10 (Questions 52-56)
+1413: ===== IMAGE 089 | Screenshot 2026-08-30 223520.png | 1145x789 =====
+1419: Figure 1 Schematic of a 99Mo/99mTc generator.
+1425: ===== IMAGE 090 | Screenshot 2026-08-30 223534.png | 1184x881 =====
+1447: Figure 2  Time dependence of 9mTc radioactivity
+1449: ===== IMAGE 091 | Screenshot 2026-08-30 223545.png | 1015x553 =====
+1451: Question53
+1458: ===== IMAGE 092 | Screenshot 2026-08-30 223552.png | 1121x582 =====
+1460: Question54
+1467: ===== IMAGE 093 | Screenshot 2026-08-30 223557.png | 1028x518 =====
+1469: Question 55
+1479: ===== IMAGE 094 | Screenshot 2026-08-30 223602.png | 1087x538 =====
+1481: Question 56
+1489: ===== IMAGE 095 | Screenshot 2026-08-30 223728.png | 1191x573 =====
+1491: Question57
+1500: ===== IMAGE 096 | Screenshot 2026-08-30 223733.png | 1097x523 =====
+1502: Question 58
+1511: ===== IMAGE 097 | Screenshot 2026-08-30 223738.png | 1128x529 =====
+1513: Question59
+1523: ===== IMAGE 098 | Screenshot 2026-08-30 223759.png | 1171x939 =====
+1525: Passage 1 (Questions 1-7)
+1545: ===== IMAGE 099 | Screenshot 2026-08-30 223804.png | 1214x919 =====
+1567: ===== IMAGE 100 | Screenshot 2026-08-30 223807.png | 1176x811 =====
+1586: ===== IMAGE 101 | Screenshot 2026-08-30 223815.png | 1122x618 =====
+1588: Question 1
+1597: ===== IMAGE 102 | Screenshot 2026-08-30 223821.png | 1138x538 =====
+1599: Question 2
+1607: ===== IMAGE 103 | Screenshot 2026-08-30 224103.png | 1175x634 =====
+1609: Question 3
+1620: ===== IMAGE 104 | Screenshot 2026-08-30 224109.png | 1132x574 =====
+1622: Question 4
+1631: ===== IMAGE 105 | Screenshot 2026-08-30 224115.png | 1165x745 =====
+1633: Question 5
+1646: ===== IMAGE 106 | Screenshot 2026-08-30 224121.png | 1165x644 =====
+1648: Question 6
+1658: ===== IMAGE 107 | Screenshot 2026-08-30 224126.png | 1228x555 =====
+1660: Question 7
+1668: ===== IMAGE 108 | Screenshot 2026-08-30 224141.png | 1208x833 =====
+1670: Passage 2 (Questions 8-12)
+1689: ===== IMAGE 109 | Screenshot 2026-08-30 224149.png | 1198x985 =====
+1713: ===== IMAGE 110 | Screenshot 2026-08-30 224153.png | 1176x526 =====
+1727: ===== IMAGE 111 | Screenshot 2026-08-30 224159.png | 1172x559 =====
+1729: Question 8
+1738: ===== IMAGE 112 | Screenshot 2026-08-30 224207.png | 1180x691 =====
+1740: Question 9
+1752: ===== IMAGE 113 | Screenshot 2026-08-30 224212.png | 1203x534 =====
+1754: Question 10
+1762: ===== IMAGE 114 | Screenshot 2026-08-30 224217.png | 1126x616 =====
+1764: Question 11
+1773: ===== IMAGE 115 | Screenshot 2026-08-30 224221.png | 1197x521 =====
+1775: Question 12
+1783: ===== IMAGE 116 | Screenshot 2026-08-30 224704.png | 886x443 =====
+1785: Question 13
+1792: ===== IMAGE 117 | Screenshot 2026-08-30 224717.png | 1205x863 =====
+1794: Passage 3 (Questions 13-19)
+1813: ===== IMAGE 118 | Screenshot 2026-08-30 224723.png | 1168x748 =====
+1832: ===== IMAGE 119 | Screenshot 2026-08-30 224727.png | 1195x720 =====
+1849: ===== IMAGE 120 | Screenshot 2026-08-30 224731.png | 1146x568 =====
+1851: Question 14
+1859: ===== IMAGE 121 | Screenshot 2026-08-30 224736.png | 1201x550 =====
+1861: Question 15
+1869: ===== IMAGE 122 | Screenshot 2026-08-30 224742.png | 1184x528 =====
+1871: Question 16
+1882: ===== IMAGE 123 | Screenshot 2026-08-30 225011.png | 1098x521 =====
+1884: Question 17
+1892: ===== IMAGE 124 | Screenshot 2026-08-30 225017.png | 1162x549 =====
+1894: Question 18
+1906: ===== IMAGE 125 | Screenshot 2026-08-30 225021.png | 1171x581 =====
+1908: Question 19
+1917: ===== IMAGE 126 | Screenshot 2026-08-30 225033.png | 1224x978 =====
+1919: Passage 4 (Question 20-25)
+1940: ===== IMAGE 127 | Screenshot 2026-08-30 225040.png | 1177x988 =====
+1964: ===== IMAGE 128 | Screenshot 2026-08-30 225046.png | 1221x776 =====
+1981: ===== IMAGE 129 | Screenshot 2026-08-30 225050.png | 1119x529 =====
+1983: Question 20
+1991: ===== IMAGE 130 | Screenshot 2026-08-30 225055.png | 1191x634 =====
+1993: Question 21
+2003: ===== IMAGE 131 | Screenshot 2026-08-30 225100.png | 1209x553 =====
+2005: Question 22
+2013: ===== IMAGE 132 | Screenshot 2026-08-30 225107.png | 1205x668 =====
+2015: Question 23
+2027: ===== IMAGE 133 | Screenshot 2026-08-30 225113.png | 1160x619 =====
+2029: Question 24
+2038: ===== IMAGE 134 | Screenshot 2026-08-30 225117.png | 1159x577 =====
+2040: Question 25
+2051: ===== IMAGE 135 | Screenshot 2026-08-30 225412.png | 1202x964 =====
+2053: Passage 5 (Questions 26-30)
+2073: ===== IMAGE 136 | Screenshot 2026-08-30 225420.png | 1206x1008 =====
+2098: ===== IMAGE 137 | Screenshot 2026-08-30 225425.png | 1208x740 =====
+2116: ===== IMAGE 138 | Screenshot 2026-08-30 225430.png | 1177x567 =====
+2118: Question 26
+2127: ===== IMAGE 139 | Screenshot 2026-08-30 225436.png | 1184x550 =====
+2129: Question 27
+2137: ===== IMAGE 140 | Screenshot 2026-08-30 225440.png | 1185x639 =====
+2139: Question 28
+2149: ===== IMAGE 141 | Screenshot 2026-08-30 225448.png | 1184x608 =====
+2151: Question 29
+2159: ===== IMAGE 142 | Screenshot 2026-08-30 225453.png | 1177x591 =====
+2161: Question 30
+2171: ===== IMAGE 143 | Screenshot 2026-08-30 225524.png | 1189x936 =====
+2173: Passage 6 (Questions 31-36)
+2193: ===== IMAGE 144 | Screenshot 2026-08-30 225531.png | 1221x946 =====
+2215: ===== IMAGE 145 | Screenshot 2026-08-30 225534.png | 1192x414 =====
+2225: ===== IMAGE 146 | Screenshot 2026-08-30 230723.png | 1173x476 =====
+2227: Question 31
+2235: ===== IMAGE 147 | Screenshot 2026-08-30 230731.png | 1153x501 =====
+2237: Question 32
+2245: ===== IMAGE 148 | Screenshot 2026-08-30 230742.png | 950x654 =====
+2247: Question 33
+2257: ===== IMAGE 149 | Screenshot 2026-08-30 230749.png | 1193x531 =====
+2259: Question 34
+2270: ===== IMAGE 150 | Screenshot 2026-08-30 230756.png | 1199x472 =====
+2272: Question 35
+2280: ===== IMAGE 151 | Screenshot 2026-08-30 230802.png | 1138x473 =====
+2282: Question 36
+2290: ===== IMAGE 152 | Screenshot 2026-08-30 230848.png | 1220x981 =====
+2292: Passage 7 (Questions 37-42)
+2314: ===== IMAGE 153 | Screenshot 2026-08-30 230859.png | 1186x1015 =====
+2336: ===== IMAGE 154 | Screenshot 2026-08-30 230910.png | 1185x775 =====
+2354: ===== IMAGE 155 | Screenshot 2026-08-30 230921.png | 1147x567 =====
+2356: Question 37
+2364: ===== IMAGE 156 | Screenshot 2026-08-30 230929.png | 1224x554 =====
+2366: Question 38
+2375: ===== IMAGE 157 | Screenshot 2026-08-30 230945.png | 1175x539 =====
+2377: Question 39
+2385: ===== IMAGE 158 | Screenshot 2026-08-30 230956.png | 1034x477 =====
+2387: Question 40
+2394: ===== IMAGE 159 | Screenshot 2026-08-30 231003.png | 1150x534 =====
+2396: Question 41
+2404: ===== IMAGE 160 | Screenshot 2026-08-30 231012.png | 1164x549 =====
+2406: Question 42
+2414: ===== IMAGE 161 | Screenshot 2026-08-30 231320.png | 1198x954 =====
+2416: Passage 8 (Questions 43-47)
+2438: ===== IMAGE 162 | Screenshot 2026-08-30 231328.png | 1165x874 =====
+2460: ===== IMAGE 163 | Screenshot 2026-08-30 231333.png | 1183x955 =====
+2483: ===== IMAGE 164 | Screenshot 2026-08-30 231351.png | 1196x550 =====
+2485: Question 43
+2493: ===== IMAGE 165 | Screenshot 2026-08-30 231400.png | 1164x658 =====
+2495: Question 44
+2505: ===== IMAGE 166 | Screenshot 2026-08-30 231406.png | 1108x496 =====
+2507: Question 45
+2515: ===== IMAGE 167 | Screenshot 2026-08-30 231414.png | 1130x521 =====
+2517: Question 46
+2525: ===== IMAGE 168 | Screenshot 2026-08-30 231429.png | 1177x597 =====
+2527: Question 47
+2537: ===== IMAGE 169 | Screenshot 2026-08-30 231549.png | 890x461 =====
+2539: Question 48
+2546: ===== IMAGE 170 | Screenshot 2026-08-30 231559.png | 1158x623 =====
+2548: Question 49
+2559: ===== IMAGE 171 | Screenshot 2026-08-30 231610.png | 1161x564 =====
+2561: Question 50
+2570: ===== IMAGE 172 | Screenshot 2026-08-30 231623.png | 1200x773 =====
+2572: Question 51
+2585: ===== IMAGE 173 | Screenshot 2026-08-30 231708.png | 1174x569 =====
+2587: Question 52
+2597: ===== IMAGE 174 | Screenshot 2026-08-30 231716.png | 1196x697 =====
+2599: Question 53
+2611: ===== IMAGE 175 | Screenshot 2026-08-30 231907.png | 1201x885 =====
+2613: Passage 1 (Questions 1-5)
+2633: ===== IMAGE 176 | Screenshot 2026-08-30 231911.png | 1186x737 =====
+2650: ===== IMAGE 177 | Screenshot 2026-08-30 231915.png | 957x409 =====
+2652: Question 1
+2659: ===== IMAGE 178 | Screenshot 2026-08-30 231922.png | 1167x501 =====
+2661: Question 2
+2669: ===== IMAGE 179 | Screenshot 2026-08-30 231927.png | 625x475 =====
+2671: Question 3
+2678: ===== IMAGE 180 | Screenshot 2026-08-30 231932.png | 1200x478 =====
+2680: Question 4
+2687: ===== IMAGE 181 | Screenshot 2026-08-30 231937.png | 1181x536 =====
+2689: Question 5
+2697: ===== IMAGE 182 | Screenshot 2026-08-30 232010.png | 1191x959 =====
+2699: Passage 2 (Questions 6-10)
+2717: ===== IMAGE 183 | Screenshot 2026-08-30 232029.png | 1178x797 =====
+2736: ===== IMAGE 184 | Screenshot 2026-08-30 232034.png | 1202x827 =====
+2738: Question 6
+2753: ===== IMAGE 185 | Screenshot 2026-08-30 232047.png | 1112x565 =====
+2755: Question 7
+2763: ===== IMAGE 186 | Screenshot 2026-08-30 232131.png | 1190x754 =====
+2765: Question 8
+2778: ===== IMAGE 187 | Screenshot 2026-08-30 232139.png | 1237x789 =====
+2780: Question 9
+2793: ===== IMAGE 188 | Screenshot 2026-08-30 232145.png | 1122x600 =====
+2795: Question 1o
+2805: ===== IMAGE 189 | Screenshot 2026-08-30 232154.png | 1191x891 =====
+2807: Passage 3 (Questions 11-14)
+2827: ===== IMAGE 190 | Screenshot 2026-08-30 232157.png | 1182x287 =====
+2833: ===== IMAGE 191 | Screenshot 2026-08-30 232205.png | 1179x701 =====
+2835: Question 11
+2848: ===== IMAGE 192 | Screenshot 2026-08-30 232226.png | 1197x556 =====
+2850: Question 12
+2861: ===== IMAGE 193 | Screenshot 2026-08-30 232236.png | 1148x604 =====
+2863: Question 13
+2872: ===== IMAGE 194 | Screenshot 2026-08-30 232242.png | 1205x588 =====
+2874: Question 14
+2884: ===== IMAGE 195 | Screenshot 2026-08-30 232254.png | 1220x830 =====
+2886: Question 15
+2900: ===== IMAGE 196 | Screenshot 2026-08-30 232300.png | 796x424 =====
+2902: Question 16
+2910: ===== IMAGE 197 | Screenshot 2026-08-30 232305.png | 639x479 =====
+2912: Question 17
+2919: ===== IMAGE 198 | Screenshot 2026-08-30 232310.png | 855x484 =====
+2921: Question 18
+2928: ===== IMAGE 199 | Screenshot 2026-08-30 232358.png | 1137x879 =====
+2930: Passage 4 (Questions 19-22)
+2939: Figure 1 Structure of ms2t6A
+2941: ===== IMAGE 200 | Screenshot 2026-08-30 232407.png | 1141x564 =====
+2956: ===== IMAGE 201 | Screenshot 2026-08-30 232419.png | 1159x927 =====
+2973: Figure 2 Effect of ms2t6A deficiency on translation in wild-type and △yqeV
+2980: ===== IMAGE 202 | Screenshot 2026-08-30 232427.png | 1185x952 =====
+2998: Figure 3
+3003: ===== IMAGE 203 | Screenshot 2026-08-30 232431.png | 1201x958 =====
+3012: Figure 4 Proinsulin synthesis in wild-type mice and Cdkal1-/- mice under
+3017: ===== IMAGE 204 | Screenshot 2026-08-30 232437.png | 1052x532 =====
+3019: Question 19
+3026: ===== IMAGE 205 | Screenshot 2026-08-30 232449.png | 1199x622 =====
+3028: Question 20
+3037: ===== IMAGE 206 | Screenshot 2026-08-30 232457.png | 1103x546 =====
+3039: Question 21
+3047: ===== IMAGE 207 | Screenshot 2026-08-30 232504.png | 1218x525 =====
+3049: Question 22
+3057: ===== IMAGE 208 | Screenshot 2026-08-30 232556.png | 1176x859 =====
+3059: Passage 5 (Questions 23-27)
+3078: ===== IMAGE 209 | Screenshot 2026-08-30 232603.png | 1235x956 =====
+3099: ===== IMAGE 210 | Screenshot 2026-08-30 232608.png | 1132x759 =====
+3108: Figure 2 Protein and lipid content of whole-animal tissues as percent of
+3112: ===== IMAGE 211 | Screenshot 2026-08-30 232616.png | 1215x612 =====
+3114: Question 23
+3122: ===== IMAGE 212 | Screenshot 2026-08-30 232622.png | 1188x493 =====
+3124: Question 24
+3132: ===== IMAGE 213 | Screenshot 2026-08-30 232629.png | 1125x528 =====
+3134: Question 25
+3143: ===== IMAGE 214 | Screenshot 2026-08-30 232637.png | 1212x704 =====
+3145: Question 26
+3156: ===== IMAGE 215 | Screenshot 2026-08-30 232643.png | 1160x510 =====
+3158: Question 27
+3168: ===== IMAGE 216 | Screenshot 2026-08-30 232649.png | 1174x681 =====
+3170: Question 28
+3183: ===== IMAGE 217 | Screenshot 2026-08-30 232654.png | 1210x924 =====
+3185: Question 29
+3202: ===== IMAGE 218 | Screenshot 2026-08-30 232703.png | 1126x439 =====
+3204: Question 3o
+3211: ===== IMAGE 219 | Screenshot 2026-08-30 232710.png | 1161x506 =====
+3213: Question 31
+3221: ===== IMAGE 220 | Screenshot 2026-08-30 232741.png | 1168x841 =====
+3223: Passage 6 (Questions 32-35)
+3242: ===== IMAGE 221 | Screenshot 2026-08-30 232745.png | 1158x730 =====
+3260: Figure 1 Structure of the var gene showing repeats of intron fragment
+3263: ===== IMAGE 222 | Screenshot 2026-08-30 232749.png | 1148x862 =====
+3283: Figure 2 Location of the episomes with respect to defined subnuclear
+3286: ===== IMAGE 223 | Screenshot 2026-08-30 232753.png | 1147x546 =====
+3296: ===== IMAGE 224 | Screenshot 2026-08-30 232759.png | 1235x534 =====
+3298: Question 32
+3306: ===== IMAGE 225 | Screenshot 2026-08-30 232808.png | 1171x602 =====
+3308: Question 33
+3317: ===== IMAGE 226 | Screenshot 2026-08-30 232819.png | 1190x509 =====
+3319: Question 34
+3327: ===== IMAGE 227 | Screenshot 2026-08-30 232837.png | 1188x588 =====
+3329: Question 35
+3338: ===== IMAGE 228 | Screenshot 2026-08-30 232903.png | 1201x857 =====
+3340: Passage 7 (Questions 36-39)
+3359: ===== IMAGE 229 | Screenshot 2026-08-30 232917.png | 1173x842 =====
+3363: Table 1
+3392: ===== IMAGE 230 | Screenshot 2026-08-30 232928.png | 1201x667 =====
+3394: Question 36
+3405: ===== IMAGE 231 | Screenshot 2026-08-30 232943.png | 1195x1013 =====
+3440: ===== IMAGE 232 | Screenshot 2026-08-30 232951.png | 1233x615 =====
+3442: Question38
+3450: ===== IMAGE 233 | Screenshot 2026-08-30 233006.png | 1193x586 =====
+3452: Question 39
+3460: ===== IMAGE 234 | Screenshot 2026-08-30 233328.png | 569x256 =====
+3462: Question40
+3467: ===== IMAGE 235 | Screenshot 2026-08-30 233341.png | 1253x1006 =====
+3469: Passage 8 (Questions 40-43)
+3490: ===== IMAGE 236 | Screenshot 2026-08-30 233346.png | 1219x958 =====
+3492: Table 1
+3542: ===== IMAGE 237 | Screenshot 2026-08-30 233352.png | 1156x515 =====
+3544: Question 40
+3552: ===== IMAGE 238 | Screenshot 2026-08-30 233401.png | 1193x662 =====
+3554: Question 41
+3565: ===== IMAGE 239 | Screenshot 2026-08-30 233407.png | 1187x653 =====
+3567: Question42
+3578: ===== IMAGE 240 | Screenshot 2026-08-30 233415.png | 1130x697 =====
+3580: Question43
+3593: ===== IMAGE 241 | Screenshot 2026-08-30 233430.png | 1154x513 =====
+3595: Question 44
+3603: ===== IMAGE 242 | Screenshot 2026-08-30 233443.png | 1193x550 =====
+3605: Question 45
+3613: ===== IMAGE 243 | Screenshot 2026-08-30 233450.png | 1126x531 =====
+3615: Question 46
+3623: ===== IMAGE 244 | Screenshot 2026-08-30 233455.png | 1209x496 =====
+3625: Question47
+3632: ===== IMAGE 245 | Screenshot 2026-08-30 233540.png | 1220x976 =====
+3634: Passage 9 (Questions 48-51)
+3666: ===== IMAGE 246 | Screenshot 2026-08-30 233546.png | 1131x546 =====
+3679: ===== IMAGE 247 | Screenshot 2026-08-30 233551.png | 1161x528 =====
+3681: Question 48
+3689: ===== IMAGE 248 | Screenshot 2026-08-30 233555.png | 1151x585 =====
+3691: Question49
+3702: ===== IMAGE 249 | Screenshot 2026-08-30 233601.png | 1191x477 =====
+3704: Question5o
+3712: ===== IMAGE 250 | Screenshot 2026-08-30 233606.png | 1179x493 =====
+3714: Question51
+3722: ===== IMAGE 251 | Screenshot 2026-08-30 233637.png | 1241x1003 =====
+3724: Passage 10 (Questions 52-56)
+3746: ===== IMAGE 252 | Screenshot 2026-08-30 233644.png | 1213x838 =====
+3762: Figure 1 Graph of percentage of STxB and CTxB in Golgi with and without
+3767: ===== IMAGE 253 | Screenshot 2026-08-30 233650.png | 1141x555 =====
+3769: Question52
+3777: ===== IMAGE 254 | Screenshot 2026-08-30 233656.png | 1174x553 =====
+3779: Question 53
+3786: ===== IMAGE 255 | Screenshot 2026-08-30 233701.png | 1183x527 =====
+3788: Question54
+3798: ===== IMAGE 256 | Screenshot 2026-08-30 233707.png | 1152x498 =====
+3800: Question 55
+3810: ===== IMAGE 257 | Screenshot 2026-08-30 233712.png | 1011x450 =====
+3812: Question56
+3819: ===== IMAGE 258 | Screenshot 2026-08-30 233725.png | 1183x776 =====
+3821: Question 57
+3840: ===== IMAGE 259 | Screenshot 2026-08-30 233731.png | 1004x475 =====
+3851: ===== IMAGE 260 | Screenshot 2026-08-30 233739.png | 1199x582 =====
+3853: Question58
+3862: ===== IMAGE 261 | Screenshot 2026-08-30 233744.png | 1134x541 =====
+3864: Question 59
+3872: ===== IMAGE 262 | Screenshot 2026-08-30 233801.png | 1170x673 =====
+3874: Passage 1 (Questions 1-5)
+3887: ===== IMAGE 263 | Screenshot 2026-08-30 233807.png | 1241x935 =====
+3905: Figure 1 Number of words recalled and recognized
+3913: ===== IMAGE 264 | Screenshot 2026-08-30 233812.png | 1206x932 =====
+3928: Figure 2 Percentage of words recalled as a function of position in the list
+3930: ===== IMAGE 265 | Screenshot 2026-08-30 233817.png | 1074x580 =====
+3932: Question 1
+3943: ===== IMAGE 266 | Screenshot 2026-08-30 233847.png | 1113x523 =====
+3945: Question 2
+3953: ===== IMAGE 267 | Screenshot 2026-08-30 233853.png | 1127x478 =====
+3955: Question 3
+3962: ===== IMAGE 268 | Screenshot 2026-08-30 233859.png | 1175x575 =====
+3964: Question 4
+3974: ===== IMAGE 269 | Screenshot 2026-08-30 233914.png | 1174x706 =====
+3976: Question 5
+3990: ===== IMAGE 270 | Screenshot 2026-08-30 233921.png | 1196x848 =====
+3992: Passage 2 (Questions 6-9)
+4011: ===== IMAGE 271 | Screenshot 2026-08-30 233928.png | 1223x516 =====
+4024: ===== IMAGE 272 | Screenshot 2026-08-30 233933.png | 1008x485 =====
+4026: Question 6
+4033: ===== IMAGE 273 | Screenshot 2026-08-30 233939.png | 1122x671 =====
+4035: Question 7
+4047: ===== IMAGE 274 | Screenshot 2026-08-30 233945.png | 1054x577 =====
+4049: Question 8
+4060: ===== IMAGE 275 | Screenshot 2026-08-30 233950.png | 1166x507 =====
+4062: Question 9
+4070: ===== IMAGE 276 | Screenshot 2026-08-30 234015.png | 1218x960 =====
+4072: Passage 3 (Questions 10-13)
+4094: ===== IMAGE 277 | Screenshot 2026-08-30 234026.png | 1173x946 =====
+4117: ===== IMAGE 278 | Screenshot 2026-08-30 234032.png | 1066x533 =====
+4119: Question 10
+4130: ===== IMAGE 279 | Screenshot 2026-08-30 234040.png | 1193x520 =====
+4132: Question 11
+4141: ===== IMAGE 280 | Screenshot 2026-08-30 234047.png | 1190x483 =====
+4143: Question 12
+4151: ===== IMAGE 281 | Screenshot 2026-08-30 234053.png | 1178x596 =====
+4153: Question 13
+4164: ===== IMAGE 282 | Screenshot 2026-08-30 234106.png | 1135x613 =====
+4166: Question 14
+4175: ===== IMAGE 283 | Screenshot 2026-08-30 234112.png | 1169x507 =====
+4177: Question 15
+4186: ===== IMAGE 284 | Screenshot 2026-08-30 234119.png | 1036x442 =====
+4188: Question 16
+4195: ===== IMAGE 285 | Screenshot 2026-08-30 234149.png | 1195x826 =====
+4197: Passage 4 (Questions 17-20)
+4215: ===== IMAGE 286 | Screenshot 2026-08-30 234153.png | 1139x514 =====
+4227: ===== IMAGE 287 | Screenshot 2026-08-30 234157.png | 1179x529 =====
+4229: Question 17
+4237: ===== IMAGE 288 | Screenshot 2026-08-30 234203.png | 1176x541 =====
+4239: Question 18
+4247: ===== IMAGE 289 | Screenshot 2026-08-30 234208.png | 1161x664 =====
+4249: Question 19
+4262: ===== IMAGE 290 | Screenshot 2026-08-30 234213.png | 1144x681 =====
+4264: Question 20
+4276: ===== IMAGE 291 | Screenshot 2026-08-30 234220.png | 1178x689 =====
+4278: Passage 5 (Questions 21-25)
+4292: Figure 1.
+4294: ===== IMAGE 292 | Screenshot 2026-08-30 234227.png | 1221x993 =====
+4305: Figure 1 Average number of "hurt" button hits by condition
+4313: ===== IMAGE 293 | Screenshot 2026-08-30 234232.png | 1156x524 =====
+4325: ===== IMAGE 294 | Screenshot 2026-08-30 234237.png | 1209x730 =====
+4327: Question 21
+4340: ===== IMAGE 295 | Screenshot 2026-08-30 234247.png | 1054x734 =====
+4342: Question 22
+4358: ===== IMAGE 296 | Screenshot 2026-08-30 234253.png | 1146x627 =====
+4360: Question 23
+4371: ===== IMAGE 297 | Screenshot 2026-08-30 234258.png | 1156x501 =====
+4373: Question 24
+4381: ===== IMAGE 298 | Screenshot 2026-08-30 234303.png | 1111x678 =====
+4383: Question 25
+4394: ===== IMAGE 299 | Screenshot 2026-08-30 234309.png | 1147x601 =====
+4396: Question 26
+4406: ===== IMAGE 300 | Screenshot 2026-08-30 234315.png | 1180x489 =====
+4408: Question 27
+4417: ===== IMAGE 301 | Screenshot 2026-08-30 234320.png | 1164x698 =====
+4419: Question 28
+4432: ===== IMAGE 302 | Screenshot 2026-08-30 234326.png | 1164x493 =====
+4434: Question 29
+4442: ===== IMAGE 303 | Screenshot 2026-08-30 234347.png | 1204x636 =====
+4444: Passage 6 (Questions 30-34)
+4458: ===== IMAGE 304 | Screenshot 2026-08-30 234351.png | 1192x669 =====
+4473: ===== IMAGE 305 | Screenshot 2026-08-30 234355.png | 704x454 =====
+4475: Question 30
+4483: ===== IMAGE 306 | Screenshot 2026-08-30 234401.png | 1130x439 =====
+4485: Question 31
+4491: ===== IMAGE 307 | Screenshot 2026-08-30 234406.png | 1166x754 =====
+4493: Question 32
+4507: ===== IMAGE 308 | Screenshot 2026-08-30 234421.png | 1096x509 =====
+4509: Question 33
+4517: ===== IMAGE 309 | Screenshot 2026-08-30 234428.png | 1173x514 =====
+4519: Question 34
+4527: ===== IMAGE 310 | Screenshot 2026-08-30 234449.png | 1184x511 =====
+4529: Question 34
+4538: ===== IMAGE 311 | Screenshot 2026-08-30 234512.png | 1169x506 =====
+4540: Passage 7 (Questions 35-38)
+4552: ===== IMAGE 312 | Screenshot 2026-08-30 234518.png | 1161x759 =====
+4565: Figure 1 Percent of children with high anxiety symptoms by parental
+4569: ===== IMAGE 313 | Screenshot 2026-08-30 234524.png | 1187x694 =====
+4584: ===== IMAGE 314 | Screenshot 2026-08-30 234530.png | 1141x518 =====
+4586: Question 35
+4593: ===== IMAGE 315 | Screenshot 2026-08-30 234825.png | 1186x935 =====
+4595: Figure 1 Percent of children with high anxiety symptoms by parental
+4613: ===== IMAGE 316 | Screenshot 2026-08-30 234830.png | 1110x635 =====
+4615: Question 35
+4622: ===== IMAGE 317 | Screenshot 2026-08-30 234836.png | 1095x491 =====
+4624: Question 36
+4631: ===== IMAGE 318 | Screenshot 2026-08-30 234841.png | 1194x706 =====
+4633: Question 37
+4645: ===== IMAGE 319 | Screenshot 2026-08-30 234845.png | 1189x577 =====
+4647: Question 38
+4657: ===== IMAGE 320 | Screenshot 2026-08-30 234927.png | 1151x704 =====
+4659: Passage 8 (Questions 39-43)
+4672: ===== IMAGE 321 | Screenshot 2026-08-30 234931.png | 1093x652 =====
+4685: Figure 1 Average percent correct on the math assessment by group
+4687: ===== IMAGE 322 | Screenshot 2026-08-30 234935.png | 1158x771 =====
+4705: ===== IMAGE 323 | Screenshot 2026-08-30 234940.png | 891x515 =====
+4707: Question 39
+4714: ===== IMAGE 324 | Screenshot 2026-08-30 234954.png | 1175x539 =====
+4716: Question 40
+4725: ===== IMAGE 325 | Screenshot 2026-08-30 234959.png | 1060x498 =====
+4727: Question 41
+4733: ===== IMAGE 326 | Screenshot 2026-08-30 235007.png | 1104x669 =====
+4735: Question 42
+4746: ===== IMAGE 327 | Screenshot 2026-08-30 235014.png | 1054x551 =====
+4748: Question 43
+4761: ===== IMAGE 328 | Screenshot 2026-08-30 235026.png | 1084x609 =====
+4763: Question 44
+4772: ===== IMAGE 329 | Screenshot 2026-08-30 235030.png | 1156x571 =====
+4774: Question 45
+4783: ===== IMAGE 330 | Screenshot 2026-08-30 235035.png | 1122x485 =====
+4785: Question 46
+4793: ===== IMAGE 331 | Screenshot 2026-08-30 235041.png | 1165x600 =====
+4795: Question 47
+4806: ===== IMAGE 332 | Screenshot 2026-08-30 235047.png | 1172x742 =====
+4808: Passage 9 (Questions 48-51)
+4824: ===== IMAGE 333 | Screenshot 2026-08-30 235056.png | 1166x693 =====
+4826: Passage 9 (Questions 48-51)
+4841: ===== IMAGE 334 | Screenshot 2026-08-30 235102.png | 1147x605 =====
+4856: ===== IMAGE 335 | Screenshot 2026-08-30 235108.png | 1188x568 =====
+4858: Question 48
+4867: ===== IMAGE 336 | Screenshot 2026-08-30 235134.png | 1161x486 =====
+4869: Question 49
+4877: ===== IMAGE 337 | Screenshot 2026-08-30 235144.png | 1167x776 =====
+4879: Question 50
+4895: ===== IMAGE 338 | Screenshot 2026-08-30 235152.png | 1095x465 =====
+4897: Question51
+4904: ===== IMAGE 339 | Screenshot 2026-08-30 235231.png | 1175x737 =====
+4906: Passage 10 (Questions 52-55)
+4922: ===== IMAGE 340 | Screenshot 2026-08-30 235237.png | 1165x988 =====
+4932: Table 1
+4941: Table 2
+4951: ===== IMAGE 341 | Screenshot 2026-08-30 235241.png | 1125x184 =====
+4955: ===== IMAGE 342 | Screenshot 2026-08-30 235247.png | 1159x597 =====
+4957: Question 52
+4969: ===== IMAGE 343 | Screenshot 2026-08-30 235253.png | 1136x773 =====
+4971: Question 53
+4985: ===== IMAGE 344 | Screenshot 2026-08-30 235259.png | 1196x519 =====
+4987: Question54
+4995: ===== IMAGE 345 | Screenshot 2026-08-30 235305.png | 1141x494 =====
+4997: Question 55
+5006: ===== IMAGE 346 | Screenshot 2026-08-30 235313.png | 1139x534 =====
+5008: Question 56
+5018: ===== IMAGE 347 | Screenshot 2026-08-30 235319.png | 1107x566 =====
+5020: Question 57
+5031: ===== IMAGE 348 | Screenshot 2026-08-30 235323.png | 1076x506 =====
+5033: Question 58
+5041: ===== IMAGE 349 | Screenshot 2026-08-30 235330.png | 1167x655 =====
+5043: Question 59
+5055: ===== IMAGE 350 | Screenshot 2026-09-01 004712.png | 1303x400 =====
