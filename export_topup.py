@@ -44,6 +44,10 @@ def to_site(q):
     }
     if q.get("passage"):
         out["passage"] = q["passage"]
+    if q.get("figure"):
+        out["figure"] = q["figure"]
+        out["figure_caption"] = q.get("figure_caption", "")
+        out["figure_type"] = q.get("figure_type", "")
     return out
 
 

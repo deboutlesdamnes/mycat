@@ -74,10 +74,15 @@ def _normalize_series(series):
     return out, categories
 
 
+# Marks a figure that could not actually be drawn (no data, bad SMILES, RDKit
+# missing). Validation looks for this so a placeholder box never ships as a figure.
+PLACEHOLDER_ATTR = "data-figure-placeholder"
+
+
 def _empty_svg(msg="(no data)"):
     return (
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="100%" '
-        'style="max-width:300px" role="img">'
+        f'style="max-width:300px" role="img" {PLACEHOLDER_ATTR}="1">'
         f'<rect width="300" height="120" fill="#f5f1ea" rx="8"/>'
         f'<text x="150" y="60" text-anchor="middle" font-family="Arial" font-size="13" fill="#999">{_esc(msg)}</text>'
         "</svg>"
@@ -137,7 +142,10 @@ def _chart(spec, kind):
             f'font-size="11" fill="#777">{_fmt(val)}</text>'
         )
 
-    # x ticks - category names when the x values were labels, else numeric ticks
+    # x ticks - category names when the x values were labels (or the spec named
+    # them with xTicks), else numeric ticks
+    for i, label in enumerate(spec.get("xTicks") or []):
+        categories.setdefault(float(i), str(label))
     if categories:
         ticks = [(v, categories[v]) for v in sorted(categories)]
     else:
@@ -319,11 +327,37 @@ def spectrum(spec):
     parts.append("</svg>")
     return "\n".join(parts)
 
+def _layout_nodes(nodes, w, h):
+    """Place any node that didn't come with x/y coordinates.
+
+    A spec author (or a model) describes a diagram as nodes and edges; pixel
+    positions are the renderer's job. Unplaced nodes are laid out left to right,
+    wrapping into rows, which reads correctly for the flow and pathway diagrams
+    these figures are made of.
+    """
+    unplaced = [n for n in nodes if "x" not in n or "y" not in n]
+    if not unplaced:
+        return nodes
+
+    per_row = max(1, min(len(unplaced), int((w - 40) // 150)))
+    rows = (len(unplaced) + per_row - 1) // per_row
+    top = 60 if rows > 1 else h / 2
+    row_gap = (h - top - 30) / max(rows - 1, 1) if rows > 1 else 0
+
+    for i, n in enumerate(unplaced):
+        row, col = divmod(i, per_row)
+        in_row = min(per_row, len(unplaced) - row * per_row)
+        col_gap = w / (in_row + 1)
+        n.setdefault("x", col_gap * (col + 1))
+        n.setdefault("y", top + row_gap * row)
+    return nodes
+
+
 def diagram(spec):
-    nodes = spec.get("nodes", [])
     edges = spec.get("edges", [])
     w = spec.get("width", 640)
     h = spec.get("height", 360)
+    nodes = _layout_nodes([dict(n) for n in spec.get("nodes", []) if n.get("id")], w, h)
     node_map = {n["id"]: n for n in nodes}
 
     parts = [
@@ -368,7 +402,7 @@ def diagram(spec):
         )
         parts.append(
             f'<text x="{x}" y="{y + 4}" text-anchor="middle" font-family="Arial" '
-            f'font-size="12" fill="{INK}">{_esc(n["label"])}</text>'
+            f'font-size="12" fill="{INK}">{_esc(n.get("label", n["id"]))}</text>'
         )
 
     parts.append("</svg>")

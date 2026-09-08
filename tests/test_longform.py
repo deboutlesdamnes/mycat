@@ -156,7 +156,7 @@ class TestPassageSpec(unittest.TestCase):
     def test_unrenderable_figure_spec_rejected(self):
         p = good_passage()
         p.figures = [FigureSpec(1, "line", "Fig 1", {"type": "line", "series": []})]
-        self.assertTrue(any("renders empty" in e for e in p.validate()))
+        self.assertTrue(any("draws nothing" in e for e in p.validate()))
 
     def test_figure_travels_with_every_question_in_the_set(self):
         p = good_passage()

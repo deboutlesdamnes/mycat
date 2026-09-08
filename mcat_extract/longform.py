@@ -58,21 +58,55 @@ class FigureSpec:
             errors.append(f"figure {self.number}: spec.type missing or invalid")
         else:
             errors.extend(self._render_errors())
+            errors.extend(self._axis_label_errors())
         return errors
+
+    #: x-axis labels that describe categories rather than a numeric scale
+    CATEGORICAL_X = re.compile(
+        "condition|group|treatment|sample|type|stage|category|phase|region|species|strain",
+        re.I)
+
+    def _axis_label_errors(self) -> List[str]:
+        """Catch a chart whose categories were index-coded.
+
+        A model will happily emit points like [[0, 1.0], [1, 5.0], [2, 0.2]] for
+        three named conditions, which draws an axis reading "-0.1, 0.34, 0.78 ..."
+        - unreadable, and it makes any "based on Figure 1" question unanswerable.
+        The category names have to reach the renderer, either as the x values
+        themselves or as an explicit xTicks list.
+        """
+        if self.spec.get("type") not in ("line", "bar", "scatter"):
+            return []
+        if self.spec.get("xTicks"):
+            return []
+        if not self.CATEGORICAL_X.search(str(self.spec.get("xLabel", ""))):
+            return []
+
+        xs = [p[0] for s in self.spec.get("series", []) if isinstance(s, dict)
+              for p in s.get("points", []) if isinstance(p, (list, tuple)) and len(p) > 1]
+        if any(isinstance(x, str) for x in xs):
+            return []
+        uniq = sorted({x for x in xs if isinstance(x, (int, float))})
+        if uniq and uniq == [float(i) for i in range(len(uniq))]:
+            return [f"figure {self.number}: x axis is '{self.spec.get('xLabel')}' but the "
+                    f"points are index-coded ({', '.join(str(int(u)) for u in uniq)}); "
+                    f"use the category names as the x values, or give an xTicks list"]
+        return []
 
     def _render_errors(self) -> List[str]:
         """A figure that figure_lib can't draw would ship as a blank box, so a
         spec that renders to nothing (or to a placeholder) is a validation error.
         Skipped entirely when figure_lib isn't importable."""
         try:
-            import figure_lib  # noqa: F401
+            import figure_lib
         except ImportError:
             return []
         html = (self.render() or "").strip()
         if not html:
             return [f"figure {self.number}: spec is not renderable by figure_lib"]
-        if "(no data)" in html or "(empty table)" in html:
-            return [f"figure {self.number}: spec renders empty (no usable data points)"]
+        if figure_lib.PLACEHOLDER_ATTR in html or "(empty table)" in html:
+            return [f"figure {self.number}: spec draws nothing - no usable data, or a "
+                    f"renderer the figure needs is unavailable"]
         return []
 
     def render(self) -> Optional[str]:
@@ -375,6 +409,11 @@ that mirrors the real MCAT format:
       Use one of these shapes exactly:
       line/bar/scatter: {"type":"line","title":"...","xLabel":"...","yLabel":"...",
                          "series":[{"name":"...","points":[[x,y],[x,y],...]}]}
+                        When the x axis is categorical (conditions, treatments,
+                        groups), the category NAME must be the x value -
+                        [["Control",35],["Inhibitor",12]] - or give the names in
+                        an "xTicks" list. Never index-code them as 0, 1, 2: the
+                        axis would read as meaningless decimals.
       table:            {"type":"table","columns":["...","..."],"rows":[["...","..."],...]}
       spectrum:         {"type":"spectrum","kind":"1h-nmr","title":"...",
                          "peaks":[{"shift":7.2,"height":0.8,"label":"..."}]}
