@@ -28,6 +28,34 @@ def load():
     return qs
 
 
+def share_passage_figures(qs):
+    """A figure belongs to the passage, not to the one question that happened to
+    cite it: every question sharing a passage must show the same reference image,
+    or the prose ends up pointing at a figure that isn't on the page.
+
+    Older passage runs attached the figure only to the questions whose
+    figure_refs named it, so this fills in the rest of each set in place.
+    """
+    by_passage = defaultdict(list)
+    for q in qs:
+        if q.get("passage"):
+            by_passage[q["passage"]].append(q)
+
+    filled = 0
+    for group in by_passage.values():
+        source = next((q for q in group if q.get("figure")), None)
+        if source is None:
+            continue
+        for q in group:
+            if not q.get("figure"):
+                q["figure"] = source["figure"]
+                q["figure_type"] = source.get("figure_type", "")
+                q["figure_caption"] = source.get("figure_caption", "")
+                q["figure_alt"] = source.get("figure_alt", "")
+                filled += 1
+    return filled
+
+
 def to_site_question(q):
     out = {
         "question": q["question"],
@@ -50,6 +78,9 @@ def to_site_question(q):
 
 def main():
     qs = load()
+    filled = share_passage_figures(qs)
+    if filled:
+        print(f"attached the passage figure to {filled} sibling question(s)")
 
     decks = defaultdict(list)
     for q in qs:

@@ -286,7 +286,7 @@
     const fig = Glossary.figureHTML(q);
 
     root.innerHTML = `
-      <div class="panel">
+      <div class="panel player-panel">
         <div class="player-toolbar">
           <div style="font-family:var(--font-heading);font-weight:800;font-size:13px">${setLabel}</div>
           <div class="text-muted" style="font-size:12px">Question ${idx + 1} of ${queue.length}</div>
@@ -298,9 +298,11 @@
         <div class="player-grid">
           ${passage ? `
             <div class="player-passage">
-              <div class="k" style="margin-bottom:10px">Passage</div>
-              <div class="passage-block">${Glossary.linkify(passage, { limit: 3 })}</div>
-              ${fig}
+              <div class="k">Passage</div>
+              <div class="passage-scroll">
+                <div class="passage-block">${Glossary.linkify(passage, { limit: 3 })}</div>
+                ${fig}
+              </div>
             </div>` : ""}
           <div class="player-question" style="${passage ? "" : "grid-column:1 / -1;max-width:640px;margin:0 auto"}">
             <div style="display:flex;gap:8px;align-items:center;margin-bottom:12px">
@@ -370,6 +372,9 @@
       <div class="review-row" id="grade-row"></div>
     `;
     renderGradeButtons(q.id, wasCorrect);
+    // The question column scrolls on its own now, so the explanation and the
+    // grade buttons can land below its fold — bring them into view.
+    slot.scrollIntoView({ block: "nearest", behavior: "smooth" });
   }
 
   function renderGradeButtons(qid, wasCorrect) {

@@ -4,6 +4,7 @@
 Implements the data model, validation rules, and question_schema.json compilation
 described in plans/longform_question_framework.md.
 """
+import re
 from dataclasses import dataclass, field
 from typing import List, Optional
 
@@ -55,7 +56,24 @@ class FigureSpec:
             errors.append(f"figure {self.number}: spec must be a dict")
         elif self.spec.get("type") not in FIGURE_TYPES:
             errors.append(f"figure {self.number}: spec.type missing or invalid")
+        else:
+            errors.extend(self._render_errors())
         return errors
+
+    def _render_errors(self) -> List[str]:
+        """A figure that figure_lib can't draw would ship as a blank box, so a
+        spec that renders to nothing (or to a placeholder) is a validation error.
+        Skipped entirely when figure_lib isn't importable."""
+        try:
+            import figure_lib  # noqa: F401
+        except ImportError:
+            return []
+        html = (self.render() or "").strip()
+        if not html:
+            return [f"figure {self.number}: spec is not renderable by figure_lib"]
+        if "(no data)" in html or "(empty table)" in html:
+            return [f"figure {self.number}: spec renders empty (no usable data points)"]
+        return []
 
     def render(self) -> Optional[str]:
         """Render to SVG/HTML via figure_lib; None on failure."""
@@ -142,6 +160,8 @@ class PassageSpec:
 
         if self.is_cars and self.figures:
             errors.append("CARS passages must not have figures")
+        elif not self.is_cars:
+            errors.extend(self._figure_requirement_errors())
 
         if self.is_cars:
             lo_q, hi_q = CARS_QUESTIONS
@@ -176,6 +196,29 @@ class PassageSpec:
 
         return errors
 
+    def _figure_requirement_errors(self) -> List[str]:
+        """Science passages are built around data: the set must ship a figure,
+        the passage prose must point the reader at it, and at least one question
+        must actually use it. Without all three the passage reads as if an image
+        were missing from the page."""
+        if not self.figures:
+            return ["science passage must include at least one figure "
+                    "(with the passage text referring to it as 'Figure 1')"]
+        errors = []
+        cited = set(re.findall("(?:Figure|Table)[ ]*([0-9]+)", self.passage))
+        for f in self.figures:
+            # Accept either label: a table is often cited as "Figure 1" and vice versa.
+            label = "Table" if f.type == "table" else "Figure"
+            if str(f.number) not in cited:
+                errors.append(
+                    "passage text never refers to {0} {1}; cite it in the prose "
+                    "(e.g. '... are shown in {0} {1}')".format(label, f.number)
+                )
+        if not any(q.figure_refs or q.own_figure for q in self.questions):
+            errors.append("no question references a figure; at least one question "
+                          "must set figure_refs to a figure number")
+        return errors
+
     def _figure_for(self, refs: List[int]) -> Optional[FigureSpec]:
         for f in self.figures:
             if f.number in refs:
@@ -202,12 +245,20 @@ class PassageSpec:
                 "correct": q.correct,
                 "explanation": q.explanation,
             }
-            fig = q.own_figure or self._figure_for(q.figure_refs)
+            # The figure belongs to the passage, not to one question, so every
+            # record in the set carries it — the player shows it beside the
+            # passage whichever question is on screen.
+            fig = (q.own_figure
+                   or self._figure_for(q.figure_refs)
+                   or (self.figures[0] if self.figures else None))
             if fig is not None:
                 rec["figure"] = fig.render() or ""
                 rec["figure_type"] = fig.type
                 rec["figure_caption"] = fig.caption
                 rec["figure_alt"] = fig.alt
+                # Keep the source spec so a figure can be redrawn later (a
+                # figure_lib improvement, a restyle) without re-running the model.
+                rec["figure_spec"] = fig.spec
             records.append(rec)
         return records
 
@@ -312,9 +363,24 @@ that mirrors the real MCAT format:
   "According to the passage...", "Which conclusion is best supported by the data?".
 - Skills: skill1 (knowledge), skill2 (reasoning), skill3 (research design),
   skill4 (data/statistical). CARS uses cars-foc, cars-rwt, cars-rbt.
-- If figures are included, each has: number, type (line|bar|scatter|table|spectrum|diagram|molecule),
-  caption, alt, and a "spec" object renderable by figure_lib.render_figure
-  (e.g. {"type":"line","title":"...","xLabel":"...","yLabel":"...","series":[{"name":"...","points":[[x,y],...]}]}).
+- EVERY science passage MUST include exactly one figure - the reference image the
+  passage is built around. It has: number (1), type, caption, alt, and a "spec"
+  object that figure_lib.render_figure can draw. Requirements:
+    * The passage prose MUST point the reader at it by name ("... are shown in
+      Figure 1", "Table 1 summarizes ..."). A passage that never cites its figure
+      is rejected.
+    * At least one question MUST set "figure_refs": [1] and be answerable only by
+      reading the figure.
+    * The spec MUST carry real data - the numbers a test-taker reads off to answer.
+      Use one of these shapes exactly:
+      line/bar/scatter: {"type":"line","title":"...","xLabel":"...","yLabel":"...",
+                         "series":[{"name":"...","points":[[x,y],[x,y],...]}]}
+      table:            {"type":"table","columns":["...","..."],"rows":[["...","..."],...]}
+      spectrum:         {"type":"spectrum","kind":"1h-nmr","title":"...",
+                         "peaks":[{"shift":7.2,"height":0.8,"label":"..."}]}
+      diagram:          {"type":"diagram","title":"...","nodes":[{"id":"a","label":"..."}],
+                         "edges":[{"from":"a","to":"b","label":"..."}]}
+    * Empty or placeholder specs (no points, no rows) are rejected.
 - Every explanation teaches: state the principle, cite the passage/data, and debunk each distractor.
 - Original content only; do not copy excerpts verbatim.
 
@@ -344,22 +410,34 @@ Return ONLY a JSON object with EXACTLY these keys and shapes:
 The "questions" array must contain exactly 5 question objects for a science passage,
 or 5-6 question objects for a CARS passage.
 
+The "figures" array must contain exactly one figure for a science passage, and must
+be empty ([]) for a CARS passage.
+
 Every question object MUST include the exact keys: skill, subtype, difficulty,
 question, options (4 strings), correct (int 0-3), explanation, figure_refs (list of
 figure numbers, or [] when the question does not reference a figure).
 """
 
 
-def build_passage_user(subject, topic, excerpts_text, n_questions=None):
+def build_passage_user(subject, topic, excerpts_text, n_questions=None, is_cars=False):
     ref = ""
     for i, ex in enumerate(excerpts_text, 1):
         ref += f"\n--- excerpt {i} ---\n{ex}\n"
     if not ref:
         ref = "(no corpus excerpt found)"
     count = f" Write exactly {n_questions} questions." if n_questions else f" Write exactly {SCIENCE_QUESTIONS} questions."
+    if is_cars:
+        fig = "This is a CARS passage: no figures (use an empty figures array)."
+    else:
+        fig = (
+            "Include exactly one figure - the reference image for this passage. Cite it "
+            "in the passage text as Figure 1 (or Table 1), and have at least one question "
+            "reference it via figure_refs: [1]."
+        )
     return (
         f"Subject: {subject}. Topic: {topic}.\n"
         f"Reference material from the study corpus (ground your passage in this):\n{ref}\n"
         f"Passage length: around {TARGET_WORDS} words.\n"
+        f"{fig}\n"
         f"Generate one practice-test passage set.{count} Return JSON."
     )

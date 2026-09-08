@@ -170,6 +170,11 @@ body {
   font-size: 0.92rem;
   line-height: 1.6;
   color: var(--ink);
+  /* Long passages scroll inside the card instead of pushing the question and
+     answer choices off the bottom of the window. */
+  max-height: 45vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .summary-actions {
@@ -750,14 +755,38 @@ body {
 .kv-row:last-child { border-bottom: none; }
 .kv-row span { opacity: .6; }
 
-/* ---------------- practice player ---------------- */
-.player-grid { display: grid; grid-template-columns: 1fr 1fr; }
-.player-passage { padding: var(--space-6); border-right: 2px solid var(--color-divider); }
+/* ---------------- practice player ----------------
+   The player fills the space left under the sticky nav and never grows past
+   it: the toolbar stays pinned and each column scrolls on its own, so a long
+   passage can't push the question and answers below the fold. */
+.player-panel {
+  display: flex; flex-direction: column; overflow: hidden;
+  height: calc(100vh - var(--nav-h, 58px) - var(--space-6) - 20px);
+  min-height: 440px;
+}
+.page:has(.player-panel) { padding-bottom: 20px; }
+.player-toolbar {
+  flex: none; display: flex; align-items: center; gap: var(--space-4);
+  padding: 12px 24px; border-bottom: 2px solid var(--color-divider); background: var(--color-surface);
+}
+.player-grid { display: grid; grid-template-columns: 1fr 1fr; flex: 1; min-height: 0; }
+/* The "Passage" label stays put and only the passage body scrolls under it. */
+.player-passage {
+  display: flex; flex-direction: column; min-height: 0; overflow: hidden;
+  padding: var(--space-6); border-right: 2px solid var(--color-divider);
+}
+.player-passage > .k { flex: none; margin-bottom: 10px; }
+.passage-scroll { flex: 1; }
 .player-question { padding: var(--space-6); }
-.player-toolbar { display: flex; align-items: center; gap: var(--space-4); padding: 12px 24px; border-bottom: 2px solid var(--color-divider); background: var(--color-surface); }
+.passage-scroll, .player-question { min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; }
 @media (max-width: 860px) {
+  /* Stacked on narrow screens: a viewport-tall panel would leave both halves
+     too short, so the page scrolls again — but the passage keeps its own cap
+     so the question is always within reach. */
+  .player-panel { height: auto; min-height: 0; overflow: visible; }
   .player-grid { grid-template-columns: 1fr; }
-  .player-passage { border-right: none; border-bottom: 2px solid var(--color-divider); }
+  .player-passage { border-right: none; border-bottom: 2px solid var(--color-divider); max-height: 45vh; }
+  .player-question { overflow: visible; }
 }
 .passage-block { font-size: 15px; line-height: 1.7; opacity: .9; white-space: pre-wrap; }
 .question-text { font-size: 16px; font-weight: 600; line-height: 1.6; margin: 0 0 var(--space-4); }

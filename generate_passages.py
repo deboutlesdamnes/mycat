@@ -41,7 +41,8 @@ def main(limit=None):
             continue
         print(f"PASSAGE {t['section']} / {t['subject']} / {t['topic']} ({t['n']} Q) ...", flush=True)
         excerpts = [ex["text"] for ex in retrieve(t["topic"], k=3)]
-        base_user = build_passage_user(t["subject"], t["topic"], excerpts, n_questions=t["n"])
+        base_user = build_passage_user(t["subject"], t["topic"], excerpts,
+                                       n_questions=t["n"], is_cars=bool(t.get("is_cars", False)))
 
         spec = None
         errors = []
@@ -52,7 +53,9 @@ def main(limit=None):
                     "\n\nYour previous JSON was rejected by the validator for these reasons:\n"
                     + "\n".join(f"- {e}" for e in errors)
                     + "\n\nReturn a corrected JSON object. Make sure the passage is "
-                    "420-650 words and the questions array has exactly the requested count."
+                    "420-650 words, the questions array has exactly the requested count, "
+                    "and (unless this is CARS) the set has one figure that the "
+                    "passage text cites by name and at least one question references."
                 )
             try:
                 data = chat(

@@ -8,6 +8,13 @@ let activeDeck = null;
 let current = 0;
 let sessionCorrect = 0;
 let answered = false;
+// Timed-test state. These were only ever assigned (implicit globals), so
+// stopTimer()'s `if (testTimer)` threw a ReferenceError on the first deck
+// start — which took the whole page down before any card rendered.
+let testMode = false;
+let testAnswers = [];
+let testSecondsLeft = 0;
+let testTimer = null;
 
 // Combine hand-written decks with the full-length generated decks.
 const ALL_DECKS = (typeof DECKS !== "undefined" ? DECKS : []).concat(

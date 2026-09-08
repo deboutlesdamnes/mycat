@@ -78,7 +78,7 @@
       const kc = Glossary.keyConcepts(q);
       const fig = Glossary.figureHTML(q);
       root.innerHTML = `
-        <div class="panel">
+        <div class="panel player-panel">
           <div class="player-toolbar">
             <div style="font-family:var(--font-heading);font-weight:800;font-size:13px">${deck.title}</div>
             <div class="text-muted" style="font-size:12px">Question ${qi + 1} of ${deck.questions.length} · Section ${si + 1} of ${sections.length}</div>
@@ -86,7 +86,7 @@
             <div style="display:flex;align-items:center;gap:6px;font-size:13px">${icon("clock", { size: 15 })}<span class="timer" id="exam-timer">${fmt(secondsLeft)}</span></div>
           </div>
           <div class="player-grid">
-            ${q.passage ? `<div class="player-passage"><div class="k" style="margin-bottom:10px">Passage</div><div class="passage-block">${Glossary.linkify(q.passage, { limit: 3 })}</div>${fig}</div>` : ""}
+            ${q.passage ? `<div class="player-passage"><div class="k">Passage</div><div class="passage-scroll"><div class="passage-block">${Glossary.linkify(q.passage, { limit: 3 })}</div>${fig}</div></div>` : ""}
             <div class="player-question" style="${q.passage ? "" : "grid-column:1 / -1;max-width:640px;margin:0 auto"}">
               <p class="question-text">${Glossary.linkify(q.question, { terms: kc.terms, limit: 2 })}</p>
               ${q.passage ? "" : fig}

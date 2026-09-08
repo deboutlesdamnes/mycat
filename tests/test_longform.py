@@ -52,7 +52,7 @@ def good_passage(is_cars=False):
         subject=("Critical Analysis and Reasoning Skills (CARS)" if is_cars else "Biochemistry"),
         topic="Enzymes and Enzyme Kinetics",
         knowledge_points=["2.2 Reaction Rates"],
-        passage=" ".join(["word"] * 500),
+        passage=" ".join(["word"] * 497) + " see Figure 1 below",
         questions=[good_question() for _ in range(5)],
         figures=[] if is_cars else [FigureSpec(1, "line", "Fig 1", line_spec())],
         is_cars=is_cars,
@@ -130,6 +130,41 @@ class TestPassageSpec(unittest.TestCase):
         p.figures = [FigureSpec(1, "line", "cap", line_spec())]
         self.assertTrue(any("CARS passages must not have figures" in e for e in p.validate()))
 
+    def test_science_passage_without_figure_rejected(self):
+        p = good_passage()
+        p.figures = []
+        self.assertTrue(any("must include at least one figure" in e for e in p.validate()))
+
+    def test_uncited_figure_rejected(self):
+        p = good_passage()
+        p.passage = " ".join(["word"] * 500)
+        self.assertTrue(any("never refers to Figure 1" in e for e in p.validate()))
+
+    def test_figure_cited_as_table_accepted(self):
+        p = good_passage()
+        p.figures = [FigureSpec(1, "table", "Table 1", {
+            "type": "table", "columns": ["c1", "c2"], "rows": [["1", "2"]]})]
+        p.passage = " ".join(["word"] * 497) + " see Table 1 below"
+        self.assertEqual(p.validate(), [])
+
+    def test_figure_never_referenced_by_a_question_rejected(self):
+        p = good_passage()
+        for q in p.questions:
+            q.figure_refs = []
+        self.assertTrue(any("no question references a figure" in e for e in p.validate()))
+
+    def test_unrenderable_figure_spec_rejected(self):
+        p = good_passage()
+        p.figures = [FigureSpec(1, "line", "Fig 1", {"type": "line", "series": []})]
+        self.assertTrue(any("renders empty" in e for e in p.validate()))
+
+    def test_figure_travels_with_every_question_in_the_set(self):
+        p = good_passage()
+        p.questions[0].figure_refs = []  # question that doesn't cite the figure
+        records = p.compile_to_schema()
+        self.assertTrue(all(r["figure"].startswith("<svg") for r in records))
+        self.assertTrue(all(r["figure_caption"] == "Fig 1" for r in records))
+
     def test_bad_figure_ref(self):
         p = good_passage()
         p.questions[0].figure_refs = [99]
@@ -150,6 +185,7 @@ class TestPassageSpec(unittest.TestCase):
         self.assertEqual(rec["knowledge_point"], "2.2 Reaction Rates")
         self.assertEqual(rec["figure_type"], "line")
         self.assertTrue(rec["figure"].startswith("<svg"))
+        self.assertEqual(rec["figure_spec"], line_spec())
 
     def test_round_trip_from_dict(self):
         p = good_passage()
@@ -165,6 +201,11 @@ class TestPassageSpec(unittest.TestCase):
         self.assertIn("excerpt two", user)
         self.assertIn("around 500 words", user)
         self.assertIn("exactly 5 questions", user)
+        self.assertIn("Figure 1", user)
+
+    def test_build_user_cars_asks_for_no_figures(self):
+        user = build_passage_user("CARS", "Ethics", ["excerpt"], n_questions=6, is_cars=True)
+        self.assertIn("no figures", user)
 
 
 if __name__ == "__main__":

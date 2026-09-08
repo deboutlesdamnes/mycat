@@ -47,8 +47,14 @@ def _num(v):
 
 
 def _normalize_series(series):
-    """Coerce point values to floats; categorical x -> index; skip non-numeric y."""
+    """Coerce point values to floats; categorical x -> index; skip non-numeric y.
+
+    Returns (series, categories) where categories maps the substituted index to
+    the original label ("control", "inhibitor", ...) so the x axis can name the
+    conditions instead of printing the indices a reader can't interpret.
+    """
     out = []
+    categories = {}
     for s in series:
         pts = []
         for i, p in enumerate(s.get("points", [])):
@@ -60,9 +66,12 @@ def _normalize_series(series):
                 continue
             if x is None:
                 x = float(i)
+                label = str(p[0]).strip()
+                if label:
+                    categories.setdefault(x, label)
             pts.append([x, y])
         out.append({**s, "points": pts})
-    return out
+    return out, categories
 
 
 def _empty_svg(msg="(no data)"):
@@ -81,7 +90,7 @@ def _chart(spec, kind):
     pw = w - ml - mr
     ph = h - mt - mb
 
-    series = _normalize_series(spec.get("series", []))
+    series, categories = _normalize_series(spec.get("series", []))
     all_x = [p[0] for s in series for p in s.get("points", [])]
     all_y = [p[1] for s in series for p in s.get("points", [])]
     if not all_x:
@@ -128,13 +137,16 @@ def _chart(spec, kind):
             f'font-size="11" fill="#777">{_fmt(val)}</text>'
         )
 
-    # x ticks
-    for i in range(6):
-        val = xmin + (xmax - xmin) * i / 5
+    # x ticks - category names when the x values were labels, else numeric ticks
+    if categories:
+        ticks = [(v, categories[v]) for v in sorted(categories)]
+    else:
+        ticks = [(xmin + (xmax - xmin) * i / 5, None) for i in range(6)]
+    for val, label in ticks:
         x = X(val)
         parts.append(
             f'<text x="{x:.1f}" y="{mt + ph + 18:.1f}" text-anchor="middle" font-family="Arial" '
-            f'font-size="11" fill="#777">{_fmt(val)}</text>'
+            f'font-size="11" fill="#777">{_esc(label) if label else _fmt(val)}</text>'
         )
 
     # axes

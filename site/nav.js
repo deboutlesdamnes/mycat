@@ -42,6 +42,24 @@ function renderNav(active) {
       ${acctHtml}
     </div>
   `;
+
+  measureNav(root);
+}
+
+// Publishes the nav's height as --nav-h so pages that need to fill the rest of
+// the viewport (the practice/exam player) can size themselves against it —
+// the nav wraps to two rows on narrow screens, so it isn't a fixed number.
+let _navObserver = null;
+function measureNav(root) {
+  const nav = root.querySelector(".nav");
+  if (!nav) return;
+  const publish = () => document.documentElement.style.setProperty("--nav-h", `${nav.offsetHeight}px`);
+  publish();
+  if (typeof ResizeObserver !== "undefined") {
+    if (_navObserver) _navObserver.disconnect();
+    _navObserver = new ResizeObserver(publish);
+    _navObserver.observe(nav);
+  }
 }
 
 // Re-render the nav when auth state changes (sign in / out / session restore).
