@@ -15,7 +15,7 @@
   let selected = Stats.dayKey(today.getTime());
 
   const TASK_CLASS = { practice: "", review: "review", cars: "review", exam: "exam", rest: "review" };
-  const TASK_LABEL_CLASS = { exam: "exam", rest: "review" };
+  const TASK_LABEL_CLASS = { exam: "exam", rest: "review rest" };
 
   function render() {
     if (!schedule) {
@@ -43,13 +43,13 @@
             <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--color-accent-300)"></span>Content review</div>
             <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--color-text)"></span>Full-length</div>
           </div>
-          <a class="btn btn-secondary" href="onboarding.html">Edit availability</a>
-          <button class="btn btn-primary" id="rebalance">Rebalance plan</button>
+          <a class="btn btn-secondary cal-action" href="onboarding.html">Edit availability</a>
+          <button class="btn btn-primary cal-action" id="rebalance">Rebalance plan</button>
         </div>
         <div class="cal-body">
           <div>
             <div class="cal-dow">
-              ${["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((d) => `<div class="k" style="padding:10px 12px">${d}</div>`).join("")}
+              ${["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((d) => `<div class="k cal-dow-label">${d}</div>`).join("")}
             </div>
             <div class="cal-grid" id="cal-grid"></div>
           </div>
@@ -91,7 +91,7 @@
       const isToday = key === Stats.dayKey(today.getTime());
       return `
         <div class="cal-day ${c.otherMonth ? "other-month" : ""} ${isToday ? "today" : ""} ${key === selected ? "selected" : ""}" data-key="${key}">
-          <div class="num" style="font-size:12px">${c.date.getDate()}${isToday ? " · Today" : ""}</div>
+          <div class="num" style="font-size:12px">${c.date.getDate()}${isToday ? '<span class="cal-today-label"> · Today</span>' : ""}</div>
           ${tasks.map((t) => `<div class="cal-task ${TASK_LABEL_CLASS[t.type] || ""}">${t.label}</div>`).join("")}
         </div>`;
     }).join("");

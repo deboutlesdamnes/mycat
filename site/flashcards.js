@@ -236,6 +236,10 @@
       grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">No flashcards yet — answer a few practice questions first.</div>`;
       return;
     }
+    // The rail is rebuilt below; keep its scroll position (vertical rail on
+    // wide screens, sideways strip on phones) so picking a deck doesn't jump.
+    const oldRail = grid.querySelector(".deck-rail");
+    const railScroll = oldRail ? [oldRail.scrollLeft, oldRail.scrollTop] : null;
     grid.innerHTML = `
       <div class="deck-rail">
         <div class="k" style="margin-bottom:14px">Decks</div>
@@ -248,6 +252,9 @@
       <div class="flash-main" id="flash-main"></div>
       <div class="flash-side" id="flash-side"></div>
     `;
+    const rail = grid.querySelector(".deck-rail");
+    if (railScroll) [rail.scrollLeft, rail.scrollTop] = railScroll;
+    revealActiveDeck(rail);
     grid.querySelectorAll(".deck-item").forEach((el) => {
       el.addEventListener("click", () => {
         activeDeck = decks.find((d) => d.id === el.dataset.id);
@@ -258,6 +265,17 @@
     });
     renderCard();
     renderSide();
+  }
+
+  // On phones the rail is a sideways strip; scroll it so the active deck
+  // (e.g. one preselected via ?deck=) isn't hidden off the right edge.
+  function revealActiveDeck(rail) {
+    const act = rail.querySelector(".deck-item.active");
+    if (!act || rail.scrollWidth <= rail.clientWidth) return;
+    const r = rail.getBoundingClientRect();
+    const a = act.getBoundingClientRect();
+    if (a.left < r.left) rail.scrollLeft -= r.left - a.left + 16;
+    else if (a.right > r.right) rail.scrollLeft += a.right - r.right + 16;
   }
 
   function renderCard() {
@@ -271,15 +289,15 @@
     const kc = Glossary.keyConcepts(q);
     const practiceHref = kc.topic ? "practice.html?mode=topic&topic=" + encodeURIComponent(kc.topic) : "";
     main.innerHTML = `
-      <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
-        <div style="font-family:var(--font-heading);font-weight:600;font-size:14px">${activeDeck.title}</div>
-        <div class="text-muted" style="font-size:12px">Card ${idx + 1} of ${activeDeck.questions.length}</div>
-        <div class="bar" style="flex:1"><span style="width:${(idx / activeDeck.questions.length) * 100}%"></span></div>
+      <div class="flash-head">
+        <div class="flash-head-title">${activeDeck.title}</div>
+        <div class="flash-head-count text-muted">Card ${idx + 1} of ${activeDeck.questions.length}</div>
+        <div class="bar"><span style="width:${(idx / activeDeck.questions.length) * 100}%"></span></div>
         <span class="tag tag-neutral">Spaced repetition</span>
       </div>
       <div class="flash-card">
         <div class="k">Front</div>
-        <p style="font-family:var(--font-heading);font-size:22px;line-height:1.3;font-weight:600;margin:10px 0 0">${Glossary.linkify(q.question, { terms: kc.terms, limit: 2 })}</p>
+        <p class="flash-front">${Glossary.linkify(q.question, { terms: kc.terms, limit: 2 })}</p>
         ${Glossary.conceptChip(kc.topic, practiceHref)}
         <div id="back-slot" style="margin-top:auto"></div>
       </div>
@@ -296,7 +314,7 @@
         <p style="font-size:16px;line-height:1.7;margin:10px 0 0;opacity:.9"><strong>${letters[q.correct]}.</strong> ${Glossary.linkify(q.options[q.correct], { terms: kc.terms, limit: 3 })}</p>
         <p style="font-size:14px;line-height:1.6;margin-top:10px;opacity:.8">${Glossary.linkify(q.explanation, { terms: kc.terms, limit: 3 })}</p>
         ${Glossary.conceptChip(kc.topic, practiceHref)}
-        <div style="display:flex;gap:6px;margin-top:20px">
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:20px">
           ${q.topic ? `<span class="tag tag-accent">${q.topic}</span>` : ""}
           <span class="tag tag-neutral">${q.section ? q.section.replace(" Foundations", "") : ""}</span>
         </div>

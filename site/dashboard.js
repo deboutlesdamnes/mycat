@@ -121,7 +121,7 @@
         </div>
         <div class="row-list">
           ${queue.map((item, i) => `
-            <div class="row-item">
+            <div class="row-item queue-row">
               <div class="row-num">${String(i + 1).padStart(2, "0")}</div>
               <div class="row-main">
                 <div class="row-title">${item.title}</div>
@@ -175,7 +175,7 @@
     <div class="page-head">
       <h2 style="margin:0">Dashboard</h2>
     </div>
-    <div class="stat-grid" style="grid-template-columns:repeat(3, minmax(220px, 1fr))">
+    <div class="stat-grid stat-grid-3">
       ${scoreBlock()}
       ${weekBlock()}
       ${bankBlock()}

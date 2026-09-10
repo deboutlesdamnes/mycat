@@ -1,8 +1,10 @@
 // Injects the shared top nav into <div id="nav-root"></div>, present on
 // every new page, so the markup isn't duplicated across HTML files.
-// Structure matches the mockup exactly: flat children of .nav (brand, then
-// bare <a> links, then streak/avatar), relying on .nav-brand's
-// margin-right:auto to push everything else to the right as a group.
+// Structure matches the mockup: brand, then the links, then streak/avatar,
+// relying on .nav-brand's margin-right:auto to push everything else to the
+// right as a group. The links sit in a `display: contents` wrapper so they
+// lay out as flat children of .nav on wide screens and become their own
+// tab-strip row on phones.
 let _navActive = null;
 
 function renderNav(active) {
@@ -37,7 +39,7 @@ function renderNav(active) {
   root.innerHTML = `
     <div class="nav">
       <div class="nav-brand">${mycatMark(26)}<span style="letter-spacing:-.01em">my<span style="color:var(--color-accent)">cat</span></span></div>
-      ${links.map((l) => `<a href="${l.href}" ${l.key === active ? 'aria-current="page"' : ""}>${l.label}</a>`).join("")}
+      <nav class="nav-links">${links.map((l) => `<a href="${l.href}" ${l.key === active ? 'aria-current="page"' : ""}>${l.label}</a>`).join("")}</nav>
       ${streak > 0 ? `<div class="nav-streak">${icon("flame", { size: 15 })}${streak}-day streak</div>` : ""}
       ${acctHtml}
     </div>

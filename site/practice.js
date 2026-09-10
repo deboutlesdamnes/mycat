@@ -267,6 +267,14 @@
   function stopTimer() { if (timerHandle) { clearInterval(timerHandle); timerHandle = null; } }
   function fmt(sec) { const m = Math.floor(sec / 60); const s = sec % 60; return `${m}:${String(s).padStart(2, "0")}`; }
 
+  // Flag/Save toggles. The text label hides on phones (icon only), so the
+  // on/off state is also carried by aria-pressed, which styles the button.
+  function setToolButton(btn, iconName, on, label, onLabel) {
+    btn.setAttribute("aria-pressed", String(on));
+    btn.title = on ? onLabel : label;
+    btn.innerHTML = `${icon(iconName, { size: 14 })}<span class="btn-label">${on ? onLabel : label}</span>`;
+  }
+
   function selfAccuracyOnTopic(topic, excludeQid) {
     const log = Store.load().answerLog.filter((a) => a.topic === topic && a.qid !== excludeQid);
     if (!log.length) return null;
@@ -288,12 +296,14 @@
     root.innerHTML = `
       <div class="panel player-panel">
         <div class="player-toolbar">
-          <div style="font-family:var(--font-heading);font-weight:800;font-size:13px">${setLabel}</div>
-          <div class="text-muted" style="font-size:12px">Question ${idx + 1} of ${queue.length}</div>
-          <div class="bar" style="flex:1"><span style="width:${(idx / queue.length) * 100}%"></span></div>
-          <div style="display:flex;align-items:center;gap:6px;font-size:13px">${icon("clock", { size: 15 })}<span class="timer" id="q-timer">0:00</span></div>
-          <button class="btn btn-secondary" id="flag-btn">${icon("flag", { size: 14 })}${flagged ? "Flagged" : "Flag"}</button>
-          <button class="btn btn-secondary" id="save-btn">${icon("bookmark", { size: 14 })}${saved ? "Saved" : "Save"}</button>
+          <div class="player-title">${setLabel}</div>
+          <div class="player-progress">
+            <div class="player-count text-muted">Question ${idx + 1} of ${queue.length}</div>
+            <div class="bar"><span style="width:${(idx / queue.length) * 100}%"></span></div>
+          </div>
+          <div class="player-timer">${icon("clock", { size: 15 })}<span class="timer" id="q-timer">0:00</span></div>
+          <button class="btn btn-secondary" id="flag-btn" aria-label="Flag question"></button>
+          <button class="btn btn-secondary" id="save-btn" aria-label="Save question"></button>
         </div>
         <div class="player-grid">
           ${passage ? `
@@ -326,13 +336,15 @@
 
     startTimer();
 
-    document.getElementById("flag-btn").addEventListener("click", () => {
-      const now = Store.toggleFlag(q.id);
-      document.getElementById("flag-btn").innerHTML = `${icon("flag", { size: 14 })}${now ? "Flagged" : "Flag"}`;
+    const flagBtn = document.getElementById("flag-btn");
+    const saveBtn = document.getElementById("save-btn");
+    setToolButton(flagBtn, "flag", flagged, "Flag", "Flagged");
+    setToolButton(saveBtn, "bookmark", saved, "Save", "Saved");
+    flagBtn.addEventListener("click", () => {
+      setToolButton(flagBtn, "flag", Store.toggleFlag(q.id), "Flag", "Flagged");
     });
-    document.getElementById("save-btn").addEventListener("click", () => {
-      const now = Store.toggleSaved(q.id);
-      document.getElementById("save-btn").innerHTML = `${icon("bookmark", { size: 14 })}${now ? "Saved" : "Save"}`;
+    saveBtn.addEventListener("click", () => {
+      setToolButton(saveBtn, "bookmark", Store.toggleSaved(q.id), "Save", "Saved");
     });
 
     document.querySelectorAll("#options .answer-option").forEach((btn) => {

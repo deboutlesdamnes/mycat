@@ -439,10 +439,11 @@ body {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 12px;
-  display: flex;
-  justify-content: center;
   overflow-x: auto;
 }
+/* Centered with auto margins rather than flex centering: a table wider than a
+   phone screen then scrolls from its left edge instead of being clipped. */
+.figure > * { margin-left: auto; margin-right: auto; }
 .figure svg { max-width: 100%; height: auto; display: block; }
 .figure-caption {
   font-size: 0.82rem;
@@ -453,6 +454,16 @@ body {
 .mcat-table { border-collapse: collapse; font-size: 0.9rem; color: #2b2320; }
 .mcat-table th, .mcat-table td { border: 1px solid #d8d0c6; padding: 6px 10px; text-align: center; }
 .mcat-table th { background: #f0eae2; font-weight: 700; }
+
+/* Classic quiz on phones: tighter gutters so the card keeps readable width. */
+@media (max-width: 480px) {
+  body { padding: 20px 14px 40px; }
+  .app { gap: 16px; }
+  .brand-name, .brand-icon { font-size: 1.7rem; }
+  .quiz-card { padding: 20px 18px; min-height: 0; }
+  .q-text { font-size: 1.12rem; }
+  .grade-row { gap: 8px; }
+}
 
 /* ============================================================================
    Below: design system for the new multi-page app (dashboard, practice,
@@ -522,7 +533,7 @@ body {
 :root {
   --font-heading: "IBM Plex Sans", system-ui, sans-serif;
   --font-heading-weight: 600;
-  --font-body: "Lora", Georgia, serif;
+  --font-body: "Times New Roman", Times, serif;
   --color-bg: #f5f8fb;
   --color-surface: #ffffff;
   --color-text: #16212b;
@@ -608,6 +619,19 @@ body {
 }
 .panel-pad { padding: var(--space-6); }
 @media (max-width: 860px) { .cols-2 { grid-template-columns: 1fr; } }
+/* Phones: 16px gutters everywhere (page edge and inside panels) and a smaller
+   type scale, so content keeps a readable width without touching the edge. */
+@media (max-width: 600px) {
+  .page { padding: var(--space-4) var(--space-4) 40px; gap: 20px; }
+  .panel-pad { padding: 20px var(--space-4); }
+  .cols-2 { gap: var(--space-6); }
+  .app2 h1 { font-size: 30px; }
+  .app2 h2 { font-size: 26px; }
+  .app2 h3 { font-size: 21px; }
+  .app2 h4 { font-size: 18px; }
+}
+/* iOS Safari zooms the page when focusing an input under 16px. */
+@media (pointer: coarse) { .app2 .input { font-size: 16px; } }
 
 /* ---------------- nav (exact Modernist .nav/.nav-brand) ---------------- */
 .app2 .nav {
@@ -632,7 +656,29 @@ body {
 }
 .app2 .nav-account { display: flex; align-items: center; flex: none; }
 .app2 .nav-account-link { font-size: 14px; white-space: nowrap; }
-@media (max-width: 780px) { .app2 .nav { flex-wrap: wrap; } }
+/* The links wrapper is layout-transparent on wide screens, so the links stay
+   flat children of .nav exactly as in the mockup. */
+.nav-links { display: contents; }
+@media (max-width: 780px) {
+  /* Two tidy rows instead of an arbitrary wrap: brand + streak + account on
+     top, then the page links as a full-width tab strip that scrolls sideways
+     if it ever runs out of room. */
+  .app2 .nav { flex-wrap: wrap; gap: 0 var(--space-3); padding: 10px var(--space-4) 0; }
+  .nav-links {
+    display: flex; order: 1; flex: 1 0 100%; justify-content: space-between; gap: 2px;
+    margin: 8px calc(-1 * var(--space-4)) 0; padding: 0 var(--space-3);
+    overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .app2 .nav-links a {
+    flex: none; white-space: nowrap; padding: 9px 4px 8px;
+    border-bottom: 2px solid transparent; margin-bottom: -2px;
+  }
+  .app2 .nav-links a[aria-current='page'] { border-bottom-color: var(--color-accent); }
+}
+@media (max-width: 390px) { .app2 .nav-links a { font-size: 13px; padding-inline: 2px; } }
+/* Phone in landscape: a sticky two-row nav would eat half the screen. */
+@media (max-height: 500px) { .app2 .nav { position: static; } }
 
 /* ---------------- buttons (exact Modernist .btn family) ---------------- */
 .app2 .btn {
@@ -712,6 +758,8 @@ body {
   border: 2px solid var(--color-divider);
 }
 .stat-tile { background: var(--color-surface); padding: 16px 18px; }
+.stat-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 720px) { .stat-grid-3 { grid-template-columns: 1fr; } }
 .bar { height: 6px; background: var(--color-accent-200); position: relative; }
 .bar > span { display: block; height: 100%; background: var(--color-accent); }
 .bar-band {
@@ -751,6 +799,15 @@ body {
 .row-main { flex: 1; min-width: 0; }
 .row-title { font-weight: 600; font-size: 15px; }
 .row-sub { font-size: 12px; opacity: .55; margin-top: 3px; }
+@media (max-width: 560px) {
+  /* Dashboard queue: give the title the full width and tuck the tag under it,
+     with the Start button centered on the right. */
+  .queue-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 6px var(--space-3); }
+  .queue-row .row-num { grid-row: 1 / span 2; }
+  .queue-row .row-main { grid-column: 2; }
+  .queue-row .tag { grid-column: 2; grid-row: 2; justify-self: start; }
+  .queue-row .btn { grid-column: 3; grid-row: 1 / span 2; align-self: center; }
+}
 .kv-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--color-divider); font-size: 13px; }
 .kv-row:last-child { border-bottom: none; }
 .kv-row span { opacity: .6; }
@@ -762,6 +819,8 @@ body {
 .player-panel {
   display: flex; flex-direction: column; overflow: hidden;
   height: calc(100vh - var(--nav-h, 58px) - var(--space-6) - 20px);
+  /* dvh tracks Safari's collapsing toolbars; 100vh alone runs under them. */
+  height: calc(100dvh - var(--nav-h, 58px) - var(--space-6) - 20px);
   min-height: 440px;
 }
 .page:has(.player-panel) { padding-bottom: 20px; }
@@ -769,6 +828,12 @@ body {
   flex: none; display: flex; align-items: center; gap: var(--space-4);
   padding: 12px 24px; border-bottom: 2px solid var(--color-divider); background: var(--color-surface);
 }
+.player-title { font-family: var(--font-heading); font-weight: 800; font-size: 13px; }
+.player-progress { flex: 1; min-width: 0; display: flex; align-items: center; gap: var(--space-4); }
+.player-progress .bar { flex: 1; }
+.player-count { font-size: 12px; white-space: nowrap; }
+.player-timer { display: flex; align-items: center; gap: 6px; font-size: 13px; }
+.app2 .btn[aria-pressed="true"] { color: var(--color-accent); border-color: var(--color-accent); }
 .player-grid { display: grid; grid-template-columns: 1fr 1fr; flex: 1; min-height: 0; }
 /* The "Passage" label stays put and only the passage body scrolls under it. */
 .player-passage {
@@ -779,14 +844,31 @@ body {
 .passage-scroll { flex: 1; }
 .player-question { padding: var(--space-6); }
 .passage-scroll, .player-question { min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; }
-@media (max-width: 860px) {
-  /* Stacked on narrow screens: a viewport-tall panel would leave both halves
-     too short, so the page scrolls again — but the passage keeps its own cap
-     so the question is always within reach. */
+/* Tablet portrait keeps the side-by-side layout, just with slimmer padding. */
+@media (max-width: 1024px) {
+  .player-toolbar { padding: 12px 20px; }
+  .player-passage, .player-question { padding: 20px; }
+}
+@media (max-width: 760px), (max-height: 560px) {
+  /* Stacked on phones (and any short landscape screen): a viewport-tall panel
+     would leave both halves too short, so the page scrolls again — but the
+     passage keeps its own cap so the question is always within reach. */
   .player-panel { height: auto; min-height: 0; overflow: visible; }
   .player-grid { grid-template-columns: 1fr; }
-  .player-passage { border-right: none; border-bottom: 2px solid var(--color-divider); max-height: 45vh; }
+  .player-passage { border-right: none; border-bottom: 2px solid var(--color-divider); max-height: 45vh; max-height: 45dvh; }
   .player-question { overflow: visible; }
+}
+@media (max-width: 760px) {
+  /* Toolbar in two rows: title, timer and tools on top; progress below. */
+  .player-toolbar { flex-wrap: wrap; gap: 10px var(--space-3); padding: 12px var(--space-4); }
+  .player-title { flex: 1 1 0; min-width: 0; }
+  .player-progress { order: 1; flex: 1 1 100%; gap: var(--space-3); }
+  .player-passage, .player-question { padding: 18px var(--space-4); }
+}
+@media (max-width: 480px) {
+  /* Icon-only Flag/Save so the set title keeps room; state shows via color. */
+  .player-toolbar .btn-label { display: none; }
+  .player-toolbar .btn { padding-inline: 11px; }
 }
 .passage-block { font-size: 15px; line-height: 1.7; opacity: .9; white-space: pre-wrap; }
 .question-text { font-size: 16px; font-weight: 600; line-height: 1.6; margin: 0 0 var(--space-4); }
@@ -807,9 +889,13 @@ body {
 .answer-explanation p { opacity: .85; }
 
 .review-row { display: flex; gap: 10px; margin-top: var(--space-4); flex-wrap: wrap; }
-.review-btn { flex: 1; min-width: 90px; border: none; padding: 12px 6px; font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: .95rem; cursor: pointer; color: #fff; opacity: .9; }
+.review-btn { flex: 1; min-width: 60px; border: none; padding: 12px 6px; font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: .95rem; cursor: pointer; color: #fff; opacity: .9; }
 .review-btn:hover { opacity: 1; }
 .review-btn.suggested { outline: 2px solid var(--color-text); outline-offset: 2px; opacity: 1; }
+@media (max-width: 480px) {
+  .review-row { gap: 8px; }
+  .review-btn { padding: 12px 4px; }
+}
 .review-again { background: var(--color-wrong); }
 .review-hard { background: #c98a00; }
 .review-good { background: var(--color-correct); }
@@ -835,9 +921,41 @@ body {
   border: 2px solid var(--color-divider); background: var(--color-surface);
   padding: 36px 40px; min-height: 280px; display: flex; flex-direction: column;
 }
+.flash-head { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+.flash-head-title { font-family: var(--font-heading); font-weight: 600; font-size: 14px; }
+.flash-head-count { font-size: 12px; white-space: nowrap; }
+.flash-head .bar { flex: 1; }
+.app2 .flash-front { font-family: var(--font-heading); font-size: 22px; line-height: 1.3; font-weight: 600; margin: 10px 0 0; }
 @media (max-width: 980px) {
-  .flash-grid { grid-template-columns: 1fr; }
-  .deck-rail, .flash-side { border: none; border-top: 2px solid var(--color-divider); }
+  /* Tablet: deck rail beside the card, session stats full-width below. */
+  .flash-grid { grid-template-columns: 240px minmax(0, 1fr); }
+  .flash-main { padding: 20px 24px 28px; }
+  .flash-card { padding: 28px; }
+  .flash-side { grid-column: 1 / -1; border-left: none; border-top: 2px solid var(--color-divider); }
+}
+@media (max-width: 640px) {
+  /* Phone: the card comes first; decks become a sideways-scrolling strip. */
+  .flash-grid { grid-template-columns: minmax(0, 1fr); }
+  .deck-rail {
+    display: flex; gap: var(--space-2); overflow-x: auto; max-height: none;
+    border-right: none; border-bottom: 2px solid var(--color-divider);
+    padding: var(--space-3) var(--space-4); scrollbar-width: none;
+  }
+  .deck-rail::-webkit-scrollbar { display: none; }
+  .deck-rail > .k { display: none; }
+  .deck-item {
+    flex: none; width: max-content; max-width: 210px; margin: 0;
+    padding: 8px 12px; border: 1px solid var(--color-divider);
+  }
+  .deck-item.active { border-left-width: 4px; }
+  .flash-main { padding: var(--space-4) var(--space-4) 24px; }
+  .flash-head { flex-wrap: wrap; gap: 8px 12px; margin-bottom: 14px; }
+  .flash-head-title { flex: 1 1 0; min-width: 0; }
+  .flash-head .bar { order: 1; flex: 1 1 100%; }
+  .flash-head .tag { display: none; }
+  .flash-card { padding: 22px 18px; min-height: 220px; }
+  .app2 .flash-front { font-size: 19px; }
+  .flash-side { padding: 20px var(--space-4); }
 }
 
 /* ---------------- schedule / calendar ---------------- */
@@ -845,9 +963,10 @@ body {
 .cal-legend { display: flex; align-items: center; gap: var(--space-4); font-size: 12px; margin-left: auto; }
 .cal-legend-item { display: flex; align-items: center; gap: 6px; }
 .cal-legend-dot { width: 10px; height: 10px; }
-.cal-body { display: grid; grid-template-columns: 1fr 320px; }
-.cal-dow { display: grid; grid-template-columns: repeat(7, 1fr); border-bottom: 2px solid var(--color-divider); }
-.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: var(--color-divider); }
+.cal-body { display: grid; grid-template-columns: minmax(0, 1fr) 320px; }
+.cal-dow { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); border-bottom: 2px solid var(--color-divider); }
+.cal-dow-label { padding: 10px 12px; }
+.cal-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 1px; background: var(--color-divider); }
 .cal-day { background: var(--color-bg); min-height: 112px; padding: 8px 10px; cursor: pointer; }
 .cal-day:hover { background: var(--color-accent-100); }
 .cal-day.other-month { opacity: .4; }
@@ -858,8 +977,24 @@ body {
 .cal-task.exam { background: var(--color-text); color: #fff; border-left-color: var(--color-accent); }
 .cal-side { padding: 28px 30px; background: var(--color-surface); }
 @media (max-width: 980px) {
-  .cal-body { grid-template-columns: 1fr; }
+  .cal-body { grid-template-columns: minmax(0, 1fr); }
   .cal-side { border-top: 2px solid var(--color-divider); }
+}
+@media (max-width: 640px) {
+  /* Phone: month + arrows on one row, legend and actions below; days show
+     colored bars instead of labels — tap a day for its plan underneath. */
+  .cal-toolbar { gap: var(--space-3); padding: var(--space-4); }
+  .cal-toolbar h3 { flex: 1 1 0; }
+  .cal-legend { order: 1; flex: 1 1 100%; margin-left: 0; flex-wrap: wrap; gap: 6px var(--space-4); }
+  .cal-action { order: 2; flex: 1 1 auto; }
+  .cal-dow-label { padding: 8px 0; text-align: center; letter-spacing: .04em; }
+  .cal-day { min-height: 62px; padding: 5px; }
+  .cal-today-label { display: none; }
+  .cal-task { font-size: 0; height: 5px; padding: 0; margin-top: 4px; border-left: none; background: var(--color-accent); }
+  .cal-task.review { background: var(--color-accent-300); }
+  .cal-task.rest { background: var(--color-neutral-300); }
+  .cal-task.exam { background: var(--color-text); }
+  .cal-side { padding: 20px var(--space-4); }
 }
 
 /* ---------------- exam score report ---------------- */
@@ -879,15 +1014,32 @@ body {
 }
 .tag-chip:hover { border-color: var(--color-accent); }
 .tag-chip.selected { background: var(--color-accent); color: #fff; border-color: var(--color-accent); }
-@media (max-width: 980px) { .score-hero-row, .report-cols { grid-template-columns: 1fr; } }
+@media (max-width: 980px) {
+  .score-hero-row, .report-cols { grid-template-columns: minmax(0, 1fr); }
+  .score-hero { min-width: 0; }
+}
+@media (max-width: 560px) {
+  .score-hero, .score-detail, .report-col { padding: 20px var(--space-4); }
+  .score-num-lg { font-size: 60px; }
+  /* Correct x/y already says it; the bar column only squeezes the names. */
+  .score-table .col-acc { display: none; }
+}
 
 /* ---------------- onboarding ---------------- */
 .onboard-grid { display: grid; grid-template-columns: 2fr 1fr; }
 .onboard-main { padding: 40px 44px; border-right: 2px solid var(--color-divider); }
 .onboard-side { padding: 40px 32px; background: var(--color-surface); }
+.app2 .onboard-title { font-size: 34px; margin-bottom: 14px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 @media (max-width: 860px) {
   .onboard-grid { grid-template-columns: 1fr; }
-  .onboard-main { border-right: none; border-bottom: 2px solid var(--color-divider); }
+  .onboard-main { border-right: none; border-bottom: 2px solid var(--color-divider); padding: 32px; }
+  .onboard-side { padding: 32px; }
+}
+@media (max-width: 560px) {
+  .onboard-main, .onboard-side { padding: 22px var(--space-4); }
+  .app2 .onboard-title { font-size: 27px; }
+  .form-grid { grid-template-columns: 1fr; }
 }
 
 /* ---------------- misc (app-specific, not part of the mockup) ---------------- */
@@ -959,6 +1111,7 @@ body {
   border-color: var(--accent);
 }
 .concept-chip-label {
+  white-space: nowrap;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-size: 10px;

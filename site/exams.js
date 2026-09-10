@@ -80,10 +80,12 @@
       root.innerHTML = `
         <div class="panel player-panel">
           <div class="player-toolbar">
-            <div style="font-family:var(--font-heading);font-weight:800;font-size:13px">${deck.title}</div>
-            <div class="text-muted" style="font-size:12px">Question ${qi + 1} of ${deck.questions.length} · Section ${si + 1} of ${sections.length}</div>
-            <div class="bar" style="flex:1"><span style="width:${(qi / deck.questions.length) * 100}%"></span></div>
-            <div style="display:flex;align-items:center;gap:6px;font-size:13px">${icon("clock", { size: 15 })}<span class="timer" id="exam-timer">${fmt(secondsLeft)}</span></div>
+            <div class="player-title">${deck.title}</div>
+            <div class="player-progress">
+              <div class="player-count text-muted">Question ${qi + 1} of ${deck.questions.length} · Section ${si + 1} of ${sections.length}</div>
+              <div class="bar"><span style="width:${(qi / deck.questions.length) * 100}%"></span></div>
+            </div>
+            <div class="player-timer">${icon("clock", { size: 15 })}<span class="timer" id="exam-timer">${fmt(secondsLeft)}</span></div>
           </div>
           <div class="player-grid">
             ${q.passage ? `<div class="player-passage"><div class="k">Passage</div><div class="passage-scroll"><div class="passage-block">${Glossary.linkify(q.passage, { limit: 3 })}</div>${fig}</div></div>` : ""}
@@ -227,15 +229,15 @@
           </div>
           <div class="score-detail">
             <h4>Section scores</h4>
-            <table class="table">
-              <thead><tr><th>Section</th><th style="text-align:right">Score</th><th style="text-align:right">Correct</th><th style="width:36%">Accuracy</th></tr></thead>
+            <table class="table score-table">
+              <thead><tr><th>Section</th><th style="text-align:right">Score</th><th style="text-align:right">Correct</th><th class="col-acc" style="width:36%">Accuracy</th></tr></thead>
               <tbody>
                 ${attempt.sectionScores.map((s) => `
                   <tr>
                     <td>${s.section}</td>
                     <td style="text-align:right"><strong>${s.score}</strong> <span class="text-muted" style="font-weight:400;font-size:12px">±1</span></td>
                     <td style="text-align:right" class="text-muted">${s.correct}/${s.total}</td>
-                    <td><div class="bar"><span style="width:${s.total ? Math.round((s.correct / s.total) * 100) : 0}%"></span></div></td>
+                    <td class="col-acc"><div class="bar"><span style="width:${s.total ? Math.round((s.correct / s.total) * 100) : 0}%"></span></div></td>
                   </tr>`).join("")}
               </tbody>
             </table>

@@ -28,7 +28,7 @@
         <div class="onboard-grid">
           <div class="onboard-main">
             <div class="k" style="margin-bottom:8px">Set up your plan</div>
-            <h1 style="font-size:34px;margin-bottom:14px">${autoBaseline ? `Your baseline is a ${autoBaseline}.` : "Let's set your target."}</h1>
+            <h1 class="onboard-title">${autoBaseline ? `Your baseline is a ${autoBaseline}.` : "Let's set your target."}</h1>
             <p class="text-muted" style="max-width:56ch">
               ${autoBaseline
                 ? "Based on your most recent full-length sitting. Set a target score and test date and we'll build your study plan around it."
@@ -37,7 +37,7 @@
             <hr class="hr">
 
             <form id="onboard-form">
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px">
+              <div class="form-grid" style="margin-bottom:20px">
                 <div class="field">
                   <label>Baseline score ${autoBaseline ? "(from your last sitting)" : "(optional)"}</label>
                   <input class="input" type="number" min="472" max="528" id="f-baseline" value="${p.baselineScore || autoBaseline || ""}" ${autoBaseline ? "readonly" : ""} placeholder="e.g. 502">
@@ -48,7 +48,7 @@
                 </div>
               </div>
 
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+              <div class="form-grid" style="column-gap:28px">
                 <div class="field">
                   <label>Test date</label>
                   <input class="input" type="date" id="f-date" value="${p.testDate || ""}" required>
