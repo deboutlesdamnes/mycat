@@ -533,7 +533,7 @@ body {
 :root {
   --font-heading: "IBM Plex Sans", system-ui, sans-serif;
   --font-heading-weight: 600;
-  --font-body: "Times New Roman", Times, serif;
+  --font-body: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
   --color-bg: #f5f8fb;
   --color-surface: #ffffff;
   --color-text: #16212b;
@@ -659,24 +659,28 @@ body {
 /* The links wrapper is layout-transparent on wide screens, so the links stay
    flat children of .nav exactly as in the mockup. */
 .nav-links { display: contents; }
+/* Icons (phone only) and the gradients that paint them; the defs <svg> is
+   absolutely positioned so it never takes a slot in the flex row. */
+.nav-icon { display: none; }
+.nav-icon svg { stroke: var(--nav-grad); }
+.nav-grad-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
 @media (max-width: 780px) {
   /* Two tidy rows instead of an arbitrary wrap: brand + streak + account on
-     top, then the page links as a full-width tab strip that scrolls sideways
-     if it ever runs out of room. */
+     top, then the pages as a full-width row of large gradient icons. */
   .app2 .nav { flex-wrap: wrap; gap: 0 var(--space-3); padding: 10px var(--space-4) 0; }
-  .nav-links {
-    display: flex; order: 1; flex: 1 0 100%; justify-content: space-between; gap: 2px;
-    margin: 8px calc(-1 * var(--space-4)) 0; padding: 0 var(--space-3);
-    overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
-  }
-  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links { display: flex; order: 1; flex: 1 0 100%; margin: 8px calc(-1 * var(--space-4)) 0; }
   .app2 .nav-links a {
-    flex: none; white-space: nowrap; padding: 9px 4px 8px;
+    flex: 1 1 0; display: flex; justify-content: center; padding: 10px 0 9px;
     border-bottom: 2px solid transparent; margin-bottom: -2px;
   }
-  .app2 .nav-links a[aria-current='page'] { border-bottom-color: var(--color-accent); }
+  .app2 .nav-links a[aria-current='page'] { border-bottom-color: var(--color-accent); background: var(--color-accent-100); }
+  .nav-icon { display: block; }
+  /* Label stays in the accessibility tree as the link's name. */
+  .nav-label {
+    position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
 }
-@media (max-width: 390px) { .app2 .nav-links a { font-size: 13px; padding-inline: 2px; } }
 /* Phone in landscape: a sticky two-row nav would eat half the screen. */
 @media (max-height: 500px) { .app2 .nav { position: static; } }
 
@@ -1031,6 +1035,17 @@ body {
 .onboard-side { padding: 40px 32px; background: var(--color-surface); }
 .app2 .onboard-title { font-size: 34px; margin-bottom: 14px; }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.form-grid > * { min-width: 0; }
+/* iOS Safari sizes native date inputs to their own content and ignores
+   width:100%, so the field pokes past the form. Scoped to iOS so desktop
+   date pickers keep their native look. */
+@supports (-webkit-touch-callout: none) {
+  .app2 .input[type="date"] {
+    -webkit-appearance: none; appearance: none; display: block;
+    min-width: 0; max-width: 100%; line-height: 22px;
+  }
+  .app2 .input[type="date"]::-webkit-date-and-time-value { text-align: left; }
+}
 @media (max-width: 860px) {
   .onboard-grid { grid-template-columns: 1fr; }
   .onboard-main { border-right: none; border-bottom: 2px solid var(--color-divider); padding: 32px; }
