@@ -666,8 +666,8 @@ body {
      top, then the pages as a row of white icons on blue gradient tiles. The
      current page's tile is lit up; the rest sit in a muted steel blue that
      still keeps the white icons legible. */
-  .app2 .nav { flex-wrap: wrap; gap: 0 var(--space-3); padding: 10px var(--space-4) 0; }
-  .nav-links { display: flex; order: 1; flex: 1 0 100%; gap: var(--space-2); margin: 10px 0 12px; }
+  .app2 .nav { flex-wrap: wrap; gap: 0 var(--space-3); padding: 14px var(--space-4) 0; }
+  .nav-links { display: flex; order: 1; flex: 1 0 100%; gap: var(--space-2); margin: 20px 0 12px; }
   .app2 .nav .nav-links a {
     flex: 1 1 0; display: flex; align-items: center; justify-content: center; height: 46px;
     color: #fff; background: linear-gradient(135deg, #7697bb, #56789f);
