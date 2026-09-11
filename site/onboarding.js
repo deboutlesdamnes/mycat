@@ -32,7 +32,7 @@
             <p class="text-muted" style="max-width:56ch">
               ${autoBaseline
                 ? "Based on your most recent full-length sitting. Set a target score and test date and we'll build your study plan around it."
-                : "No full-length attempt yet — enter a baseline if you know one (a past AAMC or MyCat full-length score), or leave it blank and we'll estimate it as you practice."}
+                : "No full-length attempt yet. Enter a baseline if you know one (a past AAMC or MyCat full-length score), or leave it blank and we'll estimate it as you practice."}
             </p>
             <hr class="hr">
 
@@ -72,14 +72,14 @@
           <div class="onboard-side">
             <div class="k" style="margin-bottom:16px">Your plan</div>
             <div class="row-list" style="border-top:2px solid var(--color-divider)">
-              <div class="kv-row"><span>Study weeks</span><strong>${weeks != null ? weeks : "—"}</strong></div>
+              <div class="kv-row"><span>Study weeks</span><strong>${weeks != null ? weeks : "Not set"}</strong></div>
               <div class="kv-row"><span>Practice questions</span><strong>${totalBank - uniqueAnswered}</strong></div>
               <div class="kv-row"><span>Full-length exams</span><strong>${examsRemaining}</strong></div>
               <div class="kv-row"><span>Weak-area drills</span><strong>Adaptive</strong></div>
             </div>
             <div class="callout" style="margin-top:24px">
               <div class="k">How this works</div>
-              <p>Your plan updates from real practice data as you go — projected score, weakest topics, and the daily queue all come from your own answers, not a generic script.</p>
+              <p>Your plan updates from real practice data as you go. Your projected score, weakest topics, and daily queue all come from your own answers.</p>
             </div>
           </div>
         </div>

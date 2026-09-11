@@ -193,7 +193,7 @@ const Stats = (function () {
     if (!items.length) {
       items.push({
         key: "new", tag: "New", tagClass: "tag2-neutral",
-        title: "Start practicing", subtitle: "No review due yet — begin a new set",
+        title: "Start practicing", subtitle: "No reviews due yet. Begin a new set",
         href: "practice.html",
       });
     }

@@ -108,10 +108,10 @@
         ${Auth.mode === "supabase"
           ? (isSignup
               ? "An account keeps your progress synced across every device you study on."
-              : "Welcome back — pick up where you left off on any device.")
+              : "Welcome back. Pick up where you left off on any device.")
           : (isSignup
               ? "Create a local account to keep your progress separate and saved in this browser."
-              : "Welcome back — log in to your local account.")}
+              : "Welcome back. Log in to your local account.")}
       </p>
 
       <div class="seg" style="width:100%;margin-bottom:18px">
@@ -202,7 +202,7 @@
   function render() {
     if (typeof Auth === "undefined" || !Auth.libLoaded) {
       root.innerHTML = notConfigured(
-        "The account library didn't load — you may be offline or it may be blocked. " +
+        "The account library didn't load. You may be offline, or it may be blocked. " +
         "Your progress is still saved in this browser.");
       return;
     }

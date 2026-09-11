@@ -87,7 +87,7 @@
         <div class="k">This week</div>
         <div style="display:flex;align-items:flex-end;gap:8px;margin-top:10px">
           <div class="num" style="font-size:34px">${weekHours.toFixed(1)}</div>
-          <div style="font-size:13px;padding-bottom:5px" class="text-muted">/ ${store.profile.weeklyHours || "—"} hrs goal</div>
+          <div style="font-size:13px;padding-bottom:5px" class="text-muted">${store.profile.weeklyHours ? `/ ${store.profile.weeklyHours} hrs goal` : "hrs, no goal set"}</div>
         </div>
         <div class="chart-bars" style="margin-top:16px">
           ${week.map((d) => `<div style="height:${Math.max(6, (d.minutes / maxMin) * 100)}%" class="${d.isToday ? "today" : ""}" title="${d.label}: ${Math.round(d.minutes)} min"></div>`).join("")}
@@ -107,7 +107,7 @@
           <div style="font-size:13px;padding-bottom:5px" class="text-muted">answered</div>
         </div>
         <div class="row-list" style="margin-top:16px;border-top:1px solid var(--color-divider)">
-          <div class="kv-row"><span>Accuracy</span><strong>${overallAccuracy != null ? overallAccuracy + "%" : "—"}</strong></div>
+          <div class="kv-row"><span>Accuracy</span><strong>${overallAccuracy != null ? overallAccuracy + "%" : "N/A"}</strong></div>
           <div class="kv-row"><span>Remaining</span><strong>${totalBank - uniqueAnswered} of ${totalBank}</strong></div>
         </div>
       </div>`;
@@ -117,7 +117,7 @@
     return `
       <div>
         <div class="page-head" style="border-bottom:2px solid var(--color-divider);padding-bottom:10px">
-          <h4 style="margin:0">Up next — adaptive queue</h4>
+          <h4 style="margin:0">Up next: adaptive queue</h4>
         </div>
         <div class="row-list">
           ${queue.map((item, i) => `
@@ -158,7 +158,7 @@
           ${rows.map((r) => `
             <div style="margin-bottom:16px">
               <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px">
-                <span>${r.label}</span><strong>${r.score != null ? r.score : "—"}</strong>
+                <span>${r.label}</span><strong>${r.score != null ? r.score : "N/A"}</strong>
               </div>
               <div class="bar"><span style="width:${r.acc != null ? Math.round(r.acc * 100) : 0}%"></span></div>
             </div>`).join("")}

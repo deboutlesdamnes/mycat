@@ -233,7 +233,7 @@
   function renderGrid() {
     const grid = document.getElementById("flash-grid");
     if (!activeDeck) {
-      grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">No flashcards yet — answer a few practice questions first.</div>`;
+      grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">No flashcards yet. Answer a few practice questions first.</div>`;
       return;
     }
     // The rail is rebuilt below; keep its scroll position (vertical rail on
@@ -391,7 +391,7 @@
       ${activeDeck.auto ? `
         <div class="callout" style="margin-top:20px">
           <div class="k">Auto-generated</div>
-          <p>Built from questions you've gotten wrong in practice — reviewing this deck helps most.</p>
+          <p>Built from questions you've gotten wrong in practice. Reviewing this deck helps most.</p>
         </div>` : ""}
       <div class="k" style="margin-top:24px">Upcoming reviews</div>
       <div class="chart-bars" style="height:60px;margin-top:10px">

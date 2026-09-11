@@ -469,7 +469,7 @@ function selectOption(i, btn, optionsEl) {
   const letters = ["A", "B", "C", "D"];
   const explanation = document.createElement("div");
   explanation.className = "explanation";
-  explanation.innerHTML = `<strong>${wasCorrect ? "Correct" : "Not quite"} — answer: ${letters[q.correct]}.</strong> ${Glossary.linkify(q.explanation, { terms: kc.terms, limit: 3 })} ${Glossary.conceptChip(kc.topic)}`;
+  explanation.innerHTML = `<strong>${wasCorrect ? "Correct" : "Not quite"}. The answer is ${letters[q.correct]}.</strong> ${Glossary.linkify(q.explanation, { terms: kc.terms, limit: 3 })} ${Glossary.conceptChip(kc.topic)}`;
   root.appendChild(explanation);
 
   showGradeButtons(wasCorrect);
@@ -693,7 +693,7 @@ function renderSummary() {
 
   const note = document.createElement("p");
   note.className = "srs-note";
-  note.textContent = "Cards were rescheduled with spaced repetition — revisit the due cards later to lock them into memory.";
+  note.textContent = "Cards were rescheduled with spaced repetition. Revisit the due cards later to lock them into memory.";
   wrap.appendChild(note);
 
   const btnRow = document.createElement("div");
@@ -738,8 +738,8 @@ function renderEmpty() {
 function pickMessage(s, total) {
   const ratio = s / total;
   if (ratio === 1) return "Perfect score on this deck.";
-  if (ratio >= 0.7) return "Strong performance — just a few concepts to review.";
-  if (ratio >= 0.4) return "A mixed result — worth revisiting this section's core concepts.";
+  if (ratio >= 0.7) return "Strong performance. Just a few concepts to review.";
+  if (ratio >= 0.4) return "A mixed result. This section's core concepts are worth revisiting.";
   return "This section needs more review before test day.";
 }
 

@@ -155,7 +155,7 @@
     if (!missed.length) { renderReport(attempt.date); return; }
 
     root.innerHTML = `
-      <div class="page-head"><h2 style="margin:0">Quick review — why'd you miss these?</h2></div>
+      <div class="page-head"><h2 style="margin:0">Quick review: why'd you miss these?</h2></div>
       <p class="text-muted">Optional, but it makes "where the points went" on your report real instead of a guess.</p>
       <div class="panel panel-pad">
         <div class="row-list" id="missed-list">
@@ -224,8 +224,8 @@
             <div style="font-size:14px;opacity:.9">~${pctl}th percentile (approx.)${prev ? ` · <strong>${attempt.compositeScore - prev.compositeScore >= 0 ? "+" : ""}${attempt.compositeScore - prev.compositeScore}</strong> from last sitting` : ""}</div>
             <div style="font-size:13px;opacity:.85;margin-top:4px">Confidence band ${attempt.compositeScore - 2}–${attempt.compositeScore + 2}</div>
             <hr class="hr" style="background:rgba(255,255,255,.35)">
-            <div class="kv-row" style="border-color:rgba(255,255,255,.2)"><span style="opacity:.8">Target</span><strong>${store.profile.targetScore || "—"}</strong></div>
-            <div class="kv-row" style="border-color:rgba(255,255,255,.2)"><span style="opacity:.8">Gap</span><strong>${store.profile.targetScore ? Math.max(0, store.profile.targetScore - attempt.compositeScore) : "—"}</strong></div>
+            <div class="kv-row" style="border-color:rgba(255,255,255,.2)"><span style="opacity:.8">Target</span><strong>${store.profile.targetScore || "Not set"}</strong></div>
+            <div class="kv-row" style="border-color:rgba(255,255,255,.2)"><span style="opacity:.8">Gap</span><strong>${store.profile.targetScore ? Math.max(0, store.profile.targetScore - attempt.compositeScore) : "N/A"}</strong></div>
           </div>
           <div class="score-detail">
             <h4>Section scores</h4>

@@ -659,21 +659,23 @@ body {
 /* The links wrapper is layout-transparent on wide screens, so the links stay
    flat children of .nav exactly as in the mockup. */
 .nav-links { display: contents; }
-/* Icons (phone only) and the gradients that paint them; the defs <svg> is
-   absolutely positioned so it never takes a slot in the flex row. */
+/* Page icons are phone-only; wide screens keep the text links. */
 .nav-icon { display: none; }
-.nav-icon svg { stroke: var(--nav-grad); }
-.nav-grad-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
 @media (max-width: 780px) {
   /* Two tidy rows instead of an arbitrary wrap: brand + streak + account on
-     top, then the pages as a full-width row of large gradient icons. */
+     top, then the pages as a row of white icons on blue gradient tiles. The
+     current page's tile is lit up; the rest sit in a muted steel blue that
+     still keeps the white icons legible. */
   .app2 .nav { flex-wrap: wrap; gap: 0 var(--space-3); padding: 10px var(--space-4) 0; }
-  .nav-links { display: flex; order: 1; flex: 1 0 100%; margin: 8px calc(-1 * var(--space-4)) 0; }
-  .app2 .nav-links a {
-    flex: 1 1 0; display: flex; justify-content: center; padding: 10px 0 9px;
-    border-bottom: 2px solid transparent; margin-bottom: -2px;
+  .nav-links { display: flex; order: 1; flex: 1 0 100%; gap: var(--space-2); margin: 10px 0 12px; }
+  .app2 .nav .nav-links a {
+    flex: 1 1 0; display: flex; align-items: center; justify-content: center; height: 46px;
+    color: #fff; background: linear-gradient(135deg, #7697bb, #56789f);
   }
-  .app2 .nav-links a[aria-current='page'] { border-bottom-color: var(--color-accent); background: var(--color-accent-100); }
+  .app2 .nav .nav-links a[aria-current='page'] {
+    background: linear-gradient(135deg, #3f97dd, #1668c9 55%, #0f4e9c);
+    box-shadow: 0 3px 10px color-mix(in srgb, #1668c9 40%, transparent);
+  }
   .nav-icon { display: block; }
   /* Label stays in the accessibility tree as the link's name. */
   .nav-label {
@@ -1031,7 +1033,7 @@ body {
 
 /* ---------------- onboarding ---------------- */
 .onboard-grid { display: grid; grid-template-columns: 2fr 1fr; }
-.onboard-main { padding: 40px 44px; border-right: 2px solid var(--color-divider); }
+.onboard-main { padding: 40px 44px; border-right: 2px solid var(--color-divider); background: var(--color-surface); }
 .onboard-side { padding: 40px 32px; background: var(--color-surface); }
 .app2 .onboard-title { font-size: 34px; margin-bottom: 14px; }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }

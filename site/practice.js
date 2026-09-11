@@ -375,7 +375,7 @@
     slot.innerHTML = `
       <div class="answer-explanation">
         <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap">
-          <strong>${wasCorrect ? "Correct" : "Not quite"} — answer: ${letters[q.correct]}.</strong>
+          <strong>${wasCorrect ? "Correct" : "Not quite"}. The answer is ${letters[q.correct]}.</strong>
           ${selfAcc != null ? `<span class="tag tag-neutral">Your accuracy on ${q.topic}: ${selfAcc}%</span>` : ""}
         </div>
         <p>${Glossary.linkify(q.explanation, { terms: kc.terms, limit: 3 })}</p>
@@ -408,7 +408,7 @@
       <div class="result-summary">
         <div class="k">${setLabel}</div>
         <div class="score"><span>${sessionCorrect}</span> / ${queue.length}</div>
-        <p>Cards were rescheduled with spaced repetition — revisit due cards later to lock them in.</p>
+        <p>Cards were rescheduled with spaced repetition. Revisit due cards later to lock them in.</p>
         <div class="result-summary-actions">
           <a class="btn btn-primary" href="practice.html">Back to practice</a>
           <a class="btn btn-secondary" href="index.html">Dashboard</a>
