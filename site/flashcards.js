@@ -376,6 +376,7 @@
     const mins = Math.round((Date.now() - session.startedAt) / 60000);
     const up = upcomingReviews();
     const maxUp = Math.max(1, ...up);
+    const ankiCount = activeDeck.auto ? AnkiExport.missedQuestions().length : 0;
     side.innerHTML = `
       <div class="k">This session</div>
       <div style="display:flex;align-items:flex-end;gap:8px;margin-top:8px">
@@ -392,13 +393,15 @@
         <div class="callout" style="margin-top:20px">
           <div class="k">Auto-generated</div>
           <p>Built from questions you've gotten wrong in practice. Reviewing this deck helps most.</p>
-        </div>` : ""}
+        </div>
+        ${ankiCount ? `<div style="margin-top:14px">${AnkiExport.buttonHTML(ankiCount)}</div>` : ""}` : ""}
       <div class="k" style="margin-top:24px">Upcoming reviews</div>
       <div class="chart-bars" style="height:60px;margin-top:10px">
         ${up.map((n, i) => `<div style="height:${Math.max(6, (n / maxUp) * 100)}%" class="${i === 0 ? "today" : ""}" title="${n} due"></div>`).join("")}
       </div>
       <div style="display:flex;justify-content:space-between;font-size:10px;margin-top:6px" class="text-muted"><span>Today</span><span>+6 d</span></div>
     `;
+    AnkiExport.bind(side);
   }
 
   renderShell();

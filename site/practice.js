@@ -217,6 +217,8 @@
       s, n: Object.values(Data.allQuestions).filter((q) => q.section === s).length,
     })).filter((x) => x.n);
 
+    const ankiCount = AnkiExport.missedQuestions().length;
+
     root.innerHTML = `
       <div class="page-head"><h2 style="margin:0">Practice</h2></div>
       ${specials.length ? `
@@ -225,6 +227,11 @@
           <div class="deck-grid">
             ${specials.map((s) => `<a class="deck-tile" href="${s.href}"><span class="deck-tile-title">${s.title}</span><span class="deck-tile-sub">${s.sub}</span></a>`).join("")}
           </div>
+        </div>` : ""}
+      ${ankiCount ? `
+        <div class="export-row">
+          ${AnkiExport.buttonHTML(ankiCount)}
+          <span class="text-muted">Downloads a file for Anki's File &gt; Import, with passages, figures and explanations.</span>
         </div>` : ""}
       <div>
         <div class="k" style="margin-bottom:10px">By section</div>
@@ -245,6 +252,7 @@
         </div>
       </div>
     `;
+    AnkiExport.bind(root);
   }
 
   function renderEmpty() {

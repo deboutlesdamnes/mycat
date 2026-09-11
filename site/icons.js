@@ -11,6 +11,7 @@ const ICON_PATHS = {
   flag: '<path d="M4 3v18"/><path d="M4 4h11l-2 4 2 4H4"/>',
   clock: '<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 16 14"/>',
   bookmark: '<path d="M6 3h12v18l-6-4-6 4V3Z"/>',
+  download: '<path d="M12 3v12"/><polyline points="7 10 12 15 17 10"/><path d="M5 21h14"/>',
   sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>',
   moon: '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>',
   plus: '<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>',
@@ -32,13 +33,16 @@ function icon(name, { size = 16, className = "" } = {}) {
 
 // The mycat brand mark: a single stethoscope tube bent into a cat's head, the
 // earpieces landing on the ear tips and the chestpiece hanging below. Matches
-// the "00 — Logo" board in the MCAT mockups. The head fills with --mark-fill
-// (white, or the dark surface in dark mode so the currentColor features stay
-// visible); everything else is currentColor; the nose stays a fixed pink.
-// Whiskers and mouth are dropped below ~20px where they'd blur.
+// the "00 — Logo" board in the MCAT mockups. The head always fills white; the
+// outline, ears and stethoscope are currentColor so they follow the text
+// colour; the eyes, mouth and whiskers use --mark-face (the text colour too,
+// except in dark mode, where they switch to dark ink so they show on the
+// white face). The nose stays a fixed pink. Whiskers and mouth are dropped
+// below ~20px where they'd blur.
 function mycatMark(size = 26) {
+  const face = 'style="stroke:var(--mark-face, currentColor)"';
   const detail = size >= 20
-    ? '<path d="M32 37.8 L32 39.1 M32 39.1 C30.9 41.3 28.6 41.1 27.8 39.4 M32 39.1 C33.1 41.3 35.4 41.1 36.2 39.4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.5 34.6 L15.8 33.2 M21.5 37.4 L16.2 39.2 M42.5 34.6 L48.2 33.2 M42.5 37.4 L47.8 39.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'
+    ? `<path d="M32 37.8 L32 39.1 M32 39.1 C30.9 41.3 28.6 41.1 27.8 39.4 M32 39.1 C33.1 41.3 35.4 41.1 36.2 39.4" stroke="currentColor" ${face} stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.5 34.6 L15.8 33.2 M21.5 37.4 L16.2 39.2 M42.5 34.6 L48.2 33.2 M42.5 37.4 L47.8 39.2" stroke="currentColor" ${face} stroke-width="2" stroke-linecap="round"/>`
     : "";
-  return `<svg viewBox="0 0 64 64" width="${size}" height="${size}" fill="none" style="flex:none" aria-hidden="true"><path d="M13 10 C15.5 15.2 20 18.6 25.5 20.2 C29.4 18 34.6 18 38.5 20.2 C44 18.6 48.5 15.2 51 10 C54 17.5 54.2 28 51.5 35.2 C49 44 41 48.6 32 48.6 C23 48.6 15 44 12.5 35.2 C9.8 28 10 17.5 13 10 Z" fill="#ffffff" style="fill:var(--mark-fill, #ffffff)" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="13" cy="9" r="4.5" fill="currentColor"/><circle cx="51" cy="9" r="4.5" fill="currentColor"/><path d="M32 48.5 C32 54 36 56.5 40 57" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/><circle cx="46.5" cy="57" r="5.5" stroke="currentColor" stroke-width="4.5"/><circle cx="24.5" cy="30.5" r="2.8" fill="currentColor"/><circle cx="39.5" cy="30.5" r="2.8" fill="currentColor"/><ellipse cx="32" cy="35.6" rx="2.7" ry="2.2" fill="#f0879e"/>${detail}</svg>`;
+  return `<svg viewBox="0 0 64 64" width="${size}" height="${size}" fill="none" style="flex:none" aria-hidden="true"><path d="M13 10 C15.5 15.2 20 18.6 25.5 20.2 C29.4 18 34.6 18 38.5 20.2 C44 18.6 48.5 15.2 51 10 C54 17.5 54.2 28 51.5 35.2 C49 44 41 48.6 32 48.6 C23 48.6 15 44 12.5 35.2 C9.8 28 10 17.5 13 10 Z" fill="#ffffff" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="13" cy="9" r="4.5" fill="currentColor"/><circle cx="51" cy="9" r="4.5" fill="currentColor"/><path d="M32 48.5 C32 54 36 56.5 40 57" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/><circle cx="46.5" cy="57" r="5.5" stroke="currentColor" stroke-width="4.5"/><circle cx="24.5" cy="30.5" r="2.8" fill="currentColor" style="fill:var(--mark-face, currentColor)"/><circle cx="39.5" cy="30.5" r="2.8" fill="currentColor" style="fill:var(--mark-face, currentColor)"/><ellipse cx="32" cy="35.6" rx="2.7" ry="2.2" fill="#f0879e"/>${detail}</svg>`;
 }

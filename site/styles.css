@@ -561,7 +561,6 @@ body {
   /* accent-2-700/900 intentionally not overridden by the mockup — falls
      back to the Modernist base values above, exactly as the source does. */
   --color-hero: var(--color-accent);
-  --mark-fill: #ffffff;
 }
 
 /* ---- Dark mode ----
@@ -575,7 +574,7 @@ body {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
     --color-bg: #0f151c; --color-surface: #18212b; --color-text: #e3eaf2;
-    --color-accent: #4a97e6; --color-hero: #1d6bc0; --mark-fill: #18212b;
+    --color-accent: #4a97e6; --color-hero: #1d6bc0; --mark-face: #16212b;
     --color-divider: color-mix(in srgb, #e3eaf2 24%, transparent);
     --color-neutral-100: #1f2833; --color-neutral-200: #26303c; --color-neutral-300: #34404d;
     --color-neutral-400: #4a5664; --color-neutral-500: #6b7785; --color-neutral-600: #8b96a3;
@@ -589,7 +588,7 @@ body {
 :root[data-theme="dark"] {
   color-scheme: dark;
   --color-bg: #0f151c; --color-surface: #18212b; --color-text: #e3eaf2;
-  --color-accent: #4a97e6; --color-hero: #1d6bc0; --mark-fill: #18212b;
+  --color-accent: #4a97e6; --color-hero: #1d6bc0; --mark-face: #16212b;
   --color-divider: color-mix(in srgb, #e3eaf2 24%, transparent);
   --color-neutral-100: #1f2833; --color-neutral-200: #26303c; --color-neutral-300: #34404d;
   --color-neutral-400: #4a5664; --color-neutral-500: #6b7785; --color-neutral-600: #8b96a3;
@@ -804,6 +803,9 @@ body {
 .deck-tile-title { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 15px; }
 .deck-tile-sub { font-size: 12px; opacity: .65; }
 .deck-tile-count { font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--color-accent); font-weight: 600; }
+
+/* Practice picker: "Export missed to Anki" button + short note. */
+.export-row { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; font-size: 12px; margin-top: calc(-1 * var(--space-2)); }
 
 /* ---------------- stat tiles ---------------- */
 .stat-grid {
