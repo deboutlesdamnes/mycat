@@ -560,6 +560,44 @@ body {
   --color-accent-2-800: #0d3a71;
   /* accent-2-700/900 intentionally not overridden by the mockup — falls
      back to the Modernist base values above, exactly as the source does. */
+  --color-hero: var(--color-accent);
+  --mark-fill: #ffffff;
+}
+
+/* ---- Dark mode ----
+   Follows the OS setting unless the nav toggle has stored an explicit
+   choice, which lands as data-theme on <html> (set by an inline script in
+   each page's <head> so there's no light flash). The tint scales are
+   flipped: -100 is a dark wash and -800 a light ink, so every existing
+   "tinted background + strong text" pairing keeps working unchanged.
+   The same values are repeated for the forced-dark attribute. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-bg: #0f151c; --color-surface: #18212b; --color-text: #e3eaf2;
+    --color-accent: #4a97e6; --color-hero: #1d6bc0; --mark-fill: #18212b;
+    --color-divider: color-mix(in srgb, #e3eaf2 24%, transparent);
+    --color-neutral-100: #1f2833; --color-neutral-200: #26303c; --color-neutral-300: #34404d;
+    --color-neutral-400: #4a5664; --color-neutral-500: #6b7785; --color-neutral-600: #8b96a3;
+    --color-neutral-700: #aab4bf; --color-neutral-800: #c9d1da; --color-neutral-900: #e3e8ee;
+    --color-accent-100: #13263a; --color-accent-200: #1a3553; --color-accent-300: #28507a;
+    --color-accent-400: #3a74b0; --color-accent-500: #4a97e6; --color-accent-600: #6aaaf0;
+    --color-accent-700: #8dc0f5; --color-accent-800: #b3d6fa; --color-accent-900: #d8eafd;
+    --color-accent-2-100: #13263a; --color-accent-2-200: #1a3553; --color-accent-2-800: #b3d6fa;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #0f151c; --color-surface: #18212b; --color-text: #e3eaf2;
+  --color-accent: #4a97e6; --color-hero: #1d6bc0; --mark-fill: #18212b;
+  --color-divider: color-mix(in srgb, #e3eaf2 24%, transparent);
+  --color-neutral-100: #1f2833; --color-neutral-200: #26303c; --color-neutral-300: #34404d;
+  --color-neutral-400: #4a5664; --color-neutral-500: #6b7785; --color-neutral-600: #8b96a3;
+  --color-neutral-700: #aab4bf; --color-neutral-800: #c9d1da; --color-neutral-900: #e3e8ee;
+  --color-accent-100: #13263a; --color-accent-200: #1a3553; --color-accent-300: #28507a;
+  --color-accent-400: #3a74b0; --color-accent-500: #4a97e6; --color-accent-600: #6aaaf0;
+  --color-accent-700: #8dc0f5; --color-accent-800: #b3d6fa; --color-accent-900: #d8eafd;
+  --color-accent-2-100: #13263a; --color-accent-2-200: #1a3553; --color-accent-2-800: #b3d6fa;
 }
 
 /* Semantic colors the mockup itself doesn't token-ize (used ad hoc via
@@ -594,7 +632,7 @@ body {
 .text-muted { color: color-mix(in srgb, var(--color-text) 55%, transparent); }
 .k {
   font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
-  color: rgba(22, 33, 43, .5); font-weight: 700;
+  color: color-mix(in srgb, var(--color-text) 50%, transparent); font-weight: 700;
 }
 .num {
   font-family: var(--font-heading); font-weight: 800;
@@ -640,7 +678,7 @@ body {
   display: flex; align-items: center; gap: 20px;
   padding: 14px var(--space-6);
   border-bottom: 2px solid var(--color-divider);
-  background: var(--color-bg);
+  background: var(--color-surface);
   position: sticky; top: 0; z-index: 10;
 }
 .app2 .nav-brand {
@@ -650,7 +688,15 @@ body {
 }
 .app2 .nav a { color: inherit; text-decoration: none; font-size: 14px; }
 .app2 .nav a:hover, .app2 .nav a[aria-current='page'] { color: var(--color-accent); }
-.nav-streak { display: flex; align-items: center; gap: 6px; font-size: 12px; color: rgba(22, 33, 43, .5); white-space: nowrap; }
+.nav-streak { display: flex; align-items: center; gap: 6px; font-size: 12px; color: color-mix(in srgb, var(--color-text) 50%, transparent); white-space: nowrap; }
+.nav-theme {
+  flex: none; width: 34px; height: 34px; display: grid; place-items: center; padding: 0;
+  background: transparent; color: var(--color-text); cursor: pointer;
+  border: 1px solid var(--color-divider); border-radius: var(--radius-md);
+}
+.nav-theme:hover { border-color: var(--color-accent); color: var(--color-accent); }
+/* Small phones: the streak drops to flame + number so the top row fits. */
+@media (max-width: 420px) { .nav-streak-label { display: none; } }
 .nav-streak svg { color: var(--color-accent); }
 .nav-avatar {
   width: 32px; height: 32px; flex: none;
@@ -982,7 +1028,7 @@ body {
 .cal-day.selected { background: var(--color-accent-200); }
 .cal-task { font-size: 11px; padding: 5px 7px; border-left: 3px solid var(--color-accent); background: var(--color-accent-100); margin-top: 4px; }
 .cal-task.review { border-left-color: var(--color-accent-300); background: var(--color-neutral-100); }
-.cal-task.exam { background: var(--color-text); color: #fff; border-left-color: var(--color-accent); }
+.cal-task.exam { background: var(--color-text); color: var(--color-bg); border-left-color: var(--color-accent); }
 .cal-side { padding: 28px 30px; background: var(--color-surface); }
 @media (max-width: 980px) {
   .cal-body { grid-template-columns: minmax(0, 1fr); }
@@ -1007,7 +1053,7 @@ body {
 
 /* ---------------- exam score report ---------------- */
 .score-hero-row { display: grid; grid-template-columns: auto 1fr; border-bottom: 2px solid var(--color-divider); }
-.score-hero { background: var(--color-accent); color: #fff; padding: var(--space-6); min-width: 300px; }
+.score-hero { background: var(--color-hero); color: #fff; padding: var(--space-6); min-width: 300px; }
 .score-hero .k { color: rgba(255, 255, 255, .7); }
 .score-hero .hr { background: rgba(255, 255, 255, .35); }
 .score-hero .kv-row { border-color: rgba(255, 255, 255, .2); }
@@ -1021,7 +1067,7 @@ body {
   border: 1px solid var(--color-divider); background: var(--color-surface); cursor: pointer;
 }
 .tag-chip:hover { border-color: var(--color-accent); }
-.tag-chip.selected { background: var(--color-accent); color: #fff; border-color: var(--color-accent); }
+.tag-chip.selected { background: var(--color-accent); color: var(--color-bg); border-color: var(--color-accent); }
 @media (max-width: 980px) {
   .score-hero-row, .report-cols { grid-template-columns: minmax(0, 1fr); }
   .score-hero { min-width: 0; }
@@ -1149,6 +1195,11 @@ body {
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
   pointer-events: none;
+}
+/* On a dark page the dark tooltip needs an edge to separate it. */
+:root[data-theme="dark"] #concept-tooltip { border: 1px solid rgba(255, 255, 255, .14); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) #concept-tooltip { border: 1px solid rgba(255, 255, 255, .14); }
 }
 #concept-tooltip[hidden] { display: none; }
 .concept-tooltip-term {

@@ -223,9 +223,9 @@
             <div class="score-num-lg">${attempt.compositeScore}</div>
             <div style="font-size:14px;opacity:.9">~${pctl}th percentile (approx.)${prev ? ` · <strong>${attempt.compositeScore - prev.compositeScore >= 0 ? "+" : ""}${attempt.compositeScore - prev.compositeScore}</strong> from last sitting` : ""}</div>
             <div style="font-size:13px;opacity:.85;margin-top:4px">Confidence band ${attempt.compositeScore - 2}–${attempt.compositeScore + 2}</div>
-            <hr class="hr" style="background:rgba(255,255,255,.35)">
-            <div class="kv-row" style="border-color:rgba(255,255,255,.2)"><span style="opacity:.8">Target</span><strong>${store.profile.targetScore || "Not set"}</strong></div>
-            <div class="kv-row" style="border-color:rgba(255,255,255,.2)"><span style="opacity:.8">Gap</span><strong>${store.profile.targetScore ? Math.max(0, store.profile.targetScore - attempt.compositeScore) : "N/A"}</strong></div>
+            <hr class="hr">
+            <div class="kv-row"><span style="opacity:.8">Target</span><strong>${store.profile.targetScore || "Not set"}</strong></div>
+            <div class="kv-row"><span style="opacity:.8">Gap</span><strong>${store.profile.targetScore ? Math.max(0, store.profile.targetScore - attempt.compositeScore) : "N/A"}</strong></div>
           </div>
           <div class="score-detail">
             <h4>Section scores</h4>

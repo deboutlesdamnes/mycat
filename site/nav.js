@@ -22,6 +22,7 @@ function renderNav(active) {
 
   const s = Store.load();
   const streak = Stats.streak(s.activityLog);
+  const dark = effectiveTheme() === "dark";
 
   const authOn = typeof Auth !== "undefined" && Auth.enabled;
   const signedIn = authOn && (Auth.user() || Auth.hasStoredSession());
@@ -40,12 +41,36 @@ function renderNav(active) {
     <div class="nav">
       <div class="nav-brand">${mycatMark(36)}<span style="letter-spacing:-.01em">my<span style="color:var(--color-accent)">cat</span></span></div>
       <nav class="nav-links">${links.map((l) => `<a href="${l.href}" ${l.key === active ? 'aria-current="page"' : ""}><span class="nav-icon">${icon(l.icon, { size: 26 })}</span><span class="nav-label">${l.label}</span></a>`).join("")}</nav>
-      ${streak > 0 ? `<div class="nav-streak">${icon("flame", { size: 15 })}${streak}-day streak</div>` : ""}
+      ${streak > 0 ? `<div class="nav-streak" title="${streak}-day streak">${icon("flame", { size: 15 })}<span>${streak}<span class="nav-streak-label">-day streak</span></span></div>` : ""}
+      <button class="nav-theme" id="theme-toggle" type="button" aria-label="Switch to ${dark ? "light" : "dark"} mode" title="Switch to ${dark ? "light" : "dark"} mode">${icon(dark ? "sun" : "moon", { size: 17 })}</button>
       ${acctHtml}
     </div>
   `;
 
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const next = effectiveTheme() === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem(THEME_KEY, next); } catch (e) {}
+    renderNav(_navActive);
+  });
+
   measureNav(root);
+}
+
+// Theme: follows the OS until the toggle stores an explicit choice. Each
+// page's <head> applies the stored choice before first paint.
+const THEME_KEY = "mycat_theme";
+const _darkQuery = window.matchMedia ? matchMedia("(prefers-color-scheme: dark)") : null;
+function effectiveTheme() {
+  const t = document.documentElement.dataset.theme;
+  if (t === "light" || t === "dark") return t;
+  return _darkQuery && _darkQuery.matches ? "dark" : "light";
+}
+// Keep the toggle's icon right if the OS theme flips while the page is open.
+if (_darkQuery && _darkQuery.addEventListener) {
+  _darkQuery.addEventListener("change", () => {
+    if (document.getElementById("nav-root")) renderNav(_navActive);
+  });
 }
 
 // Publishes the nav's height as --nav-h so pages that need to fill the rest of
