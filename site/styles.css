@@ -533,7 +533,9 @@ body {
 :root {
   --font-heading: "IBM Plex Sans", system-ui, sans-serif;
   --font-heading-weight: 600;
-  --font-body: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  /* h1–h6 only; buttons, numbers and the wordmark stay on --font-heading. */
+  --font-display: "IBM Plex Serif", Georgia, serif;
   --color-bg: #f5f8fb;
   --color-surface: #ffffff;
   --color-text: #16212b;
@@ -573,7 +575,7 @@ body {
   min-height: 100vh;
 }
 .app2 h1, .app2 h2, .app2 h3, .app2 h4, .app2 h5, .app2 h6 {
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-family: var(--font-display); font-weight: var(--font-heading-weight);
   line-height: 1.12; letter-spacing: -0.015em; margin: 0 0 var(--space-2);
 }
 .app2 h1 { font-size: 42px; }
@@ -622,7 +624,7 @@ body {
 /* Phones: 16px gutters everywhere (page edge and inside panels) and a smaller
    type scale, so content keeps a readable width without touching the edge. */
 @media (max-width: 600px) {
-  .page { padding: var(--space-4) var(--space-4) 40px; gap: 20px; }
+  .page { padding: var(--space-6) var(--space-4) 40px; gap: var(--space-6); }
   .panel-pad { padding: 20px var(--space-4); }
   .cols-2 { gap: var(--space-6); }
   .app2 h1 { font-size: 30px; }
@@ -635,16 +637,16 @@ body {
 
 /* ---------------- nav (exact Modernist .nav/.nav-brand) ---------------- */
 .app2 .nav {
-  display: flex; align-items: center; gap: var(--space-4);
-  padding: var(--space-3) var(--space-4);
+  display: flex; align-items: center; gap: 20px;
+  padding: 14px var(--space-6);
   border-bottom: 2px solid var(--color-divider);
   background: var(--color-bg);
   position: sticky; top: 0; z-index: 10;
 }
 .app2 .nav-brand {
-  display: flex; align-items: center; gap: 9px;
+  display: flex; align-items: center; gap: 10px;
   font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 18px; margin-right: auto; color: var(--color-text);
+  font-size: 24px; margin-right: auto; color: var(--color-text);
 }
 .app2 .nav a { color: inherit; text-decoration: none; font-size: 14px; }
 .app2 .nav a:hover, .app2 .nav a[aria-current='page'] { color: var(--color-accent); }
@@ -666,10 +668,10 @@ body {
      top, then the pages as a row of white icons on blue gradient tiles. The
      current page's tile is lit up; the rest sit in a muted steel blue that
      still keeps the white icons legible. */
-  .app2 .nav { flex-wrap: wrap; gap: 0 var(--space-3); padding: 14px var(--space-4) 0; }
-  .nav-links { display: flex; order: 1; flex: 1 0 100%; gap: var(--space-2); margin: 20px 0 12px; }
+  .app2 .nav { flex-wrap: wrap; gap: 0 var(--space-4); padding: 18px var(--space-4) 0; }
+  .nav-links { display: flex; order: 1; flex: 1 0 100%; gap: 10px; margin: 22px 0 16px; }
   .app2 .nav .nav-links a {
-    flex: 1 1 0; display: flex; align-items: center; justify-content: center; height: 46px;
+    flex: 1 1 0; display: flex; align-items: center; justify-content: center; height: 48px;
     color: #fff; background: linear-gradient(135deg, #7697bb, #56789f);
   }
   .app2 .nav .nav-links a[aria-current='page'] {
