@@ -156,7 +156,7 @@
         <div style="border-bottom:2px solid var(--color-divider);padding-bottom:10px"><h4 style="margin:0">Section performance</h4></div>
         <div style="padding:18px 0 6px">
           ${rows.map((r) => `
-            <div style="margin-bottom:16px">
+            <div class="section-row">
               <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px">
                 <span>${r.label}</span><strong>${r.score != null ? r.score : "N/A"}</strong>
               </div>

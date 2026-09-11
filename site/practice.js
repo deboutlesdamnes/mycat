@@ -323,7 +323,7 @@
               </div>
             </div>` : ""}
           <div class="player-question" style="${passage ? "" : "grid-column:1 / -1;max-width:640px;margin:0 auto"}">
-            <div style="display:flex;gap:8px;align-items:center;margin-bottom:12px">
+            <div class="question-tags">
               <span class="level-tag level-${Data.difficultyOf(q)}">${Data.difficultyOf(q)}</span>
               ${q.topic ? `<span class="tag tag-neutral">${q.topic}</span>` : ""}
             </div>
