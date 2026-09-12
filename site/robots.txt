@@ -1,0 +1,7 @@
+# Twitter and some other unfurlers refuse to preview a URL that robots.txt
+# disallows, so keep the shared pages and the preview image allowed.
+User-agent: *
+Allow: /
+Disallow: /account.html
+
+Sitemap: https://mycat.study/sitemap.xml
