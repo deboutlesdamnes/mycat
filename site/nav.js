@@ -42,6 +42,7 @@ function renderNav(active) {
       <div class="nav-brand">${mycatMark(36)}<span style="letter-spacing:-.01em">my<span style="color:var(--color-accent)">cat</span></span></div>
       <nav class="nav-links">${links.map((l) => `<a href="${l.href}" ${l.key === active ? 'aria-current="page"' : ""}><span class="nav-icon">${icon(l.icon, { size: 26 })}</span><span class="nav-label">${l.label}</span></a>`).join("")}</nav>
       ${streak > 0 ? `<div class="nav-streak" title="${streak}-day streak">${icon("flame", { size: 15 })}<span>${streak}<span class="nav-streak-label">-day streak</span></span></div>` : ""}
+      <a class="btn btn-silver nav-contact" href="mailto:jasonzhao512@gmail.com" aria-label="Contact by email" title="Contact by email">${icon("mail", { size: 15 })}<span class="btn-label">Contact</span></a>
       <button class="nav-theme" id="theme-toggle" type="button" aria-label="Switch to ${dark ? "light" : "dark"} mode" title="Switch to ${dark ? "light" : "dark"} mode">${icon(dark ? "sun" : "moon", { size: 17 })}</button>
       ${acctHtml}
     </div>

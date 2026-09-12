@@ -694,6 +694,22 @@ body {
   border: 1px solid var(--color-divider); border-radius: var(--radius-md);
 }
 .nav-theme:hover { border-color: var(--color-accent); color: var(--color-accent); }
+/* `.app2 .nav a` sets color:inherit and a hover color, both of which outrank
+   a plain .btn-silver rule, so the nav copy of the button needs the extra
+   specificity to keep its dark ink on the silver face. */
+.app2 .nav a.nav-contact, .app2 .nav a.nav-contact:hover { color: #16212b; }
+.app2 .nav-contact { flex: none; padding: 7px 14px; font-size: 13px; }
+.app2 .nav-contact svg { flex: none; }
+/* Icon only below desktop, matching the theme toggle, so the row still fits. */
+@media (max-width: 1000px) {
+  .app2 .nav-contact { width: 34px; height: 34px; padding: 0; }
+  .app2 .nav-contact .btn-label { display: none; }
+}
+/* Tablets keep one nav row, so tighten it and shorten the streak to fit. */
+@media (min-width: 781px) and (max-width: 1000px) {
+  .app2 .nav { gap: 14px; padding-inline: var(--space-4); }
+  .nav-streak-label { display: none; }
+}
 /* Small phones: the streak drops to flame + number so the top row fits. */
 @media (max-width: 420px) { .nav-streak-label { display: none; } }
 .nav-streak svg { color: var(--color-accent); }
@@ -1118,16 +1134,13 @@ body {
 .result-summary p { color: var(--color-text); opacity: .7; margin: 0; max-width: 380px; }
 .result-summary-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 .empty-state { text-align: center; padding: 40px 20px; opacity: .6; }
-.page-foot { text-align: center; font-size: .85rem; padding: 20px; }
-/* The note is dimmed on its own so the contact button stays full strength. */
-.page-foot-note { opacity: .6; margin-top: 14px; }
+.page-foot { text-align: center; font-size: .85rem; padding: 20px; opacity: .6; }
 /* Light silver, and deliberately the same in dark mode, where it reads as a
    bright control against the dark page. */
 .app2 .btn-silver {
   background: linear-gradient(180deg, #fbfcfd, #e3e8ee);
   border: 1px solid #c5cfd9; color: #16212b;
   box-shadow: 0 1px 2px rgba(22, 33, 43, .10);
-  padding: 9px 20px;
 }
 .app2 .btn-silver:hover { background: linear-gradient(180deg, #ffffff, #d8dfe7); border-color: #aab7c4; }
 .app2 .btn-silver:active { background: linear-gradient(180deg, #e3e8ee, #d2dae2); }
